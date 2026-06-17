@@ -9,14 +9,14 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "Maya Megret / mayamegret.com"
+title                    : "Maya Mégret / mayamegret.com"
 title_separator          : "-"
-name                     : &name "Maya Megret"
+name                     : &name "Maya Mégret"
 description              : &description "Your Name's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
-url                      : https://academicpages.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
+url                      : https://mayamegret.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "mayamegret/mayamegret.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -24,11 +24,11 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  name             : "Maya Mégret"
   pronouns         : # example: "she/her"  
   bio              : "I'm a marine biologist currently finishing my MSc at the Universidade do Algarve, where I study nudibranchs. I earned my BS in Marine Biology from UC San Diego's Scripps Institution of Oceanography, where field research first hooked me on this kind of work. I'm also a scientific diver, currently working toward my Divemaster certification, which keeps me in the water as often as possible. Outside of research, I'm an avid photographer, and you'll find a lot of that work on this site, often featuring the very animals I study"
   location         : "Hawai'i"
-  employer         : "Red Brick University"
+  employer         : "Universidade do Algarve"
   uri              : # URL
   email            : "mayamegret@gmail.co," 
 
