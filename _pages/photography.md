@@ -18,6 +18,9 @@ A selection of photos from my travels and dives
 </div>
 
 <style>
+.photo-tile.size-large { grid-column: span 2; grid-row: span 2; }
+.photo-tile.size-wide { grid-column: span 2; }
+.photo-tile.size-tall { grid-row: span 2; }
 .photo-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 18px; margin-top: 24px; }
 .photo-tile { position: relative; cursor: pointer; aspect-ratio: 1 / 1; overflow: hidden; border-radius: 6px; }
 .photo-tile img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.2s ease; border-radius: 6px; position: relative; z-index: 2; }
