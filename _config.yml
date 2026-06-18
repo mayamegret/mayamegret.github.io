@@ -12,7 +12,7 @@ site_theme               : "default" # The available themes options are "default
 title                    : "Maya Mégret / mayamegret.com"
 title_separator          : "-"
 name                     : &name "Maya Mégret"
-description              : &description "Your Name's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
+description              : &description ""   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : https://mayamegret.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -26,7 +26,7 @@ author:
   avatar           : "profile.png"
   name             : "Maya Mégret"
   pronouns         : # example: "she/her"  
-  bio              : "I'm a marine biologist currently finishing my MSc at the Universidade do Algarve, where I study nudibranchs. I earned my BS in Marine Biology from UC San Diego's Scripps Institution of Oceanography, where field research first hooked me on this kind of work. I'm also a scientific diver, currently working toward my Divemaster certification, which keeps me in the water as often as possible. Outside of research, I'm an avid photographer, and you'll find a lot of that work on this site, often featuring the very animals I study"
+  bio              : "I'm a marine biologist currently finishing my MSc at the Universidade do Algarve, where I study nudibranchs. I earned my BS in Marine Biology from UC San Diego's Scripps Institution of Oceanography, where field research first hooked me on this kind of work. I'm also a scientific diver, currently working toward my Divemaster certification, which keeps me in the water as often as possible. Outside of research, I love traveling and I am an avid photographer, so you'll find a lot of underwater and travel photography on this site!"
   location         : "O'ahu, Hawai'i"
   employer         : "Universidade do Algarve"
   uri              : # URL
