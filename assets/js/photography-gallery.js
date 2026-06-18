@@ -64,14 +64,7 @@ function updateModal() {
   const tile = tiles[currentTile];
   const captionEl = document.getElementById('modal-caption');
   if (captionEl) captionEl.textContent = tile.caption || '';
-
-  const oldImg = document.getElementById('modal-img');
-  const newImg = document.createElement('img');
-  newImg.id = 'modal-img';
-  newImg.src = tile.photos[currentPhoto];
-  newImg.alt = '';
-  oldImg.parentNode.replaceChild(newImg, oldImg);
-
+  document.getElementById('modal-img').style.backgroundImage = "url('" + tile.photos[currentPhoto] + "')";
   const multi = tile.photos.length > 1;
   document.getElementById('modal-counter').textContent = multi ? (currentPhoto + 1) + ' / ' + tile.photos.length : '';
   document.querySelector('.modal-prev').style.display = multi ? 'block' : 'none';
