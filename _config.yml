@@ -23,28 +23,14 @@ repository               : "mayamegret/mayamegret.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "pfp.jpg"
   name             : "Maya Mégret"
-  pronouns         : # example: "she/her"  
+  pronouns         : "she/her"  
   bio              : "I'm a marine biologist currently finishing my MSc at the Universidade do Algarve, where I study nudibranchs. I earned my BS in Marine Biology from UC San Diego's Scripps Institution of Oceanography, where field research first hooked me on this kind of work. I'm also a scientific diver, currently working toward my Divemaster certification, which keeps me in the water as often as possible. Outside of research, I love traveling and I am an avid photographer, so you'll find a lot of underwater and travel photography on this site!"
   location         : "O'ahu, Hawai'i"
   employer         : "Universidade do Algarve"
   uri              : # URL
-  email            : "mayamegret@gmail.co," 
-
-  # Academic websites
-  academia         : # URL
-  arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-  inspire-hep      : # URL
-  impactstory      : # URL
-  orcid            : "https://orcid.org/yourorcidurl"
-  semantic         : # URL
-  ssrn             : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  researchgate     : # URL
-  scopus           : # URL
-  zotero           : # URL
+  email            : "mayamegret@gmail.com," 
 
 
   # Repositories and software development
