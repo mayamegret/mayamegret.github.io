@@ -22,9 +22,28 @@ A selection of photos from my travels and dives
 .photo-tile.size-large { grid-column: span 2; grid-row: span 2; }
 .photo-tile.size-wide { grid-column: span 2; }
 .photo-tile.size-tall { grid-row: span 2; }
-.photo-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 18px; margin-top: 24px; }
-.photo-tile { position: relative; cursor: pointer; aspect-ratio: 1 / 1; overflow: hidden; border-radius: 6px; }
-.photo-tile img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.2s ease; border-radius: 6px; position: relative; z-index: 2; }
+.photo-grid {
+  columns: 3;
+  column-gap: 18px;
+  margin-top: 24px;
+}
+.photo-tile {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 6px;
+  break-inside: avoid;
+  margin-bottom: 18px;
+}
+.photo-tile img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.2s ease;
+  border-radius: 6px;
+  position: relative;
+  z-index: 2;
+}
 .photo-tile:hover img { transform: scale(1.04); }
 .stack-badge { position: absolute; top: 8px; right: 8px; background: rgba(0,0,0,0.7); color: #fff; font-size: 0.75rem; padding: 2px 8px; border-radius: 12px; z-index: 3; }
 .photo-tile.is-stack::before, .photo-tile.is-stack::after { content: ""; position: absolute; inset: 0; background: #fff; border: 1px solid #ddd; border-radius: 6px; z-index: 1; }
