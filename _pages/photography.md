@@ -36,30 +36,7 @@ A selection of photos from my travels and dives
 .modal-counter { position: absolute; bottom: 24px; left: 0; right: 0; text-align: center; color: #ccc; font-size: 0.85rem; }
 </style>
 
-<script>
-// Each entry is one grid tile. One photo = a normal tile.
-// Multiple photos in the same array = a stack you click through.
-// Reorder/regroup these to match which photos actually belong together.
-const tiles = [
-  { photos: ["/images/photography/IMG_0406.jpg"] },
-  { photos: ["/images/photography/IMG_0455.jpg"] },
-  { photos: ["/images/photography/IMG_0475.jpg"] },
-  { photos: ["/images/photography/IMG_0593.jpg", "/images/photography/IMG_0599.jpg", "/images/photography/IMG_1093.jpg"] },
-  { photos: ["/images/photography/IMG_0609.jpg"] },
-  { photos: ["/images/photography/IMG_0931.jpg"] },
-  { photos: ["/images/photography/IMG_1593.jpg"] },
-  { photos: ["/images/photography/IMG_2277.jpg"] },
-  { photos: ["/images/photography/IMG_2347.jpg"] },
-  { photos: ["/images/photography/IMG_4483.jpg"] },
-  { photos: ["/images/photography/IMG_4905.jpg", "/images/photography/IMG_6156.jpg", "/images/photography/IMG_5132.jpg", "/images/photography/IMG_7063.jpg", "/images/photography/IMG_7261.jpg", "/images/photography/P1250823.jpg"] },
-  { photos: ["/images/photography/IMG_6257.jpg", "/images/photography/IMG_4927.jpg", "/images/photography/IMG_6176.jpg", "/images/photography/IMG_5736.jpg", "/images/photography/IMG_7224.jpg", "/images/photography/P1250779.jpg"] },
-  { photos: ["/images/photography/IMG_6375.jpg"] },
-  { photos: ["/images/photography/IMG_7117.jpg"] },
-  { photos: ["/images/photography/IMG_9902.jpg"] },
-  { photos: ["/images/photography/MagazineCollage.png"] },
-  { photos: ["/images/photography/P1230432.jpg"] },
-  { photos: ["/images/photography/P2171886.jpg"] }
-];
+<script src="/assets/js/photography-gallery.js"></script>
 
 let currentTile = 0;
 let currentPhoto = 0;
