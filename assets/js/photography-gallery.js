@@ -61,7 +61,7 @@ function navModal(direction) {
 
 function updateModal() {
   const tile = tiles[currentTile];
-  document.getElementById('modal-img').src = tile.photos[currentPhoto];
+  document.getElementById('modal-caption').textContent = tile.caption || '';
   const multi = tile.photos.length > 1;
   document.getElementById('modal-counter').textContent = multi ? (currentPhoto + 1) + ' / ' + tile.photos.length : '';
   document.querySelector('.modal-prev').style.display = multi ? 'block' : 'none';
