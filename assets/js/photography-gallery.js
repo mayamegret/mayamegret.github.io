@@ -26,7 +26,7 @@ function renderGrid() {
   const grid = document.getElementById('photo-grid');
   tiles.forEach((tile, i) => {
     const div = document.createElement('div');
-    div.className = 'photo-tile' + (tile.photos.length > 1 ? ' is-stack' : '');
+    div.className = 'photo-tile' + (tile.photos.length > 1 ? ' is-stack' : '') + (tile.size ? ' size-' + tile.size : '');
     const img = document.createElement('img');
     img.src = tile.photos[0];
     img.alt = '';
