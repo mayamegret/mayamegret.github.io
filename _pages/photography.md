@@ -51,7 +51,14 @@ A selection of photos from my travels and dives
 .photo-tile.is-stack::after { transform: rotate(5deg) translate(5px, -4px); }
 .photo-modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.9); z-index: 9999; align-items: center; justify-content: center; }
 .photo-modal.open { display: flex; }
-.photo-modal img { max-width: 85vw; max-height: 80vh; object-fit: contain; }
+.photo-modal img {
+  max-width: 85vw;
+  max-height: 80vh;
+  object-fit: contain;
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
 .modal-close { position: absolute; top: 20px; right: 30px; font-size: 2rem; color: #fff; background: none; border: none; cursor: pointer; }
 .modal-nav { position: absolute; top: 50%; transform: translateY(-50%); font-size: 2.5rem; color: #fff; background: none; border: none; cursor: pointer; padding: 0 16px; }
 .modal-prev { left: 10px; }
