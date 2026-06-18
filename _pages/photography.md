@@ -12,7 +12,7 @@ A selection of photos from my travels and dives
 <div id="photo-modal" class="photo-modal">
   <button class="modal-close" onclick="closeModal()" aria-label="Close">&times;</button>
   <button class="modal-nav modal-prev" onclick="navModal(-1)" aria-label="Previous photo">&#8249;</button>
-  <img id="modal-img" src="" alt="">
+  <div id="modal-img"></div>
   <button class="modal-nav modal-next" onclick="navModal(1)" aria-label="Next photo">&#8250;</button>
   <div id="modal-counter" class="modal-counter"></div>
   <div id="modal-caption" class="modal-caption"></div>
@@ -51,13 +51,12 @@ A selection of photos from my travels and dives
 .photo-tile.is-stack::after { transform: rotate(5deg) translate(5px, -4px); }
 .photo-modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.9); z-index: 9999; align-items: center; justify-content: center; }
 .photo-modal.open { display: flex; }
-.photo-modal img {
-  max-width: 85vw;
-  max-height: 80vh;
-  object-fit: contain;
-  display: block !important;
-  opacity: 1 !important;
-  visibility: visible !important;
+#modal-img {
+  width: 80vw;
+  height: 75vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .modal-close { position: absolute; top: 20px; right: 30px; font-size: 2rem; color: #fff; background: none; border: none; cursor: pointer; }
 .modal-nav { position: absolute; top: 50%; transform: translateY(-50%); font-size: 2.5rem; color: #fff; background: none; border: none; cursor: pointer; padding: 0 16px; }
