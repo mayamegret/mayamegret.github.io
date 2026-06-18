@@ -2,22 +2,22 @@ const tiles = [
   { photos: ["/images/photography/IMG_0406.jpg"] },
   { photos: ["/images/photography/IMG_0455.jpg"] },
   { photos: ["/images/photography/IMG_0475.jpg"] },
-  { photos: ["/images/photography/IMG_0593.jpg", "/images/photography/IMG_0599.jpg", "/images/photography/IMG_1093.jpg"], caption: Beach scenes, Kona, Hawai'i },
+  { photos: ["/images/photography/IMG_0593.jpg", "/images/photography/IMG_0599.jpg", "/images/photography/IMG_1093.jpg"], caption: "Beach scenes, Kona, Hawai'i" },
   { photos: ["/images/photography/IMG_0609.jpg"] },
   { photos: ["/images/photography/IMG_0931.jpg"] },
   { photos: ["/images/photography/IMG_1593.jpg"] },
   { photos: ["/images/photography/IMG_2277.jpg"] },
   { photos: ["/images/photography/IMG_2347.jpg"] },
   { photos: ["/images/photography/IMG_4483.jpg"] },
-  { photos: ["/images/photography/IMG_4905.jpg", "/images/photography/IMG_6156.jpg", "/images/photography/IMG_5132.jpg", "/images/photography/IMG_7063.jpg", "/images/photography/IMG_7261.jpg", "/images/photography/P1250823.jpg"], caption: Scenes from Závora, Mozambique },
-  { photos: ["/images/photography/UnderwaterMacro.jpg"/images/photography/IMG_6257.jpg", "/images/photography/IMG_4927.jpg", "/images/photography/IMG_6176.jpg", "/images/photography/IMG_5736.jpg", "/images/photography/IMG_7224.jpg", "/images/photography/P1250779.jpg"], caption: Underwater macro (ok, except for that one bee) },
+  { photos: ["/images/photography/IMG_4905.jpg", "/images/photography/IMG_6156.jpg", "/images/photography/IMG_5132.jpg", "/images/photography/IMG_7063.jpg", "/images/photography/IMG_7261.jpg", "/images/photography/P1250823.jpg"], caption: "Scenes from Závora, Mozambique" },
+  { photos: ["/images/photography/UnderwaterMacro.jpg", "/images/photography/IMG_6257.jpg", "/images/photography/IMG_4927.jpg", "/images/photography/IMG_6176.jpg", "/images/photography/IMG_5736.jpg", "/images/photography/IMG_7224.jpg", "/images/photography/P1250779.jpg"], caption: "Underwater macro (ok, except for that one bee)" },
   { photos: ["/images/photography/IMG_6375.jpg"] },
   { photos: ["/images/photography/IMG_7117.jpg"] },
-  { photos: ["/images/photography/IMG_9902.jpg","/images/photography/Josephines.jpg", "/images/photography/Maya24Bday.jpg"] },
+  { photos: ["/images/photography/IMG_9902.jpg", "/images/photography/Josephines.jpg", "/images/photography/Maya24Bday.jpg"], caption: "Springtime back home"  },
   { photos: ["/images/photography/MagazineCollage.png"] },
   { photos: ["/images/photography/P1230432.jpg"] },
-  { photos: ["/images/photography/P2171886.jpg"] }
-  { photos: ["/images/photography/reindeer1.jpg", "/images/photography/Bergen.jpg", "/images/photography/CoqAuVin.jpg", "/images/photography/MayaReindeer.jpg", "/images/photography/Fjords.jpg"], caption: Christmas 2025 in Norway! }
+  { photos: ["/images/photography/P2171886.jpg"] },
+  { photos: ["/images/photography/reindeer1.jpg", "/images/photography/Bergen.jpg", "/images/photography/CoqAuVin.jpg", "/images/photography/MayaReindeer.jpg", "/images/photography/Fjords.jpg"], caption: "Christmas 2025 in Norway!" }
 ];
 
 let currentTile = 0;
