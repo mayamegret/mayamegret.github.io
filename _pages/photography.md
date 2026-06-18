@@ -15,6 +15,7 @@ A selection of photos from my travels and dives
   <img id="modal-img" src="" alt="">
   <button class="modal-nav modal-next" onclick="navModal(1)" aria-label="Next photo">&#8250;</button>
   <div id="modal-counter" class="modal-counter"></div>
+  <div id="modal-caption" class="modal-caption"></div>
 </div>
 
 <style>
@@ -37,6 +38,8 @@ A selection of photos from my travels and dives
 .modal-prev { left: 10px; }
 .modal-next { right: 10px; }
 .modal-counter { position: absolute; bottom: 24px; left: 0; right: 0; text-align: center; color: #ccc; font-size: 0.85rem; }
+.photo-tile.size-small { width: 60%; height: 60%; align-self: center; justify-self: center; }
+.modal-caption { position: absolute; bottom: 56px; left: 0; right: 0; text-align: center; color: #fff; font-size: 0.95rem; padding: 0 20px; }
 </style>
 
 <script src="/assets/js/photography-gallery.js"></script>
