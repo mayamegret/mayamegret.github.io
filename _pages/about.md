@@ -2,7 +2,7 @@
 title: "Welcome to my corner of the world!"
 permalink: /
 header:
-  image: photography/IMG_9902.jpg
+  image: photography/IMG_99021.jpg
 author_profile: true
 ---
 
