@@ -50,13 +50,18 @@ A selection of photos from my travels and dives
 .photo-tile.is-stack::before { transform: rotate(-5deg) translate(-5px, 4px); }
 .photo-tile.is-stack::after { transform: rotate(5deg) translate(5px, -4px); }
 .photo-modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.9); z-index: 9999; align-items: center; justify-content: center; }
-.photo-modal.open { display: flex; }
-#modal-img {
-  width: 80vw;
-  height: 75vh;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+.photo-modal.open {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.modal-caption {
+  color: #fff;
+  font-size: 0.95rem;
+  text-align: center;
+  padding: 0 20px;
+  max-width: 80vw;
+}
 }
 .modal-close { position: absolute; top: 20px; right: 30px; font-size: 2rem; color: #fff; background: none; border: none; cursor: pointer; }
 .modal-nav { position: absolute; top: 50%; transform: translateY(-50%); font-size: 2.5rem; color: #fff; background: none; border: none; cursor: pointer; padding: 0 16px; }
