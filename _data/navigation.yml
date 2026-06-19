@@ -13,6 +13,9 @@ main:
     
   - title: "Publications"
     url: /publications/  
+
+  - title: "Map"
+    url: /map/
   
   - title: "Blog Posts"
     url: /year-archive/
