@@ -63,22 +63,64 @@ A selection of photos from my travels and dives
   max-width: 80vw;
 }
 }
-.modal-close { position: absolute; top: 20px; right: 30px; font-size: 2rem; color: #fff; background: none; border: none; cursor: pointer; }
-.modal-nav { position: absolute; top: 50%; transform: translateY(-50%); font-size: 2.5rem; color: #fff; background: none; border: none; cursor: pointer; padding: 0 16px; }
+.photo-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.9);
+  z-index: 9999;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.photo-modal.open { display: flex; }
+#modal-img {
+  width: 80vw;
+  height: 70vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-shrink: 0;
+}
+.modal-caption {
+  color: #fff;
+  font-size: 0.95rem;
+  text-align: center;
+  padding: 0 20px;
+  max-width: 80vw;
+}
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 2rem;
+  color: #fff;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.modal-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.5rem;
+  color: #fff;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0 16px;
+}
 .modal-prev { left: 10px; }
 .modal-next { right: 10px; }
-.modal-counter { position: absolute; bottom: 24px; left: 0; right: 0; text-align: center; color: #ccc; font-size: 0.85rem; }
-.photo-tile.size-small { width: 60%; height: 60%; align-self: center; justify-self: center; }
-.modal-caption {
-  position: fixed;
-  bottom: 56px;
+.modal-counter {
+  position: absolute;
+  bottom: 24px;
   left: 0;
   right: 0;
   text-align: center;
-  color: #fff;
-  font-size: 0.95rem;
-  padding: 0 20px;
-  z-index: 10000;
+  color: #ccc;
+  font-size: 0.85rem;
 }
 </style>
 
