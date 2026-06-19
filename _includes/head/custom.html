@@ -7,14 +7,11 @@
   .page__hero img { height: 100%; width: 100%; object-fit: cover; }
   .author__avatar img { width: 150px; height: 150px; object-fit: cover; object-position: 50% 20%; }
   footer a:has(.fa-rss-square) { display: none; }
-  .page__inner-wrap { padding-left: 50px !important; }
   body { background-color: #ffc48a; color: #2c4a3e; }
   .sidebar { background-color: #ffa44a; }
   .sidebar, .sidebar p, .sidebar h3, .sidebar a, .author__name, .author__bio, .author__pronouns { color: #fff !important; }
   .author__name { font-family: 'Notable', sans-serif !important; }
   .author__avatar, .author__content, .author__urls-wrapper { padding-left: 12px; }
-  .page__wrap { max-width: 100% !important; padding-left: 0 !important; padding-right: 0 !important; }
-  #main { display: flex !important; align-items: flex-start !important; padding: 0 !important; margin: 0 !important; }
-  .sidebar.sticky { flex: 0 0 260px !important; width: 260px !important; }
-  article.page { flex: 1 !important; min-width: 0 !important; padding-left: 30px !important; padding-right: 30px !important; }
-</style>
+  #main { position: relative !important; display: block !important; padding: 0 !important; margin: 0 !important; }
+  .sidebar.sticky { position: absolute !important; left: 0 !important; top: 0 !important; width: 260px !important; height: auto !important; }
+  article.page { margin-left: 270px !important; width: calc(100% - 270px) !important; }
