@@ -8,12 +8,12 @@
   .author__avatar img { width: 150px; height: 150px; object-fit: cover; object-position: 50% 20%; }
   footer a:has(.fa-rss-square) { display: none; }
   body { background-color: #ffc48a; color: #2c4a3e; }
-  .sidebar { background-color: #ffa44a; width: 260px !important; min-width: 260px !important; }
+  .sidebar { background-color: #ffa44a; }
   .sidebar, .sidebar p, .sidebar h3, .sidebar a, .author__name, .author__bio, .author__pronouns { color: #fff !important; }
-  .sidebar.sticky { height: fit-content !important; }
   .author__name { font-family: 'Notable', sans-serif !important; }
   .author__avatar, .author__content, .author__urls-wrapper { padding-left: 12px; }
-  #main { padding-left: 0 !important; margin-left: 0 !important; }  .sidebar.sticky { flex-shrink: 0 !important; }
-  article.page { flex: 1 !important; min-width: 0 !important; }
   .page__wrap { max-width: 100% !important; padding-left: 0 !important; padding-right: 0 !important; }
+  #main { display: flex !important; align-items: flex-start !important; padding: 0 !important; margin: 0 !important; }
+  .sidebar.sticky { flex: 0 0 260px !important; width: 260px !important; height: fit-content !important; }
+  article.page { flex: 1 !important; min-width: 0 !important; padding-left: 20px !important; position: relative !important; }
 </style>
