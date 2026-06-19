@@ -13,9 +13,9 @@ A selection of photos from my travels and dives
   <button class="modal-close" onclick="closeModal()" aria-label="Close">&times;</button>
   <button class="modal-nav modal-prev" onclick="navModal(-1)" aria-label="Previous photo">&#8249;</button>
   <div id="modal-img"></div>
+  <div id="modal-caption" class="modal-caption"></div>
   <button class="modal-nav modal-next" onclick="navModal(1)" aria-label="Next photo">&#8250;</button>
   <div id="modal-counter" class="modal-counter"></div>
-  <div id="modal-caption" class="modal-caption"></div>
 </div>
 
 <style>
