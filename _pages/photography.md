@@ -2,7 +2,7 @@
 layout: single
 title: "Photography"
 permalink: /photography/
-author_profile: true
+author_profile: false
 ---
 
 A selection of photos from my travels and dives
