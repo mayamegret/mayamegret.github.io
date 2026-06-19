@@ -64,7 +64,17 @@ A selection of photos from my travels and dives
 .modal-next { right: 10px; }
 .modal-counter { position: absolute; bottom: 24px; left: 0; right: 0; text-align: center; color: #ccc; font-size: 0.85rem; }
 .photo-tile.size-small { width: 60%; height: 60%; align-self: center; justify-self: center; }
-.modal-caption { position: absolute; bottom: 56px; left: 0; right: 0; text-align: center; color: #fff; font-size: 0.95rem; padding: 0 20px; }
+.modal-caption {
+  position: fixed;
+  bottom: 56px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #fff;
+  font-size: 0.95rem;
+  padding: 0 20px;
+  z-index: 10000;
+}
 </style>
 
 <script src="/assets/js/photography-gallery.js"></script>
