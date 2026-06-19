@@ -2,7 +2,7 @@
 layout: single
 title: "Map"
 permalink: /map/
-author_profile: true
+author_profile: false
 ---
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
