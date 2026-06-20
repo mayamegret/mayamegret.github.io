@@ -10,7 +10,13 @@ author_profile: false
 <p>Places I have visited and dived around the world. 🤿 = dive site &nbsp; 📍 = visited place</p>
 
 <div id="dive-map"></div>
-
+<style>
+  #main, article.page, .page__inner-wrap {
+    max-width: 100% !important;
+    padding-left: 1em !important;
+    padding-right: 1em !important;
+  }
+</style>
 <style>
 #dive-map { height: 85vh; width: 110%; margin-top: 16px; border-radius: 8px; position: relative; z-index: 1; }
 .dive-pin { background: #0077b6; color: white; border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; font-size: 16px; border: 2px solid white; box-shadow: 0 2px 5px rgba(0,0,0,0.4); }
