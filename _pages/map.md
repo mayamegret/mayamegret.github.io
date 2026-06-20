@@ -16,7 +16,7 @@ author_profile: false
     padding-left: 1em !important;
     padding-right: 1em !important;
   }
-  .leaflet-container { background: #a8d5e2 !important; }
+  .leaflet-container { background: #ffc48a !important; }
 #dive-map { height: 85vh; width: 100%; margin-top: 16px; margin-right: 1em; border-radius: 8px; position: relative; z-index: 1; }
 .dive-pin { background: #0077b6; color: white; border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; font-size: 16px; border: 2px solid white; box-shadow: 0 2px 5px rgba(0,0,0,0.4); }
 .visit-pin { background: #e76f51; color: white; border-radius: 50%; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; font-size: 13px; border: 2px solid white; box-shadow: 0 2px 5px rgba(0,0,0,0.4); }
