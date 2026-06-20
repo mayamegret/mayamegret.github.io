@@ -135,7 +135,7 @@ const locations = [
   }
 ];
 
-const map = L.map('dive-map', { minZoom: 2 }).setView([20, 10], 2);
+const map = L.map('dive-map', { minZoom: 1 }).setView([20, 10], 2);
 
 L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
   attribution: '&copy; OpenStreetMap contributors &copy; CARTO',
