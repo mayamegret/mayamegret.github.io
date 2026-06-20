@@ -135,7 +135,7 @@ const locations = [
   }
 ];
 
-const map = L.map('dive-map', { minZoom: 2 }).setView([20, 10], 2);
+const map = L.map('dive-map', { minZoom: 3 }).setView([20, 10], 3);
 
 L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}', {
   attribution: '&copy; Esri &copy; National Geographic',
