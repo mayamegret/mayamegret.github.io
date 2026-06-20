@@ -135,11 +135,13 @@ const locations = [
   }
 ];
 
-const map = L.map('dive-map', { minZoom: 3 }).setView([20, 10], 3);
+const map = L.map('dive-map', { minZoom: 2 }).setView([20, 10], 2);
 
-L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}', {
-  attribution: '&copy; Esri &copy; National Geographic',
-  maxZoom: 16
+L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+  attribution: '&copy; OpenStreetMap contributors &copy; CARTO',
+  subdomains: 'abcd',
+  maxZoom: 19,
+  noWrap: true
 }).addTo(map);
 
 const diveIcon = L.divIcon({
