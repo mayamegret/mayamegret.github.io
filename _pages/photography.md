@@ -10,6 +10,7 @@ A selection of photos from my travels and dives
 <div id="photo-grid" class="photo-grid"></div>
 
 <div id="photo-modal" class="photo-modal">
+  <a id="modal-map-link" class="modal-map-link" style="display:none;">🗺️ See on map →</a>
   <button class="modal-close" onclick="closeModal()" aria-label="Close">&times;</button>
   <button class="modal-nav modal-prev" onclick="navModal(-1)" aria-label="Previous photo">&#8249;</button>
   <div id="modal-img"></div>
@@ -19,9 +20,6 @@ A selection of photos from my travels and dives
 </div>
 
 <style>
-.photo-tile.size-large { grid-column: span 2; grid-row: span 2; }
-.photo-tile.size-wide { grid-column: span 2; }
-.photo-tile.size-tall { grid-row: span 2; }
 .photo-grid {
   columns: 3;
   column-gap: 18px;
@@ -49,20 +47,6 @@ A selection of photos from my travels and dives
 .photo-tile.is-stack::before, .photo-tile.is-stack::after { content: ""; position: absolute; inset: 0; background: #fff; border: 1px solid #ddd; border-radius: 6px; z-index: 1; }
 .photo-tile.is-stack::before { transform: rotate(-5deg) translate(-5px, 4px); }
 .photo-tile.is-stack::after { transform: rotate(5deg) translate(5px, -4px); }
-.photo-modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.9); z-index: 9999; align-items: center; justify-content: center; }
-.photo-modal.open {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-.modal-caption {
-  color: #fff;
-  font-size: 0.95rem;
-  text-align: center;
-  padding: 0 20px;
-  max-width: 80vw;
-}
-}
 .photo-modal {
   display: none;
   position: fixed;
@@ -122,7 +106,4 @@ A selection of photos from my travels and dives
   color: #ccc;
   font-size: 0.85rem;
 }
-</style>
-
-<script src="/assets/js/photography-gallery.js"></script>
-
+.modal-map-link { position: fixed; bottom: 90px; left: 0; right: 0; text-align: center; color: #fff; font-size: 0.9rem; text-decoration:
