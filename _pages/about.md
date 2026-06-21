@@ -10,6 +10,6 @@ I am a marine biologist completing my MSc at the Universidade do Algarve, where 
 
 <div style="display: flex; gap: 12px; margin-top: 24px;">
   <img src="/images/photography/MomTessMaya.jpg" style="width: 50%; border-radius: 8px; object-fit: cover; aspect-ratio: 1/1;">
-  <img src="/images/photography/dadTessMaya.jpg" style="width: 50%; border-radius: 8px; object-fit: cover; aspect-ratio: 1/1;">
+  <img src="/images/photography/DadTessMaya.jpg" style="width: 50%; border-radius: 8px; object-fit: cover; aspect-ratio: 1/1;">
  
 </div>
