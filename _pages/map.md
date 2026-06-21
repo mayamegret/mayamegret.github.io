@@ -28,6 +28,7 @@ author_profile: false
 .popup-species li { margin-bottom: 2px; }
 .popup-photos { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; }
 .popup-photos img { width: 85px; height: 65px; object-fit: cover; border-radius: 4px; }
+.map-icon { display: flex; align-items: center; justify-content: center; }
 </style>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
