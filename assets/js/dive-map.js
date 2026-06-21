@@ -129,4 +129,105 @@ const locations = [
   {
     name: "Závora",
     country: "Mozambique",
-    coords:
+    coords: [-24.52, 35.20],
+    type: "dive",
+    dates: "July 2-25th, 2025",
+    description: "During my first month in Mozambique, I interned with MAR Divers where I completed 26 scientific dives focused on photo identification of manta rays, nudibranch diversity surveys, and predatory fish surveys. Additionally, my internship focused on Humpback whale migration surveys from the sand dunes and from the boat. We were so lucky to experience a whale swimming by us on one of our last dives!",
+    species: [
+      "Humpback whale <em>(Megaptera novaeangliae)</em>",
+      "Oceanic Manta Ray <em>(Mobula birostris)</em>",
+      "Reef Manta Ray <em>(Mobula alfredi)</em>"
+    ],
+    photos: []
+  },
+  {
+    name: "Guinjata Bay",
+    country: "Mozambique",
+    coords: [-24.07, 35.48],
+    type: "dive",
+    dates: "July 13th, 2025",
+    description: "Spent a night in Guinjata doing a receiver retrieval, it was a lovely time.",
+    species: [],
+    photos: []
+  },
+  {
+    name: "Faro",
+    country: "Portugal",
+    coords: [37.02, -7.93],
+    type: "visit",
+    dates: "September 2025 - June 2026",
+    description: "Lived in Faro while I completed my masters courses at UAlg! I had a cute apartment downtown, spent plenty of time at the beach, and was lucky enough to visit Lisbon and Nazare while living there!",
+    species: [],
+    photos: ["/images/map/Faro1.JPG", "/images/map/Faro2.JPG", "/images/map/Faro3.jpg"]
+  },
+  {
+    name: "Závora",
+    country: "Mozambique",
+    coords: [-24.53, 35.21],
+    type: "dive",
+    dates: "January-February 2026",
+    description: "I spent 6 weeks back in Závora to collect the data for my thesis research! I completed 45 scientific dive surveys comparing three different SCUBA-based sampling methodologies for assessing the abundance and species diversity of nudibranchs across 3 different rocky reef sites. It was a spectacular time, I collected data on the size, species, depth, substrate, any additional observations, and photographs of 343 nudibranchs! I am extremely grateful for the MAR Team, especially Nakia, Emily, Ed, and Patrick for all of their help, I truly couldn't have done it without them.",
+    species: [
+      "Oceanic Manta Ray <em>(Mobula birostris)</em>",
+      "Reef Manta Ray <em>(Mobula alfredi)</em>"
+    ],
+    photos: []
+  },
+  {
+    name: "Honolulu",
+    country: "Hawai'i, USA",
+    coords: [21.31, -157.86],
+    type: "dive",
+    dates: "May 2026 - Present",
+    description: "I moved to Hawai'i as I finish up my masters thesis to get my Divemaster certification with Hawaiian Diving Adventures! It began with getting Stress & Rescue certified, and then I began my Divemaster program.",
+    species: [],
+    photos: []
+  }
+];
+
+const map = L.map('dive-map', { minZoom: 2 }).setView([20, 10], 2);
+
+L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}', {
+  attribution: '&copy; Esri &copy; National Geographic',
+  maxZoom: 16
+}).addTo(map);
+
+const diveIcon = L.divIcon({
+  html: '<div class="dive-pin">🤿</div>',
+  className: '',
+  iconSize: [32, 32],
+  iconAnchor: [16, 16],
+  popupAnchor: [0, -18]
+});
+
+const visitIcon = L.divIcon({
+  html: '<div class="visit-pin">📍</div>',
+  className: '',
+  iconSize: [28, 28],
+  iconAnchor: [14, 14],
+  popupAnchor: [0, -16]
+});
+
+function buildPopup(loc) {
+  let html = `<div class="popup-title">${loc.name}, ${loc.country}</div>`;
+  if (loc.dates) html += `<div class="popup-dates">${loc.dates}</div>`;
+  if (loc.description) html += `<div class="popup-description">${loc.description}</div>`;
+  if (loc.species && loc.species.length > 0) {
+    html += `<div class="popup-species"><strong>Species highlights:</strong><ul>`;
+    loc.species.forEach(s => html += `<li>${s}</li>`);
+    html += `</ul></div>`;
+  }
+  if (loc.photos && loc.photos.length > 0) {
+    html += `<div class="popup-photos">`;
+    loc.photos.forEach(p => html += `<img src="${p}" alt="">`);
+    html += `</div>`;
+  }
+  return html;
+}
+
+locations.forEach(loc => {
+  const icon = loc.type === 'dive' ? diveIcon : visitIcon;
+  L.marker(loc.coords, { icon })
+    .bindPopup(buildPopup(loc), { maxWidth: 280 })
+    .addTo(map);
+});
