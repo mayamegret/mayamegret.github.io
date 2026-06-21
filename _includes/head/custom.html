@@ -8,10 +8,15 @@
   .author__avatar img { width: 150px; height: 150px; object-fit: cover; object-position: 50% 20%; }
   footer a:has(.fa-rss-square) { display: none; }
   body { background-color: #ffc48a; color: #2c4a3e; }
+  body, #main, article.page, .page__inner-wrap, .page__content { background-color: #ffc48a !important; }
   .sidebar { background-color: #ffa44a !important; align-self: stretch !important; }
   .sidebar > div { background: none !important; }
+  .sidebar { width: 300px !important; min-width: 300px !important; }
   .sidebar, .sidebar p, .sidebar h3, .sidebar a, .author__name, .author__bio, .author__pronouns { color: #fff !important; }
   .author__name { font-family: 'Notable', sans-serif !important; }
+  .author__name { letter-spacing: 4px !important; }
   .author__avatar, .author__content, .author__urls-wrapper { padding-left: 12px; }
-  .author__urls-wrapper > button { display: none !important; }
+  .author__avatar { padding-left: 0 !important; display: flex !important; justify-content: center !important; }
+  .author__content { padding-left: 0 !important; text-align: center !important; }
+  .author__urls-wrapper { padding-left: 0 !important; }
 </style>
