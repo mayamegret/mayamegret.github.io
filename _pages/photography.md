@@ -5,7 +5,7 @@ permalink: /photography/
 author_profile: false
 ---
 
-A selection of photos from my travels and dives
+A selection of photos from my travels and dives!
 
 <div id="photo-grid" class="photo-grid"></div>
 
@@ -106,4 +106,8 @@ A selection of photos from my travels and dives
   color: #ccc;
   font-size: 0.85rem;
 }
-.modal-map-link { position: fixed; bottom: 90px; left: 0; right: 0; text-align: center; color: #fff; font-size: 0.9rem; text-decoration:
+.modal-map-link { position: fixed; bottom: 90px; left: 0; right: 0; text-align: center; color: #fff; font-size: 0.9rem; text-decoration: none; z-index: 10001; }
+.modal-map-link:hover { text-decoration: underline; }
+</style>
+
+<script src="/assets/js/photography-gallery.js"></script>
