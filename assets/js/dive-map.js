@@ -163,7 +163,7 @@ const locations = [
   {
     name: "Závora",
     country: "Mozambique",
-    coords: [-24.53, 35.21],
+    coords: [-24.30, 35.20],
     type: "dive",
     dates: "January-February 2026",
     description: "I spent 6 weeks back in Závora to collect the data for my thesis research! I completed 45 scientific dive surveys comparing three different SCUBA-based sampling methodologies for assessing the abundance and species diversity of nudibranchs across 3 different rocky reef sites. It was a spectacular time, I collected data on the size, species, depth, substrate, any additional observations, and photographs of 343 nudibranchs! I am extremely grateful for the MAR Team, especially Nakia, Emily, Ed, and Patrick for all of their help, I truly couldn't have done it without them.",
