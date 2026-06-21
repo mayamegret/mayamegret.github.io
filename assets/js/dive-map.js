@@ -41,7 +41,8 @@ const locations = [
       "Bull sharks <em>(Carcharhinus leucas)</em>",
       "Nurse sharks <em>(Ginglymostoma cirratum)</em>"
     ],
-    photos: ["/images/map/JoeyMayaFiji.jpg", "/images/map/Fiji2.jpg"]
+    photos: ["/images/map/JoeyMayaFiji.jpg", "/images/map/Fiji2.jpg"],
+    galleryId: "fiji"
   },
   {
     name: "Port Lincoln",
@@ -51,7 +52,8 @@ const locations = [
     dates: "November 20-22nd, 2022",
     description: "We came for the great white sharks, we stayed for the koalas. A really special time in my heart.",
     species: [],
-    photos: ["/images/map/PortLincoln1.JPG", "/images/map/PortLincoln2.JPG", "/images/map/PortLincoln3.JPG", "/images/map/PortLincoln4.JPG"]
+    photos: ["/images/map/PortLincoln1.JPG", "/images/map/PortLincoln2.JPG", "/images/map/PortLincoln3.JPG", "/images/map/PortLincoln4.JPG"],
+    galleryId: "port-lincoln"
   },
   {
     name: "Cephalonia",
@@ -61,7 +63,8 @@ const locations = [
     dates: "July 22nd, 2023",
     description: "During my fieldwork in Greece monitoring nesting sea turtles and their hatchlings, I went diving! It was lovely, warm, and I saw a few nudis!",
     species: [],
-    photos: ["/images/map/Cephalonia1.jpg"]
+    photos: ["/images/map/Cephalonia1.jpg"],
+    galleryId: "cephalonia"
   },
   {
     name: "Isla Bastimentos",
@@ -81,7 +84,8 @@ const locations = [
     dates: "July 4-6th, 2024",
     description: "",
     species: [],
-    photos: ["/images/map/Cartagena1.JPG", "/images/map/Cartagena2.jpg", "/images/map/Cartagena3.JPG"]
+    photos: ["/images/map/Cartagena1.JPG", "/images/map/Cartagena2.jpg", "/images/map/Cartagena3.JPG"],
+    galleryId: "cartagena"
   },
   {
     name: "Bogotá",
@@ -91,7 +95,8 @@ const locations = [
     dates: "July 30 - August 3rd, 2024",
     description: "",
     species: [],
-    photos: ["/images/map/Bogota1.jpg", "/images/map/Bogota2.JPG", "/images/map/Bogota3.JPG", "/images/map/Bogota4.JPG"]
+    photos: ["/images/map/Bogota1.jpg", "/images/map/Bogota2.JPG", "/images/map/Bogota3.JPG", "/images/map/Bogota4.JPG"],
+    galleryId: "bogota"
   },
   {
     name: "La Jolla, San Diego",
@@ -114,7 +119,8 @@ const locations = [
     dates: "February-May 2025",
     description: "During my masters courses at UAlg, I completed my advanced open water course and completed a scientific diving course with Diogo at CCMAR. It was an amazing experience, I learned so many great skills, improved my buoyancy and trim, and learned how to conduct science underwater! From these dives, I realized how important diving is to my career as a marine biologist and it has led me down the path I am on today!",
     species: [],
-    photos: ["/images/map/Sagres1.JPG", "/images/map/Sagres2.JPG"]
+    photos: ["/images/map/Sagres1.JPG", "/images/map/Sagres2.JPG"],
+    galleryId: "sagres"
   },
   {
     name: "Aix-en-Provence",
@@ -124,7 +130,8 @@ const locations = [
     dates: "April 10-15th, 2025",
     description: "Dad and I went to visit family in Aix for a few days, it was so so lovely!! We ate amazing food, we explored the markets every morning, and spent the rest of our time with loved ones we hadn't seen in too long.",
     species: [],
-    photos: ["/images/map/Aix1.jpg", "/images/map/Aix2.jpg", "/images/map/Aix5.jpg"]
+    photos: ["/images/map/Aix1.jpg", "/images/map/Aix2.jpg", "/images/map/Aix5.jpg"],
+    galleryId: "aix"
   },
   {
     name: "Závora",
@@ -138,7 +145,8 @@ const locations = [
       "Oceanic Manta Ray <em>(Mobula birostris)</em>",
       "Reef Manta Ray <em>(Mobula alfredi)</em>"
     ],
-    photos: []
+    photos: [],
+    galleryId: "zavora"
   },
   {
     name: "Guinjata Bay",
@@ -158,7 +166,8 @@ const locations = [
     dates: "September 2025 - June 2026",
     description: "Lived in Faro while I completed my masters courses at UAlg! I had a cute apartment downtown, spent plenty of time at the beach, and was lucky enough to visit Lisbon and Nazare while living there!",
     species: [],
-    photos: ["/images/map/Faro1.JPG", "/images/map/Faro2.JPG", "/images/map/Faro3.jpg"]
+    photos: ["/images/map/Faro1.JPG", "/images/map/Faro2.JPG", "/images/map/Faro3.jpg"],
+    galleryId: "faro"
   },
   {
     name: "Závora",
@@ -181,7 +190,8 @@ const locations = [
     dates: "May 2026 - Present",
     description: "I moved to Hawai'i as I finish up my masters thesis to get my Divemaster certification with Hawaiian Diving Adventures! It began with getting Stress & Rescue certified, and then I began my Divemaster program.",
     species: [],
-    photos: []
+    photos: [],
+    galleryId: "honolulu"
   }
 ];
 
@@ -218,9 +228,15 @@ function buildPopup(loc) {
     html += `</ul></div>`;
   }
   if (loc.photos && loc.photos.length > 0) {
-    html += `<div class="popup-photos">`;
-    loc.photos.forEach(p => html += `<img src="${p}" alt="">`);
-    html += `</div>`;
+    const count = loc.photos.length;
+    const link = loc.galleryId ? `/photography/#${loc.galleryId}` : null;
+    html += link ? `<a href="${link}" class="popup-stack-link">` : '<div>';
+    html += `<div class="popup-stack ${count > 1 ? 'is-stack' : ''}">
+      <img src="${loc.photos[0]}" alt="" class="popup-stack-img">
+      ${count > 1 ? `<span class="popup-stack-badge">+${count - 1}</span>` : ''}
+    </div>`;
+    if (link) html += `<div class="popup-gallery-link">View in gallery →</div>`;
+    html += link ? '</a>' : '</div>';
   }
   return html;
 }
@@ -231,3 +247,9 @@ locations.forEach(loc => {
     .bindPopup(buildPopup(loc), { maxWidth: 280 })
     .addTo(map);
 });
+
+if (window.location.hash) {
+  const id = window.location.hash.slice(1);
+  const loc = locations.find(l => l.galleryId === id);
+  if (loc) map.setView(loc.coords, 8);
+}
