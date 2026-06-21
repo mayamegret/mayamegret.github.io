@@ -193,27 +193,19 @@ L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_M
 }).addTo(map);
 
 const diveIcon = L.divIcon({
-  html: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <circle cx="12" cy="5" r="2"/>
-    <path d="M12 7v12"/>
-    <path d="M5 12h14"/>
-    <path d="M5 20c1.5-1 3.5-1.5 7-1.5s5.5.5 7 1.5"/>
-  </svg>`,
-  className: '',
-  iconSize: [28, 28],
-  iconAnchor: [14, 14],
-  popupAnchor: [0, -14]
+  html: '<i class="fas fa-anchor" style="font-size:18px; color:#1a1a1a;"></i>',
+  className: 'map-icon',
+  iconSize: [20, 20],
+  iconAnchor: [10, 10],
+  popupAnchor: [0, -10]
 });
 
 const visitIcon = L.divIcon({
-  html: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="28" fill="none" stroke="#222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-    <circle cx="12" cy="10" r="3"/>
-  </svg>`,
-  className: '',
-  iconSize: [24, 28],
-  iconAnchor: [12, 28],
-  popupAnchor: [0, -28]
+  html: '<i class="fas fa-map-marker-alt" style="font-size:22px; color:#1a1a1a;"></i>',
+  className: 'map-icon',
+  iconSize: [20, 26],
+  iconAnchor: [10, 26],
+  popupAnchor: [0, -26]
 });
 
 function buildPopup(loc) {
