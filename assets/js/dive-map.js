@@ -5,7 +5,7 @@ const locations = [
     coords: [36.85, -75.98],
     type: "dive",
     dates: "July 24-25th, 2022",
-    description: "Where I completed my Open Water certification.",
+    description: "Where I completed my Open Water certification with dad! We got certified the same summer we built our pond in the backyard of the home I grew up in. A very special time that I look back on so fondly.",
     species: [],
     photos: []
   },
@@ -59,7 +59,7 @@ const locations = [
     coords: [9.35, -82.17],
     type: "dive",
     dates: "March 27th, 2024",
-    description: "Brynn, dad, and I went diving together and it was stunning, had a great great time!",
+    description: "Brynn, dad, and I went diving together on our family trip to Panama! It was stunning, had a great great time, even did a night dive!",
     species: [],
     photos: []
   },
@@ -133,6 +133,56 @@ const locations = [
     species: [],
     photos: []
   }
+  {
+  name: "Faro",
+  country: "Portugal",
+  coords: [37.02, -7.93],
+  type: "visit",
+  dates: "September 2025 - June 2026",
+  description: "Lived in Faro while I completed my masters courses at UAlg! I had a cute apartment downtown, spent plenty of time at the beach, and was lucky enough to visit Lisbon and Nazare while living there!",
+  species: [],
+  photos: []
+},
+{
+  name: "Aix-en-Provence",
+  country: "France",
+  coords: [43.53, 5.45],
+  type: "visit",
+  dates: "April 10-15th, 2025",
+  description: "Dad and I went to visit family in Aix for a few days, it was so so lovely!! We ate amazing food, we explored the markets every morning, and spent the rest of our time with loved ones we hadn't seen in too long.",
+  species: [],
+  photos: []
+},
+{
+  name: "Port Lincoln",
+  country: "Australia",
+  coords: [-34.73, 135.88],
+  type: "visit",
+  dates: "November 20-22nd, 2022",
+  description: "We came for the great white sharks, we stayed for the koalas. A really special time in my heart.",
+  species: [],
+  photos: []
+},
+{
+  name: "Bogotá",
+  country: "Colombia",
+  coords: [4.71, -74.07],
+  type: "visit",
+  dates: "July 30 - August 3rd, 2024",
+  description: "",
+  species: [],
+  photos: []
+},
+{
+  name: "Cartagena",
+  country: "Colombia",
+  coords: [10.39, -75.48],
+  type: "visit",
+  dates: "July 4-6th, 2024",
+  description: "",
+  species: [],
+  photos: []
+}
 ];
 
 const map = L.map('dive-map', { minZoom: 2 }).setView([20, 10], 2);
