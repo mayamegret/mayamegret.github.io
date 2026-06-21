@@ -21,8 +21,9 @@ A selection of photos from my travels and dives!
 
 <style>
 .photo-grid {
-  columns: 3;
-  column-gap: 18px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
   margin-top: 24px;
 }
 .photo-tile {
@@ -30,8 +31,6 @@ A selection of photos from my travels and dives!
   cursor: pointer;
   overflow: hidden;
   border-radius: 6px;
-  break-inside: avoid;
-  margin-bottom: 18px;
 }
 .photo-tile img {
   width: 100%;
