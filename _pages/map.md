@@ -29,6 +29,14 @@ author_profile: false
 .popup-photos { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; }
 .popup-photos img { width: 85px; height: 65px; object-fit: cover; border-radius: 4px; }
 .map-icon { display: flex; align-items: center; justify-content: center; }
+.popup-stack-link { text-decoration: none; display: block; margin-top: 8px; }
+.popup-stack { position: relative; display: block; overflow: visible; }
+.popup-stack-img { width: 100%; border-radius: 6px; display: block; position: relative; z-index: 2; }
+.popup-stack.is-stack::before, .popup-stack.is-stack::after { content: ""; position: absolute; inset: 0; background: #fff; border: 1px solid #ddd; border-radius: 6px; z-index: 1; }
+.popup-stack.is-stack::before { transform: rotate(-3deg) translate(-3px, 3px); }
+.popup-stack.is-stack::after { transform: rotate(3deg) translate(3px, -3px); }
+.popup-stack-badge { position: absolute; top: 8px; right: 8px; background: rgba(0,0,0,0.7); color: #fff; font-size: 0.75rem; padding: 2px 8px; border-radius: 12px; z-index: 3; }
+.popup-gallery-link { text-align: center; color: #0077b6; font-size: 0.85rem; margin-top: 6px; font-weight: 500; }
 </style>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
