@@ -31,6 +31,7 @@ A selection of photos from my travels and dives!
   cursor: pointer;
   overflow: hidden;
   border-radius: 6px;
+  align-self: start;
 }
 .photo-tile img {
   width: 100%;
@@ -43,9 +44,8 @@ A selection of photos from my travels and dives!
 }
 .photo-tile:hover img { transform: scale(1.04); }
 .stack-badge { position: absolute; top: 8px; right: 8px; background: rgba(0,0,0,0.7); color: #fff; font-size: 0.75rem; padding: 2px 8px; border-radius: 12px; z-index: 3; }
-.photo-tile.is-stack::before, .photo-tile.is-stack::after { content: ""; position: absolute; inset: 0; background: #fff; border: 1px solid #ddd; border-radius: 6px; z-index: 1; }
-.photo-tile.is-stack::before { transform: rotate(-5deg) translate(-5px, 4px); }
-.photo-tile.is-stack::after { transform: rotate(5deg) translate(5px, -4px); }
+.photo-tile.is-stack::before, .photo-tile.is-stack::after { display: none; }
+.photo-tile.is-stack { box-shadow: 5px -5px 0 1px #d0d0d0, 10px -10px 0 1px #bbb; }
 .photo-modal {
   display: none;
   position: fixed;
