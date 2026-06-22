@@ -110,15 +110,29 @@ A selection of photos from my travels and dives!
 
 <script src="/assets/js/photography-gallery.js"></script>
 <script>
-function resizeAllMasonryItems() {
+function resizeMasonryItem(tile) {
   const rowHeight = 10;
   const rowGap = 18;
-  document.querySelectorAll('.photo-tile').forEach(item => {
-    const height = item.getBoundingClientRect().height;
-    const rowSpan = Math.ceil((height + rowGap) / (rowHeight + rowGap));
-    item.style.gridRowEnd = 'span ' + rowSpan;
-  });
+  const img = tile.querySelector('img');
+  if (!img || !img.naturalWidth) return;
+  const containerWidth = tile.getBoundingClientRect().width;
+  if (!containerWidth) return;
+  const displayHeight = (img.naturalHeight / img.naturalWidth) * containerWidth;
+  const rowSpan = Math.ceil((displayHeight + rowGap) / (rowHeight + rowGap));
+  tile.style.gridRowEnd = 'span ' + rowSpan;
 }
-window.addEventListener('load', resizeAllMasonryItems);
-window.addEventListener('resize', resizeAllMasonryItems);
+
+document.querySelectorAll('.photo-tile').forEach(tile => {
+  const img = tile.querySelector('img');
+  if (!img) return;
+  if (img.complete && img.naturalWidth) {
+    resizeMasonryItem(tile);
+  } else {
+    img.addEventListener('load', () => resizeMasonryItem(tile));
+  }
+});
+
+window.addEventListener('resize', () => {
+  document.querySelectorAll('.photo-tile').forEach(tile => resizeMasonryItem(tile));
+});
 </script>
