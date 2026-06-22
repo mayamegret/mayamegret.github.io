@@ -26,6 +26,22 @@
     .sidebar { width: 100% !important; min-width: 0 !important; align-self: auto !important; }
     .sidebar.sticky { flex: 0 0 auto !important; width: 100% !important; min-width: 0 !important; }
     article.page { padding-left: 0 !important; width: 100% !important; }
-    .author__avatar img { width: 120px !important; height: 120px !important; border-radius: 50% !important; }
+    .author__avatar {
+      width: 120px !important;
+      height: 120px !important;
+      min-width: 0 !important;
+      margin: 0 auto 12px auto !important;
+      display: block !important;
+      overflow: hidden !important;
+      border-radius: 50% !important;
+      padding: 0 !important;
+    }
+    .author__avatar img {
+      width: 120px !important;
+      height: 120px !important;
+      max-width: 120px !important;
+      border-radius: 50% !important;
+      object-fit: cover !important;
+    }
   }
 </style>
