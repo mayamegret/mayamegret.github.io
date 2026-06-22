@@ -23,6 +23,7 @@ A selection of photos from my travels and dives!
 .photo-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 10px;
   gap: 18px;
   margin-top: 24px;
 }
@@ -31,7 +32,6 @@ A selection of photos from my travels and dives!
   cursor: pointer;
   overflow: hidden;
   border-radius: 6px;
-  align-self: start;
 }
 .photo-tile img {
   width: 100%;
@@ -45,7 +45,6 @@ A selection of photos from my travels and dives!
 .photo-tile:hover img { transform: scale(1.04); }
 .stack-badge { position: absolute; top: 8px; right: 8px; background: rgba(0,0,0,0.7); color: #fff; font-size: 0.75rem; padding: 2px 8px; border-radius: 12px; z-index: 3; }
 .photo-tile.is-stack::before, .photo-tile.is-stack::after { display: none; }
-.photo-tile.is-stack { box-shadow: 5px -5px 0 1px #d0d0d0, 10px -10px 0 1px #bbb; }
 .photo-modal {
   display: none;
   position: fixed;
@@ -110,3 +109,16 @@ A selection of photos from my travels and dives!
 </style>
 
 <script src="/assets/js/photography-gallery.js"></script>
+<script>
+function resizeAllMasonryItems() {
+  const rowHeight = 10;
+  const rowGap = 18;
+  document.querySelectorAll('.photo-tile').forEach(item => {
+    const height = item.getBoundingClientRect().height;
+    const rowSpan = Math.ceil((height + rowGap) / (rowHeight + rowGap));
+    item.style.gridRowEnd = 'span ' + rowSpan;
+  });
+}
+window.addEventListener('load', resizeAllMasonryItems);
+window.addEventListener('resize', resizeAllMasonryItems);
+</script>
