@@ -8,6 +8,7 @@ const tiles = [
   { photos: ["/images/photography/IMG_2277.jpg"] },
   { photos: ["/images/photography/IMG_2347.jpg"] },
   { photos: ["/images/photography/IMG_9902.jpg", "/images/photography/Josephines.jpg", "/images/photography/IMG_9884.jpg", "/images/photography/Maya24Bday.jpg"], caption: "Springtime back home" },
+  { photos: ["/images/map/ElSalvador1.jpg", "/images/map/ElSalvador2.JPG"], caption: "Celebrating my best friend in El Salvador", id: "el-salvador", mapLink: "/map/#el-salvador" },
   { photos: ["/images/photography/IMG_6375.jpg", "/images/photography/P1230432.jpg", "/images/photography/P2171886.jpg"] },
   { photos: ["/images/photography/IMG_7117.jpg"] },
   { photos: ["/images/photography/IMG_4483.jpg"] },
@@ -26,6 +27,8 @@ const tiles = [
   { photos: ["/images/map/Bogota1.jpg", "/images/map/Bogota2.JPG", "/images/map/Bogota3.JPG", "/images/map/Bogota4.JPG"], caption: "Bogotá, Colombia", id: "bogota", mapLink: "/map/#bogota" },
   { photos: ["/images/map/Cartagena1.JPG", "/images/map/Cartagena2.jpg", "/images/map/Cartagena3.JPG"], caption: "Cartagena, Colombia", id: "cartagena", mapLink: "/map/#cartagena" },
   { photos: ["/images/map/Cephalonia1.jpg"], caption: "Cephalonia, Greece", id: "cephalonia", mapLink: "/map/#cephalonia" },
+  { photos: ["/images/map/Greece1.jpg", "/images/map/Greece2.jpg", "/images/map/Greece3.jpg", "/images/map/Greece4.JPG", "/images/map/Greece5.jpg", "/images/map/Greece6.JPG"], caption: "Cephalonia, Greece", mapLink: "/map/#cephalonia" },
+  { photos: ["/images/map/GreeceFriends1.JPG", "/images/map/GreeceFriends2.jpg", "/images/map/GreeceFriends3.JPG", "/images/map/GreeceFriends4.JPG", "/images/map/GreeceFriends5.jpg"], caption: "Friends in Greece", mapLink: "/map/#cephalonia" },
   { photos: ["/images/map/JoeyMayaFiji.jpg", "/images/map/Fiji2.jpg"], caption: "Pacific Harbor, Fiji", id: "fiji", mapLink: "/map/#fiji" },
   { photos: ["/images/map/PortLincoln1.JPG", "/images/map/PortLincoln2.JPG", "/images/map/PortLincoln3.JPG", "/images/map/PortLincoln4.JPG"], caption: "Port Lincoln, Australia", id: "port-lincoln", mapLink: "/map/#port-lincoln" }
 ];
