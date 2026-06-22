@@ -264,3 +264,62 @@ const locations = [
     galleryId: "honolulu"
   }
 ];
+
+const map = L.map('dive-map', { minZoom: 2 }).setView([20, 10], 2);
+
+L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}', {
+  attribution: '&copy; Esri &copy; National Geographic',
+  maxZoom: 16
+}).addTo(map);
+
+const diveIcon = L.divIcon({
+  html: '<i class="fas fa-anchor" style="font-size:18px; color:#1a1a1a;"></i>',
+  className: 'map-icon',
+  iconSize: [20, 20],
+  iconAnchor: [10, 10],
+  popupAnchor: [0, -10]
+});
+
+const visitIcon = L.divIcon({
+  html: '<i class="fas fa-map-marker-alt" style="font-size:22px; color:#1a1a1a;"></i>',
+  className: 'map-icon',
+  iconSize: [20, 26],
+  iconAnchor: [10, 26],
+  popupAnchor: [0, -26]
+});
+
+function buildPopup(loc) {
+  let html = `<div class="popup-title">${loc.name}, ${loc.country}</div>`;
+  if (loc.dates) html += `<div class="popup-dates">${loc.dates}</div>`;
+  if (loc.description) html += `<div class="popup-description">${loc.description}</div>`;
+  if (loc.species && loc.species.length > 0) {
+    html += `<div class="popup-species"><strong>Species highlights:</strong><ul>`;
+    loc.species.forEach(s => html += `<li>${s}</li>`);
+    html += `</ul></div>`;
+  }
+  if (loc.photos && loc.photos.length > 0) {
+    const count = loc.photos.length;
+    const link = loc.galleryId ? `/photography/#${loc.galleryId}` : null;
+    html += link ? `<a href="${link}" class="popup-stack-link">` : '<div>';
+    html += `<div class="popup-stack ${count > 1 ? 'is-stack' : ''}">
+      <img src="${loc.photos[0]}" alt="" class="popup-stack-img">
+      ${count > 1 ? `<span class="popup-stack-badge">+${count - 1}</span>` : ''}
+    </div>`;
+    if (link) html += `<div class="popup-gallery-link">View in gallery →</div>`;
+    html += link ? '</a>' : '</div>';
+  }
+  return html;
+}
+
+locations.forEach(loc => {
+  const icon = loc.type === 'dive' ? diveIcon : visitIcon;
+  L.marker(loc.coords, { icon })
+    .bindPopup(buildPopup(loc), { maxWidth: 280 })
+    .addTo(map);
+});
+
+if (window.location.hash) {
+  const id = window.location.hash.slice(1);
+  const loc = locations.find(l => l.galleryId === id);
+  if (loc) map.setView(loc.coords, 8);
+}
