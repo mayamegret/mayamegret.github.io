@@ -253,6 +253,17 @@ const locations = [
     photos: []
   },
   {
+  name: "El Salvador",
+  country: "El Salvador",
+  coords: [13.69, -89.22],
+  type: "visit",
+  dates: "March 27-31st, 2026",
+  description: "Celebrating my best friend in El Salvador!",
+  species: [],
+  photos: ["/images/map/ElSalvador1.jpg", "/images/map/ElSalvador2.JPG"],
+  galleryId: "el-salvador"
+},
+  {
     name: "Honolulu",
     country: "Hawai'i, USA",
     coords: [21.31, -157.86],
