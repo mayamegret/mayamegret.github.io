@@ -1,7 +1,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Notable&display=swap" rel="stylesheet">
-
 <style>
   .page__hero { height: 200px; min-height: 200px; overflow: hidden; }
   .page__hero img { height: 100%; width: 100%; object-fit: cover; }
@@ -21,4 +20,12 @@
   #main { display: flex !important; }
   .sidebar.sticky { flex: 0 0 300px !important; width: 300px !important; position: relative !important; top: auto !important; }
   article.page { flex: 1 !important; min-width: 0 !important; padding-left: 20px !important; }
+
+  @media (max-width: 767px) {
+    #main { flex-direction: column !important; }
+    .sidebar { width: 100% !important; min-width: 0 !important; align-self: auto !important; }
+    .sidebar.sticky { flex: 0 0 auto !important; width: 100% !important; min-width: 0 !important; }
+    article.page { padding-left: 0 !important; width: 100% !important; }
+    .author__avatar img { width: 120px !important; height: 120px !important; border-radius: 50% !important; }
+  }
 </style>
