@@ -4,7 +4,7 @@
 <style>
   .page__hero { height: 200px; min-height: 200px; overflow: hidden; }
   .page__hero img { height: 100%; width: 100%; object-fit: cover; }
-  .author__avatar img { width: 150px; height: 150px; object-fit: cover; object-position: 50% 20%; }
+  .author__avatar img { width: 150px; height: 150px; object-fit: cover; object-position: 50% 20%; border: none !important; padding: 0 !important; outline: none !important; box-shadow: none !important; }
   footer a:has(.fa-rss-square) { display: none; }
   .author__urls-wrapper > button { display: none !important; }
   body, #main, article.page, .page__inner-wrap, .page__content, .initial-content, .page__wrap { background-color: #ffc48a !important; }
@@ -27,19 +27,11 @@
     .sidebar.sticky { flex: 0 0 auto !important; width: 100% !important; min-width: 0 !important; }
     article.page { padding-left: 0 !important; width: 100% !important; }
     .author__urls { display: block !important; }
-    .author__avatar {
-      width: 120px !important;
-      height: 120px !important;
-      min-width: 0 !important;
-      margin: 0 auto 12px auto !important;
-      display: block !important;
-      overflow: hidden !important;
-      border-radius: 50% !important;
-      padding: 0 !important;
-    }
+    .author__avatar { display: flex !important; justify-content: center !important; padding: 0 !important; }
     .author__avatar img {
       width: 120px !important;
       height: 120px !important;
+      min-width: 120px !important;
       max-width: 120px !important;
       border-radius: 50% !important;
       object-fit: cover !important;
