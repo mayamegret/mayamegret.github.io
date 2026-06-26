@@ -55,11 +55,13 @@ A selection of photos from my travels and dives!
   align-items: center;
   justify-content: center;
   gap: 12px;
+  padding: 60px 0 60px 0;
+  box-sizing: border-box;
 }
 .photo-modal.open { display: flex; }
 #modal-img {
   width: 80vw;
-  height: 70vh;
+  height: 60vh;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -106,6 +108,18 @@ A selection of photos from my travels and dives!
 }
 .modal-map-link { position: fixed; bottom: 90px; left: 0; right: 0; text-align: center; color: #fff; font-size: 0.9rem; text-decoration: none; z-index: 10001; }
 .modal-map-link:hover { text-decoration: underline; }
+
+@media (max-width: 767px) {
+  #modal-img {
+    width: 95vw;
+    height: 50vh;
+  }
+  .modal-caption {
+    max-width: 95vw;
+    font-size: 0.85rem;
+    padding: 0 12px;
+  }
+}
 </style>
 
 <script src="/assets/js/photography-gallery.js"></script>
