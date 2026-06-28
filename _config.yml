@@ -30,6 +30,10 @@ author:
   location         : "O'ahu, Hawai'i"
   employer         : "Universidade do Algarve"
   uri              : # URL
+  links:
+    - label: "iNaturalist"
+      icon: "fas fa-leaf"
+      url: "https://www.inaturalist.org/people/mayamegret"
 
 
   # Repositories and software development
@@ -49,7 +53,7 @@ author:
   keybase          : # Username
   instagram        : # mayamegret
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : # mayamegret
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
