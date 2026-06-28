@@ -112,6 +112,17 @@ const locations = [
     photos: []
   },
   {
+    name: "Blitzingen",
+    country: "Switzerland",
+    coords: [46.40, 8.19],
+    type: "visit",
+    dates: "December 21-28th, 2024",
+    description: "A wonderful Swissmas Christmas! The four of us spent a week in a little chalet in the countryside of Switzerland, it was so magical!",
+    species: [],
+    photos: ["/images/photography/Blitzingen1.JPG", "/images/photography/Blitzingen2.JPG", "/images/photography/Blitzingen3.JPG", "/images/photography/Blitzingen4.JPG", "/images/photography/Blitzingen5.JPG", "/images/photography/Blitzingen6.JPG"],
+    galleryId: "blitzingen"
+  },
+  {
     name: "Sagres",
     country: "Portugal",
     coords: [37.02, -8.94],
