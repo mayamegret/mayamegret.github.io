@@ -123,6 +123,17 @@ const locations = [
     galleryId: "blitzingen"
   },
   {
+    name: "Swiss Alps",
+    country: "Switzerland",
+    coords: [46.40, 8.45],
+    type: "visit",
+    dates: "December 2024",
+    description: "A day trip to the Swiss Alps during our Swissmas stay!",
+    species: [],
+    photos: ["/images/photography/SwissAlps1.JPG", "/images/photography/SwissAlps2.JPG", "/images/photography/SwissAlps3.JPG", "/images/photography/SwissAlps4.JPG"],
+    galleryId: "blitzingen"
+  },
+  {
     name: "Sagres",
     country: "Portugal",
     coords: [37.02, -8.94],
