@@ -10,19 +10,21 @@
 main:
   - title: "Photography"
     url: /photography/
-    
-  - title: "Publications"
-    url: /publications/  
 
   - title: "Map"
     url: /map/
-  
-  - title: "Blog Posts"
-    url: /year-archive/
-    
+
   - title: "CV"
     url: /cv/
-    
+
+  - title: "Species Log"
+    url: /species/
+
+  - title: "Publications"
+    url: /publications/
+
+  - title: "Blog Posts"
+    url: /year-archive/
+
   # - title: "CV"
   #   url: /cv-json/
-  
