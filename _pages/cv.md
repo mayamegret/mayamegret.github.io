@@ -9,81 +9,116 @@ redirect_from:
 
 {% include base_path %}
 
-Marine biologist and scientific diver completing an MSc at the Universidade do Algarve, with field research experience across Mozambique, Greece, Costa Rica, and Australia. My thesis research compared SCUBA-based sampling methodologies for assessing nudibranch diversity and abundance on rocky reef ecosystems in Mozambique. I am passionate about marine biodiversity, underwater photography, and conservation, and am currently completing my SSI Divemaster certification in Hawai'i.
+<style>
+.cv-summary {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  color: #2c4a3e;
+}
+.cv-section-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2c4a3e;
+  border-left: 4px solid #ffa44a;
+  padding-left: 12px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.cv-section-title i { color: #ffa44a; }
+.cv-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+.cv-list li {
+  padding: 4px 0 4px 1.5rem;
+  position: relative;
+}
+.cv-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #ffa44a;
+}
+.cv-timeline {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 1rem;
+}
+.cv-timeline::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 12px;
+  bottom: 12px;
+  width: 2px;
+  background: #ffa44a;
+}
+.cv-card {
+  position: relative;
+  background: rgba(255,255,255,0.35);
+  border-radius: 8px;
+  padding: 14px 16px;
+  margin-bottom: 16px;
+}
+.cv-card::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 20px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ffa44a;
+  border: 2px solid #fff;
+  box-sizing: border-box;
+}
+.cv-card-title {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #2c4a3e;
+  margin: 0 0 2px 0;
+}
+.cv-card-subtitle {
+  font-size: 0.88rem;
+  color: #555;
+  margin: 0 0 8px 0;
+}
+.cv-card ul {
+  margin: 6px 0 0 0;
+  padding-left: 18px;
+}
+.cv-card ul li {
+  font-size: 0.9rem;
+  margin-bottom: 3px;
+  color: #2c4a3e;
+}
+.cv-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+.cv-two-col li {
+  padding: 4px 0 4px 1.5rem;
+  position: relative;
+  font-size: 0.95rem;
+}
+.cv-two-col li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #ffa44a;
+}
+@media (max-width: 600px) {
+  .cv-two-col { grid-template-columns: 1fr; }
+}
+</style>
 
-Research Interests
-======
-* Nudibranch and invertebrate ecology
-* Scientific diving
-* Sea turtle conservation
-* Coral reef ecosystem health
-* Underwater photography as a research tool
-
-Education
-======
-* M.Sc. in Marine Biology, Universidade do Algarve, Faro, Portugal. Anticipated 2026.
-* B.S. in Marine Biology, University of California San Diego. 2024.
-
-Certifications
-======
-* Divemaster. SSI. Anticipated July 2026.
-* Stress and Rescue. SSI. May 2026.
-* First Aid, CPR, Oxygen. SSI. May 2026.
-* Scientific Diving. CCMAR, UAlg. May 2025.
-
-Work Experience
-======
-* **Intern** · Marine Action Research · Závora, Mozambique (July–August 2025)
-  * Completed 26 scientific dives between 10–30 meters
-  * Collected data on the abundance and species diversity of nudibranchs on shallow inshore reefs utilizing quadrats and per-time methodologies to assess local distribution
-  * Conducted transect sampling in the Závora rockpool coral reef ecosystem to survey coral species diversity, abundance, and health
-  * Collected data on the abundance and species diversity of seahorses in the Barra Lagoon
-  * Photographed reef and oceanic manta rays for photo identification
-  * Conducted fluke photo ID and land-based surveys on population abundance and migratory patterns of Humpback whales
-
-* **Conservation Researcher** · Wildlife Sense · Cephalonia, Greece (July–August 2023)
-  * Surveyed beaches to protect Loggerhead sea turtle nests
-  * Relocated endangered nests to ensure survival during incubation
-  * Tagged nesting female turtles
-  * Aided hatchlings on their journey to sea to ensure their survival
-  * Conducted beach mapping and beach cleanups
-
-* **Conservation Researcher** · BIOMA · Ostional, Costa Rica (July 2021)
-  * Collected data on the nesting habits of Olive Ridley sea turtles
-  * Analyzed data to better understand effects on the surrounding community, oceanic ecosystems, and sea turtle populations
-  * Planted trees, participated in beach cleanups, and conducted other conservation work
-  * Rescued baby sea turtles
-
-* **UC Education Abroad Program** · Brisbane, Australia (August–November 2022)
-  * Studied marine biology and terrestrial ecology at the University of Queensland
-  * Applied knowledge to hands-on research
-  * Conducted transect sampling
-  * Conducted wet lab experiments and wrote scientific papers based on collected data and relevant research
-
-* **Admissions Clerk** · Birch Aquarium · San Diego, California (January 2022–June 2024)
-  * Handled all phases of guest visits, ensuring an exceptional experience
-
-Skills
-======
-* Advanced SCUBA Certified
-* Scientific Diving
-* Transect Sampling
-* Wet Lab Experience
-* R Studio
-* Underwater Photography
-* CPR and First Aid
-
-Relevant Courses
-======
-* Marine Biology Colloquium
-* Marine Biochemistry
-* Marine Biology Laboratory
-* Statistical Methods
-* Ocean Physics and Chemistry
-* Marine Mammal Biology
-* Ecophysiology of Marine Plants
-* Marine Biogeography and Evolution
-
-References
-======
-Available upon request
+<p class="cv-summary">Marine biologist and scientific diver completing an MSc at the Universidade do Algarve, with field research experience across Mozambique, Greece, Costa Rica, and Australia. My thesis research compared SCUBA-based sampling methodologies for assessing nudibranch diversity and abundance on rocky reef ecosystems in Mozambique. I am passionate about marine biodiversity, underwater photography, and conservation, and am currently
