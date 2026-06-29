@@ -187,7 +187,7 @@ const locations = [
     dates: "December 2024",
     description: "A day trip to the Swiss Alps during our Swissmas stay!",
     species: [],
-    photos: ["/images/photography/SwissAlps1.JPG", "/images/photography/SwissAlps2.jpg", "/images/photography/SwissAlps3.JPG", "/images/photography/SwissAlps4.JPG"],
+    photos: ["/images/photography/SwissAlps2.jpg", "/images/photography/SwissAlps1.JPG", "/images/photography/SwissAlps3.JPG", "/images/photography/SwissAlps4.JPG"],
     galleryId: "blitzingen"
   },
   {
@@ -209,7 +209,7 @@ const locations = [
     dates: "April 10-15th, 2025",
     description: "Dad and I went to visit family in Aix for a few days, it was so so lovely!! We ate amazing food, we explored the markets every morning, and spent the rest of our time with loved ones we hadn't seen in too long.",
     species: [],
-    photos: ["/images/map/Aix1.jpg", "/images/map/Aix2.jpg", "/images/map/Aix3.jpg", "/images/map/Aix4.jpg", "/images/map/Aix5.jpg", "/images/map/Aix6.jpg", "/images/map/Aix7.jpg", "/images/map/Aix8.jpg"],
+    photos: ["/images/map/Aix1.jpg", "/images/map/Aix2.jpg", "/images/map/Aix3.jpg", "/images/map/Aix4.jpg", "/images/map/Aix5.jpg", "/images/map/Aix6.jpg", "/images/map/Aix7.jpg", "/images/map/Aix8.jpg", "/images/map/Aix9.jpg", "/images/map/Aix10.jpg", "/images/map/Aix11.jpg"],
     galleryId: "aix"
   },
   {
@@ -294,122 +294,3 @@ const locations = [
     species: [],
     photos: ["/images/map/Tromso1.jpg", "/images/map/Tromso2.jpg", "/images/map/Tromso3.JPG", "/images/map/Tromso4.JPG"],
     galleryId: "tromso"
-  },
-  {
-    name: "Bergen",
-    country: "Norway",
-    coords: [60.39, 5.32],
-    type: "visit",
-    dates: "December 27-30th, 2025",
-    description: "We finished our time in Norway in Bergen for a few days, where we did a beautiful boat tour of the fjords!",
-    species: [],
-    photos: ["/images/map/Bergen1.JPG", "/images/map/Bergen2.JPG", "/images/map/Bergen3.jpg", "/images/map/Bergen4.JPG"],
-    galleryId: "bergen"
-  },
-  {
-    name: "Copenhagen",
-    country: "Denmark",
-    coords: [55.68, 12.57],
-    type: "visit",
-    dates: "December 30th, 2025 - January 3rd, 2026",
-    description: "Andrew and Bella joined the four of us in Copenhagen for a beautiful NYE! We toured the city, stopping at every cute shop and photobooth we could. We drank plenty of glögg and played many card games!",
-    species: [],
-    photos: ["/images/map/Copenhagen1.jpg", "/images/map/Copenhagen2.JPG", "/images/map/Copenhagen3.jpg", "/images/map/Copenhagen4.JPG", "/images/map/Copenhagen5.jpeg", "/images/map/Copenhagen6.jpg", "/images/map/Copenhagen7.jpg"],
-    galleryId: "copenhagen"
-  },
-  {
-    name: "Závora",
-    country: "Mozambique",
-    coords: [-24.30, 35.20],
-    type: "dive",
-    dates: "January-February 2026",
-    description: "I spent 6 weeks back in Závora to collect the data for my thesis research! I completed 45 scientific dive surveys comparing three different SCUBA-based sampling methodologies for assessing the abundance and species diversity of nudibranchs across 3 different rocky reef sites. It was a spectacular time, I collected data on the size, species, depth, substrate, any additional observations, and photographs of 343 nudibranchs! I am extremely grateful for the MAR Team, especially Nakia, Emily, Ed, and Patrick for all of their help, I truly couldn't have done it without them.",
-    species: [
-      "Oceanic Manta Ray <em>(Mobula birostris)</em>",
-      "Reef Manta Ray <em>(Mobula alfredi)</em>",
-      "Humpback dolphins <em>(Sousa chinensis)</em>"
-    ],
-    photos: []
-  },
-  {
-    name: "El Salvador",
-    country: "El Salvador",
-    coords: [13.69, -89.22],
-    type: "visit",
-    dates: "March 27-31st, 2026",
-    description: "Celebrating my best friend in El Salvador!",
-    species: [],
-    photos: ["/images/photography/ElSalvador1.jpg", "/images/photography/ElSalvador2.JPG"],
-    galleryId: "el-salvador"
-  },
-  {
-    name: "Honolulu",
-    country: "Hawai'i, USA",
-    coords: [21.31, -157.86],
-    type: "dive",
-    dates: "May 2026 - Present",
-    description: "I moved to Hawai'i as I finish up my masters thesis to get my Divemaster certification with Hawaiian Diving Adventures! It began with getting Stress & Rescue certified, and then I began my Divemaster program.",
-    species: [],
-    photos: [],
-    galleryId: "honolulu"
-  }
-];
-
-const map = L.map('dive-map', { minZoom: 2 }).setView([20, 10], 2);
-
-L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}', {
-  attribution: '&copy; Esri &copy; National Geographic',
-  maxZoom: 16
-}).addTo(map);
-
-const diveIcon = L.divIcon({
-  html: '<i class="fas fa-anchor" style="font-size:18px; color:#1a1a1a;"></i>',
-  className: 'map-icon',
-  iconSize: [20, 20],
-  iconAnchor: [10, 10],
-  popupAnchor: [0, -10]
-});
-
-const visitIcon = L.divIcon({
-  html: '<i class="fas fa-map-marker-alt" style="font-size:22px; color:#1a1a1a;"></i>',
-  className: 'map-icon',
-  iconSize: [20, 26],
-  iconAnchor: [10, 26],
-  popupAnchor: [0, -26]
-});
-
-function buildPopup(loc) {
-  let html = `<div class="popup-title">${loc.name}, ${loc.country}</div>`;
-  if (loc.dates) html += `<div class="popup-dates">${loc.dates}</div>`;
-  if (loc.description) html += `<div class="popup-description">${loc.description}</div>`;
-  if (loc.species && loc.species.length > 0) {
-    html += `<div class="popup-species"><strong>Species highlights:</strong><ul>`;
-    loc.species.forEach(s => html += `<li>${s}</li>`);
-    html += `</ul></div>`;
-  }
-  if (loc.photos && loc.photos.length > 0) {
-    const count = loc.photos.length;
-    const link = loc.galleryId ? `/photography/#${loc.galleryId}` : null;
-    html += link ? `<a href="${link}" class="popup-stack-link">` : '<div>';
-    html += `<div class="popup-stack ${count > 1 ? 'is-stack' : ''}">
-      <img src="${loc.photos[0]}" alt="" class="popup-stack-img">
-      ${count > 1 ? `<span class="popup-stack-badge">+${count - 1}</span>` : ''}
-    </div>`;
-    if (link) html += `<div class="popup-gallery-link">View in gallery →</div>`;
-    html += link ? '</a>' : '</div>';
-  }
-  return html;
-}
-
-locations.forEach(loc => {
-  const icon = loc.type === 'dive' ? diveIcon : visitIcon;
-  L.marker(loc.coords, { icon })
-    .bindPopup(buildPopup(loc), { maxWidth: 280 })
-    .addTo(map);
-});
-
-if (window.location.hash) {
-  const id = window.location.hash.slice(1);
-  const loc = locations.find(l => l.galleryId === id);
-  if (loc) map.setView(loc.coords, 8);
-}
