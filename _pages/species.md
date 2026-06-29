@@ -5,7 +5,7 @@ permalink: /species/
 author_profile: false
 ---
 
-A living log of every species I've observed in the wild beginning in 2022 during my study abroad in Australia, automatically synced from my <a href="https://www.inaturalist.org/people/mayamegret" target="_blank">iNaturalist profile</a>. Updated every time I log a new observation!
+A living log of every species I've observed in the wild, automatically synced from my <a href="https://www.inaturalist.org/people/mayamegret" target="_blank">iNaturalist profile</a>. Updated every time I log a new observation!
 
 <div id="species-stats" style="margin-bottom: 1.5rem; color: #2c4a3e; font-size: 0.95rem;"></div>
 <div id="species-loading" style="text-align:center; padding: 40px; font-size: 1.1rem; color: #2c4a3e;">Loading species...</div>
@@ -94,42 +94,92 @@ A living log of every species I've observed in the wild beginning in 2022 during
 <script>
 const INAT_USER = 'mayamegret';
 
-const GROUP_CONFIG = [
-  { key: 'Mollusca',       label: 'Molluscs',      icon: 'fas fa-water' },
-  { key: 'Actinopterygii', label: 'Fish',           icon: 'fas fa-fish' },
-  { key: 'Reptilia',       label: 'Reptiles',       icon: 'fas fa-dragon' },
-  { key: 'Mammalia',       label: 'Mammals',        icon: 'fas fa-paw' },
-  { key: 'Aves',           label: 'Birds',          icon: 'fas fa-feather' },
-  { key: 'Amphibia',       label: 'Amphibians',     icon: 'fas fa-frog' },
-  { key: 'Insecta',        label: 'Insects',        icon: 'fas fa-bug' },
-  { key: 'Arachnida',      label: 'Arachnids',      icon: 'fas fa-spider' },
-  { key: 'Animalia',       label: 'Other Animals',  icon: 'fas fa-globe' },
-  { key: 'Plantae',        label: 'Plants',         icon: 'fas fa-leaf' },
-  { key: 'Fungi',          label: 'Fungi',          icon: 'fas fa-seedling' },
-  { key: 'Chromista',      label: 'Chromista',      icon: 'fas fa-microscope' },
-  { key: 'Protozoa',       label: 'Protozoa',       icon: 'fas fa-microscope' },
-  { key: 'unknown',        label: 'Other',          icon: 'fas fa-question-circle' },
+// iNat taxon IDs for groups not covered by iconic_taxon_name
+const ANCESTOR_MAP = [
+  { key: 'Chondrichthyes',  id: 47273 },  // sharks, rays
+  { key: 'Echinodermata',   id: 47549 },  // sea stars, urchins, sea cucumbers
+  { key: 'Cnidaria',        id: 47534 },  // corals, jellyfish, anemones
+  { key: 'Crustacea',       id: 47187 },  // crabs, shrimp, mantis shrimp
+  { key: 'Annelida',        id: 47491 },  // worms
+  { key: 'Platyhelminthes', id: 47579 },  // flatworms
 ];
 
-async function fetchAllSpecies() {
+const GROUP_CONFIG = [
+  { key: 'Mollusca',        label: 'Molluscs',             icon: 'fas fa-water' },
+  { key: 'Actinopterygii',  label: 'Bony Fish',            icon: 'fas fa-fish' },
+  { key: 'Chondrichthyes',  label: 'Sharks & Rays',        icon: 'fas fa-bolt' },
+  { key: 'Echinodermata',   label: 'Echinoderms',          icon: 'fas fa-star' },
+  { key: 'Cnidaria',        label: 'Corals & Jellyfish',   icon: 'fas fa-sun' },
+  { key: 'Crustacea',       label: 'Crustaceans',          icon: 'fas fa-shield-alt' },
+  { key: 'Annelida',        label: 'Worms',                icon: 'fas fa-minus' },
+  { key: 'Platyhelminthes', label: 'Flatworms',            icon: 'fas fa-align-justify' },
+  { key: 'Reptilia',        label: 'Reptiles',             icon: 'fas fa-dragon' },
+  { key: 'Mammalia',        label: 'Mammals',              icon: 'fas fa-paw' },
+  { key: 'Aves',            label: 'Birds',                icon: 'fas fa-feather' },
+  { key: 'Amphibia',        label: 'Amphibians',           icon: 'fas fa-frog' },
+  { key: 'Insecta',         label: 'Insects',              icon: 'fas fa-bug' },
+  { key: 'Arachnida',       label: 'Arachnids',            icon: 'fas fa-spider' },
+  { key: 'Plantae',         label: 'Plants',               icon: 'fas fa-leaf' },
+  { key: 'Fungi',           label: 'Fungi',                icon: 'fas fa-seedling' },
+  { key: 'Chromista',       label: 'Chromista',            icon: 'fas fa-microscope' },
+  { key: 'Protozoa',        label: 'Protozoa',             icon: 'fas fa-microscope' },
+  { key: 'Animalia',        label: 'Other Animals',        icon: 'fas fa-globe' },
+  { key: 'unknown',         label: 'Other',                icon: 'fas fa-question-circle' },
+];
+
+function getTaxonGroup(taxon) {
+  const ancestorIds = taxon.ancestor_ids || [];
+  // Check specific ancestor groups first — these override iconic_taxon_name
+  for (const entry of ANCESTOR_MAP) {
+    if (ancestorIds.includes(entry.id)) return entry.key;
+  }
+  // Fall back to iconic_taxon_name
+  return taxon.iconic_taxon_name || 'unknown';
+}
+
+async function fetchAllObservations() {
   const results = [];
-  for (let page = 1; page <= 5; page++) {
+  for (let page = 1; page <= 10; page++) {
     const res = await fetch(
-      `https://api.inaturalist.org/v1/observations/species_counts?user_login=${INAT_USER}&per_page=200&page=${page}`
+      `https://api.inaturalist.org/v1/observations?user_login=${INAT_USER}&per_page=200&page=${page}&order=desc&order_by=created_at`
     );
     const data = await res.json();
     results.push(...data.results);
-    if (data.results.length < 200) break;
+    if (results.length >= data.total_results || data.results.length < 200) break;
   }
   return results;
+}
+
+function deduplicateBySpecies(observations) {
+  const seen = {};
+  observations.forEach(obs => {
+    if (!obs.taxon) return;
+    const id = obs.taxon.id;
+    if (!seen[id]) {
+      seen[id] = {
+        taxon: obs.taxon,
+        photo: null,
+        count: 0,
+        mostRecent: obs.observed_on || obs.created_at
+      };
+    }
+    seen[id].count++;
+    if (!seen[id].photo && obs.photos && obs.photos.length > 0) {
+      seen[id].photo = obs.photos[0].url.replace('square', 'medium');
+    }
+  });
+  return Object.values(seen);
 }
 
 function groupByTaxon(species) {
   const groups = {};
   species.forEach(s => {
-    const key = s.taxon.iconic_taxon_name || 'unknown';
+    const key = getTaxonGroup(s.taxon);
     if (!groups[key]) groups[key] = [];
     groups[key].push(s);
+  });
+  Object.keys(groups).forEach(key => {
+    groups[key].sort((a, b) => new Date(b.mostRecent) - new Date(a.mostRecent));
   });
   return groups;
 }
@@ -160,7 +210,6 @@ function renderSpecies(species) {
 
     items.forEach(s => {
       const taxon = s.taxon;
-      const photo = taxon.default_photo;
       const commonName = taxon.preferred_common_name || taxon.name;
       const sciName = taxon.name;
       const inatUrl = `https://www.inaturalist.org/taxa/${taxon.id}`;
@@ -171,10 +220,10 @@ function renderSpecies(species) {
       card.target = '_blank';
       card.rel = 'noopener noreferrer';
 
-      if (photo && photo.medium_url) {
+      if (s.photo) {
         const img = document.createElement('img');
         img.className = 'species-card-img';
-        img.src = photo.medium_url;
+        img.src = s.photo;
         img.alt = commonName;
         img.loading = 'lazy';
         card.appendChild(img);
@@ -203,7 +252,8 @@ function renderSpecies(species) {
   document.getElementById('species-loading').style.display = 'none';
 }
 
-fetchAllSpecies()
+fetchAllObservations()
+  .then(deduplicateBySpecies)
   .then(renderSpecies)
   .catch(err => {
     document.getElementById('species-loading').style.display = 'none';
