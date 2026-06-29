@@ -138,7 +138,7 @@ redirect_from:
   <li>B.S. in Marine Biology, University of California San Diego. 2024.</li>
 </ul>
 
-<div class="cv-section-title"><i class="fas fa-certificate"></i> Certifications</div>
+<div class="cv-section-title"><i class="fas fa-water"></i> Certifications</div>
 <ul class="cv-list">
   <li>Divemaster. SSI. Anticipated July 2026.</li>
   <li>Stress and Rescue. SSI. May 2026.</li>
