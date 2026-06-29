@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-Marine biologist and scientific diver completing an MSc at the Universidade do Algarve, with field research experience across Mozambique, Greece, Costa Rica, and Australia. My thesis research compared SCUBA-based sampling methodologies for assessing nudibranch diversity and abundance on rocky reef ecosystems in Mozambique. I am passionate about marine biodiversity, underwater photography, and conservation, and am currently completing my SSI Divemaster certification in Hawai'i.
+Marine biologist and scientific diver completing masters in marine biology at the Universidade do Algarve, with field research experience across Mozambique, San Diego, Greece, Costa Rica, and Australia. My thesis research compared SCUBA-based sampling methodologies for assessing nudibranch diversity and abundance on rocky reef ecosystems in Mozambique. I am passionate about marine biodiversity, underwater photography, and conservation, and am currently completing my SSI Divemaster certification in Hawai'i.
 
 Research Interests
 ======
