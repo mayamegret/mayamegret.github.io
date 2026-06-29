@@ -67,6 +67,63 @@ const locations = [
     galleryId: "cephalonia"
   },
   {
+    name: "Hvar",
+    country: "Croatia",
+    coords: [43.17, 16.44],
+    type: "visit",
+    dates: "August 7-10th, 2023",
+    description: "My sister and I enjoyed a lovely week in Croatia together beginning in Hvar!",
+    species: [],
+    photos: ["/images/photography/Hvar1.JPG", "/images/photography/Hvar2.JPG", "/images/photography/Hvar3.jpg", "/images/photography/Hvar4.JPG"],
+    galleryId: "hvar"
+  },
+  {
+    name: "Vis",
+    country: "Croatia",
+    coords: [43.06, 16.18],
+    type: "visit",
+    dates: "August 9th, 2023",
+    description: "While in Hvar, Tess and I did a daytrip to Vis and explored the adorable little island!",
+    species: [],
+    photos: ["/images/photography/Vis1.jpg", "/images/photography/Vis2.JPG", "/images/photography/Vis3.JPG"],
+    galleryId: "vis"
+  },
+  {
+    name: "Dubrovnik",
+    country: "Croatia",
+    coords: [42.65, 18.09],
+    type: "visit",
+    dates: "August 10-13th, 2023",
+    description: "Tess and I closed out our sister trip with a few days in Dubrovnik, exploring the old town and the beaches.",
+    species: [],
+    photos: ["/images/photography/Dubrovnik1.jpg", "/images/photography/Dubrovnik2.jpg", "/images/photography/Dubrovnik3.jpg", "/images/photography/Dubrovnik4.jpg", "/images/photography/Dubrovnik5.jpg", "/images/photography/Dubrovnik6.jpg"],
+    galleryId: "dubrovnik"
+  },
+  {
+    name: "La Jolla Cove",
+    country: "USA",
+    coords: [32.8503, -117.2719],
+    type: "dive",
+    dates: "June 18th, 2024",
+    description: "COLD! So cold. First kelp forest dive! Saw so many bright orange garibaldi and playful sea lions!!",
+    species: [
+      "Garibaldi <em>(Hypsypops rubicundus)</em>",
+      "California sea lion <em>(Zalophus californianus)</em>"
+    ],
+    photos: []
+  },
+  {
+    name: "La Jolla Tide Pools",
+    country: "USA",
+    coords: [32.8700, -117.2530],
+    type: "visit",
+    dates: "~January 2024",
+    description: "Between classes at Scripps, I would visit the tide pools just north of the pier!",
+    species: [],
+    photos: ["/images/photography/LJ1.jpg", "/images/photography/LJ2.jpg", "/images/photography/LJ3.jpg", "/images/photography/LJ4.jpg", "/images/photography/LJ5.jpg", "/images/photography/LJ6.jpg"],
+    galleryId: "la-jolla"
+  },
+  {
     name: "Isla Bastimentos",
     country: "Panama",
     coords: [9.35, -82.17],
@@ -97,19 +154,6 @@ const locations = [
     species: [],
     photos: ["/images/map/Bogota1.jpg", "/images/map/Bogota2.JPG", "/images/map/Bogota3.JPG", "/images/map/Bogota4.JPG"],
     galleryId: "bogota"
-  },
-  {
-    name: "La Jolla, San Diego",
-    country: "USA",
-    coords: [32.72, -117.16],
-    type: "dive",
-    dates: "June 18th, 2024",
-    description: "COLD! So cold. First kelp forest dive! Saw so many bright orange garibaldi and playful sea lions!!",
-    species: [
-      "Garibaldi <em>(Hypsypops rubicundus)</em>",
-      "California sea lion <em>(Zalophus californianus)</em>"
-    ],
-    photos: []
   },
   {
     name: "Blitzingen",
