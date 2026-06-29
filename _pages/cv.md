@@ -121,7 +121,7 @@ redirect_from:
 }
 </style>
 
-<p class="cv-summary">Marine biologist and scientific diver completing an MSc at the Universidade do Algarve, with field research experience across Mozambique, Greece, Costa Rica, and Australia. My thesis research compared SCUBA-based sampling methodologies for assessing nudibranch diversity and abundance on rocky reef ecosystems in Mozambique. I am passionate about marine biodiversity, underwater photography, and conservation, and am currently completing my SSI Divemaster certification in Hawai'i, with 150+ lifetime dives logged.</p>
+<p class="cv-summary">Marine biologist and scientific diver completing an MSc at the Universidade do Algarve, with field research experience across Mozambique, Greece, Costa Rica, and Australia. My thesis research compared SCUBA-based sampling methodologies for assessing nudibranch diversity and abundance on rocky reef ecosystems in Mozambique. I am passionate about marine biodiversity, underwater photography, and conservation, and am currently completing my SSI Divemaster certification in Hawai'i, with 150+ dives logged.</p>
 
 <div class="cv-section-title"><i class="fas fa-microscope"></i> Research Interests</div>
 <ul class="cv-list">
@@ -144,10 +144,21 @@ redirect_from:
   <li>Stress and Rescue. SSI. May 2026.</li>
   <li>First Aid, CPR, Oxygen. SSI. May 2026.</li>
   <li>Scientific Diving. CCMAR, UAlg. May 2025.</li>
+  <li>Advanced Open Water. SSI. May 2025. Specialties: Nitrox EAN32, Deep Diving (30m), Navigation, Search & Recovery.</li>
 </ul>
 
 <div class="cv-section-title"><i class="fas fa-briefcase"></i> Work Experience</div>
 <div class="cv-timeline">
+
+  <div class="cv-card">
+    <div class="cv-card-title">Divemaster Candidate &middot; Hawaiian Diving Adventures</div>
+    <div class="cv-card-subtitle">Honolulu, Hawai'i &middot; May 2026 – Present</div>
+    <ul>
+      <li>Completing SSI Divemaster certification program</li>
+      <li>Assist with dive shop operations including equipment rental and customer briefings</li>
+      <li>Fill SCUBA tanks using a high-pressure compressor</li>
+    </ul>
+  </div>
 
   <div class="cv-card">
     <div class="cv-card-title">Intern &middot; Marine Action Research</div>
@@ -215,6 +226,7 @@ redirect_from:
   <li>R Studio</li>
   <li>Underwater Photography</li>
   <li>CPR and First Aid</li>
+  <li>SCUBA Tank Filling & Compressor Operation</li>
 </ul>
 
 <div class="cv-section-title"><i class="fas fa-book-open"></i> Relevant Courses</div>
