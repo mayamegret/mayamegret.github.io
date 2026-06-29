@@ -56,6 +56,19 @@ const locations = [
     galleryId: "port-lincoln"
   },
   {
+    name: "Argostoli",
+    country: "Greece",
+    coords: [38.1739, 20.4917],
+    type: "visit",
+    dates: "July 7 - August 5th, 2023",
+    description: "I spent a month volunteering with Wildlife Sense, working on their sea turtle conservation program! It was an incredible learning experience, helping locate and protect turtle nests, relocate endangered nests, help hatchlings to sea, and help with beach cleanups and beach mapping!",
+    species: [
+      "Loggerhead sea turtle <em>(Caretta caretta)</em>"
+    ],
+    photos: ["/images/photography/STConservation1.jpg", "/images/photography/STConservation2.jpg", "/images/photography/STConservation3.jpg", "/images/photography/STConservation4.JPG", "/images/photography/STConservation5.jpg", "/images/photography/STConservation6.jpg"],
+    galleryId: "argostoli"
+  },
+  {
     name: "Cephalonia",
     country: "Greece",
     coords: [38.18, 20.57],
@@ -102,7 +115,7 @@ const locations = [
   {
     name: "La Jolla Cove",
     country: "USA",
-    coords: [32.8503, -117.2719],
+    coords: [32.8504, -117.2729],
     type: "dive",
     dates: "June 18th, 2024",
     description: "COLD! So cold. First kelp forest dive! Saw so many bright orange garibaldi and playful sea lions!!",
@@ -115,7 +128,7 @@ const locations = [
   {
     name: "La Jolla Tide Pools",
     country: "USA",
-    coords: [32.8700, -117.2530],
+    coords: [32.86689, -117.25714],
     type: "visit",
     dates: "~January 2024",
     description: "Between classes at Scripps, I would visit the tide pools just north of the pier!",
@@ -163,7 +176,7 @@ const locations = [
     dates: "December 21-28th, 2024",
     description: "A wonderful Swissmas Christmas! The four of us spent a week in a little chalet in the countryside of Switzerland, it was so magical!",
     species: [],
-    photos: ["/images/photography/Blitzingen1.JPG", "/images/photography/Blitzingen2.JPG", "/images/photography/Blitzingen3.JPG", "/images/photography/Blitzingen4.JPG", "/images/photography/Blitzingen5.JPG", "/images/photography/Blitzingen6.JPG"],
+    photos: ["/images/photography/Blitzingen1.JPG", "/images/photography/Blitzingen2.JPG", "/images/photography/Blitzingen3.JPG", "/images/photography/Blitzingen4.jpg", "/images/photography/Blitzingen5.JPG", "/images/photography/Blitzingen6.jpg"],
     galleryId: "blitzingen"
   },
   {
@@ -174,7 +187,7 @@ const locations = [
     dates: "December 2024",
     description: "A day trip to the Swiss Alps during our Swissmas stay!",
     species: [],
-    photos: ["/images/photography/SwissAlps1.JPG", "/images/photography/SwissAlps2.JPG", "/images/photography/SwissAlps3.JPG", "/images/photography/SwissAlps4.JPG"],
+    photos: ["/images/photography/SwissAlps1.JPG", "/images/photography/SwissAlps2.jpg", "/images/photography/SwissAlps3.JPG", "/images/photography/SwissAlps4.JPG"],
     galleryId: "blitzingen"
   },
   {
