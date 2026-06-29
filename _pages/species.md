@@ -94,46 +94,43 @@ A living log of every species I've observed in the wild, automatically synced fr
 <script>
 const INAT_USER = 'mayamegret';
 
-// iNat taxon IDs for groups not covered by iconic_taxon_name
 const ANCESTOR_MAP = [
-  { key: 'Chondrichthyes',  id: 47273 },  // sharks, rays
-  { key: 'Echinodermata',   id: 47549 },  // sea stars, urchins, sea cucumbers
-  { key: 'Cnidaria',        id: 47534 },  // corals, jellyfish, anemones
-  { key: 'Crustacea',       id: 47187 },  // crabs, shrimp, mantis shrimp
-  { key: 'Annelida',        id: 47491 },  // worms
-  { key: 'Platyhelminthes', id: 47579 },  // flatworms
+  { key: 'Chondrichthyes',  id: 47273 },
+  { key: 'Echinodermata',   id: 47549 },
+  { key: 'Cnidaria',        id: 47534 },
+  { key: 'Crustacea',       id: 47187 },
+  { key: 'Annelida',        id: 47491 },
+  { key: 'Platyhelminthes', id: 47579 },
 ];
 
 const GROUP_CONFIG = [
-  { key: 'Mollusca',        label: 'Molluscs',             icon: 'fas fa-water' },
-  { key: 'Actinopterygii',  label: 'Bony Fish',            icon: 'fas fa-fish' },
-  { key: 'Chondrichthyes',  label: 'Sharks & Rays',        icon: 'fas fa-bolt' },
-  { key: 'Echinodermata',   label: 'Echinoderms',          icon: 'fas fa-star' },
-  { key: 'Cnidaria',        label: 'Corals & Jellyfish',   icon: 'fas fa-sun' },
-  { key: 'Crustacea',       label: 'Crustaceans',          icon: 'fas fa-shield-alt' },
-  { key: 'Annelida',        label: 'Worms',                icon: 'fas fa-minus' },
-  { key: 'Platyhelminthes', label: 'Flatworms',            icon: 'fas fa-align-justify' },
-  { key: 'Reptilia',        label: 'Reptiles',             icon: 'fas fa-dragon' },
-  { key: 'Mammalia',        label: 'Mammals',              icon: 'fas fa-paw' },
-  { key: 'Aves',            label: 'Birds',                icon: 'fas fa-feather' },
-  { key: 'Amphibia',        label: 'Amphibians',           icon: 'fas fa-frog' },
-  { key: 'Insecta',         label: 'Insects',              icon: 'fas fa-bug' },
-  { key: 'Arachnida',       label: 'Arachnids',            icon: 'fas fa-spider' },
-  { key: 'Plantae',         label: 'Plants',               icon: 'fas fa-leaf' },
-  { key: 'Fungi',           label: 'Fungi',                icon: 'fas fa-seedling' },
-  { key: 'Chromista',       label: 'Chromista',            icon: 'fas fa-microscope' },
-  { key: 'Protozoa',        label: 'Protozoa',             icon: 'fas fa-microscope' },
-  { key: 'Animalia',        label: 'Other Animals',        icon: 'fas fa-globe' },
-  { key: 'unknown',         label: 'Other',                icon: 'fas fa-question-circle' },
+  { key: 'Mollusca',        label: 'Molluscs',           icon: 'fas fa-water' },
+  { key: 'Actinopterygii',  label: 'Bony Fish',          icon: 'fas fa-fish' },
+  { key: 'Chondrichthyes',  label: 'Sharks & Rays',      icon: 'fas fa-bolt' },
+  { key: 'Echinodermata',   label: 'Echinoderms',        icon: 'fas fa-star' },
+  { key: 'Cnidaria',        label: 'Corals & Jellyfish', icon: 'fas fa-sun' },
+  { key: 'Crustacea',       label: 'Crustaceans',        icon: 'fas fa-shield-alt' },
+  { key: 'Annelida',        label: 'Worms',              icon: 'fas fa-minus' },
+  { key: 'Platyhelminthes', label: 'Flatworms',          icon: 'fas fa-align-justify' },
+  { key: 'Reptilia',        label: 'Reptiles',           icon: 'fas fa-dragon' },
+  { key: 'Mammalia',        label: 'Mammals',            icon: 'fas fa-paw' },
+  { key: 'Aves',            label: 'Birds',              icon: 'fas fa-feather' },
+  { key: 'Amphibia',        label: 'Amphibians',         icon: 'fas fa-frog' },
+  { key: 'Insecta',         label: 'Insects',            icon: 'fas fa-bug' },
+  { key: 'Arachnida',       label: 'Arachnids',          icon: 'fas fa-spider' },
+  { key: 'Plantae',         label: 'Plants',             icon: 'fas fa-leaf' },
+  { key: 'Fungi',           label: 'Fungi',              icon: 'fas fa-seedling' },
+  { key: 'Chromista',       label: 'Chromista',          icon: 'fas fa-microscope' },
+  { key: 'Protozoa',        label: 'Protozoa',           icon: 'fas fa-microscope' },
+  { key: 'Animalia',        label: 'Other Animals',      icon: 'fas fa-globe' },
+  { key: 'unknown',         label: 'Other',              icon: 'fas fa-question-circle' },
 ];
 
 function getTaxonGroup(taxon) {
   const ancestorIds = taxon.ancestor_ids || [];
-  // Check specific ancestor groups first — these override iconic_taxon_name
   for (const entry of ANCESTOR_MAP) {
     if (ancestorIds.includes(entry.id)) return entry.key;
   }
-  // Fall back to iconic_taxon_name
   return taxon.iconic_taxon_name || 'unknown';
 }
 
@@ -252,14 +249,16 @@ function renderSpecies(species) {
   document.getElementById('species-loading').style.display = 'none';
 }
 
-fetchAllObservations()
-  .then(deduplicateBySpecies)
-  .then(renderSpecies)
-  .catch(err => {
-    document.getElementById('species-loading').style.display = 'none';
-    const errEl = document.getElementById('species-error');
-    errEl.style.display = 'block';
-    errEl.textContent = 'Could not load species from iNaturalist. Please try again later.';
-    console.error(err);
-  });
+document.addEventListener('DOMContentLoaded', function() {
+  fetchAllObservations()
+    .then(deduplicateBySpecies)
+    .then(renderSpecies)
+    .catch(err => {
+      document.getElementById('species-loading').style.display = 'none';
+      const errEl = document.getElementById('species-error');
+      errEl.style.display = 'block';
+      errEl.textContent = 'Could not load species from iNaturalist. Please try again later.';
+      console.error(err);
+    });
+});
 </script>
