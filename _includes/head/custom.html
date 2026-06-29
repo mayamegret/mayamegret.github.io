@@ -23,12 +23,24 @@
   #main { display: flex !important; }
   .sidebar.sticky { flex: 0 0 300px !important; width: 300px !important; position: relative !important; top: auto !important; }
   article.page { flex: 1 !important; min-width: 0 !important; padding-left: 20px !important; }
+  .masthead { padding-top: 0 !important; padding-bottom: 0 !important; min-height: 0 !important; }
+  .masthead__inner-wrap { padding-top: 4px !important; padding-bottom: 4px !important; min-height: 0 !important; }
+  .masthead__menu { padding-top: 0 !important; padding-bottom: 0 !important; }
+  .site-title { font-size: 0.9rem !important; line-height: 1.2 !important; }
+  .greedy-nav { min-height: 0 !important; }
+  .greedy-nav a { padding-top: 4px !important; padding-bottom: 4px !important; line-height: 1.4 !important; }
+  .greedy-nav .visible-links a { padding-top: 4px !important; padding-bottom: 4px !important; }
+  .page__footer { padding-top: 4px !important; padding-bottom: 4px !important; margin-top: 8px !important; }
+  .page__footer footer { padding-top: 2px !important; padding-bottom: 2px !important; font-size: 0.75rem !important; }
+  .page__footer-follow { display: none !important; }
 
   @media (max-width: 767px) {
     #main { flex-direction: column !important; }
     .sidebar { width: 100% !important; min-width: 0 !important; align-self: auto !important; }
     .sidebar.sticky { flex: 0 0 auto !important; width: 100% !important; min-width: 0 !important; }
     article.page { padding-left: 0 !important; width: 100% !important; }
+    .author__urls { display: block !important; background: none !important; border: none !important; box-shadow: none !important; }
+    .author__urls::before, .author__urls::after { display: none !important; }
     .author__avatar { display: flex !important; justify-content: center !important; padding: 0 !important; width: 100% !important; margin-top: -20px !important; }
     .author__avatar img {
       width: 120px !important;
