@@ -160,7 +160,14 @@ redirect_from:
   <li>Divemaster. SSI. Anticipated July 2026.</li>
   <li>Stress and Rescue. SSI. May 2026.</li>
   <li>First Aid, CPR, Oxygen. SSI. May 2026.</li>
-  <li>Advanced Open Water. SSI. Specialties: Nitrox EAN32, Deep Diving (30m), Navigation, Search & Recovery. May 2025.</li>
+  <li>Advanced Open Water. SSI. May 2025.
+    <ul class="cv-sublist">
+      <li>Nitrox EAN32</li>
+      <li>Deep Diving (30m)</li>
+      <li>Navigation</li>
+      <li>Search & Recovery</li>
+    </ul>
+  </li>
   <li>Scientific Diving. CCMAR, UAlg. May 2025.
     <ul class="cv-sublist">
       <li>Radial search</li>
