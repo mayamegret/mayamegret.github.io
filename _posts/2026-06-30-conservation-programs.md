@@ -113,7 +113,7 @@ In your downtime, the area around Ostional has a lot to offer. The group hiked t
 <img src="/images/blog/CostaRica6.jpg" alt="Costa Rica">
 </div>
 
-BIOMA also offers an optional 3-day add-on at the end of the program that includes waterfall exploration, zip-lining, river tubing, surfing, and time to relax in hot springs and mud baths. I did it, and I'd do it again in a heartbeat.
+BIOMA also offers an optional 3-day add-on at the end of the program that includes waterfall exploration, zip-lining, river tubing, surfing, and time to relax in hot springs and mud baths.
 
 ---
 
