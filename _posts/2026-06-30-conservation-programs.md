@@ -128,7 +128,7 @@ When you're not on shift, there is so much fun to be had around the island. Duri
 <div class="blog-clear"></div>
 
 <img src="/images/blog/Greece8.jpg" class="blog-img" alt="Greece">
-<img src="/images/blog/Greece9.jpg" class="blog-img" alt="Greece">
+<img src="/images/blog/Greece9.JPG" class="blog-img" alt="Greece">
 
 <div class="blog-clear"></div>
 
@@ -139,7 +139,7 @@ When you're not on shift, there is so much fun to be had around the island. Duri
 **Website:** [marexpeditions.com](https://www.marexpeditions.com)
 
 <img src="/images/blog/Moz4.jpg" class="blog-img" alt="Mozambique">
-<img src="/images/blog/Moz12.jpg" class="blog-img" alt="Mozambique">
+<img src="/images/blog/Moz12.JPG" class="blog-img" alt="Mozambique">
 
 <div class="blog-clear"></div>
 
@@ -149,9 +149,8 @@ I first volunteered with MAR in July 2025, spending four weeks contributing to t
 
 **Note:** MAR requires volunteers to be Advanced SCUBA certified before arriving.
 
-<img src="/images/blog/Moz2.JPG" class="blog-img-left" alt="Mozambique">
-<img src="/images/blog/Moz8.JPG" class="blog-img-left" alt="Mozambique">
-
+<img src="/images/blog/Moz8.jpg" class="blog-img-left" alt="Mozambique">
+<img src="/images/blog/Moz11.JPG" class="blog-img-left" alt="Mozambique">
 
 ### What the work looks like
 
@@ -172,13 +171,14 @@ Shifts at MAR cover an impressive range of research activities across multiple e
 <img src="/images/blog/Moz3.jpg" class="blog-img" alt="Mozambique">
 <img src="/images/blog/Moz7.JPG" class="blog-img" alt="Mozambique">
 <img src="/images/blog/Moz5.jpg" class="blog-img" alt="Mozambique">
-<img src="/images/blog/Moz13.jpg" class="blog-img" alt="Mozambique">
+<img src="/images/blog/Moz13.JPG" class="blog-img" alt="Mozambique">
 
 <div class="blog-clear"></div>
 
 **Land-based surveys** involve Humpback whale monitoring from the sand dunes above Závora. During the austral winter months, Humpback whales migrate through the area, and these surveys contribute to long-term population data. During my first internship, we were lucky enough to see a whale swim directly beneath us on one of our last dives.
 
 <img src="/images/blog/Moz1.jpg" class="blog-img-left" alt="Mozambique">
+<img src="/images/blog/Moz14.JPG" class="blog-img-left" alt="Mozambique">
 
 ### Free time
 
