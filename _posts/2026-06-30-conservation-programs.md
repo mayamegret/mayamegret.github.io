@@ -2,6 +2,7 @@
 title: 'Marine Science Conservation Programs I Recommend Volunteering With'
 date: 2026-06-30
 permalink: /posts/2026/06/conservation-programs/
+read_time: false
 tags:
   - conservation
   - volunteering
@@ -20,6 +21,9 @@ tags:
   display: inline !important;
   border-radius: 8px;
   margin: 6px 0 12px 18px !important;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center;
 }
 .page__content img.blog-img-left {
   float: left !important;
@@ -28,6 +32,9 @@ tags:
   display: inline !important;
   border-radius: 8px;
   margin: 6px 18px 12px 0 !important;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center;
 }
 .page__content .blog-clear { clear: both; display: block; }
 .page__content p { overflow: visible !important; }
@@ -44,11 +51,13 @@ tags:
   float: none !important;
   margin: 0 !important;
   object-fit: cover;
-  height: 220px;
+  object-position: center;
+  aspect-ratio: 1 / 1;
+  height: auto;
 }
 @media (max-width: 600px) {
   .page__content .blog-gallery { flex-wrap: wrap; }
-  .page__content .blog-gallery img { width: 100% !important; height: auto; }
+  .page__content .blog-gallery img { width: 100% !important; }
   .page__content img.blog-img, .page__content img.blog-img-left {
     width: 100% !important;
     max-width: 100% !important;
@@ -188,7 +197,6 @@ Shifts at MAR cover an impressive range of research activities across multiple e
 <div class="blog-gallery">
 <img src="/images/blog/Moz2.JPG" alt="Mozambique">
 <img src="/images/blog/Moz6.JPG" alt="Mozambique">
-<img src="/images/blog/Moz9.JPG" alt="Mozambique">
 </div>
 
 **Snorkel surveys** include seahorse monitoring in the Barra Lagoon and coral and nudibranch surveys in the Závora rockpool ecosystem.
