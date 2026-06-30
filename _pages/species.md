@@ -100,7 +100,7 @@ const ANCESTOR_MAP = [
   { key: 'Cnidaria',        id: 47534  },
   { key: 'Crustacea',       id: 47187  },
   { key: 'Annelida',        id: 47491  },
-  { key: 'Platyhelminthes', id: 47579  },
+  { key: 'Platyhelminthes', id: 52319  },
   { key: 'Porifera',        id: 48824  },
   { key: 'Tunicata',        id: 130868 },
 ];
