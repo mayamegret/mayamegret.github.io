@@ -149,7 +149,9 @@ I first volunteered with MAR in July 2025, spending four weeks contributing to t
 
 **Note:** MAR requires volunteers to be Advanced SCUBA certified before arriving.
 
+<img src="/images/blog/Moz2.JPG" class="blog-img-left" alt="Mozambique">
 <img src="/images/blog/Moz8.JPG" class="blog-img-left" alt="Mozambique">
+
 
 ### What the work looks like
 
