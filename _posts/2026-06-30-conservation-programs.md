@@ -32,13 +32,6 @@ tags:
 .page__content .blog-clear { clear: both; display: block; }
 .page__content p { overflow: visible !important; }
 </style>
-.blog-img-left {
-  width: 45%;
-  border-radius: 8px;
-  margin: 6px 18px 12px 0;
-}
-.blog-clear { clear: both; }
-</style>
 
 One of the most common questions I get from people interested in marine biology and conservation is: *how do I get real field experience?* Degrees are important, but nothing replaces time in the field. Getting hands on experience and actually doing the work is the most valuable thing you can do. Volunteer programs have been one of the most transformative parts of my career so far, and I want to share some that I've personally experienced and wholeheartedly recommend.
 
