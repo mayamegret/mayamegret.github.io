@@ -15,22 +15,47 @@ tags:
 .page__content a:hover { color: #ffa44a !important; }
 .page__content img.blog-img {
   float: right !important;
-  width: 45% !important;
-  max-width: 45% !important;
+  width: 35% !important;
+  max-width: 35% !important;
   display: inline !important;
   border-radius: 8px;
   margin: 6px 0 12px 18px !important;
 }
 .page__content img.blog-img-left {
   float: left !important;
-  width: 45% !important;
-  max-width: 45% !important;
+  width: 35% !important;
+  max-width: 35% !important;
   display: inline !important;
   border-radius: 8px;
   margin: 6px 18px 12px 0 !important;
 }
 .page__content .blog-clear { clear: both; display: block; }
 .page__content p { overflow: visible !important; }
+.page__content .blog-gallery {
+  display: flex !important;
+  gap: 10px;
+  margin: 14px 0;
+  clear: both;
+}
+.page__content .blog-gallery img {
+  width: 100% !important;
+  max-width: 100% !important;
+  border-radius: 8px;
+  float: none !important;
+  margin: 0 !important;
+  object-fit: cover;
+  height: 220px;
+}
+@media (max-width: 600px) {
+  .page__content .blog-gallery { flex-wrap: wrap; }
+  .page__content .blog-gallery img { width: 100% !important; height: auto; }
+  .page__content img.blog-img, .page__content img.blog-img-left {
+    width: 100% !important;
+    max-width: 100% !important;
+    float: none !important;
+    margin: 12px 0 !important;
+  }
+}
 </style>
 
 One of the most common questions I get from people interested in marine biology and conservation is: *how do I get real field experience?* Degrees are important, but nothing replaces time in the field. Getting hands on experience and actually doing the work is the most valuable thing you can do. Volunteer programs have been one of the most transformative parts of my career so far, and I want to share some that I've personally experienced and wholeheartedly recommend.
@@ -73,11 +98,11 @@ In your downtime, the area around Ostional has a lot to offer. The group hiked t
 
 <div class="blog-clear"></div>
 
-<img src="/images/blog/CostaRica4.jpg" class="blog-img" alt="Costa Rica">
-<img src="/images/blog/CostaRica5.jpg" class="blog-img" alt="Costa Rica">
-<img src="/images/blog/CostaRica6.jpg" class="blog-img" alt="Costa Rica">
-
-<div class="blog-clear"></div>
+<div class="blog-gallery">
+<img src="/images/blog/CostaRica4.jpg" alt="Costa Rica">
+<img src="/images/blog/CostaRica5.jpg" alt="Costa Rica">
+<img src="/images/blog/CostaRica6.jpg" alt="Costa Rica">
+</div>
 
 BIOMA also offers an optional 3-day add-on at the end of the program that includes waterfall exploration, zip-lining, river tubing, surfing, and time to relax in hot springs and mud baths. I did it, and I'd do it again in a heartbeat.
 
@@ -105,11 +130,11 @@ Shifts are divided into three main types:
 
 <div class="blog-clear"></div>
 
-<img src="/images/blog/Greece3.jpg" class="blog-img" alt="Greece">
-<img src="/images/blog/Greece4.jpg" class="blog-img" alt="Greece">
-<img src="/images/blog/Greece7.jpg" class="blog-img" alt="Greece">
-
-<div class="blog-clear"></div>
+<div class="blog-gallery">
+<img src="/images/blog/Greece3.jpg" alt="Greece">
+<img src="/images/blog/Greece4.jpg" alt="Greece">
+<img src="/images/blog/Greece7.jpg" alt="Greece">
+</div>
 
 **Harbor shifts** take place at the Argostoli harbor, which is a well-known gathering spot for loggerhead turtles that forage there year-round. During these shifts, volunteers observe and record information about the turtles' foraging behavior, social interactions, and any injuries or abnormalities.
 
@@ -127,10 +152,10 @@ When you're not on shift, there is so much fun to be had around the island. Duri
 
 <div class="blog-clear"></div>
 
-<img src="/images/blog/Greece8.jpg" class="blog-img" alt="Greece">
-<img src="/images/blog/Greece9.JPG" class="blog-img" alt="Greece">
-
-<div class="blog-clear"></div>
+<div class="blog-gallery">
+<img src="/images/blog/Greece8.jpg" alt="Greece">
+<img src="/images/blog/Greece9.JPG" alt="Greece">
+</div>
 
 ---
 
@@ -138,10 +163,10 @@ When you're not on shift, there is so much fun to be had around the island. Duri
 
 **Website:** [marexpeditions.com](https://www.marexpeditions.com)
 
-<img src="/images/blog/Moz4.jpg" class="blog-img" alt="Mozambique">
-<img src="/images/blog/Moz12.JPG" class="blog-img" alt="Mozambique">
-
-<div class="blog-clear"></div>
+<div class="blog-gallery">
+<img src="/images/blog/Moz4.jpg" alt="Mozambique">
+<img src="/images/blog/Moz12.JPG" alt="Mozambique">
+</div>
 
 MAR Expeditions is a volunteer opportunity for aspiring scientists, passionate conservationists, and engaged naturalists to gain scientific SCUBA diving and freediving experience, support active research, and learn firsthand from experts across a variety of different marine environments in Závora, Mozambique.
 
@@ -149,8 +174,10 @@ I first volunteered with MAR in July 2025, spending four weeks contributing to t
 
 **Note:** MAR requires volunteers to be Advanced SCUBA certified before arriving.
 
-<img src="/images/blog/Moz8.jpg" class="blog-img-left" alt="Mozambique">
-<img src="/images/blog/Moz11.JPG" class="blog-img-left" alt="Mozambique">
+<div class="blog-gallery">
+<img src="/images/blog/Moz8.jpg" alt="Mozambique">
+<img src="/images/blog/Moz11.JPG" alt="Mozambique">
+</div>
 
 ### What the work looks like
 
@@ -158,33 +185,33 @@ Shifts at MAR cover an impressive range of research activities across multiple e
 
 **Research dives** are the heart of the program. During SCUBA dives, volunteers participate in manta ray photo identification, nudibranch abundance and diversity assessments, and predatory fish surveys. During these dives, you may be fortunate enough to encounter a wide range of shark and ray species, turtles, eels, dolphins, and so much more! Winter is whale migration season, so if you're really lucky (like I was) you may even encounter a whale on SCUBA!
 
-<div class="blog-clear"></div>
-
-<img src="/images/blog/Moz2.JPG" class="blog-img" alt="Mozambique">
-<img src="/images/blog/Moz6.JPG" class="blog-img" alt="Mozambique">
-<img src="/images/blog/Moz9.JPG" class="blog-img" alt="Mozambique">
-
-<div class="blog-clear"></div>
+<div class="blog-gallery">
+<img src="/images/blog/Moz2.JPG" alt="Mozambique">
+<img src="/images/blog/Moz6.JPG" alt="Mozambique">
+<img src="/images/blog/Moz9.JPG" alt="Mozambique">
+</div>
 
 **Snorkel surveys** include seahorse monitoring in the Barra Lagoon and coral and nudibranch surveys in the Závora rockpool ecosystem.
 
-<img src="/images/blog/Moz3.jpg" class="blog-img" alt="Mozambique">
-<img src="/images/blog/Moz7.JPG" class="blog-img" alt="Mozambique">
-<img src="/images/blog/Moz5.jpg" class="blog-img" alt="Mozambique">
-<img src="/images/blog/Moz13.JPG" class="blog-img" alt="Mozambique">
-
-<div class="blog-clear"></div>
+<div class="blog-gallery">
+<img src="/images/blog/Moz3.jpg" alt="Mozambique">
+<img src="/images/blog/Moz7.JPG" alt="Mozambique">
+</div>
+<div class="blog-gallery">
+<img src="/images/blog/Moz5.jpg" alt="Mozambique">
+<img src="/images/blog/Moz13.JPG" alt="Mozambique">
+</div>
 
 **Land-based surveys** involve Humpback whale monitoring from the sand dunes above Závora. During the austral winter months, Humpback whales migrate through the area, and these surveys contribute to long-term population data. During my first internship, we were lucky enough to see a whale swim directly beneath us on one of our last dives.
 
-<img src="/images/blog/Moz1.jpg" class="blog-img-left" alt="Mozambique">
-<img src="/images/blog/Moz14.JPG" class="blog-img-left" alt="Mozambique">
+<div class="blog-gallery">
+<img src="/images/blog/Moz1.jpg" alt="Mozambique">
+<img src="/images/blog/Moz14.JPG" alt="Mozambique">
+</div>
 
 ### Free time
 
 When you're not on shift, you can complete data entry, walk to the lighthouse for sunset, head to the nearby lodge for pizza night, or book a whale shark snorkel tour out of Tofo.
-
-<div class="blog-clear"></div>
 
 <img src="/images/blog/Moz10.jpg" class="blog-img" alt="Mozambique">
 
