@@ -339,7 +339,7 @@ const locations = [
     dates: "March 27-31st, 2026",
     description: "Celebrating my best friend in El Salvador!",
     species: [],
-    photos: ["/images/photography/ElSalvador1.jpg", "/images/photography/ElSalvador2.JPG"],
+    photos: ["/images/photography/ElSalvador2.JPG", "/images/photography/ElSalvador1.jpg"],
     galleryId: "el-salvador"
   },
   {
