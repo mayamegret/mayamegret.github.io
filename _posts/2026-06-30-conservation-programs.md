@@ -18,6 +18,7 @@ tags:
   float: right !important;
   width: 35% !important;
   max-width: 35% !important;
+  max-height: 280px !important;
   display: inline !important;
   border-radius: 8px;
   margin: 6px 0 12px 18px !important;
@@ -29,6 +30,7 @@ tags:
   float: left !important;
   width: 35% !important;
   max-width: 35% !important;
+  max-height: 280px !important;
   display: inline !important;
   border-radius: 8px;
   margin: 6px 18px 12px 0 !important;
@@ -45,10 +47,10 @@ tags:
   clear: both;
 }
 .page__content .blog-gallery img {
-  width: 100% !important;
+  flex: 1 1 0 !important;
+  min-width: 0 !important;
   max-width: 100% !important;
   border-radius: 8px;
-  float: none !important;
   margin: 0 !important;
   object-fit: cover;
   object-position: center;
@@ -61,6 +63,7 @@ tags:
   .page__content img.blog-img, .page__content img.blog-img-left {
     width: 100% !important;
     max-width: 100% !important;
+    max-height: none !important;
     float: none !important;
     margin: 12px 0 !important;
   }
@@ -113,7 +116,7 @@ In your downtime, the area around Ostional has a lot to offer. The group hiked t
 <img src="/images/blog/CostaRica6.jpg" alt="Costa Rica">
 </div>
 
-BIOMA also offers an optional 3-day add-on at the end of the program that includes waterfall exploration, zip-lining, river tubing, surfing, and time to relax in hot springs and mud baths.
+BIOMA also offers an optional 3-day add-on at the end of the program that includes waterfall exploration, zip-lining, river tubing, surfing, and time to relax in hot springs and mud baths. I did it, and I'd do it again in a heartbeat.
 
 ---
 
