@@ -13,11 +13,25 @@ tags:
 <style>
 .page__content a { color: #2c4a3e !important; text-decoration: underline; }
 .page__content a:hover { color: #ffa44a !important; }
-.blog-img {
-  width: 45%;
+.page__content img.blog-img {
+  float: right !important;
+  width: 45% !important;
+  max-width: 45% !important;
+  display: inline !important;
   border-radius: 8px;
-  margin: 6px 0 12px 18px;
+  margin: 6px 0 12px 18px !important;
 }
+.page__content img.blog-img-left {
+  float: left !important;
+  width: 45% !important;
+  max-width: 45% !important;
+  display: inline !important;
+  border-radius: 8px;
+  margin: 6px 18px 12px 0 !important;
+}
+.page__content .blog-clear { clear: both; display: block; }
+.page__content p { overflow: visible !important; }
+</style>
 .blog-img-left {
   width: 45%;
   border-radius: 8px;
@@ -152,9 +166,9 @@ Shifts at MAR cover an impressive range of research activities across multiple e
 
 <div class="blog-clear"></div>
 
-<img src="/images/blog/Moz2.jpg" class="blog-img" alt="Mozambique">
-<img src="/images/blog/Moz6.jpg" class="blog-img" alt="Mozambique">
-<img src="/images/blog/Moz9.jpg" class="blog-img" alt="Mozambique">
+<img src="/images/blog/Moz2.JPG" class="blog-img" alt="Mozambique">
+<img src="/images/blog/Moz6.JPG" class="blog-img" alt="Mozambique">
+<img src="/images/blog/Moz9.JPG" class="blog-img" alt="Mozambique">
 
 <div class="blog-clear"></div>
 
@@ -169,7 +183,7 @@ Shifts at MAR cover an impressive range of research activities across multiple e
 
 **Land-based surveys** involve Humpback whale monitoring from the sand dunes above Závora. During the austral winter months, Humpback whales migrate through the area, and these surveys contribute to long-term population data. During my first internship, we were lucky enough to see a whale swim directly beneath us on one of our last dives.
 
-<img src="/images/blog/Moz1.JPG" class="blog-img-left" alt="Mozambique">
+<img src="/images/blog/Moz1.jpg" class="blog-img-left" alt="Mozambique">
 
 ### Free time
 
