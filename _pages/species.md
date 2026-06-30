@@ -161,7 +161,7 @@ const ANCESTOR_MAP = [
 ];
 
 const GROUP_CONFIG = [
-  { key: 'Mollusca',        label: 'Molluscs',                     icon: 'fas fa-water' },
+  { key: 'Mollusca',        label: 'Molluscs',                     icon: 'icon-shell' },
   { key: 'Actinopterygii',  label: 'Bony Fish',                    icon: 'fas fa-fish' },
   { key: 'Chondrichthyes',  label: 'Sharks & Rays',                icon: 'fas fa-bolt' },
   { key: 'Echinodermata',   label: 'Echinoderms',                  icon: 'fas fa-star' },
@@ -178,7 +178,7 @@ const GROUP_CONFIG = [
   { key: 'Insecta',         label: 'Insects',                      icon: 'fas fa-bug' },
   { key: 'Arachnida',       label: 'Arachnids',                    icon: 'fas fa-spider' },
   { key: 'Plantae',         label: 'Plants',                       icon: 'fas fa-leaf' },
-  { key: 'Fungi',           label: 'Fungi',                        icon: 'fas fa-seedling' },
+  { key: 'Fungi',           label: 'Fungi',                        icon: 'ti ti-mushroom' },
   { key: 'Chromista',       label: 'Chromista',                    icon: 'fas fa-microscope' },
   { key: 'Protozoa',        label: 'Protozoa',                     icon: 'fas fa-microscope' },
   { key: 'Animalia',        label: 'Other Animals',                icon: 'fas fa-globe' },
