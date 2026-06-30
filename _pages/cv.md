@@ -44,6 +44,23 @@ redirect_from:
   left: 0;
   color: #ffa44a;
 }
+.cv-sublist {
+  list-style: none;
+  margin: 4px 0 0 0;
+  padding: 0 0 0 1.5rem;
+}
+.cv-sublist li {
+  font-size: 0.85rem;
+  padding: 2px 0 2px 1rem !important;
+  position: relative;
+  color: #555;
+}
+.cv-sublist li::before {
+  content: "–";
+  position: absolute;
+  left: 0;
+  color: #ffa44a;
+}
 .cv-timeline {
   position: relative;
   padding-left: 24px;
@@ -121,7 +138,7 @@ redirect_from:
 }
 </style>
 
-<p class="cv-summary">Marine biologist and scientific diver completing masters in marine biology at the Universidade do Algarve, with field research experience across Mozambique, San Diego, Greece, Costa Rica, and Australia. My thesis research compared SCUBA-based sampling methodologies for assessing nudibranch diversity and abundance on rocky reef ecosystems in Mozambique. I am passionate about marine biodiversity, underwater photography, and conservation, and am currently completing my SSI Divemaster certification in Hawai'i, with 150+ dives logged.</p>
+<p class="cv-summary">I am a marine biologist and scientific diver completing my masters in marine biology at the Universidade do Algarve, with field research experience across Mozambique, San Diego, Greece, Costa Rica, and Australia. My thesis research compared SCUBA-based sampling methodologies for assessing nudibranch diversity and abundance on rocky reef ecosystems in Mozambique. I am passionate about marine biodiversity, underwater photography, and conservation, and am currently completing my SSI Divemaster certification in Hawai'i, with 150+ dives logged.</p>
 
 <div class="cv-section-title"><i class="fas fa-microscope"></i> Research Interests</div>
 <ul class="cv-list">
@@ -143,8 +160,14 @@ redirect_from:
   <li>Divemaster. SSI. Anticipated July 2026.</li>
   <li>Stress and Rescue. SSI. May 2026.</li>
   <li>First Aid, CPR, Oxygen. SSI. May 2026.</li>
-  <li>Scientific Diving. CCMAR, UAlg. May 2025.</li>
-  <li>Advanced Open Water. SSI. May 2025. Specialties: Nitrox EAN32, Deep Diving (30m), Navigation, Search & Recovery.</li>
+  <li>Advanced Open Water. SSI. Specialties: Nitrox EAN32, Deep Diving (30m), Navigation, Search & Recovery. May 2025.</li>
+  <li>Scientific Diving. CCMAR, UAlg. May 2025.
+    <ul class="cv-sublist">
+      <li>Radial search</li>
+      <li>Quadrat sampling</li>
+      <li>Transect sampling</li>
+    </ul>
+  </li>
 </ul>
 
 <div class="cv-section-title"><i class="fas fa-briefcase"></i> Work Experience</div>
@@ -219,7 +242,6 @@ redirect_from:
 
 <div class="cv-section-title"><i class="fas fa-tools"></i> Skills</div>
 <ul class="cv-two-col">
-  <li>Advanced SCUBA Certified</li>
   <li>Scientific Diving</li>
   <li>Transect Sampling</li>
   <li>Wet Lab Experience</li>
