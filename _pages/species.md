@@ -5,7 +5,7 @@ permalink: /species/
 author_profile: false
 ---
 
-A living log of every species I've observed in the wild, automatically synced from my <a href="https://www.inaturalist.org/people/mayamegret" target="_blank">iNaturalist profile</a>. Updated every time I log a new observation!
+A living log of every species I've observed in the wild, automatically synced from my <a href="https://www.inaturalist.org/people/mayamegret" target="_blank" style="color:#2c4a3e; text-decoration: underline;">iNaturalist profile</a>. Updated every time I log a new observation!
 
 <div id="species-stats" style="margin-bottom: 1.5rem; color: #2c4a3e; font-size: 0.95rem;"></div>
 <div id="species-loading" style="text-align:center; padding: 40px; font-size: 1.1rem; color: #2c4a3e;">Loading species...</div>
@@ -37,6 +37,7 @@ A living log of every species I've observed in the wild, automatically synced fr
   gap: 14px;
 }
 .species-card {
+  position: relative;
   background: rgba(255,255,255,0.35);
   border-radius: 8px;
   overflow: hidden;
@@ -83,6 +84,21 @@ A living log of every species I've observed in the wild, automatically synced fr
   font-size: 0.72rem;
   color: #999;
 }
+.species-fave-badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: rgba(0,0,0,0.65);
+  color: #e8546b;
+  font-size: 0.9rem;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
 @media (max-width: 900px) {
   .species-grid { grid-template-columns: repeat(3, 1fr); }
 }
@@ -93,6 +109,45 @@ A living log of every species I've observed in the wild, automatically synced fr
 
 <script>
 const INAT_USER = 'mayamegret';
+
+const FAVORITES = [
+  "Pteraeolidia semperi",
+  "Hexabranchus lacer",
+  "Trapezia rufopunctata",
+  "Tritoniopsis elegans",
+  "Glaucilla marginata",
+  "Hypselodoris pulchella",
+  "Hypselodoris yarae",
+  "Hexabranchus sanguineus",
+  "Gymnothorax favagineus",
+  "Bitis arietans",
+  "Pyxicephalus edulis",
+  "Hypselodoris maculosa",
+  "Hermodice carunculata",
+  "Dryophytes cinereus",
+  "Panthera pardus pardus",
+  "Panthera leo melanochaita",
+  "Crocuta crocuta",
+  "Ceratotherium simum simum",
+  "Tockus leucomelas",
+  "Giraffa giraffa giraffa",
+  "Loxodonta africana",
+  "Taenianotus triacanthus",
+  "Gymnothorax griseus",
+  "Heterocentrotus mamillatus",
+  "Octopus cyanea",
+  "Hippocampus camelopardalis",
+  "Nembrotha aurea",
+  "Nembrotha purpureolineata",
+  "Goniobranchus albopunctatus",
+  "Sakuraeolis arcana",
+  "Ocypode ceratophthalmus",
+  "Pinnoctopus alpheus",
+  "Hemiscyllium ocellatum",
+  "Glaucostegus typus",
+  "Notamacropus parryi",
+  "Drosera spatulata"
+];
 
 const ANCESTOR_MAP = [
   { key: 'Chondrichthyes',  id: 47273  },
@@ -214,12 +269,20 @@ function renderSpecies(species) {
       const commonName = taxon.preferred_common_name || taxon.name;
       const sciName = taxon.name;
       const inatUrl = `https://www.inaturalist.org/taxa/${taxon.id}`;
+      const isFave = FAVORITES.includes(sciName);
 
       const card = document.createElement('a');
       card.className = 'species-card';
       card.href = inatUrl;
       card.target = '_blank';
       card.rel = 'noopener noreferrer';
+
+      if (isFave) {
+        const badge = document.createElement('span');
+        badge.className = 'species-fave-badge';
+        badge.innerHTML = '<i class="fas fa-heart"></i>';
+        card.appendChild(badge);
+      }
 
       if (s.photo) {
         const img = document.createElement('img');
