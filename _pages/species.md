@@ -25,7 +25,7 @@ A living log of every species I've observed in the wild, automatically synced fr
   align-items: center;
   gap: 10px;
 }
-.species-group-title i { color: #ffa44a; }
+.species-group-title i { color: #2c4a3e; }
 .species-group-count {
   font-size: 0.85rem;
   font-weight: normal;
