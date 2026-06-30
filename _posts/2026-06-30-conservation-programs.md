@@ -87,6 +87,9 @@ Shifts are divided into three main types:
 
 When you're not on shift, there is so much fun to be had around the island. During my free time I explored the island, booked a boat tour to nearby coves, relaxed at nearby beaches and pools, and ate my weight in Greek food.
 
+![Greece](/images/blog/Greece8.jpg)
+![Greece](/images/blog/Greece9.jpg)
+
 
 ---
 
@@ -95,6 +98,8 @@ When you're not on shift, there is so much fun to be had around the island. Duri
 **Website:** [marexpeditions.com](https://www.marexpeditions.com)
 
 ![Mozambique](/images/blog/Moz4.jpg)
+![Mozambique](/images/blog/Moz12.jpg)
+
 
 MAR Expeditions is a volunteer opportunity for aspiring scientists, passionate conservationists, and engaged naturalists to gain scientific SCUBA diving and freediving experience, support active research, and learn firsthand from experts across a variety of different marine environments in Závora, Mozambique.
 
@@ -125,6 +130,8 @@ Shifts at MAR cover an impressive range of research activities across multiple e
 
 ![Mozambique](/images/blog/Moz5.jpg)
 
+![Mozambique](/images/blog/Moz13.jpg)
+
 
 **Land-based surveys** involve Humpback whale monitoring from the sand dunes above Závora. During the austral winter months, Humpback whales migrate through the area, and these surveys contribute to long-term population data. During my first internship, we were lucky enough to see a whale swim directly beneath us on one of our last dives.
 
@@ -134,6 +141,7 @@ Shifts at MAR cover an impressive range of research activities across multiple e
 
 When you're not on shift, you can complete data entry, walk to the lighthouse for sunset, head to the nearby lodge for pizza night, or book a whale shark snorkel tour out of Tofo.
 
+![Mozambique](/images/blog/Moz10.jpg)
 
 ---
 
