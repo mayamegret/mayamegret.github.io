@@ -147,9 +147,9 @@ In July 2023, I spent four weeks volunteering with their sea turtle conservation
 
 <div class="blog-clear"></div>
 
-<img src="/images/blog/Greece5.jpg" class="blog-img-left" alt="Greece">
-
 ### What the work looks like
+
+<img src="/images/blog/Greece5.jpg" class="blog-img-left" alt="Greece">
 
 Shifts are divided into three main types:
 
@@ -171,9 +171,9 @@ Shifts are divided into three main types:
 
 <div class="blog-clear"></div>
 
-<img src="/images/blog/Greece6.jpg" class="blog-img-left" alt="Greece">
-
 ### Free time
+
+<img src="/images/blog/Greece6.jpg" class="blog-img-left" alt="Greece">
 
 When you're not on shift, there is so much fun to be had around the island. During my free time I explored the island and visited the town of Asos, booked a boat tour to nearby coves, relaxed at the beaches and pools, and ate my weight in Greek food.
 
@@ -200,9 +200,9 @@ One of the most extraordinary things about Ostional is that it is one of the few
 
 <div class="blog-clear"></div>
 
-<img src="/images/blog/CostaRica3.jpg" class="blog-img-left" alt="Costa Rica">
-
 ### What the work looks like
+
+<img src="/images/blog/CostaRica3.jpg" class="blog-img-left" alt="Costa Rica">
 
 **Turtle research** happens at night, when nesting females come ashore. During these shifts, volunteers collect data on nesting females including measuring the depth of the nest and counting how many eggs are laid, measuring the size of the nesting turtle, and tagging any untagged turtles to contribute to long-term population monitoring data.
 
@@ -212,9 +212,9 @@ One of the most extraordinary things about Ostional is that it is one of the few
 
 <div class="blog-clear"></div>
 
-<img src="/images/blog/CostaRica7.jpg" class="blog-img-left" alt="Costa Rica">
-
 ### Free time
+
+<img src="/images/blog/CostaRica7.jpg" class="blog-img-left" alt="Costa Rica">
 
 In your downtime, the area around Ostional has a lot to offer. We hiked to nearby waterfalls, watched some of the most beautiful beach sunsets I've ever seen, played football with the local community, and ate the most incredible homemade food with my host family.
 
