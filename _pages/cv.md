@@ -276,6 +276,7 @@ redirect_from:
   <li>Underwater Photography</li>
   <li>SCUBA Tank Filling & Compressor Operation</li>
   <li>Microsoft Suite Applications</li>
+  <li>Web DevelopmentWeb Development (GitHub Pages & Jekyll, HTML, CSS, JavaScript)</li>
 </ul>
 
 <div class="cv-section-title"><i class="fas fa-book-open"></i> Relevant Courses</div>
