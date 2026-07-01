@@ -76,101 +76,6 @@ These programs gave me hands-on scientific skills and connected me with incredib
 
 ---
 
-## BIOMA Travel — Ostional, Costa Rica
-
-**Website:** [biomatravel.org](https://www.biomatravel.org)
-
-<img src="/images/blog/CostaRica1.jpg" class="blog-img" alt="Costa Rica">
-
-BIOMA Travel runs a sea turtle conservation program in Ostional, Costa Rica, focused on hands-on research with nesting Olive Ridley sea turtles (*Lepidochelys olivacea*). The program emphasizes learning sea turtle biology, ecology, and conservation while developing real scientific techniques to collect and analyze data on nesting and foraging turtles, all under the guidance of local project staff.
-
-In June 2021, I volunteered for 12 days with their sea turtle conservation program. It was my first real conservation experience, and it lit a fire in me that has guided everything I've done since.
-
-One of the most extraordinary things about Ostional is that it is one of the few places in the world where Olive Ridley turtles perform an *arribada* — a Spanish word meaning "arrival" — in which thousands of females come ashore simultaneously over a 3 to 5 day period to nest. Witnessing this phenomenon was unlike anything I had ever seen. Collecting data during an arribada is both scientifically invaluable and deeply inspiring.
-
-<div class="blog-clear"></div>
-
-<img src="/images/blog/CostaRica3.jpg" class="blog-img-left" alt="Costa Rica">
-
-### What the work looks like
-
-**Turtle research** happens at night, when nesting females come ashore. During these shifts, volunteers collect data on nesting females including measuring the depth of the nest and counting how many eggs are laid, measuring the size of the nesting turtle, and tagging any untagged turtles to contribute to long-term population monitoring data.
-
-<img src="/images/blog/CostaRica2.jpg" class="blog-img" alt="Costa Rica">
-
-**Additional conservation work** includes planting trees to restore coastal habitat and participating in beach cleanups to reduce threats to nesting turtles and hatchlings.
-
-<div class="blog-clear"></div>
-
-<img src="/images/blog/CostaRica7.jpg" class="blog-img-left" alt="Costa Rica">
-
-### Free time
-
-In your downtime, the area around Ostional has a lot to offer. We hiked to nearby waterfalls, watched some of the most beautiful beach sunsets I've ever seen, played football with the local community, and ate the most incredible homemade food with my host family.
-
-<div class="blog-clear"></div>
-
-<div class="blog-gallery">
-<img src="/images/blog/CostaRica4.jpg" alt="Costa Rica">
-<img src="/images/blog/CostaRica5.jpg" alt="Costa Rica">
-<img src="/images/blog/CostaRica6.jpg" alt="Costa Rica">
-</div>
-
-BIOMA also offers an optional 3-day add-on at the end of the program that includes waterfall exploration, zip-lining, river tubing, surfing, and time to relax in hot springs and mud baths.
-
----
-
-## Wildlife Sense — Kefalonia, Greece
-
-**Website:** [wildlifesense.com](https://www.wildlifesense.com)
-
-<img src="/images/blog/Greece1.jpg" class="blog-img" alt="Greece">
-
-Wildlife Sense is a science-based research and conservation project in Kefalonia, Greece, that collaborates with local and national authorities to protect endangered sea turtles and their habitats. They run two volunteer programs: one focused on sea turtle conservation and one focused on coastal conservation.
-
-In July 2023, I spent four weeks volunteering with their sea turtle conservation program and it was one of the most memorable experiences of my life. Kefalonia is a stunning island, but spending a month working to protect loggerhead sea turtles (*Caretta caretta*) in the Ionian Sea made it something truly special.
-
-<div class="blog-clear"></div>
-
-<img src="/images/blog/Greece5.jpg" class="blog-img-left" alt="Greece">
-
-### What the work looks like
-
-Shifts are divided into three main types:
-
-**Beach shifts** involve biking or walking to nearby beaches to protect newly laid nests, relocate endangered nests to safer locations, monitor nests that are currently incubating or hatching, participate in beach cleanups, and conduct beach mapping.
-
-<div class="blog-clear"></div>
-
-<div class="blog-gallery">
-<img src="/images/blog/Greece3.jpg" alt="Greece">
-<img src="/images/blog/Greece4.jpg" alt="Greece">
-<img src="/images/blog/Greece7.jpg" alt="Greece">
-</div>
-
-**Harbor shifts** take place at the Argostoli harbor, which is a well-known gathering spot for loggerhead turtles that forage there year-round. During these shifts, volunteers observe and record information about the turtles' foraging behavior, social interactions, and any injuries or abnormalities.
-
-<img src="/images/blog/Greece2.jpg" class="blog-img" alt="Greece">
-
-**Night patrol shifts** are assigned depending on the time of season. During these shifts, volunteers patrol the beaches to monitor any remaining nesting turtles and ensure that baby hatchlings make it safely to the sea. Turtles generally nest earlier in the season and hatch later, but in July 2023 the timing overlapped beautifully, and I got to witness both nesting females and hatchlings making their way to the ocean!
-
-<div class="blog-clear"></div>
-
-<img src="/images/blog/Greece6.jpg" class="blog-img-left" alt="Greece">
-
-### Free time
-
-When you're not on shift, there is so much fun to be had around the island. During my free time I explored the island and visited the town of Asos, booked a boat tour to nearby coves, relaxed at the beaches and pools, and ate my weight in Greek food.
-
-<div class="blog-clear"></div>
-
-<div class="blog-gallery">
-<img src="/images/blog/Greece8.jpg" alt="Greece">
-<img src="/images/blog/Greece9.JPG" alt="Greece">
-</div>
-
----
-
 ## MAR Expeditions — Závora, Mozambique
 
 **Website:** [marexpeditions.com](https://www.marexpeditions.com)
@@ -230,14 +135,109 @@ When you're not on shift, you can complete data entry, walk to the lighthouse fo
 
 ---
 
+## Wildlife Sense — Kefalonia, Greece
+
+**Website:** [wildlifesense.com](https://www.wildlifesense.com)
+
+<img src="/images/blog/Greece1.jpg" class="blog-img" alt="Greece">
+
+Wildlife Sense is a science-based research and conservation project in Kefalonia, Greece, that collaborates with local and national authorities to protect endangered sea turtles and their habitats. They run two volunteer programs: one focused on sea turtle conservation and one focused on coastal conservation.
+
+In July 2023, I spent four weeks volunteering with their sea turtle conservation program and it was one of the most memorable experiences of my life. Kefalonia is a stunning island, but spending a month working to protect loggerhead sea turtles (*Caretta caretta*) in the Ionian Sea made it something truly special.
+
+<div class="blog-clear"></div>
+
+<img src="/images/blog/Greece5.jpg" class="blog-img-left" alt="Greece">
+
+### What the work looks like
+
+Shifts are divided into three main types:
+
+**Beach shifts** involve biking or walking to nearby beaches to protect newly laid nests, relocate endangered nests to safer locations, monitor nests that are currently incubating or hatching, participate in beach cleanups, and conduct beach mapping.
+
+<div class="blog-clear"></div>
+
+<div class="blog-gallery">
+<img src="/images/blog/Greece3.jpg" alt="Greece">
+<img src="/images/blog/Greece4.jpg" alt="Greece">
+<img src="/images/blog/Greece7.jpg" alt="Greece">
+</div>
+
+**Harbor shifts** take place at the Argostoli harbor, which is a well-known gathering spot for loggerhead turtles that forage there year-round. During these shifts, volunteers observe and record information about the turtles' foraging behavior, social interactions, and any injuries or abnormalities.
+
+<img src="/images/blog/Greece2.jpg" class="blog-img" alt="Greece">
+
+**Night patrol shifts** are assigned depending on the time of season. During these shifts, volunteers patrol the beaches to monitor any remaining nesting turtles and ensure that baby hatchlings make it safely to the sea. Turtles generally nest earlier in the season and hatch later, but in July 2023 the timing overlapped beautifully, and I got to witness both nesting females and hatchlings making their way to the ocean!
+
+<div class="blog-clear"></div>
+
+<img src="/images/blog/Greece6.jpg" class="blog-img-left" alt="Greece">
+
+### Free time
+
+When you're not on shift, there is so much fun to be had around the island. During my free time I explored the island and visited the town of Asos, booked a boat tour to nearby coves, relaxed at the beaches and pools, and ate my weight in Greek food.
+
+<div class="blog-clear"></div>
+
+<div class="blog-gallery">
+<img src="/images/blog/Greece8.jpg" alt="Greece">
+<img src="/images/blog/Greece9.JPG" alt="Greece">
+</div>
+
+---
+
+## BIOMA Travel — Ostional, Costa Rica
+
+**Website:** [biomatravel.org](https://www.biomatravel.org)
+
+<img src="/images/blog/CostaRica1.jpg" class="blog-img" alt="Costa Rica">
+
+BIOMA Travel runs a sea turtle conservation program in Ostional, Costa Rica, focused on hands-on research with nesting Olive Ridley sea turtles (*Lepidochelys olivacea*). The program emphasizes learning sea turtle biology, ecology, and conservation while developing real scientific techniques to collect and analyze data on nesting and foraging turtles, all under the guidance of local project staff.
+
+In June 2021, I volunteered for 12 days with their sea turtle conservation program. It was my first real conservation experience, and it lit a fire in me that has guided everything I've done since.
+
+One of the most extraordinary things about Ostional is that it is one of the few places in the world where Olive Ridley turtles perform an *arribada* — a Spanish word meaning "arrival" — in which thousands of females come ashore simultaneously over a 3 to 5 day period to nest. Witnessing this phenomenon was unlike anything I had ever seen. Collecting data during an arribada is both scientifically invaluable and deeply inspiring.
+
+<div class="blog-clear"></div>
+
+<img src="/images/blog/CostaRica3.jpg" class="blog-img-left" alt="Costa Rica">
+
+### What the work looks like
+
+**Turtle research** happens at night, when nesting females come ashore. During these shifts, volunteers collect data on nesting females including measuring the depth of the nest and counting how many eggs are laid, measuring the size of the nesting turtle, and tagging any untagged turtles to contribute to long-term population monitoring data.
+
+<img src="/images/blog/CostaRica2.jpg" class="blog-img" alt="Costa Rica">
+
+**Additional conservation work** includes planting trees to restore coastal habitat and participating in beach cleanups to reduce threats to nesting turtles and hatchlings.
+
+<div class="blog-clear"></div>
+
+<img src="/images/blog/CostaRica7.jpg" class="blog-img-left" alt="Costa Rica">
+
+### Free time
+
+In your downtime, the area around Ostional has a lot to offer. We hiked to nearby waterfalls, watched some of the most beautiful beach sunsets I've ever seen, played football with the local community, and ate the most incredible homemade food with my host family.
+
+<div class="blog-clear"></div>
+
+<div class="blog-gallery">
+<img src="/images/blog/CostaRica4.jpg" alt="Costa Rica">
+<img src="/images/blog/CostaRica5.jpg" alt="Costa Rica">
+<img src="/images/blog/CostaRica6.jpg" alt="Costa Rica">
+</div>
+
+BIOMA also offers an optional 3-day add-on at the end of the program that includes waterfall exploration, zip-lining, river tubing, surfing, and time to relax in hot springs and mud baths.
+
+---
+
 ## Why it's worth it
 
-From these volunteer programs, you can progress your career in marine science by learning valuable field skills while participating in meaningful conservation research, traveling the world, and meeting people who share your passion for the ocean. 
+From these volunteer programs, you can progress your career in marine science by learning valuable field skills while participating in meaningful conservation research, traveling the world, and meeting people who share your passion for the ocean.
 
 If you're considering any of these programs and want to know more about what to expect, what to pack, or what the day-to-day really looks like, feel free to reach out!
 
 **Apply today.**
 
-- [BIOMA Travel](https://www.biomatravel.org) — Ostional, Costa Rica
-- [Wildlife Sense](https://www.wildlifesense.com) — Kefalonia, Greece
 - [MAR Expeditions](https://www.marexpeditions.com) — Závora, Mozambique
+- [Wildlife Sense](https://www.wildlifesense.com) — Kefalonia, Greece
+- [BIOMA Travel](https://www.biomatravel.org) — Ostional, Costa Rica
