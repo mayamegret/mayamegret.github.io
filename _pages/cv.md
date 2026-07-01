@@ -138,7 +138,7 @@ redirect_from:
 }
 </style>
 
-<p class="cv-summary">I am a marine biologist and scientific diver completing my masters in marine biology at the Universidade do Algarve, with field research experience across Mozambique, San Diego, Greece, Costa Rica, and Australia. My thesis research compared SCUBA-based sampling methodologies for assessing nudibranch diversity and abundance on rocky reef ecosystems in Mozambique. I am passionate about marine biodiversity, underwater photography, and conservation, and am currently completing my SSI Divemaster certification in Hawai'i, with 150+ dives logged.</p>
+<p class="cv-summary">I am a marine biologist and scientific diver completing my masters in marine biology at the Universidade do Algarve, with field research experience across Mozambique, San Diego, Greece, Costa Rica, and Australia. My thesis research compared SCUBA-based sampling methodologies for assessing nudibranch diversity and abundance on rocky reef ecosystems in Mozambique. I am passionate about scientific diving, marine biodiversity, underwater photography, and conservation, and am currently completing my SSI Divemaster certification in Hawai'i, with 150+ lifetime dives logged.</p>
 
 <div class="cv-section-title"><i class="fas fa-microscope"></i> Research Interests</div>
 <ul class="cv-list">
@@ -175,6 +175,7 @@ redirect_from:
       <li>Transect sampling</li>
     </ul>
   </li>
+  <li>Open Water. NAUI. August 2022.</li>
 </ul>
 
 <div class="cv-section-title"><i class="fas fa-briefcase"></i> Work Experience</div>
@@ -182,24 +183,35 @@ redirect_from:
 
   <div class="cv-card">
     <div class="cv-card-title">Divemaster Candidate &middot; Hawaiian Diving Adventures</div>
-    <div class="cv-card-subtitle">Honolulu, Hawai'i &middot; May 2026 – Present</div>
+    <div class="cv-card-subtitle">Honolulu, Hawai'i &middot; June–July 2026</div>
     <ul>
-      <li>Completing SSI Divemaster certification program</li>
+      <li>Completing requirements for Divemaster certification</li>
+      <li>Participating in daily dive charters, assisting instructors</li>
       <li>Assist with dive shop operations including equipment rental and customer briefings</li>
       <li>Fill SCUBA tanks using a high-pressure compressor</li>
     </ul>
   </div>
 
   <div class="cv-card">
-    <div class="cv-card-title">Intern &middot; Marine Action Research</div>
-    <div class="cv-card-subtitle">Závora, Mozambique &middot; July–August 2025</div>
+    <div class="cv-card-title">Researcher &middot; Marine Action Research Expeditions</div>
+    <div class="cv-card-subtitle">Závora, Mozambique &middot; January–March 2026</div>
     <ul>
-      <li>Completed 26 scientific dives between 10–30 meters</li>
-      <li>Collected data on the abundance and species diversity of nudibranchs on shallow inshore reefs utilizing quadrats and per-time methodologies to assess local distribution</li>
-      <li>Conducted transect sampling in the Závora rockpool coral reef ecosystem to survey coral species diversity, abundance, and health</li>
-      <li>Collected data on the abundance and species diversity of seahorses in the Barra Lagoon</li>
-      <li>Photographed reef and oceanic manta rays for photo identification</li>
-      <li>Conducted fluke photo ID and land-based surveys on population abundance and migratory patterns of Humpback whales</li>
+      <li>Completed 45 scientific dive surveys</li>
+      <li>Deployed three different SCUBA-based sampling methodologies including Sightings Per Unit Effort (SPUE), Quadrats along a transect, and Belt transects for sampling nudibranchs</li>
+      <li>Measured, photographed, and recorded data on nudibranchs</li>
+      <li>Analyzed data using R Studio to determine the impact of sampling methodology on diversity and abundance estimates of nudibranchs</li>
+    </ul>
+  </div>
+
+  <div class="cv-card">
+    <div class="cv-card-title">Intern &middot; Marine Action Research Expeditions</div>
+    <div class="cv-card-subtitle">Závora, Mozambique &middot; July 2025</div>
+    <ul>
+      <li>Completed 26 scientific dives in the inshore and offshore reefs of Závora, Mozambique</li>
+      <li>Manta ray photo identification</li>
+      <li>Conducted nudibranch, coral, seahorse, and predatory fish surveys using transect and quadrat methodologies</li>
+      <li>Fluke photo ID and land-based surveys on population abundance and migratory patterns of Humpback whales</li>
+      <li>Monitoring colonization of an artificial reef</li>
     </ul>
   </div>
 
@@ -207,8 +219,8 @@ redirect_from:
     <div class="cv-card-title">Conservation Researcher &middot; Wildlife Sense</div>
     <div class="cv-card-subtitle">Cephalonia, Greece &middot; July–August 2023</div>
     <ul>
-      <li>Surveyed beaches to protect Loggerhead sea turtle nests</li>
-      <li>Relocated endangered nests to ensure survival during incubation</li>
+      <li>Protected sea turtle nests and monitored their incubation progress</li>
+      <li>Relocated endangered nests to ensure survival during their incubation period</li>
       <li>Tagged nesting female turtles</li>
       <li>Aided hatchlings on their journey to sea to ensure their survival</li>
       <li>Conducted beach mapping and beach cleanups</li>
@@ -216,7 +228,7 @@ redirect_from:
   </div>
 
   <div class="cv-card">
-    <div class="cv-card-title">UC Education Abroad Program</div>
+    <div class="cv-card-title">UC Education Abroad Program &middot; University of Queensland</div>
     <div class="cv-card-subtitle">Brisbane, Australia &middot; August–November 2022</div>
     <ul>
       <li>Studied marine biology and terrestrial ecology at the University of Queensland</li>
@@ -227,21 +239,22 @@ redirect_from:
   </div>
 
   <div class="cv-card">
-    <div class="cv-card-title">Conservation Researcher &middot; BIOMA</div>
-    <div class="cv-card-subtitle">Ostional, Costa Rica &middot; July 2021</div>
+    <div class="cv-card-title">Admissions Clerk &middot; Birch Aquarium &middot; Scripps Institution of Oceanography</div>
+    <div class="cv-card-subtitle">San Diego, California &middot; January 2022–June 2024</div>
     <ul>
-      <li>Collected data on the nesting habits of Olive Ridley sea turtles</li>
-      <li>Analyzed data to better understand effects on the surrounding community, oceanic ecosystems, and sea turtle populations</li>
-      <li>Planted trees, participated in beach cleanups, and conducted other conservation work</li>
-      <li>Rescued baby sea turtles</li>
+      <li>Handled all phases of guest visits, ensuring an exceptional experience</li>
     </ul>
   </div>
 
   <div class="cv-card">
-    <div class="cv-card-title">Admissions Clerk &middot; Birch Aquarium</div>
-    <div class="cv-card-subtitle">San Diego, California &middot; January 2022–June 2024</div>
+    <div class="cv-card-title">Conservation Researcher &middot; BIOMA</div>
+    <div class="cv-card-subtitle">Ostional, Costa Rica &middot; July 2021</div>
     <ul>
-      <li>Handled all phases of guest visits, ensuring an exceptional experience</li>
+      <li>Collected data on the nesting habits of Olive Ridley sea turtles</li>
+      <li>Analyzed data collected to better understand the effects of sea turtle monitoring on the surrounding community, oceanic ecosystems, and sea turtle populations</li>
+      <li>Tagged nesting female turtles</li>
+      <li>Aided hatchlings on their journey to sea to ensure their survival</li>
+      <li>Planted trees, participated in beach cleanups, and conducted other conservation work</li>
     </ul>
   </div>
 
@@ -249,13 +262,20 @@ redirect_from:
 
 <div class="cv-section-title"><i class="fas fa-tools"></i> Skills</div>
 <ul class="cv-two-col">
-  <li>Scientific Diving</li>
-  <li>Transect Sampling</li>
+  <li>Belt Transect Sampling</li>
+  <li>Quadrat Sampling</li>
+  <li>UVC Sampling</li>
+  <li>Nitrox EAN32</li>
+  <li>Deep Diving (30m)</li>
+  <li>Lead Dives</li>
+  <li>Radial Search</li>
+  <li>Search & Recovery</li>
   <li>Wet Lab Experience</li>
   <li>R Studio</li>
+  <li>Scientific Writing</li>
   <li>Underwater Photography</li>
-  <li>CPR and First Aid</li>
   <li>SCUBA Tank Filling & Compressor Operation</li>
+  <li>Microsoft Suite Applications</li>
 </ul>
 
 <div class="cv-section-title"><i class="fas fa-book-open"></i> Relevant Courses</div>
