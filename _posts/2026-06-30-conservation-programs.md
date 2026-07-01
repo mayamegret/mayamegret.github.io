@@ -127,9 +127,9 @@ Shifts at MAR cover a range of research activities across multiple ecosystems.
 
 ### Free time
 
-When you're not on shift, you can complete data entry, walk to the lighthouse for sunset, head to the nearby lodge for pizza night, or book a whale shark snorkel tour out of Tofo.
-
 <img src="/images/blog/Moz10.jpg" class="blog-img" alt="Mozambique">
+
+When you're not on shift, you can complete data entry, walk to the lighthouse for sunset, head to the nearby lodge for pizza night, or book a whale shark snorkel tour out of Tofo.
 
 <div class="blog-clear"></div>
 
