@@ -70,7 +70,7 @@ const locations = [
     coords: [-23.44, 151.92],
     type: "visit",
     dates: "October 30 - November 5th, 2022",
-    description: "We closed out our program with a bang for our last Marine Biology field trip to Heron Island, where we spent over a week living at the lab. Between lectures and lab work, we snorkeled at least 3 times a day, at sunrise, mid afternoon, and sunset. We swam with so many sharks, rays, nudibranchs, octopus, squid, guitarfish, eels, and so much more! I even won an award for identifying the most species don iNat! My group studied the strength of crabs, comparing their body size and weight to the size and weight of coral rubble they were capable of lifting. It was one of the best weeks of my life.",
+    description: "We closed out our program with a bang for our last Marine Biology field trip to Heron Island, where we spent over a week living at the lab. Between lectures and lab work, we snorkeled at least 3 times a day, at sunrise, mid afternoon, and sunset. We swam with so many sharks, rays, nudibranchs, octopus, squid, guitarfish, eels, and so much more! My group studied the strength of crabs, comparing their body size and weight to the size and weight of coral rubble they were capable of lifting. It was one of the best weeks of my life.",
     species: [],
     photos: ["/images/photography/Heron1.jpg", "/images/photography/Heron2.JPG", "/images/photography/Heron3.jpg", "/images/photography/Heron4.jpg", "/images/photography/Heron5.jpg", "/images/photography/Heron6.jpg"],
     galleryId: "heron-island"
@@ -120,6 +120,30 @@ const locations = [
     ],
     photos: ["/images/map/JoeyMayaFiji.jpg", "/images/map/Fiji2.jpg"],
     galleryId: "fiji"
+  },
+  {
+    name: "San Diego",
+    country: "USA",
+    coords: [32.885, -117.243],
+    type: "visit",
+    dates: "January - June 2023",
+    description: "Junior year at UCSD started off with my semester abroad at UQ, and then in January I went back to regular classes in San Diego, living with my best friend and falling in love with the city all over again! Brynn, my family and I all visited Mexico for spring break, and my sister and best friend from home visited me for my birthday! It was a great year.",
+    species: [],
+    photos: ["/images/photography/JuniorYear1.jpg", "/images/photography/JuniorYear2.JPG", "/images/photography/JuniorYear3.jpg"],
+    galleryId: "junior-year"
+  },
+  {
+    name: "Cabo San Lucas",
+    country: "Mexico",
+    coords: [22.89, -109.91],
+    type: "visit",
+    dates: "March 25-30th, 2023",
+    description: "For spring break junior year, my family, Brynn and I all went to Cabo San Lucas and did a whale watching tour where we had the most incredible interaction with these whales!",
+    species: [
+      "Humpback whale <em>(Megaptera novaeangliae)</em>"
+    ],
+    photos: ["/images/photography/Mexico1.jpg", "/images/photography/Mexico2.JPG", "/images/photography/Mexico3.jpg"],
+    galleryId: "cabo"
   },
   {
     name: "Argostoli",
@@ -179,17 +203,37 @@ const locations = [
     galleryId: "dubrovnik"
   },
   {
-    name: "La Jolla Cove",
+    name: "Grand Canyon",
     country: "USA",
-    coords: [32.8504, -117.2729],
-    type: "dive",
-    dates: "June 18th, 2024",
-    description: "COLD! So cold. First kelp forest dive! Saw so many bright orange garibaldi and playful sea lions!!",
-    species: [
-      "Garibaldi <em>(Hypsypops rubicundus)</em>",
-      "California sea lion <em>(Zalophus californianus)</em>"
-    ],
-    photos: []
+    coords: [36.10, -112.11],
+    type: "visit",
+    dates: "September 17-19th, 2023",
+    description: "To kick off senior year, my dad and I drove my car from Washington to San Diego! It was the best road trip ever. We stopped at the Grand Canyon and had a great time dressing up in fun hats and enjoying the view.",
+    species: [],
+    photos: ["/images/photography/GC1.JPG", "/images/photography/GC2.JPG", "/images/photography/GC3.JPG", "/images/photography/GC4.JPG"],
+    galleryId: "grand-canyon"
+  },
+  {
+    name: "Sedona",
+    country: "USA",
+    coords: [34.87, -111.76],
+    type: "visit",
+    dates: "September 20-22nd, 2023",
+    description: "To kick off senior year, my dad and I drove my car from Washington to San Diego! It was the best road trip ever. We stopped in Sedona to enjoy beautiful scenery and fun hikes.",
+    species: [],
+    photos: ["/images/photography/Sedona1.JPG", "/images/photography/Sedona2.JPG", "/images/photography/Sedona3.JPG", "/images/photography/Sedona4.JPG"],
+    galleryId: "sedona"
+  },
+  {
+    name: "San Diego",
+    country: "USA",
+    coords: [32.880, -117.234],
+    type: "visit",
+    dates: "September 2023 - June 2024",
+    description: "Senior year at UCSD included a spring break trip to Panama with my family and Brynn, going home for a weekend to celebrate my dads 60th and my 22nd birthdays, lots of shifts working at the Birch Aquarium, plenty of hours at the tide pools and beaches of La Jolla, a girls trip to Napa Valley, a trip to see my grandpa in St. Petersburg Florida, and lots of visits from my parents in SD. I enjoyed all my favorite restaurants from Creme de la Crepe to Dirty Birds, the Little Italy Farmers Market most Saturdays, Kobeys Swap Meet most Sundays, lots of lab work, baseball games (go Padres!), jazz nights, sailboat rides and lots of time with friends!",
+    species: [],
+    photos: ["/images/photography/SeniorYear1.jpg", "/images/photography/SeniorYear2.jpg", "/images/photography/SeniorYear3.jpg", "/images/photography/SeniorYear4.JPG", "/images/photography/SeniorYear5.jpeg", "/images/photography/SeniorYear6.jpg"],
+    galleryId: "senior-year"
   },
   {
     name: "La Jolla Tide Pools",
@@ -203,14 +247,61 @@ const locations = [
     galleryId: "la-jolla"
   },
   {
+    name: "Napa Valley",
+    country: "USA",
+    coords: [38.50, -122.27],
+    type: "visit",
+    dates: "February 15-18th, 2024",
+    description: "Girls trip! I took my mom and sister on a girls trip to Napa Valley, where we had lovely tours of the wine country and did a 4am hot air balloon ride! This was such a special trip because as soon as we got off the hot air balloon, I received the notification that I had been accepted to the graduate program at UAlg! It was a weekend of laughter and celebration!!",
+    species: [],
+    photos: ["/images/photography/Napa1.JPG", "/images/photography/Napa2.JPG", "/images/photography/Napa3.JPG", "/images/photography/Napa4.JPG", "/images/photography/Napa5.jpg", "/images/photography/Napa6.jpg", "/images/photography/Napa7.jpg"],
+    galleryId: "napa"
+  },
+  {
+    name: "Panama City",
+    country: "Panama",
+    coords: [8.99, -79.52],
+    type: "visit",
+    dates: "March 22-24th, 2024",
+    description: "First stop on our spring break in Panama was Panama City!",
+    species: [],
+    photos: ["/images/photography/PanamaCity1.JPG", "/images/photography/PanamaCity2.JPG"],
+    galleryId: "panama-city"
+  },
+  {
     name: "Isla Bastimentos",
     country: "Panama",
     coords: [9.35, -82.17],
     type: "dive",
-    dates: "March 27th, 2024",
-    description: "Brynn, dad, and I went diving together on our family trip to Panama! It was stunning, had a great great time, even did a night dive!",
+    dates: "March 24-30th, 2024",
+    description: "We spent the rest of our time in Panama in Isla Bastimentos, sleeping in bungalows over the water, watching eagle rays swim by at dinner, snorkeling and reading all day, and we even went diving! We also saw sloths and really cool frogs.",
     species: [],
+    photos: ["/images/photography/IB1.JPG", "/images/photography/IB2.jpg", "/images/photography/IB3.JPG", "/images/photography/IB4.jpg", "/images/photography/IB5.JPG", "/images/photography/IB6.JPG"],
+    galleryId: "isla-bastimentos"
+  },
+  {
+    name: "La Jolla Cove",
+    country: "USA",
+    coords: [32.8504, -117.2729],
+    type: "dive",
+    dates: "June 18th, 2024",
+    description: "COLD! So cold. First kelp forest dive! Saw so many bright orange garibaldi and playful sea lions!!",
+    species: [
+      "Garibaldi <em>(Hypsypops rubicundus)</em>",
+      "California sea lion <em>(Zalophus californianus)</em>"
+    ],
     photos: []
+  },
+  {
+    name: "UCSD",
+    country: "USA",
+    coords: [32.874, -117.228],
+    type: "visit",
+    dates: "June 11-17th, 2024",
+    description: "For my BS graduation from UCSD, I had so many loved ones come to celebrate me! It was such a special time, I got to show everyone my favorite beaches and restaurants and I truly felt so loved and supported!",
+    species: [],
+    photos: ["/images/photography/Grad1.JPG", "/images/photography/Grad2.JPG", "/images/photography/Grad3.JPG", "/images/photography/Grad4.JPG", "/images/photography/Grad5.JPG"],
+    galleryId: "graduation"
   },
   {
     name: "Cartagena",
