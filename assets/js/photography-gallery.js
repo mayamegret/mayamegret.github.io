@@ -7,6 +7,7 @@ const tiles = [
   { photos: ["/images/photography/IMG_0931.jpg", "/images/photography/IMG_1593.jpg"] },
   { photos: ["/images/photography/IMG_2277.jpg"] },
   { photos: ["/images/photography/IMG_2347.jpg"] },
+  { photos: ["/images/photography/NudiCollage1.png"] },
   { photos: ["/images/photography/IMG_9902.jpg", "/images/photography/Josephines.jpg", "/images/photography/IMG_9884.jpg", "/images/photography/Maya24Bday.jpg"], caption: "Springtime back home" },
   { photos: ["/images/photography/ElSalvador2.JPG", "/images/photography/ElSalvador1.jpg"], caption: "Celebrating my best friend in El Salvador", id: "el-salvador", mapLink: "/map/#el-salvador" },
   { photos: ["/images/photography/IMG_6375.jpg", "/images/photography/P1230432.jpg", "/images/photography/P2171886.jpg"] },
