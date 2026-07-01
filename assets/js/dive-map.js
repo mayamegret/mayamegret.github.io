@@ -10,6 +10,72 @@ const locations = [
     photos: []
   },
   {
+    name: "Girraween National Park",
+    country: "Australia",
+    coords: [-28.88, 151.92],
+    type: "visit",
+    dates: "August 24-27th, 2022",
+    description: "My study abroad program in Australia began in Girraween National Park for a three day field trip! It was an amazing start to my stay, Joey and I camped in a tent together, we saw the milky way, we hiked over 10km a day looking for plants and animals and learning about field sampling techniques! It was the first time I saw a wild kangaroo!",
+    species: [],
+    photos: ["/images/photography/Girraween1.JPG", "/images/photography/Giraween2.JPG", "/images/photography/Giraween3.JPG", "/images/photography/Giraween4.jpg", "/images/photography/Giraween5.JPG"],
+    galleryId: "giraween"
+  },
+  {
+    name: "Lamington National Park",
+    country: "Australia",
+    coords: [-28.22, 153.13],
+    type: "visit",
+    dates: "September 5-9th, 2022",
+    description: "Another amazing Terrestrial Ecology field trip with lots of hiking, including stops at waterfalls in between our lectures.",
+    species: [],
+    photos: ["/images/photography/Lamington1.jpg", "/images/photography/Lamington2.png", "/images/photography/Lamington3.png", "/images/photography/Lamington4.png", "/images/photography/Lamington5.jpeg", "/images/photography/Lamington6.png"],
+    galleryId: "lamington"
+  },
+  {
+    name: "North Stradbroke Island",
+    country: "Australia",
+    coords: [-27.50, 153.43],
+    type: "visit",
+    dates: "September 27 - October 5th, 2022",
+    description: "Our first Marine Biology field trip was to North Stradbroke Island! We stayed at a lab and got to enjoy the beaches and tide pools between classes and lab work. My group studied the ephemeral tide pools left by stingrays as they forage. We studied the prawn species that colonize the ephemeral tide pools. I also learned to do a cartwheel on the beach with Joey and Sophia, it was a very special afternoon.",
+    species: [],
+    photos: ["/images/photography/NSI1.jpg", "/images/photography/NSI2.jpg", "/images/photography/NSI3.png", "/images/photography/NSI4.png", "/images/photography/NSI5.jpg"],
+    galleryId: "north-stradbroke"
+  },
+  {
+    name: "Melbourne",
+    country: "Australia",
+    coords: [-37.81, 144.96],
+    type: "visit",
+    dates: "October 7-11th, 2022",
+    description: "During a long weekend, the girls and I went to Melbourne for a quick getaway! We explored the museums, flea markets, the university campus, and lots of good food and shopping!",
+    species: [],
+    photos: ["/images/photography/Melbourne1.jpg", "/images/photography/Melbourne2.jpg", "/images/photography/Melbourne3.jpg", "/images/photography/Melbourne4.jpg", "/images/photography/Melbourne5.JPG", "/images/photography/Melbourne6.jpg"],
+    galleryId: "melbourne"
+  },
+  {
+    name: "Carnarvon Gorge National Park",
+    country: "Australia",
+    coords: [-25.08, 148.38],
+    type: "visit",
+    dates: "October 25-28th, 2022",
+    description: "Our third and last Terrestrial Ecology field trip! This camping trip was stunning, again with lots of hiking and lectures on the riverbanks. Many more kangaroos and wallabys, stunning scenery, and amazing wildlife. A highlight was the thousands (honestly probably upwards of a million) bats that flew over us every evening at dusk. The bats would leave the trees where they were sleeping all day to dip their bellies in the river, hang upside down again in the trees to drink, and eat all of the mosquitos as they flew around. It was an incredible thing to witness!",
+    species: [],
+    photos: ["/images/photography/CG1.jpg", "/images/photography/CG2.JPG", "/images/photography/CG3.jpg", "/images/photography/CG4.jpg", "/images/photography/CG5.jpg", "/images/photography/CG6.jpg"],
+    galleryId: "carnarvon-gorge"
+  },
+  {
+    name: "Heron Island",
+    country: "Australia",
+    coords: [-23.44, 151.92],
+    type: "visit",
+    dates: "October 30 - November 5th, 2022",
+    description: "We closed out our program with a bang for our last Marine Biology field trip to Heron Island, where we spent over a week living at the lab. Between lectures and lab work, we snorkeled at least 3 times a day, at sunrise, mid afternoon, and sunset. We swam with so many sharks, rays, nudibranchs, octopus, squid, guitarfish, eels, and so much more! I even won an award for identifying the most species don iNat! My group studied the strength of crabs, comparing their body size and weight to the size and weight of coral rubble they were capable of lifting. It was one of the best weeks of my life.",
+    species: [],
+    photos: ["/images/photography/Heron1.jpg", "/images/photography/Heron2.JPG", "/images/photography/Heron3.jpg", "/images/photography/Heron4.jpg", "/images/photography/Heron5.jpg", "/images/photography/Heron6.jpg"],
+    galleryId: "heron-island"
+  },
+  {
     name: "Cairns",
     country: "Australia",
     coords: [-16.92, 145.78],
@@ -30,6 +96,17 @@ const locations = [
     photos: []
   },
   {
+    name: "Port Lincoln",
+    country: "Australia",
+    coords: [-34.73, 135.88],
+    type: "visit",
+    dates: "November 20-22nd, 2022",
+    description: "We came for the great white sharks, we stayed for the koalas. A really special time in my heart.",
+    species: [],
+    photos: ["/images/map/PortLincoln1.JPG", "/images/map/PortLincoln2.JPG", "/images/map/PortLincoln3.JPG", "/images/map/PortLincoln4.JPG"],
+    galleryId: "port-lincoln"
+  },
+  {
     name: "Pacific Harbor, Fiji",
     country: "Fiji",
     coords: [-18.24, 178.07],
@@ -43,17 +120,6 @@ const locations = [
     ],
     photos: ["/images/map/JoeyMayaFiji.jpg", "/images/map/Fiji2.jpg"],
     galleryId: "fiji"
-  },
-  {
-    name: "Port Lincoln",
-    country: "Australia",
-    coords: [-34.73, 135.88],
-    type: "visit",
-    dates: "November 20-22nd, 2022",
-    description: "We came for the great white sharks, we stayed for the koalas. A really special time in my heart.",
-    species: [],
-    photos: ["/images/map/PortLincoln1.JPG", "/images/map/PortLincoln2.JPG", "/images/map/PortLincoln3.JPG", "/images/map/PortLincoln4.JPG"],
-    galleryId: "port-lincoln"
   },
   {
     name: "Argostoli",
