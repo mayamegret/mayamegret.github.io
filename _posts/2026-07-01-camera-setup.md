@@ -70,9 +70,9 @@ tags:
 }
 </style>
 
-Photography runs in my blood. My great uncle on my moms side was a photographer who shot almost exclusively in black and white, and my dad spent a lot of his time doing film photography in France and continued with his love when he moved to the US. Growing up, I was surrounded by their photographs decorating most rooms in our house. My dad actually built a darkroom in our basement, and we spent plenty of time in there developing his black and white film together. 
+Photography runs in my blood. My great uncle on my moms side was a photographer who shot almost exclusively in black and white his whole life, and my dad spent a lot of his time doing film photography in France and continued with his love of film photography when he moved to the US in the early 90s. Growing up, I was surrounded by their photographs decorating most rooms in our house. My dad even built a darkroom in our basement, and we spent plenty of time in there developing his black and white film together. 
 
-So it's no surprise that cameras found their way into my life too. As a marine biologist and scientific diver, being able to document what I see underwater is genuinely useful for my research, and as a traveler, I want to capture the places and people I encounter along the way. Over time I've built up a little collection of cameras, each with its own personality and purpose. Here's what cameras I use the most and why.
+So it's no surprise that cameras found their way into my life too. As a marine biologist and scientific diver, being able to document what I see underwater is really useful for my research, and as a traveler, I want to capture the places and people I encounter around the world. Over time I've built up a little collection of cameras, each with its own personality and purpose. Here's what cameras I use the most and why.
 
 ---
 
@@ -80,7 +80,7 @@ So it's no surprise that cameras found their way into my life too. As a marine b
 
 *My go-to for underwater macro photography*
 
-The TG-7 is my primary underwater camera and the one I reach for whenever I want detailed, close-up shots of marine life. I have underwater housing for it, which allows me to take it to depth without any issues. Alone, the camera is still waterproof and can go up tp 15 meters without the housing!
+The TG-7 is my primary underwater camera and the one I reach for whenever I want detailed, close-up shots of marine life. I have underwater housing for it, which allows me to take it to depth without any issues. Alone, the camera is still waterproof and can go up to 15 meters without the housing!
 
 **Settings:** I always shoot using the custom white balance setting, which I set during the dive using something white, usually my underwater dive slate, to calibrate the color accurately for the depth and conditions I'm in. The TG-7 also has preset white balances for shallow, mid, and deep water which are great when you don't have a slate handy. For shooting, I use either Underwater Macro or Underwater Microscope mode depending on how small my subject is, both are excellent for capturing the fine details of nudibranchs, crustaceans, and other tiny reef creatures.
 
@@ -116,7 +116,7 @@ The Coolpix lives in my purse. It's small enough to fit in a purse and I take it
 
 This is my easy, grab-and-go film camera. It has a zoom lens, a few manual options like flash, flash with red-eye reduction, and a landscape mode, but everything else is fully automatic, which is exactly the point. I can hand it to someone else, I can shoot quickly without thinking, and I still get the warmth and character that film gives you that digital just doesn't replicate.
 
-I always try to buy rolls with 36 exposures rather than 24, you get more shots per roll and fewer interruptions. For film, I tend to shoot color negative at 200–400 ISO. Lower ISO means sharper, less grainy images with better color accuracy, which suits the kind of travel, portrait, and landscape shots I use this camera for. My go-to films are Kodak ColorPlus and Kodak Gold, both reliable, affordable, and give a beautiful glow to the photos.
+I always try to buy rolls with 36 exposures rather than 24, you get more shots per roll and fewer interruptions. In general for film, I tend to shoot color negative at 200–400 ISO. Lower ISO means sharper, less grainy images with better color accuracy, which suits the kind of travel, portrait, and landscape shots I use this camera for. My go-to films are Kodak ColorPlus and Kodak Gold, both reliable, affordable, and give a beautiful glow to the photos.
 
 ---
 
