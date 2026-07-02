@@ -52,12 +52,25 @@
   .page__content table th,
   .page__content table td {
     border-color: #2c4a3e !important;
+    border-bottom-color: #2c4a3e !important;
   }
   .page__content table tr {
     border-bottom-color: #2c4a3e !important;
   }
+  .page__content table thead {
+    background-color: rgba(44, 74, 62, 0.15) !important;
+    border-bottom-color: #2c4a3e !important;
+  }
+  .page__content table thead th {
+    background-color: transparent !important;
+    color: #2c4a3e !important;
+  }
+  .page__content table tbody tr:nth-child(even) {
+    background-color: rgba(44, 74, 62, 0.05) !important;
+  }
   .page__content hr {
     border-color: #ffa44a !important;
+    background-color: #ffa44a !important;
   }
 
   @media (max-width: 767px) {
