@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Photography"
+title: "Photo Gallery"
 permalink: /photography/
 author_profile: false
 ---
