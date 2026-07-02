@@ -189,8 +189,8 @@ While my collection of cameras includes well over a dozen, these are the cameras
 
 ## Bonus: My mom's Nikon
 
-<img src="/images/blog/MayaNikon2.JPG" class="blog-img-natural" alt="Maya with mom's Nikon">
-<img src="/images/blog/MayaNikon.JPG" class="blog-img-natural" alt="Maya with mom's Nikon">
+<img src="/images/blog/MayaNikon2.JPG" class="blog-img-natural">
+<img src="/images/blog/MayaNikon.JPG" class="blog-img-natural">
 
 My mom has a hefty Nikon DSLR that she let me use on our safari in South Africa. It's a pretty big camera (so big, you need a monopod or tripod to stabilize it) that produces stunning image quality, and having it for photographing wildlife in the distance was a gamechanger. It's not mine, but I am not above asking to borrow it whenever the opportunity calls for it. Thanks mom!
 
