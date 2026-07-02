@@ -70,7 +70,7 @@ tags:
 }
 </style>
 
-Photography runs in my blood. My great uncle on my moms side was a photographer who shot almost exclusively in black and white his whole life, and my dad spent a lot of his time doing film photography in France and continued with his love of film photography when he moved to the US in the early 90s. Growing up, I was surrounded by their photographs decorating most rooms in our house. My dad even built a darkroom in our basement, and we spent plenty of time in there developing his black and white film together. 
+Photography has always been a big part of my life. My great uncle on my moms side was a photographer who shot almost exclusively in black and white, and my dad spent a lot of his youth doing film photography in France, something he continued when he moved to the US in the early 90s. Growing up, I was surrounded by their photographs decorating most rooms in our house. My dad even built a darkroom in our basement, and we spent plenty of time in there developing his black and white film together. I got my first camera when I was 7 years old, and have only grown my collection since then. 
 
 So it's no surprise that cameras found their way into my life too. As a marine biologist and scientific diver, being able to document what I see underwater is really useful for my research, and as a traveler, I want to capture the places and people I encounter around the world. Over time I've built up a little collection of cameras, each with its own personality and purpose. Here's what cameras I use the most and why.
 
@@ -142,6 +142,14 @@ The Canon Powershot gives me more control and image quality than the Coolpix whe
 
 ---
 
+## Sony Handycam
+
+*My fav vintage video camera*
+
+My dad used the Sony Handycam to video document our family life growing up from birthdays, to holidays, to trips, to swim meets, to ordinary weekends. Watching those tapes back is one of the most special things, something we do as a family at Christmas time especially, but something I love to do any day I'm feeling nostalgic or homesick. Now tje same Sony Handycam is mine, and I've carried on the tradition in my own way, using it to video document my life as an adult living in Hawai'i. The vibe from this camera is so nostalgic, warm, and more like a memory than a recording.
+
+---
+
 ## The short version
 
 | Camera | Best for |
@@ -152,5 +160,6 @@ The Canon Powershot gives me more control and image quality than the Coolpix whe
 | Fuji Discovery 1000 | Easy travel film |
 | Konica FT-Motor | Manual film, landscapes, scenery |
 | Canon Powershot SX150 | Better digital photos |
+| Sony Handycam | Life and travel video documentation |
 
 While my collection of cameras includes well over a dozen, these are the cameras that I actually use on a regular basis!
