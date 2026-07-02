@@ -180,8 +180,8 @@ My dad used the Sony Handycam to video document our family life growing up from 
 | GoPro Hero 10 | Underwater video |
 | Fuji Discovery 1000 | Easy travel automatic film |
 | Konica FT-Motor | Manual film, landscapes, scenery |
-| Canon Powershot SX150 | High quality digital photos |
 | Nikon Coolpix | Everyday carry, friends, flash |
+| Canon Powershot SX150 | High quality digital photos |
 | Sony Handycam | Video documentation of everyday things |
 
 While my collection of cameras includes well over a dozen, these are the cameras that I actually use on a regular basis!
