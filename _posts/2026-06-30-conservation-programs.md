@@ -92,7 +92,7 @@ I first volunteered with MAR in July 2025 for four weeks contributing to their o
 **Note:** MAR requires volunteers to be Advanced SCUBA certified before arriving.
 
 <div class="blog-gallery">
-<img src="/images/blog/Moz14.jpg" alt="Mozambique">
+<img src="/images/blog/Moz14.JPG" alt="Mozambique">
 <img src="/images/blog/Moz11.JPG" alt="Mozambique">
 </div>
 
@@ -122,7 +122,7 @@ Shifts at MAR cover a range of research activities across multiple ecosystems.
 
 <div class="blog-gallery">
 <img src="/images/blog/Moz1.jpg" alt="Mozambique">
-<img src="/images/blog/Moz8.JPG" alt="Mozambique">
+<img src="/images/blog/Moz8.jpg" alt="Mozambique">
 </div>
 
 ### Free time
