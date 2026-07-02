@@ -174,10 +174,13 @@ My dad used the Sony Handycam to video document our family life growing up from 
 
 While my collection of cameras includes well over a dozen, these are the cameras that I actually use on a regular basis!
 
+---
+
 ## Bonus: My mom's Nikon
 
+<img src="/images/blog/MayaNikon2.JPG" class="blog-img-left" alt="Maya with mom's Nikon">
 <img src="/images/blog/MayaNikon.JPG" class="blog-img-left" alt="Maya with mom's Nikon">
 
-My mom has a hefty Nikon DSLR that she let me use on our safari in South Africa. It's a pretty big camera that produces stunning image quality, and having it along for game drives made a huge difference. I do not own it, but I am not above asking to borrow it whenever the opportunity calls for it. Thanks mom!
+My mom has a hefty Nikon DSLR that she let me use on our safari in South Africa. It's a pretty big camera (so big, you need a monopod or tripod to stabilize it) that produces stunning image quality, and having it for photographing wildlife in the distance was a gamechanger. It's not mine, but I am not above asking to borrow it whenever the opportunity calls for it. Thanks mom!
 
 <div class="blog-clear"></div>
