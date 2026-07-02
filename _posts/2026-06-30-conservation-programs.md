@@ -163,9 +163,11 @@ Shifts are divided into three main types:
 <img src="/images/blog/Greece7.jpg" alt="Greece">
 </div>
 
+<img src="/images/blog/Greece2.jpg" class="blog-img" alt="Greece">
+
 **Harbor shifts** take place at the Argostoli harbor, which is a well-known gathering spot for loggerhead turtles that forage there year-round. During these shifts, volunteers observe and record information about the turtles' foraging behavior, social interactions, and any injuries or abnormalities.
 
-<img src="/images/blog/Greece2.jpg" class="blog-img" alt="Greece">
+<img src="/images/blog/Greece6.jpg" class="blog-img-left" alt="Greece">
 
 **Night patrol shifts** are assigned depending on the time of season. During these shifts, volunteers patrol the beaches to monitor any remaining nesting turtles and ensure that baby hatchlings make it safely to the sea. Turtles generally nest earlier in the season and hatch later, but in July 2023 the timing overlapped beautifully, and I got to witness both nesting females and hatchlings making their way to the ocean!
 
@@ -173,7 +175,6 @@ Shifts are divided into three main types:
 
 ### Free time
 
-<img src="/images/blog/Greece6.jpg" class="blog-img-left" alt="Greece">
 
 When you're not on shift, there is so much fun to be had around the island. During my free time I explored the island and visited the town of Asos, booked a boat tour to nearby coves, relaxed at the beaches and pools, and ate my weight in Greek food.
 
