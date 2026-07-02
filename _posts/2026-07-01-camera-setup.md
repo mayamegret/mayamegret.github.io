@@ -3,6 +3,7 @@ title: 'What Cameras Are In My Current Rotation'
 date: 2026-07-01
 permalink: /posts/2026/07/camera-setup/
 read_time: false
+author_profile: false
 tags:
   - photography
   - underwater photography
