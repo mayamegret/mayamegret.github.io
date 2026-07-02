@@ -25,6 +25,17 @@ tags:
   object-fit: cover;
   object-position: center;
 }
+.page__content img.blog-img-natural {
+  float: right !important;
+  width: 35% !important;
+  max-width: 35% !important;
+  display: inline !important;
+  border-radius: 8px;
+  margin: 6px 0 12px 18px !important;
+  height: auto;
+  aspect-ratio: unset;
+  object-fit: unset;
+}
 .page__content img.blog-img-left {
   float: left !important;
   width: 35% !important;
@@ -73,9 +84,9 @@ tags:
 Photography has always been a big part of my life. My great uncle on my moms side was a photographer who shot almost exclusively in black and white, and my dad spent a lot of his youth doing film photography in France, something he continued when he moved to the US in the early 90s. Growing up, I was surrounded by their photographs decorating most rooms in our house. My dad even built a darkroom in our basement, and we spent plenty of time in there developing his black and white film together. I got my first camera when I was 7 years old, and have only grown my collection since then. 
 
 <div class="blog-gallery">
-<img src="/images/blog/ElaineArthur.jpg" alt="Great uncle Elaine and Arthur">
-<img src="/images/blog/DadMom1992.JPG" alt="Mom and Dad 1992">
-<img src="/images/blog/MayaFranceCam.JPG" alt="Maya with camera in France">
+<img src="/images/blog/ElaineArthur.JPG">
+<img src="/images/blog/DadMom1992.JPG">
+<img src="/images/blog/MayaFranceCam.JPG">
 </div>
 
 As a marine biologist and scientific diver, being able to document what I see underwater is really useful for my research, and as a traveler, I want to capture the places and people I encounter around the world. Over time I've built up a little collection of cameras, each with its own personality and purpose. Here's what cameras I use the most and why.
@@ -120,9 +131,9 @@ I always try to buy rolls with 36 exposures rather than 24, you get more shots p
 
 ## Konica FT-Motor
 
-*My manual film camera, a family heirloom*
+*My manual film camera*
 
-<img src="/images/blog/Konica.jpg" class="blog-img" alt="Konica FT-Motor">
+<img src="/images/blog/Konica.jpg" class="blog-img-natural" alt="Konica FT-Motor">
 
 This one is special. The Konica FT-Motor belonged to my grandmother, who passed it on to my mom, who then passed it on to my dad, and eventually it found its way to me. It's fully manual, which means every shot requires thought and intention and I love that about it. I use it primarily for scenery and landscapes where I have the time to set up the shot properly.
 
@@ -178,8 +189,8 @@ While my collection of cameras includes well over a dozen, these are the cameras
 
 ## Bonus: My mom's Nikon
 
-<img src="/images/blog/MayaNikon2.JPG" class="blog-img-left" alt="Maya with mom's Nikon">
-<img src="/images/blog/MayaNikon.JPG" class="blog-img-left" alt="Maya with mom's Nikon">
+<img src="/images/blog/MayaNikon2.JPG" class="blog-img-natural" alt="Maya with mom's Nikon">
+<img src="/images/blog/MayaNikon.JPG" class="blog-img-natural" alt="Maya with mom's Nikon">
 
 My mom has a hefty Nikon DSLR that she let me use on our safari in South Africa. It's a pretty big camera (so big, you need a monopod or tripod to stabilize it) that produces stunning image quality, and having it for photographing wildlife in the distance was a gamechanger. It's not mine, but I am not above asking to borrow it whenever the opportunity calls for it. Thanks mom!
 
