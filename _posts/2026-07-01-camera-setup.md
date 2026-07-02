@@ -147,6 +147,14 @@ This one is special. The Konica FT-Motor belonged to my grandmother, who passed 
 
 ---
 
+## Nikon Coolpix
+
+*My everyday carry*
+
+The Coolpix lives in my purse. It's small enough to fit in a pocket and I take it whenever I'm out with friends, exploring a new place, or just want a decent camera without committing to something heavy. It's a fully digital point-and-shoot, but I do adjust scene settings depending on conditions, changing things like brightness and flash depending on where I am and how much light is available. The built-in flash is one of its strengths; it handles flash photography well, which makes it great for indoor settings and evening outings where light is tricky.
+
+---
+
 ## Canon Powershot SX150
 
 *My higher-end digital option*
@@ -155,19 +163,12 @@ The Canon Powershot gives me more control and image quality than the Coolpix whe
 
 ---
 
-## Nikon Coolpix
-
-*My everyday carry*
-
-The Coolpix lives in my purse. It's small enough to fit in a purse and I take it whenever I'm out with friends, exploring a new place, or just want a decent camera without committing to something heavy. It's a fully digital point-and-shoot, but I do adjust scene settings depending on conditions, changing things like brightness and flash depending on where I am and how much light is available. The built-in flash is one of its strengths; it handles flash photography well, which makes it great for indoor settings and evening outings where light is tricky.
-
----
 
 ## Sony Handycam
 
 *My fav vintage video camera*
 
-My dad used the Sony Handycam to video document our family life growing up from birthdays, to holidays, to trips, to swim meets, to ordinary weekends. Watching those tapes back is one of the most special things, something we do as a family at Christmas time especially, but something I love to do any day I'm feeling nostalgic or homesick. Now the same Sony Handycam is mine, and I've carried on the tradition in my own way, using it to video document my life as an adult living in Hawai'i. The vibe from this camera is so nostalgic, warm, and more like a memory than a recording.
+My dad used the Sony Handycam to video document our family life growing up from birthdays, to holidays, to trips, to swim meets, to ordinary weekends. Watching those tapes back is one of the most special things, something we do as a family at Christmas time especially, but something I love to do any day I'm feeling nostalgic or homesick. Now the same Sony Handycam is mine, and I'm using it to video document my life living in Hawai'i. The vibe from this camera is so nostalgic, warm, and more like a memory than a recording.
 
 ---
 
@@ -192,6 +193,6 @@ While my collection of cameras includes well over a dozen, these are the cameras
 <img src="/images/blog/MayaNikon2.JPG" class="blog-img-natural">
 <img src="/images/blog/MayaNikon.JPG" class="blog-img-natural">
 
-My mom has a hefty Nikon DSLR that she let me use on our safari in South Africa. It's a pretty big camera (so big, you need a monopod or tripod to stabilize it) that produces stunning image quality, and having it for photographing wildlife in the distance was a gamechanger. It's not mine, but I am not above asking to borrow it whenever the opportunity calls for it. Thanks mom!
+My mom has a hefty Nikon DSLR that she let me use on our safari in South Africa. It's a pretty big camera (so big, you need a monopod or tripod to stabilize it) that produces stunning images, and having it for photographing wildlife in the distance was a gamechanger. It's not mine, but I am not above asking to borrow it whenever the opportunity calls for it. Thanks mom!
 
 <div class="blog-clear"></div>
