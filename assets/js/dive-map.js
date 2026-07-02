@@ -65,6 +65,17 @@ const locations = [
     galleryId: "carnarvon-gorge"
   },
   {
+  name: "Heron Island",
+  country: "Australia",
+  coords: [-23.45, 151.94],
+  type: "visit",
+  dates: "October 30 - November 5th, 2022",
+  description: "The real treasures of treasure (Heron) Island!",
+  species: [],
+  photos: ["/images/photography/HeronFriends.jpg", "/images/photography/HeronFriends2.jpg", "/images/photography/HeronFriends3.jpg", "/images/photography/HeronFriends4.jpg", "/images/photography/HeronFriends5.jpg"],
+  galleryId: "heron-friends"
+},
+  {
     name: "Heron Island",
     country: "Australia",
     coords: [-23.44, 151.92],
