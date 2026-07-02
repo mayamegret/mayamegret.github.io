@@ -86,7 +86,7 @@ Photography has always been a big part of my life. My great uncle on my moms sid
 <div class="blog-gallery">
 <img src="/images/blog/ElaineArthur.JPG">
 <img src="/images/blog/DadMom1992.JPG">
-<img src="/images/blog/MayaFranceCam.JPG">
+<img src="/images/blog/MayaFranceCam.JPG" style="object-position: bottom;">
 </div>
 
 As a marine biologist and scientific diver, being able to document what I see underwater is really useful for my research, and as a traveler, I want to capture the places and people I encounter around the world. Over time I've built up a little collection of cameras, each with its own personality and purpose. Here's what cameras I use the most and why.
@@ -190,8 +190,8 @@ While my collection of cameras includes well over a dozen, these are the cameras
 
 ## Bonus: My mom's Nikon
 
-<img src="/images/blog/MayaNikon2.JPG" class="blog-img-natural">
 <img src="/images/blog/MayaNikon.JPG" class="blog-img-natural">
+<img src="/images/blog/MayaNikon2.JPG" class="blog-img-natural">
 
 My mom has a hefty Nikon DSLR that she let me use on our safari in South Africa. It's a pretty big camera (so big, you need a monopod or tripod to stabilize it) that produces stunning images, and having it for photographing wildlife in the distance was a gamechanger. It's not mine, but I am not above asking to borrow it whenever the opportunity calls for it. Thanks mom!
 
