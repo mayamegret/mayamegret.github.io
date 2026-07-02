@@ -72,7 +72,13 @@ tags:
 
 Photography has always been a big part of my life. My great uncle on my moms side was a photographer who shot almost exclusively in black and white, and my dad spent a lot of his youth doing film photography in France, something he continued when he moved to the US in the early 90s. Growing up, I was surrounded by their photographs decorating most rooms in our house. My dad even built a darkroom in our basement, and we spent plenty of time in there developing his black and white film together. I got my first camera when I was 7 years old, and have only grown my collection since then. 
 
-So it's no surprise that cameras found their way into my life too. As a marine biologist and scientific diver, being able to document what I see underwater is really useful for my research, and as a traveler, I want to capture the places and people I encounter around the world. Over time I've built up a little collection of cameras, each with its own personality and purpose. Here's what cameras I use the most and why.
+<div class="blog-gallery">
+<img src="/images/blog/ElaineArthur.jpg" alt="Great uncle Elaine and Arthur">
+<img src="/images/blog/DadMom1992.JPG" alt="Mom and Dad 1992">
+<img src="/images/blog/MayaFranceCam.JPG" alt="Maya with camera in France">
+</div>
+
+As a marine biologist and scientific diver, being able to document what I see underwater is really useful for my research, and as a traveler, I want to capture the places and people I encounter around the world. Over time I've built up a little collection of cameras, each with its own personality and purpose. Here's what cameras I use the most and why.
 
 ---
 
@@ -102,14 +108,6 @@ The GoPro lives in the water alongside the TG-7, I have both cameras attached so
 
 ---
 
-## Nikon Coolpix
-
-*My everyday carry*
-
-The Coolpix lives in my purse. It's small enough to fit in a purse and I take it whenever I'm out with friends, exploring a new place, or just want a decent camera without committing to something heavy. It's a fully digital point-and-shoot, but I do adjust scene settings depending on conditions, changing things like brightness and flash depending on where I am and how much light is available. The built-in flash is one of its strengths; it handles flash photography well, which makes it great for indoor settings and evening outings where light is tricky.
-
----
-
 ## Fuji Discovery 1000
 
 *My point-and-shoot film camera*
@@ -124,6 +122,8 @@ I always try to buy rolls with 36 exposures rather than 24, you get more shots p
 
 *My manual film camera, a family heirloom*
 
+<img src="/images/blog/Konica.jpg" class="blog-img" alt="Konica FT-Motor">
+
 This one is special. The Konica FT-Motor belonged to my grandmother, who passed it on to my mom, who then passed it on to my dad, and eventually it found its way to me. It's fully manual, which means every shot requires thought and intention and I love that about it. I use it primarily for scenery and landscapes where I have the time to set up the shot properly.
 
 **Shutter speed:** I typically shoot at 1/125s, which is fast enough to prevent motion blur in most situations. For faster moving subjects, I'll increase the shutter speed, but that also means I need more available light to compensate.
@@ -131,6 +131,8 @@ This one is special. The Konica FT-Motor belonged to my grandmother, who passed 
 **Aperture:** This is where manual shooting gets interesting. f/22 is the most closed aperture, it keeps everything sharp from foreground to background, making it ideal for wide landscapes, but it requires a lot of light. f/3.5 is the most open, it lets in much more light and creates that beautiful background blur (bokeh) that makes subjects pop, which is great for portraits or isolating a single subject. Everything in between is a balance of light and depth of field.
 
 **Tip:** A lot of cameras, including the Konica, will indicate the ideal aperture in the viewfinder when you press the shutter button halfway down. If you're new to manual shooting, use that as a starting point and adjust from there based on the look you want.
+
+<div class="blog-clear"></div>
 
 ---
 
@@ -142,11 +144,19 @@ The Canon Powershot gives me more control and image quality than the Coolpix whe
 
 ---
 
+## Nikon Coolpix
+
+*My everyday carry*
+
+The Coolpix lives in my purse. It's small enough to fit in a purse and I take it whenever I'm out with friends, exploring a new place, or just want a decent camera without committing to something heavy. It's a fully digital point-and-shoot, but I do adjust scene settings depending on conditions, changing things like brightness and flash depending on where I am and how much light is available. The built-in flash is one of its strengths; it handles flash photography well, which makes it great for indoor settings and evening outings where light is tricky.
+
+---
+
 ## Sony Handycam
 
 *My fav vintage video camera*
 
-My dad used the Sony Handycam to video document our family life growing up from birthdays, to holidays, to trips, to swim meets, to ordinary weekends. Watching those tapes back is one of the most special things, something we do as a family at Christmas time especially, but something I love to do any day I'm feeling nostalgic or homesick. Now tje same Sony Handycam is mine, and I've carried on the tradition in my own way, using it to video document my life as an adult living in Hawai'i. The vibe from this camera is so nostalgic, warm, and more like a memory than a recording.
+My dad used the Sony Handycam to video document our family life growing up from birthdays, to holidays, to trips, to swim meets, to ordinary weekends. Watching those tapes back is one of the most special things, something we do as a family at Christmas time especially, but something I love to do any day I'm feeling nostalgic or homesick. Now the same Sony Handycam is mine, and I've carried on the tradition in my own way, using it to video document my life as an adult living in Hawai'i. The vibe from this camera is so nostalgic, warm, and more like a memory than a recording.
 
 ---
 
@@ -156,10 +166,18 @@ My dad used the Sony Handycam to video document our family life growing up from 
 |--------|----------|
 | Olympus TG-7 | Underwater macro photos |
 | GoPro Hero 10 | Underwater video |
-| Nikon Coolpix | Everyday carry, friends, flash |
-| Fuji Discovery 1000 | Easy travel film |
+| Fuji Discovery 1000 | Easy travel automatic film |
 | Konica FT-Motor | Manual film, landscapes, scenery |
-| Canon Powershot SX150 | Better digital photos |
-| Sony Handycam | Life and travel video documentation |
+| Canon Powershot SX150 | High quality digital photos |
+| Nikon Coolpix | Everyday carry, friends, flash |
+| Sony Handycam | Video documentation of everyday things |
 
 While my collection of cameras includes well over a dozen, these are the cameras that I actually use on a regular basis!
+
+## Bonus: My mom's Nikon
+
+<img src="/images/blog/MayaNikon.JPG" class="blog-img-left" alt="Maya with mom's Nikon">
+
+My mom has a hefty Nikon DSLR that she let me use on our safari in South Africa. It's a pretty big camera that produces stunning image quality, and having it along for game drives made a huge difference. I do not own it, but I am not above asking to borrow it whenever the opportunity calls for it. Thanks mom!
+
+<div class="blog-clear"></div>
