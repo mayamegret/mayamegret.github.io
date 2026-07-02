@@ -96,7 +96,7 @@ I first volunteered with MAR in July 2025 for four weeks contributing to their o
 <img src="/images/blog/Moz11.JPG" alt="Mozambique">
 </div>
 
-### What the work looks like
+### What the work looks like:
 
 Shifts at MAR cover a range of research activities across multiple ecosystems.
 
@@ -147,7 +147,7 @@ In July 2023, I spent four weeks volunteering with their sea turtle conservation
 
 <div class="blog-clear"></div>
 
-### What the work looks like
+### What the work looks like:
 
 <img src="/images/blog/Greece5.jpg" class="blog-img-left" alt="Greece">
 
@@ -175,7 +175,6 @@ Shifts are divided into three main types:
 
 ### Free time
 
-
 When you're not on shift, there is so much fun to be had around the island. During my free time I explored the island and visited the town of Asos, booked a boat tour to nearby coves, relaxed at the beaches and pools, and ate my weight in Greek food.
 
 <div class="blog-clear"></div>
@@ -201,7 +200,7 @@ One of the most extraordinary things about Ostional is that it is one of the few
 
 <div class="blog-clear"></div>
 
-### What the work looks like
+### What the work looks like:
 
 <img src="/images/blog/CostaRica3.jpg" class="blog-img-left" alt="Costa Rica">
 
