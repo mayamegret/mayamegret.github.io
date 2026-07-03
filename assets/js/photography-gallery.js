@@ -13,6 +13,7 @@ const tiles = [
   { photos: ["/images/photography/IMG_6375.jpg", "/images/photography/P1230432.jpg", "/images/photography/P2171886.jpg"] },
   { photos: ["/images/photography/IMG_7117.jpg"] },
   { photos: ["/images/photography/IMG_4483.jpg"] },
+  { photos: ["/images/photography/Zavora1.JPG", "/images/photography/Zavora2.JPG", "/images/photography/Zavora3.jpg", "/images/photography/Zavora4.JPG", "/images/photography/Zavora5.JPG", "/images/photography/Zavora6.jpg", "/images/photography/Zavora7.JPG"], caption: "Scenes from Závora, Mozambique — January 2026 thesis research trip", id: "zavora-2026", mapLink: "/map/#zavora-2026" },
   { photos: ["/images/map/Copenhagen1.jpg", "/images/map/Copenhagen2.JPG", "/images/map/Copenhagen3.jpg", "/images/map/Copenhagen4.JPG", "/images/map/Copenhagen5.jpeg", "/images/map/Copenhagen6.jpg", "/images/map/Copenhagen7.jpg"], caption: "Copenhagen, Denmark", id: "copenhagen", mapLink: "/map/#copenhagen" },
   { photos: ["/images/map/Bergen1.JPG", "/images/map/Bergen2.JPG", "/images/map/Bergen3.jpg", "/images/map/Bergen4.JPG"], caption: "Bergen, Norway", id: "bergen", mapLink: "/map/#bergen" },
   { photos: ["/images/map/Tromso1.jpg", "/images/map/Tromso2.jpg", "/images/map/Tromso3.JPG", "/images/map/Tromso4.JPG"], caption: "Tromsø, Norway", id: "tromso", mapLink: "/map/#tromso" },
