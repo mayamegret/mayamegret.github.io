@@ -497,8 +497,8 @@ const locations = [
       "Reef Manta Ray <em>(Mobula alfredi)</em>",
       "Humpback dolphins <em>(Sousa chinensis)</em>"
     ],
-    photos: []
-  },
+    photos: ["/images/map/Zavora1.JPG", "/images/map/Zavora2.JPG", "/images/map/Zavora3.jpg", "/images/map/Zavora4.JPG", "/images/map/Zavora5.JPG", "/images/map/Zavora6.jpg", "/images/map/Zavora7.JPG"],
+    galleryId: "zavora-2026"  },
   {
     name: "El Salvador",
     country: "El Salvador",
