@@ -82,7 +82,7 @@ tags:
 }
 </style>
 
-Photography has always been a big part of my life. My great uncle on my moms side was a photographer who shot almost exclusively in black and white, and my dad spent a lot of his youth doing film photography in France, something he continued when he moved to the US in the early 90s. Growing up, I was surrounded by their photographs decorating most rooms in our house. My dad even built a darkroom in our basement, and we spent plenty of time in there developing his black and white film together. I got my first camera when I was 7 years old, and have only grown my collection since then. 
+Photography has always been a big part of my life. My great uncle on my moms side was a photographer who shot almost exclusively in black and white, and my dad did a lot of film photography in France, a hobby he continued when he moved to the US in the early 90s. Growing up, I was surrounded by their photographs decorating most rooms in our house. My dad even built a darkroom in our basement, and we spent plenty of time in there developing his black and white film together. I got my first camera when I was 7 years old, and have only grown my collection since then. 
 
 <div class="blog-gallery">
 <img src="/images/blog/ElaineArthur.JPG">
@@ -90,7 +90,7 @@ Photography has always been a big part of my life. My great uncle on my moms sid
 <img src="/images/blog/MayaFranceCam.JPG" style="object-position: bottom;">
 </div>
 
-As a marine biologist and scientific diver, being able to document what I see underwater is really useful for my research, and as a traveler, I want to capture the places and people I encounter around the world. Over time I've built up a little collection of cameras, each with its own personality and purpose. Here's what cameras I use the most and why.
+As a marine biologist and scientific diver, being able to document what I see underwater is really useful for my research, and as a traveler, I want to capture the places and people I encounter around the world. Over time I've built up a little collection of cameras, each with its own vibe and purpose. Here's what cameras I use the most and why!
 
 ---
 
@@ -98,13 +98,13 @@ As a marine biologist and scientific diver, being able to document what I see un
 
 *My go-to for underwater macro photography*
 
-The TG-7 is my primary underwater camera and the one I reach for whenever I want detailed, close-up shots of marine life. I have underwater housing for it, which allows me to take it to depth without any issues. Alone, the camera is still waterproof and can go up to 15 meters without the housing!
+The TG-7 is my primary underwater camera and the one I use whenever I want detailed, close-up shots of marine life. I have underwater housing for it, which allows me to take it to depth without any issues. Without the housing, the camera is still waterproof and can go up to 15 meters!
 
-**Settings:** I always shoot using the custom white balance setting, which I set during the dive using something white, usually my underwater dive slate, to calibrate the color accurately for the depth and conditions I'm in. The TG-7 also has preset white balances for shallow, mid, and deep water which are great when you don't have a slate handy. For shooting, I use either Underwater Macro or Underwater Microscope mode depending on how small my subject is, both are excellent for capturing the fine details of nudibranchs, crustaceans, and other tiny reef creatures.
+**Settings:** When underwater, I always shoot using the custom white balance setting, which I set during the dive using something white, usually my underwater dive slate, to calibrate the color accurately for the depth and conditions I'm in. The TG-7 also has preset white balances for shallow, mid, and deep water which are great when you don't have a slate handy. For shooting, I use either Underwater Macro or Underwater Microscope mode depending on how small my subject is, both are excellent for capturing the fine details of nudibranchs, crustaceans, and other tiny reef creatures. This camera also has great landscape settings for sunsets and scenery above the water!
 
-**What I love about it:** The macro capabilities are genuinely impressive. I can get incredibly detailed shots of small subjects that would be impossible with a wider angle camera. It handles color really well when the white balance is set correctly, which makes a huge difference underwater where reds and oranges disappear quickly with depth.
+**What I love about it:** The macro capabilities are really impressive. I can get super detailed shots of small subjects that would be impossible with a wide angle camera. It handles color really well when the white balance is set correctly, which makes a huge difference underwater where reds and oranges disappear quickly with depth.
 
-**The cons:** You really need an external strobe to get the best results, something I am still saving up for. The built-in flash works, but the strobe is a game changer. Another issue I've found is that the battery drains very quickly if you try to shoot video, so I keep this camera purely for photos and leave the video to my GoPro.
+**The cons:** You really need an external light strobe to get the best results, something I am still saving up for. The built-in flash works well, but the strobe is a game changer. Another issue I've found is that the battery drains very quickly if you try to shoot video, so I keep this camera purely for photos and leave the video to my GoPro.
 
 ---
 
@@ -112,11 +112,11 @@ The TG-7 is my primary underwater camera and the one I reach for whenever I want
 
 *My underwater video camera*
 
-The GoPro lives in the water alongside the TG-7, I have both cameras attached so I can bring them on every dive. While the Olympus handles my macro photography, the GoPro handles all my video.
+My GoPro attaches to my TG-7 so I can bring them both on every dive. I use the Olympus for my macro photography (mostly for nudis), and my the GoPro for all my videos.
 
-**What I love about it:** The battery life is excellent compared to the Olympus, which makes it much better suited for continuous video recording on long dives. The video resolution is great and it doesn't only shoot wide angle, which gives you more flexibility with framing. It's also rugged, reliable, and simple to use underwater when you're also trying to navigate a dive.
+**What I love about it:** The battery life is excellent compared to the Olympus, which makes it much better for continuous video recording during long days on the boat. The video resolution is great and it doesn't only shoot wide angle, which gives you more flexibility with framing. It's also rugged, reliable, and simple to use underwater when you're also trying to navigate a dive.
 
-**The cons:** It's not as strong for still photos — I wouldn't rely on it for detailed macro shots or photos in general. But for capturing movement, behavior, and the overall feel of a dive site, it's hard to beat.
+**The cons:** It's not as strong for still photos, so I wouldn't rely on it for detailed macro shots or photos in general. But for capturing movement, behavior, and megafauna, it's hard to beat.
 
 ---
 
@@ -124,9 +124,9 @@ The GoPro lives in the water alongside the TG-7, I have both cameras attached so
 
 *My point-and-shoot film camera*
 
-This is my easy, grab-and-go film camera. It has a zoom lens, a few manual options like flash, flash with red-eye reduction, and a landscape mode, but everything else is fully automatic, which is exactly the point. I can hand it to someone else, I can shoot quickly without thinking, and I still get the warmth and character that film gives you that digital just doesn't replicate.
+This is my easy, grab-and-go film camera. It has a 12x zoom lens, a few setting options like flash, flash with red-eye reduction, and a landscape mode, but everything else is fully automatic. 
 
-I always try to buy rolls with 36 exposures rather than 24, you get more shots per roll and fewer interruptions. In general for film, I tend to shoot color negative at 200–400 ISO. Lower ISO means sharper, less grainy images with better color accuracy, which suits the kind of travel, portrait, and landscape shots I use this camera for. My go-to films are Kodak ColorPlus and Kodak Gold, both reliable, affordable, and give a beautiful glow to the photos.
+For film, I always try to buy rolls with 36 exposures rather than 24. In general, I tend to shoot color negative at 200–400 ISO. Lower ISO means sharper, less grainy images with better color accuracy, which suits the kind of travel, portrait, and landscape shots I use this camera for. My go-to films are Kodak ColorPlus and Kodak Gold, both reliable, affordable, and give a beautiful glow to the photos, but it's also fun to experiment with different film!
 
 ---
 
@@ -136,11 +136,11 @@ I always try to buy rolls with 36 exposures rather than 24, you get more shots p
 
 <img src="/images/blog/Konica.jpg" class="blog-img-natural" alt="Konica FT-Motor">
 
-This one is special. The Konica FT-Motor belonged to my grandmother, who passed it on to my mom, who then passed it on to my dad, and eventually it found its way to me. It's fully manual, which means every shot requires thought and intention and I love that about it. I use it primarily for scenery and landscapes where I have the time to set up the shot properly.
+This camera is so special to me. M many years ago, my Konica FT-Motor belonged to my grandmother, who passed it on to my mom, who then passed it on to my dad, and eventually he passed it on to me. It's fully manual, which means every shot requires time and intention. I use it mostly for scenery and landscapes where I have the time to set up the shot properly.
 
 **Shutter speed:** I typically shoot at 1/125s, which is fast enough to prevent motion blur in most situations. For faster moving subjects, I'll increase the shutter speed, but that also means I need more available light to compensate.
 
-**Aperture:** This is where manual shooting gets interesting. f/22 is the most closed aperture, it keeps everything sharp from foreground to background, making it ideal for wide landscapes, but it requires a lot of light. f/3.5 is the most open, it lets in much more light and creates that beautiful background blur (bokeh) that makes subjects pop, which is great for portraits or isolating a single subject. Everything in between is a balance of light and depth of field.
+**Aperture:** This is where manual shooting gets fun! f/22 is the most closed aperture, it keeps everything sharp from foreground to background, making it great for wide landscapes, but it requires a lot of light. f/3.5 is the most open, it lets in much more light and creates that beautiful background blur (bokeh) that makes subjects pop, which is great for portraits or isolating a single subject. Everything in between is a balance of light and depth of field.
 
 **Tip:** A lot of cameras, including the Konica, will indicate the ideal aperture in the viewfinder when you press the shutter button halfway down. If you're new to manual shooting, use that as a starting point and adjust from there based on the look you want.
 
@@ -152,7 +152,7 @@ This one is special. The Konica FT-Motor belonged to my grandmother, who passed 
 
 *My everyday carry*
 
-The Coolpix lives in my purse. It's small enough to fit in a pocket and I take it whenever I'm out with friends, exploring a new place, or just want a decent camera without committing to something heavy. It's a fully digital point-and-shoot, but I do adjust scene settings depending on conditions, changing things like brightness and flash depending on where I am and how much light is available. The built-in flash is one of its strengths; it handles flash photography well, which makes it great for indoor settings and evening outings where light is tricky.
+My Coolpix lives in my purse. It's small enough to fit in a pocket and I take it whenever I'm out with friends, exploring a new place, or just want a fun camera without committing to something heavy. It's a fully digital point-and-shoot, but I do adjust scene settings depending on conditions, changing things like scene and flash depending on where I am and how much light is available. It handles flash photography well, which makes it great for indoor settings and evening outings.
 
 ---
 
@@ -160,7 +160,7 @@ The Coolpix lives in my purse. It's small enough to fit in a pocket and I take i
 
 *My higher-end digital option*
 
-The Canon Powershot gives me more control and image quality than the Coolpix when I want it, with better zoom and overall resolution for digital photos. The tradeoff is that it's bulkier — it doesn't fit in a pocket the way the Coolpix does, so I tend to bring it when I know I want better shots and have room in a bag for it.
+The Canon Powershot gives me more control and image quality than the Coolpix, with better zoom and overall resolution for digital photos. The tradeoff is that it's bulkier, so it doesn't fit in a pocket the way the Coolpix does. I tend to bring it when I know I want better shots and have room in my bag for it.
 
 ---
 
@@ -169,7 +169,7 @@ The Canon Powershot gives me more control and image quality than the Coolpix whe
 
 *My fav vintage video camera*
 
-My dad used the Sony Handycam to video document our family life growing up from birthdays, to holidays, to trips, to swim meets, to ordinary weekends. Watching those tapes back is one of the most special things, something we do as a family at Christmas time especially, but something I love to do any day I'm feeling nostalgic or homesick. Now the same Sony Handycam is mine, and I'm using it to video document my life living in Hawai'i. The vibe from this camera is so nostalgic, warm, and more like a memory than a recording.
+Growing up, my dad used the Sony Handycam to video document our family life from birthdays, to holidays, to trips, to swim meets, to ordinary weekends. Watching those tapes back is one of the most special things, something we do as a family at Christmas time especially, but something I love to do any day I'm feeling nostalgic or homesick. Now the same Sony Handycam is mine, and I'm using it to video document my life living in Hawai'i. The vibe from this camera is so nostalgic, warm, and more like a memory than a recording.
 
 ---
 
@@ -179,9 +179,9 @@ My dad used the Sony Handycam to video document our family life growing up from 
 |--------|----------|
 | Olympus TG-7 | Underwater macro photos |
 | GoPro Hero 10 | Underwater video |
-| Fuji Discovery 1000 | Easy travel automatic film |
+| Fuji Discovery 1000 | Easy automatic film |
 | Konica FT-Motor | Manual film, landscapes, scenery |
-| Nikon Coolpix | Everyday carry, friends, flash |
+| Nikon Coolpix | Everyday use, friends, flash |
 | Canon Powershot SX150 | High quality digital photos |
 | Sony Handycam | Video documentation of everyday things |
 
