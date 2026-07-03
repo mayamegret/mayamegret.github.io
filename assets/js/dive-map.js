@@ -65,17 +65,6 @@ const locations = [
     galleryId: "carnarvon-gorge"
   },
   {
-  name: "Heron Island",
-  country: "Australia",
-  coords: [-23.45, 151.94],
-  type: "visit",
-  dates: "October 30 - November 5th, 2022",
-  description: "The real treasures of treasure (Heron) Island!",
-  species: [],
-  photos: ["/images/photography/HeronFriends.jpg", "/images/photography/HeronFriends2.jpg", "/images/photography/HeronFriends3.jpg", "/images/photography/HeronFriends4.jpg", "/images/photography/HeronFriends5.jpg"],
-  galleryId: "heron-friends"
-},
-  {
     name: "Heron Island",
     country: "Australia",
     coords: [-23.44, 151.92],
@@ -83,8 +72,19 @@ const locations = [
     dates: "October 30 - November 5th, 2022",
     description: "We closed out our program with a bang for our last Marine Biology field trip to Heron Island, where we spent over a week living at the lab. Between lectures and lab work, we snorkeled at least 3 times a day, at sunrise, mid afternoon, and sunset. We swam with so many sharks, rays, nudibranchs, octopus, squid, guitarfish, eels, and so much more! My group studied the strength of crabs, comparing their body size and weight to the size and weight of coral rubble they were capable of lifting. It was one of the best weeks of my life.",
     species: [],
-    photos: ["/images/photography/Heron1.jpg", "/images/photography/Heron2.JPG", "/images/photography/Heron3.jpg", "/images/photography/Heron4.jpg", "/images/photography/Heron5.jpg", "/images/photography/Heron6.jpg"],
+    photos: ["/images/photography/Heron3.jpg", "/images/photography/Heron1.jpg", "/images/photography/Heron2.JPG", "/images/photography/Heron4.jpg", "/images/photography/Heron5.jpg", "/images/photography/Heron6.jpg"],
     galleryId: "heron-island"
+  },
+  {
+    name: "Heron Island",
+    country: "Australia",
+    coords: [-23.45, 151.94],
+    type: "visit",
+    dates: "October 30 - November 5th, 2022",
+    description: "The real treasures of treasure (Heron) Island!",
+    species: [],
+    photos: ["/images/photography/HeronFriends.jpg", "/images/photography/HeronFriends2.jpg", "/images/photography/HeronFriends3.jpg", "/images/photography/HeronFriends4.jpg", "/images/photography/HeronFriends5.jpg"],
+    galleryId: "heron-friends"
   },
   {
     name: "Cairns",
@@ -497,8 +497,9 @@ const locations = [
       "Reef Manta Ray <em>(Mobula alfredi)</em>",
       "Humpback dolphins <em>(Sousa chinensis)</em>"
     ],
-    photos: ["/images/map/Zavora1.JPG", "/images/map/Zavora2.JPG", "/images/map/Zavora3.jpg", "/images/map/Zavora4.JPG", "/images/map/Zavora5.JPG", "/images/map/Zavora6.jpg", "/images/map/Zavora7.JPG"],
-    galleryId: "zavora-2026"  },
+    photos: ["/images/photography/Zavora1.JPG", "/images/photography/Zavora2.JPG", "/images/photography/Zavora3.jpg", "/images/photography/Zavora4.JPG", "/images/photography/Zavora5.JPG", "/images/photography/Zavora6.jpg", "/images/photography/Zavora7.JPG"],
+    galleryId: "zavora-2026"
+  },
   {
     name: "El Salvador",
     country: "El Salvador",
