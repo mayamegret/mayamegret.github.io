@@ -52,6 +52,22 @@
   .archive__item-excerpt a:hover {
     color: #ffa44a !important;
   }
+  h1, h2, h3, h4, h5, h6 {
+    border-bottom-color: #ffa44a !important;
+    color: #2c4a3e !important;
+  }
+  h1::after, h2::after, h3::after {
+    background-color: #ffa44a !important;
+    border-color: #ffa44a !important;
+  }
+  .page__title {
+    border-bottom-color: #ffa44a !important;
+    color: #2c4a3e !important;
+  }
+  .page__title::after {
+    background-color: #ffa44a !important;
+    border-color: #ffa44a !important;
+  }
   .page__content h1,
   .page__content h2,
   .page__content h3,
@@ -88,6 +104,8 @@
   .pagination a { color: #2c4a3e !important; border-color: #2c4a3e !important; }
   .btn { background-color: #2c4a3e !important; border-color: #2c4a3e !important; }
   .btn:hover { background-color: #ffa44a !important; border-color: #ffa44a !important; }
+  :focus { outline-color: #ffa44a !important; }
+  ::selection { background-color: rgba(255, 164, 74, 0.3) !important; }
 
   @media (max-width: 767px) {
     #main { flex-direction: column !important; }
