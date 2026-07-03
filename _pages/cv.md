@@ -271,7 +271,7 @@ redirect_from:
   <li>Radial Search</li>
   <li>Search & Recovery</li>
   <li>Wet Lab Experience</li>
-  <li>R Studio</li>
+  <li>R Statistical Software</li>
   <li>Scientific Writing</li>
   <li>Underwater Photography</li>
   <li>SCUBA Tank Filling & Compressor Operation</li>
