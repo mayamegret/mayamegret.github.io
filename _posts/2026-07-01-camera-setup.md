@@ -85,9 +85,11 @@ tags:
 Photography has always been a big part of my life. My great uncle on my moms side was a photographer who shot almost exclusively in black and white, and my dad did a lot of film photography in France, a hobby he continued when he moved to the US in the early 90s. Growing up, I was surrounded by their photographs decorating most rooms in our house. My dad even built a darkroom in our basement, and we spent plenty of time in there developing his black and white film together. I got my first camera when I was 7 years old, and have only grown my collection since then. 
 
 <div class="blog-gallery">
-<img src="/images/blog/ElaineArthur.JPG">
-<img src="/images/blog/DadMom1992.JPG">
-<img src="/images/blog/MayaFranceCam.JPG" style="object-position: bottom;">
+<img src="/images/blog/DadUncleArthur.jpeg" alt="Dad and Uncle Arthur" style="aspect-ratio: unset; object-fit: unset; height: auto;">
+<div style="display: flex; flex-direction: column; gap: 10px; flex: 1 1 0;">
+<img src="/images/blog/MayaNikon1.jpg" alt="Maya with Nikon" style="width: 100%; border-radius: 8px; object-fit: cover; flex: 1;">
+<img src="/images/blog/MayaFranceCam.JPG" alt="Maya with camera in France" style="width: 100%; border-radius: 8px; object-fit: cover; object-position: bottom; flex: 1;">
+</div>
 </div>
 
 As a marine biologist and scientific diver, being able to document what I see underwater is really useful for my research, and as a traveler, I want to capture the places and people I encounter around the world. Over time I've built up a little collection of cameras, each with its own vibe and purpose. Here's what cameras I use the most and why!
