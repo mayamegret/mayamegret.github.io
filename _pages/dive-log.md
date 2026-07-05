@@ -11,6 +11,11 @@ author_profile: false
   gap: 16px;
   flex-wrap: wrap;
   margin-bottom: 1.5rem;
+  #main, article.page, .page__inner-wrap {
+  max-width: 100% !important;
+  padding-left: 1em !important;
+  padding-right: 1em !important;
+}
 }
 .dive-stat-card {
   background: rgba(255,255,255,0.35);
