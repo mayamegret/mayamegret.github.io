@@ -55,13 +55,14 @@ A selection of photos from my travels and dives!
 </style>
 
 <div class="gallery-controls">
-  <div class="gallery-filter-btns">
-    <button class="gallery-filter-btn active" data-filter="all" onclick="setGalleryFilter('all')">All</button>
-    <button class="gallery-filter-btn" data-filter="underwater" onclick="setGalleryFilter('underwater')">🤿 Underwater</button>
-    <button class="gallery-filter-btn" data-filter="travel" onclick="setGalleryFilter('travel')">✈️ Travel</button>
-    <button class="gallery-filter-btn" data-filter="wildlife" onclick="setGalleryFilter('wildlife')">🦎 Wildlife</button>
-    <button class="gallery-filter-btn" data-filter="film" onclick="setGalleryFilter('film')">📷 Film</button>
-  </div>
+ <div class="gallery-filter-btns">
+  <button class="gallery-filter-btn active" data-filter="all" onclick="setGalleryFilter('all')">All</button>
+  <button class="gallery-filter-btn" data-filter="underwater" onclick="setGalleryFilter('underwater')"><i class="fas fa-anchor"></i> Underwater</button>
+  <button class="gallery-filter-btn" data-filter="travel" onclick="setGalleryFilter('travel')"><i class="fas fa-plane"></i> Travel</button>
+  <button class="gallery-filter-btn" data-filter="wildlife" onclick="setGalleryFilter('wildlife')"><i class="fas fa-dragon"></i> Wildlife</button>
+  <button class="gallery-filter-btn" data-filter="film" onclick="setGalleryFilter('film')"><i class="fas fa-film"></i> Film</button>
+</div>
+  
   <input class="gallery-search" type="text" placeholder="Search captions..." oninput="searchGallery(this.value)">
 </div>
 <div id="gallery-no-results">No photos match your search.</div>
