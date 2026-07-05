@@ -15,7 +15,7 @@ const locations = [
     coords: [45.44, 12.33],
     type: "visit",
     dates: "June 18 - July 2nd, 2019",
-    description: "Our girls trip to Italy began in Venice touring the city, gondola rides, and lots of pasta!",
+    description: "My mom, sister, and I went on a girls trip to Italy which began in Venice touring the city, going gondola rides, and eating lots of pasta!",
     species: [],
     photos: []
   },
@@ -25,7 +25,7 @@ const locations = [
     coords: [40.55, 14.24],
     type: "visit",
     dates: "June 2019",
-    description: "From Venice we made our way to Capri where we beached and explored for a few days.",
+    description: "On our girls trip to Italy, my mom, sister, and I we made our way from Venice to Capri where we beached and explored for a few days.",
     species: [],
     photos: []
   },
@@ -35,7 +35,7 @@ const locations = [
     coords: [40.63, 14.60],
     type: "visit",
     dates: "June/July 2019",
-    description: "Then we made our way through the Amalfi Coast, starting in Positano then Ravello then Sorrento.",
+    description: "After visitng Venice and Capri, my mom, sister, and I made our way through the Amalfi Coast, starting in Positano, then we visited Ravello and Sorrento.",
     species: [],
     photos: []
   },
@@ -45,7 +45,7 @@ const locations = [
     coords: [41.90, 12.50],
     type: "visit",
     dates: "July 2019",
-    description: "We finished our trip in Rome with lots of gelato and exploring!",
+    description: "To finish up our girls trip to Italy, my mom, sister, and I went to Rome, where we enjoyed lots of gelato and exploring!",
     species: [],
     photos: []
   },
@@ -414,7 +414,7 @@ const locations = [
     coords: [56.46, -2.97],
     type: "visit",
     dates: "December 28th, 2024 - January 2nd, 2025",
-    description: "After Christmas in Switzerland, I flew to Scotland to spend some time with my friend Bella. She showed me around her hometown, Dundee, including trips to the beach and drives around the countryside looking for highland cows!",
+    description: "After Christmas in Switzerland with my family, I flew to Scotland to spend some time with my friend Bella. She showed me around her hometown, Dundee, including trips to the beach and drives around the countryside looking for highland cows!",
     species: [],
     photos: []
   },
@@ -424,7 +424,7 @@ const locations = [
     coords: [55.95, -3.19],
     type: "visit",
     dates: "December 31st, 2024 - January 1st, 2025",
-    description: "We took a train down to Edinburgh for New Years Eve where we explored the city and celebrated ringing in 2025 together. We went back to Dundee for New Years feast with her family before I headed down to London with my parents.",
+    description: "Bella and I took a train from Dundee down to Edinburgh for New Years Eve 2024 where we explored the city and celebrated ringing in 2025 together. We went back to Dundee for New Years feast with her family, it was a lovely time!",
     species: [],
     photos: []
   },
