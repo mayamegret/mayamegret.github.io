@@ -7,8 +7,19 @@ author_profile: false
 
 A living log of every species I've observed in the wild, automatically synced from my <a href="https://www.inaturalist.org/people/mayamegret" target="_blank" style="color:#2c4a3e; text-decoration: underline;">iNaturalist profile</a>. Updated every time I log a new observation!
 
-<div id="species-stats" style="margin-bottom: 1.5rem; color: #2c4a3e; font-size: 0.95rem;"></div>
-<div id="species-loading" style="text-align:center; padding: 40px; font-size: 1.1rem; color: #2c4a3e;">Loading species...</div>
+<div id="species-stats" style="margin-bottom: 1rem; color: #2c4a3e; font-size: 0.95rem;"></div>
+
+<div style="display: flex; gap: 10px; margin-bottom: 1.5rem; flex-wrap: wrap; align-items: center;">
+  <input type="text" id="species-search" placeholder="Search by common or scientific name..."
+    style="flex: 1; min-width: 200px; padding: 8px 12px; border: 2px solid #2c4a3e; border-radius: 6px; background: rgba(255,255,255,0.5); color: #2c4a3e; font-size: 0.9rem; outline: none;">
+  <button id="faves-toggle" onclick="toggleFavesOnly()"
+    style="padding: 8px 16px; background: #2c4a3e; color: #fff; border: none; border-radius: 6px; cursor: pointer; font-size: 0.9rem; display: flex; align-items: center; gap: 6px; white-space: nowrap;">
+    <i class="fas fa-heart"></i> Favorites only
+  </button>
+</div>
+
+<div id="species-loading"
+  style="text-align:center; padding: 40px; font-size: 1.1rem; color: #2c4a3e;">Loading species...</div>
 <div id="species-error" style="display:none; text-align:center; padding: 40px; color: #c0392b;"></div>
 <div id="species-container"></div>
 
@@ -316,10 +327,45 @@ function renderSpecies(species) {
   document.getElementById('species-loading').style.display = 'none';
 }
 
+  let allSpeciesData = [];
+let favesOnly = false;
+let searchQuery = '';
+
+function toggleFavesOnly() {
+  favesOnly = !favesOnly;
+  const btn = document.getElementById('faves-toggle');
+  btn.style.background = favesOnly ? '#ffa44a' : '#2c4a3e';
+  btn.innerHTML = favesOnly
+    ? '<i class="fas fa-heart"></i> Show all'
+    : '<i class="fas fa-heart"></i> Favorites only';
+  applyFilters();
+}
+
+function applyFilters() {
+  let filtered = allSpeciesData;
+  if (favesOnly) {
+    filtered = filtered.filter(s => FAVORITES.includes(s.taxon.name));
+  }
+  if (searchQuery) {
+    filtered = filtered.filter(s => {
+      const common = (s.taxon.preferred_common_name || '').toLowerCase();
+      const sci = s.taxon.name.toLowerCase();
+      return common.includes(searchQuery) || sci.includes(searchQuery);
+    });
+  }
+  renderSpecies(filtered);
+}
 document.addEventListener('DOMContentLoaded', function() {
   fetchAllObservations()
     .then(deduplicateBySpecies)
-    .then(renderSpecies)
+    .then(species => {
+      allSpeciesData = species;
+      renderSpecies(species);
+      document.getElementById('species-search').addEventListener('input', function() {
+        searchQuery = this.value.toLowerCase();
+        applyFilters();
+      });
+    })
     .catch(err => {
       document.getElementById('species-loading').style.display = 'none';
       const errEl = document.getElementById('species-error');
