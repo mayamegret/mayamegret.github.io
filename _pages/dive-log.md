@@ -163,7 +163,6 @@ author_profile: false
         <th data-col="7">Total Time</th>
         <th data-col="12">Vis (m)</th>
         <th data-col="13">Current</th>
-        <th data-col="17">Buddies</th>
         <th data-col="18">Key Species</th>
       </tr>
     </thead>
@@ -234,7 +233,6 @@ function renderTable(dives) {
       <td>${row[8] || ''}</td>
       <td>${row[12] || ''}</td>
       <td>${row[13] || ''}</td>
-      <td>${row[17] || ''}</td>
       <td style="max-width:200px">${row[18] || ''}</td>
     `;
     tbody.appendChild(tr);
@@ -271,8 +269,8 @@ function updateStats(dives) {
   document.getElementById('stat-total').textContent = dives.length + 49;
   const depths = dives.map(r => parseFloat(r[5])).filter(d => !isNaN(d));
   document.getElementById('stat-depth').textContent = depths.length ? Math.max(...depths) : '—';
-  const times = dives.map(r => parseFloat(r[7])).filter(t => !isNaN(t));
-  document.getElementById('stat-time').textContent = times.length ? times.reduce((a, b) => a + b, 0) : '—';
+ const times = dives.map(r => parseFloat(r[8])).filter(t => !isNaN(t));
+document.getElementById('stat-time').textContent = times.length ? times.reduce((a, b) => a + b, 0) : '—';
   const locs = new Set(dives.map(r => r[3]).filter(Boolean));
   document.getElementById('stat-locations').textContent = locs.size;
 }
