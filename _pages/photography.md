@@ -55,15 +55,14 @@ A selection of photos from my travels and dives!
 </style>
 
 <div class="gallery-controls">
- <div class="gallery-filter-btns">
-  <button class="gallery-filter-btn active" data-filter="all" onclick="setGalleryFilter('all')">All</button>
-  <button class="gallery-filter-btn" data-filter="underwater" onclick="setGalleryFilter('underwater')"><i class="fas fa-anchor"></i> Underwater</button>
-  <button class="gallery-filter-btn" data-filter="travel" onclick="setGalleryFilter('travel')"><i class="fas fa-plane"></i> Travel</button>
-  <button class="gallery-filter-btn" data-filter="wildlife" onclick="setGalleryFilter('wildlife')"><i class="fas fa-dragon"></i> Wildlife</button>
-  <button class="gallery-filter-btn" data-filter="film" onclick="setGalleryFilter('film')"><i class="fas fa-film"></i> Film</button>
-   <button class="gallery-filter-btn" data-filter="science" onclick="setGalleryFilter('science')"><i class="fas fa-microscope"></i> Science</button>
-</div>
-  
+  <div class="gallery-filter-btns">
+    <button class="gallery-filter-btn active" data-filter="all" onclick="setGalleryFilter('all')">All</button>
+    <button class="gallery-filter-btn" data-filter="underwater" onclick="setGalleryFilter('underwater')"><i class="fas fa-anchor"></i> Underwater</button>
+    <button class="gallery-filter-btn" data-filter="travel" onclick="setGalleryFilter('travel')"><i class="fas fa-plane"></i> Travel</button>
+    <button class="gallery-filter-btn" data-filter="wildlife" onclick="setGalleryFilter('wildlife')"><i class="fas fa-dragon"></i> Wildlife</button>
+    <button class="gallery-filter-btn" data-filter="film" onclick="setGalleryFilter('film')"><i class="fas fa-film"></i> Film</button>
+    <button class="gallery-filter-btn" data-filter="science" onclick="setGalleryFilter('science')"><i class="fas fa-microscope"></i> Science</button>
+  </div>
   <input class="gallery-search" type="text" placeholder="Search captions..." oninput="searchGallery(this.value)">
 </div>
 <div id="gallery-no-results">No photos match your search.</div>
@@ -209,27 +208,11 @@ function resizeAllTiles() {
   });
 }
 
-// Run on initial load
 resizeAllTiles();
 
-// Re-run whenever the grid is re-rendered by a filter or search
 const grid = document.getElementById('photo-grid');
 const observer = new MutationObserver(() => resizeAllTiles());
 observer.observe(grid, { childList: true });
 
 window.addEventListener('resize', resizeAllTiles);
-</script>
-document.querySelectorAll('.photo-tile').forEach(tile => {
-  const img = tile.querySelector('img');
-  if (!img) return;
-  if (img.complete && img.naturalWidth) {
-    resizeMasonryItem(tile);
-  } else {
-    img.addEventListener('load', () => resizeMasonryItem(tile));
-  }
-});
-
-window.addEventListener('resize', () => {
-  document.querySelectorAll('.photo-tile').forEach(tile => resizeMasonryItem(tile));
-});
 </script>
