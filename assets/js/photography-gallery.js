@@ -67,10 +67,30 @@ const tiles = [
 
 let currentTile = 0;
 let currentPhoto = 0;
+let activeFilter = 'all';
+let searchQuery = '';
+
+function getFilteredTiles() {
+  return tiles.filter(tile => {
+    const matchesFilter = activeFilter === 'all' || (tile.categories && tile.categories.includes(activeFilter));
+    const caption = typeof tile.caption === 'string' ? tile.caption.toLowerCase() : '';
+    const matchesSearch = !searchQuery || caption.includes(searchQuery.toLowerCase());
+    return matchesFilter && matchesSearch;
+  });
+}
 
 function renderGrid() {
   const grid = document.getElementById('photo-grid');
-  tiles.forEach((tile, i) => {
+  grid.innerHTML = '';
+  const filtered = getFilteredTiles();
+  const noResults = document.getElementById('gallery-no-results');
+  if (filtered.length === 0) {
+    if (noResults) noResults.style.display = 'block';
+    return;
+  }
+  if (noResults) noResults.style.display = 'none';
+  filtered.forEach((tile, filteredIndex) => {
+    const tileIndex = tiles.indexOf(tile);
     const div = document.createElement('div');
     div.className = 'photo-tile' + (tile.photos.length > 1 ? ' is-stack' : '') + (tile.size ? ' size-' + tile.size : '');
     if (tile.id) div.id = tile.id;
@@ -84,10 +104,23 @@ function renderGrid() {
       badge.textContent = '+' + (tile.photos.length - 1);
       div.appendChild(badge);
     }
-    div.addEventListener('click', () => openModal(i));
+    div.addEventListener('click', () => openModal(tileIndex));
     grid.appendChild(div);
   });
 }
+
+window.setGalleryFilter = function(filter) {
+  activeFilter = filter;
+  document.querySelectorAll('.gallery-filter-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.filter === filter);
+  });
+  renderGrid();
+};
+
+window.searchGallery = function(query) {
+  searchQuery = query;
+  renderGrid();
+};
 
 function openModal(tileIndex) {
   currentTile = tileIndex;
@@ -109,7 +142,7 @@ function navModal(direction) {
 function updateModal() {
   const tile = tiles[currentTile];
   const captionEl = document.getElementById('modal-caption');
-  if (captionEl) captionEl.textContent = tile.caption || '';
+  if (captionEl) captionEl.textContent = typeof tile.caption === 'string' ? tile.caption : '';
   document.getElementById('modal-img').style.backgroundImage = "url('" + tile.photos[currentPhoto] + "')";
   const multi = tile.photos.length > 1;
   document.getElementById('modal-counter').textContent = multi ? (currentPhoto + 1) + ' / ' + tile.photos.length : '';
@@ -129,6 +162,26 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'ArrowRight') navModal(1);
 });
 
+// Swipe support
+(function() {
+  let touchStartX = 0;
+  let touchStartY = 0;
+  const modalEl = document.getElementById('photo-modal');
+  if (!modalEl) return;
+  modalEl.addEventListener('touchstart', e => {
+    touchStartX = e.touches[0].clientX;
+    touchStartY = e.touches[0].clientY;
+  }, { passive: true });
+  modalEl.addEventListener('touchend', e => {
+    if (!document.getElementById('photo-modal').classList.contains('open')) return;
+    const dx = e.changedTouches[0].clientX - touchStartX;
+    const dy = e.changedTouches[0].clientY - touchStartY;
+    if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 40) {
+      navModal(dx < 0 ? 1 : -1);
+    }
+  }, { passive: true });
+})();
+
 renderGrid();
 
 if (window.location.hash) {
@@ -136,3 +189,62 @@ if (window.location.hash) {
   const tileIndex = tiles.findIndex(t => t.id === id);
   if (tileIndex !== -1) openModal(tileIndex);
 }
+Now add this to _pages/photography.md right above the <div id="photo-grid"> line:
+html<style>
+.gallery-controls {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.gallery-filter-btns {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.gallery-filter-btn {
+  padding: 7px 16px;
+  border: 2px solid #2c4a3e;
+  border-radius: 20px;
+  background: transparent;
+  color: #2c4a3e;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.gallery-filter-btn:hover,
+.gallery-filter-btn.active {
+  background: #2c4a3e;
+  color: #fff;
+}
+.gallery-search {
+  padding: 8px 14px;
+  border: 2px solid #2c4a3e;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.5);
+  color: #2c4a3e;
+  font-size: 0.88rem;
+  outline: none;
+  width: 100%;
+  max-width: 320px;
+}
+#gallery-no-results {
+  text-align: center;
+  padding: 40px;
+  color: #888;
+  font-style: italic;
+  display: none;
+}
+</style>
+
+<div class="gallery-controls">
+  <div class="gallery-filter-btns">
+    <button class="gallery-filter-btn active" data-filter="all" onclick="setGalleryFilter('all')">All</button>
+    <button class="gallery-filter-btn" data-filter="underwater" onclick="setGalleryFilter('underwater')">🤿 Underwater</button>
+    <button class="gallery-filter-btn" data-filter="travel" onclick="setGalleryFilter('travel')">✈️ Travel</button>
+    <button class="gallery-filter-btn" data-filter="wildlife" onclick="setGalleryFilter('wildlife')">🦎 Wildlife</button>
+    <button class="gallery-filter-btn" data-filter="film" onclick="setGalleryFilter('film')">📷 Film</button>
+  </div>
+  <input class="gallery-search" type="text" placeholder="Search captions..." oninput="searchGallery(this.value)">
+</div>
+<div id="gallery-no-results">No photos match your search.</div>
