@@ -197,6 +197,28 @@ function resizeMasonryItem(tile) {
   tile.style.gridRowEnd = 'span ' + rowSpan;
 }
 
+function resizeAllTiles() {
+  document.querySelectorAll('.photo-tile').forEach(tile => {
+    const img = tile.querySelector('img');
+    if (!img) return;
+    if (img.complete && img.naturalWidth) {
+      resizeMasonryItem(tile);
+    } else {
+      img.addEventListener('load', () => resizeMasonryItem(tile));
+    }
+  });
+}
+
+// Run on initial load
+resizeAllTiles();
+
+// Re-run whenever the grid is re-rendered by a filter or search
+const grid = document.getElementById('photo-grid');
+const observer = new MutationObserver(() => resizeAllTiles());
+observer.observe(grid, { childList: true });
+
+window.addEventListener('resize', resizeAllTiles);
+</script>
 document.querySelectorAll('.photo-tile').forEach(tile => {
   const img = tile.querySelector('img');
   if (!img) return;
