@@ -10,6 +10,7 @@ const tiles = [
   { photos: ["/images/photography/IMG_9902.jpg", "/images/photography/Josephines.jpg", "/images/photography/IMG_9884.jpg", "/images/photography/Maya24Bday.jpg"], caption: "Springtime back home", categories: ["travel", "film"] },
   { photos: ["/images/photography/ElSalvador2.JPG", "/images/photography/ElSalvador1.jpg"], caption: "Celebrating my best friend in El Salvador", id: "el-salvador", mapLink: "/map/#el-salvador", categories: ["travel"] },
   { photos: ["/images/photography/IMG_6375.jpg", "/images/photography/P1230432.jpg", "/images/photography/P2171886.jpg"], categories: ["underwater", "wildlife", "science"] },
+  { photos: ["/images/photography/Vilankulos1.jpg", "/images/photography/Vilankulos2.JPG", "/images/photography/Vilankulos3.JPG", "/images/photography/Vilankulos4.JPG", "/images/photography/Vilankulos5.JPG"], caption: "I spent my last few days of my time in Mozambique in Vilankulos, where I snorkeled with seahorses, did a tour of the Bazaruto Archipelago, and relaxed by the beach reading and eating matapa and fried bananas.", id: "vilankulos", mapLink: "/map/#vilankulos", categories: ["travel", "underwater", "wildlife"] },
   { photos: ["/images/photography/IMG_7117.jpg"], categories: ["travel"] },
   { photos: ["/images/photography/IMG_4483.jpg"], categories: ["underwater", "wildlife", "science"] },
   { photos: ["/images/photography/NudiCollage1.png"], caption: "Some of my fav nudis from Mozambique", categories: ["underwater", "wildlife", "science"] },
