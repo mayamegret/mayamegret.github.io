@@ -11,10 +11,12 @@ author_profile: false
   gap: 16px;
   flex-wrap: wrap;
   margin-bottom: 1.5rem;
-  #main, article.page, .page__inner-wrap {
+  #main, article.page, .page__inner-wrap, .page__content, .page__inner-wrap--layout-single {
   max-width: 100% !important;
+  width: 100% !important;
   padding-left: 1em !important;
   padding-right: 1em !important;
+}
 }
 }
 .dive-stat-card {
@@ -118,7 +120,7 @@ author_profile: false
 <div class="dive-stats">
   <div class="dive-stat-card">
     <div class="dive-stat-number" id="stat-total">—</div>
-    <div class="dive-stat-label">Total Dives</div>
+    <div class="dive-stat-label">Lifetime Dives</div>
   </div>
   <div class="dive-stat-card">
     <div class="dive-stat-number" id="stat-depth">—</div>
@@ -266,7 +268,7 @@ function sortDives(dives) {
 }
 
 function updateStats(dives) {
-  document.getElementById('stat-total').textContent = dives.length;
+  document.getElementById('stat-total').textContent = dives.length + 49;
   const depths = dives.map(r => parseFloat(r[5])).filter(d => !isNaN(d));
   document.getElementById('stat-depth').textContent = depths.length ? Math.max(...depths) : '—';
   const times = dives.map(r => parseFloat(r[7])).filter(t => !isNaN(t));
