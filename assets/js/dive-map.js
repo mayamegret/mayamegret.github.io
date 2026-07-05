@@ -601,6 +601,17 @@ const locations = [
     galleryId: "zavora-2026"
   },
   {
+  name: "Vilankulos",
+  country: "Mozambique",
+  coords: [-21.99, 35.31],
+  type: "visit",
+  dates: "February 24-28th, 2026",
+  description: "I spent my last few days of my time in Mozambique in Vilankulos, where I snorkeled with seahorses, did a tour of the Bazaruto Archipelago, and relaxed by the beach reading and eating matapa and fried bananas.",
+  species: [],
+  photos: ["/images/photography/Vilankulos1.jpg", "/images/photography/Vilankulos2.JPG", "/images/photography/Vilankulos3.JPG", "/images/photography/Vilankulos4.JPG", "/images/photography/Vilankulos5.JPG"],
+  galleryId: "vilankulos"
+},
+  {
     name: "El Salvador",
     country: "El Salvador",
     coords: [13.69, -89.22],
