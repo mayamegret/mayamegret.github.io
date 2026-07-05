@@ -320,4 +320,11 @@ fetch('/assets/data/divelog.csv')
     document.getElementById('dive-loading').textContent = 'Could not load dive log. Please try again later.';
     console.error(err);
   });
+  document.querySelectorAll('#main, article.page, .page__inner-wrap, .page__content').forEach(el => {
+  el.style.maxWidth = '100%';
+  el.style.width = '100%';
+  el.style.paddingLeft = '1em';
+  el.style.paddingRight = '1em';
+  el.style.float = 'none';
+});
 </script>
