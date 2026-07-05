@@ -531,21 +531,26 @@ L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_M
   maxZoom: 16
 }).addTo(map);
 
-const diveIcon = L.divIcon({
-  html: '<i class="fas fa-anchor" style="font-size:18px; color:#1a1a1a;"></i>',
-  className: 'map-icon',
-  iconSize: [20, 20],
-  iconAnchor: [10, 10],
-  popupAnchor: [0, -10]
-});
-
-const visitIcon = L.divIcon({
-  html: '<i class="fas fa-map-marker-alt" style="font-size:22px; color:#1a1a1a;"></i>',
-  className: 'map-icon',
-  iconSize: [20, 26],
-  iconAnchor: [10, 26],
-  popupAnchor: [0, -26]
-});
+function makeIcon(type, highlighted, dimmed) {
+  const color = highlighted ? '#ffa44a' : dimmed ? 'rgba(100,100,100,0.3)' : '#1a1a1a';
+  if (type === 'dive') {
+    return L.divIcon({
+      html: `<i class="fas fa-anchor" style="font-size:18px; color:${color};"></i>`,
+      className: 'map-icon',
+      iconSize: [20, 20],
+      iconAnchor: [10, 10],
+      popupAnchor: [0, -10]
+    });
+  } else {
+    return L.divIcon({
+      html: `<i class="fas fa-map-marker-alt" style="font-size:22px; color:${color};"></i>`,
+      className: 'map-icon',
+      iconSize: [20, 26],
+      iconAnchor: [10, 26],
+      popupAnchor: [0, -26]
+    });
+  }
+}
 
 function buildPopup(loc) {
   let html = `<div class="popup-title">${loc.name}, ${loc.country}</div>`;
@@ -572,11 +577,24 @@ function buildPopup(loc) {
 
 const markerObjects = [];
 locations.forEach(loc => {
-  const icon = loc.type === 'dive' ? diveIcon : visitIcon;
-  const marker = L.marker(loc.coords, { icon })
+  const marker = L.marker(loc.coords, { icon: makeIcon(loc.type, false, false) })
     .bindPopup(buildPopup(loc), { maxWidth: 280 })
     .addTo(map);
+
+  marker.on('popupopen', () => {
+    markerObjects.forEach(m => {
+      const isMatch = m.country === loc.country;
+      m.marker.setIcon(makeIcon(m.type, isMatch, !isMatch));
+    });
+  });
+
   markerObjects.push({ marker, type: loc.type, country: loc.country });
+});
+
+map.on('popupclose', () => {
+  markerObjects.forEach(m => {
+    m.marker.setIcon(makeIcon(m.type, false, false));
+  });
 });
 
 // Counter
