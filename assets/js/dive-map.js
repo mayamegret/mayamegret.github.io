@@ -1,55 +1,54 @@
-
 const locations = [
   {
-  name: "Belize",
-  country: "Belize",
-  coords: [17.25, -88.77],
-  type: "visit",
-  dates: "March 2013",
-  description: "For spring break 2013, my family and I went to Belize! We first explored the mountains and jungle and then finished our trip on the coast. Belize was the first place I ever snorkeled with turtles and sharks, and it is where I decided that I want to be a marine biologist!",
-  species: [],
-  photos: []
-},
-{
-  name: "Venice",
-  country: "Italy",
-  coords: [45.44, 12.33],
-  type: "visit",
-  dates: "June 18 - July 2nd, 2019",
-  description: "Our girls trip to Italy began in Venice touring the city, gondola rides, and lots of pasta!",
-  species: [],
-  photos: []
-},
-{
-  name: "Capri",
-  country: "Italy",
-  coords: [40.55, 14.24],
-  type: "visit",
-  dates: "June 2019",
-  description: "From Venice we made our way to Capri where we beached and explored for a few days.",
-  species: [],
-  photos: []
-},
-{
-  name: "Amalfi Coast",
-  country: "Italy",
-  coords: [40.63, 14.60],
-  type: "visit",
-  dates: "June/July 2019",
-  description: "Then we made our way through the Amalfi Coast, starting in Positano then Ravello then Sorrento.",
-  species: [],
-  photos: []
-},
-{
-  name: "Rome",
-  country: "Italy",
-  coords: [41.90, 12.50],
-  type: "visit",
-  dates: "July 2019",
-  description: "We finished our trip in Rome with lots of gelato and exploring!",
-  species: [],
-  photos: []
-},
+    name: "Belize",
+    country: "Belize",
+    coords: [17.25, -88.77],
+    type: "visit",
+    dates: "March 2013",
+    description: "For spring break 2013, my family and I went to Belize! We first explored the mountains and jungle and then finished our trip on the coast. Belize was the first place I ever snorkeled with turtles and sharks, and it is where I decided that I want to be a marine biologist!",
+    species: [],
+    photos: []
+  },
+  {
+    name: "Venice",
+    country: "Italy",
+    coords: [45.44, 12.33],
+    type: "visit",
+    dates: "June 18 - July 2nd, 2019",
+    description: "Our girls trip to Italy began in Venice touring the city, gondola rides, and lots of pasta!",
+    species: [],
+    photos: []
+  },
+  {
+    name: "Capri",
+    country: "Italy",
+    coords: [40.55, 14.24],
+    type: "visit",
+    dates: "June 2019",
+    description: "From Venice we made our way to Capri where we beached and explored for a few days.",
+    species: [],
+    photos: []
+  },
+  {
+    name: "Amalfi Coast",
+    country: "Italy",
+    coords: [40.63, 14.60],
+    type: "visit",
+    dates: "June/July 2019",
+    description: "Then we made our way through the Amalfi Coast, starting in Positano then Ravello then Sorrento.",
+    species: [],
+    photos: []
+  },
+  {
+    name: "Rome",
+    country: "Italy",
+    coords: [41.90, 12.50],
+    type: "visit",
+    dates: "July 2019",
+    description: "We finished our trip in Rome with lots of gelato and exploring!",
+    species: [],
+    photos: []
+  },
   {
     name: "Virginia",
     country: "USA",
@@ -410,35 +409,35 @@ const locations = [
     galleryId: "blitzingen"
   },
   {
-  name: "Dundee",
-  country: "Scotland",
-  coords: [56.46, -2.97],
-  type: "visit",
-  dates: "December 28th, 2024 - January 2nd, 2025",
-  description: "After Christmas in Switzerland, I flew to Scotland to spend some time with my friend Bella. She showed me around her hometown, Dundee, including trips to the beach and drives around the countryside looking for highland cows!It was a lovely week spent with her family at their gorgeous farm!",
-  species: [],
-  photos: []
-},
-{
-  name: "Edinburgh",
-  country: "Scotland",
-  coords: [55.95, -3.19],
-  type: "visit",
-  dates: "December 31st, 2024 - January 1st, 2025",
-  description: "We took a train down to Edinburgh for New Years Eve where we explored the city and celebrated ringing in 2025 together. We went back to Dundee for New Years feast with her family before I headed down to London with my parents.",
-  species: [],
-  photos: []
-},
-{
-  name: "London",
-  country: "England",
-  coords: [51.51, -0.13],
-  type: "visit",
-  dates: "January 2-6th, 2025",
-  description: "Before heading back to Portugal for the last semester of my masters courses, my parents and I took the train from Edinburgh to London where we spent a few days exploring the city! We took the ferry to Greenwich, we ate amazing food, and shopped til we dropped!",
-  species: [],
-  photos: []
-},
+    name: "Dundee",
+    country: "Scotland",
+    coords: [56.46, -2.97],
+    type: "visit",
+    dates: "December 28th, 2024 - January 2nd, 2025",
+    description: "After Christmas in Switzerland, I flew to Scotland to spend some time with my friend Bella. She showed me around her hometown, Dundee, including trips to the beach and drives around the countryside looking for highland cows!",
+    species: [],
+    photos: []
+  },
+  {
+    name: "Edinburgh",
+    country: "Scotland",
+    coords: [55.95, -3.19],
+    type: "visit",
+    dates: "December 31st, 2024 - January 1st, 2025",
+    description: "We took a train down to Edinburgh for New Years Eve where we explored the city and celebrated ringing in 2025 together. We went back to Dundee for New Years feast with her family before I headed down to London with my parents.",
+    species: [],
+    photos: []
+  },
+  {
+    name: "London",
+    country: "England",
+    coords: [51.51, -0.13],
+    type: "visit",
+    dates: "January 2-6th, 2025",
+    description: "Before heading back to Portugal for the last semester of my masters courses, my parents and I took the train from Edinburgh to London where we spent a few days exploring the city! We took the ferry to Greenwich, we ate amazing food, and shopped til we dropped!",
+    species: [],
+    photos: []
+  },
   {
     name: "Sagres",
     country: "Portugal",
@@ -678,7 +677,6 @@ map.on('popupclose', () => {
   });
 });
 
-// Counter
 const countries = new Set(locations.map(l => l.country));
 const diveCount = locations.filter(l => l.type === 'dive').length;
 setTimeout(() => {
@@ -686,7 +684,6 @@ setTimeout(() => {
   if (el) el.innerHTML = `<strong>${countries.size}</strong> countries &nbsp;·&nbsp; <strong>${diveCount}</strong> dive sites`;
 }, 100);
 
-// Filter toggle
 window.filterMap = function(type) {
   markerObjects.forEach(({ marker, type: markerType }) => {
     if (type === 'all' || markerType === type) {
