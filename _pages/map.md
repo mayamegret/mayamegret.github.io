@@ -9,6 +9,24 @@ author_profile: false
 
 <p>A record of my travels and dives around the world! <i class="fas fa-anchor" style="color:#1a1a1a;"></i> = dive site &nbsp; <i class="fas fa-map-marker-alt" style="color:#1a1a1a;"></i> = visited place</p>
 
+<div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 12px;">
+  <div id="map-counter" style="font-size: 0.9rem; color: #2c4a3e;"></div>
+  <div style="display: flex; gap: 8px;">
+    <button onclick="filterMap('all')" id="btn-all"
+      style="padding: 6px 14px; background: #2c4a3e; color: #fff; border: none; border-radius: 6px; cursor: pointer; font-size: 0.85rem;">
+      All
+    </button>
+    <button onclick="filterMap('dive')" id="btn-dive"
+      style="padding: 6px 14px; background: rgba(44,74,62,0.2); color: #2c4a3e; border: none; border-radius: 6px; cursor: pointer; font-size: 0.85rem;">
+      <i class="fas fa-anchor"></i> Dives only
+    </button>
+    <button onclick="filterMap('visit')" id="btn-visit"
+      style="padding: 6px 14px; background: rgba(44,74,62,0.2); color: #2c4a3e; border: none; border-radius: 6px; cursor: pointer; font-size: 0.85rem;">
+      <i class="fas fa-map-marker-alt"></i> Visits only
+    </button>
+  </div>
+</div>
+
 <div id="dive-map"></div>
 
 <style>
