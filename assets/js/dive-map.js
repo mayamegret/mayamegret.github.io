@@ -1,3 +1,33 @@
+{
+  name: "Dundee",
+  country: "Scotland",
+  coords: [56.46, -2.97],
+  type: "visit",
+  dates: "December 28th, 2024 - January 2nd, 2025",
+  description: "After Christmas in Switzerland, I flew to Scotland to spend some time with my friend Bella. She showed me around her hometown, Dundee, including trips to the beach and drives around the countryside looking for highland cows!It was a lovely week spent with her family at their gorgeous farm!",
+  species: [],
+  photos: []
+},
+{
+  name: "Edinburgh",
+  country: "Scotland",
+  coords: [55.95, -3.19],
+  type: "visit",
+  dates: "December 31st, 2024 - January 1st, 2025",
+  description: "We took a train down to Edinburgh for New Years Eve where we explored the city and celebrated ringing in 2025 together. We went back to Dundee for New Years feast with her family before I headed down to London with my parents.",
+  species: [],
+  photos: []
+},
+{
+  name: "London",
+  country: "England",
+  coords: [51.51, -0.13],
+  type: "visit",
+  dates: "January 2-6th, 2025",
+  description: "Before heading back to Portugal for the last semester of my masters courses, my parents and I took the train from Edinburgh to London where we spent a few days exploring the city! We took the ferry to Greenwich, we ate amazing food, and shopped til we dropped!",
+  species: [],
+  photos: []
+},
 const locations = [
   {
     name: "Virginia",
