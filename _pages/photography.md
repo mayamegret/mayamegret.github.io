@@ -54,6 +54,12 @@ A selection of photos from my travels and dives!
 }
 </style>
 
+#main, article.page, .page__inner-wrap, .page__content, .page__inner-wrap--layout-single {
+  max-width: 100% !important;
+  width: 100% !important;
+  padding-left: 1em !important;
+  padding-right: 1em !important;
+}
 <div class="gallery-controls">
   <div class="gallery-filter-btns">
     <button class="gallery-filter-btn active" data-filter="all" onclick="setGalleryFilter('all')">All</button>
@@ -215,4 +221,12 @@ const observer = new MutationObserver(() => resizeAllTiles());
 observer.observe(grid, { childList: true });
 
 window.addEventListener('resize', resizeAllTiles);
+  
+document.querySelectorAll('#main, article.page, .page__inner-wrap, .page__content').forEach(el => {
+  el.style.maxWidth = '100%';
+  el.style.width = '100%';
+  el.style.paddingLeft = '1em';
+  el.style.paddingRight = '1em';
+  el.style.float = 'none';
+});
 </script>
