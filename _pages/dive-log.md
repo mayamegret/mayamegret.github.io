@@ -170,12 +170,18 @@ let allDives = [];
 let sortCol = 0;
 let sortDir = 'desc';
 
-function getDiveTypeClass(type) {
-  if (!type) return 'dive-type-other';
+function classifyDiveType(type) {
+  if (!type) return 'Other';
   const t = type.toLowerCase();
-  if (t.includes('scientific')) return 'dive-type-scientific';
-  if (t.includes('recreational')) return 'dive-type-recreational';
-  if (t.includes('training')) return 'dive-type-training';
+  if (t.includes('divemaster') || t.includes('training') || t.includes('evaluation') || t.includes('rescue')) return 'Training';
+  if (t.includes('fun dive')) return 'Recreational';
+  return 'Scientific';
+}
+
+function getDiveTypeClass(category) {
+  if (category === 'Scientific') return 'dive-type-scientific';
+  if (category === 'Recreational') return 'dive-type-recreational';
+  if (category === 'Training') return 'dive-type-training';
   return 'dive-type-other';
 }
 
@@ -209,13 +215,14 @@ function renderTable(dives) {
   document.getElementById('dive-no-results').style.display = 'none';
   dives.forEach(row => {
     const tr = document.createElement('tr');
-    const typeClass = getDiveTypeClass(row[4]);
+    const category = classifyDiveType(row[4]);
+    const typeClass = getDiveTypeClass(category);
     tr.innerHTML = `
       <td>${row[0] || ''}</td>
       <td style="white-space:nowrap">${row[1] || ''}</td>
       <td>${row[2] || ''}</td>
       <td>${row[3] || ''}</td>
-      <td><span class="dive-type-badge ${typeClass}">${row[4] || ''}</span></td>
+      <td><span class="dive-type-badge ${typeClass}">${category}</span></td>
       <td>${row[5] || ''}</td>
       <td>${row[8] || ''}</td>
       <td>${row[12] || ''}</td>
@@ -233,7 +240,7 @@ function applyFilters() {
   const locFilter = document.getElementById('dive-location-filter').value.toLowerCase();
   let filtered = allDives.filter(row => {
     const matchSearch = !search || [row[2], row[3], row[18]].some(v => (v || '').toLowerCase().includes(search));
-    const matchType = !typeFilter || (row[4] || '').toLowerCase().includes(typeFilter);
+    const matchType = !typeFilter || classifyDiveType(row[4]).toLowerCase() === typeFilter.toLowerCase();
     const matchLoc = !locFilter || (row[3] || '').toLowerCase() === locFilter;
     return matchSearch && matchType && matchLoc;
   });
