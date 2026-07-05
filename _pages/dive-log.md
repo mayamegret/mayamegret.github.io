@@ -6,18 +6,17 @@ author_profile: false
 ---
 
 <style>
-.dive-stats {
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
-  margin-bottom: 1.5rem;
-  #main, article.page, .page__inner-wrap, .page__content, .page__inner-wrap--layout-single {
+#main, article.page, .page__inner-wrap, .page__content, .page__inner-wrap--layout-single {
   max-width: 100% !important;
   width: 100% !important;
   padding-left: 1em !important;
   padding-right: 1em !important;
 }
-}
+.dive-stats {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
 }
 .dive-stat-card {
   background: rgba(255,255,255,0.35);
@@ -128,11 +127,7 @@ author_profile: false
   </div>
   <div class="dive-stat-card">
     <div class="dive-stat-number" id="stat-time">—</div>
-    <div class="dive-stat-label">Total Bottom Time (min)</div>
-  </div>
-  <div class="dive-stat-card">
-    <div class="dive-stat-number" id="stat-locations">—</div>
-    <div class="dive-stat-label">Locations</div>
+    <div class="dive-stat-label">Total Time (min)</div>
   </div>
 </div>
 
@@ -160,7 +155,7 @@ author_profile: false
         <th data-col="3">Location</th>
         <th data-col="4">Type</th>
         <th data-col="5">Max Depth (m)</th>
-        <th data-col="7">Total Time</th>
+        <th data-col="8">Total Time</th>
         <th data-col="12">Vis (m)</th>
         <th data-col="13">Current</th>
         <th data-col="18">Key Species</th>
@@ -193,7 +188,6 @@ function getDiveTypeClass(category) {
 
 function parseCSV(text) {
   const lines = text.trim().split('\n');
-  const headers = lines[0].split(',').map(h => h.replace(/"/g, '').trim());
   return lines.slice(1).map(line => {
     const cols = [];
     let inQuote = false;
@@ -269,9 +263,9 @@ function updateStats(dives) {
   document.getElementById('stat-total').textContent = dives.length + 49;
   const depths = dives.map(r => parseFloat(r[5])).filter(d => !isNaN(d));
   document.getElementById('stat-depth').textContent = depths.length ? Math.max(...depths) : '—';
- const times = dives.map(r => parseFloat(r[8])).filter(t => !isNaN(t));
-document.getElementById('stat-time').textContent = times.length ? times.reduce((a, b) => a + b, 0) : '—';
-
+  const times = dives.map(r => parseFloat(r[8])).filter(t => !isNaN(t));
+  document.getElementById('stat-time').textContent = times.length ? times.reduce((a, b) => a + b, 0) : '—';
+}
 
 function populateLocationFilter(dives) {
   const locs = [...new Set(dives.map(r => r[3]).filter(Boolean))].sort();
@@ -316,7 +310,8 @@ fetch('/assets/data/divelog.csv')
     document.getElementById('dive-loading').textContent = 'Could not load dive log. Please try again later.';
     console.error(err);
   });
-  document.querySelectorAll('#main, article.page, .page__inner-wrap, .page__content').forEach(el => {
+
+document.querySelectorAll('#main, article.page, .page__inner-wrap, .page__content').forEach(el => {
   el.style.maxWidth = '100%';
   el.style.width = '100%';
   el.style.paddingLeft = '1em';
