@@ -10,21 +10,20 @@
 main:
   - title: "Photo Gallery"
     url: /photography/
-
   - title: "Map"
     url: /map/
-
   - title: "CV"
     url: /cv/
-
+  - title: "Dive Log"
+    url: /dive-log/
   - title: "Species Log"
     url: /species/
-
   - title: "Publications"
     url: /publications/
-
   - title: "Blog Posts"
-    url: /year-archive/
+    url: /posts/
+  - title: "Currently"
+    url: /currently/
 
   # - title: "CV"
   #   url: /cv-json/
