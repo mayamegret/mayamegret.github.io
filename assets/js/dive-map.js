@@ -570,12 +570,40 @@ function buildPopup(loc) {
   return html;
 }
 
+const markerObjects = [];
 locations.forEach(loc => {
   const icon = loc.type === 'dive' ? diveIcon : visitIcon;
-  L.marker(loc.coords, { icon })
+  const marker = L.marker(loc.coords, { icon })
     .bindPopup(buildPopup(loc), { maxWidth: 280 })
     .addTo(map);
+  markerObjects.push({ marker, type: loc.type, country: loc.country });
 });
+
+// Counter
+const countries = new Set(locations.map(l => l.country));
+const diveCount = locations.filter(l => l.type === 'dive').length;
+setTimeout(() => {
+  const el = document.getElementById('map-counter');
+  if (el) el.innerHTML = `<strong>${countries.size}</strong> countries &nbsp;·&nbsp; <strong>${diveCount}</strong> dive sites`;
+}, 100);
+
+// Filter toggle
+window.filterMap = function(type) {
+  markerObjects.forEach(({ marker, type: markerType }) => {
+    if (type === 'all' || markerType === type) {
+      marker.addTo(map);
+    } else {
+      map.removeLayer(marker);
+    }
+  });
+  ['all', 'dive', 'visit'].forEach(t => {
+    const btn = document.getElementById('btn-' + t);
+    if (btn) {
+      btn.style.background = t === type ? '#2c4a3e' : 'rgba(44,74,62,0.2)';
+      btn.style.color = t === type ? '#fff' : '#2c4a3e';
+    }
+  });
+};
 
 if (window.location.hash) {
   const id = window.location.hash.slice(1);
