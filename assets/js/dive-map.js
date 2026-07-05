@@ -60,6 +60,16 @@ const locations = [
     photos: []
   },
   {
+  name: "Brisbane",
+  country: "Australia",
+  coords: [-27.47, 153.02],
+  type: "visit",
+  dates: "August 2022 - November 2022",
+  description: "I began my junior year of my undergrad by studying abroad at University of Queensland in Brisbane! I stayed with a host family during this time, and my program included five field trips to the bush and to nearby islands where we applied our marine biology and terrestrial ecology learning! In Brisbane, we ate at Little Red Dumpling as much as possible, enjoyed nights out at The Beat, and spent long weekends taking the train up and down the coast!",
+  species: [],
+  photos: []
+},
+  {
     name: "Girraween National Park",
     country: "Australia",
     coords: [-28.88, 151.92],
@@ -167,6 +177,16 @@ const locations = [
     photos: ["/images/map/PortLincoln1.JPG", "/images/map/PortLincoln2.JPG", "/images/map/PortLincoln3.JPG", "/images/map/PortLincoln4.JPG"],
     galleryId: "port-lincoln"
   },
+  {
+  name: "Sydney",
+  country: "Australia",
+  coords: [-33.87, 151.21],
+  type: "visit",
+  dates: "November 23-27th, 2022",
+  description: "To close out our family trip around Australia after my study abroad, we spent a few days in Sydney. We visited the Opera House, ferried to Manly Beach, ate amazing sushi, and explored the city!",
+  species: [],
+  photos: []
+},
   {
     name: "Pacific Harbor, Fiji",
     country: "Fiji",
@@ -591,6 +611,17 @@ const locations = [
     photos: ["/images/photography/ElSalvador2.JPG", "/images/photography/ElSalvador1.jpg"],
     galleryId: "el-salvador"
   },
+  {
+  name: "Kona",
+  country: "Hawai'i, USA",
+  coords: [19.64, -155.99],
+  type: "visit",
+  dates: "May 12-18th, 2026",
+  description: "As I moved out to Hawai'i, my parents came with me and we first spent a week in Kona! We woke up early most days and explored tide pools, found hidden beaches, and explored Volcano National Park!",
+  species: [],
+  photos: [],
+  galleryId: "kona"
+},
   {
     name: "Honolulu",
     country: "Hawai'i, USA",
