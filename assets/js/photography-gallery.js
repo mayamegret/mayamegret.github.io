@@ -1,6 +1,6 @@
 const tiles = [
-  { photos: ["/images/photography/MagazineCollage.png"], categories: ["travel", "underwater", "wildlife"] },
-  { photos: ["/images/photography/IMG_0593.jpg", "/images/photography/IMG_0599.jpg", "/images/photography/IMG_1093.jpg"], caption: "Beach scenes, Kona, Hawai'i", id: "honolulu", mapLink: "/map/#honolulu", categories: ["travel", "underwater"] },
+  { photos: ["/images/photography/MagazineCollage.png"], categories: ["travel", "underwater", "wildlife"] id: "honolulu", mapLink: "/map/#honolulu" },
+  { photos: ["/images/photography/IMG_0593.jpg", "/images/photography/IMG_0599.jpg", "/images/photography/IMG_1093.jpg"], caption: "Beach scenes, Kona, Hawai'i", id: "kona", mapLink: "/map/#kona", categories: ["travel", "underwater"] },
   { photos: ["/images/photography/IMG_0406.jpg"], categories: ["underwater"] },
   { photos: ["/images/photography/IMG_0455.jpg", "/images/photography/IMG_0475.jpg"], caption: "Pencil urchins!", categories: ["underwater", "wildlife"] },
   { photos: ["/images/photography/IMG_0609.jpg"], categories: ["underwater"] },
