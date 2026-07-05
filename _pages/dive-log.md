@@ -153,7 +153,7 @@ author_profile: false
         <th data-col="3">Location</th>
         <th data-col="4">Type</th>
         <th data-col="5">Max Depth (m)</th>
-        <th data-col="7">Bottom Time</th>
+        <th data-col="7">Total Time</th>
         <th data-col="12">Vis (m)</th>
         <th data-col="13">Current</th>
         <th data-col="17">Buddies</th>
@@ -217,7 +217,7 @@ function renderTable(dives) {
       <td>${row[3] || ''}</td>
       <td><span class="dive-type-badge ${typeClass}">${row[4] || ''}</span></td>
       <td>${row[5] || ''}</td>
-      <td>${row[7] || ''}</td>
+      <td>${row[8] || ''}</td>
       <td>${row[12] || ''}</td>
       <td>${row[13] || ''}</td>
       <td>${row[17] || ''}</td>
