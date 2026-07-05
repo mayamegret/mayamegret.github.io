@@ -10,7 +10,7 @@ const tiles = [
   { photos: ["/images/photography/IMG_9902.jpg", "/images/photography/Josephines.jpg", "/images/photography/IMG_9884.jpg", "/images/photography/Maya24Bday.jpg"], caption: "Springtime back home", categories: ["travel", "film"] },
   { photos: ["/images/photography/ElSalvador2.JPG", "/images/photography/ElSalvador1.jpg"], caption: "Celebrating my best friend in El Salvador", id: "el-salvador", mapLink: "/map/#el-salvador", categories: ["travel"] },
   { photos: ["/images/photography/IMG_6375.jpg", "/images/photography/P1230432.jpg", "/images/photography/P2171886.jpg"], categories: ["underwater", "wildlife", "science"] },
-  { photos: ["/images/photography/IMG_7117.jpg"], categories: ["underwater"] },
+  { photos: ["/images/photography/IMG_7117.jpg"], categories: ["travel"] },
   { photos: ["/images/photography/IMG_4483.jpg"], categories: ["underwater", "wildlife", "science"] },
   { photos: ["/images/photography/NudiCollage1.png"], caption: "Some of my fav nudis from Mozambique", categories: ["underwater", "wildlife", "science"] },
   { photos: ["/images/photography/Zavora1.JPG", "/images/photography/Zavora2.JPG", "/images/photography/Zavora3.jpg", "/images/photography/Zavora4.JPG", "/images/photography/Zavora5.JPG", "/images/photography/Zavora6.jpg", "/images/photography/Zavora7.JPG"], caption: "Scenes from Závora, Mozambique — January 2026 thesis research trip", id: "zavora-2026", mapLink: "/map/#zavora-2026", categories: ["travel", "underwater"] },
