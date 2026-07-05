@@ -7,6 +7,65 @@ author_profile: false
 
 A selection of photos from my travels and dives!
 
+<style>
+.gallery-controls {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.gallery-filter-btns {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.gallery-filter-btn {
+  padding: 7px 16px;
+  border: 2px solid #2c4a3e;
+  border-radius: 20px;
+  background: transparent;
+  color: #2c4a3e;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.gallery-filter-btn:hover,
+.gallery-filter-btn.active {
+  background: #2c4a3e;
+  color: #fff;
+}
+.gallery-search {
+  padding: 8px 14px;
+  border: 2px solid #2c4a3e;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.5);
+  color: #2c4a3e;
+  font-size: 0.88rem;
+  outline: none;
+  width: 100%;
+  max-width: 320px;
+}
+#gallery-no-results {
+  text-align: center;
+  padding: 40px;
+  color: #888;
+  font-style: italic;
+  display: none;
+}
+</style>
+
+<div class="gallery-controls">
+  <div class="gallery-filter-btns">
+    <button class="gallery-filter-btn active" data-filter="all" onclick="setGalleryFilter('all')">All</button>
+    <button class="gallery-filter-btn" data-filter="underwater" onclick="setGalleryFilter('underwater')">🤿 Underwater</button>
+    <button class="gallery-filter-btn" data-filter="travel" onclick="setGalleryFilter('travel')">✈️ Travel</button>
+    <button class="gallery-filter-btn" data-filter="wildlife" onclick="setGalleryFilter('wildlife')">🦎 Wildlife</button>
+    <button class="gallery-filter-btn" data-filter="film" onclick="setGalleryFilter('film')">📷 Film</button>
+  </div>
+  <input class="gallery-search" type="text" placeholder="Search captions..." oninput="searchGallery(this.value)">
+</div>
+<div id="gallery-no-results">No photos match your search.</div>
+
 <div id="photo-grid" class="photo-grid"></div>
 
 <div id="photo-modal" class="photo-modal">
