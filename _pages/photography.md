@@ -5,7 +5,7 @@ permalink: /photography/
 author_profile: false
 ---
 
-Photos from my travels and dives!
+A selection of photos from my travels and dives!
 
 <style>
 #main, article.page, .page__inner-wrap, .page__content, .page__inner-wrap--layout-single {
@@ -155,6 +155,8 @@ h1.page__title {
 }
 @media (max-width: 600px) {
   .photo-grid { grid-template-columns: repeat(2, 1fr); }
+  #modal-img { width: 95vw; height: 50vh; }
+  .modal-caption { max-width: 95vw; font-size: 0.85rem; padding: 0 12px; }
 }
 </style>
 
