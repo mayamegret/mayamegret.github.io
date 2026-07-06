@@ -114,6 +114,7 @@ var mayaIndex = 0;
 function cycleMayaStack() {
   mayaIndex = (mayaIndex + 1) % mayaPhotos.length;
   document.getElementById('maya-stack-img').src = mayaPhotos[mayaIndex];
+  document.getElementById('maya-stack-img').style.objectPosition = mayaIndex === 1 ? 'bottom' : 'center';
   document.getElementById('maya-stack-badge').textContent = mayaIndex === 0 ? '+1' : '↩';
 }
 </script>
