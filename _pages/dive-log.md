@@ -12,6 +12,13 @@ author_profile: false
   padding-left: 1em !important;
   padding-right: 1em !important;
 }
+body, #main, article.page, .page__inner-wrap, .page__content, .initial-content, .page__wrap {
+  background-color: #CCE7ED !important;
+}
+.sidebar { background-color: #4B2E0F !important; }
+a { color: #4B2E0F !important; }
+a:hover { color: #7a4e20 !important; }
+h1, h2, h3, h4, h5, h6, body { color: #4B2E0F !important; }
 .dive-stats {
   display: flex;
   gap: 16px;
