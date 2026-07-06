@@ -8,6 +8,10 @@ author_profile: false
 A selection of photos from my travels and dives!
 
 <style>
+h1.page__title {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
 .gallery-controls {
   margin-bottom: 16px;
   display: flex;
