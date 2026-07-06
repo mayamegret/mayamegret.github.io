@@ -11,9 +11,9 @@ A log of every species I've observed in the wild, automatically synced from my <
 
 <div style="display: flex; gap: 10px; margin-bottom: 1.5rem; flex-wrap: wrap; align-items: center;">
 <input type="text" id="species-search" placeholder="Search by common or scientific name..."
-  style="flex: 1; min-width: 200px; padding: 8px 12px; border: 2px solid #7a2a00; border-radius: 6px; background: rgba(255,255,255,0.5); color: #7a2a00; font-size: 0.9rem; outline: none;">
+  style="flex: 1; min-width: 200px; padding: 8px 12px; border: 2px solid #C05C27; border-radius: 6px; background: rgba(255,255,255,0.5); color: #C05C27; font-size: 0.9rem; outline: none;">
 <button id="faves-toggle" onclick="toggleFavesOnly()"
-  style="padding: 8px 16px; background: #7a2a00; color: #fff; border: none; border-radius: 6px; cursor: pointer; font-size: 0.9rem; display: flex; align-items: center; gap: 6px; white-space: nowrap;">
+  style="padding: 8px 16px; background: #C05C27; color: #fff; border: none; border-radius: 6px; cursor: pointer; font-size: 0.9rem; display: flex; align-items: center; gap: 6px; white-space: nowrap;">
   <i class="fas fa-heart"></i> Favorites only
 </button>
 </div>
@@ -30,13 +30,13 @@ body, #main, article.page, .page__inner-wrap, .page__content, .initial-content, 
 .sidebar { background-color: #C05C27 !important; }
 a { color: #C05C27 !important; }
 a:hover { color: #8a3e18 !important; }
-h1, h2, h3, h4, h5, h6 { color: #7a2a00 !important; border-bottom-color: #C05C27 !important; }
-body { color: #7a2a00 !important; }
+h1, h2, h3, h4, h5, h6 { color: #C05C27 !important; border-bottom-color: #C05C27 !important; }
+body { color: #C05C27 !important; }
 .page__title { color: #7a2a00 !important; }
 .page__title::after { background-color: #C05C27 !important; }
 #species-stats { color: #7a2a00 !important; }
-.species-group-title { border-left-color: #C05C27 !important; color: #7a2a00 !important; }
-.species-group-title i { color: #7a2a00 !important; }
+.species-group-title { border-left-color: #C05C27 !important; color: #C05C27 !important; }
+.species-group-title i { color: #C05C27 !important; }
 .species-group-count { color: #7a2a00 !important; opacity: 0.6; }
 .species-card-common { color: #7a2a00 !important; }
 .species-card-scientific { color: #555 !important; }
