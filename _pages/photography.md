@@ -198,24 +198,5 @@ function resizeMasonryItem(tile) {
   const rowSpan = Math.ceil((displayHeight + rowGap) / (rowHeight + rowGap));
   tile.style.gridRowEnd = 'span ' + rowSpan;
 }
-
-function resizeAllTiles() {
-  document.querySelectorAll('.photo-tile').forEach(tile => {
-    const img = tile.querySelector('img');
-    if (!img) return;
-    if (img.complete && img.naturalWidth) {
-      resizeMasonryItem(tile);
-    } else {
-      img.addEventListener('load', () => resizeMasonryItem(tile));
-    }
-  });
-}
-
-resizeAllTiles();
-
-const grid = document.getElementById('photo-grid');
-const observer = new MutationObserver(() => resizeAllTiles());
-observer.observe(grid, { childList: true });
-
-window.addEventListener('resize', resizeAllTiles);
+  
 </script>
