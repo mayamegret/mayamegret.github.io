@@ -151,13 +151,13 @@ redirect_from:
 
 <div class="cv-section-title"><i class="fas fa-graduation-cap"></i> Education</div>
 <ul class="cv-list">
-  <li>M.Sc. in Marine Biology, Universidade do Algarve, Faro, Portugal. Anticipated 2026.</li>
+  <li>M.Sc. in Marine Biology, Universidade do Algarve, Faro, Portugal. Expected 2026.</li>
   <li>B.S. in Marine Biology, University of California San Diego. 2024.</li>
 </ul>
 
 <div class="cv-section-title"><i class="fas fa-water"></i> Certifications</div>
 <ul class="cv-list">
-  <li>Divemaster. SSI. Anticipated July 2026.</li>
+  <li>Divemaster. SSI. July 2026.</li>
   <li>Stress and Rescue. SSI. May 2026.</li>
   <li>First Aid, CPR, Oxygen. SSI. May 2026.</li>
   <li>Advanced Open Water. SSI. May 2025.
@@ -173,6 +173,7 @@ redirect_from:
       <li>Radial search</li>
       <li>Quadrat sampling</li>
       <li>Transect sampling</li>
+      <li>Sample collection</li>
     </ul>
   </li>
   <li>Open Water. NAUI. August 2022.</li>
@@ -185,10 +186,10 @@ redirect_from:
     <div class="cv-card-title">Divemaster Candidate &middot; Hawaiian Diving Adventures</div>
     <div class="cv-card-subtitle">Honolulu, Hawai'i &middot; June–July 2026</div>
     <ul>
-      <li>Completing requirements for Divemaster certification</li>
-      <li>Participating in daily dive charters, assisting instructors</li>
-      <li>Assist with dive shop operations including equipment rental and customer briefings</li>
-      <li>Fill SCUBA tanks using a high-pressure compressor</li>
+      <li>Completed 50 dives for Divemaster certification</li>
+      <li>Participated in daily dive charters, assisting instructors and leading dives </li>
+      <li>Assisted with dive shop operations including equipment rental and customer briefings</li>
+      <li>Filled SCUBA tanks using a high-pressure compressor</li>
     </ul>
   </div>
 
