@@ -737,8 +737,8 @@ window.filterMap = function(type) {
   ['all', 'dive', 'visit'].forEach(t => {
     const btn = document.getElementById('btn-' + t);
     if (btn) {
-      btn.style.background = t === type ? '#2c4a3e' : 'rgba(44,74,62,0.2)';
-      btn.style.color = t === type ? '#fff' : '#2c4a3e';
+      btn.style.background = t === type ? '#1A4A5C' : 'rgba(26,74,92,0.2)';
+      btn.style.color = t === type ? '#fff' : '#1A4A5C';
     }
   });
 };
