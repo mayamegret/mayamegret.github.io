@@ -103,7 +103,7 @@ h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-c
 .dive-table th.sort-desc::after { content: " ↓"; }
 .dive-table td {
   padding: 8px 12px;
-  border-bottom: 1px solid #4B2E0F;
+  border-bottom: 1px solid #4B2E0F !important;
   color: #4B2E0F;
   vertical-align: top;
 }
