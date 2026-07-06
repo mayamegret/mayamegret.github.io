@@ -5,7 +5,7 @@ permalink: /photography/
 author_profile: false
 ---
 
-A selection of photos from my travels and dives!
+Photos from my travels and dives!
 
 <style>
 h1.page__title {
