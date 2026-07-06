@@ -52,14 +52,14 @@ A selection of photos from my travels and dives!
   font-style: italic;
   display: none;
 }
-</style>
-
 #main, article.page, .page__inner-wrap, .page__content, .page__inner-wrap--layout-single {
   max-width: 100% !important;
   width: 100% !important;
   padding-left: 1em !important;
   padding-right: 1em !important;
 }
+</style>
+
 <div class="gallery-controls">
   <div class="gallery-filter-btns">
     <button class="gallery-filter-btn active" data-filter="all" onclick="setGalleryFilter('all')">All</button>
