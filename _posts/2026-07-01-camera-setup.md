@@ -23,6 +23,8 @@ h1::after, h2::after, h3::after, h4::after { background-color: #711A54 !importan
 .page__title::after { background-color: #711A54 !important; }
 body { color: #711A54 !important; }
 .page__content hr { background-color: #711A54 !important; border-color: #711A54 !important; }
+.page__content table thead th { color: #711A54 !important; background-color: rgba(113,26,84,0.1) !important; }
+.page__content table tbody tr:nth-child(even) { background-color: rgba(113,26,84,0.05) !important; }
 .page__content img.blog-img {
   float: right !important;
   width: 35% !important;
@@ -77,6 +79,15 @@ body { color: #711A54 !important; }
   aspect-ratio: 1 / 1;
   height: auto;
 }
+.page__content .blog-gallery a {
+  flex: 1 1 0 !important;
+  min-width: 0 !important;
+  display: block;
+}
+.page__content .blog-gallery a img {
+  width: 100% !important;
+  flex: unset !important;
+}
 .page__share { display: none !important; }
 @media (max-width: 600px) {
   .page__content .blog-gallery { flex-wrap: wrap; }
@@ -88,22 +99,15 @@ body { color: #711A54 !important; }
     float: none !important;
     margin: 12px 0 !important;
   }
-  .page__content table thead th {
-  color: #711A54 !important;
-  background-color: rgba(113, 26, 84, 0.1) !important;
-}
-.page__content table tbody tr:nth-child(even) {
-  background-color: rgba(113, 26, 84, 0.05) !important;
-}
 }
 </style>
 
 Photography has always been a big part of my life. My great uncle on my moms side was a photographer who shot almost exclusively in black and white, and my dad did a lot of film photography in France, a hobby he continued when he moved to the US in the early 90s. Growing up, I was surrounded by their photographs decorating most rooms in our house. My dad even built a darkroom in our basement, and we spent plenty of time in there developing his black and white film together. I got my first camera when I was 7 years old, and have only grown my collection since then.
 
 <div style="display: flex; gap: 10px; margin: 14px 0; align-items: flex-start;">
-  <img src="/images/blog/DadUncleArthur.jpeg" alt="Dad and Uncle Arthur, 1992." style="flex: 1 1 0; min-width: 0; border-radius: 8px; height: auto; aspect-ratio: 1/1; object-fit: cover;">
+  <img src="/images/blog/DadUncleArthur.jpeg" alt="Dad and Uncle Arthur, 1992." style="flex: 1 1 0; min-width: 0; border-radius: 8px; height: auto; aspect-ratio: unset; object-fit: unset;">
   <div id="maya-stack" style="flex: 1 1 0; min-width: 0; position: relative; cursor: pointer; border-radius: 8px; overflow: hidden;" onclick="cycleMayaStack()">
-    <img id="maya-stack-img" src="/images/blog/MayaNikon1.jpg" style="width: 100%; border-radius: 8px; aspect-ratio: 1/1; object-fit: cover; display: block;">
+    <img id="maya-stack-img" src="/images/blog/MayaNikon1.jpg" alt="Maya with camera" style="width: 100%; border-radius: 8px; height: auto; display: block;">
     <span id="maya-stack-badge" style="position: absolute; top: 8px; right: 8px; background: rgba(0,0,0,0.6); color: #fff; font-size: 0.8rem; padding: 2px 8px; border-radius: 20px; font-weight: bold;">+1</span>
   </div>
 </div>
@@ -135,6 +139,13 @@ The TG-7 is my primary underwater camera and the one I use whenever I want detai
 
 **The cons:** You really need an external light strobe to get the best results, something I am still saving up for. The built-in flash works well, but the strobe is a game changer. Another issue I've found is that the battery drains very quickly if you try to shoot video, so I keep this camera purely for photos and leave the video to my GoPro.
 
+<div class="blog-gallery">
+  <a href="/photography/#olympus-photos"><img src="/images/blog/Olympus1.JPG" alt="Olympus TG-7 photo"></a>
+  <a href="/photography/#olympus-photos"><img src="/images/blog/Olympus2.JPG" alt="Olympus TG-7 photo"></a>
+  <a href="/photography/#olympus-photos"><img src="/images/blog/Olympus3.JPG" alt="Olympus TG-7 photo"></a>
+  <a href="/photography/#olympus-photos"><img src="/images/blog/Olympus4.JPG" alt="Olympus TG-7 photo"></a>
+</div>
+
 ---
 
 ## GoPro Hero 10
@@ -157,6 +168,13 @@ This is my easy, grab-and-go film camera. It has a 12x zoom lens, a few setting 
 
 For film, I always try to buy rolls with 36 exposures rather than 24. In general, I tend to shoot color negative at 200–400 ISO. Lower ISO means sharper, less grainy images with better color accuracy, which suits the kind of travel, portrait, and landscape shots I use this camera for. My go-to films are Kodak ColorPlus and Kodak Gold, both reliable, affordable, and give a beautiful glow to the photos, but it's also fun to experiment with different film!
 
+<div class="blog-gallery">
+  <a href="/photography/#fuji-photos"><img src="/images/blog/Fuji1.JPG" alt="Fuji Discovery photo"></a>
+  <a href="/photography/#fuji-photos"><img src="/images/blog/Fuji2.JPG" alt="Fuji Discovery photo"></a>
+  <a href="/photography/#fuji-photos"><img src="/images/blog/Fuji3.JPG" alt="Fuji Discovery photo"></a>
+  <a href="/photography/#fuji-photos"><img src="/images/blog/Fuji4.JPG" alt="Fuji Discovery photo"></a>
+</div>
+
 ---
 
 ## Konica FT-Motor
@@ -175,6 +193,17 @@ This camera is so special to me. Many years ago, my Konica FT-Motor belonged to 
 
 <div class="blog-clear"></div>
 
+<div class="blog-gallery">
+  <a href="/photography/#konica-faro"><img src="/images/blog/FilmInFaro1.JPG" alt="Konica film photo"></a>
+  <a href="/photography/#konica-faro"><img src="/images/blog/FilmInFaro3.JPG" alt="Konica film photo"></a>
+  <a href="/photography/#konica-faro"><img src="/images/blog/FilmInFaro4.JPG" alt="Konica film photo"></a>
+  <a href="/photography/#konica-faro"><img src="/images/blog/FilmInFaro5.JPG" alt="Konica film photo"></a>
+</div>
+<div class="blog-gallery">
+  <a href="/photography/#konica-faro"><img src="/images/blog/FilmInFaro6.JPG" alt="Konica film photo"></a>
+  <a href="/photography/#konica-faro"><img src="/images/blog/FilmInFaro7.JPG" alt="Konica film photo"></a>
+  <a href="/photography/#konica-faro"><img src="/images/blog/FilmInFaro8.JPG" alt="Konica film photo"></a>
+</div>
 ---
 
 ## Nikon Coolpix
@@ -191,6 +220,16 @@ My Coolpix lives in my purse. It's small enough to fit in a pocket and I take it
 
 The Canon Powershot gives me more control and image quality than the Coolpix, with better zoom and overall resolution for digital photos. The tradeoff is that it's bulkier, so it doesn't fit in a pocket the way the Coolpix does. I tend to bring it when I know I want better shots and have room in my bag for it.
 
+<a href="/photography/#canon-photos">
+ <div class="blog-gallery">
+  <a href="/photography/#canon-photos"><img src="/images/blog/Canon1.JPG" alt="Canon Powershot photo"></a>
+  <a href="/photography/#canon-photos"><img src="/images/blog/Canon2.JPG" alt="Canon Powershot photo"></a>
+  <a href="/photography/#canon-photos"><img src="/images/blog/Canon3.JPG" alt="Canon Powershot photo"></a>
+  <a href="/photography/#canon-photos"><img src="/images/blog/Canon4.JPG" alt="Canon Powershot photo"></a>
+</div>
+<div class="blog-gallery">
+  <a href="/photography/#canon-photos"><img src="/images/blog/Canon5.JPG" alt="Canon Powershot photo"></a>
+</div>
 ---
 
 ## Sony Handycam
