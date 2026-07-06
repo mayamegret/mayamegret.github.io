@@ -6,9 +6,6 @@ author_profile: false
 ---
 
 <style>
-.page__title { color: #4B2E0F !important; }
-.page__title::after { background-color: #4B2E0F !important; }
-h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-color: #4B2E0F !important; }
 body, #main, article.page, .page__inner-wrap, .page__content, .initial-content, .page__wrap {
   background-color: #CCE7ED !important;
 }
@@ -16,6 +13,9 @@ body, #main, article.page, .page__inner-wrap, .page__content, .initial-content, 
 a { color: #4B2E0F !important; }
 a:hover { color: #7a4e20 !important; }
 h1, h2, h3, h4, h5, h6, body { color: #4B2E0F !important; }
+.page__title { color: #4B2E0F !important; }
+.page__title::after { background-color: #4B2E0F !important; }
+h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-color: #4B2E0F !important; }
 #main, article.page, .page__inner-wrap, .page__content, .page__inner-wrap--layout-single {
   max-width: 100% !important;
   width: 100% !important;
@@ -79,21 +79,6 @@ h1, h2, h3, h4, h5, h6, body { color: #4B2E0F !important; }
   overflow-x: auto;
   border-radius: 8px;
 }
- .dive-table thead th {
-  color: #4B2E0F !important;
-  background-color: #BDD9E0 !important;
-}
-.dive-table th,
-.dive-table td {
-  border-color: #4B2E0F !important;
-  border-bottom-color: #4B2E0F !important;
-}
-.dive-table tr {
-  border-bottom-color: #4B2E0F !important;
-}
-.dive-table tr:nth-child(even) td {
-  background-color: transparent !important;
-}
 .dive-table {
   width: 100%;
   border-collapse: collapse;
@@ -103,7 +88,7 @@ h1, h2, h3, h4, h5, h6, body { color: #4B2E0F !important; }
   overflow: hidden;
 }
 .dive-table th {
-  background: rgba(75,46,15,0.15);
+  background: #BDD9E0;
   color: #4B2E0F;
   font-weight: bold;
   padding: 10px 12px;
@@ -113,18 +98,30 @@ h1, h2, h3, h4, h5, h6, body { color: #4B2E0F !important; }
   cursor: pointer;
   user-select: none;
 }
-.dive-table th:hover { background: rgba(75,46,15,0.25); }
+.dive-table th:hover { background: #a8cdd5; }
 .dive-table th.sort-asc::after { content: " ↑"; }
 .dive-table th.sort-desc::after { content: " ↓"; }
 .dive-table td {
   padding: 8px 12px;
-  border-bottom: 1px solid rgba(75,46,15,0.15);
+  border-bottom: 1px solid #4B2E0F;
   color: #4B2E0F;
   vertical-align: top;
 }
 .dive-table tr:last-child td { border-bottom: none; }
-.dive-table tr:nth-child(even) td { background: rgba(255,255,255,0.15); }
+.dive-table tr:nth-child(even) td { background: transparent; }
 .dive-table tr:hover td { background: rgba(255,255,255,0.35); }
+.dive-table th,
+.dive-table td {
+  border-color: #4B2E0F !important;
+  border-bottom-color: #4B2E0F !important;
+}
+.dive-table tr {
+  border-bottom-color: #4B2E0F !important;
+}
+.dive-table thead th {
+  color: #4B2E0F !important;
+  background-color: #BDD9E0 !important;
+}
 .dive-type-badge {
   display: inline-block;
   padding: 2px 8px;
@@ -138,7 +135,7 @@ h1, h2, h3, h4, h5, h6, body { color: #4B2E0F !important; }
 .dive-type-training { background: rgba(100,100,200,0.15); color: #333; }
 .dive-type-other { background: rgba(200,200,200,0.3); color: #555; }
 .dive-loading { text-align: center; padding: 40px; color: #4B2E0F; }
-.dive-no-results { text-align: center; padding: 20px; color: #888; font-style: italic; }
+.dive-no-results { text-align: center; padding: 20px; color: #4B2E0F; font-style: italic; }
 </style>
 
 <div class="dive-stats">
