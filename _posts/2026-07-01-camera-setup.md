@@ -91,13 +91,13 @@ body { color: #711A54 !important; }
 }
 </style>
 
-Photography has always been a big part of my life. My great uncle on my moms side was a photographer who shot almost exclusively in black and white, and my dad did a lot of film photography in France, a hobby he continued when he moved to the US in the early 90s. Growing up, I was surrounded by their photographs decorating most rooms in our house. My dad even built a darkroom in our basement, and we spent plenty of time in there developing his black and white film together. I got my first camera when I was 7 years old, and have only grown my collection since then. 
+Photography has always been a big part of my life. My great uncle on my moms side was a photographer who shot almost exclusively in black and white, and my dad did a lot of film photography in France, a hobby he continued when he moved to the US in the early 90s. Growing up, I was surrounded by their photographs decorating most rooms in our house. My dad even built a darkroom in our basement, and we spent plenty of time in there developing his black and white film together. I got my first camera when I was 7 years old, and have only grown my collection since then.
 
 <div style="display: flex; gap: 10px; margin: 14px 0; align-items: flex-start;">
   <img src="/images/blog/DadUncleArthur.jpeg" alt="Dad and Uncle Arthur, 1992." style="flex: 1 1 0; min-width: 0; border-radius: 8px; height: auto; aspect-ratio: 1/1; object-fit: cover;">
-  <div style="display: flex; flex-direction: column; gap: 10px; flex: 1 1 0; min-width: 0;">
-    <img src="/images/blog/MayaNikon1.jpg" style="width: 100%; border-radius: 8px; aspect-ratio: 1/1; object-fit: cover;">
-    <img src="/images/blog/MayaFranceCam.JPG" style="width: 100%; border-radius: 8px; aspect-ratio: 1/1; object-fit: cover; object-position: bottom;">
+  <div id="maya-stack" style="flex: 1 1 0; min-width: 0; position: relative; cursor: pointer; border-radius: 8px; overflow: hidden;" onclick="cycleMayaStack()">
+    <img id="maya-stack-img" src="/images/blog/MayaNikon1.jpg" alt="Maya with camera" style="width: 100%; border-radius: 8px; aspect-ratio: 1/1; object-fit: cover; display: block;">
+    <span id="maya-stack-badge" style="position: absolute; top: 8px; right: 8px; background: rgba(0,0,0,0.6); color: #fff; font-size: 0.8rem; padding: 2px 8px; border-radius: 20px; font-weight: bold;">+1</span>
   </div>
 </div>
 
@@ -133,7 +133,7 @@ The TG-7 is my primary underwater camera and the one I use whenever I want detai
 
 *My underwater video camera*
 
-My GoPro attaches to my TG-7 so I can bring them both on every dive. I use the Olympus for my macro photography (mostly for nudis), and my the GoPro for all my videos.
+My GoPro attaches to my TG-7 so I can bring them both on every dive. I use the Olympus for my macro photography (mostly for nudis), and the GoPro for all my videos.
 
 **What I love about it:** The battery life is excellent compared to the Olympus, which makes it much better for continuous video recording during long days on the boat. The video resolution is great and it doesn't only shoot wide angle, which gives you more flexibility with framing. It's also rugged, reliable, and simple to use underwater when you're also trying to navigate a dive.
 
@@ -145,7 +145,7 @@ My GoPro attaches to my TG-7 so I can bring them both on every dive. I use the O
 
 *My point-and-shoot film camera*
 
-This is my easy, grab-and-go film camera. It has a 12x zoom lens, a few setting options like flash, flash with red-eye reduction, and a landscape mode, but everything else is fully automatic. 
+This is my easy, grab-and-go film camera. It has a 12x zoom lens, a few setting options like flash, flash with red-eye reduction, and a landscape mode, but everything else is fully automatic.
 
 For film, I always try to buy rolls with 36 exposures rather than 24. In general, I tend to shoot color negative at 200–400 ISO. Lower ISO means sharper, less grainy images with better color accuracy, which suits the kind of travel, portrait, and landscape shots I use this camera for. My go-to films are Kodak ColorPlus and Kodak Gold, both reliable, affordable, and give a beautiful glow to the photos, but it's also fun to experiment with different film!
 
@@ -157,7 +157,7 @@ For film, I always try to buy rolls with 36 exposures rather than 24. In general
 
 <img src="/images/blog/Konica.jpg" class="blog-img-natural" alt="Konica FT-Motor">
 
-This camera is so special to me. M many years ago, my Konica FT-Motor belonged to my grandmother, who passed it on to my mom, who then passed it on to my dad, and eventually he passed it on to me. It's fully manual, which means every shot requires time and intention. I use it mostly for scenery and landscapes where I have the time to set up the shot properly.
+This camera is so special to me. Many years ago, my Konica FT-Motor belonged to my grandmother, who passed it on to my mom, who then passed it on to my dad, and eventually he passed it on to me. It's fully manual, which means every shot requires time and intention. I use it mostly for scenery and landscapes where I have the time to set up the shot properly.
 
 **Shutter speed:** I typically shoot at 1/125s, which is fast enough to prevent motion blur in most situations. For faster moving subjects, I'll increase the shutter speed, but that also means I need more available light to compensate.
 
@@ -185,7 +185,6 @@ The Canon Powershot gives me more control and image quality than the Coolpix, wi
 
 ---
 
-
 ## Sony Handycam
 
 *My fav vintage video camera*
@@ -212,8 +211,10 @@ While my collection of cameras includes well over a dozen, these are the cameras
 
 ## Bonus: My mom's Nikon
 
-<img src="/images/blog/MayaNikon.JPG" class="blog-img-natural">
-<img src="/images/blog/MayaNikon2.JPG" class="blog-img-natural">
+<div class="blog-gallery">
+<img src="/images/blog/MayaNikon.JPG" alt="Maya with mom's Nikon" style="aspect-ratio: unset; object-fit: unset; height: auto;">
+<img src="/images/blog/MayaNikon2.JPG" alt="Maya with mom's Nikon" style="aspect-ratio: unset; object-fit: unset; height: auto;">
+</div>
 
 My mom has a hefty Nikon DSLR that she let me use on our safari in South Africa. It's a pretty big camera (so big, you need a monopod or tripod to stabilize it) that produces stunning images, and having it for photographing wildlife in the distance was a gamechanger. It's not mine, but I am not above asking to borrow it whenever the opportunity calls for it. Thanks mom!
 
