@@ -88,6 +88,13 @@ body { color: #711A54 !important; }
     float: none !important;
     margin: 12px 0 !important;
   }
+  .page__content table thead th {
+  color: #711A54 !important;
+  background-color: rgba(113, 26, 84, 0.1) !important;
+}
+.page__content table tbody tr:nth-child(even) {
+  background-color: rgba(113, 26, 84, 0.05) !important;
+}
 }
 </style>
 
@@ -96,7 +103,7 @@ Photography has always been a big part of my life. My great uncle on my moms sid
 <div style="display: flex; gap: 10px; margin: 14px 0; align-items: flex-start;">
   <img src="/images/blog/DadUncleArthur.jpeg" alt="Dad and Uncle Arthur, 1992." style="flex: 1 1 0; min-width: 0; border-radius: 8px; height: auto; aspect-ratio: 1/1; object-fit: cover;">
   <div id="maya-stack" style="flex: 1 1 0; min-width: 0; position: relative; cursor: pointer; border-radius: 8px; overflow: hidden;" onclick="cycleMayaStack()">
-    <img id="maya-stack-img" src="/images/blog/MayaNikon1.jpg" alt="Maya with camera" style="width: 100%; border-radius: 8px; aspect-ratio: 1/1; object-fit: cover; display: block;">
+    <img id="maya-stack-img" src="/images/blog/MayaNikon1.jpg" style="width: 100%; border-radius: 8px; aspect-ratio: 1/1; object-fit: cover; display: block;">
     <span id="maya-stack-badge" style="position: absolute; top: 8px; right: 8px; background: rgba(0,0,0,0.6); color: #fff; font-size: 0.8rem; padding: 2px 8px; border-radius: 20px; font-weight: bold;">+1</span>
   </div>
 </div>
