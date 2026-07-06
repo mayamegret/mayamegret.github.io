@@ -79,6 +79,18 @@ h1, h2, h3, h4, h5, h6, body { color: #4B2E0F !important; }
   overflow-x: auto;
   border-radius: 8px;
 }
+  .dive-table thead th {
+  color: #4B2E0F !important;
+  background-color: rgba(75, 46, 15, 0.15) !important;
+}
+  .dive-table th,
+.dive-table td {
+  border-color: #4B2E0F !important;
+  border-bottom-color: #4B2E0F !important;
+}
+.dive-table tr {
+  border-bottom-color: #4B2E0F !important;
+}
 .dive-table {
   width: 100%;
   border-collapse: collapse;
