@@ -64,7 +64,7 @@ h1.page__title {
 }
 .photo-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: 10px;
   gap: 18px;
   margin-top: 24px;
@@ -150,9 +150,11 @@ h1.page__title {
 }
 .modal-map-link { position: fixed; bottom: 90px; left: 0; right: 0; text-align: center; color: #fff; font-size: 0.9rem; text-decoration: none; z-index: 10001; }
 .modal-map-link:hover { text-decoration: underline; }
-@media (max-width: 767px) {
-  #modal-img { width: 95vw; height: 50vh; }
-  .modal-caption { max-width: 95vw; font-size: 0.85rem; padding: 0 12px; }
+@media (max-width: 900px) {
+  .photo-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 600px) {
+  .photo-grid { grid-template-columns: repeat(2, 1fr); }
 }
 </style>
 
