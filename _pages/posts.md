@@ -12,7 +12,6 @@ author_profile: false
 {% endfor %}
 
 <style>
-<style>
 body, #main, article.page, .page__inner-wrap, .page__content, .initial-content, .page__wrap {
   background-color: #EFEAA3 !important;
 }
@@ -25,5 +24,4 @@ h1, h2, h3, h4, h5, h6, body { color: #711A54 !important; }
 h1::after, h2::after, h3::after { background-color: #711A54 !important; border-color: #711A54 !important; }
 .archive__item-title a { color: #711A54 !important; }
 .archive__item-title a:hover { color: #4a0e37 !important; }
-</style>
 </style>
