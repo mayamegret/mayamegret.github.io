@@ -9,7 +9,7 @@ author_profile: false
 
 <style>
 body, #main, article.page, .page__inner-wrap, .page__content, .initial-content, .page__wrap {
-  background-color: #F0DC9B !important;
+  background-color: #FBF4D0 !important;
 }
 .sidebar { background-color: #1A4A5C !important; }
 a { color: #1A4A5C !important; }
@@ -24,7 +24,7 @@ h1::after, h2::after, h3::after { background-color: #1A4A5C !important; border-c
   padding-left: 1em !important;
   padding-right: 1em !important;
 }
-.leaflet-container { background: #F0DC9B !important; }
+.leaflet-container { background: #FBF4D0 !important; }
 #dive-map { height: 85vh; width: 100%; margin-top: 16px; margin-right: 1em; border-radius: 8px; position: relative; z-index: 1; }
 .popup-title { font-size: 1rem; font-weight: bold; margin: 0 0 4px 0; }
 .popup-dates { color: #777; font-size: 0.82rem; margin: 2px 0 6px 0; }
