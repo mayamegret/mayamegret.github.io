@@ -8,6 +8,12 @@ author_profile: false
 Photos from my travels and dives!
 
 <style>
+#main, article.page, .page__inner-wrap, .page__content, .page__inner-wrap--layout-single {
+  max-width: 100% !important;
+  width: 100% !important;
+  padding-left: 1em !important;
+  padding-right: 1em !important;
+}
 h1.page__title {
   margin-left: 0 !important;
   padding-left: 0 !important;
@@ -56,40 +62,6 @@ h1.page__title {
   font-style: italic;
   display: none;
 }
-#main, article.page, .page__inner-wrap, .page__content, .page__inner-wrap--layout-single {
-  max-width: 100% !important;
-  width: 100% !important;
-  padding-left: 1em !important;
-  padding-right: 1em !important;
-}
-</style>
-
-<div class="gallery-controls">
-  <div class="gallery-filter-btns">
-    <button class="gallery-filter-btn active" data-filter="all" onclick="setGalleryFilter('all')">All</button>
-    <button class="gallery-filter-btn" data-filter="underwater" onclick="setGalleryFilter('underwater')"><i class="fas fa-anchor"></i> Underwater</button>
-    <button class="gallery-filter-btn" data-filter="travel" onclick="setGalleryFilter('travel')"><i class="fas fa-plane"></i> Travel</button>
-    <button class="gallery-filter-btn" data-filter="wildlife" onclick="setGalleryFilter('wildlife')"><i class="fas fa-dragon"></i> Wildlife</button>
-    <button class="gallery-filter-btn" data-filter="film" onclick="setGalleryFilter('film')"><i class="fas fa-film"></i> Film</button>
-    <button class="gallery-filter-btn" data-filter="science" onclick="setGalleryFilter('science')"><i class="fas fa-microscope"></i> Science</button>
-  </div>
-  <input class="gallery-search" type="text" placeholder="Search captions..." oninput="searchGallery(this.value)">
-</div>
-<div id="gallery-no-results">No photos match your search.</div>
-
-<div id="photo-grid" class="photo-grid"></div>
-
-<div id="photo-modal" class="photo-modal">
-  <a id="modal-map-link" class="modal-map-link" style="display:none;">🗺️ See on map →</a>
-  <button class="modal-close" onclick="closeModal()" aria-label="Close">&times;</button>
-  <button class="modal-nav modal-prev" onclick="navModal(-1)" aria-label="Previous photo">&#8249;</button>
-  <div id="modal-img"></div>
-  <div id="modal-caption" class="modal-caption"></div>
-  <button class="modal-nav modal-next" onclick="navModal(1)" aria-label="Next photo">&#8250;</button>
-  <div id="modal-counter" class="modal-counter"></div>
-</div>
-
-<style>
 .photo-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -178,19 +150,36 @@ h1.page__title {
 }
 .modal-map-link { position: fixed; bottom: 90px; left: 0; right: 0; text-align: center; color: #fff; font-size: 0.9rem; text-decoration: none; z-index: 10001; }
 .modal-map-link:hover { text-decoration: underline; }
-
 @media (max-width: 767px) {
-  #modal-img {
-    width: 95vw;
-    height: 50vh;
-  }
-  .modal-caption {
-    max-width: 95vw;
-    font-size: 0.85rem;
-    padding: 0 12px;
-  }
+  #modal-img { width: 95vw; height: 50vh; }
+  .modal-caption { max-width: 95vw; font-size: 0.85rem; padding: 0 12px; }
 }
 </style>
+
+<div class="gallery-controls">
+  <div class="gallery-filter-btns">
+    <button class="gallery-filter-btn active" data-filter="all" onclick="setGalleryFilter('all')">All</button>
+    <button class="gallery-filter-btn" data-filter="underwater" onclick="setGalleryFilter('underwater')"><i class="fas fa-anchor"></i> Underwater</button>
+    <button class="gallery-filter-btn" data-filter="travel" onclick="setGalleryFilter('travel')"><i class="fas fa-plane"></i> Travel</button>
+    <button class="gallery-filter-btn" data-filter="wildlife" onclick="setGalleryFilter('wildlife')"><i class="fas fa-dragon"></i> Wildlife</button>
+    <button class="gallery-filter-btn" data-filter="film" onclick="setGalleryFilter('film')"><i class="fas fa-film"></i> Film</button>
+    <button class="gallery-filter-btn" data-filter="science" onclick="setGalleryFilter('science')"><i class="fas fa-microscope"></i> Science</button>
+  </div>
+  <input class="gallery-search" type="text" placeholder="Search captions..." oninput="searchGallery(this.value)">
+</div>
+<div id="gallery-no-results">No photos match your search.</div>
+
+<div id="photo-grid" class="photo-grid"></div>
+
+<div id="photo-modal" class="photo-modal">
+  <a id="modal-map-link" class="modal-map-link" style="display:none;">🗺️ See on map →</a>
+  <button class="modal-close" onclick="closeModal()" aria-label="Close">&times;</button>
+  <button class="modal-nav modal-prev" onclick="navModal(-1)" aria-label="Previous photo">&#8249;</button>
+  <div id="modal-img"></div>
+  <div id="modal-caption" class="modal-caption"></div>
+  <button class="modal-nav modal-next" onclick="navModal(1)" aria-label="Next photo">&#8250;</button>
+  <div id="modal-counter" class="modal-counter"></div>
+</div>
 
 <script src="/assets/js/photography-gallery.js"></script>
 <script>
@@ -225,12 +214,4 @@ const observer = new MutationObserver(() => resizeAllTiles());
 observer.observe(grid, { childList: true });
 
 window.addEventListener('resize', resizeAllTiles);
-  
-document.querySelectorAll('#main, article.page, .page__inner-wrap, .page__content').forEach(el => {
-  el.style.maxWidth = '100%';
-  el.style.width = '100%';
-  el.style.paddingLeft = '1em';
-  el.style.paddingRight = '1em';
-  el.style.float = 'none';
-});
 </script>
