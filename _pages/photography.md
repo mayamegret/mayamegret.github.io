@@ -5,7 +5,7 @@ permalink: /photography/
 author_profile: false
 ---
 
-A selection of photos from my travels and dives!
+Photos from my travels and dives!
 
 <style>
 #main, article.page, .page__inner-wrap, .page__content, .page__inner-wrap--layout-single {
