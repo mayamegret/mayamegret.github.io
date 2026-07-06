@@ -98,10 +98,10 @@ body { color: #711A54 !important; }
 Photography has always been a big part of my life. My great uncle on my moms side was a photographer who shot almost exclusively in black and white, and my dad did a lot of film photography in France, a hobby he continued when he moved to the US in the early 90s. Growing up, I was surrounded by their photographs decorating most rooms in our house. My dad even built a darkroom in our basement, and we spent plenty of time in there developing his black and white film together. I got my first camera when I was 7 years old, and have only grown my collection since then. 
 
 <div style="display: flex; gap: 10px; margin: 14px 0; align-items: flex-start;">
-  <img src="/images/blog/DadUncleArthur.jpeg" alt="Dad and Uncle Arthur, 1992." style="flex: 1 1 0; min-width: 0; border-radius: 8px; height: auto; aspect-ratio: unset; object-fit: unset;">
-  <div id="maya-stack" style="flex: 1 1 0; min-width: 0; position: relative; cursor: pointer; border-radius: 8px; overflow: hidden;" onclick="cycleMayaStack()">
-    <img id="maya-stack-img" src="/images/blog/MayaNikon1.jpg" alt="Maya with camera" style="width: 100%; border-radius: 8px; height: auto; display: block;">
-    <span id="maya-stack-badge" style="position: absolute; top: 8px; right: 8px; background: rgba(0,0,0,0.6); color: #fff; font-size: 0.8rem; padding: 2px 8px; border-radius: 20px; font-weight: bold;">+1</span>
+  <img src="/images/blog/DadUncleArthur.jpeg" alt="Dad and Uncle Arthur, 1992." style="flex: 1 1 0; min-width: 0; border-radius: 8px; height: auto; aspect-ratio: 1/1; object-fit: cover;">
+  <div style="display: flex; flex-direction: column; gap: 10px; flex: 1 1 0; min-width: 0;">
+    <img src="/images/blog/MayaNikon1.jpg" style="width: 100%; border-radius: 8px; aspect-ratio: 1/1; object-fit: cover;">
+    <img src="/images/blog/MayaFranceCam.JPG" style="width: 100%; border-radius: 8px; aspect-ratio: 1/1; object-fit: cover; object-position: bottom;">
   </div>
 </div>
 
