@@ -112,6 +112,7 @@ h1.page__title {
 .modal-caption {
   color: #fff;
   font-size: 0.95rem;
+  margin-bottom: 40px;
   text-align: center;
   padding: 0 20px;
   max-width: 80vw;
