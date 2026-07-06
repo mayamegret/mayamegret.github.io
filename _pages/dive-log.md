@@ -6,6 +6,9 @@ author_profile: false
 ---
 
 <style>
+.page__title { color: #4B2E0F !important; }
+.page__title::after { background-color: #4B2E0F !important; }
+h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-color: #4B2E0F !important; }
 body, #main, article.page, .page__inner-wrap, .page__content, .initial-content, .page__wrap {
   background-color: #CCE7ED !important;
 }
