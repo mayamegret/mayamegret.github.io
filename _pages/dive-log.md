@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5, h6, body { color: #4B2E0F !important; }
 }
 .dive-stat-label {
   font-size: 0.8rem;
-  color: #666;
+  color: #4B2E0F;
   margin-top: 4px;
 }
 .dive-filters {
@@ -79,17 +79,20 @@ h1, h2, h3, h4, h5, h6, body { color: #4B2E0F !important; }
   overflow-x: auto;
   border-radius: 8px;
 }
-  .dive-table thead th {
+ .dive-table thead th {
   color: #4B2E0F !important;
-  background-color: rgba(75, 46, 15, 0.15) !important;
+  background-color: #BDD9E0 !important;
 }
-  .dive-table th,
+.dive-table th,
 .dive-table td {
   border-color: #4B2E0F !important;
   border-bottom-color: #4B2E0F !important;
 }
 .dive-table tr {
   border-bottom-color: #4B2E0F !important;
+}
+.dive-table tr:nth-child(even) td {
+  background-color: transparent !important;
 }
 .dive-table {
   width: 100%;
