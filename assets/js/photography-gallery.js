@@ -6,7 +6,7 @@ const tiles = [
   { photos: ["/images/photography/IMG_0609.jpg"], categories: ["underwater", "wildlife"] },
   { photos: ["/images/photography/IMG_0931.jpg", "/images/photography/IMG_1593.jpg"], categories: ["underwater", "wildlife", "travel"] },
   { photos: ["/images/photography/IMG_2277.jpg"], categories: ["underwater"] },
-  { photos: ["/images/photography/IMG_2347.jpg"],  caption "Close up of a starfish", categories: ["underwater", "wildlife"] },
+  { photos: ["/images/photography/IMG_2347.jpg"],  caption: "Close up of a starfish", categories: ["underwater", "wildlife"] },
   { photos: ["/images/photography/IMG_9902.jpg", "/images/photography/Josephines.jpg", "/images/photography/IMG_9884.jpg", "/images/photography/Maya24Bday.jpg"], caption: "Springtime back home", categories: ["film"] },
   { photos: ["/images/photography/ElSalvador2.JPG", "/images/photography/ElSalvador1.jpg"], caption: "Celebrating my best friend in El Salvador", id: "el-salvador", mapLink: "/map/#el-salvador", categories: ["travel"] },
   { photos: ["/images/photography/IMG_6375.jpg", "/images/photography/P1230432.jpg", "/images/photography/P2171886.jpg"], categories: ["underwater", "wildlife", "science"] },
