@@ -24,6 +24,17 @@ A living log of every species I've observed in the wild, automatically synced fr
 <div id="species-container"></div>
 
 <style>
+body, #main, article.page, .page__inner-wrap, .page__content, .initial-content, .page__wrap {
+  background-color: #DFBDD4 !important;
+}
+.sidebar { background-color: #C05C27 !important; }
+a { color: #C05C27 !important; }
+a:hover { color: #8a3e18 !important; }
+h1, h2, h3, h4, h5, h6, body { color: #7a2a00 !important; }
+.species-group-title { border-left-color: #C05C27 !important; color: #7a2a00 !important; }
+.species-group-title i { color: #7a2a00 !important; }
+.species-fave-badge { color: #C05C27 !important; }
+  
 .species-group { margin-bottom: 2.5rem; }
 .species-group-title {
   font-size: 1.2rem;
