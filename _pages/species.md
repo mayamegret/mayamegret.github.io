@@ -5,9 +5,9 @@ permalink: /species/
 author_profile: false
 ---
 
-A living log of every species I've observed in the wild, automatically synced from my <a href="https://www.inaturalist.org/people/mayamegret" target="_blank" style="color:#2c4a3e; text-decoration: underline;">iNaturalist profile</a>. Updated every time I log a new observation!
+A log of every species I've observed in the wild, automatically synced from my <a href="https://www.inaturalist.org/people/mayamegret" target="_blank" style="text-decoration: underline;">iNaturalist profile</a> Updated every time I log a new observation!
 
-<div id="species-stats" style="margin-bottom: 1rem; color: #2c4a3e; font-size: 0.95rem;"></div>
+<div id="species-stats" style="margin-bottom: 1.5rem; font-size: 0.95rem;"></div>
 
 <div style="display: flex; gap: 10px; margin-bottom: 1.5rem; flex-wrap: wrap; align-items: center;">
   <input type="text" id="species-search" placeholder="Search by common or scientific name..."
@@ -30,9 +30,19 @@ body, #main, article.page, .page__inner-wrap, .page__content, .initial-content, 
 .sidebar { background-color: #C05C27 !important; }
 a { color: #C05C27 !important; }
 a:hover { color: #8a3e18 !important; }
-h1, h2, h3, h4, h5, h6, body { color: #7a2a00 !important; }
+h1, h2, h3, h4, h5, h6 { color: #7a2a00 !important; border-bottom-color: #C05C27 !important; }
+body { color: #7a2a00 !important; }
+.page__title { color: #7a2a00 !important; }
+.page__title::after { background-color: #C05C27 !important; }
+#species-stats { color: #7a2a00 !important; }
 .species-group-title { border-left-color: #C05C27 !important; color: #7a2a00 !important; }
 .species-group-title i { color: #7a2a00 !important; }
+.species-group-count { color: #7a2a00 !important; opacity: 0.6; }
+.species-card-common { color: #7a2a00 !important; }
+.species-card-scientific { color: #555 !important; }
+.species-card-count { color: #888 !important; }
+.species-card { background: rgba(255,255,255,0.35) !important; }
+.species-card-placeholder { color: #C05C27 !important; background: rgba(192,92,39,0.1) !important; }
 .species-fave-badge { color: #C05C27 !important; }
   
 .species-group { margin-bottom: 2.5rem; }
