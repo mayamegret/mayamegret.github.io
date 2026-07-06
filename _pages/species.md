@@ -10,12 +10,12 @@ A log of every species I've observed in the wild, automatically synced from my <
 <div id="species-stats" style="margin-bottom: 1.5rem; font-size: 0.95rem;"></div>
 
 <div style="display: flex; gap: 10px; margin-bottom: 1.5rem; flex-wrap: wrap; align-items: center;">
-  <input type="text" id="species-search" placeholder="Search by common or scientific name..."
-    style="flex: 1; min-width: 200px; padding: 8px 12px; border: 2px solid #2c4a3e; border-radius: 6px; background: rgba(255,255,255,0.5); color: #2c4a3e; font-size: 0.9rem; outline: none;">
-  <button id="faves-toggle" onclick="toggleFavesOnly()"
-    style="padding: 8px 16px; background: #2c4a3e; color: #fff; border: none; border-radius: 6px; cursor: pointer; font-size: 0.9rem; display: flex; align-items: center; gap: 6px; white-space: nowrap;">
-    <i class="fas fa-heart"></i> Favorites only
-  </button>
+<input type="text" id="species-search" placeholder="Search by common or scientific name..."
+  style="flex: 1; min-width: 200px; padding: 8px 12px; border: 2px solid #7a2a00; border-radius: 6px; background: rgba(255,255,255,0.5); color: #7a2a00; font-size: 0.9rem; outline: none;">
+<button id="faves-toggle" onclick="toggleFavesOnly()"
+  style="padding: 8px 16px; background: #7a2a00; color: #fff; border: none; border-radius: 6px; cursor: pointer; font-size: 0.9rem; display: flex; align-items: center; gap: 6px; white-space: nowrap;">
+  <i class="fas fa-heart"></i> Favorites only
+</button>
 </div>
 
 <div id="species-loading"
