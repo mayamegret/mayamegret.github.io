@@ -13,17 +13,17 @@ author_profile: false
   <div id="map-counter" style="font-size: 0.9rem; color: #2c4a3e;"></div>
   <div style="display: flex; gap: 8px;">
     <button onclick="filterMap('all')" id="btn-all"
-      style="padding: 6px 14px; background: #2c4a3e; color: #fff; border: none; border-radius: 6px; cursor: pointer; font-size: 0.85rem;">
-      All
-    </button>
-    <button onclick="filterMap('dive')" id="btn-dive"
-      style="padding: 6px 14px; background: rgba(44,74,62,0.2); color: #2c4a3e; border: none; border-radius: 6px; cursor: pointer; font-size: 0.85rem;">
-      <i class="fas fa-anchor"></i> Dives only
-    </button>
-    <button onclick="filterMap('visit')" id="btn-visit"
-      style="padding: 6px 14px; background: rgba(44,74,62,0.2); color: #2c4a3e; border: none; border-radius: 6px; cursor: pointer; font-size: 0.85rem;">
-      <i class="fas fa-map-marker-alt"></i> Visits only
-    </button>
+  style="padding: 6px 14px; background: #1A4A5C; color: #fff; border: none; border-radius: 6px; cursor: pointer; font-size: 0.85rem;">
+  All
+</button>
+<button onclick="filterMap('dive')" id="btn-dive"
+  style="padding: 6px 14px; background: rgba(26,74,92,0.2); color: #1A4A5C; border: none; border-radius: 6px; cursor: pointer; font-size: 0.85rem;">
+  <i class="fas fa-anchor"></i> Dives only
+</button>
+<button onclick="filterMap('visit')" id="btn-visit"
+  style="padding: 6px 14px; background: rgba(26,74,92,0.2); color: #1A4A5C; border: none; border-radius: 6px; cursor: pointer; font-size: 0.85rem;">
+  <i class="fas fa-map-marker-alt"></i> Visits only
+</button>
   </div>
 </div>
 
