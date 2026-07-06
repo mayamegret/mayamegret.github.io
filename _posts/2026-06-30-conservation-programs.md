@@ -13,6 +13,15 @@ tags:
 ---
 
 <style>
+body, #main, article.page, .page__inner-wrap, .page__content, .initial-content, .page__wrap {
+  background-color: #EFEAA3 !important;
+}
+.page__content a { color: #711A54 !important; }
+.page__content a:hover { color: #4a0e37 !important; }
+h1, h2, h3, h4, h5, h6 { color: #711A54 !important; border-bottom-color: #711A54 !important; }
+body { color: #711A54 !important; }
+.page__content hr { background-color: #711A54 !important; border-color: #711A54 !important; }
+  
 .page__content a { color: #2c4a3e !important; text-decoration: underline; }
 .page__content a:hover { color: #ffa44a !important; }
 .page__content img.blog-img {
