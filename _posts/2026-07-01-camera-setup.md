@@ -195,14 +195,9 @@ This camera is so special to me. Many years ago, my Konica FT-Motor belonged to 
 
 <div class="blog-gallery">
   <a href="/photography/#konica-faro"><img src="/images/blog/FilmInFaro1.JPG" alt="Konica film photo"></a>
-  <a href="/photography/#konica-faro"><img src="/images/blog/FilmInFaro3.JPG" alt="Konica film photo"></a>
   <a href="/photography/#konica-faro"><img src="/images/blog/FilmInFaro4.JPG" alt="Konica film photo"></a>
   <a href="/photography/#konica-faro"><img src="/images/blog/FilmInFaro5.JPG" alt="Konica film photo"></a>
-</div>
-<div class="blog-gallery">
   <a href="/photography/#konica-faro"><img src="/images/blog/FilmInFaro6.JPG" alt="Konica film photo"></a>
-  <a href="/photography/#konica-faro"><img src="/images/blog/FilmInFaro7.JPG" alt="Konica film photo"></a>
-  <a href="/photography/#konica-faro"><img src="/images/blog/FilmInFaro8.JPG" alt="Konica film photo"></a>
 </div>
 ---
 
@@ -223,11 +218,8 @@ The Canon Powershot gives me more control and image quality than the Coolpix, wi
 <a href="/photography/#canon-photos">
  <div class="blog-gallery">
   <a href="/photography/#canon-photos"><img src="/images/blog/Canon1.JPG" alt="Canon Powershot photo"></a>
-  <a href="/photography/#canon-photos"><img src="/images/blog/Canon2.JPG" alt="Canon Powershot photo"></a>
   <a href="/photography/#canon-photos"><img src="/images/blog/Canon3.JPG" alt="Canon Powershot photo"></a>
   <a href="/photography/#canon-photos"><img src="/images/blog/Canon4.JPG" alt="Canon Powershot photo"></a>
-</div>
-<div class="blog-gallery">
   <a href="/photography/#canon-photos"><img src="/images/blog/Canon5.JPG" alt="Canon Powershot photo"></a>
 </div>
 ---
