@@ -30,6 +30,18 @@ author_profile: false
 <div id="dive-map"></div>
 
 <style>
+body, #main, article.page, .page__inner-wrap, .page__content, .initial-content, .page__wrap {
+  background-color: #F0DC9B !important;
+}
+.sidebar { background-color: #1A4A5C !important; }
+a { color: #1A4A5C !important; }
+a:hover { color: #2e7a9a !important; }
+h1, h2, h3, h4, h5, h6, body { color: #1A4A5C !important; }
+.page__title { color: #1A4A5C !important; }
+.page__title::after { background-color: #1A4A5C !important; }
+h1::after, h2::after, h3::after { background-color: #1A4A5C !important; border-color: #1A4A5C !important; }
+#map-counter { color: #1A4A5C !important; }
+</style>
   #main, article.page, .page__inner-wrap {
     max-width: 100% !important;
     padding-left: 1em !important;
