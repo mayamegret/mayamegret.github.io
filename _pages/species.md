@@ -25,14 +25,14 @@ A log of every species I've observed in the wild, automatically synced from my <
 
 <style>
 body, #main, article.page, .page__inner-wrap, .page__content, .initial-content, .page__wrap {
-  background-color: #DFBDD4 !important;
+  background-color: #F2DCF0 !important;
 }
 .sidebar { background-color: #C05C27 !important; }
 a { color: #C05C27 !important; }
 a:hover { color: #8a3e18 !important; }
 h1, h2, h3, h4, h5, h6 { color: #C05C27 !important; border-bottom-color: #C05C27 !important; }
 body { color: #C05C27 !important; }
-.page__title { color: #7a2a00 !important; }
+.page__title { color: #C05C27 !important; }
 .page__title::after { background-color: #C05C27 !important; }
 #species-stats { color: #7a2a00 !important; }
 .species-group-title { border-left-color: #C05C27 !important; color: #C05C27 !important; }
