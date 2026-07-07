@@ -10,15 +10,25 @@ redirect_from:
 {% include base_path %}
 
 <style>
+body, #main, article.page, .page__inner-wrap, .page__content, .initial-content, .page__wrap {
+  background-color: #EEF4FF !important;
+}
+.sidebar { background-color: #0047AB !important; }
+a { color: #0047AB !important; }
+a:hover { color: #003080 !important; }
+h1, h2, h3, h4, h5, h6, body { color: #0047AB !important; }
+.page__title { color: #0047AB !important; }
+.page__title::after { background-color: #0047AB !important; }
+h1::after, h2::after, h3::after { background-color: #0047AB !important; border-color: #0047AB !important; }
 .cv-summary {
   font-size: 1rem;
   line-height: 1.7;
-  color: #2c4a3e;
+  color: #0047AB;
 }
 .cv-section-title {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #2c4a3e;
+  color: #0047AB;
   border-left: 4px solid #ffa44a;
   padding-left: 12px;
   margin-top: 1.5rem;
@@ -36,6 +46,7 @@ redirect_from:
 .cv-list li {
   padding: 4px 0 4px 1.5rem;
   position: relative;
+  color: #0047AB;
 }
 .cv-list li::before {
   content: "•";
@@ -76,7 +87,7 @@ redirect_from:
 }
 .cv-card {
   position: relative;
-  background: rgba(255,255,255,0.35);
+  background: rgba(0,71,171,0.06);
   border-radius: 8px;
   padding: 14px 16px;
   margin-bottom: 16px;
@@ -90,13 +101,13 @@ redirect_from:
   height: 12px;
   border-radius: 50%;
   background: #ffa44a;
-  border: 2px solid #fff;
+  border: 2px solid #EEF4FF;
   box-sizing: border-box;
 }
 .cv-card-title {
   font-weight: bold;
   font-size: 1rem;
-  color: #2c4a3e;
+  color: #0047AB;
   margin: 0 0 2px 0;
 }
 .cv-card-subtitle {
@@ -111,7 +122,7 @@ redirect_from:
 .cv-card ul li {
   font-size: 0.9rem;
   margin-bottom: 3px;
-  color: #2c4a3e;
+  color: #0047AB;
 }
 .cv-two-col {
   display: grid;
@@ -125,6 +136,7 @@ redirect_from:
   padding: 4px 0 4px 1.5rem;
   position: relative;
   font-size: 0.95rem;
+  color: #0047AB;
 }
 .cv-two-col li::before {
   content: "•";
@@ -203,10 +215,10 @@ redirect_from:
 <div class="cv-timeline">
 
   <div class="cv-card">
-    <div class="cv-card-title">Divemaster Candidate &middot; Hawaiian Diving Adventures</div>
+    <div class="cv-card-title">Divemaster &middot; Hawaiian Diving Adventures</div>
     <div class="cv-card-subtitle">Honolulu, Hawai'i &middot; June–July 2026</div>
     <ul>
-      <li>Completed 50 dives for Divemaster certification</li>
+      <li>Completed 50+ dives for Divemaster certification</li>
       <li>Participated in daily dive charters, assisting instructors and leading dives</li>
       <li>Assisted with dive shop operations including equipment rental and customer briefings</li>
       <li>Filled SCUBA tanks using a high-pressure compressor</li>
@@ -313,4 +325,4 @@ redirect_from:
 </ul>
 
 <div class="cv-section-title"><i class="fas fa-user-friends"></i> References</div>
-<p>Available upon request</p>
+<p style="color:#0047AB;">Available upon request</p>
