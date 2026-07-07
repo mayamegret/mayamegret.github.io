@@ -254,8 +254,6 @@ h1::after, h2::after, h3::after { background-color: #0047AB !important; border-c
     </ul>
   </div>
 
-  <div class="cv-milestone"><i class="fas fa-graduation-cap"></i> Defended MSc thesis &middot; Summer 2026</div>
-
   <div class="cv-card">
     <div class="cv-card-title">Researcher &middot; Marine Action Research Expeditions</div>
     <div class="cv-card-subtitle">Závora, Mozambique &middot; January–March 2026</div>
