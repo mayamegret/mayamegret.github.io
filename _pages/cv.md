@@ -182,7 +182,7 @@ h1::after, h2::after, h3::after { background-color: #0047AB !important; border-c
   <ul class="cv-list">
     <li>M.Sc. in Marine Biology, Universidade do Algarve, Faro, Portugal. Expected 2026.</li>
     <li>B.S. in Marine Biology, University of California San Diego. 2024.</li>
-    <li>Study Abroad, University of Queensland, Brisbane, Australia. 2022.</li>
+    <li>UC Education Abroad Program, University of Queensland, Brisbane, Australia. August-November 2022.</li>
   </ul>
 </div>
   <div>
