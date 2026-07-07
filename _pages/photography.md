@@ -97,13 +97,12 @@ h1.page__title {
   align-items: center;
   justify-content: center;
   gap: 12px;
-  padding: 60px 0 60px 0;
+  padding: 60px 0 80px 0;
   box-sizing: border-box;
 }
-.photo-modal.open { display: flex; }
 #modal-img {
   width: 80vw;
-  height: 60vh;
+  height: 55vh;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -112,11 +111,23 @@ h1.page__title {
 .modal-caption {
   color: #fff;
   font-size: 0.95rem;
-  margin-bottom: 40px;
   text-align: center;
   padding: 0 20px;
   max-width: 80vw;
+  margin-bottom: 0;
 }
+.modal-map-link {
+  position: relative;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  text-align: center;
+  color: #fff;
+  font-size: 0.9rem;
+  text-decoration: none;
+  z-index: 10001;
+}
+.modal-map-link:hover { text-decoration: underline; }
 .modal-close {
   position: absolute;
   top: 20px;
@@ -149,8 +160,7 @@ h1.page__title {
   color: #ccc;
   font-size: 0.85rem;
 }
-.modal-map-link { position: fixed; bottom: 90px; left: 0; right: 0; text-align: center; color: #fff; font-size: 0.9rem; text-decoration: none; z-index: 10001; }
-.modal-map-link:hover { text-decoration: underline; }
+
 @media (max-width: 900px) {
   .photo-grid { grid-template-columns: repeat(3, 1fr); }
 }
