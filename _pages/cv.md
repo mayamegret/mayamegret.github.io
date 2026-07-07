@@ -13,7 +13,6 @@ redirect_from:
 .cv-summary {
   font-size: 1rem;
   line-height: 1.7;
-  margin-bottom: 2rem;
   color: #2c4a3e;
 }
 .cv-section-title {
@@ -22,7 +21,7 @@ redirect_from:
   color: #2c4a3e;
   border-left: 4px solid #ffa44a;
   padding-left: 12px;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
@@ -133,51 +132,72 @@ redirect_from:
   left: 0;
   color: #ffa44a;
 }
-@media (max-width: 600px) {
+.cv-panel-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 40px;
+  margin-bottom: 1.5rem;
+  align-items: start;
+}
+.cv-panel-row .cv-section-title {
+  margin-top: 0;
+}
+@media (max-width: 700px) {
   .cv-two-col { grid-template-columns: 1fr; }
+  .cv-panel-row { grid-template-columns: 1fr; }
 }
 </style>
 
-<p class="cv-summary">I am a marine biologist and scientific diver completing my masters in marine biology at the Universidade do Algarve, with field research experience across Mozambique, San Diego, Greece, Costa Rica, and Australia. My thesis research compared SCUBA-based sampling methodologies for assessing nudibranch diversity and abundance on rocky reef ecosystems in Mozambique. I am passionate about scientific diving, marine biodiversity, underwater photography, and conservation, and am currently completing my SSI Divemaster certification in Hawai'i, with 150+ lifetime dives logged.</p>
-
-<div class="cv-section-title"><i class="fas fa-microscope"></i> Research Interests</div>
-<ul class="cv-list">
-  <li>Nudibranch and invertebrate ecology</li>
-  <li>Scientific diving</li>
-  <li>Sea turtle conservation</li>
-  <li>Coral reef ecosystem health</li>
-  <li>Underwater photography as a research tool</li>
-</ul>
-
-<div class="cv-section-title"><i class="fas fa-graduation-cap"></i> Education</div>
-<ul class="cv-list">
-  <li>M.Sc. in Marine Biology, Universidade do Algarve, Faro, Portugal. Expected 2026.</li>
-  <li>B.S. in Marine Biology, University of California San Diego. 2024.</li>
-</ul>
-
-<div class="cv-section-title"><i class="fas fa-water"></i> Certifications</div>
-<ul class="cv-list">
-  <li>Divemaster. SSI. July 2026.</li>
-  <li>Stress and Rescue. SSI. May 2026.</li>
-  <li>First Aid, CPR, Oxygen. SSI. May 2026.</li>
-  <li>Advanced Open Water. SSI. May 2025.
-    <ul class="cv-sublist">
-      <li>Nitrox EAN32</li>
-      <li>Deep Diving (30m)</li>
-      <li>Navigation</li>
-      <li>Search & Recovery</li>
+<div class="cv-panel-row">
+  <div>
+    <p class="cv-summary">I am a marine biologist and scientific diver completing my masters in marine biology at the Universidade do Algarve, with field research experience across Mozambique, San Diego, Greece, Costa Rica, and Australia. My thesis research compared SCUBA-based sampling methodologies for assessing nudibranch diversity and abundance on rocky reef ecosystems in Mozambique. I am passionate about scientific diving, marine biodiversity, underwater photography, and conservation, and am an SSI Divemaster in Hawai'i, with 150+ lifetime dives logged.</p>
+  </div>
+  <div>
+    <div class="cv-section-title"><i class="fas fa-microscope"></i> Research Interests</div>
+    <ul class="cv-list">
+      <li>Nudibranch and invertebrate ecology</li>
+      <li>Scientific diving</li>
+      <li>Sea turtle conservation</li>
+      <li>Coral reef ecosystem health</li>
+      <li>Underwater photography as a research tool</li>
     </ul>
-  </li>
-  <li>Scientific Diving. CCMAR, UAlg. May 2025.
-    <ul class="cv-sublist">
-      <li>Radial search</li>
-      <li>Quadrat sampling</li>
-      <li>Transect sampling</li>
-      <li>Sample collection</li>
+  </div>
+</div>
+
+<div class="cv-panel-row">
+  <div>
+    <div class="cv-section-title"><i class="fas fa-graduation-cap"></i> Education</div>
+    <ul class="cv-list">
+      <li>M.Sc. in Marine Biology, Universidade do Algarve, Faro, Portugal. Expected 2026.</li>
+      <li>B.S. in Marine Biology, University of California San Diego. 2024.</li>
     </ul>
-  </li>
-  <li>Open Water. NAUI. August 2022.</li>
-</ul>
+  </div>
+  <div>
+    <div class="cv-section-title"><i class="fas fa-water"></i> Certifications</div>
+    <ul class="cv-list">
+      <li>Divemaster. SSI. July 2026.</li>
+      <li>Stress and Rescue. SSI. May 2026.</li>
+      <li>First Aid, CPR, Oxygen. SSI. May 2026.</li>
+      <li>Advanced Open Water. SSI. May 2025.
+        <ul class="cv-sublist">
+          <li>Nitrox EAN32</li>
+          <li>Deep Diving (30m)</li>
+          <li>Navigation</li>
+          <li>Search & Recovery</li>
+        </ul>
+      </li>
+      <li>Scientific Diving. CCMAR, UAlg. May 2025.
+        <ul class="cv-sublist">
+          <li>Radial search</li>
+          <li>Quadrat sampling</li>
+          <li>Transect sampling</li>
+          <li>Sample collection</li>
+        </ul>
+      </li>
+      <li>Open Water. NAUI. August 2022.</li>
+    </ul>
+  </div>
+</div>
 
 <div class="cv-section-title"><i class="fas fa-briefcase"></i> Work Experience</div>
 <div class="cv-timeline">
@@ -187,7 +207,7 @@ redirect_from:
     <div class="cv-card-subtitle">Honolulu, Hawai'i &middot; June–July 2026</div>
     <ul>
       <li>Completed 50 dives for Divemaster certification</li>
-      <li>Participated in daily dive charters, assisting instructors and leading dives </li>
+      <li>Participated in daily dive charters, assisting instructors and leading dives</li>
       <li>Assisted with dive shop operations including equipment rental and customer briefings</li>
       <li>Filled SCUBA tanks using a high-pressure compressor</li>
     </ul>
@@ -200,7 +220,7 @@ redirect_from:
       <li>Completed 45 scientific dive surveys</li>
       <li>Deployed three different SCUBA-based sampling methodologies including Sightings Per Unit Effort (SPUE), Quadrats along a transect, and Belt transects for sampling nudibranchs</li>
       <li>Measured, photographed, and recorded data on nudibranchs</li>
-      <li>Analyzed data using R Studio to determine the impact of sampling methodology on diversity and abundance estimates of nudibranchs</li>
+      <li>Analyzed data using R to determine the impact of sampling methodology on diversity and abundance estimates of nudibranchs</li>
     </ul>
   </div>
 
@@ -277,7 +297,7 @@ redirect_from:
   <li>Underwater Photography</li>
   <li>SCUBA Tank Filling & Compressor Operation</li>
   <li>Microsoft Suite Applications</li>
-  <li>Web DevelopmentWeb Development (GitHub Pages & Jekyll, HTML, CSS, JavaScript)</li>
+  <li>Web Development (GitHub Pages & Jekyll, HTML, CSS, JavaScript)</li>
 </ul>
 
 <div class="cv-section-title"><i class="fas fa-book-open"></i> Relevant Courses</div>
