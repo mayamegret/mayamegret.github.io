@@ -100,6 +100,7 @@ h1.page__title {
   padding: 60px 0 80px 0;
   box-sizing: border-box;
 }
+.photo-modal.open { display: flex !important; }
 #modal-img {
   width: 80vw;
   height: 55vh;
