@@ -63,7 +63,8 @@ h1::after, h2::after, h3::after { background-color: #0047AB !important; border-c
   font-size: 0.85rem;
   padding: 2px 0 2px 1rem !important;
   position: relative;
-  color: #555;
+  color: #0047AB;
+  opacity: 0.8;
 }
 .cv-sublist li::before {
   content: "–";
@@ -114,6 +115,7 @@ h1::after, h2::after, h3::after { background-color: #0047AB !important; border-c
   font-size: 0.88rem;
   color: #0047AB;
   margin: 0 0 8px 0;
+  opacity: 0.7;
 }
 .cv-card ul {
   margin: 6px 0 0 0;
@@ -154,6 +156,32 @@ h1::after, h2::after, h3::after { background-color: #0047AB !important; border-c
 .cv-panel-row .cv-section-title {
   margin-top: 0;
 }
+.cv-milestone {
+  position: relative;
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #0047AB;
+  padding: 6px 0 6px 0;
+  margin-bottom: 12px;
+  opacity: 0.75;
+}
+.cv-milestone::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #EEF4FF;
+  border: 2px solid #0047AB;
+  box-sizing: border-box;
+}
+.cv-milestone i {
+  color: #0047AB;
+  margin-right: 6px;
+}
 @media (max-width: 700px) {
   .cv-two-col { grid-template-columns: 1fr; }
   .cv-panel-row { grid-template-columns: 1fr; }
@@ -178,13 +206,13 @@ h1::after, h2::after, h3::after { background-color: #0047AB !important; border-c
 
 <div class="cv-panel-row">
   <div>
-  <div class="cv-section-title"><i class="fas fa-graduation-cap"></i> Education</div>
-  <ul class="cv-list">
-    <li>M.Sc. in Marine Biology, Universidade do Algarve, Faro, Portugal. Expected 2026.</li>
-    <li>B.S. in Marine Biology, University of California San Diego. 2024.</li>
-    <li>UC Education Abroad Program, University of Queensland, Brisbane, Australia. August-November 2022.</li>
-  </ul>
-</div>
+    <div class="cv-section-title"><i class="fas fa-graduation-cap"></i> Education</div>
+    <ul class="cv-list">
+      <li>M.Sc. in Marine Biology, Universidade do Algarve, Faro, Portugal. Expected 2026.</li>
+      <li>B.S. in Marine Biology, University of California San Diego. 2024.</li>
+      <li>Study Abroad, University of Queensland, Brisbane, Australia. 2022.</li>
+    </ul>
+  </div>
   <div>
     <div class="cv-section-title"><i class="fas fa-water"></i> Certifications</div>
     <ul class="cv-list">
@@ -226,6 +254,8 @@ h1::after, h2::after, h3::after { background-color: #0047AB !important; border-c
     </ul>
   </div>
 
+  <div class="cv-milestone"><i class="fas fa-graduation-cap"></i> Defended MSc thesis &middot; Summer 2026</div>
+
   <div class="cv-card">
     <div class="cv-card-title">Researcher &middot; Marine Action Research Expeditions</div>
     <div class="cv-card-subtitle">Závora, Mozambique &middot; January–March 2026</div>
@@ -236,6 +266,8 @@ h1::after, h2::after, h3::after { background-color: #0047AB !important; border-c
       <li>Analyzed data using R to determine the impact of sampling methodology on diversity and abundance estimates of nudibranchs</li>
     </ul>
   </div>
+
+  <div class="cv-milestone"><i class="fas fa-book-open"></i> Started MSc classes at UAlg &middot; September 2024</div>
 
   <div class="cv-card">
     <div class="cv-card-title">Intern &middot; Marine Action Research Expeditions</div>
@@ -249,6 +281,8 @@ h1::after, h2::after, h3::after { background-color: #0047AB !important; border-c
     </ul>
   </div>
 
+  <div class="cv-milestone"><i class="fas fa-graduation-cap"></i> Graduated UCSD &middot; June 2024</div>
+
   <div class="cv-card">
     <div class="cv-card-title">Conservation Researcher &middot; Wildlife Sense</div>
     <div class="cv-card-subtitle">Cephalonia, Greece &middot; July–August 2023</div>
@@ -260,6 +294,8 @@ h1::after, h2::after, h3::after { background-color: #0047AB !important; border-c
       <li>Conducted beach mapping and beach cleanups</li>
     </ul>
   </div>
+
+  <div class="cv-milestone"><i class="fas fa-globe"></i> Study Abroad at UQ, Australia &middot; August–November 2022</div>
 
   <div class="cv-card">
     <div class="cv-card-title">Admissions Clerk &middot; Birch Aquarium &middot; Scripps Institution of Oceanography</div>
