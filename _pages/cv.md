@@ -315,4 +315,4 @@ h1::after, h2::after, h3::after { background-color: #0047AB !important; border-c
 </ul>
 
 <div class="cv-section-title"><i class="fas fa-user-friends"></i> References</div>
-<p style="color:#0047AB;">Available upon request</p>
+<p style="color:#0047AB;"><em>Available upon request</em></p>
