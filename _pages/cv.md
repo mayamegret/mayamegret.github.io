@@ -265,8 +265,6 @@ h1::after, h2::after, h3::after { background-color: #0047AB !important; border-c
     </ul>
   </div>
 
-  <div class="cv-milestone"><i class="fas fa-book-open"></i> Started MSc classes at UAlg &middot; September 2024</div>
-
   <div class="cv-card">
     <div class="cv-card-title">Intern &middot; Marine Action Research Expeditions</div>
     <div class="cv-card-subtitle">Závora, Mozambique &middot; July 2025</div>
@@ -278,6 +276,8 @@ h1::after, h2::after, h3::after { background-color: #0047AB !important; border-c
       <li>Monitoring colonization of an artificial reef</li>
     </ul>
   </div>
+
+  <div class="cv-milestone"><i class="fas fa-book-open"></i> Started MSc classes at UAlg &middot; September 2024</div>
 
   <div class="cv-milestone"><i class="fas fa-graduation-cap"></i> Graduated UCSD &middot; June 2024</div>
 
