@@ -112,7 +112,7 @@ h1::after, h2::after, h3::after { background-color: #0047AB !important; border-c
 }
 .cv-card-subtitle {
   font-size: 0.88rem;
-  color: #555;
+  color: #0047AB;
   margin: 0 0 8px 0;
 }
 .cv-card ul {
@@ -178,12 +178,13 @@ h1::after, h2::after, h3::after { background-color: #0047AB !important; border-c
 
 <div class="cv-panel-row">
   <div>
-    <div class="cv-section-title"><i class="fas fa-graduation-cap"></i> Education</div>
-    <ul class="cv-list">
-      <li>M.Sc. in Marine Biology, Universidade do Algarve, Faro, Portugal. Expected 2026.</li>
-      <li>B.S. in Marine Biology, University of California San Diego. 2024.</li>
-    </ul>
-  </div>
+  <div class="cv-section-title"><i class="fas fa-graduation-cap"></i> Education</div>
+  <ul class="cv-list">
+    <li>M.Sc. in Marine Biology, Universidade do Algarve, Faro, Portugal. Expected 2026.</li>
+    <li>B.S. in Marine Biology, University of California San Diego. 2024.</li>
+    <li>Study Abroad, University of Queensland, Brisbane, Australia. 2022.</li>
+  </ul>
+</div>
   <div>
     <div class="cv-section-title"><i class="fas fa-water"></i> Certifications</div>
     <ul class="cv-list">
@@ -257,17 +258,6 @@ h1::after, h2::after, h3::after { background-color: #0047AB !important; border-c
       <li>Tagged nesting female turtles</li>
       <li>Aided hatchlings on their journey to sea to ensure their survival</li>
       <li>Conducted beach mapping and beach cleanups</li>
-    </ul>
-  </div>
-
-  <div class="cv-card">
-    <div class="cv-card-title">UC Education Abroad Program &middot; University of Queensland</div>
-    <div class="cv-card-subtitle">Brisbane, Australia &middot; August–November 2022</div>
-    <ul>
-      <li>Studied marine biology and terrestrial ecology at the University of Queensland</li>
-      <li>Applied knowledge to hands-on research</li>
-      <li>Conducted transect sampling</li>
-      <li>Conducted wet lab experiments and wrote scientific papers based on collected data and relevant research</li>
     </ul>
   </div>
 
