@@ -243,16 +243,9 @@ h1::after, h2::after, h3::after { background-color: #0047AB !important; border-c
 <div class="cv-section-title"><i class="fas fa-briefcase"></i> Work Experience</div>
 <div class="cv-timeline">
 
-  <div class="cv-card">
-    <div class="cv-card-title">Divemaster &middot; Hawaiian Diving Adventures</div>
-    <div class="cv-card-subtitle">Honolulu, Hawai'i &middot; June–July 2026</div>
-    <ul>
-      <li>Completed 50+ dives for Divemaster certification</li>
-      <li>Participated in daily dive charters, assisting instructors and leading dives</li>
-      <li>Assisted with dive shop operations including equipment rental and customer briefings</li>
-      <li>Filled SCUBA tanks using a high-pressure compressor</li>
-    </ul>
-  </div>
+  <div class="cv-milestone"><i class="fas fa-award"></i> Divemaster · SSI · July 2026</div>
+
+  <div class="cv-milestone"><i class="fas fa-award"></i> Stress & Rescue · First Aid, CPR & O2 · SSI · May 2026</div>
 
   <div class="cv-card">
     <div class="cv-card-title">Researcher &middot; Marine Action Research Expeditions</div>
@@ -277,9 +270,11 @@ h1::after, h2::after, h3::after { background-color: #0047AB !important; border-c
     </ul>
   </div>
 
-  <div class="cv-milestone"><i class="fas fa-book-open"></i> Started MSc classes at UAlg &middot; September 2024</div>
+  <div class="cv-milestone"><i class="fas fa-award"></i> Advanced Open Water · Scientific Diving (CCMAR, UAlg) · May 2025</div>
 
-  <div class="cv-milestone"><i class="fas fa-graduation-cap"></i> Graduated UCSD &middot; June 2024</div>
+  <div class="cv-milestone"><i class="fas fa-book-open"></i> Started MSc classes at UAlg · September 2024</div>
+
+  <div class="cv-milestone"><i class="fas fa-graduation-cap"></i> Graduated UCSD · June 2024</div>
 
   <div class="cv-card">
     <div class="cv-card-title">Conservation Researcher &middot; Wildlife Sense</div>
@@ -293,8 +288,6 @@ h1::after, h2::after, h3::after { background-color: #0047AB !important; border-c
     </ul>
   </div>
 
-  <div class="cv-milestone"><i class="fas fa-globe"></i> Study Abroad at UQ, Australia &middot; August–November 2022</div>
-
   <div class="cv-card">
     <div class="cv-card-title">Admissions Clerk &middot; Birch Aquarium &middot; Scripps Institution of Oceanography</div>
     <div class="cv-card-subtitle">San Diego, California &middot; January 2022–June 2024</div>
@@ -302,6 +295,10 @@ h1::after, h2::after, h3::after { background-color: #0047AB !important; border-c
       <li>Handled all phases of guest visits, ensuring an exceptional experience</li>
     </ul>
   </div>
+
+  <div class="cv-milestone"><i class="fas fa-globe"></i> Study Abroad at UQ, Australia &middot; August–November 2022</div>
+
+  <div class="cv-milestone"><i class="fas fa-award"></i> Open Water · NAUI · August 2022</div>
 
   <div class="cv-card">
     <div class="cv-card-title">Conservation Researcher &middot; BIOMA</div>
