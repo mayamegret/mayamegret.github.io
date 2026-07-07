@@ -187,8 +187,7 @@ h1.page__title {
 <div id="photo-grid" class="photo-grid"></div>
 
 <div id="photo-modal" class="photo-modal">
-  <a id="modal-map-link" class="modal-map-link" style="display:none;">🗺️ See on map →</a>
-  <button class="modal-close" onclick="closeModal()" aria-label="Close">&times;</button>
+  <a id="modal-map-link" class="modal-map-link" style="display:none;">See on map →</a>
   <button class="modal-nav modal-prev" onclick="navModal(-1)" aria-label="Previous photo">&#8249;</button>
   <div id="modal-img"></div>
   <div id="modal-caption" class="modal-caption"></div>
