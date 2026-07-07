@@ -4,7 +4,7 @@ const tiles = [
   { photos: ["/images/photography/IMG_0406.jpg"], categories: ["underwater", "travel"] },
   { photos: ["/images/photography/IMG_0455.jpg", "/images/photography/IMG_0475.jpg"], caption: "Pencil urchins!", categories: ["underwater", "wildlife", "travel"] },
   { photos: ["/images/photography/IMG_0609.jpg"], categories: ["underwater", "wildlife"] },
-  { photos: ["/images/photography/IMG_0931.jpg", "/images/photography/IMG_1593.jpg"], categories: ["underwater", "wildlife", "travel"] },
+  { photos: ["/images/photography/IMG_0931.jpg", "/images/photography/IMG_1593.jpg"], caption: "as above, so below", categories: ["underwater", "wildlife", "travel"] },
   { photos: ["/images/photography/IMG_2277.jpg"], categories: ["underwater"] },
   { photos: ["/images/photography/IMG_2347.jpg"],  caption: "Close up of a starfish", categories: ["underwater", "wildlife"] },
   { photos: ["/images/photography/IMG_9902.jpg", "/images/photography/Josephines.jpg", "/images/photography/IMG_9884.jpg", "/images/photography/Maya24Bday.jpg"], caption: "Springtime back home", categories: ["film"] },
