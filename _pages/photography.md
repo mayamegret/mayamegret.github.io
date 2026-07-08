@@ -244,7 +244,11 @@ const observer = new MutationObserver(() => {
 observer.observe(grid, { childList: true });
 
 window.addEventListener('resize', resizeAllTiles);
-
+// Force resize after images have had time to load
+setTimeout(resizeAllTiles, 500);
+setTimeout(resizeAllTiles, 1500);
+setTimeout(resizeAllTiles, 3000);
+  
 document.getElementById('photo-modal').addEventListener('click', function(e) {
   if (e.target === this || e.target === document.getElementById('modal-img')) {
     closeModal();
