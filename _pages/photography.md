@@ -221,7 +221,12 @@ function resizeAllTiles() {
     }
   });
 }
-
+// Close modal when tapping the background on mobile
+document.getElementById('photo-modal').addEventListener('click', function(e) {
+  if (e.target === this || e.target === document.getElementById('modal-img')) {
+    closeModal();
+  }
+});
 resizeAllTiles();
 
 const grid = document.getElementById('photo-grid');
