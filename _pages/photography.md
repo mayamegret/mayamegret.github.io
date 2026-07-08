@@ -170,6 +170,21 @@ h1.page__title {
   #modal-img { width: 95vw; height: 50vh; }
   .modal-caption { max-width: 95vw; font-size: 0.85rem; padding: 0 12px; }
 }
+  @media (max-width: 767px) {
+  .modal-close {
+    top: 12px;
+    right: 16px;
+    font-size: 2.8rem;
+    padding: 8px;
+    background: rgba(0,0,0,0.4);
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 </style>
 
 <div class="gallery-controls">
