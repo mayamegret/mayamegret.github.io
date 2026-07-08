@@ -103,9 +103,9 @@ For my dive computer, I recently upgraded to the [Shearwater Peregrine](https://
 
 When you are ready to invest in a full setup, I highly recommend a **wing BCD with a backplate** over a traditional jacket-style BCD. It gives you much better control over your buoyancy and trim. I dive with a [Halcyon wing](https://www.halcyon.net) on a small aluminum backplate with 14 kg (30 lb) of lift. Halcyon also makes the wing BC in 9 lb (20 kg) and 18 lb (40 kg) lift options, and steel backplates for those who need extra weight. Finding the right size for your body and the type of diving you do is key.
 
-For my regulator, I use the [Mares 62X](https://www.mares.com), which is incredibly lightweight and comfortable, a big plus for traveling. I also dive with a **longhouse setup**, which I highly recommend for safety and streamlining. I have customized my SPG to display pressure in bar alongside a compass, which keeps my gauge console minimal and easy to read.
+For my regulator, I use the [Mares 62X](https://www.mares.com), which is incredibly lightweight and comfortable, a big plus for traveling. I also dive with a **longhose setup**, which I highly recommend for safety and streamlining. I have customized my SPG to display pressure in bar alongside a compass, which keeps my gauge console minimal and easy to read.
 
-It's also important to make sure you takr proper care of your gear. Make sure to rinse it in freshwater after every dive and hang it somewhere it can fully dry. Diving gear is expensive but it is also your life support, so it's important to take care of it so it can take care of you.
+It's also important to make sure you take proper care of your gear. Make sure to rinse it in freshwater after every dive and hang it somewhere it can fully dry. Diving gear is expensive but it is also your life support, so it's important to take care of it so it can take care of you.
 
 ---
 
@@ -127,7 +127,7 @@ If equalization is painful or not working, stop your descent and ascend slightly
 
 ## 5. Protect Yourself From the Sun
 
-This one gets overlooked more than you would think. You are often so focused on what is happening underwater that you forget you are spending significant time on the in direct sun from on the boat, in the water between dives, and during safety stops.
+This one gets overlooked more than you would think. You are often so focused on what is happening underwater that you forget you are spending significant time in direct sun from on the boat, in the water between dives, and during safety stops.
 
 Always apply reef-safe sunscreen before your dive, wear a hat and sunglasses on the boat, and consider a long sleeve rash guard or dive skin for extra protection in the water. I typically dive in a long sleeve rashguard and leggings when I am not wearing a wetsuit, which protects me from both the sun and any stinging creatures in the water.
 
@@ -139,7 +139,7 @@ Swimmer's ear is a very real risk for anyone spending a lot of time in the water
 
 If you are experiencing persistent ear discomfort or pain, take it seriously and see a doctor before getting back in the water. Your ears are not worth rushing.
 
-In Mozambique, I got an ear infection that took me out of the water for 14 days and needed antibiotics to heal. It was unpleasant and a dissapointment to be stuck on land for 2 weeks, but it was important to be fully healed before getting back in the water.
+In Mozambique, I got an ear infection that took me out of the water for 14 days and needed antibiotics to heal. It was unpleasant and a disappointment to be stuck on land for 2 weeks, but it was important to be fully healed before getting back in the water.
 
 ---
 
