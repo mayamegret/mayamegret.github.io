@@ -117,19 +117,19 @@ My advice is to wait until you can comfortably manage all your tasks underwater,
 
 ---
 
-## 4. Equalize Early and Often
-
-Ear squeezes are one of the most common diving injuries, and almost all of them are preventable. The key is to start equalizing before you even begin your descent, and to continue equalizing every meter or two on the way down. Do not wait until you feel pressure or discomfort, by that point, you have already waited too long.
-
-If equalization is painful or not working, stop your descent and ascend slightly until the pressure clears, then try again. Never push through ear pain. It is not worth it, and forcing equalization can cause serious injury. There will always be another dive.
-
----
-
-## 5. Protect Yourself From the Sun
+## 4. Protect Yourself From the Sun
 
 This one gets overlooked more than you would think. You are often so focused on what is happening underwater that you forget you are spending significant time in direct sun from on the boat, in the water between dives, and during safety stops.
 
 Always apply reef-safe sunscreen before your dive, wear a hat and sunglasses on the boat, and consider a long sleeve rash guard or dive skin for extra protection in the water. I typically dive in a long sleeve rashguard and leggings when I am not wearing a wetsuit, which protects me from both the sun and any stinging creatures in the water.
+
+---
+
+## 5. Equalize Early and Often
+
+Ear squeezes are one of the most common diving injuries, and almost all of them are preventable. The key is to start equalizing before you even begin your descent, and to continue equalizing every meter or two on the way down. Do not wait until you feel pressure or discomfort, by that point, you have already waited too long.
+
+If equalization is painful or not working, stop your descent and ascend slightly until the pressure clears, then try again. Never push through ear pain. It is not worth it, and forcing equalization can cause serious injury. There will always be another dive.
 
 ---
 
