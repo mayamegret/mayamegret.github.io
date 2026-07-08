@@ -99,7 +99,7 @@ Even after completing my Divemaster and logging 150+ dives, I still focus on the
 
 Rental gear does the job, but having your own equipment that fits you properly and that you know inside and out makes an enormous difference. At minimum, I recommend investing in your own **mask, snorkel, fins, and dive computer** as early as possible. A mask, snorkel, and fins are great to own for snorkeling and freediving as well.
 
-For my dive computer, I recently upgraded to the [Shearwater Peregrine](https://www.shearwater.com/products/peregrine/) and I absolutely love it. It is intuitive, easy to read underwater, and gives me all the information I need without being overwhelming.
+For my dive computer, I recently upgraded to the [Shearwater Peregrine](https://www.shearwater.com/products/peregrine/) and I love it. It is intuitive, easy to read underwater with large screen, and gives me all the information I need without being overwhelming.
 
 When you are ready to invest in a full setup, I highly recommend a **wing BCD with a backplate** over a traditional jacket-style BCD. It gives you much better control over your buoyancy and trim. I dive with a [Halcyon wing](https://www.halcyon.net) on a small aluminum backplate with 14 kg (30 lb) of lift. Halcyon also makes the wing BC in 9 lb (20 kg) and 18 lb (40 kg) lift options, and steel backplates for those who need extra weight. Finding the right size for your body and the type of diving you do is key.
 
@@ -111,15 +111,15 @@ It's also important to make sure you take proper care of your gear. Make sure to
 
 ## 3. Don't Bring Your Camera Until You Are Ready
 
-Underwater photography is one of my greatest passions, but bringing a camera before you have solid buoyancy control can do more harm than good to both you and to the reef. When you are focused on your camera, you are not focused on your depth, your breathing, your trim.
+Underwater photography is one of my greatest passions, but bringing a camera before you have solid buoyancy control can do more harm than good to both you and the reef. When you are focused on your camera, you are not focused on your depth, your breathing, your trim, or your buddy.
 
-My advice is to wait until you can comfortably manage all your tasks underwater, buoyancy, equalization, navigation, buddy checks, without feeling overwhelmed. Once diving feels more natural, adding a camera is a joy rather than a stressor. Trust me, the nudis will still be there.
+My advice is to wait until you can comfortably manage all your tasks underwater, including buoyancy, equalization, navigation, and buddy checks, without feeling overwhelmed. Once diving feels more natural, adding a camera is a joy rather than a stressor. Trust me, the nudis will still be there.
 
 ---
 
 ## 4. Protect Yourself From the Sun
 
-This one gets overlooked more than you would think. You are often so focused on what is happening underwater that you forget you are spending significant time in direct sun from on the boat, in the water between dives, and during safety stops.
+This one gets overlooked more than you would think. You are often so focused on what is happening underwater that you forget you are spending significant time in direct sun from being on the boat, in the water between dives, and during safety stops.
 
 Always apply reef-safe sunscreen before your dive, wear a hat and sunglasses on the boat, and consider a long sleeve rash guard or dive skin for extra protection in the water. I typically dive in a long sleeve rashguard and leggings when I am not wearing a wetsuit, which protects me from both the sun and any stinging creatures in the water.
 
