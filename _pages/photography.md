@@ -238,7 +238,14 @@ function resizeAllTiles() {
     }
   });
 }
-
+document.querySelectorAll('#main, article.page, .page__inner-wrap, .page__content').forEach(el => {
+  el.style.maxWidth = '100%';
+  el.style.width = '100%';
+  el.style.paddingLeft = '1em';
+  el.style.paddingRight = '1em';
+  el.style.float = 'none';
+});
+  setTimeout(resizeAllTiles, 200);
 const grid = document.getElementById('photo-grid');
 const observer = new MutationObserver(() => {
   setTimeout(resizeAllTiles, 50);
