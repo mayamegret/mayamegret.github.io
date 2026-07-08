@@ -207,7 +207,7 @@ BIOMA Travel runs a sea turtle conservation program in Ostional, Costa Rica, foc
 
 In June 2021, I volunteered for 12 days with their sea turtle conservation program. It was my first real conservation experience, and it lit a fire in me that has guided everything I've done since.
 
-One of the most extraordinary things about Ostional is that it is one of the few places in the world where Olive Ridley turtles perform an *arribada* — a Spanish word meaning "arrival" — in which thousands of females come ashore simultaneously over a 3 to 5 day period to nest. Witnessing this phenomenon was unlike anything I had ever seen. Collecting data during an arribada is both scientifically invaluable and deeply inspiring.
+One of the most extraordinary things about Ostional is that it is one of the few places in the world where Olive Ridley turtles perform an *arribada*, a Spanish word meaning "arrival", in which thousands of females come ashore simultaneously over a 3 to 5 day period to nest. Witnessing this phenomenon was unlike anything I had ever seen. Collecting data during an arribada is both scientifically invaluable and deeply inspiring.
 
 <div class="blog-clear"></div>
 
