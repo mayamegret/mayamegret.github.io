@@ -11,24 +11,24 @@ redirect_from:
 
 <style>
 body, #main, article.page, .page__inner-wrap, .page__content, .initial-content, .page__wrap {
-  background-color: #EEF4FF !important;
+  background-color: #CCE7ED !important;
 }
-.sidebar { background-color: #0047AB !important; }
-a { color: #0047AB !important; }
-a:hover { color: #003080 !important; }
-h1, h2, h3, h4, h5, h6, body { color: #0047AB !important; }
-.page__title { color: #0047AB !important; }
-.page__title::after { background-color: #0047AB !important; }
-h1::after, h2::after, h3::after { background-color: #0047AB !important; border-color: #0047AB !important; }
+.sidebar { background-color: #4B2E0F !important; }
+a { color: #4B2E0F !important; }
+a:hover { color: #7a4e20 !important; }
+h1, h2, h3, h4, h5, h6, body { color: #4B2E0F !important; }
+.page__title { color: #4B2E0F !important; }
+.page__title::after { background-color: #4B2E0F !important; }
+h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-color: #4B2E0F !important; }
 .cv-summary {
   font-size: 1rem;
   line-height: 1.7;
-  color: #0047AB;
+  color: #4B2E0F;
 }
 .cv-section-title {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #0047AB;
+  color: #4B2E0F;
   border-left: 4px solid #ffa44a;
   padding-left: 12px;
   margin-top: 1.5rem;
@@ -46,7 +46,7 @@ h1::after, h2::after, h3::after { background-color: #0047AB !important; border-c
 .cv-list li {
   padding: 4px 0 4px 1.5rem;
   position: relative;
-  color: #0047AB;
+  color: #4B2E0F;
 }
 .cv-list li::before {
   content: "•";
@@ -63,7 +63,7 @@ h1::after, h2::after, h3::after { background-color: #0047AB !important; border-c
   font-size: 0.85rem;
   padding: 2px 0 2px 1rem !important;
   position: relative;
-  color: #0047AB;
+  color: #4B2E0F;
   opacity: 0.8;
 }
 .cv-sublist li::before {
@@ -102,18 +102,18 @@ h1::after, h2::after, h3::after { background-color: #0047AB !important; border-c
   height: 12px;
   border-radius: 50%;
   background: #ffa44a;
-  border: 2px solid #EEF4FF;
+  border: 2px solid #CCE7ED;
   box-sizing: border-box;
 }
 .cv-card-title {
   font-weight: bold;
   font-size: 1rem;
-  color: #0047AB;
+  color: #4B2E0F;
   margin: 0 0 2px 0;
 }
 .cv-card-subtitle {
   font-size: 0.88rem;
-  color: #0047AB;
+  color: #4B2E0F;
   margin: 0 0 8px 0;
   opacity: 0.7;
 }
@@ -124,7 +124,7 @@ h1::after, h2::after, h3::after { background-color: #0047AB !important; border-c
 .cv-card ul li {
   font-size: 0.9rem;
   margin-bottom: 3px;
-  color: #0047AB;
+  color: #4B2E0F;
 }
 .cv-two-col {
   display: grid;
@@ -138,7 +138,7 @@ h1::after, h2::after, h3::after { background-color: #0047AB !important; border-c
   padding: 4px 0 4px 1.5rem;
   position: relative;
   font-size: 0.95rem;
-  color: #0047AB;
+  color: #4B2E0F;
 }
 .cv-two-col li::before {
   content: "•";
@@ -160,7 +160,7 @@ h1::after, h2::after, h3::after { background-color: #0047AB !important; border-c
   position: relative;
   font-size: 0.85rem;
   font-style: italic;
-  color: #0047AB;
+  color: #4B2E0F;
   padding: 6px 0 6px 0;
   margin-bottom: 12px;
   opacity: 0.75;
@@ -174,12 +174,12 @@ h1::after, h2::after, h3::after { background-color: #0047AB !important; border-c
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: #EEF4FF;
-  border: 2px solid #0047AB;
+  background: #CCE7ED;
+  border: 2px solid #4B2E0F;
   box-sizing: border-box;
 }
 .cv-milestone i {
-  color: #0047AB;
+  color: #4B2E0F;
   margin-right: 6px;
 }
 @media (max-width: 700px) {
@@ -346,4 +346,4 @@ h1::after, h2::after, h3::after { background-color: #0047AB !important; border-c
 </ul>
 
 <div class="cv-section-title"><i class="fas fa-user-friends"></i> References</div>
-<p style="color:#0047AB;"><em>Available upon request</em></p>
+<p style="color:#4B2E0F;"><em>Available upon request</em></p>
