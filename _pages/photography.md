@@ -5,7 +5,7 @@ permalink: /photography/
 author_profile: false
 ---
 
-Photos from my travels and dives!
+A selection of photos from my travels and dives!
 
 <style>
 #main, article.page, .page__inner-wrap, .page__content, .page__inner-wrap--layout-single {
@@ -161,7 +161,6 @@ h1.page__title {
   color: #ccc;
   font-size: 0.85rem;
 }
-
 @media (max-width: 900px) {
   .photo-grid { grid-template-columns: repeat(3, 1fr); }
 }
@@ -170,7 +169,7 @@ h1.page__title {
   #modal-img { width: 95vw; height: 50vh; }
   .modal-caption { max-width: 95vw; font-size: 0.85rem; padding: 0 12px; }
 }
-  @media (max-width: 767px) {
+@media (max-width: 767px) {
   .modal-close {
     top: 12px;
     right: 16px;
@@ -204,6 +203,7 @@ h1.page__title {
 
 <div id="photo-modal" class="photo-modal">
   <a id="modal-map-link" class="modal-map-link" style="display:none;">See on map →</a>
+  <button class="modal-close" onclick="closeModal()" aria-label="Close">&times;</button>
   <button class="modal-nav modal-prev" onclick="navModal(-1)" aria-label="Previous photo">&#8249;</button>
   <div id="modal-img"></div>
   <div id="modal-caption" class="modal-caption"></div>
