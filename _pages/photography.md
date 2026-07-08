@@ -218,7 +218,9 @@ function resizeMasonryItem(tile) {
   const rowGap = 18;
   const img = tile.querySelector('img');
   if (!img || !img.naturalWidth) return;
-  const containerWidth = tile.getBoundingClientRect().width;
+  const grid = document.getElementById('photo-grid');
+  const cols = window.innerWidth > 900 ? 4 : window.innerWidth > 600 ? 3 : 2;
+  const containerWidth = (grid.getBoundingClientRect().width - (cols - 1) * rowGap) / cols;
   if (!containerWidth) return;
   const displayHeight = (img.naturalHeight / img.naturalWidth) * containerWidth;
   const rowSpan = Math.ceil((displayHeight + rowGap) / (rowHeight + rowGap));
