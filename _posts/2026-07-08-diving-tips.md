@@ -1,5 +1,5 @@
 ---
-title: 'My Top 10 Tips for Scuba Divers'
+title: 'My Top 10 Tips for Scuba Diving'
 date: 2026-07-08
 permalink: /posts/2026/07/diving-tips/
 read_time: false
