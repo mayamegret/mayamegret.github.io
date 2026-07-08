@@ -236,17 +236,18 @@ function resizeAllTiles() {
     }
   });
 }
-// Close modal when tapping the background on mobile
+
+const grid = document.getElementById('photo-grid');
+const observer = new MutationObserver(() => {
+  setTimeout(resizeAllTiles, 50);
+});
+observer.observe(grid, { childList: true });
+
+window.addEventListener('resize', resizeAllTiles);
+
 document.getElementById('photo-modal').addEventListener('click', function(e) {
   if (e.target === this || e.target === document.getElementById('modal-img')) {
     closeModal();
   }
 });
-resizeAllTiles();
-
-const grid = document.getElementById('photo-grid');
-const observer = new MutationObserver(() => resizeAllTiles());
-observer.observe(grid, { childList: true });
-
-window.addEventListener('resize', resizeAllTiles);
 </script>
