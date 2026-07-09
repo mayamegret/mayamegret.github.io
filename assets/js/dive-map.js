@@ -639,7 +639,7 @@ const locations = [
     coords: [21.31, -157.86],
     type: "dive",
     dates: "May 2026 - Present",
-    description: "I moved to Hawai'i as I finish up my masters thesis to get my Divemaster certification with Hawaiian Diving Adventures! It began with getting Stress & Rescue certified, and then I began my Divemaster program.",
+    description: "I moved to Hawai'i in May 2026 while finishing up my masters thesis. I spent the first 5 weeks getting my Divemaster certification with Hawaiian Diving Adventures! It began with getting First Aid, CPR, AED, Oxygen administration and Stress & Rescue certified, and then I began my Divemaster program.",
     species: [],
     photos: [],
     galleryId: "honolulu"
