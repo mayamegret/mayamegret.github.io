@@ -172,6 +172,11 @@
 #back-to-top:hover { background: #ffa44a; }
 #back-to-top.visible { display: flex; }
 </style>
+
+<button id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
+  <i class="fas fa-chevron-up"></i>
+</button>
+
 <script>
 window.addEventListener('scroll', function() {
   const btn = document.getElementById('back-to-top');
