@@ -385,27 +385,27 @@ const locations = [
     galleryId: "graduation"
   },
   {
-    name: "Cartagena",
-    country: "Colombia",
-    coords: [10.39, -75.48],
-    type: "visit",
-    dates: "July 4-6th, 2024",
-    description: "",
-    species: [],
-    photos: ["/images/map/Cartagena1.JPG", "/images/map/Cartagena2.jpg", "/images/map/Cartagena3.JPG"],
-    galleryId: "cartagena"
-  },
-  {
-    name: "Bogotá",
-    country: "Colombia",
-    coords: [4.71, -74.07],
-    type: "visit",
-    dates: "July 30 - August 3rd, 2024",
-    description: "",
-    species: [],
-    photos: ["/images/map/Bogota1.jpg", "/images/map/Bogota2.JPG", "/images/map/Bogota3.JPG", "/images/map/Bogota4.JPG"],
-    galleryId: "bogota"
-  },
+  name: "Bogotá",
+  country: "Colombia",
+  coords: [4.71, -74.07],
+  type: "visit",
+  dates: "June 30 - July 3rd, 2024",
+  description: "I joined my mom on one of her work trips to Colombia, where we spent the first several days in Bogota. After tagging along for her meetings, we explored the city including touring the Botero Museum, eating amazing food, and photographing the beautiful murals!",
+  species: [],
+  photos: ["/images/map/Bogota1.jpg", "/images/map/Bogota2.JPG", "/images/map/Bogota3.JPG", "/images/map/Bogota4.JPG"],
+  galleryId: "bogota"
+},
+ {
+  name: "Cartagena",
+  country: "Colombia",
+  coords: [10.39, -75.48],
+  type: "visit",
+  dates: "July 4-6th, 2024",
+  description: "My mom and I finished our trip to Colombia with a few days in Cartagena, where we went to jazz clubs, explored the emerald museum and shops and ate plenty of delicious food.",
+  species: [],
+  photos: ["/images/map/Cartagena1.JPG", "/images/map/Cartagena2.jpg", "/images/map/Cartagena3.JPG"],
+  galleryId: "cartagena"
+},
   {
     name: "Blitzingen",
     country: "Switzerland",
