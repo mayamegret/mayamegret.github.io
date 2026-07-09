@@ -636,7 +636,7 @@ const locations = [
   {
   name: "Honolulu",
   country: "Hawai'i, USA",
-  coords: [21.30, -157.85],
+  coords: [21.30, -157.80],
   type: "visit",
   dates: "May 18th, 2026 - Present",
   description: "I moved to Honolulu in May 2026 and have been falling in love with Hawai'i ever since! I live with a roommate who has two cats who I adore, I am scuba diving daily, and exploring the island one shaved ice at a time!",
@@ -647,7 +647,7 @@ const locations = [
 {
   name: "Ala Moana Harbor",
   country: "Hawai'i, USA",
-  coords: [21.28, -157.84],
+  coords: [21.29, -157.86],
   type: "dive",
   dates: "June 1st - July 4th, 2026",
   description: "After completing my React Right and Stress & Rescue certs, I spent 5 weeks working on my divemaster certification. I completed 50+ dives working on guiding, navigation, and becoming a professional diver! I am super excited to now be an SSI Divemaster!",
