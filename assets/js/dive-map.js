@@ -630,7 +630,7 @@ const locations = [
   dates: "May 12-18th, 2026",
   description: "As I moved out to Hawai'i, my parents came with me and we first spent a week in Kona! We woke up early most days and explored tide pools, found hidden beaches, and explored Volcano National Park!",
   species: [],
-  photos: [],
+  photos: ["/images/photography/IMG_0593.jpg", "/images/photography/IMG_0599.jpg", "/images/photography/IMG_1093.jpg"],
   galleryId: "kona"
 },
   {
