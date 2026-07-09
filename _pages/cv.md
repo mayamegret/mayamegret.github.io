@@ -214,44 +214,45 @@ h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-c
     </ul>
   </div>
   <div>
-    <div class="cv-section-title"><i class="fas fa-water"></i> Certifications</div>
-    <ul class="cv-list">
-      <li>Divemaster. SSI. July 2026.</li>
-      <li>Stress and Rescue. SSI. May 2026.</li>
-      <li>First Aid, CPR, Oxygen. SSI. May 2026.</li>
-      <li>Advanced Open Water. SSI. May 2025.
-        <ul class="cv-sublist">
-          <li>Nitrox EAN32</li>
-          <li>Deep Diving (30m)</li>
-          <li>Navigation</li>
-          <li>Search & Recovery</li>
-        </ul>
-      </li>
-      <li>Scientific Diving. CCMAR, UAlg. May 2025.
-        <ul class="cv-sublist">
-          <li>Radial search</li>
-          <li>Quadrat sampling</li>
-          <li>Transect sampling</li>
-          <li>Sample collection</li>
-        </ul>
-      </li>
-      <li>Open Water. NAUI. August 2022.</li>
-    </ul>
-    <div style="margin-top: 12px; display: flex; gap: 10px; flex-wrap: wrap;">
-      <div>
-        <a href="/images/photography/DivemasterCard.png" target="_blank">
-          <img src="/images/photography/DivemasterCard.png" alt="SSI Divemaster Certification Card" style="width: 100%; max-width: 200px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,71,171,0.2); display: block;">
-        </a>
-        <p style="font-size: 0.75rem; color: #0047AB; opacity: 0.7; margin-top: 4px;"><em>Divemaster</em></p>
-      </div>
-      <div>
-        <a href="/images/photography/SRCard.png" target="_blank">
-          <img src="/images/photography/SRCard.png" alt="SSI Stress & Rescue Certification Card" style="width: 100%; max-width: 200px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,71,171,0.2); display: block;">
-        </a>
-        <p style="font-size: 0.75rem; color: #0047AB; opacity: 0.7; margin-top: 4px;"><em>Stress & Rescue</em></p>
-      </div>
+   <div class="cv-section-title"><i class="fas fa-water"></i> Certifications</div>
+<div style="display: flex; gap: 20px; align-items: flex-start;">
+  <ul class="cv-list" style="flex: 1; margin: 0;">
+    <li>Divemaster. SSI. July 2026.</li>
+    <li>Stress and Rescue. SSI. May 2026.</li>
+    <li>First Aid, CPR, Oxygen. SSI. May 2026.</li>
+    <li>Advanced Open Water. SSI. May 2025.
+      <ul class="cv-sublist">
+        <li>Nitrox EAN32</li>
+        <li>Deep Diving (30m)</li>
+        <li>Navigation</li>
+        <li>Search & Recovery</li>
+      </ul>
+    </li>
+    <li>Scientific Diving. CCMAR, UAlg. May 2025.
+      <ul class="cv-sublist">
+        <li>Radial search</li>
+        <li>Quadrat sampling</li>
+        <li>Transect sampling</li>
+        <li>Sample collection</li>
+      </ul>
+    </li>
+    <li>Open Water. NAUI. August 2022.</li>
+  </ul>
+  <div style="display: flex; flex-direction: column; gap: 10px; flex-shrink: 0;">
+    <div>
+      <a href="/images/photography/DivemasterCard.png" target="_blank">
+        <img src="/images/photography/DivemasterCard.png" alt="SSI Divemaster Certification Card" style="width: 160px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,71,171,0.2); display: block;">
+      </a>
+      <p style="font-size: 0.75rem; color: #0047AB; opacity: 0.7; margin-top: 4px;"><em>Divemaster</em></p>
+    </div>
+    <div>
+      <a href="/images/photography/SRCard.png" target="_blank">
+        <img src="/images/photography/SRCard.png" alt="SSI Stress & Rescue Certification Card" style="width: 160px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,71,171,0.2); display: block;">
+      </a>
+      <p style="font-size: 0.75rem; color: #0047AB; opacity: 0.7; margin-top: 4px;"><em>Stress & Rescue</em></p>
     </div>
   </div>
+</div>
 
 <div class="cv-section-title"><i class="fas fa-briefcase"></i> Work Experience</div>
 <div class="cv-timeline">
