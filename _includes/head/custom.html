@@ -150,4 +150,25 @@
     width: 100% !important;
     float: none !important;
   }
+  #back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #2c4a3e;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  transition: opacity 0.3s, background 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+#back-to-top:hover { background: #ffa44a; }
+#back-to-top.visible { display: flex; }
 </style>
