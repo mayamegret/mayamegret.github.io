@@ -88,7 +88,7 @@ h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-c
 }
 .cv-card {
   position: relative;
-  background: rgba(0,71,171,0.06);
+  background: rgba(75,46,15,0.06);
   border-radius: 8px;
   padding: 14px 16px;
   margin-bottom: 16px;
@@ -114,8 +114,8 @@ h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-c
 .cv-card-subtitle {
   font-size: 0.88rem;
   color: #4B2E0F;
-  margin: 0 0 8px 0;
   opacity: 0.7;
+  margin: 0 0 8px 0;
 }
 .cv-card ul {
   margin: 6px 0 0 0;
@@ -156,6 +156,16 @@ h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-c
 .cv-panel-row .cv-section-title {
   margin-top: 0;
 }
+.cv-panel-row-wide {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 0 40px;
+  margin-bottom: 1.5rem;
+  align-items: start;
+}
+.cv-panel-row-wide .cv-section-title {
+  margin-top: 0;
+}
 .cv-milestone {
   position: relative;
   font-size: 0.85rem;
@@ -185,6 +195,7 @@ h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-c
 @media (max-width: 700px) {
   .cv-two-col { grid-template-columns: 1fr; }
   .cv-panel-row { grid-template-columns: 1fr; }
+  .cv-panel-row-wide { grid-template-columns: 1fr; }
 }
 </style>
 
@@ -204,7 +215,7 @@ h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-c
   </div>
 </div>
 
-<div class="cv-panel-row">
+<div class="cv-panel-row-wide">
   <div>
     <div class="cv-section-title"><i class="fas fa-graduation-cap"></i> Education</div>
     <ul class="cv-list">
@@ -214,52 +225,61 @@ h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-c
     </ul>
   </div>
   <div>
-   <div class="cv-section-title"><i class="fas fa-water"></i> Certifications</div>
-<div style="display: flex; gap: 20px; align-items: flex-start;">
-  <ul class="cv-list" style="flex: 1; margin: 0;">
-    <li>Divemaster. SSI. July 2026.</li>
-    <li>Stress and Rescue. SSI. May 2026.</li>
-    <li>First Aid, CPR, Oxygen. SSI. May 2026.</li>
-    <li>Advanced Open Water. SSI. May 2025.
-      <ul class="cv-sublist">
-        <li>Nitrox EAN32</li>
-        <li>Deep Diving (30m)</li>
-        <li>Navigation</li>
-        <li>Search & Recovery</li>
+    <div class="cv-section-title"><i class="fas fa-water"></i> Certifications</div>
+    <div style="display: flex; gap: 20px; align-items: flex-start;">
+      <ul class="cv-list" style="flex: 1; margin: 0;">
+        <li>Divemaster. SSI. July 2026.</li>
+        <li>Stress and Rescue. SSI. May 2026.</li>
+        <li>First Aid, CPR, Oxygen. SSI. May 2026.</li>
+        <li>Advanced Open Water. SSI. May 2025.
+          <ul class="cv-sublist">
+            <li>Nitrox EAN32</li>
+            <li>Deep Diving (30m)</li>
+            <li>Navigation</li>
+            <li>Search & Recovery</li>
+          </ul>
+        </li>
+        <li>Scientific Diving. CCMAR, UAlg. May 2025.
+          <ul class="cv-sublist">
+            <li>Radial search</li>
+            <li>Quadrat sampling</li>
+            <li>Transect sampling</li>
+            <li>Sample collection</li>
+          </ul>
+        </li>
+        <li>Open Water. NAUI. August 2022.</li>
       </ul>
-    </li>
-    <li>Scientific Diving. CCMAR, UAlg. May 2025.
-      <ul class="cv-sublist">
-        <li>Radial search</li>
-        <li>Quadrat sampling</li>
-        <li>Transect sampling</li>
-        <li>Sample collection</li>
-      </ul>
-    </li>
-    <li>Open Water. NAUI. August 2022.</li>
-  </ul>
- <div style="display: flex; flex-direction: column; gap: 10px; flex-shrink: 0;">
-  <div>
-    <img src="/images/photography/DivemasterCard.png" alt="SSI Divemaster Certification Card" style="width: 160px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,71,171,0.2); display: block;">
-    <p style="font-size: 0.75rem; color: #0047AB; opacity: 0.7; margin-top: 4px;"><em>Divemaster</em></p>
+      <div style="display: flex; flex-direction: column; gap: 10px; flex-shrink: 0;">
+        <div>
+          <img src="/images/photography/DivemasterCard.png" alt="SSI Divemaster Certification Card" style="width: 200px; border-radius: 8px; box-shadow: 0 2px 8px rgba(75,46,15,0.2); display: block;">
+          <p style="font-size: 0.75rem; color: #4B2E0F; opacity: 0.7; margin-top: 4px;"><em>Divemaster</em></p>
+        </div>
+        <div>
+          <img src="/images/photography/SRCard.png" alt="SSI Stress & Rescue Certification Card" style="width: 200px; border-radius: 8px; box-shadow: 0 2px 8px rgba(75,46,15,0.2); display: block;">
+          <p style="font-size: 0.75rem; color: #4B2E0F; opacity: 0.7; margin-top: 4px;"><em>Stress & Rescue</em></p>
+        </div>
+      </div>
+    </div>
   </div>
-  <div>
-    <img src="/images/photography/SRCard.png" alt="SSI Stress & Rescue Certification Card" style="width: 160px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,71,171,0.2); display: block;">
-    <p style="font-size: 0.75rem; color: #0047AB; opacity: 0.7; margin-top: 4px;"><em>Stress & Rescue</em></p>
-  </div>
-</div>
 </div>
 
 <div class="cv-section-title"><i class="fas fa-briefcase"></i> Work Experience</div>
 <div class="cv-timeline">
 
-  <div class="cv-milestone"><i class="fas fa-award"></i> Divemaster · SSI · July 2026</div>
-
-  <div class="cv-milestone"><i class="fas fa-award"></i> Stress & Rescue · First Aid, CPR & O2 · SSI · May 2026</div>
+  <div class="cv-card">
+    <div class="cv-card-title">Divemaster · Hawaiian Diving Adventures</div>
+    <div class="cv-card-subtitle">Honolulu, Hawai'i · June–July 2026</div>
+    <ul>
+      <li>Completed 50+ dives for Divemaster certification</li>
+      <li>Participated in daily dive charters, assisting instructors and leading dives</li>
+      <li>Assisted with dive shop operations including equipment rental and customer briefings</li>
+      <li>Filled SCUBA tanks using a high-pressure compressor</li>
+    </ul>
+  </div>
 
   <div class="cv-card">
-    <div class="cv-card-title">Researcher &middot; Marine Action Research Expeditions</div>
-    <div class="cv-card-subtitle">Závora, Mozambique &middot; January–March 2026</div>
+    <div class="cv-card-title">Researcher · Marine Action Research Expeditions</div>
+    <div class="cv-card-subtitle">Závora, Mozambique · January–March 2026</div>
     <ul>
       <li>Completed 45 scientific dive surveys</li>
       <li>Deployed three different SCUBA-based sampling methodologies including Sightings Per Unit Effort (SPUE), Quadrats along a transect, and Belt transects for sampling nudibranchs</li>
@@ -268,9 +288,11 @@ h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-c
     </ul>
   </div>
 
+  <div class="cv-milestone"><i class="fas fa-book-open"></i> Started MSc classes at UAlg · September 2024</div>
+
   <div class="cv-card">
-    <div class="cv-card-title">Intern &middot; Marine Action Research Expeditions</div>
-    <div class="cv-card-subtitle">Závora, Mozambique &middot; July 2025</div>
+    <div class="cv-card-title">Intern · Marine Action Research Expeditions</div>
+    <div class="cv-card-subtitle">Závora, Mozambique · July 2025</div>
     <ul>
       <li>Completed 26 scientific dives in the inshore and offshore reefs of Závora, Mozambique</li>
       <li>Manta ray photo identification</li>
@@ -282,13 +304,11 @@ h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-c
 
   <div class="cv-milestone"><i class="fas fa-award"></i> Advanced Open Water · Scientific Diving (CCMAR, UAlg) · May 2025</div>
 
-  <div class="cv-milestone"><i class="fas fa-book-open"></i> Started MSc classes at UAlg · September 2024</div>
-
   <div class="cv-milestone"><i class="fas fa-graduation-cap"></i> Graduated UCSD · June 2024</div>
 
   <div class="cv-card">
-    <div class="cv-card-title">Conservation Researcher &middot; Wildlife Sense</div>
-    <div class="cv-card-subtitle">Cephalonia, Greece &middot; July–August 2023</div>
+    <div class="cv-card-title">Conservation Researcher · Wildlife Sense</div>
+    <div class="cv-card-subtitle">Cephalonia, Greece · July–August 2023</div>
     <ul>
       <li>Protected sea turtle nests and monitored their incubation progress</li>
       <li>Relocated endangered nests to ensure survival during their incubation period</li>
@@ -299,20 +319,20 @@ h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-c
   </div>
 
   <div class="cv-card">
-    <div class="cv-card-title">Admissions Clerk &middot; Birch Aquarium &middot; Scripps Institution of Oceanography</div>
-    <div class="cv-card-subtitle">San Diego, California &middot; January 2022–June 2024</div>
+    <div class="cv-card-title">Admissions Clerk · Birch Aquarium · Scripps Institution of Oceanography</div>
+    <div class="cv-card-subtitle">San Diego, California · January 2022–June 2024</div>
     <ul>
       <li>Handled all phases of guest visits, ensuring an exceptional experience</li>
     </ul>
   </div>
 
-  <div class="cv-milestone"><i class="fas fa-globe"></i> Study Abroad at UQ, Australia &middot; August–November 2022</div>
+  <div class="cv-milestone"><i class="fas fa-globe"></i> Study Abroad at UQ, Australia · August–November 2022</div>
 
   <div class="cv-milestone"><i class="fas fa-award"></i> Open Water · NAUI · August 2022</div>
 
   <div class="cv-card">
-    <div class="cv-card-title">Conservation Researcher &middot; BIOMA</div>
-    <div class="cv-card-subtitle">Ostional, Costa Rica &middot; July 2021</div>
+    <div class="cv-card-title">Conservation Researcher · BIOMA</div>
+    <div class="cv-card-subtitle">Ostional, Costa Rica · July 2021</div>
     <ul>
       <li>Collected data on the nesting habits of Olive Ridley sea turtles</li>
       <li>Analyzed data collected to better understand the effects of sea turtle monitoring on the surrounding community, oceanic ecosystems, and sea turtle populations</li>
