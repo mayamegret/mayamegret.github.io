@@ -238,20 +238,16 @@ h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-c
     </li>
     <li>Open Water. NAUI. August 2022.</li>
   </ul>
-  <div style="display: flex; flex-direction: column; gap: 10px; flex-shrink: 0;">
-    <div>
-      <a href="/images/photography/DivemasterCard.png" target="_blank">
-        <img src="/images/photography/DivemasterCard.png" alt="SSI Divemaster Certification Card" style="width: 160px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,71,171,0.2); display: block;">
-      </a>
-      <p style="font-size: 0.75rem; color: #0047AB; opacity: 0.7; margin-top: 4px;"><em>Divemaster</em></p>
-    </div>
-    <div>
-      <a href="/images/photography/SRCard.png" target="_blank">
-        <img src="/images/photography/SRCard.png" alt="SSI Stress & Rescue Certification Card" style="width: 160px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,71,171,0.2); display: block;">
-      </a>
-      <p style="font-size: 0.75rem; color: #0047AB; opacity: 0.7; margin-top: 4px;"><em>Stress & Rescue</em></p>
-    </div>
+ <div style="display: flex; flex-direction: column; gap: 10px; flex-shrink: 0;">
+  <div>
+    <img src="/images/photography/DivemasterCard.png" alt="SSI Divemaster Certification Card" style="width: 160px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,71,171,0.2); display: block;">
+    <p style="font-size: 0.75rem; color: #0047AB; opacity: 0.7; margin-top: 4px;"><em>Divemaster</em></p>
   </div>
+  <div>
+    <img src="/images/photography/SRCard.png" alt="SSI Stress & Rescue Certification Card" style="width: 160px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,71,171,0.2); display: block;">
+    <p style="font-size: 0.75rem; color: #0047AB; opacity: 0.7; margin-top: 4px;"><em>Stress & Rescue</em></p>
+  </div>
+</div>
 </div>
 
 <div class="cv-section-title"><i class="fas fa-briefcase"></i> Work Experience</div>
