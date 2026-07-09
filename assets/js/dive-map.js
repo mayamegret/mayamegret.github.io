@@ -634,16 +634,33 @@ const locations = [
   galleryId: "kona"
 },
   {
-    name: "Honolulu",
-    country: "Hawai'i, USA",
-    coords: [21.31, -157.86],
-    type: "dive",
-    dates: "May 2026 - Present",
-    description: "I moved to Hawai'i in May 2026 while finishing up my masters thesis. I spent the first 5 weeks getting my Divemaster certification with Hawaiian Diving Adventures! It began with getting First Aid, CPR, AED, Oxygen administration and Stress & Rescue certified, and then I began my Divemaster program.",
-    species: [],
-    photos: [],
-    galleryId: "honolulu"
-  }
+  name: "Honolulu",
+  country: "Hawai'i, USA",
+  coords: [21.30, -157.85],
+  type: "visit",
+  dates: "May 18th, 2026 - Present",
+  description: "I moved to Honolulu in May 2026 and have been falling in love with Hawai'i ever since! I live with a roommate who has two cats who I adore, I am scuba diving daily, and exploring the island one shaved ice at a time!",
+  species: [],
+  photos: ["/images/photography/Oahu1.JPG", "/images/photography/Oahu2.JPG", "/images/photography/Oahu3.jpg", "/images/photography/Oahu4.JPG", "/images/photography/Oahu5.jpg", "/images/photography/Oahu6.jpg"],
+  galleryId: "oahu"
+},
+{
+  name: "Ala Moana Harbor",
+  country: "Hawai'i, USA",
+  coords: [21.28, -157.84],
+  type: "dive",
+  dates: "June 1st - July 4th, 2026",
+  description: "After completing my React Right and Stress & Rescue certs, I spent 5 weeks working on my divemaster certification. I completed 50+ dives working on guiding, navigation, and becoming a professional diver! I am super excited to now be an SSI Divemaster!",
+  species: [
+    "Blue dragon nudibranch <em>(Pteraeolidia semperi)</em>",
+    "Frogfish <em>(Antennariidae)</em>",
+    "Blacktip reef shark <em>(Carcharhinus melanopterus)</em>",
+    "Spinner dolphin <em>(Stenella longirostris)</em>",
+    "Spotted eagle ray <em>(Aetobatus narinari)</em>"
+  ],
+  photos: ["/images/photography/Divemaster1.jpg", "/images/photography/Divemaster2.JPG"],
+  galleryId: "divemaster"
+}
 ];
 
 const map = L.map('dive-map', { minZoom: 2 }).setView([20, 10], 2);
