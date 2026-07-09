@@ -237,6 +237,12 @@ h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-c
       </li>
       <li>Open Water. NAUI. August 2022.</li>
     </ul>
+    <div style="margin-top: 12px;">
+      <a href="/images/photography/DivemasterCard.png" target="_blank">
+        <img src="/images/photography/DivemasterCard.png" alt="SSI Divemaster Certification Card" style="width: 100%; max-width: 280px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,71,171,0.2); display: block;">
+      </a>
+      <p style="font-size: 0.75rem; color: #0047AB; opacity: 0.7; margin-top: 4px;"><em>Click to view full size</em></p>
+    </div>
   </div>
 </div>
 
