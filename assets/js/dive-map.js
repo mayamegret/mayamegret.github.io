@@ -113,7 +113,10 @@ const locations = [
     type: "visit",
     dates: "September 27 - October 5th, 2022",
     description: "Our first Marine Biology field trip was to North Stradbroke Island! We stayed at a lab and got to enjoy the beaches and tide pools between classes and lab work. My group studied the ephemeral tide pools left by stingrays as they forage. We studied the prawn species that colonize the ephemeral tide pools. I also learned to do a cartwheel on the beach with Joey and Sophia, it was a very special afternoon.",
-    species: [],
+    species: [
+  "Spotted wobbegong <em>(Orectolobus maculatus)</em>",
+  "Koala <em>(Phascolarctos cinereus)</em>"
+],
     photos: ["/images/photography/NSI1.jpg", "/images/photography/NSI2.jpg", "/images/photography/NSI3.png", "/images/photography/NSI4.png", "/images/photography/NSI5.jpg"],
     galleryId: "north-stradbroke"
   },
@@ -135,7 +138,11 @@ const locations = [
     type: "visit",
     dates: "October 25-28th, 2022",
     description: "Our third and last Terrestrial Ecology field trip! This camping trip was stunning, again with lots of hiking and lectures on the riverbanks. Many more kangaroos and wallabys, stunning scenery, and amazing wildlife. A highlight was the thousands (honestly probably upwards of a million) bats that flew over us every evening at dusk. The bats would leave the trees where they were sleeping all day to dip their bellies in the river, hang upside down again in the trees to drink, and eat all of the mosquitos as they flew around. It was an incredible thing to witness!",
-    species: [],
+    species: [
+  "Platypus <em>(Ornithorhynchus anatinus)</em>",
+  "Eastern grey kangaroo <em>(Macropus giganteus)</em>",
+  "Red-necked wallaby <em>(Notamacropus rufogriseus)</em>"
+],
     photos: ["/images/photography/CG1.jpg", "/images/photography/CG2.JPG", "/images/photography/CG3.jpg", "/images/photography/CG4.jpg", "/images/photography/CG5.jpg", "/images/photography/CG6.jpg"],
     galleryId: "carnarvon-gorge"
   },
@@ -146,7 +153,12 @@ const locations = [
     type: "visit",
     dates: "October 30 - November 5th, 2022",
     description: "We closed out our program with a bang for our last Marine Biology field trip to Heron Island, where we spent over a week living at the lab. Between lectures and lab work, we snorkeled at least 3 times a day, at sunrise, mid afternoon, and sunset. We swam with so many sharks, rays, nudibranchs, octopus, squid, guitarfish, eels, and so much more! My group studied the strength of crabs, comparing their body size and weight to the size and weight of coral rubble they were capable of lifting. It was one of the best weeks of my life.",
-    species: [],
+    species: [
+  "Giant guitarfish <em>(Glaucostegus typus)</em>",
+  "Epaulette shark <em>(Hemiscyllium ocellatum)</em>",
+  "Spotted eagle ray <em>(Aetobatus narinari)</em>",
+  "Blacktip reef shark <em>(Carcharhinus melanopterus)</em>"
+],
     photos: ["/images/photography/Heron3.jpg", "/images/photography/Heron1.jpg", "/images/photography/Heron2.JPG", "/images/photography/Heron4.jpg", "/images/photography/Heron5.jpg", "/images/photography/Heron6.jpg"],
     galleryId: "heron-island"
   },
