@@ -41,6 +41,20 @@ h1::after, h2::after, h3::after { background-color: #1A4A5C !important; border-c
 .popup-stack.is-stack::after { transform: rotate(3deg) translate(3px, -3px); }
 .popup-stack-badge { position: absolute; top: 8px; right: 8px; background: rgba(0,0,0,0.7); color: #fff; font-size: 0.75rem; padding: 2px 8px; border-radius: 12px; z-index: 3; }
 .popup-gallery-link { text-align: center; color: #1A4A5C; font-size: 0.85rem; margin-top: 6px; font-weight: 500; }
+.leaflet-popup-content-wrapper {
+  max-height: 300px;
+  overflow-y: auto;
+}
+.leaflet-popup-content {
+  font-size: 0.82rem;
+  margin: 8px 10px;
+}
+.popup-description {
+  font-size: 0.82rem;
+  margin: 4px 0;
+  max-height: 80px;
+  overflow-y: auto;
+}
 </style>
 
 <p>A record of my travels and dives around the world! <i class="fas fa-anchor" style="color:#1a1a1a;"></i> = dive site &nbsp; <i class="fas fa-map-marker-alt" style="color:#1a1a1a;"></i> = visited place</p>
