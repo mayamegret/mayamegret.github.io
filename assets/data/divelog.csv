@@ -77,7 +77,7 @@ Dive #,Date (yyyy-mm-dd),Site,Location,Dive Type,Max depth (m),Average depth (m)
 125,2026-5-26,"Kewalo Pipe Horsehoe Reef, Secrets Reef","Honolulu, O'ahu, Hawai'i",Divemaster training,20.7,,31,36,Air,26,26,15,None,5,3,Aluminum,"Ed, John",1x Hawaiian green turtles
 126,2026-5-26,Kewalo Pipe,"Honolulu, O'ahu, Hawai'i",Divemaster training,20.7,,26,31,Air,26,26,15,None,5,3,Aluminum,"Ed, John",1x Hawaiian green turtles
 127,2026-5-28,Kewalo Pipe,"Honolulu, O'ahu, Hawai'i",Divemaster training,16.9,,22,26,Air,26,26,20,None,5,3,Aluminum,"Ed, John","4x Hawaiian green turtles, 2x Trailing nudis (species unknown)"
-128,2026-5-28,Sea Tiger shipwreck,"Honolulu, O'ahu, Hawai'i",Divemaster training,31.5,,20,24,Air,26,26,20,None,5,3,Aluminum,"Ed, John","1x Eagle ray, 1x White tip reef shark, 2x Hawaiian green turtles, 1x Moray eel"
+128,2026-5-28,Sea Tiger shipwreck,"Honolulu, O'ahu, Hawai'i",Divemaster training,31.5,,20,24,Air,26,26,20,None,5,3,Aluminum,"Ed, John","1x Eagle ray, 1x Whitetip reef shark, 2x Hawaiian green turtles, 1x Moray eel"
 129,2026-5-29,Sea Tiger shipwreck,"Honolulu, O'ahu, Hawai'i",Divemaster training,30.2,,23,30,Air,26,26,,None,5,3,Aluminum,"Ed, John",Hawaiian green turtles
 130,2026-5-29,Kewalo Pipe,"Honolulu, O'ahu, Hawai'i",Divemaster training,16.5,,35,41,Air,26,26,,None,5,3,Aluminum,"Ed, John",Hawaiian green turtles
 131,2026-5-30,Kewalo Pipe,"Honolulu, O'ahu, Hawai'i",Rescue cert,14.9,,18,21,Air,26,26,,None,5,3,Aluminum,"Ed, John",Hawaiian green turtles
@@ -87,7 +87,7 @@ Dive #,Date (yyyy-mm-dd),Site,Location,Dive Type,Max depth (m),Average depth (m)
 135,2026-6-1,Kewalo Pipe,"Honolulu, O'ahu, Hawai'i",Divemaster training,15.5,,22,25,Air,26,26,8,None,5,3,Aluminum,Josiah,
 136,2026-6-2,Kewalo Pipe,"Honolulu, O'ahu, Hawai'i",Divemaster training,,,22,30,Air,25,25,2,Medium,5,3,Aluminum,Josiah,
 137,2026-6-6,"Kewalo pipe, Horseshoe Reef, Secrets Reef","Honolulu, O'ahu, Hawai'i",Divemaster training,19.2,,41,47,Air,25,25,20,None,5,3,Aluminum,Josiah,"2x Stonefish, 8x Hawaiian green turtles"
-138,2026-6-6,Sea Tiger shipwreck,"Honolulu, O'ahu, Hawai'i",Divemaster training,31.7,,22,28,Nitrox,25,25,30,None,5,3,Aluminum,Josiah,"1x White tip reef shark, 1x Sandbar shark, 1x Blue dragon nudi"
+138,2026-6-6,Sea Tiger shipwreck,"Honolulu, O'ahu, Hawai'i",Divemaster training,31.7,,22,28,Nitrox,25,25,30,None,5,3,Aluminum,Josiah,"1x Whitetip reef shark, 1x Sandbar shark, 1x Blue dragon nudi"
 139,2026-6-7,Nautilus Reef,"Honolulu, O'ahu, Hawai'i",Divemaster training,12.4,,32,38,Air,26,26,20,None,5,3,Aluminum,Callum,
 140,2026-6-7,Kewalo Pipe,"Honolulu, O'ahu, Hawai'i",Divemaster training,17.9,,28,33,Air,26,26,20,None,5,3,Aluminum,Callum,
 141,2026-6-9,Sea Tiger shipwreck,"Honolulu, O'ahu, Hawai'i",Divemaster training,34.3,,27,36,Nitrox,26,26,30,Light,5,3,Aluminum,Caleb,"3x Coryphellina exoptata, 2x Whitetip reef sharks, 2x Hawaiian green turtles, 1x Blue dragon"
@@ -116,6 +116,6 @@ Dive #,Date (yyyy-mm-dd),Site,Location,Dive Type,Max depth (m),Average depth (m)
 164,2026-7-3,Sea Tiger shipwreck,"Honolulu, O'ahu, Hawai'i",Divemaster training,30.0,,27,35,Nitrox,28,28,20,None,5,3,Aluminum,,"3x Moray eel, 1x Blue dragon"
 165,2026-7-3,"Kewalo pipe, Horseshoe Reef","Honolulu, O'ahu, Hawai'i",Divemaster training,19.3,,45,51,Air,28,28,30,None,5,3,Aluminum,Callum,
 166,2026-7-4,Sea Tiger shipwreck,"Honolulu, O'ahu, Hawai'i",Divemaster evaluation,30.0,,24,31,Air,27,27,20,Light,5,3,Aluminum,Ed,"1x Sandbar shark, 1x Blue dragon"
-167,2026-7-4,"Kewlao pipe, Horsehoe Reef","Honolulu, O'ahu, Hawai'i",Divemaster evaluation,19.3,,40,44,Air,27,27,8,Surge,5,3,Aluminum,Ed,"1x Blacktip reef shark, 2x Moray eel"
+167,2026-7-4,"Kewlao pipe, Horsehoe Reef","Honolulu, O'ahu, Hawai'i",Divemaster evaluation,19.3,,40,44,Air,27,27,8,Surge,5,3,Aluminum,Ed,"1x Whitetip reef shark, 2x Moray eel"
 168,2026-7-6,Nautilus Reef,"Honolulu, O'ahu, Hawai'i",Divemaster training,13.0,8.1,35,41,Air,26,27,5,Surge,no wesuit!,3,Aluminum,"Ed, Josiah",1x Hawaiian green turtle
-169,2026-7-6,"Kewalo Pipe, Horseshoe Reef","Honolulu, O'ahu, Hawai'i",Divemaster training,15.8,11.1,30,35,Air,26,28,8,Surge,no wesuit!,3,Aluminum,"Ed, Josiah","3x Blacktip reef sharks, 3x Moray eels"
+169,2026-7-6,"Kewalo Pipe, Horseshoe Reef","Honolulu, O'ahu, Hawai'i",Divemaster training,15.8,11.1,30,35,Air,26,28,8,Surge,no wesuit!,3,Aluminum,"Ed, Josiah","3x Whitetip reef sharks, 3x Moray eels"
