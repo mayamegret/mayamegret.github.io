@@ -42,17 +42,19 @@ h1::after, h2::after, h3::after { background-color: #1A4A5C !important; border-c
 .popup-stack-badge { position: absolute; top: 8px; right: 8px; background: rgba(0,0,0,0.7); color: #fff; font-size: 0.75rem; padding: 2px 8px; border-radius: 12px; z-index: 3; }
 .popup-gallery-link { text-align: center; color: #1A4A5C; font-size: 0.85rem; margin-top: 6px; font-weight: 500; }
 .leaflet-popup-content-wrapper {
-  max-height: 300px;
-  overflow-y: auto;
+  max-height: 400px;
+  overflow: visible;
 }
 .leaflet-popup-content {
   font-size: 0.82rem;
   margin: 8px 10px;
+  max-height: 380px;
+  overflow-y: auto;
 }
 .popup-description {
   font-size: 0.82rem;
   margin: 4px 0;
-  max-height: 80px;
+  max-height: 100px;
   overflow-y: auto;
 }
 </style>
