@@ -744,8 +744,8 @@ function buildPopup(loc) {
 const markerObjects = [];
 locations.forEach(loc => {
   const marker = L.marker(loc.coords, { icon: makeIcon(loc.type, false, false) })
-    .bindPopup(buildPopup(loc), { maxWidth: 260, autoPan: true, autoPanPadding: [20, 20] })
-    .addTo(map);
+    .bindPopup(buildPopup(loc), { maxWidth: 300, autoPan: true, autoPanPadding: [20, 20] })
+.addTo(map);
 
   marker.on('popupopen', () => {
     markerObjects.forEach(m => {
