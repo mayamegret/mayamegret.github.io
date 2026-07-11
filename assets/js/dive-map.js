@@ -1,19 +1,18 @@
 const locations = [
   {
-  name: "St. Petersburg",
-  country: "USA",
-  coords: [27.77, -82.64],
-  type: "visit",
-  dates: "2005 and ongoing",
-  description: "I grew up visiting my grandpa in Florida often, spending birthdays and spring breaks and summers at his condo in St. Petersburg. We always went to the pink palace for ice cream, went kayaking in the mangroves of Fort De Soto with manatees, spent long afternoons on the beach looking for shells and horseshoe crabs, watching dolphins swim by from his backyard, chase lizards around at sunset, spend days at the pool, go on airplane rides with my grandpa, and more and more. I really cherish this time with my family and St. Petersburg will always have a special place in my heart.",
-  species: [
-    "Florida manatee <em>(Trichechus manatus latirostris)</em>",
-    "Atlantic bottlenose dolphin <em>(Tursiops truncatus)</em>",
-    "American horseshoe crab <em>(Limulus polyphemus)</em>"
-  ],
-  photos: ["/images/photography/Florida1.jpg", "/images/photography/Florida2.jpg", "/images/photography/Florida3.jpg", "/images/photography/Florida4.jpg", "/images/photography/Florida5.jpg", "/images/photography/Florida6.jpg", "/images/photography/Florida7.jpg", "/images/photography/Florida8.jpg", "/images/photography/Florida9.jpg"],
-  galleryId: "st-pete"
-},
+    name: "St. Petersburg",
+    country: "USA",
+    coords: [27.77, -82.64],
+    type: "visit",
+    dates: "2005 and ongoing",
+    description: "I grew up visiting my grandpa in Florida often, spending birthdays and spring breaks and summers at his condo in St. Petersburg. We always went to the pink palace (the Don CeSar) for ice cream, went kayaking in the mangroves of Fort De Soto with manatees, spent long afternoons on the beach looking for shells and horseshoe crabs, watching dolphins swim by from his backyard, chase lizards around at sunset, spend days at the pool, go on airplane rides with my grandpa, and more and more. I really cherish this time with my family and St. Petersburg will always have a special place in my heart.",    species: [
+      "Florida manatee <em>(Trichechus manatus latirostris)</em>",
+      "Atlantic bottlenose dolphin <em>(Tursiops truncatus)</em>",
+      "American horseshoe crab <em>(Limulus polyphemus)</em>"
+    ],
+    photos: ["/images/photography/Florida1.jpg", "/images/photography/Florida2.jpg", "/images/photography/Florida3.jpg", "/images/photography/Florida4.jpg", "/images/photography/Florida5.jpg", "/images/photography/Florida6.jpg", "/images/photography/Florida7.jpg", "/images/photography/Florida8.jpg", "/images/photography/Florida9.jpg"],
+    galleryId: "st-pete"
+  },
   {
     name: "Belize",
     country: "Belize",
@@ -30,7 +29,7 @@ const locations = [
     coords: [45.44, 12.33],
     type: "visit",
     dates: "June 18 - July 2nd, 2019",
-    description: "My mom, sister, and I went on a girls trip to Italy which began in Venice touring the city, going gondola rides, and eating lots of pasta!",
+    description: "Our girls trip to Italy began in Venice touring the city, gondola rides, and lots of pasta!",
     species: [],
     photos: []
   },
@@ -40,7 +39,7 @@ const locations = [
     coords: [40.55, 14.24],
     type: "visit",
     dates: "June 2019",
-    description: "On our girls trip to Italy, my mom, sister, and I we made our way from Venice to Capri where we beached and explored for a few days.",
+    description: "From Venice we made our way to Capri where we beached and explored for a few days.",
     species: [],
     photos: []
   },
@@ -50,7 +49,7 @@ const locations = [
     coords: [40.63, 14.60],
     type: "visit",
     dates: "June/July 2019",
-    description: "After visitng Venice and Capri, my mom, sister, and I made our way through the Amalfi Coast, starting in Positano, then we visited Ravello and Sorrento.",
+    description: "Then we made our way through the Amalfi Coast, starting in Positano then Ravello then Sorrento.",
     species: [],
     photos: []
   },
@@ -60,7 +59,7 @@ const locations = [
     coords: [41.90, 12.50],
     type: "visit",
     dates: "July 2019",
-    description: "To finish up our girls trip to Italy, my mom, sister, and I went to Rome, where we enjoyed lots of gelato and exploring!",
+    description: "We finished our trip in Rome with lots of gelato and exploring!",
     species: [],
     photos: []
   },
@@ -74,16 +73,6 @@ const locations = [
     species: [],
     photos: []
   },
-  {
-  name: "Brisbane",
-  country: "Australia",
-  coords: [-27.47, 153.02],
-  type: "visit",
-  dates: "August 2022 - November 2022",
-  description: "I began my junior year of my undergrad by studying abroad at University of Queensland in Brisbane! I stayed with a host family during this time, and my program included five field trips to the bush and to nearby islands where we applied our marine biology and terrestrial ecology learning! In Brisbane, we ate at Little Red Dumpling as much as possible, enjoyed nights out at The Beat, and spent long weekends taking the train up and down the coast!",
-  species: [],
-  photos: []
-},
   {
     name: "Girraween National Park",
     country: "Australia",
@@ -114,9 +103,9 @@ const locations = [
     dates: "September 27 - October 5th, 2022",
     description: "Our first Marine Biology field trip was to North Stradbroke Island! We stayed at a lab and got to enjoy the beaches and tide pools between classes and lab work. My group studied the ephemeral tide pools left by stingrays as they forage. We studied the prawn species that colonize the ephemeral tide pools. I also learned to do a cartwheel on the beach with Joey and Sophia, it was a very special afternoon.",
     species: [
-  "Spotted wobbegong <em>(Orectolobus maculatus)</em>",
-  "Koala <em>(Phascolarctos cinereus)</em>"
-],
+      "Spotted wobbegong <em>(Orectolobus maculatus)</em>",
+      "Koala <em>(Phascolarctos cinereus)</em>"
+    ],
     photos: ["/images/photography/NSI1.jpg", "/images/photography/NSI2.jpg", "/images/photography/NSI3.png", "/images/photography/NSI4.png", "/images/photography/NSI5.jpg"],
     galleryId: "north-stradbroke"
   },
@@ -139,10 +128,10 @@ const locations = [
     dates: "October 25-28th, 2022",
     description: "Our third and last Terrestrial Ecology field trip! This camping trip was stunning, again with lots of hiking and lectures on the riverbanks. Many more kangaroos and wallabys, stunning scenery, and amazing wildlife. A highlight was the thousands (honestly probably upwards of a million) bats that flew over us every evening at dusk. The bats would leave the trees where they were sleeping all day to dip their bellies in the river, hang upside down again in the trees to drink, and eat all of the mosquitos as they flew around. It was an incredible thing to witness!",
     species: [
-  "Platypus <em>(Ornithorhynchus anatinus)</em>",
-  "Eastern grey kangaroo <em>(Macropus giganteus)</em>",
-  "Red-necked wallaby <em>(Notamacropus rufogriseus)</em>"
-],
+      "Platypus <em>(Ornithorhynchus anatinus)</em>",
+      "Eastern grey kangaroo <em>(Macropus giganteus)</em>",
+      "Red-necked wallaby <em>(Notamacropus rufogriseus)</em>"
+    ],
     photos: ["/images/photography/CG1.jpg", "/images/photography/CG2.JPG", "/images/photography/CG3.jpg", "/images/photography/CG4.jpg", "/images/photography/CG5.jpg", "/images/photography/CG6.jpg"],
     galleryId: "carnarvon-gorge"
   },
@@ -154,11 +143,11 @@ const locations = [
     dates: "October 30 - November 5th, 2022",
     description: "We closed out our program with a bang for our last Marine Biology field trip to Heron Island, where we spent over a week living at the lab. Between lectures and lab work, we snorkeled at least 3 times a day, at sunrise, mid afternoon, and sunset. We swam with so many sharks, rays, nudibranchs, octopus, squid, guitarfish, eels, and so much more! My group studied the strength of crabs, comparing their body size and weight to the size and weight of coral rubble they were capable of lifting. It was one of the best weeks of my life.",
     species: [
-  "Giant guitarfish <em>(Glaucostegus typus)</em>",
-  "Epaulette shark <em>(Hemiscyllium ocellatum)</em>",
-  "Spotted eagle ray <em>(Aetobatus narinari)</em>",
-  "Blacktip reef shark <em>(Carcharhinus melanopterus)</em>"
-],
+      "Giant guitarfish <em>(Glaucostegus typus)</em>",
+      "Epaulette shark <em>(Hemiscyllium ocellatum)</em>",
+      "Spotted eagle ray <em>(Aetobatus narinari)</em>",
+      "Blacktip reef shark <em>(Carcharhinus melanopterus)</em>"
+    ],
     photos: ["/images/photography/Heron3.jpg", "/images/photography/Heron1.jpg", "/images/photography/Heron2.JPG", "/images/photography/Heron4.jpg", "/images/photography/Heron5.jpg", "/images/photography/Heron6.jpg"],
     galleryId: "heron-island"
   },
@@ -204,16 +193,6 @@ const locations = [
     photos: ["/images/map/PortLincoln1.JPG", "/images/map/PortLincoln2.JPG", "/images/map/PortLincoln3.JPG", "/images/map/PortLincoln4.JPG"],
     galleryId: "port-lincoln"
   },
-  {
-  name: "Sydney",
-  country: "Australia",
-  coords: [-33.87, 151.21],
-  type: "visit",
-  dates: "November 23-27th, 2022",
-  description: "To close out our family trip around Australia after my study abroad, we spent a few days in Sydney. We visited the Opera House, ferried to Manly Beach, ate amazing sushi, and explored the city!",
-  species: [],
-  photos: []
-},
   {
     name: "Pacific Harbor, Fiji",
     country: "Fiji",
@@ -338,7 +317,7 @@ const locations = [
     coords: [32.880, -117.234],
     type: "visit",
     dates: "September 2023 - June 2024",
-    description: "Senior year at UCSD included a spring break trip to Panama with my family and Brynn, going home for a weekend to celebrate my dads 60th and my 22nd birthdays, lots of shifts working at the Birch Aquarium, plenty of hours at the tide pools and beaches of La Jolla, a girls trip to Napa Valley, a trip to see my grandpa in St. Petersburg Florida, and lots of visits from my parents in SD. I enjoyed all my favorite restaurants from Creme de la Crepe to Dirty Birds, the Little Italy Farmers Market most Saturdays, Kobeys Swap Meet most Sundays, lots of lab work, baseball games (go Padres!), jazz nights, sailboat rides and lots of time with friends!",
+    description: "Senior year at UCSD included a spring break trip to Panama with my family and Brynn, going home for a weekend to celebrate my dads 60th and my 22nd birthdays, lots of shifts working at the Birch Aquarium, plenty of hours at the tide pools and beaches of La Jolla, a girls trip to Napa Valley, a trip to see my grandpa in St. Petersburg Florida, and lots of visits from my parents in SD.",
     species: [],
     photos: ["/images/photography/SeniorYear1.jpg", "/images/photography/SeniorYear2.jpg", "/images/photography/SeniorYear3.jpg", "/images/photography/SeniorYear4.JPG", "/images/photography/SeniorYear5.jpeg", "/images/photography/SeniorYear6.jpg"],
     galleryId: "senior-year"
@@ -412,27 +391,27 @@ const locations = [
     galleryId: "graduation"
   },
   {
-  name: "Bogotá",
-  country: "Colombia",
-  coords: [4.71, -74.07],
-  type: "visit",
-  dates: "June 30 - July 3rd, 2024",
-  description: "I joined my mom on one of her work trips to Colombia, where we spent the first several days in Bogota. After tagging along for her meetings, we explored the city including touring the Botero Museum, eating amazing food, and photographing the beautiful murals!",
-  species: [],
-  photos: ["/images/map/Bogota1.jpg", "/images/map/Bogota2.JPG", "/images/map/Bogota3.JPG", "/images/map/Bogota4.JPG"],
-  galleryId: "bogota"
-},
- {
-  name: "Cartagena",
-  country: "Colombia",
-  coords: [10.39, -75.48],
-  type: "visit",
-  dates: "July 4-6th, 2024",
-  description: "My mom and I finished our trip to Colombia with a few days in Cartagena, where we went to jazz clubs, explored the emerald museum and shops and ate plenty of delicious food.",
-  species: [],
-  photos: ["/images/map/Cartagena1.JPG", "/images/map/Cartagena2.jpg", "/images/map/Cartagena3.JPG"],
-  galleryId: "cartagena"
-},
+    name: "Cartagena",
+    country: "Colombia",
+    coords: [10.39, -75.48],
+    type: "visit",
+    dates: "July 4-6th, 2024",
+    description: "My mom and I finished our trip to Colombia with a few days in Cartagena, where we went to jazz clubs, explored the emerald museum and shops and ate plenty of delicious food.",
+    species: [],
+    photos: ["/images/map/Cartagena1.JPG", "/images/map/Cartagena2.jpg", "/images/map/Cartagena3.JPG"],
+    galleryId: "cartagena"
+  },
+  {
+    name: "Bogotá",
+    country: "Colombia",
+    coords: [4.71, -74.07],
+    type: "visit",
+    dates: "July 30 - August 3rd, 2024",
+    description: "I joined my mom on one of her work trips to Colombia, where we spent the first several days in Bogota. After tagging along for her meetings, we explored the city including touring the Botero Museum, eating amazing food, and photographing the beautiful murals!",
+    species: [],
+    photos: ["/images/map/Bogota1.jpg", "/images/map/Bogota2.JPG", "/images/map/Bogota3.JPG", "/images/map/Bogota4.JPG"],
+    galleryId: "bogota"
+  },
   {
     name: "Blitzingen",
     country: "Switzerland",
@@ -461,7 +440,7 @@ const locations = [
     coords: [56.46, -2.97],
     type: "visit",
     dates: "December 28th, 2024 - January 2nd, 2025",
-    description: "After Christmas in Switzerland with my family, I flew to Scotland to spend some time with my friend Bella. She showed me around her hometown, Dundee, including trips to the beach and drives around the countryside looking for highland cows!",
+    description: "After Christmas in Switzerland, I flew to Scotland to spend some time with my friend Bella. She showed me around her hometown, Dundee, including trips to the beach and drives around the countryside looking for highland cows!",
     species: [],
     photos: []
   },
@@ -471,7 +450,7 @@ const locations = [
     coords: [55.95, -3.19],
     type: "visit",
     dates: "December 31st, 2024 - January 1st, 2025",
-    description: "Bella and I took a train from Dundee down to Edinburgh for New Years Eve 2024 where we explored the city and celebrated ringing in 2025 together. We went back to Dundee for New Years feast with her family, it was a lovely time!",
+    description: "We took a train down to Edinburgh for New Years Eve where we explored the city and celebrated ringing in 2025 together. We went back to Dundee for New Years feast with her family before I headed down to London with my parents.",
     species: [],
     photos: []
   },
@@ -504,7 +483,7 @@ const locations = [
     dates: "April 10-15th, 2025",
     description: "Dad and I went to visit family in Aix for a few days, it was so so lovely!! We ate amazing food, we explored the markets every morning, and spent the rest of our time with loved ones we hadn't seen in too long.",
     species: [],
-    photos: ["/images/map/Aix1.jpg", "/images/map/Aix2.jpg", "/images/map/Aix3.jpg", "/images/map/Aix4.jpg", "/images/map/Aix5.jpg", "/images/map/Aix6.jpg", "/images/map/Aix7.jpg", "/images/map/Aix8.jpg", "/images/map/Aix9.jpg", "/images/map/Aix10.jpg", "/images/map/Aix11.jpg"],
+    photos: ["/images/map/Aix2.jpg", "/images/map/Aix3.jpg", "/images/map/Aix4.jpg", "/images/map/Aix5.jpg", "/images/map/Aix6.jpg", "/images/map/Aix7.jpg", "/images/map/Aix8.jpg", "/images/map/Aix1.jpg", "/images/photography/Aix9.jpg", "/images/photography/Aix10.jpg", "/images/photography/Aix11.jpg"],
     galleryId: "aix"
   },
   {
@@ -618,7 +597,7 @@ const locations = [
     coords: [-24.30, 35.20],
     type: "dive",
     dates: "January-February 2026",
-    description: "I spent 6 weeks back in Závora to collect the data for my thesis research! I completed 45 scientific dive surveys comparing three different SCUBA-based sampling methodologies for assessing the abundance and species diversity of nudibranchs across 3 different rocky reef sites. It was a spectacular time, I collected data on the size, species, depth, substrate, any additional observations, and photographs of 343 nudibranchs! I am extremely grateful for the MAR Team, especially Nakia, Emily, Ed, and Patrick for all of their help, I truly couldn't have done it without them.",
+    description: "I spent 6 weeks back in Závora to collect the data for my thesis research! I completed 45 scientific dive surveys comparing three different SCUBA-based sampling methodologies for assessing the abundance and species diversity of nudibranchs across 3 different rocky reef sites.",
     species: [
       "Oceanic Manta Ray <em>(Mobula birostris)</em>",
       "Reef Manta Ray <em>(Mobula alfredi)</em>",
@@ -628,16 +607,16 @@ const locations = [
     galleryId: "zavora-2026"
   },
   {
-  name: "Vilankulos",
-  country: "Mozambique",
-  coords: [-21.99, 35.31],
-  type: "visit",
-  dates: "February 24-28th, 2026",
-  description: "I spent my last few days of my time in Mozambique in Vilankulos, where I snorkeled with seahorses, did a tour of the Bazaruto Archipelago, and relaxed by the beach reading and eating matapa and fried bananas.",
-  species: [],
-  photos: ["/images/photography/Vilankulos1.jpg", "/images/photography/Vilankulos2.JPG", "/images/photography/Vilankulos3.JPG", "/images/photography/Vilankulos4.JPG", "/images/photography/Vilankulos5.JPG"],
-  galleryId: "vilankulos"
-},
+    name: "Vilankulos",
+    country: "Mozambique",
+    coords: [-21.99, 35.31],
+    type: "visit",
+    dates: "February 24-28th, 2026",
+    description: "I spent my last few days of my time in Mozambique in Vilankulos, where I snorkeled with seahorses, did a tour of the Bazaruto Archipelago, and relaxed by the beach reading and eating matapa and fried bananas.",
+    species: [],
+    photos: ["/images/photography/Vilankulos1.jpg", "/images/photography/Vilankulos2.JPG", "/images/photography/Vilankulos3.JPG", "/images/photography/Vilankulos4.JPG", "/images/photography/Vilankulos5.JPG"],
+    galleryId: "vilankulos"
+  },
   {
     name: "El Salvador",
     country: "El Salvador",
@@ -650,45 +629,57 @@ const locations = [
     galleryId: "el-salvador"
   },
   {
-  name: "Kona",
-  country: "Hawai'i, USA",
-  coords: [19.64, -155.99],
-  type: "visit",
-  dates: "May 12-18th, 2026",
-  description: "As I moved out to Hawai'i, my parents came with me and we first spent a week in Kona! We woke up early most days and explored tide pools, found hidden beaches, and explored Volcano National Park!",
-  species: [],
-  photos: ["/images/photography/IMG_0593.jpg", "/images/photography/IMG_0599.jpg", "/images/photography/IMG_1093.jpg"],
-  galleryId: "kona"
-},
+    name: "Kona",
+    country: "Hawai'i, USA",
+    coords: [19.64, -155.99],
+    type: "visit",
+    dates: "May 12-18th, 2026",
+    description: "As I moved out to Hawai'i, my parents came with me and we first spent a week in Kona! We woke up early most days and explored tide pools, found hidden beaches, and explored Volcano National Park!",
+    species: [],
+    photos: ["/images/photography/IMG_0593.jpg", "/images/photography/IMG_0599.jpg", "/images/photography/IMG_1093.jpg"],
+    galleryId: "kona"
+  },
   {
-  name: "Honolulu",
-  country: "Hawai'i, USA",
-  coords: [21.30, -157.80],
-  type: "visit",
-  dates: "May 18th, 2026 - Present",
-  description: "I moved to Honolulu in May 2026 and have been falling in love with Hawai'i ever since! I live with a roommate who has two cats who I adore, I am scuba diving daily, and exploring the island one shaved ice at a time!",
-  species: [],
-  photos: ["/images/photography/Oahu1.JPG", "/images/photography/Oahu2.JPG", "/images/photography/Oahu3.jpg", "/images/photography/Oahu4.JPG", "/images/photography/Oahu5.jpg", "/images/photography/Oahu6.jpg"],
-  galleryId: "oahu"
-},
-{
-  name: "Ala Moana Harbor",
-  country: "Hawai'i, USA",
-  coords: [21.29, -157.86],
-  type: "dive",
-  dates: "June 1st - July 4th, 2026",
-  description: "After completing my React Right and Stress & Rescue certs, I spent 5 weeks working on my divemaster certification. I completed 50+ dives working on guiding, navigation, and becoming a professional diver! I am super excited to now be an SSI Divemaster!",
-  species: [
-    "Blue dragon nudibranch <em>(Pteraeolidia semperi)</em>",
-    "Frogfish <em>(Antennariidae)</em>",
-    "Blacktip reef shark <em>(Carcharhinus melanopterus)</em>",
-    "Spinner dolphin <em>(Stenella longirostris)</em>",
-    "Spotted eagle ray <em>(Aetobatus narinari)</em>"
-  ],
-  photos: ["/images/photography/Divemaster1.jpg", "/images/photography/Divemaster2.JPG"],
-  galleryId: "divemaster"
-}
+    name: "Honolulu",
+    country: "Hawai'i, USA",
+    coords: [21.30, -157.85],
+    type: "visit",
+    dates: "May 18th, 2026 - Present",
+    description: "I moved to Honolulu in May 2026 and have been falling in love with Hawai'i ever since! I live with a roommate who has two cats who I adore, I am scuba diving daily, and exploring the island one shaved ice at a time!",
+    species: [],
+    photos: ["/images/photography/Oahu1.JPG", "/images/photography/Oahu2.JPG", "/images/photography/Oahu3.jpg", "/images/photography/Oahu4.JPG", "/images/photography/Oahu5.jpg", "/images/photography/Oahu6.jpg"],
+    galleryId: "oahu"
+  },
+  {
+    name: "Ala Moana Harbor",
+    country: "Hawai'i, USA",
+    coords: [21.28, -157.84],
+    type: "dive",
+    dates: "June 1st - July 4th, 2026",
+    description: "After completing my React Right and Stress & Rescue certs, I spent 5 weeks working on my divemaster certification. I completed 50+ dives working on guiding, navigation, and becoming a professional diver! I am super excited to now be an SSI Divemaster!",
+    species: [
+      "Blue dragon nudibranch <em>(Pteraeolidia semperi)</em>",
+      "Frogfish <em>(Antennariidae)</em>",
+      "Blacktip reef shark <em>(Carcharhinus melanopterus)</em>",
+      "Spinner dolphin <em>(Stenella longirostris)</em>",
+      "Spotted eagle ray <em>(Aetobatus narinari)</em>"
+    ],
+    photos: ["/images/photography/Divemaster1.jpg", "/images/photography/Divemaster2.JPG"],
+    galleryId: "divemaster"
+  }
 ];
+
+// Extract year from dates string
+function extractYear(datesStr) {
+  if (!datesStr) return null;
+  const match = datesStr.match(/\b(20\d{2}|19\d{2})\b/);
+  return match ? parseInt(match[1]) : null;
+}
+
+// Assign year to each location
+locations.forEach(loc => {
+  loc._year = extractYear(loc.dates || '') || 2005;
+});
 
 const map = L.map('dive-map', { minZoom: 2 }).setView([20, 10], 2);
 
@@ -742,10 +733,16 @@ function buildPopup(loc) {
 }
 
 const markerObjects = [];
+let currentTypeFilter = 'all';
+let currentYearFilter = 2026;
+let pathLayer = null;
+let animationInterval = null;
+let isAnimating = false;
+
 locations.forEach(loc => {
   const marker = L.marker(loc.coords, { icon: makeIcon(loc.type, false, false) })
     .bindPopup(buildPopup(loc), { maxWidth: 300, autoPan: true, autoPanPadding: [20, 20] })
-.addTo(map);
+    .addTo(map);
 
   marker.on('popupopen', () => {
     markerObjects.forEach(m => {
@@ -754,7 +751,7 @@ locations.forEach(loc => {
     });
   });
 
-  markerObjects.push({ marker, type: loc.type, country: loc.country });
+  markerObjects.push({ marker, type: loc.type, country: loc.country, year: loc._year });
 });
 
 map.on('popupclose', () => {
@@ -763,21 +760,83 @@ map.on('popupclose', () => {
   });
 });
 
-const countries = new Set(locations.map(l => l.country));
-const diveCount = locations.filter(l => l.type === 'dive').length;
-setTimeout(() => {
-  const el = document.getElementById('map-counter');
-  if (el) el.innerHTML = `<strong>${countries.size}</strong> countries &nbsp;·&nbsp; <strong>${diveCount}</strong> dive sites`;
-}, 100);
-
-window.filterMap = function(type) {
-  markerObjects.forEach(({ marker, type: markerType }) => {
-    if (type === 'all' || markerType === type) {
+function applyFilters() {
+  markerObjects.forEach(({ marker, type: markerType, year }) => {
+    const passesType = currentTypeFilter === 'all' || markerType === currentTypeFilter;
+    const passesYear = year <= currentYearFilter;
+    if (passesType && passesYear) {
       marker.addTo(map);
     } else {
       map.removeLayer(marker);
     }
   });
+  drawPath();
+}
+
+function drawPath() {
+  if (pathLayer) { map.removeLayer(pathLayer); pathLayer = null; }
+  const filtered = locations.filter(l => l._year <= currentYearFilter);
+  if (filtered.length < 2) return;
+  const latlngs = filtered.map(l => l.coords);
+  pathLayer = L.polyline(latlngs, {
+    color: '#ffa44a',
+    weight: 2,
+    opacity: 0.5,
+    dashArray: '5 8'
+  }).addTo(map);
+}
+
+// Timeline slider
+window.onSliderChange = function(val) {
+  currentYearFilter = parseInt(val);
+  document.getElementById('year-display').textContent = val;
+  applyFilters();
+};
+
+window.showAll = function() {
+  currentYearFilter = 2026;
+  document.getElementById('year-slider').value = 2026;
+  document.getElementById('year-display').textContent = '2026';
+  applyFilters();
+};
+
+// Animate journey
+window.animateJourney = function() {
+  if (isAnimating) {
+    clearInterval(animationInterval);
+    isAnimating = false;
+    document.getElementById('animate-btn').innerHTML = '<i class="fas fa-play"></i> Animate journey';
+    return;
+  }
+
+  const years = [...new Set(locations.map(l => l._year))].sort();
+  let i = 0;
+  currentYearFilter = years[0];
+  document.getElementById('year-slider').value = years[0];
+  document.getElementById('year-display').textContent = years[0];
+  applyFilters();
+
+  isAnimating = true;
+  document.getElementById('animate-btn').innerHTML = '<i class="fas fa-stop"></i> Stop';
+
+  animationInterval = setInterval(() => {
+    i++;
+    if (i >= years.length) {
+      clearInterval(animationInterval);
+      isAnimating = false;
+      document.getElementById('animate-btn').innerHTML = '<i class="fas fa-play"></i> Animate journey';
+      return;
+    }
+    currentYearFilter = years[i];
+    document.getElementById('year-slider').value = years[i];
+    document.getElementById('year-display').textContent = years[i];
+    applyFilters();
+  }, 800);
+};
+
+// Type filter
+window.filterMap = function(type) {
+  currentTypeFilter = type;
   ['all', 'dive', 'visit'].forEach(t => {
     const btn = document.getElementById('btn-' + t);
     if (btn) {
@@ -785,7 +844,16 @@ window.filterMap = function(type) {
       btn.style.color = t === type ? '#fff' : '#1A4A5C';
     }
   });
+  applyFilters();
 };
+
+// Counter
+const countries = new Set(locations.map(l => l.country));
+const diveCount = locations.filter(l => l.type === 'dive').length;
+setTimeout(() => {
+  const el = document.getElementById('map-counter');
+  if (el) el.innerHTML = `<strong>${countries.size}</strong> countries &nbsp;·&nbsp; <strong>${diveCount}</strong> dive sites`;
+}, 100);
 
 if (window.location.hash) {
   const id = window.location.hash.slice(1);
