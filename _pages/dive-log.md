@@ -146,6 +146,23 @@ h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-c
 .dive-type-other { background: rgba(200,200,200,0.3); color: #555; }
 .dive-loading { text-align: center; padding: 40px; color: #4B2E0F; }
 .dive-no-results { text-align: center; padding: 20px; color: #4B2E0F; font-style: italic; }
+.dive-table th:nth-child(3),
+.dive-table td:nth-child(3) {
+  max-width: 120px;
+  white-space: normal;
+}
+.dive-table th:nth-child(6),
+.dive-table td:nth-child(6) {
+  width: 70px;
+}
+.dive-table th:nth-child(7),
+.dive-table td:nth-child(7) {
+  width: 80px;
+}
+.dive-table th:nth-child(10),
+.dive-table td:nth-child(10) {
+  min-width: 220px;
+}
 </style>
 
 <div class="dive-stats">
@@ -187,7 +204,7 @@ h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-c
         <th data-col="3">Location</th>
         <th data-col="4">Type</th>
         <th data-col="5">Max Depth (m)</th>
-        <th data-col="8">Total Time</th>
+        <th data-col="8">Total Time (min)</th>
         <th data-col="12">Vis (m)</th>
         <th data-col="13">Current</th>
         <th data-col="18">Key Species</th>
