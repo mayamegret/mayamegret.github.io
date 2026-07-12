@@ -5,23 +5,33 @@ permalink: /species/
 author_profile: false
 ---
 
-A log of every species I've observed in the wild, automatically synced from my <a href="https://www.inaturalist.org/people/mayamegret" target="_blank" style="text-decoration: underline;">iNaturalist profile</a> Updated every time I log a new observation!
+A living log of every species I've observed in the wild, automatically synced from my <a href="https://www.inaturalist.org/people/mayamegret" target="_blank" style="text-decoration: underline;">iNaturalist profile</a>. Updated every time I log a new observation!
 
-<div id="species-stats" style="margin-bottom: 1.5rem; font-size: 0.95rem;"></div>
+<div id="species-stats" style="margin-bottom: 1rem; font-size: 0.95rem;"></div>
 
 <div style="display: flex; gap: 10px; margin-bottom: 1.5rem; flex-wrap: wrap; align-items: center;">
-<input type="text" id="species-search" placeholder="Search by common or scientific name..."
-  style="flex: 1; min-width: 200px; padding: 8px 12px; border: 2px solid #C05C27; border-radius: 6px; background: rgba(255,255,255,0.5); color: #C05C27; font-size: 0.9rem; outline: none;">
-<button id="faves-toggle" onclick="toggleFavesOnly()"
-  style="padding: 8px 16px; background: #C05C27; color: #fff; border: none; border-radius: 6px; cursor: pointer; font-size: 0.9rem; display: flex; align-items: center; gap: 6px; white-space: nowrap;">
-  <i class="fas fa-heart"></i> Favorites only
-</button>
+  <input type="text" id="species-search" placeholder="Search by common or scientific name..."
+    style="flex: 1; min-width: 200px; padding: 8px 12px; border: 2px solid #C05C27; border-radius: 6px; background: rgba(255,255,255,0.5); color: #C05C27; font-size: 0.9rem; outline: none;">
+  <button id="faves-toggle" onclick="toggleFavesOnly()"
+    style="padding: 8px 16px; background: #C05C27; color: #fff; border: none; border-radius: 6px; cursor: pointer; font-size: 0.9rem; display: flex; align-items: center; gap: 6px; white-space: nowrap;">
+    <i class="fas fa-heart"></i> Favorites only
+  </button>
+  <button onclick="showRandomFavorite()"
+    style="padding: 8px 16px; background: #7a2a00; color: #fff; border: none; border-radius: 6px; cursor: pointer; font-size: 0.9rem; display: flex; align-items: center; gap: 6px; white-space: nowrap;">
+    <i class="fas fa-dice"></i> Random favorite
+  </button>
 </div>
 
-<div id="species-loading"
-  style="text-align:center; padding: 40px; font-size: 1.1rem; color: #2c4a3e;">Loading species...</div>
+<div id="species-loading" style="text-align:center; padding: 40px; font-size: 1.1rem; color: #C05C27;">Loading species...</div>
 <div id="species-error" style="display:none; text-align:center; padding: 40px; color: #c0392b;"></div>
 <div id="species-container"></div>
+
+<div id="fave-modal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.7); z-index:9999; align-items:center; justify-content:center; padding:20px; box-sizing:border-box;">
+  <div style="background:#F2DCF0; border-radius:12px; max-width:620px; width:100%; max-height:85vh; overflow-y:auto; padding:24px; position:relative; box-shadow:0 8px 32px rgba(0,0,0,0.3);">
+    <button onclick="closeFaveModal()" style="position:absolute; top:14px; right:18px; background:none; border:none; font-size:1.8rem; cursor:pointer; color:#C05C27; line-height:1;">&times;</button>
+    <div id="fave-modal-content"></div>
+  </div>
+</div>
 
 <style>
 body, #main, article.page, .page__inner-wrap, .page__content, .initial-content, .page__wrap {
@@ -30,34 +40,28 @@ body, #main, article.page, .page__inner-wrap, .page__content, .initial-content, 
 .sidebar { background-color: #C05C27 !important; }
 a { color: #C05C27 !important; }
 a:hover { color: #8a3e18 !important; }
-h1, h2, h3, h4, h5, h6 { color: #C05C27 !important; border-bottom-color: #C05C27 !important; }
+h1, h2, h3, h4, h5, h6 { color: #C05C27 !important; }
 body { color: #C05C27 !important; }
 .page__title { color: #C05C27 !important; }
 .page__title::after { background-color: #C05C27 !important; }
-#species-stats { color: #7a2a00 !important; }
-.species-group-title { border-left-color: #C05C27 !important; color: #C05C27 !important; }
-.species-group-title i { color: #C05C27 !important; }
-.species-group-count { color: #7a2a00 !important; opacity: 0.6; }
-.species-card-common { color: #7a2a00 !important; }
-.species-card-scientific { color: #555 !important; }
-.species-card-count { color: #888 !important; }
-.species-card { background: rgba(255,255,255,0.35) !important; }
-.species-card-placeholder { color: #C05C27 !important; background: rgba(192,92,39,0.1) !important; }
-.species-fave-badge { color: #C05C27 !important; }
-  
+h1::after, h2::after, h3::after { background-color: #C05C27 !important; border-color: #C05C27 !important; }
+#species-stats { color: #C05C27 !important; }
+#species-loading { color: #C05C27 !important; }
+#fave-modal { display: none; }
+#fave-modal.open { display: flex !important; }
 .species-group { margin-bottom: 2.5rem; }
 .species-group-title {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #2c4a3e;
-  border-left: 4px solid #ffa44a;
+  color: #C05C27 !important;
+  border-left: 4px solid #C05C27 !important;
   padding-left: 12px;
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.species-group-title i { color: #2c4a3e; }
+.species-group-title i { color: #C05C27 !important; }
 .species-group-count {
   font-size: 0.85rem;
   font-weight: normal;
@@ -88,11 +92,11 @@ body { color: #C05C27 !important; }
 .species-card-placeholder {
   width: 100%;
   aspect-ratio: 1;
-  background: rgba(255,164,74,0.15);
+  background: rgba(192,92,39,0.1);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffa44a;
+  color: #C05C27;
   font-size: 2rem;
 }
 .species-card-info {
@@ -101,7 +105,7 @@ body { color: #C05C27 !important; }
 .species-card-common {
   font-size: 0.85rem;
   font-weight: bold;
-  color: #2c4a3e;
+  color: #C05C27;
   margin: 0 0 2px 0;
   line-height: 1.3;
 }
@@ -180,6 +184,17 @@ const FAVORITES = [
   "Notamacropus parryi",
   "Drosera spatulata"
 ];
+
+const PERSONAL_NOTES = {
+  "Dryophytes cinereus": "I love frogs in general but I have a special soft spot for green tree frogs. My family and I have spent many afternoons at Huntley Meadows Park photographing them together. In the summer of 2022, my dad and I built a pond, and green tree frogs were the very first frogs to come and live in it!",
+  "Hemiscyllium ocellatum": "I saw several epaulette sharks in Australia and find the way they use their pectoral fins to walk along the reef floor absolutely fascinating. They are one of the few sharks that can tolerate low oxygen environments by essentially holding their breath!",
+  "Heterocentrotus mamillatus": "I love the thickness of the spikes on pencil urchins, and their colors are just so bright and beautiful. A real treat to spot underwater.",
+  "Crocuta crocuta": "My first encounter with a spotted hyena was with my mom on safari in June 2025, where we witnessed a hyena and leopard fighting over an impala that had been recently killed by the leopard. The hyena won, stealing the carcass and leaving the leopard with only the stomach and intestines!",
+  "Giraffa giraffa giraffa": "Giraffes are obviously so cool and unique, but when you see them in real life up close in the wild, it really is something else. I especially love the way they drink water, keeping their legs practically perfectly straight and spread wide apart, and the way water flicks from their tongue.",
+  "Sakuraeolis arcana": "This species was super integral to my thesis research in Mozambique and holds a very special place in my heart. I documented many individuals across multiple sites and it never got old spotting one on a dive!",
+  "Taenianotus triacanthus": "The leaf scorpionfish is just super fascinating to spot and observe. The way they mimic a dead leaf drifting in the current is extraordinary, and they are so well camouflaged that spotting one feels like a real achievement.",
+  "Hippocampus camelopardalis": "The first seahorse I ever saw was in Mozambique on a seahorse survey with MAR and I fell in love with these guys then and there. The giraffe seahorse is named for its spotted patterning and it is just so beautifully unique."
+};
 
 const ANCESTOR_MAP = [
   { key: 'Chondrichthyes',  id: 47273  },
@@ -348,14 +363,14 @@ function renderSpecies(species) {
   document.getElementById('species-loading').style.display = 'none';
 }
 
-  let allSpeciesData = [];
+let allSpeciesData = [];
 let favesOnly = false;
 let searchQuery = '';
 
 function toggleFavesOnly() {
   favesOnly = !favesOnly;
   const btn = document.getElementById('faves-toggle');
-  btn.style.background = favesOnly ? '#ffa44a' : '#2c4a3e';
+  btn.style.background = favesOnly ? '#8a3e18' : '#C05C27';
   btn.innerHTML = favesOnly
     ? '<i class="fas fa-heart"></i> Show all'
     : '<i class="fas fa-heart"></i> Favorites only';
@@ -376,7 +391,74 @@ function applyFilters() {
   }
   renderSpecies(filtered);
 }
+
+async function showRandomFavorite() {
+  const notedFaves = Object.keys(PERSONAL_NOTES);
+  const randomSci = notedFaves[Math.floor(Math.random() * notedFaves.length)];
+  const modal = document.getElementById('fave-modal');
+  const content = document.getElementById('fave-modal-content');
+  modal.classList.add('open');
+  content.innerHTML = '<div style="text-align:center; padding:40px; color:#C05C27;"><i class="fas fa-spinner fa-spin fa-2x"></i><br><br>Loading...</div>';
+
+  try {
+    const taxaRes = await fetch(`https://api.inaturalist.org/v1/taxa?q=${encodeURIComponent(randomSci)}&per_page=5`);
+    const taxaData = await taxaRes.json();
+    const taxon = taxaData.results.find(t => t.name === randomSci) || taxaData.results[0];
+    if (!taxon) { content.innerHTML = '<p style="color:#C05C27;">Could not load species. Try again!</p>'; return; }
+
+    const myObs = allSpeciesData.find(s => s.taxon.name === randomSci);
+    const obsCount = myObs ? myObs.count : 0;
+    const commonName = taxon.preferred_common_name || taxon.name;
+    const photo = taxon.default_photo ? taxon.default_photo.medium_url : (myObs && myObs.photo ? myObs.photo : null);
+    const description = taxon.wikipedia_summary || '';
+    const status = taxon.conservation_status ? taxon.conservation_status.status_name : null;
+    const personalNote = PERSONAL_NOTES[randomSci] || '';
+
+    content.innerHTML = `
+      <div style="display:flex; gap:18px; align-items:flex-start; flex-wrap:wrap;">
+        ${photo ? `<img src="${photo}" alt="${commonName}" style="width:200px; height:200px; object-fit:cover; border-radius:10px; flex-shrink:0; box-shadow:0 2px 12px rgba(0,0,0,0.15);">` : ''}
+        <div style="flex:1; min-width:180px;">
+          <div style="font-size:1.4rem; font-weight:bold; color:#C05C27; margin-bottom:2px;">${commonName}</div>
+          <div style="font-size:0.88rem; font-style:italic; color:#999; margin-bottom:14px;">${randomSci}</div>
+          <div style="display:flex; gap:20px; flex-wrap:wrap; margin-bottom:14px;">
+            <div style="text-align:center;">
+              <div style="font-size:1.6rem; font-weight:bold; color:#C05C27;">${obsCount}</div>
+              <div style="font-size:0.72rem; color:#999; text-transform:uppercase; letter-spacing:0.05em;">My observations</div>
+            </div>
+            ${status ? `<div style="text-align:center;">
+              <div style="font-size:0.9rem; font-weight:bold; color:#C05C27;">${status}</div>
+              <div style="font-size:0.72rem; color:#999; text-transform:uppercase; letter-spacing:0.05em;">Conservation status</div>
+            </div>` : ''}
+          </div>
+          ${personalNote ? `
+            <div style="background:rgba(192,92,39,0.12); border-left:4px solid #C05C27; padding:10px 14px; border-radius:6px; font-size:0.88rem; color:#7a2a00; line-height:1.6;">
+              <i class="fas fa-heart" style="color:#C05C27; margin-right:6px;"></i>${personalNote}
+            </div>` : ''}
+        </div>
+      </div>
+      ${description ? `<div style="margin-top:16px; font-size:0.85rem; color:#7a2a00; line-height:1.7; border-top:1px solid rgba(192,92,39,0.2); padding-top:14px;">${description}</div>` : ''}
+      <div style="margin-top:14px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+        <a href="https://www.inaturalist.org/taxa/${taxon.id}" target="_blank" style="font-size:0.82rem; color:#C05C27; text-decoration:underline;">View on iNaturalist →</a>
+        <button onclick="showRandomFavorite()" style="padding:6px 14px; background:#C05C27; color:#fff; border:none; border-radius:6px; cursor:pointer; font-size:0.82rem; display:flex; align-items:center; gap:6px;">
+          <i class="fas fa-dice"></i> Another one
+        </button>
+      </div>
+    `;
+  } catch (err) {
+    content.innerHTML = '<p style="color:#C05C27;">Could not load species data. Please try again.</p>';
+    console.error(err);
+  }
+}
+
+function closeFaveModal() {
+  document.getElementById('fave-modal').classList.remove('open');
+}
+
 document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById('fave-modal').addEventListener('click', function(e) {
+    if (e.target === this) closeFaveModal();
+  });
+
   fetchAllObservations()
     .then(deduplicateBySpecies)
     .then(species => {
