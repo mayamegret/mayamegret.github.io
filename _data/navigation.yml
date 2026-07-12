@@ -18,8 +18,10 @@ main:
     url: /dive-log/
   - title: "Species Log"
     url: /species/
-  - title: "Blog Posts"
+  - title: "Field Notes"
     url: /posts/
+  - title: "Cook Book"
+    url: /cookbook/
 
   # - title: "CV"
   #   url: /cv-json/
