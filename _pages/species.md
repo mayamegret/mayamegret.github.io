@@ -186,14 +186,14 @@ const FAVORITES = [
 ];
 
 const PERSONAL_NOTES = {
-  "Dryophytes cinereus": "I love frogs in general but I have a special soft spot for green tree frogs. My family and I have spent many afternoons at Huntley Meadows Park photographing them together. In the summer of 2022, my dad and I built a pond, and green tree frogs were the very first frogs to come and live in it!",
-  "Hemiscyllium ocellatum": "I saw several epaulette sharks in Australia and find the way they use their pectoral fins to walk along the reef floor absolutely fascinating. They are one of the few sharks that can tolerate low oxygen environments by essentially holding their breath!",
-  "Heterocentrotus mamillatus": "I love the thickness of the spikes on pencil urchins, and their colors are just so bright and beautiful. A real treat to spot underwater.",
-  "Crocuta crocuta": "My first encounter with a spotted hyena was with my mom on safari in June 2025, where we witnessed a hyena and leopard fighting over an impala that had been recently killed by the leopard. The hyena won, stealing the carcass and leaving the leopard with only the stomach and intestines!",
-  "Giraffa giraffa giraffa": "Giraffes are obviously so cool and unique, but when you see them in real life up close in the wild, it really is something else. I especially love the way they drink water, keeping their legs practically perfectly straight and spread wide apart, and the way water flicks from their tongue.",
-  "Sakuraeolis arcana": "This species was super integral to my thesis research in Mozambique and holds a very special place in my heart. I documented many individuals across multiple sites and it never got old spotting one on a dive!",
-  "Taenianotus triacanthus": "The leaf scorpionfish is just super fascinating to spot and observe. The way they mimic a dead leaf drifting in the current is extraordinary, and they are so well camouflaged that spotting one feels like a real achievement.",
-  "Hippocampus camelopardalis": "The first seahorse I ever saw was in Mozambique on a seahorse survey with MAR and I fell in love with these guys then and there. The giraffe seahorse is named for its spotted patterning and it is just so beautifully unique."
+  "Dryophytes cinereus": "I love frogs in general but I love green tree frogs because my family and I have spent many afternoons at Huntley Meadows Park photographing the green tree frogs. Also in the summer of 2022, my dad and I built a pond and green tree frogs were the first frogs that lived in our pond.",
+  "Hemiscyllium ocellatum": "I saw several epaulettes in Australia and find the way they use their fins to walk fascinating.",
+  "Heterocentrotus mamillatus": "I love the thickness of the spikes of these guys, and their colors are just so bright and beautiful.",
+  "Crocuta crocuta": "I love the spotted hyena, and my first encounter with one was with my mom on safari in June 2025, where we witnessed a hyena and leopard fighting over an impala that had been recently hunted and killed by the leopard. The hyena won, stealing the carcass and leaving the leopard with only the stomach and intestines!",
+  "Giraffa giraffa giraffa": "Giraffes are obviously so cool and unique but when you see them in real life up close in the wild, it really is incredible. I really love the way they drink water, keeping their legs practically perfectly straight and spread out, and how the water flicks from their tongue.",
+  "Sakuraeolis arcana": "This species was super integral to my thesis research and holds a special place in my heart!",
+  "Taenianotus triacanthus": "Just super fascinating to spot and observe!",
+  "Hippocampus camelopardalis": "The first seahorse I ever saw was in Mozambique on a seahorse survey and I fell in love with these guys then and there!"
 };
 
 const ANCESTOR_MAP = [
