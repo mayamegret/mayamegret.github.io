@@ -20,8 +20,6 @@ main:
     url: /species/
   - title: "Field Notes"
     url: /posts/
-  - title: "Cook Book"
-    url: /cookbook/
 
   # - title: "CV"
   #   url: /cv-json/
