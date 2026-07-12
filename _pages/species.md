@@ -186,13 +186,13 @@ const FAVORITES = [
 ];
 
 const PERSONAL_NOTES = {
-  "Dryophytes cinereus": "I love frogs in general but I love green tree frogs because my family and I have spent many afternoons at Huntley Meadows Park photographing the green tree frogs. Also in the summer of 2022, my dad and I built a pond and green tree frogs were the first frogs that lived in our pond.",
-  "Hemiscyllium ocellatum": "I saw several epaulettes in Australia and find the way they use their fins to walk fascinating.",
+  "Dryophytes cinereus": "I love frogs in general but I especially love green tree frogs because my family and I have spent many afternoons at Huntley Meadows Park photographing them resting on the big elephant ear leafs. Also in the summer of 2022, my dad and I built a pond and green tree frogs were the first frogs that lived in our pond.",
+  "Hemiscyllium ocellatum": "I saw several epaulette sharks in Australia and find the way they use their pectoral fins to walk along the reef floor absolutely fascinating.",
   "Heterocentrotus mamillatus": "I love the thickness of the spikes of these guys, and their colors are just so bright and beautiful.",
   "Crocuta crocuta": "I love the spotted hyena, and my first encounter with one was with my mom on safari in June 2025, where we witnessed a hyena and leopard fighting over an impala that had been recently hunted and killed by the leopard. The hyena won, stealing the carcass and leaving the leopard with only the stomach and intestines!",
   "Giraffa giraffa giraffa": "Giraffes are obviously so cool and unique but when you see them in real life up close in the wild, it really is incredible. I really love the way they drink water, keeping their legs practically perfectly straight and spread out, and how the water flicks from their tongue.",
-  "Sakuraeolis arcana": "This species was super integral to my thesis research and holds a special place in my heart!",
-  "Taenianotus triacanthus": "Just super fascinating to spot and observe!",
+  "Sakuraeolis arcana": "This species was super integral to my thesis research and holds a special place in my heart! I love the orange coloring (my favorite color of course) and the beautiful cerata that flow in the surge",
+  "Taenianotus triacanthus": "The leaf scorpionfish is just super fascinating to spot and observe!",
   "Hippocampus camelopardalis": "The first seahorse I ever saw was in Mozambique on a seahorse survey and I fell in love with these guys then and there!"
 };
 
