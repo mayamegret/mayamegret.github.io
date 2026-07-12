@@ -140,10 +140,10 @@ h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-c
   font-weight: bold;
   white-space: nowrap;
 }
-.dive-type-scientific { background: rgba(75,46,15,0.2); color: #4B2E0F; }
-.dive-type-recreational { background: rgba(255,164,74,0.3); color: #8a5a00; }
-.dive-type-training { background: rgba(100,100,200,0.15); color: #333; }
-.dive-type-other { background: rgba(200,200,200,0.3); color: #555; }
+.dive-type-scientific { background: rgba(34,139,34,0.2); color: #1a5c1a; }
+.dive-type-recreational { background: rgba(219,112,147,0.25); color: #9b3060; }
+.dive-type-training { background: rgba(100,149,237,0.25); color: #2a5090; }
+.dive-type-professional { background: rgba(255,164,74,0.3); color: #8a5a00; }
 .dive-loading { text-align: center; padding: 40px; color: #4B2E0F; }
 .dive-no-results { text-align: center; padding: 20px; color: #4B2E0F; font-style: italic; }
 .dive-table th:nth-child(3),
@@ -187,6 +187,7 @@ h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-c
     <option value="Scientific">Scientific</option>
     <option value="Recreational">Recreational</option>
     <option value="Training">Training</option>
+    <option value="Professional">Professional</option>
   </select>
   <select id="dive-location-filter">
     <option value="">All locations</option>
@@ -225,6 +226,7 @@ function classifyDiveType(type) {
   const t = type.toLowerCase();
   if (t.includes('divemaster') || t.includes('training') || t.includes('evaluation') || t.includes('rescue')) return 'Training';
   if (t.includes('fun dive')) return 'Recreational';
+  if (t.includes('professional') || t.includes('guided') || t.includes('work') || t.includes('lead')) return 'Professional';
   return 'Scientific';
 }
 
@@ -232,6 +234,7 @@ function getDiveTypeClass(category) {
   if (category === 'Scientific') return 'dive-type-scientific';
   if (category === 'Recreational') return 'dive-type-recreational';
   if (category === 'Training') return 'dive-type-training';
+  if (category === 'Professional') return 'dive-type-professional';
   return 'dive-type-other';
 }
 
