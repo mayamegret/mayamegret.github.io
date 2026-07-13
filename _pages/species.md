@@ -194,6 +194,12 @@ const PERSONAL_NOTES = {
   "Sakuraeolis arcana": "This species was super integral to my thesis research and holds a special place in my heart! I love the orange coloring (my favorite color of course) and the beautiful cerata that flow in the surge",
   "Taenianotus triacanthus": "The leaf scorpionfish is just super fascinating to spot and observe!",
   "Hippocampus camelopardalis": "The first seahorse I ever saw was in Mozambique on a seahorse survey and I fell in love with these guys then and there!"
+  "Drosera spatulata": "A carnivorous plant I spotted several times during my study abroad program in Australia. The red is so vibrant and I think they rock!",
+"Gymnothorax favagineus": "I love spotting moray eels in all their shapes and colors and forms, but the Laced moray is one of my favorites because of its pattern.",
+"Tritoniopsis elegans": "I spotted two Tritoniopsis elegans in the rockpool of Zavora, and I screamed so loud I was so excited. The cerata are unlike anything I had seen before, I find them so mesmerizing and unique and beautiful.",
+"Hexabranchus sanguineus": "Hexabranchus are the biggest nudis and wow they are so cool. My research included data collection on nudibranchs from 3mm to 300mm, Spanish dancers sitting at the highest end of that, so much more massive than any other species I saw.",
+"Pteraeolidia semperi": "I am lucky enough to spot a blue dragon on most of my dives to the Sea Tiger shipwreck. The blue dragons are so vivid blue and purple and their curly cerata are just so stunning.",
+"Glaucilla marginata": "Also commonly known as the blue dragon, I love these because of how unique they are! Their shape is like no other nudi I have ever seen, and spotting them in Mozambique led to hours crouching on the beach taking photographs.",
 };
 
 const ANCESTOR_MAP = [
