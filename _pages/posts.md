@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Blog Posts"
+title: "Field Notes"
 permalink: /posts/
 author_profile: false
 ---
