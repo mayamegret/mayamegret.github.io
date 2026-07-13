@@ -95,21 +95,6 @@ h1::after, h2::after, h3::after { background-color: #1A4A5C !important; border-c
   flex-shrink: 0;
 }
 .animate-btn:hover { background: #2e7a9a; }
-.show-all-btn {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  padding: 6px 14px;
-  background: rgba(26,74,92,0.15);
-  color: #1A4A5C;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 0.85rem;
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.show-all-btn:hover { background: rgba(26,74,92,0.25); }
 </style>
 
 <p>A record of my travels and dives around the world! <i class="fas fa-anchor" style="color:#1a1a1a;"></i> = dive site &nbsp; <i class="fas fa-map-marker-alt" style="color:#1a1a1a;"></i> = visited place</p>
