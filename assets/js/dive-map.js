@@ -4,7 +4,7 @@ const locations = [
     country: "USA",
     coords: [27.77, -82.64],
     type: "visit",
-    dates: "2005 and ongoing",
+    dates: "2002 and ongoing",
     description: "I grew up visiting my grandpa in Florida often, spending birthdays and spring breaks and summers at his condo in St. Petersburg. We always went to the pink palace (the Don CeSar) for ice cream, went kayaking in the mangroves of Fort De Soto with manatees, spent long afternoons on the beach looking for shells and horseshoe crabs, watching dolphins swim by from his backyard, chase lizards around at sunset, spend days at the pool, go on airplane rides with my grandpa, and more and more. I really cherish this time with my family and St. Petersburg will always have a special place in my heart.",    species: [
       "Florida manatee <em>(Trichechus manatus latirostris)</em>",
       "Atlantic bottlenose dolphin <em>(Tursiops truncatus)</em>",
