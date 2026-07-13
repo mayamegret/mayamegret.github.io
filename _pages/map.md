@@ -133,7 +133,7 @@ h1::after, h2::after, h3::after { background-color: #1A4A5C !important; border-c
 <div class="timeline-controls">
   <div class="timeline-year-label">Up to: <strong id="year-display">2026</strong></div>
   <div class="timeline-slider-wrap">
-    <input type="range" id="year-slider" min="2005" max="2026" value="2026" step="1" oninput="onSliderChange(this.value)">
+    <input type="range" id="year-slider" min="2002" max="2026" value="2026" step="1" oninput="onSliderChange(this.value)">
     <div class="timeline-years-row">
       <span>2005</span>
       <span>2010</span>
