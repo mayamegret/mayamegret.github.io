@@ -25,7 +25,7 @@ h1::after, h2::after, h3::after { background-color: #1A4A5C !important; border-c
   padding-right: 1em !important;
 }
 .leaflet-container { background: #FBF4D0 !important; }
-#dive-map { height: 80vh; width: 100%; margin-top: 16px; margin-right: 1em; border-radius: 8px; position: relative; z-index: 1; }
+#dive-map { height: 80vh; width: 100%; margin-top: 16px; border-radius: 8px; position: relative; z-index: 1; }
 .popup-title { font-size: 1rem; font-weight: bold; margin: 0 0 4px 0; }
 .popup-dates { color: #777; font-size: 0.82rem; margin: 2px 0 6px 0; }
 .popup-description { font-size: 0.88rem; margin: 6px 0; }
@@ -52,18 +52,18 @@ h1::after, h2::after, h3::after { background-color: #1A4A5C !important; border-c
   display: flex;
   align-items: center;
   gap: 16px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 .timeline-year-label {
   font-size: 0.9rem;
   font-weight: 600;
   color: #1A4A5C;
   white-space: nowrap;
-  min-width: 80px;
+  min-width: 90px;
 }
 .timeline-slider-wrap {
   flex: 1;
-  min-width: 200px;
+  min-width: 0;
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -92,6 +92,7 @@ h1::after, h2::after, h3::after { background-color: #1A4A5C !important; border-c
   cursor: pointer;
   font-size: 0.85rem;
   white-space: nowrap;
+  flex-shrink: 0;
 }
 .animate-btn:hover { background: #2e7a9a; }
 .show-all-btn {
@@ -106,6 +107,7 @@ h1::after, h2::after, h3::after { background-color: #1A4A5C !important; border-c
   cursor: pointer;
   font-size: 0.85rem;
   white-space: nowrap;
+  flex-shrink: 0;
 }
 .show-all-btn:hover { background: rgba(26,74,92,0.25); }
 </style>
@@ -135,12 +137,11 @@ h1::after, h2::after, h3::after { background-color: #1A4A5C !important; border-c
   <div class="timeline-slider-wrap">
     <input type="range" id="year-slider" min="2002" max="2026" value="2026" step="1" oninput="onSliderChange(this.value)">
     <div class="timeline-years-row">
-  <span>2002</span>
-  <span>2008</span>
-  <span>2014</span>
-  <span>2020</span>
-  <span>2026</span>
-</div>
+      <span>2002</span>
+      <span>2008</span>
+      <span>2014</span>
+      <span>2020</span>
+      <span>2026</span>
     </div>
   </div>
   <button class="animate-btn" id="animate-btn" onclick="animateJourney()">
