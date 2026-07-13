@@ -110,6 +110,7 @@ Photography has always been a big part of my life. My great uncle on my moms sid
     <img id="maya-stack-img" src="/images/blog/MayaNikon1.jpg" alt="Maya with camera" style="width: 100%; border-radius: 8px; height: auto; display: block;">
     <span id="maya-stack-badge" style="position: absolute; top: 8px; right: 8px; background: rgba(0,0,0,0.6); color: #fff; font-size: 0.8rem; padding: 2px 8px; border-radius: 20px; font-weight: bold;">+1</span>
   </div>
+  <img src="/images/blog/MayaArthur.jpg" alt="Maya and Uncle Arthur" style="flex: 1 1 0; min-width: 0; border-radius: 8px; height: auto; aspect-ratio: unset; object-fit: unset;">
 </div>
 
 <script>
