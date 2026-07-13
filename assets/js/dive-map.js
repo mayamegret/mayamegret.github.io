@@ -793,13 +793,6 @@ window.onSliderChange = function(val) {
   applyFilters();
 };
 
-window.showAll = function() {
-  currentYearFilter = 2026;
-  document.getElementById('year-slider').value = 2026;
-  document.getElementById('year-display').textContent = '2026';
-  applyFilters();
-};
-
 // Animate journey
 window.animateJourney = function() {
   if (isAnimating) {
