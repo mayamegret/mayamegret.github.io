@@ -147,9 +147,6 @@ h1::after, h2::after, h3::after { background-color: #1A4A5C !important; border-c
   <button class="animate-btn" id="animate-btn" onclick="animateJourney()">
     <i class="fas fa-play"></i> Animate journey
   </button>
-  <button class="show-all-btn" onclick="showAll()">
-    <i class="fas fa-globe"></i> Show all
-  </button>
 </div>
 
 <div id="dive-map"></div>
