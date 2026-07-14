@@ -667,6 +667,25 @@ const locations = [
     photos: ["/images/photography/Divemaster1.jpg", "/images/photography/Divemaster2.JPG"],
     galleryId: "divemaster"
   }
+
+  {
+  name: "North Shore",
+  country: "Hawai'i, USA",
+  coords: [21.60, -158.10],
+  type: "dive",
+  dates: "July 2026",
+  description: "I went diving in North Shore with some coworkers and it was a great day! Our first dive was at Three Tables, where we saw so many nudibranchs! After our 67 minute dive, we surfaced and grabbed some delicious poke before heading to Haleiwa Trench for our second dive. The visibility on the second dive was very low but the vibes were great, we saw many more nudis including 3 Spanish Dancers (the largest nudi genus, they get huge!). I had a great time taking photographs and spotting my favorite critters underwater!",
+  species: [
+  "Yellow-margined Spanish dancer <em>(Hexabranchus aureomarginatus)</em>",
+  "Gold lace nudibranch <em>(Halgerda terramtuentis)</em>",
+  "Caramel nudibranch <em>(Glossodoris rufomarginata)</em>",
+  "Tom Smith's nudibranch <em>(Ardeadoris tomsmithi)</em>",
+  "Seven eleven crab <em>(Carpilius maculatus)</em>",
+  "Fellow's nudibranch <em>(Hiatodoris fellowsi)</em>"
+],
+  photos: ["/images/photography/NorthShore1.JPG", "/images/photography/NorthShore2.JPG", "/images/photography/NorthShore3.JPG", "/images/photography/NorthShore4.JPG", "/images/photography/NorthShore5.JPG", "/images/photography/NorthShore6.JPG", "/images/photography/NorthShore7.JPG"],
+  galleryId: "north-shore"
+},
 ];
 
 // Extract year from dates string
