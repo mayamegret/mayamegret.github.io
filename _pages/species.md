@@ -5,7 +5,7 @@ permalink: /species/
 author_profile: false
 ---
 
-A living log of every species I've observed in the wild, automatically synced from my <a href="https://www.inaturalist.org/people/mayamegret" target="_blank" style="text-decoration: underline;">iNaturalist profile</a>, updated every time I log a new observation!
+A log of every species I've observed in the wild, automatically synced from my <a href="https://www.inaturalist.org/people/mayamegret" target="_blank" style="text-decoration: underline;">iNaturalist profile</a>, updated every time I log a new observation!
 
 <div id="species-stats" style="margin-bottom: 1rem; font-size: 0.95rem;"></div>
 
