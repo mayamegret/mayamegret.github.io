@@ -5,7 +5,7 @@ permalink: /species/
 author_profile: false
 ---
 
-A log of every species I've observed in the wild, automatically synced from my <a href="https://www.inaturalist.org/people/mayamegret" target="_blank" style="text-decoration: underline;">iNaturalist profile</a>, updated every time I log a new observation!
+A log of every species I've observed in the wild, automatically synced from my <a href="https://www.inaturalist.org/people/mayamegret" target="_blank" style="text-decoration: underline;">iNaturalist profile</a>. Updated every time I log a new observation!
 
 <div id="species-stats" style="margin-bottom: 1rem; font-size: 0.95rem;"></div>
 
@@ -193,13 +193,13 @@ const PERSONAL_NOTES = {
   "Giraffa giraffa giraffa": "Giraffes are obviously so cool and unique but when you see them in real life up close in the wild, it really is incredible. I really love the way they drink water, keeping their legs practically perfectly straight and spread out, and how the water flicks from their tongue.",
   "Sakuraeolis arcana": "This species was super integral to my thesis research and holds a special place in my heart! I love the orange coloring (my favorite color of course) and the beautiful cerata that flow in the surge",
   "Taenianotus triacanthus": "The leaf scorpionfish is just super fascinating to spot and observe!",
-  "Hippocampus camelopardalis": "The first seahorse I ever saw was in Mozambique on a seahorse survey and I fell in love with these guys then and there!"
+  "Hippocampus camelopardalis": "The first seahorse I ever saw was in Mozambique on a seahorse survey and I fell in love with these guys then and there!",
   "Drosera spatulata": "A carnivorous plant I spotted several times during my study abroad program in Australia. The red is so vibrant and I think they rock!",
-"Gymnothorax favagineus": "I love spotting moray eels in all their shapes and colors and forms, but the Laced moray is one of my favorites because of its pattern.",
-"Tritoniopsis elegans": "I spotted two Tritoniopsis elegans in the rockpool of Zavora, and I screamed so loud I was so excited. The cerata are unlike anything I had seen before, I find them so mesmerizing and unique and beautiful.",
-"Hexabranchus sanguineus": "Hexabranchus are the biggest nudis and wow they are so cool. My research included data collection on nudibranchs from 3mm to 300mm, Spanish dancers sitting at the highest end of that, so much more massive than any other species I saw.",
-"Pteraeolidia semperi": "I am lucky enough to spot a blue dragon on most of my dives to the Sea Tiger shipwreck. The blue dragons are so vivid blue and purple and their curly cerata are just so stunning.",
-"Glaucilla marginata": "Also commonly known as the blue dragon, I love these because of how unique they are! Their shape is like no other nudi I have ever seen, and spotting them in Mozambique led to hours crouching on the beach taking photographs.",
+  "Gymnothorax favagineus": "I love spotting moray eels in all their shapes and colors and forms, but the Laced moray is one of my favorites because of its pattern.",
+  "Tritoniopsis elegans": "I spotted two Tritoniopsis elegans in the rockpool of Zavora, and I screamed so loud I was so excited. The cerata are unlike anything I had seen before, I find them so mesmerizing and unique and beautiful.",
+  "Hexabranchus sanguineus": "Hexabranchus are the biggest nudis and wow they are so cool. My research included data collection on nudibranchs from 3mm to 300mm, Spanish dancers sitting at the highest end of that, so much more massive than any other species I saw.",
+  "Pteraeolidia semperi": "I am lucky enough to spot a blue dragon on most of my dives to the Sea Tiger shipwreck. The blue dragons are so vivid blue and purple and their curly cerata are just so stunning.",
+  "Glaucilla marginata": "Also commonly known as the blue dragon, I love these because of how unique they are! Their shape is like no other nudi I have ever seen, and spotting them in Mozambique led to hours crouching on the beach taking photographs."
 };
 
 const ANCESTOR_MAP = [
@@ -311,7 +311,7 @@ function renderSpecies(species) {
 
     const title = document.createElement('div');
     title.className = 'species-group-title';
-    title.innerHTML = `<i class="${group.icon}"></i> ${group.label} <span class="species-group-count">(${items.length})</span>`;
+    title.innerHTML = '<i class="' + group.icon + '"></i> ' + group.label + ' <span class="species-group-count">(' + items.length + ')</span>';
     section.appendChild(title);
 
     const grid = document.createElement('div');
@@ -321,7 +321,7 @@ function renderSpecies(species) {
       const taxon = s.taxon;
       const commonName = taxon.preferred_common_name || taxon.name;
       const sciName = taxon.name;
-      const inatUrl = `https://www.inaturalist.org/taxa/${taxon.id}`;
+      const inatUrl = 'https://www.inaturalist.org/taxa/' + taxon.id;
       const isFave = FAVORITES.includes(sciName);
 
       const card = document.createElement('a');
@@ -353,11 +353,8 @@ function renderSpecies(species) {
 
       const info = document.createElement('div');
       info.className = 'species-card-info';
-      info.innerHTML = `
-        <div class="species-card-common">${commonName}</div>
-        <div class="species-card-scientific">${sciName}</div>
-        <div class="species-card-count">${s.count} observation${s.count !== 1 ? 's' : ''}</div>
-      `;
+      const plural = s.count !== 1 ? 's' : '';
+      info.innerHTML = '<div class="species-card-common">' + commonName + '</div><div class="species-card-scientific">' + sciName + '</div><div class="species-card-count">' + s.count + ' observation' + plural + '</div>';
       card.appendChild(info);
       grid.appendChild(card);
     });
@@ -407,7 +404,7 @@ async function showRandomFavorite() {
   content.innerHTML = '<div style="text-align:center; padding:40px; color:#C05C27;"><i class="fas fa-spinner fa-spin fa-2x"></i><br><br>Loading...</div>';
 
   try {
-    const taxaRes = await fetch(`https://api.inaturalist.org/v1/taxa?q=${encodeURIComponent(randomSci)}&per_page=5`);
+    const taxaRes = await fetch('https://api.inaturalist.org/v1/taxa?q=' + encodeURIComponent(randomSci) + '&per_page=5');
     const taxaData = await taxaRes.json();
     const taxon = taxaData.results.find(t => t.name === randomSci) || taxaData.results[0];
     if (!taxon) { content.innerHTML = '<p style="color:#C05C27;">Could not load species. Try again!</p>'; return; }
@@ -420,36 +417,23 @@ async function showRandomFavorite() {
     const status = taxon.conservation_status ? taxon.conservation_status.status_name : null;
     const personalNote = PERSONAL_NOTES[randomSci] || '';
 
-    content.innerHTML = `
-      <div style="display:flex; gap:18px; align-items:flex-start; flex-wrap:wrap;">
-        ${photo ? `<img src="${photo}" alt="${commonName}" style="width:200px; height:200px; object-fit:cover; border-radius:10px; flex-shrink:0; box-shadow:0 2px 12px rgba(0,0,0,0.15);">` : ''}
-        <div style="flex:1; min-width:180px;">
-          <div style="font-size:1.4rem; font-weight:bold; color:#C05C27; margin-bottom:2px;">${commonName}</div>
-          <div style="font-size:0.88rem; font-style:italic; color:#999; margin-bottom:14px;">${randomSci}</div>
-          <div style="display:flex; gap:20px; flex-wrap:wrap; margin-bottom:14px;">
-            <div style="text-align:center;">
-              <div style="font-size:1.6rem; font-weight:bold; color:#C05C27;">${obsCount}</div>
-              <div style="font-size:0.72rem; color:#999; text-transform:uppercase; letter-spacing:0.05em;">My observations</div>
-            </div>
-            ${status ? `<div style="text-align:center;">
-              <div style="font-size:0.9rem; font-weight:bold; color:#C05C27;">${status}</div>
-              <div style="font-size:0.72rem; color:#999; text-transform:uppercase; letter-spacing:0.05em;">Conservation status</div>
-            </div>` : ''}
-          </div>
-          ${personalNote ? `
-            <div style="background:rgba(192,92,39,0.12); border-left:4px solid #C05C27; padding:10px 14px; border-radius:6px; font-size:0.88rem; color:#7a2a00; line-height:1.6;">
-              <i class="fas fa-heart" style="color:#C05C27; margin-right:6px;"></i>${personalNote}
-            </div>` : ''}
-        </div>
-      </div>
-      ${description ? `<div style="margin-top:16px; font-size:0.85rem; color:#7a2a00; line-height:1.7; border-top:1px solid rgba(192,92,39,0.2); padding-top:14px;">${description}</div>` : ''}
-      <div style="margin-top:14px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
-        <a href="https://www.inaturalist.org/taxa/${taxon.id}" target="_blank" style="font-size:0.82rem; color:#C05C27; text-decoration:underline;">View on iNaturalist →</a>
-        <button onclick="showRandomFavorite()" style="padding:6px 14px; background:#C05C27; color:#fff; border:none; border-radius:6px; cursor:pointer; font-size:0.82rem; display:flex; align-items:center; gap:6px;">
-          <i class="fas fa-dice"></i> Another one
-        </button>
-      </div>
-    `;
+    content.innerHTML =
+      '<div style="display:flex; gap:18px; align-items:flex-start; flex-wrap:wrap;">' +
+      (photo ? '<img src="' + photo + '" alt="' + commonName + '" style="width:200px; height:200px; object-fit:cover; border-radius:10px; flex-shrink:0; box-shadow:0 2px 12px rgba(0,0,0,0.15);">' : '') +
+      '<div style="flex:1; min-width:180px;">' +
+      '<div style="font-size:1.4rem; font-weight:bold; color:#C05C27; margin-bottom:2px;">' + commonName + '</div>' +
+      '<div style="font-size:0.88rem; font-style:italic; color:#999; margin-bottom:14px;">' + randomSci + '</div>' +
+      '<div style="display:flex; gap:20px; flex-wrap:wrap; margin-bottom:14px;">' +
+      '<div style="text-align:center;"><div style="font-size:1.6rem; font-weight:bold; color:#C05C27;">' + obsCount + '</div><div style="font-size:0.72rem; color:#999; text-transform:uppercase; letter-spacing:0.05em;">My observations</div></div>' +
+      (status ? '<div style="text-align:center;"><div style="font-size:0.9rem; font-weight:bold; color:#C05C27;">' + status + '</div><div style="font-size:0.72rem; color:#999; text-transform:uppercase; letter-spacing:0.05em;">Conservation status</div></div>' : '') +
+      '</div>' +
+      (personalNote ? '<div style="background:rgba(192,92,39,0.12); border-left:4px solid #C05C27; padding:10px 14px; border-radius:6px; font-size:0.88rem; color:#7a2a00; line-height:1.6;"><i class="fas fa-heart" style="color:#C05C27; margin-right:6px;"></i>' + personalNote + '</div>' : '') +
+      '</div></div>' +
+      (description ? '<div style="margin-top:16px; font-size:0.85rem; color:#7a2a00; line-height:1.7; border-top:1px solid rgba(192,92,39,0.2); padding-top:14px;">' + description + '</div>' : '') +
+      '<div style="margin-top:14px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">' +
+      '<a href="https://www.inaturalist.org/taxa/' + taxon.id + '" target="_blank" style="font-size:0.82rem; color:#C05C27; text-decoration:underline;">View on iNaturalist \u2192</a>' +
+      '<button onclick="showRandomFavorite()" style="padding:6px 14px; background:#C05C27; color:#fff; border:none; border-radius:6px; cursor:pointer; font-size:0.82rem; display:flex; align-items:center; gap:6px;"><i class="fas fa-dice"></i> Another one</button>' +
+      '</div>';
   } catch (err) {
     content.innerHTML = '<p style="color:#C05C27;">Could not load species data. Please try again.</p>';
     console.error(err);
