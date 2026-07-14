@@ -266,8 +266,6 @@ h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-c
 <div class="cv-section-title"><i class="fas fa-briefcase"></i> Work Experience</div>
 <div class="cv-timeline">
 
-<div class="cv-milestone"><i class="fas fa-award"></i> Divemaster · SSI · July 2026</div>
-
 <div class="cv-card">
     <div class="cv-card-title">Divemaster · Hawaiian Diving Adventures</div>
     <div class="cv-card-subtitle">Honolulu, Hawai'i · July 2026 - Present</div>
@@ -279,6 +277,8 @@ h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-c
       <li>Fill SCUBA tanks using a high-pressure compressor</li>
     </ul>
   </div>
+
+  <div class="cv-milestone"><i class="fas fa-award"></i> Divemaster · SSI · July 2026</div>
   
   <div class="cv-card">
     <div class="cv-card-title">Divemaster Candidate Internship· Hawaiian Diving Adventures</div>
