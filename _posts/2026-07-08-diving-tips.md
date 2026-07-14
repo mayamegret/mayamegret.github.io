@@ -89,9 +89,7 @@ Whether you are just starting out or have hundreds of dives under your belt, the
 
 ## 1. Always Work On Your Skills
 
-No matter how experienced you are, there is always room to improve. Buoyancy, breathing, and trim are the three fundamentals that every diver should be constantly refining. Good buoyancy protects the reef, conserves your air, and makes every dive more enjoyable. Slow, controlled breathing keeps you calm and extends your bottom time. Try 4 second inhale, 8 second exhale. And proper horizontal trim makes you a more efficient, streamlined diver in the water. Practicing your kicks is also important, "frog" kick is going to be the most efficient way to move through the water, but also knowing how to backwards kick or flutter kick efficiently is important!
-
-Even after completing my Divemaster and logging 150+ dives, I still focus on these things every single time I get in the water.
+No matter how experienced you are, there is always room to improve. Buoyancy, breathing, and trim are the three fundamentals that every diver should be constantly refining. Good buoyancy protects the reef, conserves your air, and makes every dive more enjoyable. Slow, controlled breathing keeps you calm and extends your bottom time. Try 4 second inhale, 8 second exhale. And proper horizontal trim makes you a more efficient, streamlined diver in the water. Practicing your kicks is also important, "frog" kick is going to be the most efficient way to move through the water, but also knowing how to backwards kick or flutter kick efficiently is important! Even after completing my Divemaster and logging 150+ dives, I still focus on these skills every single time I get in the water.
 
 ---
 
@@ -101,7 +99,7 @@ Rental gear does the job, but having your own equipment that fits you properly a
 
 For my dive computer, I recently upgraded to the [Shearwater Peregrine](https://www.shearwater.com/products/peregrine/) and I love it. It is intuitive, easy to read underwater with large screen, and gives me all the information I need without being overwhelming.
 
-When you are ready to invest in a full setup, I highly recommend a **wing BCD with a backplate** over a traditional jacket-style BCD. It gives you much better control over your buoyancy and trim. I dive with a [Halcyon wing](https://www.halcyon.net) on a small aluminum backplate with 14 kg (30 lb) of lift. Halcyon also makes the wing BC in 9 lb (20 kg) and 18 lb (40 kg) lift options, and steel backplates for those who need extra weight. Finding the right size for your body and the type of diving you do is key.
+When you are ready to invest in a full setup, I highly recommend a **wing BCD with a backplate** over a traditional jacket-style BCD. It gives you much better control over your buoyancy and trim. I dive with a [Halcyon wing](https://www.halcyon.net) on a small aluminum backplate with 14 kg (30 lb) of lift. Halcyon also makes the wing BC in 9 kg (20 lb) and 18 kg (20 lb) lift options, and steel backplates for those who need extra weight. Finding the right size for your body and the type of diving you do is key.
 
 For my regulator, I use the [Mares 62X](https://www.mares.com), which is incredibly lightweight and comfortable, a big plus for traveling. I also dive with a **longhose setup**, which I highly recommend for safety and streamlining. I have customized my SPG to display pressure in bar alongside a compass, which keeps my gauge console minimal and easy to read. I got my regulator in DIN, because that is what is used univserally around the world except for the US. I have a DIN to yoke adaptor to use in the US but when I travel I can just bring my DIN regulator.
 
