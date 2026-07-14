@@ -666,8 +666,7 @@ const locations = [
     ],
     photos: ["/images/photography/Divemaster1.jpg", "/images/photography/Divemaster2.JPG"],
     galleryId: "divemaster"
-  }
-
+  },
   {
   name: "North Shore",
   country: "Hawai'i, USA",
