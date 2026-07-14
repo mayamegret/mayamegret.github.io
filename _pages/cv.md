@@ -268,8 +268,20 @@ h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-c
 
 <div class="cv-milestone"><i class="fas fa-award"></i> Divemaster · SSI · July 2026</div>
 
-  <div class="cv-card">
+<div class="cv-card">
     <div class="cv-card-title">Divemaster · Hawaiian Diving Adventures</div>
+    <div class="cv-card-subtitle">Honolulu, Hawai'i · July 2026 - Present</div>
+    <ul>
+      <li>Lead dive charters as a professional Divemaster</li>
+      <li>Guide certified divers on ocean dives, ensuring safety and an exceptional experience</li>
+      <li>Assist instructors with courses and student dives</li>
+      <li>Manage dive shop operations including equipment rental and customer briefings</li>
+      <li>Fill SCUBA tanks using a high-pressure compressor</li>
+    </ul>
+  </div>
+  
+  <div class="cv-card">
+    <div class="cv-card-title">Divemaster Candidate Internship· Hawaiian Diving Adventures</div>
     <div class="cv-card-subtitle">Honolulu, Hawai'i · June–July 2026</div>
     <ul>
       <li>Completed 50+ dives for Divemaster certification</li>
