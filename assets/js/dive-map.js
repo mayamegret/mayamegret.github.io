@@ -508,7 +508,7 @@ const locations = [
       "Humpback whale <em>(Megaptera novaeangliae)</em>",
       "Oceanic Manta Ray <em>(Mobula birostris)</em>",
       "Reef Manta Ray <em>(Mobula alfredi)</em>",
-      "Humpback dolphins <em>(Sousa chinensis)</em>"
+      "Indian Ocean humpback dolphin <em>(Sousa plumbea)</em>"
     ],
     photos: [],
     galleryId: "zavora"
@@ -601,7 +601,7 @@ const locations = [
     species: [
       "Oceanic Manta Ray <em>(Mobula birostris)</em>",
       "Reef Manta Ray <em>(Mobula alfredi)</em>",
-      "Humpback dolphins <em>(Sousa chinensis)</em>"
+      "Indian Ocean humpback dolphin <em>(Sousa plumbea)</em>"
     ],
     photos: ["/images/photography/Zavora1.JPG", "/images/photography/Zavora2.JPG", "/images/photography/Zavora3.jpg", "/images/photography/Zavora4.JPG", "/images/photography/Zavora5.JPG", "/images/photography/Zavora6.jpg", "/images/photography/Zavora7.JPG"],
     galleryId: "zavora-2026"
