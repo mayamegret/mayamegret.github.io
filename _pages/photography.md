@@ -189,6 +189,21 @@ h1.page__title {
     justify-content: center;
   }
 }
+h1.page__title {
+  text-align: center;
+}
+.page__content > p:first-of-type {
+  text-align: center;
+}
+.gallery-controls {
+  align-items: center;
+}
+.gallery-filter-btns {
+  justify-content: center;
+}
+.gallery-search {
+  margin: 0 auto;
+}
 </style>
 
 <div class="gallery-controls">
