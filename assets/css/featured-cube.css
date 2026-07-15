@@ -112,8 +112,11 @@
   position: fixed;
   inset: 0;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  overflow-y: auto;
+  padding: 60px 0 40px;
+  box-sizing: border-box;
   z-index: 1000;
   opacity: 0;
   pointer-events: none;
@@ -138,7 +141,6 @@
   align-items: center;
   gap: 12px;
   max-width: 80vw;
-  max-height: 85vh;
   padding: 0;
   background: transparent;
   border: none;
@@ -175,23 +177,6 @@
   width: auto;
   height: auto;
   object-fit: contain;
-}
-
-.reveal-meta {
-  font-family: var(--fc-font-display);
-  font-size: 0.85rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--fc-accent);
-  margin: 0;
-}
-
-.reveal-title {
-  font-family: var(--fc-font-display);
-  letter-spacing: 1.5px;
-  font-size: 1.5rem;
-  color: #fff;
-  margin: 0;
 }
 
 .reveal-caption {
