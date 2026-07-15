@@ -32,9 +32,19 @@
 #featured-cube-mount {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 1.25rem;
   margin: 0;
   z-index: 10;
+}
+
+/* split-screen / medium widths: go back to float so the filter row
+   naturally shrinks and left-aligns instead of running under the cube */
+@media (max-width: 1100px) and (min-width: 481px) {
+  #featured-cube-mount {
+    position: static;
+    float: right;
+    margin: 0 0 1rem 1.5rem;
+  }
 }
 
 .cube-feature-text {
