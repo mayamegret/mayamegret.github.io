@@ -46,12 +46,6 @@
       .join(' ');
   }
 
-  function truncate(str, max) {
-    if (!str || str.length <= max) return str || '';
-    const cut = str.slice(0, max);
-    return cut.slice(0, cut.lastIndexOf(' ')) + '…';
-  }
-
   function getFeaturedTile() {
     if (typeof tiles === 'undefined' || !tiles.length) return null;
     const pool = tiles.filter(t => t.id && t.caption);
@@ -83,13 +77,9 @@
 
       <div class="reveal-overlay" id="revealOverlay" aria-hidden="true">
         <div class="reveal-backdrop" id="revealBackdrop"></div>
-        <div class="reveal-panel" role="dialog" aria-modal="true" aria-labelledby="revealTitle">
+        <div class="reveal-panel" role="dialog" aria-modal="true" aria-label="Featured photo of the day">
           <button class="reveal-close" id="revealClose" aria-label="Close">&times;</button>
-          <div class="reveal-print">
-            <img id="revealImg" class="reveal-img" src="" alt="" />
-          </div>
-          <p class="reveal-meta" id="revealMeta"></p>
-          <h2 class="reveal-title" id="revealTitle"></h2>
+          <img id="revealImg" class="reveal-img" src="" alt="" />
           <p class="reveal-caption" id="revealCaption"></p>
           <a class="reveal-map-link" id="revealMapLink" href="#" style="display:none;">See on map →</a>
         </div>
@@ -111,8 +101,6 @@
     const backdrop = document.getElementById('revealBackdrop');
     const closeBtn = document.getElementById('revealClose');
     const img = document.getElementById('revealImg');
-    const meta = document.getElementById('revealMeta');
-    const title = document.getElementById('revealTitle');
     const caption = document.getElementById('revealCaption');
     const mapLink = document.getElementById('revealMapLink');
 
@@ -122,9 +110,7 @@
     function openReveal() {
       img.src = featured.photos[0];
       img.alt = featured.id ? idToTitle(featured.id) : '';
-      meta.textContent = 'Photo of the day';
-      title.textContent = idToTitle(featured.id);
-      caption.textContent = truncate(featured.caption, 240);
+      caption.textContent = featured.caption;
 
       if (featured.mapLink) {
         mapLink.href = featured.mapLink;
