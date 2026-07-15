@@ -4,8 +4,13 @@ title: "Photo Gallery"
 permalink: /photography/
 author_profile: false
 ---
+<link rel="stylesheet" href="/assets/css/featured-cube.css">
 
 Photos from my travels and dives!
+
+<div id="featured-cube-mount"></div>
+
+<div class="gallery-controls">
 
 <style>
 #main, article.page, .page__inner-wrap, .page__content, .page__inner-wrap--layout-single {
@@ -212,6 +217,7 @@ h1.page__title {
 </div>
 
 <script src="/assets/js/photography-gallery.js"></script>
+<script src="/assets/js/featured-cube.js"></script>
 <script>
 function resizeMasonryItem(tile) {
   const rowHeight = 10;
