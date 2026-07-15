@@ -6,8 +6,6 @@ author_profile: false
 ---
 <link rel="stylesheet" href="/assets/css/featured-cube.css">
 
-Photos from my travels and dives!
-
 <div id="featured-cube-mount"></div>
 
 <style>
@@ -18,8 +16,10 @@ Photos from my travels and dives!
   padding-right: 1em !important;
 }
 h1.page__title {
-  margin-left: 0 !important;
-  padding-left: 0 !important;
+  margin: 0.4rem 0 0.2rem !important;
+}
+.page__content {
+  padding-top: 0.25rem !important;
 }
 .gallery-controls {
   margin-bottom: 16px;
@@ -67,10 +67,10 @@ h1.page__title {
 }
 .photo-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-auto-rows: 10px;
-  gap: 18px;
-  margin-top: 24px;
+  gap: 14px;
+  margin-top: 16px;
 }
 .photo-tile {
   position: relative;
@@ -163,6 +163,9 @@ h1.page__title {
   text-align: center;
   color: #ccc;
   font-size: 0.85rem;
+}
+@media (max-width: 1200px) {
+  .photo-grid { grid-template-columns: repeat(4, 1fr); }
 }
 @media (max-width: 900px) {
   .photo-grid { grid-template-columns: repeat(3, 1fr); }
