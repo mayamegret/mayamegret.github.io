@@ -193,9 +193,6 @@ h1.page__title {
 h1.page__title {
   text-align: center;
 }
-.page__content > p:first-of-type {
-  text-align: center;
-}
 .gallery-controls {
   align-items: center;
 }
