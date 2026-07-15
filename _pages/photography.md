@@ -16,7 +16,7 @@ author_profile: false
   padding-right: 1em !important;
 }
 h1.page__title {
-  margin: 0.4rem 0 0.2rem !important;
+  margin: 0.4rem 0 0.75rem !important;
 }
 .page__content {
   padding-top: 0.25rem !important;
