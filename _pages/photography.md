@@ -10,8 +10,6 @@ Photos from my travels and dives!
 
 <div id="featured-cube-mount"></div>
 
-<div class="gallery-controls">
-
 <style>
 #main, article.page, .page__inner-wrap, .page__content, .page__inner-wrap--layout-single {
   max-width: 100% !important;
