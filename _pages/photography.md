@@ -71,19 +71,20 @@ h1.page__title {
   grid-auto-rows: 10px;
   gap: 14px;
   margin-top: 16px;
+  clear: both;
 }
 .photo-tile {
   position: relative;
   cursor: pointer;
   overflow: hidden;
-  border-radius: 6px;
+  border-radius: 0px;
 }
 .photo-tile img {
   width: 100%;
   height: auto;
   display: block;
   transition: transform 0.2s ease;
-  border-radius: 6px;
+  border-radius: 0px;
   position: relative;
   z-index: 2;
 }
