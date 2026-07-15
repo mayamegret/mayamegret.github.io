@@ -80,9 +80,14 @@ h1::after, h2::after, h3::after { background-color: #C05C27 !important; border-c
   cursor: pointer;
   text-decoration: none !important;
   display: block;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, outline 0.2s ease;
+  scroll-margin-top: 90px;
 }
 .species-card:hover { transform: scale(1.03); }
+.species-card.is-highlighted {
+  outline: 3px solid #C05C27;
+  outline-offset: 3px;
+}
 .species-card-img {
   width: 100%;
   aspect-ratio: 1;
@@ -246,6 +251,13 @@ function getTaxonGroup(taxon) {
   return taxon.iconic_taxon_name || 'unknown';
 }
 
+// Stable, URL-safe id for a species card, derived from its scientific name.
+// Used so other pages (e.g. Dive Log) can deep-link to a specific species
+// once a common-name -> scientific-name mapping exists for that page's data.
+function speciesSlug(sciName) {
+  return 'species-' + sciName.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+}
+
 async function fetchAllObservations() {
   const results = [];
   for (let page = 1; page <= 10; page++) {
@@ -326,6 +338,7 @@ function renderSpecies(species) {
 
       const card = document.createElement('a');
       card.className = 'species-card';
+      card.id = speciesSlug(sciName);
       card.href = inatUrl;
       card.target = '_blank';
       card.rel = 'noopener noreferrer';
@@ -364,6 +377,17 @@ function renderSpecies(species) {
   });
 
   document.getElementById('species-loading').style.display = 'none';
+}
+
+// If arriving with a #species-<slug> hash (e.g. from a future linked
+// mention elsewhere on the site), scroll to that card and highlight it.
+function focusHashedSpecies() {
+  if (!window.location.hash) return;
+  const id = window.location.hash.slice(1);
+  const card = document.getElementById(id);
+  if (!card) return;
+  card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  card.classList.add('is-highlighted');
 }
 
 let allSpeciesData = [];
@@ -458,6 +482,7 @@ document.addEventListener('DOMContentLoaded', function() {
         searchQuery = this.value.toLowerCase();
         applyFilters();
       });
+      focusHashedSpecies();
     })
     .catch(err => {
       document.getElementById('species-loading').style.display = 'none';
