@@ -72,9 +72,7 @@
     return `
       <section class="cube-feature">
         <div class="cube-feature-text">
-          <p class="cube-feature-eyebrow">Featured</p>
-          <p class="cube-feature-label">Photo of the day</p>
-          <p class="cube-feature-hint">Click the cube to open it</p>
+          <p class="cube-feature-label">Featured photo of the day</p>
         </div>
         <div class="cube-scene">
           <div class="cube" id="photoCube" tabindex="0" role="button" aria-label="Open today's featured photo">
@@ -93,7 +91,7 @@
           <p class="reveal-meta" id="revealMeta"></p>
           <h2 class="reveal-title" id="revealTitle"></h2>
           <p class="reveal-caption" id="revealCaption"></p>
-          <a class="reveal-map-link" id="revealMapLink" href="#" style="display:none;">View on map</a>
+          <a class="reveal-map-link" id="revealMapLink" href="#" style="display:none;">See on map →</a>
         </div>
       </div>
     `;
