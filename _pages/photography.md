@@ -9,18 +9,21 @@ author_profile: false
 <div id="featured-cube-mount"></div>
 
 <style>
+}
 #main, article.page, .page__inner-wrap, .page__content, .page__inner-wrap--layout-single {
   max-width: 100% !important;
   width: 100% !important;
   padding-left: 1em !important;
   padding-right: 1em !important;
 }
+article.page {
+  position: relative;
+}
 h1.page__title {
   margin: 0.4rem 0 0.75rem !important;
 }
 .page__content {
   padding-top: 0.25rem !important;
-  position: relative;
 }
 .gallery-controls {
   margin-bottom: 16px;
