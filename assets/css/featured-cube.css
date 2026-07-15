@@ -18,52 +18,37 @@
 /* ---------- compact strip near the top of the page ---------- */
 .cube-feature {
   display: inline-flex;
+  flex-direction: column;
   align-items: center;
-  gap: 1.25rem;
-  margin: 0 auto 1.5rem;
-  padding: 0.85rem 1.25rem;
+  gap: 0.6rem;
+  margin: 0 0 1.5rem;
+  padding: 0.75rem 1rem;
   background: var(--fc-surface);
   color: var(--fc-ink);
   font-family: var(--fc-font-body);
   border: 2px solid var(--fc-border);
-  border-radius: 14px;
+  border-radius: 0;
 }
 
 #featured-cube-mount {
-  text-align: center;
+  text-align: right;
 }
 
 .cube-feature-text {
-  min-width: 0;
-  text-align: left;
-}
-
-.cube-feature-eyebrow {
-  font-family: var(--fc-font-display);
-  font-size: 0.8rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--fc-accent);
-  margin: 0 0 0.15rem;
+  text-align: center;
 }
 
 .cube-feature-label {
   font-family: var(--fc-font-display);
   letter-spacing: 1.5px;
-  font-size: 1.4rem;
+  font-size: 1.05rem;
   color: var(--fc-ink);
-  margin: 0 0 0.35rem;
-}
-
-.cube-feature-hint {
-  font-size: 0.8rem;
-  color: var(--fc-ink-dim);
   margin: 0;
 }
 
 /* ---------- the cube itself, small ---------- */
 .cube-scene {
-  --cube-size: 96px;
+  --cube-size: 72px;
   width: var(--cube-size);
   height: var(--cube-size);
   perspective: 700px;
@@ -153,7 +138,7 @@
   color: var(--fc-ink);
   font-family: var(--fc-font-body);
   border: 2px solid var(--fc-border);
-  border-radius: 14px;
+  border-radius: 0;
   padding: 1.5rem 1.5rem 2rem;
   text-align: center;
   transform: translateY(24px);
@@ -186,7 +171,7 @@
   background: var(--fc-border);
   padding: 0.5rem;
   margin-bottom: 1.25rem;
-  border-radius: 8px;
+  border-radius: 0;
 }
 
 .reveal-img {
@@ -195,7 +180,7 @@
   height: auto;
   max-height: 60vh;
   object-fit: contain;
-  border-radius: 4px;
+  border-radius: 0;
 }
 
 .reveal-meta {
@@ -246,13 +231,9 @@
 
 /* ---------- small screens: stack text above cube ---------- */
 @media (max-width: 480px) {
-  .cube-feature {
-    flex-direction: column;
-    text-align: center;
-    gap: 1rem;
-  }
-  .cube-feature-text {
+  #featured-cube-mount {
     text-align: center;
   }
+  .cube-scene { --cube-size: 64px; }
   .cube-scene { --cube-size: 110px; }
 }
