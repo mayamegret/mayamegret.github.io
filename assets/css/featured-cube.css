@@ -126,22 +126,20 @@
 .reveal-backdrop {
   position: absolute;
   inset: 0;
-  background: rgba(44, 74, 62, 0.75);
-  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.9);
 }
 
 .reveal-panel {
   position: relative;
-  max-width: min(90vw, 480px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  max-width: 80vw;
   max-height: 85vh;
-  overflow-y: auto;
-  background: var(--fc-surface);
-  color: var(--fc-ink);
-  font-family: var(--fc-font-body);
-  border: 2px solid var(--fc-border);
-  border-radius: 0;
-  padding: 1.5rem 1.5rem 2rem;
-  text-align: center;
+  padding: 0;
+  background: transparent;
+  border: none;
   transform: translateY(24px);
   opacity: 0;
   transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.45s ease;
@@ -153,35 +151,28 @@
 }
 
 .reveal-close {
-  position: absolute;
-  top: 0.75rem;
-  right: 0.75rem;
-  width: 2rem;
-  height: 2rem;
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  width: auto;
+  height: auto;
   border: none;
   background: transparent;
-  color: var(--fc-ink-dim);
-  font-size: 1.5rem;
+  color: #fff;
+  font-size: 2rem;
   line-height: 1;
   cursor: pointer;
 }
 .reveal-close:hover,
-.reveal-close:focus-visible { color: var(--fc-ink); }
-
-.reveal-print {
-  background: var(--fc-border);
-  padding: 0.5rem;
-  margin-bottom: 1.25rem;
-  border-radius: 0;
-}
+.reveal-close:focus-visible { color: var(--fc-accent); }
 
 .reveal-img {
   display: block;
-  width: 100%;
+  max-width: 80vw;
+  max-height: 55vh;
+  width: auto;
   height: auto;
-  max-height: 60vh;
   object-fit: contain;
-  border-radius: 0;
 }
 
 .reveal-meta {
@@ -190,38 +181,35 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--fc-accent);
-  margin: 0 0 0.35rem;
+  margin: 0;
 }
 
 .reveal-title {
   font-family: var(--fc-font-display);
   letter-spacing: 1.5px;
-  font-size: 1.7rem;
-  color: var(--fc-ink);
-  margin: 0 0 0.65rem;
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 0;
 }
 
 .reveal-caption {
   font-size: 0.9rem;
   line-height: 1.5;
-  color: var(--fc-ink-dim);
-  margin: 0 0 1rem;
-  text-align: left;
+  color: #fff;
+  max-width: 80vw;
+  margin: 0;
+  text-align: center;
 }
 
 .reveal-map-link {
   display: inline-block;
-  font-size: 0.85rem;
-  color: var(--fc-ink);
+  font-size: 0.9rem;
+  color: #fff;
   text-decoration: none;
-  padding: 6px 16px;
-  border: 2px solid var(--fc-border);
-  border-radius: 20px;
-  transition: all 0.2s;
+  margin-top: 4px;
 }
 .reveal-map-link:hover {
-  background: var(--fc-border);
-  color: #fff;
+  text-decoration: underline;
 }
 
 /* ---------- accessibility ---------- */
