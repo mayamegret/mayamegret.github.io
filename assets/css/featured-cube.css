@@ -30,8 +30,8 @@
 }
 
 #featured-cube-mount {
-  text-align: right;
-  margin: 0.25rem 0 0.75rem;
+  float: right;
+  margin: 0.25rem 0 0.75rem 1.5rem;
 }
 
 .cube-feature-text {
@@ -233,6 +233,8 @@
 /* ---------- small screens: center instead of right-align ---------- */
 @media (max-width: 480px) {
   #featured-cube-mount {
+    float: none;
     text-align: center;
+    margin: 0.25rem 0 0.75rem;
   }
 }
