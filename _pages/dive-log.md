@@ -4,6 +4,9 @@ title: "Dive Log"
 permalink: /dive-log/
 author_profile: false
 ---
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
 <style>
 body, #main, article.page, .page__inner-wrap, .page__content, .initial-content, .page__wrap {
@@ -13,7 +16,7 @@ body, #main, article.page, .page__inner-wrap, .page__content, .initial-content, 
 a { color: #4B2E0F !important; }
 a:hover { color: #7a4e20 !important; }
 h1, h2, h3, h4, h5, h6, body { color: #4B2E0F !important; }
-.page__title { color: #4B2E0F !important; }
+.page__title { color: #4B2E0F !important; text-align: center !important; }
 .page__title::after { background-color: #4B2E0F !important; }
 h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-color: #4B2E0F !important; }
 #main, article.page, .page__inner-wrap, .page__content, .page__inner-wrap--layout-single {
@@ -37,8 +40,9 @@ h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-c
   min-width: 100px;
 }
 .dive-stat-number {
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-weight: 600;
   font-size: 1.8rem;
-  font-weight: bold;
   color: #4B2E0F;
   line-height: 1;
 }
@@ -90,7 +94,11 @@ h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-c
 .dive-table th {
   background: #BDD9E0 !important;
   color: #4B2E0F !important;
-  font-weight: bold;
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-weight: 600;
+  font-size: 0.78rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   padding: 10px 12px;
   text-align: left;
   border-bottom: 2px solid #4B2E0F !important;
@@ -146,21 +154,56 @@ h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-c
 .dive-type-professional { background: rgba(255,164,74,0.3); color: #8a5a00; }
 .dive-loading { text-align: center; padding: 40px; color: #4B2E0F; }
 .dive-no-results { text-align: center; padding: 20px; color: #4B2E0F; font-style: italic; }
-.dive-table th:nth-child(3),
-.dive-table td:nth-child(3) {
-  max-width: 120px;
+
+/* combined site / location / date cell */
+.dive-site-cell strong {
+  display: block;
+  font-size: 0.9rem;
+  line-height: 1.3;
+}
+.dive-site-cell span {
+  display: block;
+  font-size: 0.75rem;
+  color: rgba(75, 46, 15, 0.7);
+  margin-top: 1px;
+}
+
+/* depth bar */
+.dive-depth-cell {
+  min-width: 90px;
+}
+.depth-value {
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-size: 0.82rem;
+  margin-bottom: 3px;
+}
+.depth-bar-track {
+  width: 100%;
+  height: 5px;
+  background: rgba(75, 46, 15, 0.15);
+  border-radius: 3px;
+}
+.depth-bar-fill {
+  height: 100%;
+  background: #4B2E0F;
+  border-radius: 3px;
+}
+
+.dive-table th:nth-child(2),
+.dive-table td:nth-child(2) {
+  max-width: 220px;
   white-space: normal;
 }
-.dive-table th:nth-child(6),
-.dive-table td:nth-child(6) {
-  width: 70px;
+.dive-table th:nth-child(4),
+.dive-table td:nth-child(4) {
+  width: 110px;
 }
-.dive-table th:nth-child(7),
-.dive-table td:nth-child(7) {
+.dive-table th:nth-child(5),
+.dive-table td:nth-child(5) {
   width: 80px;
 }
-.dive-table th:nth-child(10),
-.dive-table td:nth-child(10) {
+.dive-table th:nth-child(8),
+.dive-table td:nth-child(8) {
   min-width: 220px;
 }
 </style>
@@ -200,12 +243,10 @@ h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-c
     <thead>
       <tr>
         <th data-col="0">#</th>
-        <th data-col="1">Date</th>
-        <th data-col="2">Site</th>
-        <th data-col="3">Location</th>
+        <th data-col="1">Dive</th>
         <th data-col="4">Type</th>
-        <th data-col="5">Max Depth (m)</th>
-        <th data-col="8">Total Time (min)</th>
+        <th data-col="5">Depth</th>
+        <th data-col="8">Time (min)</th>
         <th data-col="12">Vis (m)</th>
         <th data-col="13">Current</th>
         <th data-col="18">Key Species</th>
@@ -220,6 +261,7 @@ h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-c
 let allDives = [];
 let sortCol = 0;
 let sortDir = 'desc';
+let maxDepthAll = 0;
 
 function classifyDiveType(type) {
   if (!type) return 'Other';
@@ -269,13 +311,21 @@ function renderTable(dives) {
     const tr = document.createElement('tr');
     const category = classifyDiveType(row[4]);
     const typeClass = getDiveTypeClass(category);
+    const depth = parseFloat(row[5]);
+    const pct = (!isNaN(depth) && maxDepthAll) ? Math.round((depth / maxDepthAll) * 100) : 0;
+    const depthLabel = row[5] ? row[5] + ' m' : '—';
+    const subline = [row[3], row[1]].filter(Boolean).join(' · ');
     tr.innerHTML = `
       <td>${row[0] || ''}</td>
-      <td style="white-space:nowrap">${row[1] || ''}</td>
-      <td>${row[2] || ''}</td>
-      <td>${row[3] || ''}</td>
+      <td class="dive-site-cell">
+        <strong>${row[2] || ''}</strong>
+        <span>${subline}</span>
+      </td>
       <td><span class="dive-type-badge ${typeClass}">${category}</span></td>
-      <td>${row[5] || ''}</td>
+      <td class="dive-depth-cell">
+        <div class="depth-value">${depthLabel}</div>
+        <div class="depth-bar-track"><div class="depth-bar-fill" style="width:${pct}%"></div></div>
+      </td>
       <td>${row[8] || ''}</td>
       <td>${row[12] || ''}</td>
       <td>${row[13] || ''}</td>
@@ -334,6 +384,8 @@ fetch('/assets/data/divelog.csv')
   .then(r => r.text())
   .then(text => {
     allDives = parseCSV(text);
+    const depths = allDives.map(r => parseFloat(r[5])).filter(d => !isNaN(d));
+    maxDepthAll = depths.length ? Math.max(...depths) : 0;
     document.getElementById('dive-loading').style.display = 'none';
     updateStats(allDives);
     populateLocationFilter(allDives);
