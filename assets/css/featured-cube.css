@@ -5,14 +5,14 @@
    ============================================ */
 
 :root {
-  --fc-bg: #171513;
-  --fc-surface: #211e1a;
-  --fc-ink: #f3ede3;
-  --fc-ink-dim: #8c8579;
-  --fc-accent: #c9a24d;
-  --fc-font-display: 'Fraunces', Georgia, serif;
-  --fc-font-body: 'Inter', -apple-system, sans-serif;
-  --fc-font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  --fc-bg: transparent;
+  --fc-surface: #fff6ea;
+  --fc-ink: #2c4a3e;
+  --fc-ink-dim: rgba(44, 74, 62, 0.65);
+  --fc-accent: #ffa44a;
+  --fc-border: #2c4a3e;
+  --fc-font-display: 'Bebas Neue', sans-serif;
+  --fc-font-body: inherit;
 }
 
 /* ---------- compact strip near the top of the page ---------- */
@@ -21,11 +21,13 @@
   align-items: center;
   gap: 1.5rem;
   max-width: 720px;
-  margin: 1.5rem auto 2.5rem;
-  padding: 1rem 1.5rem;
-  background: var(--fc-bg);
+  margin: 0 auto 1.5rem;
+  padding: 1rem 1.25rem;
+  background: var(--fc-surface);
   color: var(--fc-ink);
   font-family: var(--fc-font-body);
+  border: 2px solid var(--fc-border);
+  border-radius: 14px;
 }
 
 .cube-feature-text {
@@ -34,18 +36,19 @@
 }
 
 .cube-feature-eyebrow {
-  font-family: var(--fc-font-mono);
-  font-size: 0.68rem;
-  letter-spacing: 0.14em;
+  font-family: var(--fc-font-display);
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--fc-accent);
-  margin: 0 0 0.35rem;
+  margin: 0 0 0.15rem;
 }
 
 .cube-feature-label {
   font-family: var(--fc-font-display);
-  font-weight: 500;
-  font-size: 1.15rem;
+  letter-spacing: 1.5px;
+  font-size: 1.4rem;
+  color: var(--fc-ink);
   margin: 0 0 0.35rem;
 }
 
@@ -102,8 +105,8 @@
   height: var(--cube-size);
   background-size: cover;
   background-position: center;
-  border: 1px solid rgba(243, 237, 227, 0.08);
-  box-shadow: inset 0 0 16px rgba(0, 0, 0, 0.35);
+  border: 2px solid var(--fc-border);
+  box-shadow: inset 0 0 14px rgba(44, 74, 62, 0.25);
 }
 
 .face-front  { transform: translateZ(calc(var(--cube-size) / 2)); }
@@ -134,8 +137,8 @@
 .reveal-backdrop {
   position: absolute;
   inset: 0;
-  background: rgba(10, 9, 8, 0.88);
-  backdrop-filter: blur(6px);
+  background: rgba(44, 74, 62, 0.75);
+  backdrop-filter: blur(4px);
 }
 
 .reveal-panel {
@@ -146,7 +149,8 @@
   background: var(--fc-surface);
   color: var(--fc-ink);
   font-family: var(--fc-font-body);
-  border: 1px solid rgba(243, 237, 227, 0.1);
+  border: 2px solid var(--fc-border);
+  border-radius: 14px;
   padding: 1.5rem 1.5rem 2rem;
   text-align: center;
   transform: translateY(24px);
@@ -176,9 +180,10 @@
 .reveal-close:focus-visible { color: var(--fc-ink); }
 
 .reveal-print {
-  background: #0e0d0b;
+  background: var(--fc-border);
   padding: 0.5rem;
   margin-bottom: 1.25rem;
+  border-radius: 8px;
 }
 
 .reveal-img {
@@ -187,21 +192,23 @@
   height: auto;
   max-height: 50vh;
   object-fit: cover;
+  border-radius: 4px;
 }
 
 .reveal-meta {
-  font-family: var(--fc-font-mono);
-  font-size: 0.7rem;
-  letter-spacing: 0.08em;
+  font-family: var(--fc-font-display);
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--fc-accent);
-  margin: 0 0 0.5rem;
+  margin: 0 0 0.35rem;
 }
 
 .reveal-title {
   font-family: var(--fc-font-display);
-  font-weight: 500;
-  font-size: 1.4rem;
+  letter-spacing: 1.5px;
+  font-size: 1.7rem;
+  color: var(--fc-ink);
   margin: 0 0 0.65rem;
 }
 
@@ -215,16 +222,18 @@
 
 .reveal-map-link {
   display: inline-block;
-  font-family: var(--fc-font-mono);
-  font-size: 0.72rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--fc-accent);
+  font-size: 0.85rem;
+  color: var(--fc-ink);
   text-decoration: none;
-  border-bottom: 1px solid currentColor;
-  padding-bottom: 2px;
+  padding: 6px 16px;
+  border: 2px solid var(--fc-border);
+  border-radius: 20px;
+  transition: all 0.2s;
 }
-.reveal-map-link:hover { opacity: 0.8; }
+.reveal-map-link:hover {
+  background: var(--fc-border);
+  color: #fff;
+}
 
 /* ---------- accessibility ---------- */
 @media (prefers-reduced-motion: reduce) {
