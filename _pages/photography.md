@@ -172,6 +172,17 @@ h1.page__title {
 @media (max-width: 1200px) {
   .photo-grid { grid-template-columns: repeat(4, 1fr); }
 }
+@media (max-width: 1100px) and (min-width: 481px) {
+  .gallery-controls {
+    align-items: flex-start;
+  }
+  .gallery-filter-btns {
+    justify-content: flex-start;
+  }
+  .gallery-search {
+    margin: 0;
+  }
+}
 @media (max-width: 900px) {
   .photo-grid { grid-template-columns: repeat(3, 1fr); }
 }
