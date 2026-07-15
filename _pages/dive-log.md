@@ -173,7 +173,6 @@ h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-c
   min-width: 90px;
 }
 .depth-value {
-  font-family: 'IBM Plex Mono', ui-monospace, monospace;
   font-size: 0.82rem;
   margin-bottom: 3px;
 }
@@ -245,7 +244,7 @@ h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-c
         <th data-col="0">#</th>
         <th data-col="1">Dive</th>
         <th data-col="4">Type</th>
-        <th data-col="5">Depth (m)</th>
+        <th data-col="5">Depth</th>
         <th data-col="8">Time (min)</th>
         <th data-col="12">Vis (m)</th>
         <th data-col="13">Current</th>
