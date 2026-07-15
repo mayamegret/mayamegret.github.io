@@ -20,6 +20,7 @@ h1.page__title {
 }
 .page__content {
   padding-top: 0.25rem !important;
+  position: relative;
 }
 .gallery-controls {
   margin-bottom: 16px;
