@@ -7,6 +7,10 @@ author_profile: true
 ---
 
 <style>
+#main, article.page, .page__inner-wrap, .page__content, .page__inner-wrap--layout-single {
+  max-width: 100% !important;
+  width: 100% !important;
+}
 .about-flex {
   display: flex;
   gap: 24px;
@@ -21,22 +25,16 @@ author_profile: true
   margin: 0 0 1rem;
 }
 .about-images {
-  flex: 0 0 380px;
+  flex: 0 0 320px;
   display: flex;
   flex-direction: column;
   gap: 12px;
-  margin-top: -90px;
 }
 .about-images img {
   width: 100%;
   border-radius: 8px;
   object-fit: cover;
   aspect-ratio: 1/1;
-}
-@media (max-width: 900px) {
-  .about-images {
-    margin-top: 0;
-  }
 }
 @media (max-width: 700px) {
   .about-flex {
@@ -45,7 +43,6 @@ author_profile: true
   .about-images {
     flex: 1 1 100%;
     flex-direction: row;
-    margin-top: 0;
   }
 }
 </style>
