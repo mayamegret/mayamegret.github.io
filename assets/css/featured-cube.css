@@ -20,18 +20,18 @@
   display: inline-flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.6rem;
-  margin: 0 0 1.5rem;
-  padding: 0.75rem 1rem;
-  background: var(--fc-surface);
+  gap: 0.35rem;
+  margin: 0 0 1rem;
+  padding: 0;
+  background: transparent;
   color: var(--fc-ink);
   font-family: var(--fc-font-body);
-  border: 2px solid var(--fc-border);
-  border-radius: 0;
+  border: none;
 }
 
 #featured-cube-mount {
   text-align: right;
+  margin: 0.5rem 0 1rem;
 }
 
 .cube-feature-text {
@@ -40,15 +40,16 @@
 
 .cube-feature-label {
   font-family: var(--fc-font-display);
-  letter-spacing: 1.5px;
-  font-size: 1.05rem;
-  color: var(--fc-ink);
+  letter-spacing: 1px;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  color: var(--fc-ink-dim);
   margin: 0;
 }
 
 /* ---------- the cube itself, small ---------- */
 .cube-scene {
-  --cube-size: 72px;
+  --cube-size: 64px;
   width: var(--cube-size);
   height: var(--cube-size);
   perspective: 700px;
@@ -229,11 +230,9 @@
   .reveal-overlay, .reveal-panel { transition: none; }
 }
 
-/* ---------- small screens: stack text above cube ---------- */
+/* ---------- small screens: center instead of right-align ---------- */
 @media (max-width: 480px) {
   #featured-cube-mount {
     text-align: center;
   }
-  .cube-scene { --cube-size: 64px; }
-  .cube-scene { --cube-size: 110px; }
 }
