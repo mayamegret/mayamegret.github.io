@@ -167,6 +167,12 @@ h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-c
   color: rgba(75, 46, 15, 0.7);
   margin-top: 1px;
 }
+.site-map-link {
+  color: #4B2E0F !important;
+  margin-left: 4px;
+  text-decoration: none !important;
+}
+.site-map-link:hover { color: #7a4e20 !important; }
 
 /* depth bar */
 .dive-depth-cell {
@@ -262,6 +268,24 @@ let sortCol = 0;
 let sortDir = 'desc';
 let maxDepthAll = 0;
 
+// Maps a divelog.csv "Location" value to the matching marker's galleryId
+// on the /map/ page (see diveLogLocation fields in dive-map.js). Zavora
+// has two trips at the same location string, split by date.
+function mapSlugForRow(row) {
+  const loc = (row[3] || '').trim();
+  const date = row[1] || '';
+  if (loc === 'Závora, Mozambique') {
+    return date < '2025-12-01' ? 'zavora' : 'zavora-2026';
+  }
+  const table = {
+    'Bonaire, Caribbean Netherlands': 'bonaire',
+    'Guinjata, Mozambique': 'guinjata',
+    "Honolulu, O'ahu, Hawai'i": 'divemaster',
+    "North Shore, O'ahu, Hawai'i": 'north-shore'
+  };
+  return table[loc] || null;
+}
+
 function classifyDiveType(type) {
   if (!type) return 'Other';
   const t = type.toLowerCase();
@@ -313,7 +337,11 @@ function renderTable(dives) {
     const depth = parseFloat(row[5]);
     const pct = (!isNaN(depth) && maxDepthAll) ? Math.round((depth / maxDepthAll) * 100) : 0;
     const depthLabel = row[5] ? row[5] + ' m' : '—';
-    const subline = [row[3], row[1]].filter(Boolean).join(' · ');
+    const mapSlug = mapSlugForRow(row);
+    const mapLink = mapSlug
+      ? ` · <a href="/map/#${mapSlug}" class="site-map-link" title="View on map"><i class="fas fa-map-marker-alt"></i></a>`
+      : '';
+    const subline = [row[3], row[1]].filter(Boolean).join(' · ') + mapLink;
     tr.innerHTML = `
       <td>${row[0] || ''}</td>
       <td class="dive-site-cell">
@@ -388,7 +416,28 @@ fetch('/assets/data/divelog.csv')
     document.getElementById('dive-loading').style.display = 'none';
     updateStats(allDives);
     populateLocationFilter(allDives);
-    renderTable(sortDives(allDives));
+
+    // If arriving from a map popup ("View dives in log →"), pre-select
+    // the matching location in the filter dropdown.
+    const params = new URLSearchParams(window.location.search);
+    const presetLocation = params.get('location');
+    let didPreset = false;
+    if (presetLocation) {
+      const sel = document.getElementById('dive-location-filter');
+      const match = [...sel.options].find(o => o.value === presetLocation.toLowerCase());
+      if (match) {
+        sel.value = match.value;
+        didPreset = true;
+      }
+    }
+
+    if (didPreset) {
+      applyFilters();
+      document.getElementById('dive-table-wrap').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    } else {
+      renderTable(sortDives(allDives));
+    }
+
     document.getElementById('dive-search').addEventListener('input', applyFilters);
     document.getElementById('dive-type-filter').addEventListener('change', applyFilters);
     document.getElementById('dive-location-filter').addEventListener('change', applyFilters);
