@@ -511,7 +511,8 @@ const locations = [
       "Indian Ocean humpback dolphin <em>(Sousa plumbea)</em>"
     ],
     photos: [],
-    galleryId: "zavora"
+    galleryId: "zavora",
+    diveLogLocation: "Závora, Mozambique"
   },
   {
     name: "Guinjata Bay",
@@ -521,7 +522,9 @@ const locations = [
     dates: "July 13th, 2025",
     description: "Spent a night in Guinjata doing a receiver retrieval, it was a lovely time.",
     species: [],
-    photos: []
+    photos: [],
+    galleryId: "guinjata",
+    diveLogLocation: "Guinjata, Mozambique"
   },
   {
     name: "Faro",
@@ -545,7 +548,8 @@ const locations = [
       "Bearded fireworm <em>(Hermodice carunculata)</em>"
     ],
     photos: ["/images/map/Bonaire1.JPG", "/images/map/Bonaire2.JPG", "/images/map/Bonaire3.JPG", "/images/map/Bonaire4.JPG", "/images/map/Bonaire5.JPG", "/images/map/Bonaire6.JPG", "/images/map/Bonaire7.JPG", "/images/map/Bonaire8.JPG", "/images/map/Bonaire9.JPG"],
-    galleryId: "bonaire"
+    galleryId: "bonaire",
+    diveLogLocation: "Bonaire, Caribbean Netherlands"
   },
   {
     name: "Oslo",
@@ -604,7 +608,8 @@ const locations = [
       "Indian Ocean humpback dolphin <em>(Sousa plumbea)</em>"
     ],
     photos: ["/images/photography/Zavora1.JPG", "/images/photography/Zavora2.JPG", "/images/photography/Zavora3.jpg", "/images/photography/Zavora4.JPG", "/images/photography/Zavora5.JPG", "/images/photography/Zavora6.jpg", "/images/photography/Zavora7.JPG"],
-    galleryId: "zavora-2026"
+    galleryId: "zavora-2026",
+    diveLogLocation: "Závora, Mozambique"
   },
   {
     name: "Vilankulos",
@@ -665,7 +670,8 @@ const locations = [
       "Spotted eagle ray <em>(Aetobatus narinari)</em>"
     ],
     photos: ["/images/photography/Divemaster1.jpg", "/images/photography/Divemaster2.JPG"],
-    galleryId: "divemaster"
+    galleryId: "divemaster",
+    diveLogLocation: "Honolulu, O'ahu, Hawai'i"
   },
   {
   name: "North Shore",
@@ -683,7 +689,8 @@ const locations = [
   "Fellow's nudibranch <em>(Hiatodoris fellowsi)</em>"
 ],
   photos: ["/images/photography/NorthShore1.JPG", "/images/photography/NorthShore2.JPG", "/images/photography/NorthShore3.JPG", "/images/photography/NorthShore4.JPG", "/images/photography/NorthShore5.JPG", "/images/photography/NorthShore6.JPG", "/images/photography/NorthShore7.JPG"],
-  galleryId: "north-shore"
+  galleryId: "north-shore",
+  diveLogLocation: "North Shore, O'ahu, Hawai'i"
 },
 ];
 
@@ -747,6 +754,12 @@ function buildPopup(loc) {
     if (link) html += `<div class="popup-gallery-link">View in gallery →</div>`;
     html += link ? '</a>' : '</div>';
   }
+  // link back to the dive log, filtered to this location, if this is a dive site
+  // that has matching rows in divelog.csv (see diveLogLocation on the location object)
+  if (loc.type === 'dive' && loc.diveLogLocation) {
+    const url = '/dive-log/?location=' + encodeURIComponent(loc.diveLogLocation.toLowerCase());
+    html += `<div class="popup-gallery-link" style="margin-top:6px;"><a href="${url}"><i class="fas fa-book"></i> View dives in log →</a></div>`;
+  }
   return html;
 }
 
@@ -769,7 +782,7 @@ locations.forEach(loc => {
     });
   });
 
-  markerObjects.push({ marker, type: loc.type, country: loc.country, year: loc._year });
+  markerObjects.push({ marker, type: loc.type, country: loc.country, year: loc._year, galleryId: loc.galleryId });
 });
 
 map.on('popupclose', () => {
@@ -869,5 +882,11 @@ setTimeout(() => {
 if (window.location.hash) {
   const id = window.location.hash.slice(1);
   const loc = locations.find(l => l.galleryId === id);
-  if (loc) map.setView(loc.coords, 8);
+  if (loc) {
+    map.setView(loc.coords, 8);
+    const found = markerObjects.find(m => m.galleryId === id);
+    if (found) {
+      setTimeout(() => found.marker.openPopup(), 350);
+    }
+  }
 }
