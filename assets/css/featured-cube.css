@@ -17,12 +17,11 @@
 
 /* ---------- compact strip near the top of the page ---------- */
 .cube-feature {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 1.5rem;
-  max-width: 720px;
+  gap: 1.25rem;
   margin: 0 auto 1.5rem;
-  padding: 1rem 1.25rem;
+  padding: 0.85rem 1.25rem;
   background: var(--fc-surface);
   color: var(--fc-ink);
   font-family: var(--fc-font-body);
@@ -30,9 +29,13 @@
   border-radius: 14px;
 }
 
+#featured-cube-mount {
+  text-align: center;
+}
+
 .cube-feature-text {
-  flex: 1;
   min-width: 0;
+  text-align: left;
 }
 
 .cube-feature-eyebrow {
@@ -247,6 +250,9 @@
     flex-direction: column;
     text-align: center;
     gap: 1rem;
+  }
+  .cube-feature-text {
+    text-align: center;
   }
   .cube-scene { --cube-size: 110px; }
 }
