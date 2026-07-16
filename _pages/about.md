@@ -10,7 +10,7 @@ article.page {
   position: relative;
 }
 .about-text {
-  padding-right: 400px;
+  padding-right: 260px;
 }
 .about-text p {
   margin: 0 0 1rem;
@@ -19,7 +19,7 @@ article.page {
   position: absolute;
   top: 0;
   right: 0;
-  width: 360px;
+  width: 3220px;
   display: flex;
   flex-direction: column;
   gap: 12px;
