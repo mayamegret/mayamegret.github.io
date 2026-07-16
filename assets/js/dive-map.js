@@ -5,6 +5,7 @@ const locations = [
     coords: [27.77, -82.64],
     type: "visit",
     dates: "2002-2024",
+    ocean: "Atlantic",
     description: "I grew up visiting my grandpa in Florida often, spending birthdays and spring breaks and summers at his condo in St. Petersburg. We always went to the pink palace (the Don CeSar) for ice cream, went kayaking in the mangroves of Fort De Soto with manatees, spent long afternoons on the beach looking for shells and horseshoe crabs, watching dolphins swim by from his backyard, chase lizards around at sunset, spend days at the pool, go on airplane rides with my grandpa, and more and more. I really cherish this time with my family and St. Petersburg will always have a special place in my heart.",    species: [
       "Florida manatee <em>(Trichechus manatus latirostris)</em>",
       "Atlantic bottlenose dolphin <em>(Tursiops truncatus)</em>",
@@ -19,6 +20,7 @@ const locations = [
     coords: [17.25, -88.77],
     type: "visit",
     dates: "March 2013",
+    ocean: "Atlantic",
     description: "For spring break 2013, my family and I went to Belize! We first explored the mountains and jungle and then finished our trip on the coast. Belize was the first place I ever snorkeled with turtles and sharks, and it is where I decided that I want to be a marine biologist!",
     species: [],
     photos: []
@@ -69,6 +71,7 @@ const locations = [
     coords: [36.85, -75.98],
     type: "dive",
     dates: "July 24-25th, 2022",
+    ocean: "Atlantic",
     description: "Where I completed my Open Water certification with dad! We got certified the same summer we built our pond in the backyard of the home I grew up in. A very special time that I look back on so fondly.",
     species: [],
     photos: []
@@ -101,6 +104,7 @@ const locations = [
     coords: [-27.50, 153.43],
     type: "visit",
     dates: "September 27 - October 5th, 2022",
+    ocean: "Pacific",
     description: "Our first Marine Biology field trip was to North Stradbroke Island! We stayed at a lab and got to enjoy the beaches and tide pools between classes and lab work. My group studied the ephemeral tide pools left by stingrays as they forage. We studied the prawn species that colonize the ephemeral tide pools. I also learned to do a cartwheel on the beach with Joey and Sophia, it was a very special afternoon.",
     species: [
       "Spotted wobbegong <em>(Orectolobus maculatus)</em>",
@@ -141,6 +145,7 @@ const locations = [
     coords: [-23.44, 151.92],
     type: "visit",
     dates: "October 30 - November 5th, 2022",
+    ocean: "Pacific",
     description: "We closed out our program with a bang for our last Marine Biology field trip to Heron Island, where we spent over a week living at the lab. Between lectures and lab work, we snorkeled at least 3 times a day, at sunrise, mid afternoon, and sunset. We swam with so many sharks, rays, nudibranchs, octopus, squid, guitarfish, eels, and so much more! My group studied the strength of crabs, comparing their body size and weight to the size and weight of coral rubble they were capable of lifting. It was one of the best weeks of my life.",
     species: [
       "Giant guitarfish <em>(Glaucostegus typus)</em>",
@@ -168,6 +173,7 @@ const locations = [
     coords: [-16.92, 145.78],
     type: "dive",
     dates: "November 13th, 2022",
+    ocean: "Pacific",
     description: "First dives on the Great Barrier Reef! Dad and I did our first ocean dives while mom and Tess snorkeled. Australia is where I fell in love with nudibranchs, so it holds a very special place in my heart!!",
     species: [],
     photos: []
@@ -178,6 +184,7 @@ const locations = [
     coords: [-16.49, 145.47],
     type: "dive",
     dates: "November 16th, 2022",
+    ocean: "Pacific",
     description: "More diving on the GBR.",
     species: [],
     photos: []
@@ -188,6 +195,7 @@ const locations = [
     coords: [-34.73, 135.88],
     type: "visit",
     dates: "November 20-22nd, 2022",
+    ocean: "Southern",
     description: "We came for the great white sharks, we stayed for the koalas. A really special time in my heart.",
     species: [],
     photos: ["/images/map/PortLincoln1.JPG", "/images/map/PortLincoln2.JPG", "/images/map/PortLincoln3.JPG", "/images/map/PortLincoln4.JPG"],
@@ -199,6 +207,7 @@ const locations = [
     coords: [-18.24, 178.07],
     type: "dive",
     dates: "November 29-30th, 2022",
+    ocean: "Pacific",
     description: "Joey and I spent a few days in Fiji, where we did 2 coral reef dives and 2 shark dives! It was an amazing adventure together, including hectic gear malfunctions and finding plenty of shark teeth.",
     species: [
       "Ribbon eels <em>(Rhinomuraena quaesita)</em>",
@@ -225,6 +234,7 @@ const locations = [
     coords: [22.89, -109.91],
     type: "visit",
     dates: "March 25-30th, 2023",
+    ocean: "Pacific",
     description: "For spring break junior year, my family, Brynn and I all went to Cabo San Lucas and did a whale watching tour where we had the most incredible interaction with these whales!",
     species: [
       "Humpback whale <em>(Megaptera novaeangliae)</em>"
@@ -251,6 +261,7 @@ const locations = [
     coords: [38.18, 20.57],
     type: "dive",
     dates: "July 22nd, 2023",
+    ocean: "Atlantic",
     description: "During my fieldwork in Greece monitoring nesting sea turtles and their hatchlings, I went diving! It was lovely, warm, and I saw a few nudis!",
     species: [],
     photos: ["/images/map/Cephalonia1.jpg"],
@@ -328,6 +339,7 @@ const locations = [
     coords: [32.86689, -117.25714],
     type: "visit",
     dates: "~January 2024",
+    ocean: "Pacific",
     description: "Between classes at Scripps, I would visit the tide pools just north of the pier!",
     species: [],
     photos: ["/images/photography/LJ1.jpg", "/images/photography/LJ2.jpg", "/images/photography/LJ3.jpg", "/images/photography/LJ4.jpg", "/images/photography/LJ5.jpg", "/images/photography/LJ6.jpg"],
@@ -361,6 +373,7 @@ const locations = [
     coords: [9.35, -82.17],
     type: "dive",
     dates: "March 24-30th, 2024",
+    ocean: "Atlantic",
     description: "We spent the rest of our time in Panama in Isla Bastimentos, sleeping in bungalows over the water, watching eagle rays swim by at dinner, snorkeling and reading all day, and we even went diving! We also saw sloths and really cool frogs.",
     species: [],
     photos: ["/images/photography/IB1.JPG", "/images/photography/IB2.jpg", "/images/photography/IB3.JPG", "/images/photography/IB4.jpg", "/images/photography/IB5.JPG", "/images/photography/IB6.JPG"],
@@ -372,6 +385,7 @@ const locations = [
     coords: [32.8504, -117.2729],
     type: "dive",
     dates: "June 18th, 2024",
+    ocean: "Pacific",
     description: "COLD! So cold. First kelp forest dive! Saw so many bright orange garibaldi and playful sea lions!!",
     species: [
       "Garibaldi <em>(Hypsypops rubicundus)</em>",
@@ -470,6 +484,7 @@ const locations = [
     coords: [37.02, -8.94],
     type: "dive",
     dates: "February-May 2025",
+    ocean: "Atlantic",
     description: "During my masters courses at UAlg, I completed my advanced open water course and completed a scientific diving course with Diogo at CCMAR. It was an amazing experience, I learned so many great skills, improved my buoyancy and trim, and learned how to conduct science underwater! From these dives, I realized how important diving is to my career as a marine biologist and it has led me down the path I am on today!",
     species: [],
     photos: ["/images/map/Sagres1.JPG", "/images/map/Sagres2.JPG"],
@@ -503,6 +518,7 @@ const locations = [
     coords: [-24.52, 35.20],
     type: "dive",
     dates: "July 2-25th, 2025",
+    ocean: "Indian",
     description: "During my first month in Mozambique, I interned with MAR Divers where I completed 26 scientific dives focused on photo identification of manta rays, nudibranch diversity surveys, and predatory fish surveys. Additionally, my internship focused on Humpback whale migration surveys from the sand dunes and from the boat. We were so lucky to experience a whale swimming by us on one of our last dives!",
     species: [
       "Humpback whale <em>(Megaptera novaeangliae)</em>",
@@ -520,6 +536,7 @@ const locations = [
     coords: [-24.07, 35.48],
     type: "dive",
     dates: "July 13th, 2025",
+    ocean: "Indian",
     description: "Spent a night in Guinjata doing a receiver retrieval, it was a lovely time.",
     species: [],
     photos: [],
@@ -543,6 +560,7 @@ const locations = [
     coords: [12.18, -68.24],
     type: "dive",
     dates: "November 1-9th, 2025",
+    ocean: "Atlantic",
     description: "My family and I spent a week in Bonaire celebrating my moms birthday. We stayed in a cute house right on the water, snorkeling 3 times a day and exploring the island in between! Dad and I even went scuba diving a few times, we saw lots of squid and even a pod of dolphins 20m deep! Around the island, we saw flamingos and iguanas. A beautiful island getaway!",
     species: [
       "Bearded fireworm <em>(Hermodice carunculata)</em>"
@@ -601,6 +619,7 @@ const locations = [
     coords: [-24.30, 35.20],
     type: "dive",
     dates: "January-February 2026",
+    ocean: "Indian",
     description: "I spent 6 weeks back in Závora to collect the data for my thesis research! I completed 45 scientific dive surveys comparing three different SCUBA-based sampling methodologies for assessing the abundance and species diversity of nudibranchs across 3 different rocky reef sites.",
     species: [
       "Oceanic Manta Ray <em>(Mobula birostris)</em>",
@@ -617,6 +636,7 @@ const locations = [
     coords: [-21.99, 35.31],
     type: "visit",
     dates: "February 24-28th, 2026",
+    ocean: "Indian",
     description: "I spent my last few days of my time in Mozambique in Vilankulos, where I snorkeled with seahorses, did a tour of the Bazaruto Archipelago, and relaxed by the beach reading and eating matapa and fried bananas.",
     species: [],
     photos: ["/images/photography/Vilankulos1.jpg", "/images/photography/Vilankulos2.JPG", "/images/photography/Vilankulos3.JPG", "/images/photography/Vilankulos4.JPG", "/images/photography/Vilankulos5.JPG"],
@@ -639,6 +659,7 @@ const locations = [
     coords: [19.64, -155.99],
     type: "visit",
     dates: "May 12-18th, 2026",
+    ocean: "Pacific",
     description: "As I moved out to Hawai'i, my parents came with me and we first spent a week in Kona! We woke up early most days and explored tide pools, found hidden beaches, and explored Volcano National Park!",
     species: [],
     photos: ["/images/photography/IMG_0593.jpg", "/images/photography/IMG_0599.jpg", "/images/photography/IMG_1093.jpg"],
@@ -661,6 +682,7 @@ const locations = [
     coords: [21.28, -157.84],
     type: "dive",
     dates: "June 1st - July 4th, 2026",
+    ocean: "Pacific",
     description: "After completing my React Right and Stress & Rescue certs, I spent 5 weeks working on my divemaster certification. I completed 50+ dives working on guiding, navigation, and becoming a professional diver! I am super excited to now be an SSI Divemaster!",
     species: [
       "Blue dragon nudibranch <em>(Pteraeolidia semperi)</em>",
@@ -679,6 +701,7 @@ const locations = [
   coords: [21.60, -158.10],
   type: "dive",
   dates: "July 2026",
+    ocean: "Pacific",
   description: "I went diving in North Shore with some coworkers and it was a great day! Our first dive was at Three Tables, where we saw so many nudibranchs! After our 67 minute dive, we surfaced and grabbed some delicious poke before heading to Haleiwa Trench for our second dive. The visibility on the second dive was very low but the vibes were great, we saw many more nudis including 3 Spanish Dancers (the largest nudi genus, they get huge!). I had a great time taking photographs and spotting my favorite critters underwater!",
   species: [
   "Yellow-margined Spanish dancer <em>(Hexabranchus aureomarginatus)</em>",
@@ -874,9 +897,11 @@ window.filterMap = function(type) {
 // Counter
 const countries = new Set(locations.map(l => l.country));
 const diveCount = locations.filter(l => l.type === 'dive').length;
+const ALL_OCEANS = ['Pacific', 'Atlantic', 'Indian', 'Southern', 'Arctic'];
+const oceansVisited = new Set(locations.map(l => l.ocean).filter(Boolean));
 setTimeout(() => {
   const el = document.getElementById('map-counter');
-  if (el) el.innerHTML = `<strong>${countries.size}</strong> countries &nbsp;·&nbsp; <strong>${diveCount}</strong> dive sites`;
+  if (el) el.innerHTML = `<strong>${countries.size}</strong> countries &nbsp;·&nbsp; <strong>${diveCount}</strong> dive sites &nbsp;·&nbsp; <strong>${oceansVisited.size}/${ALL_OCEANS.length}</strong> oceans`;
 }, 100);
 
 if (window.location.hash) {
