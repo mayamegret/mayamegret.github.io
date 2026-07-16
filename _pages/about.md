@@ -19,7 +19,7 @@ article.page {
   position: absolute;
   top: 0;
   right: 0;
-  width: 3220px;
+  width: 220px;
   display: flex;
   flex-direction: column;
   gap: 12px;
