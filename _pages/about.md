@@ -7,6 +7,10 @@ author_profile: true
 ---
 
 <style>
+#main, article.page, .page__inner-wrap, .page__content, .page__inner-wrap--layout-single {
+  max-width: 100% !important;
+  width: 100% !important;
+}
 .about-flex {
   display: flex;
   gap: 24px;
@@ -61,3 +65,11 @@ author_profile: true
     <img src="/images/photography/DadTessMaya.JPG">
   </div>
 </div>
+
+<script>
+document.querySelectorAll('#main, article.page, .page__inner-wrap, .page__content').forEach(el => {
+  el.style.maxWidth = '100%';
+  el.style.width = '100%';
+  el.style.float = 'none';
+});
+</script>
