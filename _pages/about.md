@@ -25,7 +25,7 @@ author_profile: true
   margin: 0 0 1rem;
 }
 .about-images {
-  flex: 0 0 320px;
+  flex: 0 0 400px;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -65,3 +65,11 @@ author_profile: true
     <img src="/images/photography/DadTessMaya.JPG">
   </div>
 </div>
+
+<script>
+document.querySelectorAll('#main, article.page, .page__inner-wrap, .page__content').forEach(el => {
+  el.style.maxWidth = '100%';
+  el.style.width = '100%';
+  el.style.float = 'none';
+});
+</script>
