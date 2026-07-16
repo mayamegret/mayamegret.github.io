@@ -52,7 +52,7 @@ h1::after, h2::after, h3::after { background-color: #1A4A5C !important; border-c
   display: flex;
   align-items: center;
   gap: 16px;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 .timeline-year-label {
   font-size: 0.9rem;
@@ -63,7 +63,7 @@ h1::after, h2::after, h3::after { background-color: #1A4A5C !important; border-c
 }
 .timeline-slider-wrap {
   flex: 1;
-  min-width: 0;
+  min-width: 200px;
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -118,7 +118,6 @@ h1::after, h2::after, h3::after { background-color: #1A4A5C !important; border-c
 </div>
 
 <div class="timeline-controls">
-  <div class="timeline-year-label">Up to: <strong id="year-display">2026</strong></div>
   <div class="timeline-slider-wrap">
     <input type="range" id="year-slider" min="2002" max="2026" value="2026" step="1" oninput="onSliderChange(this.value)">
     <div class="timeline-years-row">
