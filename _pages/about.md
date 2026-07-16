@@ -12,6 +12,9 @@ author_profile: true
   width: 100% !important;
 }
 .about-flex {
+  border: 3px dashed red;
+}
+.about-flex {
   display: flex;
   gap: 24px;
   align-items: flex-start;
