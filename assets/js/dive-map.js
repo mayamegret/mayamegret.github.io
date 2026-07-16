@@ -897,11 +897,10 @@ window.filterMap = function(type) {
 // Counter
 const countries = new Set(locations.map(l => l.country));
 const diveCount = locations.filter(l => l.type === 'dive').length;
-const ALL_OCEANS = ['Pacific', 'Atlantic', 'Indian', 'Southern', 'Arctic'];
 const oceansVisited = new Set(locations.map(l => l.ocean).filter(Boolean));
 setTimeout(() => {
   const el = document.getElementById('map-counter');
-  if (el) el.innerHTML = `<strong>${countries.size}</strong> countries &nbsp;·&nbsp; <strong>${diveCount}</strong> dive sites &nbsp;·&nbsp; <strong>${oceansVisited.size}/${ALL_OCEANS.length}</strong> oceans`;
+  if (el) el.innerHTML = `<strong>${countries.size}</strong> countries &nbsp;·&nbsp; <strong>${diveCount}</strong> dive sites &nbsp;·&nbsp; <strong>${oceansVisited.size}</strong> oceans`;
 }, 100);
 
 if (window.location.hash) {
