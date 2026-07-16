@@ -6,6 +6,7 @@ header:
 author_profile: true
 ---
 
+</style>
 #main {
   width: 100% !important;
   max-width: none !important;
