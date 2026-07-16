@@ -5,8 +5,7 @@ header:
   image: photography/IMG_99022.jpeg
 author_profile: true
 ---
-
-</style>
+<style>
 #main {
   width: 100% !important;
   max-width: none !important;
@@ -67,6 +66,7 @@ article.page {
     min-width: 0;
   }
 }
+</style>
 
 <div class="about-flex">
   <div class="about-text">
