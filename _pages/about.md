@@ -7,25 +7,23 @@ author_profile: true
 ---
 
 <style>
-#main, article.page, .page__inner-wrap, .page__content, .page__inner-wrap--layout-single {
-  max-width: 100% !important;
-  width: 100% !important;
-}
 .about-flex {
   display: flex;
   gap: 24px;
   align-items: flex-start;
   flex-wrap: nowrap;
+  width: 100%;
 }
 .about-text {
-  flex: 1 1 auto;
+  flex: 1 1 0%;
   min-width: 0;
 }
 .about-text p {
   margin: 0 0 1rem;
 }
 .about-images {
-  flex: 0 0 400px;
+  flex: 0 0 32%;
+  max-width: 420px;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -42,15 +40,13 @@ author_profile: true
   }
   .about-images {
     flex: 1 1 100%;
+    max-width: 100%;
     flex-direction: row;
     gap: 10px;
-    max-width: 100%;
   }
   .about-images img {
-    flex: 1 1 0;
+    flex: 1 1 0%;
     min-width: 0;
-    width: auto;
-    max-width: 130px;
   }
 }
 </style>
@@ -65,11 +61,3 @@ author_profile: true
     <img src="/images/photography/DadTessMaya.JPG">
   </div>
 </div>
-
-<script>
-document.querySelectorAll('#main, article.page, .page__inner-wrap, .page__content').forEach(el => {
-  el.style.maxWidth = '100%';
-  el.style.width = '100%';
-  el.style.float = 'none';
-});
-</script>
