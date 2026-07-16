@@ -43,6 +43,14 @@ author_profile: true
   .about-images {
     flex: 1 1 100%;
     flex-direction: row;
+    gap: 10px;
+    max-width: 100%;
+  }
+  .about-images img {
+    flex: 1 1 0;
+    min-width: 0;
+    width: auto;
+    max-width: 130px;
   }
 }
 </style>
@@ -57,11 +65,3 @@ author_profile: true
     <img src="/images/photography/DadTessMaya.JPG">
   </div>
 </div>
-
-<script>
-document.querySelectorAll('#main, article.page, .page__inner-wrap, .page__content').forEach(el => {
-  el.style.maxWidth = '100%';
-  el.style.width = '100%';
-  el.style.float = 'none';
-});
-</script>
