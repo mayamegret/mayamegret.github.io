@@ -267,7 +267,10 @@ function resizeAllTiles() {
     if (img.complete && img.naturalWidth) {
       resizeMasonryItem(tile);
     } else {
-      img.addEventListener('load', () => resizeMasonryItem(tile));
+      img.addEventListener('load', () => {
+        resizeMasonryItem(tile);
+        setTimeout(() => resizeMasonryItem(tile), 100);
+      });
     }
   });
 }
