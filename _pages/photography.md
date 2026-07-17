@@ -285,6 +285,8 @@ document.querySelectorAll('#main, article.page, .page__inner-wrap, .page__conten
 const grid = document.getElementById('photo-grid');
 const observer = new MutationObserver(() => {
   setTimeout(resizeAllTiles, 50);
+  setTimeout(resizeAllTiles, 500);
+  setTimeout(resizeAllTiles, 1500);
 });
 observer.observe(grid, { childList: true });
 
