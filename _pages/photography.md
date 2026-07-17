@@ -80,7 +80,6 @@ h1.page__title {
 .photo-tile {
   position: relative;
   cursor: pointer;
-  overflow: hidden;
   border-radius: 0px;
 }
 .photo-tile img {
