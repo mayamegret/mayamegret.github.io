@@ -700,7 +700,7 @@ const locations = [
   country: "Hawai'i, USA",
   coords: [21.60, -158.10],
   type: "dive",
-  dates: "July 2026",
+  dates: "July 13th, 2026",
     ocean: "Pacific",
   description: "I went diving in North Shore with some coworkers and it was a great day! Our first dive was at Three Tables, where we saw so many nudibranchs! After our 67 minute dive, we surfaced and grabbed some delicious poke before heading to Haleiwa Trench for our second dive. The visibility on the second dive was very low but the vibes were great, we saw many more nudis including 3 Spanish Dancers (the largest nudi genus, they get huge!). I had a great time taking photographs and spotting my favorite critters underwater!",
   species: [
@@ -714,6 +714,28 @@ const locations = [
   photos: ["/images/photography/NorthShore1.JPG", "/images/photography/NorthShore2.JPG", "/images/photography/NorthShore3.JPG", "/images/photography/NorthShore4.JPG", "/images/photography/NorthShore5.JPG", "/images/photography/NorthShore6.JPG", "/images/photography/NorthShore7.JPG"],
   galleryId: "north-shore",
   diveLogLocation: "North Shore, O'ahu, Hawai'i"
+},
+{
+  name: "O'ahu",
+  country: "Hawai'i, USA",
+  coords: [21.45, -158.00],
+  type: "visit",
+  dates: "May - July 2026",
+  description: "Scenery from my first two months living in Hawai'i caught on film.",
+  species: [],
+  photos: ["/images/photography/HawaiiFilm1.jpg", "/images/photography/HawaiiFilm2.jpg", "/images/photography/HawaiiFilm3.jpg", "/images/photography/HawaiiFilm4.jpg", "/images/photography/HawaiiFilm5.jpg"],
+  galleryId: "hawaii-film"
+},
+{
+  name: "O'ahu",
+  country: "Hawai'i, USA",
+  coords: [21.40, -157.95],
+  type: "visit",
+  dates: "May - July 2026",
+  description: "My first two months on the island and my friends and I have done lots of diving, hiking, dancing, beaching, and everything in between! From beach days with Riley to diving in North Shore with Callum and Josiah to long work days on the boat with Captain D to hiking to waterfalls with Maycey and Rylie (and Poko of course) to seeing Royce Fisherman play live!",
+  species: [],
+  photos: ["/images/photography/HawaiiFriends1.jpg", "/images/photography/HawaiiFriends2.jpg", "/images/photography/HawaiiFriends3.jpg", "/images/photography/HawaiiFriends4.jpg", "/images/photography/HawaiiFriends5.jpg"],
+  galleryId: "hawaii-friends"
 },
 ];
 
