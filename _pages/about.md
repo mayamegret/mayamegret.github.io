@@ -10,7 +10,8 @@ article.page {
   position: relative;
 }
 .about-text {
-  padding-right: 260px;
+  padding-right: 240px;
+  text-align: justify;
 }
 .about-text p {
   margin: 0 0 1rem;
