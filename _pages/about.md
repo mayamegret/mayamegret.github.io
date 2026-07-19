@@ -76,12 +76,6 @@ article.page {
 <div class="about-text">
   <p>I am a marine biologist completing my MSc at the Universidade do Algarve, where my thesis research explored the impact of SCUBA-based sampling methodologies on nudibranch diversity and abundance estimates in Mozambique. I earned my BS in Marine Biology from UC San Diego's Scripps Institution of Oceanography, where field work first hooked me on the world of diving and research. I'm also a scientific diver and divemaster, which keeps me in the water most of the time.</p>
   <p>Outside of research, I love traveling and I am an avid photographer, so here is where I will be sharing a lot of my underwater and travel photography! </p>
-  <div class="about-links">
-  <a href="/dive-log/" class="about-link-btn">View my dives →</a>
-  <a href="/map/" class="about-link-btn">See the map →</a>
-  <a href="/species/" class="about-link-btn">Browse species →</a>
-</div>
-</div>
 <div class="about-links">
   <a href="/photography/" class="about-link-btn">See my photos →</a>
   <a href="/dive-log/" class="about-link-btn">View my dives →</a>
