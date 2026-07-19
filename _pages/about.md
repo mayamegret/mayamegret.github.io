@@ -45,12 +45,6 @@ article.page {
     flex: 1 1 0%;
     min-width: 0;
   }
-}
-  .page__content,
-.page__inner-wrap {
-  max-width: 100% !important;
-  width: 100% !important;
-}
 </style>
 
 <div class="about-text">
@@ -62,3 +56,11 @@ article.page {
   <img src="/images/photography/MomTessMaya.JPG">
   <img src="/images/photography/DadTessMaya.JPG">
 </div>
+
+<script>
+document.querySelectorAll('#main, article.page, .page__inner-wrap, .page__content').forEach(el => {
+  el.style.setProperty('max-width', '100%', 'important');
+  el.style.setProperty('width', '100%', 'important');
+  el.style.setProperty('float', 'none', 'important');
+});
+</script>
