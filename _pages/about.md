@@ -46,6 +46,11 @@ article.page {
     min-width: 0;
   }
 }
+  .page__content,
+.page__inner-wrap {
+  max-width: 100% !important;
+  width: 100% !important;
+}
 </style>
 
 <div class="about-text">
