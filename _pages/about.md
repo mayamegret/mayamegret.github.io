@@ -82,9 +82,12 @@ article.page {
   <a href="/species/" class="about-link-btn">Browse species →</a>
 </div>
 </div>
-<div class="about-images">
-  <img src="/images/photography/MomTessMaya.JPG">
-  <img src="/images/photography/DadTessMaya.JPG">
+<div class="about-links">
+  <a href="/photography/" class="about-link-btn">See my photos →</a>
+  <a href="/dive-log/" class="about-link-btn">View my dives →</a>
+  <a href="/map/" class="about-link-btn">See the map →</a>
+  <a href="/species/" class="about-link-btn">Browse species →</a>
+  <a href="/cv/" class="about-link-btn">View my CV →</a>
 </div>
 <script>
 document.querySelectorAll('#main, article.page, .page__inner-wrap, .page__content').forEach(el => {
