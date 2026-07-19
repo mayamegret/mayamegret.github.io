@@ -60,5 +60,7 @@ document.querySelectorAll('#main, article.page, .page__inner-wrap, .page__conten
   el.style.setProperty('max-width', '100%', 'important');
   el.style.setProperty('width', '100%', 'important');
   el.style.setProperty('float', 'none', 'important');
+  el.style.setProperty('padding-left', '0', 'important');
+  el.style.setProperty('padding-right', '0', 'important');
 });
 </script>
