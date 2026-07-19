@@ -15,6 +15,16 @@ const locations = [
     galleryId: "st-pete"
   },
   {
+    name: "Amherst",
+    country: "USA",
+    coords: [42.3732, -72.5199],
+    type: "visit",
+    dates: "2002-2014",
+    description: "My (great) Aunt Elaine and Uncle Arthur lived in Amherst, and my sister and I spent a week each summer visiting them growing up. There was a fun fair we'd go to, and we spent our days at a nearby camp making pies, painting furniture, and learning to embroider. Aunt Elaine had the most beautiful garden that we would spend hours playing in, and Uncle Arthur had the coolest artifacts and photographs we would spend hours sifting through. We would rent movies from Blockbuster and make homemade salad dressing and saltine toffee cookies.",
+    species: [],
+    photos: []
+  },
+  {
     name: "Belize",
     country: "Belize",
     coords: [17.25, -88.77],
@@ -22,6 +32,27 @@ const locations = [
     dates: "March 2013",
     ocean: "Atlantic",
     description: "For spring break 2013, my family and I went to Belize! We first explored the mountains and jungle and then finished our trip on the coast. Belize was the first place I ever snorkeled with turtles and sharks, and it is where I decided that I want to be a marine biologist!",
+    species: [],
+    photos: []
+  },
+  {
+    name: "Paris",
+    country: "France",
+    coords: [48.8566, 2.3522],
+    type: "visit",
+    dates: "August 20th - September 5th, 2015",
+    description: "My first trip to France was with my family in 2015! We arrived in Paris, where we spent a few days enjoying the food and exploring the Catacombs, posing for silly pictures in the Louvre, and eating pain au chocolat every single morning. After Paris, we headed to the south of France to visit family! We stayed in Aix-en-Provence, where my parents met, and visited my grandmother and uncles and cousins. We enjoyed time exploring Cassis, boats around the Calanques, hikes around Verdon, and exploring the city my parents fell in love in.",
+    species: [],
+    photos: []
+  },
+  {
+    name: "Santorini",
+    country: "Greece",
+    coords: [36.3932, 25.4615],
+    type: "visit",
+    dates: "August 5th-19th, 2017",
+    ocean: "Atlantic",
+    description: "My family flew into Santorini and explored the island for a few days before hopping on a boat and sailing around the Aegean Sea for a week. We stopped in Paros, Koufonisia, Irakleia, and many islands in between. We went snorkeling in the mornings and explored the islands in the afternoons. We finished with a few days in Athens before heading back home.",
     species: [],
     photos: []
   },
