@@ -61,9 +61,6 @@ body { color: #711A54 !important; }
   max-width: 100% !important;
   border-radius: 8px;
   margin: 0 !important;
-  object-fit: cover;
-  object-position: center;
-  aspect-ratio: 1 / 1;
   height: auto;
 }
 .page__share { display: none !important; }
