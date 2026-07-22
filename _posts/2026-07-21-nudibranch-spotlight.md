@@ -3,7 +3,7 @@ title: 'Nudibranch Spotlight: My Favorite Little Critters'
 date: 2026-07-21
 permalink: /posts/2026/07/nudibranch-spotlight/
 header:
-  teaser: /images/photography/NudiCollage.png
+  teaser: /images/photography/NudiCollage1.png
 read_time: false
 author_profile: false
 tags:
@@ -96,7 +96,7 @@ I first fell in love with nudibranchs during my study abroad in Australia, and I
 
 For my thesis, I compared three different SCUBA-based sampling methodologies to determine their influence on estimates of nudibranch abundance, diversity, and community composition on rocky reefs. Over the course of my fieldwork in Závora, I collected data on **343 individual nudibranchs**. Every single one of those 343 was measured, photographed, and identified. Then, I spent weeks analyzing all of the data I collected, computing the statistics of alpha and beta diversity, indicator species analysis, GLMs, and wrote my 61 page thesis on it all!
 
-<img src="/images/photography/NudiCollage2.png" class="blog-img-left" alt="More nudibranchs from Závora">
+<img src="/images/photography/HawaiiNudiCollage.png" class="blog-img-left" alt="More nudibranchs from Závora">
 
 <div class="blog-clear"></div>
 
