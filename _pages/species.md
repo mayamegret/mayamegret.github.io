@@ -191,7 +191,7 @@ const PERSONAL_NOTES = {
   "Heterocentrotus mamillatus": "I love the thickness of the spikes of these guys, and their colors are just so bright and beautiful.",
   "Crocuta crocuta": "I love the spotted hyena, and my first encounter with one was with my mom on safari in June 2025, where we witnessed a hyena and leopard fighting over an impala that had been recently hunted and killed by the leopard. The hyena won, stealing the carcass and leaving the leopard with only the stomach and intestines!",
   "Giraffa giraffa giraffa": "Giraffes are obviously so cool and unique but when you see them in real life up close in the wild, it really is incredible. I really love the way they drink water, keeping their legs practically perfectly straight and spread out, and how the water flicks from their tongue.",
-  "Sakuraeolis arcana": "This species was super integral to my thesis research and holds a special place in my heart! I love the orange coloring (my favorite color of course) and the beautiful cerata that flow in the surge",
+  "Sakuraeolis arcana": "This species was super integral to my thesis research and holds a special place in my heart! I love the bright orange color (my favorite color of course) and the beautiful cerata that flow in the surge",
   "Taenianotus triacanthus": "The leaf scorpionfish is just super fascinating to spot and observe!",
   "Hippocampus camelopardalis": "The first seahorse I ever saw was in Mozambique on a seahorse survey and I fell in love with these guys then and there!",
   "Drosera spatulata": "A carnivorous plant I spotted several times during my study abroad program in Australia. The red is so vibrant and I think they rock!",
