@@ -229,12 +229,12 @@ h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-c
 </ul>
   </div>
   <div>
-    <div class="cv-section-title"><i class="fas fa-water"></i> Certifications</div>
+   <div class="cv-section-title"><i class="fas fa-water"></i> Certifications</div>
     <div style="display: flex; gap: 20px; align-items: flex-start;">
       <ul class="cv-list" style="flex: 0 1 420px; margin: 0;">
         <li>Divemaster. SSI. July 2026.</li>
         <li>Stress and Rescue. SSI. May 2026.</li>
-        <li>First Aid, CPR, Oxygen. SSI. May 2026.</li>
+        <li>React Right First Aid, CPR, Oxygen. SSI. May 2026.</li>
         <li>Advanced Open Water. SSI. May 2025.
           <ul class="cv-sublist">
             <li>Nitrox EAN32</li>
@@ -243,12 +243,15 @@ h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-c
             <li>Search & Recovery</li>
           </ul>
         </li>
-        <li>Scientific Diving. CCMAR, UAlg. May 2025.
+        <li>Scientific Diving. GUE. CCMAR, UAlg. May 2025.
           <ul class="cv-sublist">
             <li>Radial search</li>
             <li>Quadrat sampling</li>
             <li>Transect sampling</li>
             <li>Sample collection</li>
+            <li>Excavation</li>
+            <li>Controlled lifts</li>
+            <li>Scientific reporting</li>
           </ul>
         </li>
         <li>Open Water. NAUI. August 2022.</li>
@@ -262,10 +265,16 @@ h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-c
           <img src="/images/photography/SRCard.png" alt="SSI Stress & Rescue Certification Card" style="width: 200px; border-radius: 8px; box-shadow: 0 2px 8px rgba(75,46,15,0.2); display: block;">
           <p style="font-size: 0.75rem; color: #4B2E0F; opacity: 0.7; margin-top: 4px;"><em>Stress & Rescue</em></p>
         </div>
+        <div>
+          <img src="/images/photography/ReactRightCert.png" alt="SSI React Right Certification Card" style="width: 200px; border-radius: 8px; box-shadow: 0 2px 8px rgba(75,46,15,0.2); display: block;">
+          <p style="font-size: 0.75rem; color: #4B2E0F; opacity: 0.7; margin-top: 4px;"><em>React Right</em></p>
+        </div>
+        <div>
+          <img src="/images/photography/ScientificDiver2.png" alt="Scientific Diving Certification Card" style="width: 200px; border-radius: 8px; box-shadow: 0 2px 8px rgba(75,46,15,0.2); display: block;">
+          <p style="font-size: 0.75rem; color: #4B2E0F; opacity: 0.7; margin-top: 4px;"><em>Scientific Diving</em></p>
+        </div>
       </div>
     </div>
-  </div>
-</div>
 
 <div class="cv-section-title"><i class="fas fa-briefcase"></i> Work Experience</div>
 <div class="cv-timeline">
