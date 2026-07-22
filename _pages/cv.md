@@ -364,36 +364,41 @@ h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-c
 
 </div>
 
-<div class="cv-section-title"><i class="fas fa-tools"></i> Skills</div>
-<ul class="cv-two-col">
-  <li>Belt Transect Sampling</li>
-  <li>Quadrat Sampling</li>
-  <li>UVC Sampling</li>
-  <li>Nitrox EAN32</li>
-  <li>Deep Diving (30m)</li>
-  <li>Lead Dives</li>
-  <li>Radial Search</li>
-  <li>Search & Recovery</li>
-  <li>Wet Lab Experience</li>
-  <li>R Statistical Software</li>
-  <li>Scientific Writing</li>
-  <li>Underwater Photography</li>
-  <li>SCUBA Tank Filling & Compressor Operation</li>
-  <li>Microsoft Suite Applications</li>
-  <li>Web Development (GitHub Pages & Jekyll, HTML, CSS, JavaScript)</li>
-</ul>
-
-<div class="cv-section-title"><i class="fas fa-book-open"></i> Relevant Courses</div>
-<ul class="cv-two-col">
-  <li>Marine Biology Colloquium</li>
-  <li>Marine Biochemistry</li>
-  <li>Marine Biology Laboratory</li>
-  <li>Statistical Methods</li>
-  <li>Ocean Physics and Chemistry</li>
-  <li>Marine Mammal Biology</li>
-  <li>Ecophysiology of Marine Plants</li>
-  <li>Marine Biogeography and Evolution</li>
-</ul>
+<div class="cv-panel-row">
+  <div>
+    <div class="cv-section-title"><i class="fas fa-tools"></i> Skills</div>
+    <ul class="cv-list">
+      <li>Belt Transect Sampling</li>
+      <li>Quadrat Sampling</li>
+      <li>UVC Sampling</li>
+      <li>Nitrox EAN32</li>
+      <li>Deep Diving (30m)</li>
+      <li>Lead Dives</li>
+      <li>Radial Search</li>
+      <li>Search & Recovery</li>
+      <li>Wet Lab Experience</li>
+      <li>R Statistical Software</li>
+      <li>Scientific Writing</li>
+      <li>Underwater Photography</li>
+      <li>SCUBA Tank Filling & Compressor Operation</li>
+      <li>Microsoft Suite Applications</li>
+      <li>Web Development (GitHub Pages & Jekyll, HTML, CSS, JavaScript)</li>
+    </ul>
+  </div>
+  <div>
+    <div class="cv-section-title"><i class="fas fa-book-open"></i> Relevant Courses</div>
+    <ul class="cv-list">
+      <li>Marine Biology Colloquium</li>
+      <li>Marine Biochemistry</li>
+      <li>Marine Biology Laboratory</li>
+      <li>Statistical Methods</li>
+      <li>Ocean Physics and Chemistry</li>
+      <li>Marine Mammal Biology</li>
+      <li>Ecophysiology of Marine Plants</li>
+      <li>Marine Biogeography and Evolution</li>
+    </ul>
+  </div>
+</div>
 
 <div class="cv-section-title"><i class="fas fa-user-friends"></i> References</div>
 <p style="color:#4B2E0F;"><em>Available upon request</em></p>
