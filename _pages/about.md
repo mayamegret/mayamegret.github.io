@@ -100,5 +100,7 @@ document.querySelectorAll('#main, article.page, .page__inner-wrap, .page__conten
 const articlePage = document.querySelector('article.page');
 if (articlePage) {
   articlePage.style.setProperty('padding-left', '1.5em', 'important');
+  articlePage.style.setProperty('padding-right', '1.5em', 'important');
+
 }
 </script>
