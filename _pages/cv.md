@@ -231,7 +231,7 @@ h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-c
   <div>
     <div class="cv-section-title"><i class="fas fa-water"></i> Certifications</div>
     <div style="display: flex; gap: 20px; align-items: flex-start;">
-      <ul class="cv-list" style="flex: 1; margin: 0;">
+      <ul class="cv-list" style="flex: 0 1 420px; margin: 0;">
         <li>Divemaster. SSI. July 2026.</li>
         <li>Stress and Rescue. SSI. May 2026.</li>
         <li>First Aid, CPR, Oxygen. SSI. May 2026.</li>
@@ -408,7 +408,7 @@ document.querySelectorAll('#main, article.page, .page__inner-wrap, .page__conten
   el.style.setProperty('max-width', '100%', 'important');
   el.style.setProperty('width', '100%', 'important');
   el.style.setProperty('float', 'none', 'important');
-  el.style.setProperty('padding-left', '0', 'important');
-  el.style.setProperty('padding-right', '0', 'important');
+  el.style.setProperty('padding-left', '1.5em', 'important');
+  el.style.setProperty('padding-right', '1.5em', 'important');
 });
 </script>
