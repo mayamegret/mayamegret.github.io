@@ -25,6 +25,16 @@ const locations = [
     photos: []
   },
   {
+    name: "New York City",
+    country: "USA",
+    coords: [40.7644, -73.9235],
+    type: "visit",
+    dates: "2003-Present",
+    description: "I grew up visiting my grandmama in NYC several times a year, sometimes for birthdays or long weekends in the summer, and always at Christmas time. Now my sister lives in NYC, so I still go as often as I can! While I was staying in DC with my parents for a while, I would take the train or bus up to NYC and spend a week staying with Tess and Andrew and their cats.",
+    species: [],
+    photos: []
+  },
+  {
     name: "Belize",
     country: "Belize",
     coords: [17.25, -88.77],
@@ -32,6 +42,16 @@ const locations = [
     dates: "March 2013",
     ocean: "Atlantic",
     description: "For spring break 2013, my family and I went to Belize! We first explored the mountains and jungle and then finished our trip on the coast. Belize was the first place I ever snorkeled with turtles and sharks, and it is where I decided that I want to be a marine biologist!",
+    species: [],
+    photos: []
+  },
+  {
+    name: "Porto",
+    country: "Portugal",
+    coords: [41.1579, -8.6291],
+    type: "visit",
+    dates: "April 11-19th, 2014",
+    description: "In 2014, my family and I went to Portugal for a week, exploring Porto, Lisbon, and the countryside in between. We visited beautiful castles and ate pastel de nata until we almost burst.",
     species: [],
     photos: []
   },
@@ -93,6 +113,27 @@ const locations = [
     type: "visit",
     dates: "July 2019",
     description: "We finished our trip in Rome with lots of gelato and exploring!",
+    species: [],
+    photos: []
+  },
+  {
+    name: "Cancún",
+    country: "Mexico",
+    coords: [21.1619, -86.8515],
+    type: "visit",
+    dates: "October 11-15th, 2019",
+    ocean: "Atlantic",
+    description: "During our girls trip senior year of high school, my mom and I went to Mexico! We had so much fun together, especially on the boat snorkel day that we did.",
+    species: [],
+    photos: []
+  },
+  {
+    name: "Puerto Vallarta",
+    country: "Mexico",
+    coords: [20.6534, -105.2253],
+    type: "visit",
+    dates: "March 22-26th, 2022",
+    description: "Brynn and I joined Macy and her friends in Puerto Vallarta for spring break sophomore year at UCSD!",
     species: [],
     photos: []
   },
