@@ -13,7 +13,7 @@ author_profile: true
   margin-top: 1.5rem;
   padding-right: 240px;
 }
-css.about-link-btn {
+.about-link-btn {
   padding: 7px 16px;
   border: 2px solid #3f6b56;
   border-radius: 0;
