@@ -88,12 +88,17 @@ article.page {
   <img src="/images/photography/MomTessMaya.JPG">
   <img src="/images/photography/DadTessMaya.JPG">
 </div>
+
 <script>
 document.querySelectorAll('#main, article.page, .page__inner-wrap, .page__content').forEach(el => {
   el.style.setProperty('max-width', '100%', 'important');
   el.style.setProperty('width', '100%', 'important');
   el.style.setProperty('float', 'none', 'important');
-  el.style.setProperty('padding-left', '1.5em', 'important');
+  el.style.setProperty('padding-left', '0', 'important');
   el.style.setProperty('padding-right', '0', 'important');
 });
+const articlePage = document.querySelector('article.page');
+if (articlePage) {
+  articlePage.style.setProperty('padding-left', '1.5em', 'important');
+}
 </script>
