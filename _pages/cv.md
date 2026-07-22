@@ -223,8 +223,8 @@ h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-c
   <div>
     <div class="cv-section-title"><i class="fas fa-graduation-cap"></i> Education</div>
 <ul class="cv-list">
-  <li><strong>M.Sc. in Marine Biology</strong>, Universidade do Algarve, Faro, Portugal. Expected 2026.</li>
-  <li><strong>B.S. in Marine Biology</strong>, University of California San Diego. 2024.</li>
+  <li><strong>MSc in Marine Biology</strong>, Universidade do Algarve, Faro, Portugal. Expected 2026.</li>
+  <li><strong>BS in Marine Biology</strong>, University of California San Diego. 2024.</li>
   <li>Study Abroad, University of Queensland, Brisbane, Australia. 2022.</li>
 </ul>
   </div>
