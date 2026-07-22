@@ -3,7 +3,7 @@ title: 'My Top 10 Tips for Scuba Diving'
 date: 2026-07-08
 permalink: /posts/2026/07/diving-tips/
 header:
-  teaser: /images/blog/ProfessionalDM.png
+  teaser: /images/blog/DiveFlag.jpg
 read_time: false
 author_profile: false
 tags:
