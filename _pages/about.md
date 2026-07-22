@@ -13,11 +13,11 @@ author_profile: true
   margin-top: 1.5rem;
   padding-right: 240px;
 }
-.about-link-btn {
+css.about-link-btn {
   padding: 7px 16px;
-  border: 2px solid ##3f6b56;
+  border: 2px solid #3f6b56;
   border-radius: 0;
-  background: ##3f6b56;
+  background: #3f6b56;
   color: #fff;
   font-size: 0.9rem;
   text-decoration: none !important;
