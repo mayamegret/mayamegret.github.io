@@ -16,15 +16,16 @@ author_profile: true
 .about-link-btn {
   padding: 7px 16px;
   border: 2px solid #2c4a3e;
-  border-radius: 20px;
-  background: transparent;
-  color: #2c4a3e;
+  border-radius: 0;
+  background: #2c4a3e;
+  color: #fff;
   font-size: 0.9rem;
   text-decoration: none !important;
   transition: all 0.2s;
 }
 .about-link-btn:hover {
-  background: #2c4a3e;
+  background: #ffa44a;
+  border-color: #ffa44a;
   color: #fff !important;
 }
 @media (max-width: 900px) {
@@ -53,7 +54,7 @@ article.page {
 }
 .about-images img {
   width: 100%;
-  border-radius: 8px;
+  border-radius: 0px;
   object-fit: cover;
   aspect-ratio: 1/1;
 }
