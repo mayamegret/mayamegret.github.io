@@ -20,6 +20,10 @@ h1, h2, h3, h4, h5, h6, body { color: #4B2E0F !important; }
 .page__title { color: #4B2E0F !important; }
 .page__title::after { background-color: #4B2E0F !important; }
 h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-color: #4B2E0F !important; }
+#main, article.page, .page__inner-wrap, .page__content, .page__inner-wrap--layout-single {
+  max-width: 100% !important;
+  width: 100% !important;
+}
 .cv-summary {
   font-size: 1rem;
   line-height: 1.7;
@@ -393,3 +397,13 @@ h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-c
 
 <div class="cv-section-title"><i class="fas fa-user-friends"></i> References</div>
 <p style="color:#4B2E0F;"><em>Available upon request</em></p>
+
+<script>
+document.querySelectorAll('#main, article.page, .page__inner-wrap, .page__content').forEach(el => {
+  el.style.setProperty('max-width', '100%', 'important');
+  el.style.setProperty('width', '100%', 'important');
+  el.style.setProperty('float', 'none', 'important');
+  el.style.setProperty('padding-left', '0', 'important');
+  el.style.setProperty('padding-right', '0', 'important');
+});
+</script>
