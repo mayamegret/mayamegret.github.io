@@ -276,6 +276,7 @@ h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-c
       </div>
     </div>
   </div>
+</div>
 
 <div class="cv-section-title"><i class="fas fa-briefcase"></i> Work Experience</div>
 <div class="cv-timeline">
