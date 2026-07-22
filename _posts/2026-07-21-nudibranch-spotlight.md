@@ -94,7 +94,7 @@ I first fell in love with nudibranchs during my study abroad in Australia, and I
 For my thesis, I compared three different SCUBA-based sampling methodologies to determine their influence on estimates of nudibranch abundance, diversity, and community composition on rocky reefs. Over the course of my fieldwork in Závora, I collected data on **343 individual nudibranchs**. Every single one of those 343 was measured, photographed, and identified. Then, I spent weeks analyzing all of the data I collected, computing the statistics of alpha and beta diversity, indicator species analysis, GLMs, and wrote my 61 page thesis on it all!
 
 <img src="/images/blog/IndicatorSpecies.jpg" class="blog-img-left" alt="Figure 3.3 from my thesis showing six indicator nudibranch species">
-<p style="font-size: 0.85rem; font-style: italic; color: #711A54; opacity: 0.8; margin-top: 4px;">Figure 3.3. A, <em>Sakuraeolis arcana</em>. B, <em>Chromodoris hamiltoni</em>. C, <em>Chromodoris celinae</em>. D, <em>Chromodoris africana</em>. E, <em>Nembrotha aurea</em>. F, <em>Halgerda wasinensis</em> (mating pair). Photographs: Maya Mégret.</p>
+<p style="font-size: 0.85rem; color: #711A54; opacity: 0.8; margin-top: 4px;">Figure 3.3 from my thesis, showing six indicator nudibranch species. A, <em>Sakuraeolis arcana</em>. B, <em>Chromodoris hamiltoni</em>. C, <em>Chromodoris celinae</em>. D, <em>Chromodoris africana</em>. E, <em>Nembrotha aurea</em>. F, <em>Halgerda wasinensis</em> (mating pair). Photographs: Maya Mégret.</p>
 <div class="blog-clear"></div>
 
 ## A new region, a new list
