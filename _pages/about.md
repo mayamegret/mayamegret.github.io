@@ -15,9 +15,9 @@ author_profile: true
 }
 .about-link-btn {
   padding: 7px 16px;
-  border: 2px solid #2c4a3e;
+  border: 2px solid ##3f6b56;
   border-radius: 0;
-  background: #2c4a3e;
+  background: ##3f6b56;
   color: #fff;
   font-size: 0.9rem;
   text-decoration: none !important;
