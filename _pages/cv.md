@@ -162,7 +162,7 @@ h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-c
 }
 .cv-panel-row-wide {
   display: grid;
-  grid-template-columns: 2fr 3fr;
+  grid-template-columns: 1fr 1fr;
   gap: 0 40px;
   margin-bottom: 1.5rem;
   align-items: start;
