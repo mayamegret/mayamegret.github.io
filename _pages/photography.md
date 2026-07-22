@@ -39,7 +39,7 @@ h1.page__title {
 .gallery-filter-btn {
   padding: 7px 16px;
   border: 2px solid #2c4a3e;
-  border-radius: 20px;
+  border-radius: 0px;
   background: transparent;
   color: #2c4a3e;
   font-size: 0.85rem;
@@ -54,7 +54,7 @@ h1.page__title {
 .gallery-search {
   padding: 8px 14px;
   border: 2px solid #2c4a3e;
-  border-radius: 20px;
+  border-radius: 0px;
   background: rgba(255,255,255,0.5);
   color: #2c4a3e;
   font-size: 0.88rem;
