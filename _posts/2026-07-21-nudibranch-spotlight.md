@@ -84,7 +84,7 @@ body { color: #711A54 !important; }
 }
 </style>
 
-<img src="/images/photography/NudiCollage.png" class="blog-img" alt="Collection of nudibranchs">
+<img src="/images/photography/NudiCollage1.png" class="blog-img" alt="Nudibranchs from Mozmabique">
 
 As I'm finishing up my thesis comparing the influence of sampling methodology on estimates of nudibranch abundance, diversity, and community composition on rocky reefs in Závora, Mozambique, I wanted to take a moment to share more about my favorite little critters.
 
