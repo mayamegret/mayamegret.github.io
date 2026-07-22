@@ -35,9 +35,7 @@ body { color: #711A54 !important; }
   display: inline !important;
   border-radius: 8px;
   margin: 6px 0 12px 18px !important;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  object-position: center;
+  height: auto;
 }
 .page__content img.blog-img-left {
   float: left !important;
@@ -47,9 +45,7 @@ body { color: #711A54 !important; }
   display: inline !important;
   border-radius: 8px;
   margin: 6px 18px 12px 0 !important;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  object-position: center;
+  height: auto;
 }
 .page__content .blog-clear { clear: both; display: block; }
 .page__content p { overflow: visible !important; }
