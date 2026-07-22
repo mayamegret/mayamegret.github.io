@@ -30,7 +30,7 @@ const locations = [
     coords: [40.7644, -73.9235],
     type: "visit",
     dates: "2003-Present",
-    description: "I grew up visiting my grandmama in NYC several times a year, sometimes for birthdays or long weekends in the summer, and always at Christmas time. Now my sister lives in NYC, so I still go as often as I can! While I was staying in DC with my parents for a while, I would take the train or bus up to NYC and spend a week staying with Tess and Andrew and their cats.",
+    description: "I grew up visiting my grandmama in NYC several times a year, sometimes for birthdays or long weekends in the summer, and always at Christmas time. Now my sister lives in NYC, so I still go as often as I can! While I was staying in DC with my parents for a while, I would take the train or bus up to NYC and spend a week staying with Tess and Andrew and their cats. Even when I was living in San Diego I flew out to surprise Tess for her 26th birthday! We always have so much fun together.",
     species: [],
     photos: []
   },
