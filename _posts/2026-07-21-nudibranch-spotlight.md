@@ -1,5 +1,5 @@
 ---
-title: 'Nudibranch Spotlight: My Favorite Little Critters'
+title: 'Nudibranch Spotlight'
 date: 2026-07-21
 permalink: /posts/2026/07/nudibranch-spotlight/
 header:
