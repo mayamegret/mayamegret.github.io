@@ -98,7 +98,7 @@ h1::after, h2::after, h3::after { background-color: #1A4A5C !important; border-c
 .animate-btn:hover { background: #2e7a9a; }
 </style>
 
-<p>A record of my travels and dives around the world! <i class="fas fa-anchor" style="color:#1a1a1a;"></i> = dive site &nbsp; <i class="fas fa-map-marker-alt" style="color:#1a1a1a;"></i> = visited place</p>
+<p>A record of my travels <i class="fas fa-map-marker-alt" style="color:#1a1a1a;"></i> and dives <i class="fas fa-anchor" style="color:#1a1a1a;"></i> around the world!</p>
 
 <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 12px;">
   <div id="map-counter" style="font-size: 0.9rem; color: #1A4A5C;"></div>
