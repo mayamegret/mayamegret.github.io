@@ -257,6 +257,11 @@
   <i class="fas fa-arrow-left"></i> Field Notes
 </a>
 {% endif %}
+{% if page.layout == 'single' and page.url contains '/posts/' %}
+<style>
+  .page__title { text-align: center !important; }
+</style>
+{% endif %}
 
 <script>
 window.addEventListener('scroll', function() {
