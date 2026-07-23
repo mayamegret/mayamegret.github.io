@@ -92,7 +92,89 @@ function getFilteredTiles() {
   });
 }
 
-function renderGrid() {
+// ---------------------------------------------
+// Exploding-grid intro animation
+// ---------------------------------------------
+function waitForImages(container) {
+  const imgs = Array.from(container.querySelectorAll('img'));
+  return Promise.all(imgs.map(img => {
+    if (img.complete) return Promise.resolve();
+    return new Promise(resolve => {
+      img.addEventListener('load', resolve, { once: true });
+      img.addEventListener('error', resolve, { once: true });
+    });
+  }));
+}
+
+function explodeFromCenter(grid) {
+  const tileEls = grid.querySelectorAll('.photo-tile');
+  if (!tileEls.length) return;
+
+  const gridRect = grid.getBoundingClientRect();
+  const originX = gridRect.left + gridRect.width / 2;
+  const originY = gridRect.top + gridRect.height / 2;
+  const spreadRadius = Math.max(gridRect.width, gridRect.height) * 0.85;
+
+  tileEls.forEach((tile) => {
+    const rect = tile.getBoundingClientRect();
+    const finalCenterX = rect.left + rect.width / 2;
+    const finalCenterY = rect.top + rect.height / 2;
+
+    const launchAngle = Math.random() * Math.PI * 2;
+    const launchDist = spreadRadius * (0.55 + Math.random() * 0.65);
+    const startX = (originX + Math.cos(launchAngle) * launchDist) - finalCenterX;
+    const startY = (originY + Math.sin(launchAngle) * launchDist) - finalCenterY;
+    const startRotate = (Math.random() - 0.5) * 140;
+    const startScale = 0.2 + Math.random() * 0.25;
+
+    const overshootAngle = launchAngle + (Math.random() - 0.5) * 1.6;
+    const overshootDist = launchDist * (0.12 + Math.random() * 0.18);
+    const midX = Math.cos(overshootAngle) * overshootDist * (Math.random() < 0.5 ? 1 : -1);
+    const midY = Math.sin(overshootAngle) * overshootDist * (Math.random() < 0.5 ? 1 : -1);
+    const midRotate = (Math.random() - 0.5) * 35;
+
+    const duration = 1600 + Math.random() * 1800; // 1.6s – 3.4s
+    const delay = Math.random() * 550;
+
+    tile.style.opacity = '0';
+    tile.style.zIndex = Math.floor(Math.random() * tileEls.length);
+
+    tile.animate([
+      {
+        transform: `translate(${startX}px, ${startY}px) rotate(${startRotate}deg) scale(${startScale})`,
+        opacity: 0,
+        offset: 0
+      },
+      {
+        transform: `translate(${midX}px, ${midY}px) rotate(${midRotate}deg) scale(1.04)`,
+        opacity: 1,
+        offset: 0.62
+      },
+      {
+        transform: 'translate(0px, 0px) rotate(0deg) scale(1)',
+        opacity: 1,
+        offset: 1
+      }
+    ], {
+      duration,
+      delay,
+      easing: 'cubic-bezier(0.16, 1, 0.3, 1)',
+      fill: 'forwards'
+    });
+  });
+}
+
+function explodeGalleryIn() {
+  const grid = document.getElementById('photo-grid');
+  if (!grid) return;
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  waitForImages(grid).then(() => {
+    setTimeout(() => explodeFromCenter(grid), 120);
+  });
+}
+
+function renderGrid(animate) {
   const grid = document.getElementById('photo-grid');
   grid.innerHTML = '';
   const filtered = getFilteredTiles();
@@ -120,6 +202,10 @@ function renderGrid() {
     div.addEventListener('click', () => openModal(tileIndex));
     grid.appendChild(div);
   });
+
+  if (animate) {
+    explodeGalleryIn();
+  }
 }
 
 window.setGalleryFilter = function(filter) {
@@ -127,12 +213,12 @@ window.setGalleryFilter = function(filter) {
   document.querySelectorAll('.gallery-filter-btn').forEach(btn => {
     btn.classList.toggle('active', btn.dataset.filter === filter);
   });
-  renderGrid();
+  renderGrid(true);
 };
 
 window.searchGallery = function(query) {
   searchQuery = query;
-  renderGrid();
+  renderGrid(false);
 };
 
 function openModal(tileIndex) {
@@ -193,7 +279,7 @@ document.addEventListener('keydown', (e) => {
   }, { passive: true });
 })();
 
-renderGrid();
+renderGrid(true);
 
 if (window.location.hash) {
   const id = window.location.hash.slice(1);
