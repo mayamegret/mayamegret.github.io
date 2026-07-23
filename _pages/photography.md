@@ -258,7 +258,7 @@ function resizeMasonryItem(tile) {
   const containerWidth = tile.offsetWidth;
   if (!containerWidth) return;
   const displayHeight = (img.naturalHeight / img.naturalWidth) * containerWidth;
-  const rowSpan = Math.ceil((displayHeight + rowGap) / (rowHeight + rowGap)) + 1;
+  const rowSpan = Math.ceil((displayHeight + rowGap) / (rowHeight + rowGap)) ;
   tile.style.gridRowEnd = 'span ' + rowSpan;
 }
 
