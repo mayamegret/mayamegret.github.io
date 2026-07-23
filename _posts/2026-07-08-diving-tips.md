@@ -85,13 +85,13 @@ body { color: #711A54 !important; }
 }
 </style>
 
-Whether you are just starting out or have hundreds of dives under your belt, there is always something new to learn in the water. Diving has been one of the most transformative parts of my life as a marine biologist, and over the years, from earning my Open Water cert with my dad in 2022, to completing my Divemaster in Hawai'i in 2026, I have picked up a lot of lessons along the way. Here are my top 10 tips for scuba divers at any level.
+Whether you are just starting out or have hundreds of dives under your belt, there is always something new to learn in the water. Diving has been one of the most transformative parts of my life as a marine biologist. Over the years, from earning my Open Water cert with my dad in 2022, to completing my Divemaster in Hawai'i in 2026, I have picked up a lot of lessons along the way. Here are my top 10 tips for scuba divers at any level!
 
 ---
 
 ## 1. Always Work On Your Skills
 
-No matter how experienced you are, there is always room to improve. Buoyancy, breathing, and trim are the three fundamentals that every diver should be constantly refining. Good buoyancy protects the reef, conserves your air, and makes every dive more enjoyable. Slow, controlled breathing keeps you calm and extends your bottom time. Try 4 second inhale, 8 second exhale. And proper horizontal trim makes you a more efficient, streamlined diver in the water. Practicing your kicks is also important, "frog" kick is going to be the most efficient way to move through the water, but also knowing how to backwards kick or flutter kick efficiently is important! Even after completing my Divemaster and logging 150+ dives, I still focus on these skills every single time I get in the water.
+No matter how experienced you are, there is always room to improve. Buoyancy, breathing, and trim are the three fundamentals that every diver should be constantly refining. Good buoyancy protects the reef, conserves your air, and makes every dive more enjoyable. Slow, controlled breathing keeps you calm and extends your bottom time. Try 4 second inhale, 8 second exhale. Proper horizontal trim makes you a more efficient, streamlined diver in the water. Practicing your kicks is also important, "frog" kick is going to be the most efficient way to move through the water, but also knowing how to backwards kick or flutter kick efficiently is important! Even after completing my Divemaster and logging 150+ dives, I still focus on these skills every single time I get in the water.
 
 ---
 
@@ -99,11 +99,11 @@ No matter how experienced you are, there is always room to improve. Buoyancy, br
 
 Rental gear does the job, but having your own equipment that fits you properly and that you know inside and out makes an enormous difference. At minimum, I recommend investing in your own **mask, snorkel, fins, and dive computer** as early as possible. A mask, snorkel, and fins are great to own for snorkeling and freediving as well.
 
-For my dive computer, I recently upgraded to the [Shearwater Peregrine](https://www.shearwater.com/products/peregrine/) and I love it. It is intuitive, easy to read underwater with large screen, and gives me all the information I need without being overwhelming.
+For my dive computer, I recently upgraded to the [Shearwater Peregrine](https://www.shearwater.com/products/peregrine/) and I love it. It is intuitive, easy to read underwater with large screen, and gives me all the information I need without being overwhelming.I even customized the screen so the text is all pink!
 
-When you are ready to invest in a full setup, I highly recommend a **wing BCD with a backplate** over a traditional jacket-style BCD. It gives you much better control over your buoyancy and trim. I dive with a [Halcyon wing](https://www.halcyon.net) on a small aluminum backplate with 14 kg (30 lb) of lift. Halcyon also makes the wing BC in 9 kg (20 lb) and 18 kg (20 lb) lift options, and steel backplates for those who need extra weight. Finding the right size for your body and the type of diving you do is key.
+When you are ready to invest in a full setup, I highly recommend a **wing BCD with a backplate** over a traditional jacket-style BCD. It gives you much better control over your buoyancy and trim. I dive with a [Halcyon wing](https://www.halcyon.net) with an aluminum backplate with 14 kg (30 lb) of lift. Halcyon also makes the wing BC in 9 kg (20 lb) and 18 kg (20 lb) lift options, and steel backplates for those who need extra weight. Finding the right size for your body and the type of diving you do is key.
 
-For my regulator, I use the [Mares 62X](https://www.mares.com), which is incredibly lightweight and comfortable, a big plus for traveling. I also dive with a **longhose setup**, which I highly recommend for safety and streamlining. I have customized my SPG to display pressure in bar alongside a compass, which keeps my gauge console minimal and easy to read. I got my regulator in DIN, because that is what is used univserally around the world except for the US. I have a DIN to yoke adaptor to use in the US but when I travel I can just bring my DIN regulator.
+For my regulator, I use the [Mares 62X](https://www.mares.com), which is incredibly lightweight and comfortable, a big plus for traveling. I also dive with a **longhose setup**, which I highly recommend for safety and streamlining. I have customized my SPG to display pressure in bar alongside a compass, which keeps my gauge console minimal and easy to read. I got my regulator in DIN, because that is what is used univserally around the world except for the US. I have a DIN to yoke adaptor to use in the US (or I just remove the yoke inserts) but when I travel I can just bring my DIN regulator.
 
 It's also important to make sure you take proper care of your gear. Make sure to rinse it in freshwater after every dive and hang it somewhere it can fully dry. Diving gear is expensive but it is also your life support, so it's important to take care of it so it can take care of you.
 
@@ -147,7 +147,7 @@ In Mozambique, I got an ear infection that took me out of the water for 14 days 
 
 Getting your weighting right is one of the most underrated aspects of diving. Too much weight and you will struggle to maintain buoyancy and waste energy fighting to stay off the bottom. Too little and you will have trouble descending or staying down during your safety stop.
 
-A good weighting check is to float at the surface with a full breath, deflate your BCD completely, and see where you sit — you should float at eye level and slowly sink as you exhale. Adjust from there.
+A good weighting check is to float at the surface with a full breath, deflate your BCD completely, and see where you sit, you should float at eye level and slowly sink as you exhale. Adjust from there.
 
 My personal setup varies depending on what I am wearing. With my 5mm ScubaPro wetsuit, I add 5 kg to my weight pockets on my tank strap. Without a wetsuit, I typically don't need extra weight. Take time to dial in your weighting at the start of any new setup and note it in your dive log for future reference. It's important to log how much weight you used, what thickness wetsuit you wore, and the temperature of the water you went diving. You will need more weight in cold water, especially with thicker suits. 
 
@@ -155,8 +155,8 @@ My personal setup varies depending on what I am wearing. With my 5mm ScubaPro we
 
 ## 8. Never Skip Your Pre-Dive Check
 
-No matter how many dives you have done, no matter how well you know your buddy, never skip your pre-dive check. BWRAF — **B**CD, **W**eights, **R**eleases, **A**ir, **F**inal check. It takes about 60 seconds and is one of the most important habits you can build as a diver. Gear malfunctions and equipment issues are almost always caught during a proper buddy check before they become emergencies underwater.
-It is important to know how your gear works as well as your buddy's gear. Despite wearing a wing BCD and longhose, I often dive with people wearing jacket-style BCDs and regular regulators. Knowing where their releases and weights are is just as important as knowing where my own are. 
+No matter how many dives you have done, no matter how well you know your buddy, never skip your pre-dive check. BWRAF: **B**CD, **W**eights, **R**eleases, **A**ir, **F**inal check. It takes about 60 seconds and is one of the most important habits you can build as a diver. Gear malfunctions and equipment issues are almost always caught during a proper buddy check before they become emergencies underwater.
+It is important to know how your gear works as well as your buddy's gear. Despite wearing a wing BCD and longhose, I often dive with buddies or customers wearing jacket-style BCDs and regular hoses on their regulators. Knowing where their releases and weights are is just as important as knowing where my own are. 
 
 ---
 
@@ -174,6 +174,6 @@ The ocean is not going anywhere. There will always be another dive, another day,
 
 ---
 
-Diving is one of my favorite things to do, and I want it to continue doing it for a long time. Taking care of yourself, your gear, and the environment around you is what makes that possible. 
+Diving is one of my favorite things to do, and I want it to continue doing it for a long time. Taking care of yourself, your gear, and the environment around you is what makes it possible. 
 
 *Happy bubbles!* 
