@@ -76,7 +76,7 @@ h1.page__title {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-auto-rows: 10px;
-  gap: 10px;
+  gap: 6px;
   margin-top: 16px;
   clear: both;
 }
@@ -252,7 +252,7 @@ h1.page__title {
 <script>
 function resizeMasonryItem(tile) {
   const rowHeight = 10;
-  const rowGap = 10;
+  const rowGap = 6;
   const img = tile.querySelector('img');
   if (!img || !img.naturalWidth) return;
   const containerWidth = tile.offsetWidth;
