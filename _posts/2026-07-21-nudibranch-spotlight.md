@@ -63,6 +63,24 @@ body { color: #711A54 !important; }
   margin: 0 !important;
   height: auto;
 }
+  .page__content img.blog-img-natural {
+  float: right !important;
+  width: 35% !important;
+  max-width: 35% !important;
+  display: inline !important;
+  border-radius: 8px;
+  margin: 6px 0 12px 18px !important;
+  height: auto;
+}
+.page__content img.blog-img-natural-left {
+  float: left !important;
+  width: 35% !important;
+  max-width: 35% !important;
+  display: inline !important;
+  border-radius: 8px;
+  margin: 6px 18px 12px 0 !important;
+  height: auto;
+}
 .page__share { display: none !important; }
 @media (max-width: 600px) {
   .page__content .blog-gallery { flex-wrap: wrap; }
@@ -77,7 +95,7 @@ body { color: #711A54 !important; }
 }
 </style>
 
-<img src="/images/photography/NudiCollage1.png" class="blog-img" alt="Nudibranchs from Mozambique">
+<img src="/images/photography/NudiCollage1.png" class="blog-img-natural" alt="Nudibranchs from Mozambique">
 <p style="font-size: 0.85rem; font-style: italic; color: #711A54; opacity: 0.8; margin-top: 4px;">Nudibranchs from Mozambique.</p>
 
 As I'm finishing up my thesis comparing the influence of sampling methodology on estimates of nudibranch abundance, diversity, and community composition on rocky reefs in Závora, Mozambique, I wanted to take a moment to share more about my favorite little critters.
@@ -90,7 +108,7 @@ I first fell in love with nudibranchs during my study abroad in Australia, and I
 
 For my thesis, I compared three different SCUBA-based sampling methodologies to determine their influence on estimates of nudibranch abundance, diversity, and community composition on rocky reefs. Over the course of my fieldwork in Závora, I collected data on **343 individual nudibranchs**. Every single one of those 343 was measured, photographed, and identified. Then, I spent weeks analyzing all of the data I collected, computing the statistics of alpha and beta diversity, indicator species analysis, GLMs, and wrote my 61 page thesis on it all!
 
-<img src="/images/blog/IndicatorSpecies.jpg" class="blog-img-left" alt="Figure 3.3 from my thesis showing six indicator nudibranch species">
+<img src="/images/blog/IndicatorSpecies.jpg" class="blog-img-natural-left" alt="Figure 3.3 from my thesis showing six indicator nudibranch species">
 <p style="font-size: 0.85rem; color: #711A54; opacity: 0.8; margin-top: 4px;">Figure 3.3 from my thesis, showing six indicator nudibranch species. A, <em>Sakuraeolis arcana</em>. B, <em>Chromodoris hamiltoni</em>. C, <em>Chromodoris celinae</em>. D, <em>Chromodoris africana</em>. E, <em>Nembrotha aurea</em>. F, <em>Halgerda wasinensis</em> (mating pair). Photographs: Maya Mégret.</p>
 <div class="blog-clear"></div>
 
@@ -98,7 +116,7 @@ For my thesis, I compared three different SCUBA-based sampling methodologies to 
 
 Now that I'm working as a divemaster guide in Hawai'i, I've started cataloging a whole new range of species. It's such a fun shift, going from being somewhat familiar with the nudibranch community of one specific stretch of Mozambican coastline to being a total beginner again, learning a completely different regional fauna dive by dive. I'm really enjoying discovering the species that live in this region of the world!
 
-<img src="/images/photography/HawaiiNudiCollage.png" class="blog-img-left" alt="Golden nudibranchs from Hawai'i">
+<img src="/images/photography/HawaiiNudiCollage.png" class="blog-img-natural-left" alt="Golden nudibranchs from Hawai'i">
 <p style="font-size: 0.85rem; font-style: italic; color: #711A54; opacity: 0.8; margin-top: 4px;">Golden nudibranchs from Hawai'i.</p>
 
 ---
