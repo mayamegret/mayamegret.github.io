@@ -9,7 +9,6 @@ author_profile: false
 <div id="featured-cube-mount"></div>
 
 <style>
-}
 #main, article.page, .page__inner-wrap, .page__content, .page__inner-wrap--layout-single {
   max-width: 100% !important;
   width: 100% !important;
