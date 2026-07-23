@@ -127,12 +127,6 @@ function explodeFromCenter(grid) {
     const startRotate = (Math.random() - 0.5) * 140;
     const startScale = 0.2 + Math.random() * 0.25;
 
-    const overshootAngle = launchAngle + (Math.random() - 0.5) * 1.6;
-    const overshootDist = launchDist * (0.12 + Math.random() * 0.18);
-    const midX = Math.cos(overshootAngle) * overshootDist * (Math.random() < 0.5 ? 1 : -1);
-    const midY = Math.sin(overshootAngle) * overshootDist * (Math.random() < 0.5 ? 1 : -1);
-    const midRotate = (Math.random() - 0.5) * 35;
-
     const duration = 1600 + Math.random() * 1800; // 1.6s – 3.4s
     const delay = Math.random() * 550;
 
@@ -144,11 +138,6 @@ function explodeFromCenter(grid) {
         transform: `translate(${startX}px, ${startY}px) rotate(${startRotate}deg) scale(${startScale})`,
         opacity: 0,
         offset: 0
-      },
-      {
-        transform: `translate(${midX}px, ${midY}px) rotate(${midRotate}deg) scale(1.04)`,
-        opacity: 1,
-        offset: 0.62
       },
       {
         transform: 'translate(0px, 0px) rotate(0deg) scale(1)',
