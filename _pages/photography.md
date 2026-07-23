@@ -62,6 +62,9 @@ h1.page__title {
   width: 100%;
   max-width: 320px;
 }
+  .gallery-search:hover {
+  background: rgba(255,255,255,0.5) !important;
+}
 #gallery-no-results {
   text-align: center;
   padding: 40px;
