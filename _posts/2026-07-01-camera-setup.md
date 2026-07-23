@@ -33,7 +33,7 @@ body { color: #711A54 !important; }
   max-width: 35% !important;
   max-height: 280px !important;
   display: inline !important;
-  border-radius: 8px;
+  border-radius: 0px;
   margin: 6px 0 12px 18px !important;
   aspect-ratio: 1 / 1;
   object-fit: cover;
