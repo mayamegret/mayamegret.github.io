@@ -74,7 +74,11 @@
           </div>
         </div>
       </section>
+    `;
+  }
 
+  function buildOverlayHTML() {
+    return `
       <div class="reveal-overlay" id="revealOverlay" aria-hidden="true">
         <div class="reveal-backdrop" id="revealBackdrop"></div>
         <div class="reveal-panel" role="dialog" aria-modal="true" aria-label="Featured photo of the day">
@@ -96,6 +100,13 @@
 
     mount.innerHTML = buildCubeHTML(faces);
 
+    // Append the overlay directly to <body> instead of nesting it inside
+    // the small cube mount — this guarantees nothing up the DOM tree can
+    // ever accidentally trap its position:fixed behavior.
+    const overlayWrapper = document.createElement('div');
+    overlayWrapper.innerHTML = buildOverlayHTML();
+    document.body.appendChild(overlayWrapper.firstElementChild);
+     
     const cube = document.getElementById('photoCube');
     const overlay = document.getElementById('revealOverlay');
     const backdrop = document.getElementById('revealBackdrop');
