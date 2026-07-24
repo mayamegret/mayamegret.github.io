@@ -101,10 +101,27 @@ author_profile: false
   border-radius: 50%;
   z-index: 30;
   outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+  box-shadow: none;
   -webkit-tap-highlight-color: transparent;
 }
-.hotspot:hover { background: rgba(255,164,74,0.35); }
-.hotspot:focus { outline: none; }
+.hotspot::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+.hotspot:focus,
+.hotspot:focus-visible,
+.hotspot:active {
+  outline: none;
+  box-shadow: none;
+  background: rgba(255,255,255,0.001);
+}
+@media (hover: hover) {
+  .hotspot:hover {
+    background: rgba(255,164,74,0.35);
+  }
+}
 .hotspot-gallery { left: 75.86%; top: 52.24%; width: 7.37%; height: 8.31%; }
 .hotspot-menu    { left: 75.67%; top: 83.39%; width: 7.85%; height: 8.31%; }
 
