@@ -72,6 +72,7 @@ author_profile: false
   width: 60vw;
   max-width: 900px;
   margin: 0 auto 2rem;
+  aspect-ratio: 1044 / 626;
 }
 .camera-body { width: 100%; display: block; }
 ..camera-screen {
