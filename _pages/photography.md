@@ -388,21 +388,32 @@ setTimeout(resizeAllTiles, 500);
 setTimeout(resizeAllTiles, 1500);
 setTimeout(resizeAllTiles, 3000);
 
-function dayOfYear(date) {
-  const start = new Date(date.getFullYear(), 0, 0);
-  return Math.floor((date - start) / 86400000);
+const cameraScreenImg = document.getElementById('cameraScreenImg');
+if (cameraScreenImg) {
+  cameraScreenImg.src = '/images/photography/HawaiiFilm4.jpg';
+} else {
+  console.warn('cameraScreenImg element not found');
 }
-const cameraPool = tiles.filter(t => t.id && t.caption);
-if (cameraPool.length) {
-  const featured = cameraPool[dayOfYear(new Date()) % cameraPool.length];
-  document.getElementById('cameraScreenImg').src = featured.photos[0];
+
+const galleryHotspot = document.getElementById('galleryHotspot');
+const gridSection = document.getElementById('gridSection');
+if (galleryHotspot && gridSection) {
+  galleryHotspot.addEventListener('click', () => {
+    gridSection.classList.toggle('is-open');
+  });
+} else {
+  console.warn('gallery hotspot or gridSection not found', galleryHotspot, gridSection);
 }
-document.getElementById('galleryHotspot').addEventListener('click', () => {
-  document.getElementById('gridSection').classList.toggle('is-open');
-});
-document.getElementById('menuHotspot').addEventListener('click', () => {
-  document.getElementById('menuSection').classList.toggle('is-open');
-});
+
+const menuHotspot = document.getElementById('menuHotspot');
+const menuSection = document.getElementById('menuSection');
+if (menuHotspot && menuSection) {
+  menuHotspot.addEventListener('click', () => {
+    menuSection.classList.toggle('is-open');
+  });
+} else {
+  console.warn('menu hotspot or menuSection not found', menuHotspot, menuSection);
+}
 
 document.getElementById('photo-modal').addEventListener('click', function(e) {
   if (e.target === this || e.target === document.getElementById('modal-img')) {
