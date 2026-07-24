@@ -78,13 +78,14 @@ html {
   }
   .callout-camera {
     width: 32%;
+    left: -34%;
   }
   .callout-camera p {
     transform: rotate(-25deg);
   }
   .callout-buttons-text {
-    text-align: center;
-    padding-right: 0;
+    text-align: right;
+    padding-right: 6%;
   }
 }
 
