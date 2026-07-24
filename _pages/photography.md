@@ -34,8 +34,6 @@ author_profile: false
 }
 .callout {
   position: absolute;
-  width: max-content;
-  max-width: 220px;
   color: #2c4a3e;
   z-index: 20;
   pointer-events: none;
@@ -48,14 +46,12 @@ author_profile: false
   margin: 0;
   line-height: 1.2;
 }
-.callout-camera p {
-  white-space: nowrap;
-}
 
 .callout-camera {
-  top: 30px;
-  left: 2%;
+  top: 20px;
+  left: -10%;
   text-align: left;
+  width: 170px;
 }
 .callout-camera p {
   transform: rotate(-40deg);
@@ -79,9 +75,9 @@ author_profile: false
     font-size: 0.95rem !important;
   }
   .callout-camera {
-    top: 55px;
-    left: 4%;
-    max-width: 140px;
+    top: 45px;
+    left: -6%;
+    width: 130px;
   }
   .callout-camera p {
     transform: rotate(-25deg);
