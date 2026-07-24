@@ -12,13 +12,13 @@ author_profile: false
 <div markdown="0">
 
 <div class="boat-section">
+  <p class="boat-instruction">Click around to explore my dive log, species log, and map!</p>
   <div class="boat-wrap">
     <img class="boat-body" src="/images/boat/BoatDesign2.png" alt="Illustration of a boat deck with dive gear, a kraken, and a map">
     <a class="boat-hotspot boat-hotspot-gear" href="/dive-log/" aria-label="Go to Dive Log"></a>
     <a class="boat-hotspot boat-hotspot-kraken" href="/species/" aria-label="Go to Species Log"></a>
     <a class="boat-hotspot boat-hotspot-map" href="/map/" aria-label="Go to Map"></a>
   </div>
-  <p class="boat-instruction">Click around to explore my dive log, species log, and map!</p>
 </div>
 
 <style>
@@ -83,13 +83,13 @@ body, #main, article.page, .page__inner-wrap, .page__content, .initial-content, 
   font-size: 1.8rem;
   color: #ffc48a;
   text-align: center;
-  margin: 1.5rem auto 2.5rem;
+  margin: 2rem auto 1.5rem;
   padding: 0 1rem;
 }
 @media (max-width: 700px) {
   .boat-instruction {
     font-size: 1.3rem;
-    margin: 1rem auto 2rem;
+    margin: 1.5rem auto 1rem;
   }
 }
 
