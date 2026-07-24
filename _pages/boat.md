@@ -175,7 +175,7 @@ h1.page__title {
 }
 </style>
 
-<script src="/assets/js/travel-data.js"></script>
+<script src="/assets/js/dive-map.js"></script>
 <script>
 function parseCSV(text) {
   const lines = text.trim().split('\n');
