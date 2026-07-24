@@ -4,11 +4,47 @@ title: "Photo Gallery"
 permalink: /photography/
 author_profile: false
 ---
-<link rel="stylesheet" href="/assets/css/featured-cube.css">
-
-<div id="featured-cube-mount"></div>
+<div class="camera-wrap">
+  <img class="camera-body" src="/images/photography/CameraBack.png" alt="">
+  <div class="camera-screen" id="cameraScreen">
+    <img id="cameraScreenImg" src="" alt="Photo of the day">
+  </div>
+  <button class="hotspot hotspot-gallery" id="galleryHotspot" aria-label="Open gallery"></button>
+  <button class="hotspot hotspot-menu" id="menuHotspot" aria-label="Open filters"></button>
+</div>
 
 <style>
+  .camera-wrap {
+  position: relative;
+  width: 95vw;
+  max-width: 1400px;
+  margin: 0 auto 2rem;
+}
+.camera-body { width: 100%; display: block; }
+.camera-screen {
+  position: absolute;
+  left: 9.24%; top: 15.18%;
+  width: 69.83%; height: 79.36%;
+  overflow: hidden;
+  background: #000;
+}
+.camera-screen img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.hotspot {
+  position: absolute;
+  border: none;
+  background: rgba(255,255,255,0.001);
+  cursor: pointer;
+  border-radius: 50%;
+}
+.hotspot:hover { background: rgba(255,164,74,0.35); }
+.hotspot-gallery { left: 75.84%; top: 53.13%; width: 10.34%; height: 10.35%; }
+.hotspot-menu { left: 73.9%; top: 80.73%; width: 12.93%; height: 10.35%; }
+.reveal-section {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s cubic-bezier(0.16,1,0.3,1);
+}
+.reveal-section.is-open { max-height: 3000px; }
 #main, article.page, .page__inner-wrap, .page__content, .page__inner-wrap--layout-single {
   max-width: 100% !important;
   width: 100% !important;
@@ -221,20 +257,24 @@ h1.page__title {
 }
 </style>
 
-<div class="gallery-controls">
-  <div class="gallery-filter-btns">
-    <button class="gallery-filter-btn active" data-filter="all" onclick="setGalleryFilter('all')">All</button>
-    <button class="gallery-filter-btn" data-filter="underwater" onclick="setGalleryFilter('underwater')"><i class="fas fa-anchor"></i> Underwater</button>
-    <button class="gallery-filter-btn" data-filter="travel" onclick="setGalleryFilter('travel')"><i class="fas fa-plane"></i> Travel</button>
-    <button class="gallery-filter-btn" data-filter="wildlife" onclick="setGalleryFilter('wildlife')"><i class="fas fa-dragon"></i> Wildlife</button>
-    <button class="gallery-filter-btn" data-filter="film" onclick="setGalleryFilter('film')"><i class="fas fa-film"></i> Film</button>
-    <button class="gallery-filter-btn" data-filter="science" onclick="setGalleryFilter('science')"><i class="fas fa-microscope"></i> Science</button>
+<div class="reveal-section" id="menuSection">
+  <div class="gallery-controls">
+    <div class="gallery-filter-btns">
+      <button class="gallery-filter-btn active" data-filter="all" onclick="setGalleryFilter('all')">All</button>
+      <button class="gallery-filter-btn" data-filter="underwater" onclick="setGalleryFilter('underwater')"><i class="fas fa-anchor"></i> Underwater</button>
+      <button class="gallery-filter-btn" data-filter="travel" onclick="setGalleryFilter('travel')"><i class="fas fa-plane"></i> Travel</button>
+      <button class="gallery-filter-btn" data-filter="wildlife" onclick="setGalleryFilter('wildlife')"><i class="fas fa-dragon"></i> Wildlife</button>
+      <button class="gallery-filter-btn" data-filter="film" onclick="setGalleryFilter('film')"><i class="fas fa-film"></i> Film</button>
+      <button class="gallery-filter-btn" data-filter="science" onclick="setGalleryFilter('science')"><i class="fas fa-microscope"></i> Science</button>
+    </div>
+    <input class="gallery-search" type="text" placeholder="Search captions..." oninput="searchGallery(this.value)">
   </div>
-  <input class="gallery-search" type="text" placeholder="Search captions..." oninput="searchGallery(this.value)">
+  <div id="gallery-no-results">No photos match your search.</div>
 </div>
-<div id="gallery-no-results">No photos match your search.</div>
 
-<div id="photo-grid" class="photo-grid"></div>
+<div class="reveal-section" id="gridSection">
+  <div id="photo-grid" class="photo-grid"></div>
+</div>
 
 <div id="photo-modal" class="photo-modal">
   <a id="modal-map-link" class="modal-map-link" style="display:none;">See on map →</a>
@@ -247,7 +287,6 @@ h1.page__title {
 </div>
 
 <script src="/assets/js/photography-gallery.js"></script>
-<script src="/assets/js/featured-cube.js"></script>
 <script>
 function resizeMasonryItem(tile) {
   const rowHeight = 10;
@@ -296,7 +335,23 @@ window.addEventListener('resize', resizeAllTiles);
 setTimeout(resizeAllTiles, 500);
 setTimeout(resizeAllTiles, 1500);
 setTimeout(resizeAllTiles, 3000);
-  
+
+function dayOfYear(date) {
+  const start = new Date(date.getFullYear(), 0, 0);
+  return Math.floor((date - start) / 86400000);
+}
+const cameraPool = tiles.filter(t => t.id && t.caption);
+if (cameraPool.length) {
+  const featured = cameraPool[dayOfYear(new Date()) % cameraPool.length];
+  document.getElementById('cameraScreenImg').src = featured.photos[0];
+}
+document.getElementById('galleryHotspot').addEventListener('click', () => {
+  document.getElementById('gridSection').classList.toggle('is-open');
+});
+document.getElementById('menuHotspot').addEventListener('click', () => {
+  document.getElementById('menuSection').classList.toggle('is-open');
+});
+
 document.getElementById('photo-modal').addEventListener('click', function(e) {
   if (e.target === this || e.target === document.getElementById('modal-img')) {
     closeModal();
