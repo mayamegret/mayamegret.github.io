@@ -25,8 +25,8 @@ author_profile: false
   </div>
 
   <div class="callout callout-buttons">
+     <p>Try pressing the buttons!</p>
     <svg viewBox="0 0 80 60" class="callout-arrow callout-arrow-flip"><path d="M8,8 Q40,10 62,45" fill="none" stroke="#ffa44a" stroke-width="3" stroke-linecap="round"/><path d="M52,40 L64,47 L57,34" fill="none" stroke="#ffa44a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    <p>Try pressing the buttons!</p>
   </div>
 </div>
 
@@ -37,7 +37,7 @@ author_profile: false
 .callout {
   position: absolute;
   width: 180px;
-  color: #ffa44a;
+  color: #2c4a3e;
   z-index: 20;
 }
 .callout p {
@@ -68,8 +68,8 @@ author_profile: false
 }
   .camera-wrap {
   position: relative;
-  width: 95vw;
-  max-width: 1400px;
+  width: 60vw;
+  max-width: 900px;
   margin: 0 auto 2rem;
 }
 .camera-body { width: 100%; display: block; }
