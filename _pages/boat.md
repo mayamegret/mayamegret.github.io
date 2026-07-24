@@ -7,7 +7,7 @@ author_profile: false
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
 
 <div markdown="0">
 
@@ -18,6 +18,29 @@ author_profile: false
     <a class="boat-hotspot boat-hotspot-gear" href="/dive-log/" aria-label="Go to Dive Log"></a>
     <a class="boat-hotspot boat-hotspot-kraken" href="/species/" aria-label="Go to Species Log"></a>
     <a class="boat-hotspot boat-hotspot-map" href="/map/" aria-label="Go to Map"></a>
+  </div>
+
+  <div class="boat-stats">
+    <a href="/dive-log/" class="boat-stat-card">
+      <div class="boat-stat-number" id="boat-stat-dives">—</div>
+      <div class="boat-stat-label">Dives Logged</div>
+    </a>
+    <a href="/species/" class="boat-stat-card">
+      <div class="boat-stat-number" id="boat-stat-species">—</div>
+      <div class="boat-stat-label">Species Spotted</div>
+    </a>
+    <a href="/map/" class="boat-stat-card">
+      <div class="boat-stat-number" id="boat-stat-countries">—</div>
+      <div class="boat-stat-label">Countries</div>
+    </a>
+    <a href="/map/" class="boat-stat-card">
+      <div class="boat-stat-number" id="boat-stat-oceans">—</div>
+      <div class="boat-stat-label">Oceans</div>
+    </a>
+    <a href="/map/" class="boat-stat-card">
+      <div class="boat-stat-number" id="boat-stat-sites">—</div>
+      <div class="boat-stat-label">Dive Sites</div>
+    </a>
   </div>
 </div>
 
@@ -86,10 +109,60 @@ body, #main, article.page, .page__inner-wrap, .page__content, .initial-content, 
   margin: 2rem auto 1.5rem;
   padding: 0 1rem;
 }
+
+.boat-stats {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 2rem auto;
+  padding: 0 1rem 2rem;
+}
+.boat-stat-card {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,196,138,0.35);
+  border-radius: 10px;
+  padding: 18px 28px;
+  text-align: center;
+  text-decoration: none !important;
+  min-width: 120px;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+@media (hover: hover) {
+  .boat-stat-card:hover {
+    background: rgba(255,196,138,0.15);
+    transform: translateY(-2px);
+  }
+}
+.boat-stat-number {
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-weight: 600;
+  font-size: 2rem;
+  color: #ffc48a;
+  line-height: 1;
+}
+.boat-stat-label {
+  font-family: 'Caveat', cursive;
+  font-weight: 600;
+  font-size: 1.15rem;
+  color: #ffc48a;
+  margin-top: 6px;
+}
+
 @media (max-width: 700px) {
   .boat-instruction {
     font-size: 1.3rem;
     margin: 1.5rem auto 1rem;
+  }
+  .boat-stat-card {
+    padding: 12px 20px;
+    min-width: 100px;
+  }
+  .boat-stat-number {
+    font-size: 1.6rem;
+  }
+  .boat-stat-label {
+    font-size: 1rem;
   }
 }
 
@@ -103,5 +176,65 @@ h1.page__title {
   display: none;
 }
 </style>
+
+<script src="/assets/js/travel-data.js"></script>
+<script>
+function parseCSV(text) {
+  const lines = text.trim().split('\n');
+  return lines.slice(1).filter(line => line.trim() !== '');
+}
+
+fetch('/assets/data/divelog.csv')
+  .then(r => r.text())
+  .then(text => {
+    const rows = parseCSV(text);
+    document.getElementById('boat-stat-dives').textContent = rows.length + 49;
+  })
+  .catch(err => {
+    document.getElementById('boat-stat-dives').textContent = '—';
+    console.error(err);
+  });
+
+async function fetchAllObservations() {
+  const results = [];
+  for (let page = 1; page <= 10; page++) {
+    const res = await fetch(
+      `https://api.inaturalist.org/v1/observations?user_login=mayamegret&per_page=200&page=${page}&order=desc&order_by=created_at`
+    );
+    const data = await res.json();
+    results.push(...data.results);
+    if (results.length >= data.total_results || data.results.length < 200) break;
+  }
+  return results;
+}
+
+fetchAllObservations()
+  .then(observations => {
+    const seen = new Set();
+    observations.forEach(obs => {
+      if (obs.taxon) seen.add(obs.taxon.id);
+    });
+    document.getElementById('boat-stat-species').textContent = seen.size;
+  })
+  .catch(err => {
+    document.getElementById('boat-stat-species').textContent = '—';
+    console.error(err);
+  });
+
+// Countries / oceans / dive sites all come from the same shared
+// travelLocations data that powers the map, so these numbers always
+// match what's shown on /map/.
+if (window.travelLocations) {
+  const locations = window.travelLocations;
+  const countries = new Set(locations.map(l => l.country));
+  const oceans = new Set(locations.map(l => l.ocean).filter(Boolean));
+  const diveSites = locations.filter(l => l.type === 'dive').length;
+  document.getElementById('boat-stat-countries').textContent = countries.size;
+  document.getElementById('boat-stat-oceans').textContent = oceans.size;
+  document.getElementById('boat-stat-sites').textContent = diveSites;
+} else {
+  console.warn('travelLocations not found — check that travel-data.js loaded');
+}
+</script>
 
 </div>
