@@ -4,16 +4,68 @@ title: "Photo Gallery"
 permalink: /photography/
 author_profile: false
 ---
-<div class="camera-wrap">
-  <img class="camera-body" src="/images/photography/CameraBack.png" alt="">
-  <div class="camera-screen" id="cameraScreen">
-    <img id="cameraScreenImg" src="" alt="Photo of the day">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
+
+<div class="camera-section">
+  <div class="camera-wrap">
+    <img class="camera-body" src="/images/photography/CameraBack.png" alt="">
+    <div class="camera-screen" id="cameraScreen">
+      <img id="cameraScreenImg" src="" alt="Photo of the day">
+    </div>
+    <button class="hotspot hotspot-gallery" id="galleryHotspot" aria-label="Open gallery"></button>
+    <button class="hotspot hotspot-menu" id="menuHotspot" aria-label="Open filters"></button>
   </div>
-  <button class="hotspot hotspot-gallery" id="galleryHotspot" aria-label="Open gallery"></button>
-  <button class="hotspot hotspot-menu" id="menuHotspot" aria-label="Open filters"></button>
+
+  <div class="callout callout-camera">
+    <p>This is my real Olympus TG-7!</p>
+    <svg viewBox="0 0 80 60" class="callout-arrow"><path d="M8,8 Q40,10 62,45" fill="none" stroke="#ffa44a" stroke-width="3" stroke-linecap="round"/><path d="M52,40 L64,47 L57,34" fill="none" stroke="#ffa44a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </div>
+
+  <div class="callout callout-buttons">
+    <svg viewBox="0 0 80 60" class="callout-arrow callout-arrow-flip"><path d="M8,8 Q40,10 62,45" fill="none" stroke="#ffa44a" stroke-width="3" stroke-linecap="round"/><path d="M52,40 L64,47 L57,34" fill="none" stroke="#ffa44a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <p>Try pressing the buttons!</p>
+  </div>
 </div>
 
 <style>
+  .camera-section {
+  position: relative;
+}
+.callout {
+  position: absolute;
+  width: 180px;
+  color: #ffa44a;
+  z-index: 20;
+}
+.callout p {
+  font-family: 'Caveat', cursive;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.2;
+}
+.callout-arrow { width: 70px; height: auto; display: block; }
+.callout-arrow-flip { transform: scaleX(-1); }
+
+.callout-camera {
+  top: -30px;
+  left: 2%;
+  text-align: left;
+}
+
+.callout-buttons {
+  bottom: 10%;
+  right: 1%;
+  text-align: right;
+}
+.callout-buttons .callout-arrow { margin-left: auto; }
+
+@media (max-width: 700px) {
+  .callout { display: none; }
+}
   .camera-wrap {
   position: relative;
   width: 95vw;
