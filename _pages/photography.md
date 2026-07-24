@@ -23,7 +23,7 @@ author_profile: false
     <svg viewBox="0 0 80 60" class="callout-arrow"><path d="M8,8 Q40,10 62,45" fill="none" stroke="#ffa44a" stroke-width="3" stroke-linecap="round"/><path d="M52,40 L64,47 L57,34" fill="none" stroke="#ffa44a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
   </div>
 
- <div class="callout callout-buttons">
+  <div class="callout callout-buttons">
     <svg viewBox="0 0 80 60" class="callout-arrow-up"><path d="M20,55 Q45,35 58,12" fill="none" stroke="#ffa44a" stroke-width="3" stroke-linecap="round"/><path d="M48,15 L58,12 L54,22" fill="none" stroke="#ffa44a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
     <p>Try pressing the buttons!</p>
   </div>
@@ -32,6 +32,7 @@ author_profile: false
 <style>
   .camera-section {
   position: relative;
+  padding-bottom: 140px;
 }
 .callout {
   position: absolute;
@@ -48,7 +49,6 @@ author_profile: false
   line-height: 1.2;
 }
 .callout-arrow { width: 70px; height: auto; display: block; }
-.callout-arrow-flip { transform: scaleX(-1); }
 
 .callout-camera {
   top: 20px;
@@ -58,6 +58,11 @@ author_profile: false
 .callout-camera p {
   transform: rotate(-40deg);
   transform-origin: left center;
+}
+.callout-camera .callout-arrow {
+  position: absolute;
+  top: 90px;
+  left: 60px;
 }
 
 .callout-buttons {
@@ -74,6 +79,7 @@ author_profile: false
   display: block;
   margin: 0 auto;
 }
+
 @media (max-width: 700px) {
   .callout { display: none; }
 }
@@ -92,8 +98,11 @@ author_profile: false
   cursor: pointer;
   border-radius: 50%;
   z-index: 30;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 .hotspot:hover { background: rgba(255,164,74,0.35); }
+.hotspot:focus { outline: none; }
 .hotspot-gallery { left: 75.86%; top: 52.24%; width: 7.37%; height: 8.31%; }
 .hotspot-menu    { left: 75.67%; top: 83.39%; width: 7.85%; height: 8.31%; }
 
