@@ -78,7 +78,7 @@ html {
   }
   .callout-camera {
     width: 32%;
-    left: -34%;
+    left: -30%;
   }
   .callout-camera p {
     transform: rotate(-25deg);
