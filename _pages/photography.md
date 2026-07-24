@@ -9,6 +9,8 @@ author_profile: false
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
 
+<div markdown="0">
+
 <div class="camera-section">
   <div class="camera-wrap">
     <img class="camera-body" src="/images/photography/CameraHawaiiFilm.png" alt="">
@@ -72,14 +74,6 @@ author_profile: false
   aspect-ratio: 1044 / 626;
 }
 .camera-body { width: 100%; display: block; }
-.camera-screen {
-  position: absolute;
-  left: 6.42%; top: 9.11%;
-  width: 69.25%; height: 86.1%;
-  overflow: hidden;
-  background: #000;
-}
-.camera-screen img { width: 100%; height: 100%; object-fit: contain; display: block; }
 .hotspot {
   position: absolute;
   border: none;
@@ -91,7 +85,7 @@ author_profile: false
 .hotspot:hover { background: rgba(255,164,74,0.35); }
 .hotspot-gallery { left: 75.86%; top: 52.24%; width: 7.37%; height: 8.31%; }
 .hotspot-menu    { left: 75.67%; top: 83.39%; width: 7.85%; height: 8.31%; }
-  
+
 .reveal-section {
   max-height: 0;
   overflow: hidden;
@@ -385,17 +379,9 @@ h1.page__title {
   observer.observe(grid, { childList: true });
 
   window.addEventListener('resize', resizeAllTiles);
-  // Force resize after images have had time to load
   setTimeout(resizeAllTiles, 500);
   setTimeout(resizeAllTiles, 1500);
   setTimeout(resizeAllTiles, 3000);
-
-  const cameraScreenImg = document.getElementById('cameraScreenImg');
-  if (cameraScreenImg) {
-    cameraScreenImg.src = '/images/photography/HawaiiFilm4.jpg';
-  } else {
-    console.warn('cameraScreenImg element not found');
-  }
 
   const galleryHotspot = document.getElementById('galleryHotspot');
   const gridSection = document.getElementById('gridSection');
@@ -424,3 +410,5 @@ h1.page__title {
   });
 })();
 </script>
+
+</div>
