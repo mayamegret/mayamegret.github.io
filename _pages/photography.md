@@ -80,7 +80,7 @@ author_profile: false
   overflow: hidden;
   background: #000;
 }
-.camera-screen img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.camera-screen img { width: 100%; height: 100%; object-fit: contain; display: block; }
 .hotspot {
   position: absolute;
   border: none;
