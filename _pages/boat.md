@@ -142,11 +142,9 @@ body, #main, article.page, .page__inner-wrap, .page__content, .initial-content, 
   line-height: 1;
 }
 .boat-stat-label {
-  font-family: 'Caveat', cursive;
-  font-weight: 600;
-  font-size: 1.15rem;
+  font-size: 0.8rem;
   color: #ffc48a;
-  margin-top: 6px;
+  margin-top: 4px;
 }
 
 @media (max-width: 700px) {
@@ -161,8 +159,8 @@ body, #main, article.page, .page__inner-wrap, .page__content, .initial-content, 
   .boat-stat-number {
     font-size: 1.6rem;
   }
-  .boat-stat-label {
-    font-size: 1rem;
+ .boat-stat-label {
+    font-size: 0.75rem;
   }
 }
 
