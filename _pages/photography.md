@@ -344,84 +344,86 @@ h1.page__title {
 
 <script src="/assets/js/photography-gallery.js"></script>
 <script>
-function resizeMasonryItem(tile) {
-  const rowHeight = 10;
-  const rowGap = 6;
-  const img = tile.querySelector('img');
-  if (!img || !img.naturalWidth) return;
-  const containerWidth = tile.offsetWidth;
-  if (!containerWidth) return;
-  const displayHeight = (img.naturalHeight / img.naturalWidth) * containerWidth;
-  const rowSpan = Math.ceil((displayHeight + rowGap) / (rowHeight + rowGap)) ;
-  tile.style.gridRowEnd = 'span ' + rowSpan;
-}
-
-function resizeAllTiles() {
-  document.querySelectorAll('.photo-tile').forEach(tile => {
+(function() {
+  function resizeMasonryItem(tile) {
+    const rowHeight = 10;
+    const rowGap = 6;
     const img = tile.querySelector('img');
-    if (!img) return;
-    if (img.complete && img.naturalWidth) {
-      resizeMasonryItem(tile);
-    } else {
-      img.addEventListener('load', () => {
+    if (!img || !img.naturalWidth) return;
+    const containerWidth = tile.offsetWidth;
+    if (!containerWidth) return;
+    const displayHeight = (img.naturalHeight / img.naturalWidth) * containerWidth;
+    const rowSpan = Math.ceil((displayHeight + rowGap) / (rowHeight + rowGap)) ;
+    tile.style.gridRowEnd = 'span ' + rowSpan;
+  }
+
+  function resizeAllTiles() {
+    document.querySelectorAll('.photo-tile').forEach(tile => {
+      const img = tile.querySelector('img');
+      if (!img) return;
+      if (img.complete && img.naturalWidth) {
         resizeMasonryItem(tile);
-        setTimeout(() => resizeMasonryItem(tile), 100);
-      });
-    }
+      } else {
+        img.addEventListener('load', () => {
+          resizeMasonryItem(tile);
+          setTimeout(() => resizeMasonryItem(tile), 100);
+        });
+      }
+    });
+  }
+  document.querySelectorAll('#main, article.page, .page__inner-wrap, .page__content').forEach(el => {
+    el.style.maxWidth = '100%';
+    el.style.width = '100%';
+    el.style.paddingLeft = '1em';
+    el.style.paddingRight = '1em';
+    el.style.float = 'none';
   });
-}
-document.querySelectorAll('#main, article.page, .page__inner-wrap, .page__content').forEach(el => {
-  el.style.maxWidth = '100%';
-  el.style.width = '100%';
-  el.style.paddingLeft = '1em';
-  el.style.paddingRight = '1em';
-  el.style.float = 'none';
-});
-  setTimeout(resizeAllTiles, 200);
-const grid = document.getElementById('photo-grid');
-const observer = new MutationObserver(() => {
-  setTimeout(resizeAllTiles, 50);
+    setTimeout(resizeAllTiles, 200);
+  const grid = document.getElementById('photo-grid');
+  const observer = new MutationObserver(() => {
+    setTimeout(resizeAllTiles, 50);
+    setTimeout(resizeAllTiles, 500);
+    setTimeout(resizeAllTiles, 1500);
+  });
+  observer.observe(grid, { childList: true });
+
+  window.addEventListener('resize', resizeAllTiles);
+  // Force resize after images have had time to load
   setTimeout(resizeAllTiles, 500);
   setTimeout(resizeAllTiles, 1500);
-});
-observer.observe(grid, { childList: true });
+  setTimeout(resizeAllTiles, 3000);
 
-window.addEventListener('resize', resizeAllTiles);
-// Force resize after images have had time to load
-setTimeout(resizeAllTiles, 500);
-setTimeout(resizeAllTiles, 1500);
-setTimeout(resizeAllTiles, 3000);
-
-const cameraScreenImg = document.getElementById('cameraScreenImg');
-if (cameraScreenImg) {
-  cameraScreenImg.src = '/images/photography/HawaiiFilm4.jpg';
-} else {
-  console.warn('cameraScreenImg element not found');
-}
-
-const galleryHotspot = document.getElementById('galleryHotspot');
-const gridSection = document.getElementById('gridSection');
-if (galleryHotspot && gridSection) {
-  galleryHotspot.addEventListener('click', () => {
-    gridSection.classList.toggle('is-open');
-  });
-} else {
-  console.warn('gallery hotspot or gridSection not found', galleryHotspot, gridSection);
-}
-
-const menuHotspot = document.getElementById('menuHotspot');
-const menuSection = document.getElementById('menuSection');
-if (menuHotspot && menuSection) {
-  menuHotspot.addEventListener('click', () => {
-    menuSection.classList.toggle('is-open');
-  });
-} else {
-  console.warn('menu hotspot or menuSection not found', menuHotspot, menuSection);
-}
-
-document.getElementById('photo-modal').addEventListener('click', function(e) {
-  if (e.target === this || e.target === document.getElementById('modal-img')) {
-    closeModal();
+  const cameraScreenImg = document.getElementById('cameraScreenImg');
+  if (cameraScreenImg) {
+    cameraScreenImg.src = '/images/photography/HawaiiFilm4.jpg';
+  } else {
+    console.warn('cameraScreenImg element not found');
   }
-});
+
+  const galleryHotspot = document.getElementById('galleryHotspot');
+  const gridSection = document.getElementById('gridSection');
+  if (galleryHotspot && gridSection) {
+    galleryHotspot.addEventListener('click', () => {
+      gridSection.classList.toggle('is-open');
+    });
+  } else {
+    console.warn('gallery hotspot or gridSection not found', galleryHotspot, gridSection);
+  }
+
+  const menuHotspot = document.getElementById('menuHotspot');
+  const menuSection = document.getElementById('menuSection');
+  if (menuHotspot && menuSection) {
+    menuHotspot.addEventListener('click', () => {
+      menuSection.classList.toggle('is-open');
+    });
+  } else {
+    console.warn('menu hotspot or menuSection not found', menuHotspot, menuSection);
+  }
+
+  document.getElementById('photo-modal').addEventListener('click', function(e) {
+    if (e.target === this || e.target === document.getElementById('modal-img')) {
+      closeModal();
+    }
+  });
+})();
 </script>
