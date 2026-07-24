@@ -12,27 +12,22 @@ author_profile: false
 <div markdown="0">
 
 <div class="camera-section">
+  <div class="callout callout-camera">
+    <p>This is my real Olympus TG-7!</p>
+  </div>
+
   <div class="camera-wrap">
     <img class="camera-body" src="/images/photography/CameraHawaiiFilm.png" alt="">
     <button class="hotspot hotspot-gallery" id="galleryHotspot" aria-label="Open gallery"></button>
     <button class="hotspot hotspot-menu" id="menuHotspot" aria-label="Open filters"></button>
   </div>
 
-  <div class="callout callout-camera">
-    <p>This is my real Olympus TG-7!</p>
-    <svg viewBox="0 0 80 60" class="callout-arrow"><path d="M8,8 Q40,10 62,45" fill="none" stroke="#ffa44a" stroke-width="3" stroke-linecap="round"/><path d="M52,40 L64,47 L57,34" fill="none" stroke="#ffa44a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
-  </div>
-
-  <div class="callout callout-buttons">
-    <svg viewBox="0 0 80 60" class="callout-arrow-up"><path d="M20,55 Q45,35 58,12" fill="none" stroke="#ffa44a" stroke-width="3" stroke-linecap="round"/><path d="M48,15 L58,12 L54,22" fill="none" stroke="#ffa44a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    <p>Try pressing the buttons!</p>
-  </div>
+  <p class="callout-buttons-text">Try pressing the buttons!</p>
 </div>
 
 <style>
   .camera-section {
   position: relative;
-  padding-bottom: 140px;
 }
 .callout {
   position: absolute;
@@ -48,7 +43,6 @@ author_profile: false
   margin: 0;
   line-height: 1.2;
 }
-.callout-arrow { width: 70px; height: auto; display: block; }
 
 .callout-camera {
   top: 20px;
@@ -59,35 +53,41 @@ author_profile: false
   transform: rotate(-40deg);
   transform-origin: left center;
 }
-.callout-camera .callout-arrow {
-  position: absolute;
-  top: 90px;
-  left: 60px;
-}
 
-.callout-buttons {
-  top: auto;
-  bottom: -100px;
-  right: 6%;
-  left: auto;
-  width: 200px;
+.callout-buttons-text {
+  font-family: 'Caveat', cursive;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #2c4a3e;
   text-align: center;
-}
-.callout-arrow-up {
-  width: 60px;
-  height: auto;
-  display: block;
   margin: 0 auto;
+  max-width: 300px;
 }
 
 @media (max-width: 700px) {
-  .callout { display: none; }
+  .callout {
+    width: 140px;
+  }
+  .callout p {
+    font-size: 1.15rem;
+  }
+  .callout-camera {
+    top: -10px;
+    left: -2%;
+  }
+  .callout-camera p {
+    transform: rotate(-25deg);
+  }
+  .callout-buttons-text {
+    font-size: 1.15rem;
+  }
 }
+
   .camera-wrap {
   position: relative;
   width: 60vw;
   max-width: 900px;
-  margin: 0 auto 2rem;
+  margin: 0 auto 1.5rem;
   aspect-ratio: 1044 / 626;
 }
 .camera-body { width: 100%; display: block; }
