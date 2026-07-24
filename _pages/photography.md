@@ -13,7 +13,7 @@ author_profile: false
 
 <div class="camera-section">
   <div class="callout callout-camera">
-    <p>This is my real Olympus TG-7!</p>
+   <p>This is my real<br>Olympus TG-7!</p>
   </div>
 
   <div class="camera-wrap">
