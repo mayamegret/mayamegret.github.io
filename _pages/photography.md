@@ -23,9 +23,9 @@ author_profile: false
     <svg viewBox="0 0 80 60" class="callout-arrow"><path d="M8,8 Q40,10 62,45" fill="none" stroke="#ffa44a" stroke-width="3" stroke-linecap="round"/><path d="M52,40 L64,47 L57,34" fill="none" stroke="#ffa44a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
   </div>
 
-  <div class="callout callout-buttons">
-     <p>Try pressing the buttons!</p>
-    <svg viewBox="0 0 80 60" class="callout-arrow callout-arrow-flip"><path d="M8,8 Q40,10 62,45" fill="none" stroke="#ffa44a" stroke-width="3" stroke-linecap="round"/><path d="M52,40 L64,47 L57,34" fill="none" stroke="#ffa44a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+ <div class="callout callout-buttons">
+    <svg viewBox="0 0 80 60" class="callout-arrow-up"><path d="M20,55 Q45,35 58,12" fill="none" stroke="#ffa44a" stroke-width="3" stroke-linecap="round"/><path d="M48,15 L58,12 L54,22" fill="none" stroke="#ffa44a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <p>Try pressing the buttons!</p>
   </div>
 </div>
 
@@ -51,18 +51,29 @@ author_profile: false
 .callout-arrow-flip { transform: scaleX(-1); }
 
 .callout-camera {
-  top: -30px;
-  left: 2%;
+  top: 20px;
+  left: -6%;
   text-align: left;
+}
+.callout-camera p {
+  transform: rotate(-40deg);
+  transform-origin: left center;
 }
 
 .callout-buttons {
-  bottom: 10%;
-  right: 1%;
-  text-align: right;
+  top: auto;
+  bottom: -100px;
+  right: 6%;
+  left: auto;
+  width: 200px;
+  text-align: center;
 }
-.callout-buttons .callout-arrow { margin-left: auto; }
-
+.callout-arrow-up {
+  width: 60px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 @media (max-width: 700px) {
   .callout { display: none; }
 }
