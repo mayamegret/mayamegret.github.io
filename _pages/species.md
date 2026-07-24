@@ -5,6 +5,8 @@ permalink: /species/
 author_profile: false
 ---
 
+<a href="/boat/" class="back-to-boat">&larr; Back to the boat</a>
+
 A log of every species I've observed in the wild, automatically synced from my <a href="https://www.inaturalist.org/people/mayamegret" target="_blank" style="text-decoration: underline;">iNaturalist profile</a>, updated every time I log a new observation!
 
 <div id="species-stats" style="margin-bottom: 1rem; font-size: 0.95rem;"></div>
@@ -49,6 +51,24 @@ h1::after, h2::after, h3::after { background-color: #C05C27 !important; border-c
 #species-loading { color: #C05C27 !important; }
 #fave-modal { display: none; }
 #fave-modal.open { display: flex !important; }
+article.page {
+  position: relative;
+}
+.back-to-boat {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-decoration: underline;
+  color: #C05C27 !important;
+  z-index: 10;
+}
+.back-to-boat:hover {
+  color: #8a3e18 !important;
+}
 .species-group { margin-bottom: 2.5rem; }
 .species-group-title {
   font-size: 1.2rem;
