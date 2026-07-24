@@ -6,20 +6,14 @@
 #
 # NOTE that only one of the CV options should be selected, the first is for the
 #      Markdown formatted page while the second is generated using JSON.
-
 main:
   - title: "Photo Gallery"
     url: /photography/
-  - title: "Map"
-    url: /map/
+  - title: "To the boat!"
+    url: /boat/
   - title: "CV"
     url: /cv/
-  - title: "Dive Log"
-    url: /dive-log/
-  - title: "Species Log"
-    url: /species/
   - title: "Field Notes"
     url: /posts/
-
   # - title: "CV"
   #   url: /cv-json/
