@@ -25,6 +25,24 @@ h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-c
   padding-left: 1em !important;
   padding-right: 1em !important;
 }
+article.page {
+  position: relative;
+}
+.back-to-boat {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-decoration: underline;
+  color: #4B2E0F !important;
+  z-index: 10;
+}
+.back-to-boat:hover {
+  color: #7a4e20 !important;
+}
 .dive-stats {
   display: flex;
   gap: 16px;
@@ -206,6 +224,8 @@ h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-c
   min-width: 220px;
 }
 </style>
+
+<a href="/boat/" class="back-to-boat">&larr; Back to the boat</a>
 
 <div class="dive-stats">
   <div class="dive-stat-card">
