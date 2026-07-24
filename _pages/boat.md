@@ -5,6 +5,10 @@ permalink: /boat/
 author_profile: false
 ---
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
+
 <div markdown="0">
 
 <div class="boat-section">
@@ -14,6 +18,7 @@ author_profile: false
     <a class="boat-hotspot boat-hotspot-kraken" href="/species/" aria-label="Go to Species Log"></a>
     <a class="boat-hotspot boat-hotspot-map" href="/map/" aria-label="Go to Map"></a>
   </div>
+  <p class="boat-instruction">Click around to explore my dive log, species log, and map!</p>
 </div>
 
 <style>
@@ -71,6 +76,22 @@ body, #main, article.page, .page__inner-wrap, .page__content, .initial-content, 
 .boat-hotspot-gear   { left: 6.77%;  top: 35.19%; width: 20.31%; height: 64.81%; }
 .boat-hotspot-kraken { left: 27.08%; top: 12.96%; width: 39.06%; height: 70.37%; }
 .boat-hotspot-map    { left: 66.15%; top: 55.56%; width: 32.81%; height: 39.81%; }
+
+.boat-instruction {
+  font-family: 'Caveat', cursive;
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: #ffc48a;
+  text-align: center;
+  margin: 1.5rem auto 2.5rem;
+  padding: 0 1rem;
+}
+@media (max-width: 700px) {
+  .boat-instruction {
+    font-size: 1.3rem;
+    margin: 1rem auto 2rem;
+  }
+}
 
 #main, article.page, .page__inner-wrap, .page__content, .page__inner-wrap--layout-single {
   max-width: 100% !important;
