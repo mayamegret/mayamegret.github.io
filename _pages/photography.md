@@ -11,10 +11,7 @@ author_profile: false
 
 <div class="camera-section">
   <div class="camera-wrap">
-    <img class="camera-body" src="/images/photography/CameraBack.png" alt="">
-    <div class="camera-screen" id="cameraScreen">
-      <img id="cameraScreenImg" src="" alt="Photo of the day">
-    </div>
+    <img class="camera-body" src="/images/photography/CameraHawaiiFilm.png" alt="">
     <button class="hotspot hotspot-gallery" id="galleryHotspot" aria-label="Open gallery"></button>
     <button class="hotspot hotspot-menu" id="menuHotspot" aria-label="Open filters"></button>
   </div>
