@@ -319,8 +319,6 @@ h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-c
     </ul>
   </div>
 
-  <div class="cv-milestone"><i class="fas fa-book-open"></i> Started MSc classes at UAlg · September 2024</div>
-
   <div class="cv-card">
     <div class="cv-card-title">Intern · Marine Action Research Expeditions</div>
     <div class="cv-card-subtitle">Závora, Mozambique · July 2025</div>
@@ -334,6 +332,8 @@ h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-c
   </div>
 
   <div class="cv-milestone"><i class="fas fa-award"></i> Advanced Open Water · Scientific Diving (CCMAR, UAlg) · May 2025</div>
+
+  <div class="cv-milestone"><i class="fas fa-book-open"></i> Started MSc classes at UAlg · September 2024</div>
 
   <div class="cv-milestone"><i class="fas fa-graduation-cap"></i> Graduated UCSD · June 2024</div>
 
