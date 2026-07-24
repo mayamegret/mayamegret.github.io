@@ -22,12 +22,15 @@ author_profile: false
     <button class="hotspot hotspot-menu" id="menuHotspot" aria-label="Open filters"></button>
   </div>
 
-  <p class="callout-buttons-text">Try pressing the buttons!</p>
+  <div class="callout-buttons-wrap">
+    <p class="callout-buttons-text">Try pressing the buttons!</p>
+  </div>
 </div>
 
 <style>
   .camera-section {
   position: relative;
+  padding-bottom: 50px;
 }
 .callout {
   position: absolute;
@@ -36,9 +39,10 @@ author_profile: false
   z-index: 20;
   pointer-events: none;
 }
-.callout p {
+.callout p,
+.callout-buttons-text {
   font-family: 'Caveat', cursive;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 600;
   margin: 0;
   line-height: 1.2;
@@ -54,22 +58,24 @@ author_profile: false
   transform-origin: left center;
 }
 
-.callout-buttons-text {
-  font-family: 'Caveat', cursive;
-  font-size: 1.6rem;
-  font-weight: 600;
-  color: #2c4a3e;
-  text-align: center;
+.callout-buttons-wrap {
+  width: 60vw;
+  max-width: 900px;
   margin: 0 auto;
-  max-width: 300px;
+}
+.callout-buttons-text {
+  color: #2c4a3e;
+  text-align: right;
+  padding-right: 8%;
 }
 
 @media (max-width: 700px) {
   .callout {
     width: 140px;
   }
-  .callout p {
-    font-size: 1.15rem;
+  .callout p,
+  .callout-buttons-text {
+    font-size: 1.1rem;
   }
   .callout-camera {
     top: -10px;
@@ -79,7 +85,8 @@ author_profile: false
     transform: rotate(-25deg);
   }
   .callout-buttons-text {
-    font-size: 1.15rem;
+    text-align: center;
+    padding-right: 0;
   }
 }
 
@@ -87,7 +94,7 @@ author_profile: false
   position: relative;
   width: 60vw;
   max-width: 900px;
-  margin: 0 auto 1.5rem;
+  margin: 0 auto 1rem;
   aspect-ratio: 1044 / 626;
 }
 .camera-body { width: 100%; display: block; }
