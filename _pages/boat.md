@@ -20,18 +20,27 @@ author_profile: false
 html {
   background-color: #1a3258;
 }
+body, #main, article.page, .page__inner-wrap, .page__content, .initial-content, .page__wrap {
+  background-color: #1a3258 !important;
+}
 .boat-section {
   position: relative;
+  margin: 0;
+  padding: 0;
 }
 .boat-wrap {
   position: relative;
-  width: 90vw;
-  max-width: 1400px;
-  margin: 0 auto 2rem;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
   aspect-ratio: 1920 / 1080;
+  display: block;
 }
 .boat-body {
   width: 100%;
+  height: 100%;
   display: block;
 }
 .boat-hotspot {
@@ -66,8 +75,8 @@ html {
 #main, article.page, .page__inner-wrap, .page__content, .page__inner-wrap--layout-single {
   max-width: 100% !important;
   width: 100% !important;
-  padding-left: 1em !important;
-  padding-right: 1em !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 h1.page__title {
   display: none;
