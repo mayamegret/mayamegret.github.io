@@ -74,22 +74,13 @@ author_profile: false
   margin: 0 auto 2rem;
 }
 .camera-body { width: 100%; display: block; }
-.camera-screen {
-  position: absolute;
-  left: 9.24%; top: 15.18%;
-  width: 69.83%; height: 79.36%;
-  overflow: hidden;
-  background: #000;
+..camera-screen {
+  left: 6.42%; top: 9.11%;
+  width: 69.25%; height: 86.1%;
 }
-.camera-screen img { width: 100%; height: 100%; object-fit: contain; display: block; }
-.hotspot {
-  position: absolute;
-  border: none;
-  background: rgba(255,255,255,0.001);
-  cursor: pointer;
-  border-radius: 50%;
-  z-index: 30;
-}
+.hotspot-gallery { left: 75.86%; top: 52.24%; width: 7.37%; height: 8.31%; }  /* the ▶ playback button */
+.hotspot-menu    { left: 75.67%; top: 83.39%; width: 7.85%; height: 8.31%; } /* the MENU button */
+  
 .hotspot:hover { background: rgba(255,164,74,0.35); }
 .hotspot-gallery { left: 75.84%; top: 53.13%; width: 10.34%; height: 10.35%; }
 .hotspot-menu { left: 73.9%; top: 80.73%; width: 12.93%; height: 10.35%; }
