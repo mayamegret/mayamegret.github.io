@@ -34,7 +34,8 @@ author_profile: false
 }
 .callout {
   position: absolute;
-  width: 180px;
+  width: max-content;
+  max-width: 220px;
   color: #2c4a3e;
   z-index: 20;
   pointer-events: none;
@@ -42,15 +43,18 @@ author_profile: false
 .callout p,
 .callout-buttons-text {
   font-family: 'Caveat', cursive;
-  font-size: 1.4rem;
+  font-size: 1.4rem !important;
   font-weight: 600;
   margin: 0;
   line-height: 1.2;
 }
+.callout-camera p {
+  white-space: nowrap;
+}
 
 .callout-camera {
-  top: 20px;
-  left: -6%;
+  top: 30px;
+  left: 2%;
   text-align: left;
 }
 .callout-camera p {
@@ -70,16 +74,14 @@ author_profile: false
 }
 
 @media (max-width: 700px) {
-  .callout {
-    width: 140px;
-  }
   .callout p,
   .callout-buttons-text {
-    font-size: 1.1rem;
+    font-size: 0.95rem !important;
   }
   .callout-camera {
-    top: -10px;
-    left: -2%;
+    top: 55px;
+    left: 4%;
+    max-width: 140px;
   }
   .callout-camera p {
     transform: rotate(-25deg);
