@@ -39,6 +39,7 @@ author_profile: false
   width: 180px;
   color: #2c4a3e;
   z-index: 20;
+  pointer-events: none;
 }
 .callout p {
   font-family: 'Caveat', cursive;
@@ -87,6 +88,7 @@ author_profile: false
   background: rgba(255,255,255,0.001);
   cursor: pointer;
   border-radius: 50%;
+  z-index: 30;
 }
 .hotspot:hover { background: rgba(255,164,74,0.35); }
 .hotspot-gallery { left: 75.84%; top: 53.13%; width: 10.34%; height: 10.35%; }
