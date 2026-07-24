@@ -149,11 +149,11 @@ article.page {
       <span>2026</span>
     </div>
   </div>
-  <button class="animate-btn" id="animate-btn" onclick="animateJourney()">
-    <i class="fas fa-play"></i> Animate journey
-  </button>
+<button class="animate-btn" id="animate-btn" onclick="animateJourney()">
+  <i class="fas fa-play"></i> Animate journey
+</button>
 </div>
-
 <div id="dive-map"></div>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="/assets/js/travel-data.js"></script>
 <script src="/assets/js/dive-map.js"></script>
