@@ -17,7 +17,8 @@ author_profile: false
     <button class="hotspot hotspot-gallery" id="galleryHotspot" aria-label="Open gallery"></button>
     <button class="hotspot hotspot-menu" id="menuHotspot" aria-label="Open filters"></button>
     <div class="callout callout-camera">
-      <p>This is my real Olympus TG-7!</p>
+      <p>This is my real</p>
+      <p>Olympus TG-7!</p>
     </div>
   </div>
 
