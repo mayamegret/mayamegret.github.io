@@ -44,7 +44,7 @@ a { color: #C05C27 !important; }
 a:hover { color: #8a3e18 !important; }
 h1, h2, h3, h4, h5, h6 { color: #C05C27 !important; }
 body { color: #C05C27 !important; }
-.page__title { color: #C05C27 !important; }
+.page__title { color: #C05C27 !important; text-align: center !important; }
 .page__title::after { background-color: #C05C27 !important; }
 h1::after, h2::after, h3::after { background-color: #C05C27 !important; border-color: #C05C27 !important; }
 #species-stats { color: #C05C27 !important; }
