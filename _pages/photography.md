@@ -27,6 +27,9 @@ author_profile: false
 </div>
 
 <style>
+html {
+  background-color: #ffc48a;
+}
   .camera-section {
   position: relative;
   padding-bottom: 50px;
@@ -136,7 +139,6 @@ author_profile: false
   width: 100% !important;
   padding-left: 1em !important;
   padding-right: 1em !important;
-  background: transparent !important;
 }
 article.page {
   position: relative;
