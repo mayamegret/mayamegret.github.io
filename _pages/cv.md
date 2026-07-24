@@ -337,6 +337,14 @@ h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-c
 
   <div class="cv-milestone"><i class="fas fa-graduation-cap"></i> Graduated UCSD · June 2024</div>
 
+   <div class="cv-card">
+    <div class="cv-card-title">Admissions Clerk · Birch Aquarium · Scripps Institution of Oceanography</div>
+    <div class="cv-card-subtitle">San Diego, California · January 2022–June 2024</div>
+    <ul>
+      <li>Handled all phases of guest visits, ensuring an exceptional experience</li>
+    </ul>
+  </div>
+
   <div class="cv-card">
     <div class="cv-card-title">Conservation Researcher · Wildlife Sense</div>
     <div class="cv-card-subtitle">Cephalonia, Greece · July–August 2023</div>
@@ -346,14 +354,6 @@ h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-c
       <li>Tagged nesting female turtles</li>
       <li>Aided hatchlings on their journey to sea to ensure their survival</li>
       <li>Conducted beach mapping and beach cleanups</li>
-    </ul>
-  </div>
-
-  <div class="cv-card">
-    <div class="cv-card-title">Admissions Clerk · Birch Aquarium · Scripps Institution of Oceanography</div>
-    <div class="cv-card-subtitle">San Diego, California · January 2022–June 2024</div>
-    <ul>
-      <li>Handled all phases of guest visits, ensuring an exceptional experience</li>
     </ul>
   </div>
 
