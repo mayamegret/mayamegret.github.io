@@ -12,14 +12,13 @@ author_profile: false
 <div markdown="0">
 
 <div class="camera-section">
-  <div class="callout callout-camera">
-   <p>This is my real<br>Olympus TG-7!</p>
-  </div>
-
   <div class="camera-wrap">
     <img class="camera-body" src="/images/photography/CameraHawaiiFilm.png" alt="">
     <button class="hotspot hotspot-gallery" id="galleryHotspot" aria-label="Open gallery"></button>
     <button class="hotspot hotspot-menu" id="menuHotspot" aria-label="Open filters"></button>
+    <div class="callout callout-camera">
+      <p>This is my real Olympus TG-7!</p>
+    </div>
   </div>
 
   <div class="callout-buttons-wrap">
@@ -48,10 +47,10 @@ author_profile: false
 }
 
 .callout-camera {
-  top: 20px;
-  left: -10%;
+  top: 4%;
+  left: -22%;
   text-align: left;
-  width: 170px;
+  width: 30%;
 }
 .callout-camera p {
   transform: rotate(-40deg);
@@ -75,9 +74,7 @@ author_profile: false
     font-size: 0.95rem !important;
   }
   .callout-camera {
-    top: 45px;
-    left: -6%;
-    width: 130px;
+    width: 32%;
   }
   .callout-camera p {
     transform: rotate(-25deg);
