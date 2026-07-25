@@ -155,7 +155,6 @@ body, #main, article.page, .page__inner-wrap, .page__content, .initial-content, 
     font-size: 1.3rem;
     margin: 1.5rem auto 1rem;
   }
-  ...
   .boat-stat-card {
     padding: 12px 20px;
     min-width: 100px;
