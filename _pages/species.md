@@ -155,6 +155,11 @@ article.page {
   justify-content: center;
   z-index: 3;
 }
+@media (max-width: 700px) {
+  .page__title {
+    margin-top: 2.5rem !important;
+  }
+}
 @media (max-width: 900px) {
   .species-grid { grid-template-columns: repeat(3, 1fr); }
 }
