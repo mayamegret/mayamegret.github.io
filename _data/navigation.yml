@@ -9,7 +9,7 @@
 main:
   - title: "Photo Gallery"
     url: /photography/
-  - title: "To the boat!"
+  - title: "To The Boat!"
     url: /boat/
   - title: "CV"
     url: /cv/
