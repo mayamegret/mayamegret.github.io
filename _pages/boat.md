@@ -148,10 +148,14 @@ body, #main, article.page, .page__inner-wrap, .page__content, .initial-content, 
 }
 
 @media (max-width: 700px) {
+  .boat-section {
+    padding-top: 56px;
+  }
   .boat-instruction {
     font-size: 1.3rem;
     margin: 1.5rem auto 1rem;
   }
+  ...
   .boat-stat-card {
     padding: 12px 20px;
     min-width: 100px;
