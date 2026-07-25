@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "To the Boat!"
+title: "To The Boat!"
 permalink: /boat/
 author_profile: false
 ---
