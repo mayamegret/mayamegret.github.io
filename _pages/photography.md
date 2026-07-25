@@ -122,11 +122,7 @@ html {
   box-shadow: none;
   background: rgba(255,255,255,0.001);
 }
-@media (hover: hover) {
-  .hotspot:hover {
-    background: rgba(255,164,74,0.35);
-  }
-}
+  
 .hotspot-gallery { left: 75.86%; top: 52.24%; width: 7.37%; height: 8.31%; }
 .hotspot-menu    { left: 75.67%; top: 83.39%; width: 7.85%; height: 8.31%; }
 
