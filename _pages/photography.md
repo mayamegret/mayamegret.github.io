@@ -135,7 +135,7 @@ html {
   overflow: hidden;
   transition: max-height 0.5s cubic-bezier(0.16,1,0.3,1);
 }
-.reveal-section.is-open { max-height: 3000px; }
+.reveal-section.is-open { max-height: 100000px; }
 #main, article.page, .page__inner-wrap, .page__content, .page__inner-wrap--layout-single {
   max-width: 100% !important;
   width: 100% !important;
