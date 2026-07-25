@@ -29,18 +29,18 @@ author_profile: false
       <div class="boat-stat-number" id="boat-stat-species">—</div>
       <div class="boat-stat-label">Species Spotted</div>
     </a>
-    <a href="/map/" class="boat-stat-card">
-      <div class="boat-stat-number" id="boat-stat-countries">—</div>
-      <div class="boat-stat-label">Countries</div>
-    </a>
-    <a href="/map/" class="boat-stat-card">
-      <div class="boat-stat-number" id="boat-stat-oceans">—</div>
-      <div class="boat-stat-label">Oceans</div>
-    </a>
-    <a href="/map/" class="boat-stat-card">
-      <div class="boat-stat-number" id="boat-stat-sites">—</div>
-      <div class="boat-stat-label">Dive Sites</div>
-    </a>
+  <a href="/map/" class="boat-stat-card">
+  <div class="boat-stat-number" id="boat-stat-countries">22</div>
+  <div class="boat-stat-label">Countries</div>
+</a>
+<a href="/map/" class="boat-stat-card">
+  <div class="boat-stat-number" id="boat-stat-oceans">4</div>
+  <div class="boat-stat-label">Oceans</div>
+</a>
+<a href="/map/" class="boat-stat-card">
+  <div class="boat-stat-number" id="boat-stat-sites">14</div>
+  <div class="boat-stat-label">Dive Sites</div>
+</a>
   </div>
 </div>
 
