@@ -385,7 +385,7 @@ function updateStats(dives) {
   const depths = dives.map(r => parseFloat(r[5])).filter(d => !isNaN(d));
   document.getElementById('stat-depth').textContent = depths.length ? Math.max(...depths) : '—';
   const times = dives.map(r => parseFloat(r[8])).filter(t => !isNaN(t));
-  document.getElementById('stat-time').textContent = times.length ? times.reduce((a, b) => a + b, 0) : '—';
+  document.getElementById('stat-time').textContent = times.length ? times.reduce((a, b) => a + b, 0) + 1500 : '—';
 }
 
 function populateLocationFilter(dives) {
