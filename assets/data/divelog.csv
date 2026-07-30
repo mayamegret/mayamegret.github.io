@@ -90,8 +90,8 @@ Dive #,Date (yyyy-mm-dd),Site,Location,Dive Type,Max depth (m),Average depth (m)
 138,2026-6-6,Sea Tiger shipwreck,"Honolulu, O'ahu, Hawai'i",Divemaster training,31.7,,22,28,Nitrox,25,25,30,None,5,3,Aluminum,Josiah,"1x Whitetip reef shark, 1x Sandbar shark, 1x Blue dragon nudi",
 139,2026-6-7,Nautilus Reef,"Honolulu, O'ahu, Hawai'i",Divemaster training,12.4,,32,38,Air,26,26,20,None,5,3,Aluminum,Callum,,
 140,2026-6-7,Kewalo Pipe,"Honolulu, O'ahu, Hawai'i",Divemaster training,17.9,,28,33,Air,26,26,20,None,5,3,Aluminum,Callum,,
-141,2026-6-9,Sea Tiger shipwreck,"Honolulu, O'ahu, Hawai'i",Divemaster training,34.3,,27,36,Nitrox,26,26,30,Light,5,3,Aluminum,Caleb,"3x Coryphellina exoptata, 2x Whitetip reef shark, 2x Hawaiian green turtle, 1x Blue dragon nudi",
-142,2026-6-9,"Kewalo Pipe, Horseshoe Reef","Honolulu, O'ahu, Hawai'i",Divemaster training,14.5,,42,47,Nitrox,26,26,20,None,5,3,Aluminum,Caleb,3x Hawaiian green turtles,
+141,2026-6-9,Sea Tiger shipwreck,"Honolulu, O'ahu, Hawai'i",Fun dive,34.3,,27,36,Nitrox,26,26,30,Light,5,3,Aluminum,Caleb,"3x Coryphellina exoptata, 2x Whitetip reef shark, 2x Hawaiian green turtle, 1x Blue dragon nudi",
+142,2026-6-9,"Kewalo Pipe, Horseshoe Reef","Honolulu, O'ahu, Hawai'i",Fun dive,14.5,,42,47,Nitrox,26,26,20,None,5,3,Aluminum,Caleb,3x Hawaiian green turtles,
 143,2026-6-9,Kewalo Pipe,"Honolulu, O'ahu, Hawai'i",Divemaster training,19.3,,39,43,Air,26,26,10,None,5,3,Aluminum,"Ed, Evan",1x Hawaiian green turtles,
 144,2026-6-12,"Kewalo Pipe, Horseshoe Reef","Honolulu, O'ahu, Hawai'i",Divemaster training,20.4,,40,44,Air,26,26,30,Light,5,3,Aluminum,Callum,4x Hawaiian green turtles,
 145,2026-6-12,"Kewalo Pipe, Horseshoe Reef","Honolulu, O'ahu, Hawai'i",Divemaster training,17.3,,37,42,Air,26,26,20,Light,5,3,Aluminum,Callum,"3x Eagle ray, 2x Hawaiian green turtle, 1x Moray eel",
@@ -128,4 +128,6 @@ Dive #,Date (yyyy-mm-dd),Site,Location,Dive Type,Max depth (m),Average depth (m)
 176,2026-7-26,"Kewalo Pipe, Horseshoe Reef","Honolulu, O'ahu, Hawai'i",Professional,12.4,7.2,22,25,Air,26,27,5,Surge,no wetsuit!,0,Aluminum,Callum,,5 DSDs with me and Callum on this dive. I had to two 2 of them the whole time but it was fine
 177,2026-7-26,"Kewalo Pipe, Horseshoe Reef, Secrets Reef","Honolulu, O'ahu, Hawai'i",Professional,14.1,8.1,25,31,Air,26,27,5,Surge,no wetsuit!,2,Aluminum,"Callum, Josiah",2x Moray eel,"We joiend Josiahs group and there was 8 customers total, 3 certs 5 DSD, chill again, went to secrets."
 178,2026-7-27,Sea Tiger,"Honolulu, O'ahu, Hawai'i",Fun dive,33.0,22.5,30,38,Nitrox,26,27,10,Light,5,3,Aluminum,Caleb,"3x Hawaiian green turtle, 1x Moray eel, 1x Sevel-eleven crab",
-179,2026-7-27,"Kewalo Pipe, Seagrass meadow","Honolulu, O'ahu, Hawai'i",Fun dive,24.6,19.7,38,44,Nitrox,26,27,20,surge,5,3,Aluminum,Caleb,2x Octopus,
+179,2026-7-27,"Kewalo Pipe, Seagrass meadow","Honolulu, O'ahu, Hawai'i",Fun dive,24.6,19.7,38,44,Nitrox,26,27,20,Surge,5,3,Aluminum,Caleb,2x Octopus,
+180,2026-7-29,Sea Tiger,"Honolulu, O'ahu, Hawai'i",Professional,30.2,18.8,27,33,Air,26,28,15,NLight,5,3,Aluminum,,"1x Hawaiian green turtle, 2x Moray eel","Lead a customer on 2 dives today, first was the sea tiger. I havent been on the sea tiger in a while without Nitrox so i forgot how shrot the dives are and my new computer makes me do a 5 min safety stop"
+181,2026-7-29,"Kewalo Pipe, Horseshoe Reef","Honolulu, O'ahu, Hawai'i",Professional,18.2,13.4,49,55,Air,26,28,15,Surge,5,3,Aluminum,,"5x Hawaiian green turtle, 3x Moray eel","Took the customer over to Horseshoe and hoenstly found soo many good shells today!! Super nice, saw some cool eels, awesome stuff. "
