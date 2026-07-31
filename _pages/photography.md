@@ -97,6 +97,12 @@ html {
   margin: 0 auto 1rem;
   aspect-ratio: 1044 / 626;
 }
+  @media (min-width: 1200px) {
+  .camera-wrap {
+    width: 45vw;
+    max-width: 650px;
+  }
+}
 .camera-body { width: 100%; display: block; }
 .hotspot {
   position: absolute;
