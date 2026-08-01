@@ -25,7 +25,7 @@ h1::after, h2::after, h3::after { background-color: #1A4A5C !important; border-c
   padding-right: 1em !important;
 }
 .leaflet-container { background: #FBF4D0 !important; }
-#dive-map { height: 80vh; width: 100%; margin-top: 16px; border-radius: 8px; position: relative; z-index: 1; }
+#dive-map { height: 80vh; width: 100%; margin-top: 16px; border-radius: 0px; position: relative; z-index: 1; }
 .popup-title { font-size: 1rem; font-weight: bold; margin: 0 0 4px 0; }
 .popup-dates { color: #777; font-size: 0.82rem; margin: 2px 0 6px 0; }
 .popup-description { font-size: 0.88rem; margin: 6px 0; }
