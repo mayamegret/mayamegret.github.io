@@ -81,9 +81,9 @@ article.page {
   <p>Outside of research, I love traveling and I am an avid photographer, so here is where I will be sharing a lot of my underwater and travel photography! </p>
   <div class="about-links">
     <a href="/photography/" class="about-link-btn">Browse my photos →</a>
-    <a href="/dive-log/" class="about-link-btn">View my dives →</a>
-    <a href="/map/" class="about-link-btn">See the map →</a>
-    <a href="/species/" class="about-link-btn">Browse species →</a>
+    <a href="/dive-log/" class="about-link-btn">View my dive  log →</a>
+    <a href="/map/" class="about-link-btn">See my travel map →</a>
+    <a href="/species/" class="about-link-btn">Browse my species log→</a>
     <a href="/cv/" class="about-link-btn">View my CV →</a>
   </div>
 </div>
