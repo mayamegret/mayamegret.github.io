@@ -138,9 +138,10 @@ article.page {
 </div>
 
 <div class="timeline-controls">
-  <div class="timeline-slider-wrap">
-    <input type="range" id="year-slider" min="2002" max="2026" value="2026" step="1" oninput="onSliderChange(this.value)">
-    <div class="timeline-years-row">
+ <div class="timeline-slider-wrap">
+  <div class="timeline-year-label">Year: <span id="year-display">2026</span></div>
+  <input type="range" id="year-slider" min="2002" max="2026" value="2026" step="1" oninput="onSliderChange(this.value)">
+  <div class="timeline-years-row">
       <span>2002</span>
       <span>2008</span>
       <span>2014</span>
