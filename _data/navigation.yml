@@ -7,9 +7,11 @@
 # NOTE that only one of the CV options should be selected, the first is for the
 #      Markdown formatted page while the second is generated using JSON.
 main:
+  - title: "About"
+    url: /
   - title: "Photo Gallery"
     url: /photography/
-  - title: "To The Boat!"
+  - title: "To the boat!"
     url: /boat/
   - title: "CV"
     url: /cv/
