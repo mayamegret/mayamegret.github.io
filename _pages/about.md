@@ -14,6 +14,8 @@ author_profile: true
   padding-right: 240px;
 }
 .about-link-btn {
+  flex: 1 1 180px;
+  text-align: center;
   padding: 7px 16px;
   border: 2px solid #3f6b56;
   border-radius: 0;
@@ -89,7 +91,6 @@ article.page {
   <img src="/images/photography/MomTessMaya.JPG">
   <img src="/images/photography/DadTessMaya.JPG">
 </div>
-
 <script>
 document.querySelectorAll('#main, article.page, .page__inner-wrap, .page__content').forEach(el => {
   el.style.setProperty('max-width', '100%', 'important');
@@ -102,6 +103,5 @@ const articlePage = document.querySelector('article.page');
 if (articlePage) {
   articlePage.style.setProperty('padding-left', '1.5em', 'important');
   articlePage.style.setProperty('padding-right', '1.5em', 'important');
-
 }
 </script>
