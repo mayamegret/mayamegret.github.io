@@ -54,7 +54,6 @@ h1::after, h2::after, h3::after { background-color: #1A4A5C !important; border-c
   gap: 16px;
   flex-wrap: wrap;
 }
-}
 .timeline-year-label {
   font-size: 0.9rem;
   font-weight: 600;
