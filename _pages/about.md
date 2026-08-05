@@ -31,7 +31,6 @@ author_profile: true
   gap: 10px;
   flex-wrap: wrap;
   margin-top: 1.5rem;
-  clear: both;
 }
 .about-link-btn {
   flex: 1 1 180px;
