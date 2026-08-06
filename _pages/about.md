@@ -60,6 +60,10 @@ article.page {
     flex-direction: row;
     margin: 0 0 1rem 0;
   }
+  .about-images img {
+    flex: 1 1 0%;
+    min-width: 0;
+  }
 }
 </style>
 <div class="about-images">
