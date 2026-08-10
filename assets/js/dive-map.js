@@ -924,20 +924,6 @@ function applyFilters() {
       map.removeLayer(marker);
     }
   });
-  drawPath();
-}
-
-function drawPath() {
-  if (pathLayer) { map.removeLayer(pathLayer); pathLayer = null; }
-  const filtered = locations.filter(l => l._year <= currentYearFilter);
-  if (filtered.length < 2) return;
-  const latlngs = filtered.map(l => l.coords);
-  pathLayer = L.polyline(latlngs, {
-    color: '#ffa44a',
-    weight: 2,
-    opacity: 0.5,
-    dashArray: '5 8'
-  }).addTo(map);
 }
 
 // Timeline slider
