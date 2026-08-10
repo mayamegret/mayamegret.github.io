@@ -113,11 +113,19 @@ article.page {
 .back-to-boat:hover {
   color: #2e7a9a !important;
 }
+.homebase-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #1A4A5C;
+  margin: 2rem 0 10px;
+  text-align: center;
+}
 .homebase-img {
   width: 100%;
-  max-width: 900px;
   display: block;
-  margin: 2rem auto 0;
+  margin: 0;
   border-radius: 0;
 }
 </style>
@@ -162,6 +170,7 @@ article.page {
 </div>
 <div id="dive-map"></div>
 
+<div class="homebase-label"></i> Home Base</div>
 <img src="/images/photography/HonoluluMapPoster.png" alt="Terrain map poster of Honolulu, Hawai'i" class="homebase-img">
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
