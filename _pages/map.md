@@ -170,7 +170,7 @@ article.page {
 </div>
 <div id="dive-map"></div>
 
-<div class="homebase-label"></i> Home Base</div>
+<div class="homebase-label"> Home Base</div>
 <img src="/images/photography/HonoluluMapPoster.png" alt="Terrain map poster of Honolulu, Hawai'i" class="homebase-img">
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
