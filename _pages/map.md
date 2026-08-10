@@ -147,7 +147,6 @@ article.page {
 <div class="homebase-section">
   <div class="homebase-label"><i class="fas fa-home"></i> Home Base</div>
   <img src="/images/photography/HonoluluMapPoster.png" alt="Terrain map poster of Honolulu, Hawai'i" class="homebase-img">
-  <p class="homebase-caption">Not just a pin on the map below — this is home. 🌺</p>
 </div>
 
 <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 12px;">
