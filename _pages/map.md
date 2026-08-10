@@ -113,11 +113,42 @@ article.page {
 .back-to-boat:hover {
   color: #2e7a9a !important;
 }
+.homebase-section {
+  margin: 2rem 0;
+  text-align: center;
+}
+.homebase-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #1A4A5C;
+  margin-bottom: 10px;
+}
+.homebase-img {
+  width: 100%;
+  max-width: 900px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 0;
+}
+.homebase-caption {
+  font-size: 0.85rem;
+  color: #1A4A5C;
+  opacity: 0.75;
+  margin-top: 10px;
+}
 </style>
 
 <a href="/boat/" class="back-to-boat">&larr; Back to the boat</a>
 
 <p>A record of my travels <i class="fas fa-map-marker-alt" style="color:#1a1a1a;"></i> and dives <i class="fas fa-anchor" style="color:#1a1a1a;"></i> around the world!</p>
+
+<div class="homebase-section">
+  <div class="homebase-label"><i class="fas fa-home"></i> Home Base</div>
+  <img src="/images/photography/HonoluluMapPoster.png" alt="Terrain map poster of Honolulu, Hawai'i" class="homebase-img">
+  <p class="homebase-caption">Not just a pin on the map below — this is home. 🌺</p>
+</div>
 
 <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 12px;">
   <div id="map-counter" style="font-size: 0.9rem; color: #1A4A5C;"></div>
