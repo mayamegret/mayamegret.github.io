@@ -170,6 +170,8 @@ article.page {
 .dive-type-recreational { background: rgba(219,112,147,0.25); color: #9b3060; }
 .dive-type-training { background: rgba(100,149,237,0.25); color: #2a5090; }
 .dive-type-professional { background: rgba(255,164,74,0.3); color: #8a5a00; }
+.dive-type-night { background: rgba(25,25,60,0.22); color: #14143a; }
+.dive-type-badges { display: flex; flex-wrap: wrap; gap: 4px; }
 .dive-loading { text-align: center; padding: 40px; color: #4B2E0F; }
 .dive-no-results { text-align: center; padding: 20px; color: #4B2E0F; font-style: italic; }
 
@@ -250,6 +252,7 @@ article.page {
     <option value="Recreational">Recreational</option>
     <option value="Training">Training</option>
     <option value="Professional">Professional</option>
+    <option value="night">Night Dive</option>
   </select>
   <select id="dive-location-filter">
     <option value="">All locations</option>
@@ -290,7 +293,11 @@ function classifyDiveType(type) {
   if (t.includes('professional') || t.includes('guided') || t.includes('work') || t.includes('lead')) return 'Professional';
   return 'Scientific';
 }
-
+function isNightDive(type) {
+  if (!type) return false;
+  return type.toLowerCase().includes('night');
+}
+function getDiveTypeClass(category) {
 function getDiveTypeClass(category) {
   if (category === 'Scientific') return 'dive-type-scientific';
   if (category === 'Recreational') return 'dive-type-recreational';
@@ -330,6 +337,7 @@ function renderTable(dives) {
     const tr = document.createElement('tr');
     const category = classifyDiveType(row[4]);
     const typeClass = getDiveTypeClass(category);
+    const nightDive = isNightDive(row[4]);
     const depth = parseFloat(row[5]);
     const pct = (!isNaN(depth) && maxDepthAll) ? Math.round((depth / maxDepthAll) * 100) : 0;
     const depthLabel = row[5] ? row[5] + ' m' : '—';
@@ -339,8 +347,12 @@ function renderTable(dives) {
       <td class="dive-site-cell">
         <strong>${row[2] || ''}</strong>
         <span>${subline}</span>
+           <td>
+        <div class="dive-type-badges">
+          <span class="dive-type-badge ${typeClass}">${category}</span>
+          ${nightDive ? '<span class="dive-type-badge dive-type-night">🌙 Night Dive</span>' : ''}
+        </div>
       </td>
-      <td><span class="dive-type-badge ${typeClass}">${category}</span></td>
       <td class="dive-depth-cell">
         <div class="depth-value">${depthLabel}</div>
         <div class="depth-bar-track"><div class="depth-bar-fill" style="width:${pct}%"></div></div>
@@ -360,7 +372,7 @@ function applyFilters() {
   const locFilter = document.getElementById('dive-location-filter').value.toLowerCase();
   let filtered = allDives.filter(row => {
     const matchSearch = !search || [row[2], row[3], row[18]].some(v => (v || '').toLowerCase().includes(search));
-    const matchType = !typeFilter || classifyDiveType(row[4]).toLowerCase() === typeFilter.toLowerCase();
+        const matchType = !typeFilter || (typeFilter === 'night' ? isNightDive(row[4]) : classifyDiveType(row[4]).toLowerCase() === typeFilter.toLowerCase());
     const matchLoc = !locFilter || (row[3] || '').toLowerCase() === locFilter;
     return matchSearch && matchType && matchLoc;
   });
