@@ -350,7 +350,7 @@ function renderTable(dives) {
            <td>
         <div class="dive-type-badges">
           <span class="dive-type-badge ${typeClass}">${category}</span>
-          ${nightDive ? '<span class="dive-type-badge dive-type-night">🌙 Night Dive</span>' : ''}
+          ${nightDive ? '<span class="dive-type-badge dive-type-night">Night Dive</span>' : ''}
         </div>
       </td>
       <td class="dive-depth-cell">
