@@ -170,7 +170,7 @@ My GoPro attaches to my TG-7 so I can bring them both on every dive. I use the O
 
 This is my easy, grab-and-go film camera. It has a 12x zoom lens, a few setting options like flash, flash with red-eye reduction, and a landscape mode, but everything else is fully automatic.
 
-For film, I always try to buy rolls with 36 exposures rather than 24. In general, I tend to shoot color negative at 200–400 ISO. Lower ISO means sharper, less grainy images with better color accuracy, which suits the kind of travel, portrait, and landscape shots I use this camera for. My go-to films are Kodak ColorPlus and Kodak Gold, both reliable, affordable, and give a beautiful glow to the photos, but it's also fun to experiment with different film!
+For film, I tend to shoot color negative at 200–400 ISO. Lower ISO means sharper, less grainy images with better color accuracy, which suits the kind of travel, portrait, and landscape shots I use this camera for. My go-to films are Kodak ColorPlus and Kodak Gold, both reliable, affordable, and give a beautiful glow to the photos, but it's also fun to experiment with different film!
 
 <div class="blog-gallery">
   <a href="/photography/#fuji-photos"><img src="/images/blog/Fuji1.JPG" alt="Fuji Discovery photo"></a>
