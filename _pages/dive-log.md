@@ -109,8 +109,7 @@ article.page {
   font-size: 0.85rem;
   background: rgba(255,255,255,0.25);
   border-radius: 8px;
-  overflow: hidden;
-}
+  }
 .dive-table th {
   background: #BDD9E0 !important;
   color: #4B2E0F !important;
