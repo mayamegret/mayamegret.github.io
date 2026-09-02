@@ -113,6 +113,9 @@ article.page {
 .dive-table th {
   background: #BDD9E0 !important;
   color: #4B2E0F !important;
+  position: sticky;
+  top: 0;
+  z-index: 5;
   font-family: 'IBM Plex Mono', ui-monospace, monospace;
   font-weight: 600;
   font-size: 0.78rem;
