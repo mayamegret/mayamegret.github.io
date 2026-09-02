@@ -103,7 +103,8 @@ article.page {
 }
 .dive-table {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
   font-size: 0.85rem;
   background: rgba(255,255,255,0.25);
   border-radius: 8px;
