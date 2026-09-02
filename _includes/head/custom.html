@@ -271,4 +271,13 @@ window.addEventListener('scroll', function() {
     }
   }
 });
+  <script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.page__footer a').forEach(function(link) {
+    if (link.textContent.trim().toLowerCase() === 'sitemap') {
+      link.style.display = 'none';
+    }
+  });
+});
+</script>
 </script>
