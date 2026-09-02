@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "contrast" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "Maya Mégret / mayamegret.com"
+# title                    : "Maya Mégret / mayamegret.com"
 title_separator          : "-"
 name                     : &name "Maya Mégret"
 description              : &description ""   # Update this with a general description of your site, this is the default if not overridden by a page
