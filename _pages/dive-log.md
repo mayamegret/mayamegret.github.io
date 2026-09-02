@@ -99,6 +99,7 @@ article.page {
 }
 .dive-table-wrap {
   overflow-x: auto;
+  overflow-y: visible;
   border-radius: 8px;
 }
 .dive-table {
