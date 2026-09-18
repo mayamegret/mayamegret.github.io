@@ -85,12 +85,12 @@ const tiles = [
   { photos: ["/images/photography/Giraween2.JPG", "/images/photography/Girraween1.JPG", "/images/photography/Giraween3.JPG", "/images/photography/Giraween4.jpg", "/images/photography/Giraween5.JPG"], caption: "My study abroad program in Australia began in Giraween National Park for a three day field trip! It was an amazing start to my stay, Joey and I camped in a tent together, we saw the milky way, we hiked over 10km a day looking for plants and animals and learning about field sampling techniques! It was the first time I saw a wild kangaroo!", id: "giraween", mapLink: "/map/#giraween", categories: ["travel", "wildlife"] },
   { photos: ["/images/photography/Florida1.jpg", "/images/photography/Florida2.jpg", "/images/photography/Florida3.jpg", "/images/photography/Florida4.jpg", "/images/photography/Florida5.jpg", "/images/photography/Florida6.jpg", "/images/photography/Florida7.jpg", "/images/photography/Florida8.jpg", "/images/photography/Florida9.jpg"], caption: "I grew up visiting my grandpa in Florida often, spending birthdays and spring breaks and summers at his condo in St. Petersburg. We always went to the pink palace (the Don Cesar) for ice cream sundaes, went kayaking in the mangroves of Fort De Soto with manatees, spent long afternoons on the beach looking for shells and horseshoe crabs, watched dolphins swim by from his backyard, chased lizards around at sunset, spent days at the pool, went on airplane rides with my grandpa, and more and more. I really cherish this time with my family and St. Petersburg will always have a special place in my heart.", id: "st-pete", mapLink: "/map/#st-pete", categories: ["travel", "film"] },
 ];
-
+ 
 let currentTile = 0;
 let currentPhoto = 0;
 let activeFilter = 'all';
 let searchQuery = '';
-
+ 
 function getFilteredTiles() {
   return tiles.filter(tile => {
     const matchesFilter = activeFilter === 'all' || (tile.categories && tile.categories.includes(activeFilter));
@@ -99,78 +99,7 @@ function getFilteredTiles() {
     return matchesFilter && matchesSearch;
   });
 }
-
-// ---------------------------------------------
-// Exploding-grid intro animation
-// ---------------------------------------------
-function waitForImages(container) {
-  const imgs = Array.from(container.querySelectorAll('img'));
-  return Promise.all(imgs.map(img => {
-    if (img.complete) return Promise.resolve();
-    return new Promise(resolve => {
-      img.addEventListener('load', resolve, { once: true });
-      img.addEventListener('error', resolve, { once: true });
-    });
-  }));
-}
-
-function explodeFromCenter(grid) {
-  const tileEls = grid.querySelectorAll('.photo-tile');
-  if (!tileEls.length) return;
-
-  const gridRect = grid.getBoundingClientRect();
-  const originX = gridRect.left + gridRect.width / 2;
-  const originY = gridRect.top + gridRect.height / 2;
-  const spreadRadius = Math.max(gridRect.width, gridRect.height) * 0.85;
-
-  tileEls.forEach((tile) => {
-    const rect = tile.getBoundingClientRect();
-    const finalCenterX = rect.left + rect.width / 2;
-    const finalCenterY = rect.top + rect.height / 2;
-
-    const launchAngle = Math.random() * Math.PI * 2;
-    const launchDist = spreadRadius * (0.55 + Math.random() * 0.65);
-    const startX = (originX + Math.cos(launchAngle) * launchDist) - finalCenterX;
-    const startY = (originY + Math.sin(launchAngle) * launchDist) - finalCenterY;
-    const startRotate = (Math.random() - 0.5) * 140;
-    const startScale = 0.2 + Math.random() * 0.25;
-
-    const duration = 1600 + Math.random() * 1800; // 1.6s – 3.4s
-    const delay = Math.random() * 550;
-
-    tile.style.opacity = '0';
-    tile.style.zIndex = Math.floor(Math.random() * tileEls.length);
-
-    tile.animate([
-      {
-        transform: `translate(${startX}px, ${startY}px) rotate(${startRotate}deg) scale(${startScale})`,
-        opacity: 0,
-        offset: 0
-      },
-      {
-        transform: 'translate(0px, 0px) rotate(0deg) scale(1)',
-        opacity: 1,
-        offset: 1
-      }
-    ], {
-      duration,
-      delay,
-      easing: 'cubic-bezier(0.16, 1, 0.3, 1)',
-      fill: 'forwards'
-    });
-  });
-}
-
-function explodeGalleryIn() {
-  const grid = document.getElementById('photo-grid');
-  if (!grid) return;
-  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-
-  waitForImages(grid).then(() => {
-    setTimeout(() => explodeFromCenter(grid), 120);
-  });
-}
-
+ 
 function renderGrid(animate) {
   const grid = document.getElementById('photo-grid');
   grid.innerHTML = '';
@@ -199,12 +128,8 @@ function renderGrid(animate) {
     div.addEventListener('click', () => openModal(tileIndex));
     grid.appendChild(div);
   });
-
-  if (animate) {
-    explodeGalleryIn();
-  }
 }
-
+ 
 window.setGalleryFilter = function(filter) {
   activeFilter = filter;
   document.querySelectorAll('.gallery-filter-btn').forEach(btn => {
@@ -212,29 +137,29 @@ window.setGalleryFilter = function(filter) {
   });
   renderGrid(true);
 };
-
+ 
 window.searchGallery = function(query) {
   searchQuery = query;
   renderGrid(false);
 };
-
+ 
 function openModal(tileIndex) {
   currentTile = tileIndex;
   currentPhoto = 0;
   updateModal();
   document.getElementById('photo-modal').classList.add('open');
 }
-
+ 
 function closeModal() {
   document.getElementById('photo-modal').classList.remove('open');
 }
-
+ 
 function navModal(direction) {
   const photos = tiles[currentTile].photos;
   currentPhoto = (currentPhoto + direction + photos.length) % photos.length;
   updateModal();
 }
-
+ 
 function updateModal() {
   const tile = tiles[currentTile];
   const captionEl = document.getElementById('modal-caption');
@@ -249,14 +174,14 @@ function updateModal() {
     else { mapLinkEl.style.display = 'none'; }
   }
 }
-
+ 
 document.addEventListener('keydown', (e) => {
   if (!document.getElementById('photo-modal').classList.contains('open')) return;
   if (e.key === 'Escape') closeModal();
   if (e.key === 'ArrowLeft') navModal(-1);
   if (e.key === 'ArrowRight') navModal(1);
 });
-
+ 
 (function() {
   let touchStartX = 0;
   let touchStartY = 0;
@@ -275,9 +200,9 @@ document.addEventListener('keydown', (e) => {
     }
   }, { passive: true });
 })();
-
+ 
 renderGrid(true);
-
+ 
 if (window.location.hash) {
   const id = window.location.hash.slice(1);
   const tileIndex = tiles.findIndex(t => t.id === id);
