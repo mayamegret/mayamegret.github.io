@@ -98,8 +98,8 @@ article.page {
   cursor: pointer;
 }
 .dive-table-wrap {
-  overflow-x: auto;
-  overflow-y: visible;
+  overflow: auto;
+  max-height: 70vh;
   border-radius: 8px;
 }
 .dive-table {
@@ -216,6 +216,14 @@ article.page {
 .dive-table td:nth-child(2) {
   max-width: 220px;
   white-space: normal;
+  position: sticky;
+  left: 0;
+  z-index: 4;
+  background: #CCE7ED;
+  border-right: 1px solid rgba(75, 46, 15, 0.25);
+}
+.dive-table th:nth-child(2) {
+  z-index: 6;
 }
 .dive-table th:nth-child(4),
 .dive-table td:nth-child(4) {
@@ -271,10 +279,10 @@ article.page {
         <th data-col="0">#</th>
         <th data-col="1">Dive</th>
         <th data-col="4">Type</th>
-        <th data-col="5">Depth</th>
-        <th data-col="8">Time (min)</th>
+        <th data-col="5">Depth (m)</th>
         <th data-col="9">Gas Mix</th>
-        <th data-col="10">Bottom Temp (C)</th>
+        <th data-col="10">Bottom Temp (°C)</th>
+        <th data-col="8">Time (min)</th>
         <th data-col="12">Vis (m)</th>
         <th data-col="13">Current</th>
         <th data-col="18">Key Species</th>
@@ -345,7 +353,7 @@ function renderTable(dives) {
     const nightDive = isNightDive(row[4]);
     const depth = parseFloat(row[5]);
     const pct = (!isNaN(depth) && maxDepthAll) ? Math.round((depth / maxDepthAll) * 100) : 0;
-    const depthLabel = row[5] ? row[5] + ' m' : '—';
+    const depthLabel = row[5] || '—';
     const subline = [row[3], row[1]].filter(Boolean).join(' · ');
     tr.innerHTML = `
       <td>${row[0] || ''}</td>
@@ -359,12 +367,12 @@ function renderTable(dives) {
           ${nightDive ? '<span class="dive-type-badge dive-type-night">Night Dive</span>' : ''}
         </div>
       </td>
-       <td class="dive-depth-cell">
+      <td class="dive-depth-cell">
         <div class="depth-value">${depthLabel}</div>
         <div class="depth-bar-track"><div class="depth-bar-fill" style="width:${pct}%"></div></div>
       </td>
       <td>${row[9] || ''}</td>
-      <td>${row[10] ? row[10] + '°C' : ''}</td>
+      <td>${row[10] || ''}</td>
       <td>${row[8] || ''}</td>
       <td>${row[12] || ''}</td>
       <td>${row[13] || ''}</td>
