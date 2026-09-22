@@ -272,9 +272,9 @@ article.page {
         <th data-col="1">Dive</th>
         <th data-col="4">Type</th>
         <th data-col="5">Depth (m)</th>
+        <th data-col="8">Time (min)</th>
         <th data-col="9">Gas Mix</th>
         <th data-col="10">Bottom Temp (°C)</th>
-        <th data-col="8">Time (min)</th>
         <th data-col="12">Vis (m)</th>
         <th data-col="13">Current</th>
         <th data-col="18">Key Species</th>
@@ -363,9 +363,9 @@ function renderTable(dives) {
         <div class="depth-value">${depthLabel}</div>
         <div class="depth-bar-track"><div class="depth-bar-fill" style="width:${pct}%"></div></div>
       </td>
+       <td>${row[8] || ''}</td>
       <td>${row[9] || ''}</td>
       <td>${row[10] || ''}</td>
-      <td>${row[8] || ''}</td>
       <td>${row[12] || ''}</td>
       <td>${row[13] || ''}</td>
       <td style="max-width:200px">${row[18] || ''}</td>
