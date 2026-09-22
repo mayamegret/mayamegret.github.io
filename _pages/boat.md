@@ -71,7 +71,7 @@ body, #main, article.page, .page__inner-wrap, .page__content, .initial-content, 
     width: 1400px;
     left: 50%;
     right: auto;
-    margin-left: -900px;
+    margin-left: -700px;
     margin-right: 0;
   }
 }
