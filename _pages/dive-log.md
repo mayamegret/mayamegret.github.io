@@ -227,6 +227,10 @@ article.page {
 }
 .dive-table th:nth-child(8),
 .dive-table td:nth-child(8) {
+  width: 70px;
+}
+.dive-table th:nth-child(10),
+.dive-table td:nth-child(10) {
   min-width: 220px;
 }
 </style>
