@@ -66,9 +66,9 @@ body, #main, article.page, .page__inner-wrap, .page__content, .initial-content, 
   aspect-ratio: 1920 / 1080;
   display: block;
 }
-@media (min-width: 1800px) {
+@media (min-width: 1400px) {
   .boat-wrap {
-    width: 1800px;
+    width: 1400px;
     left: 50%;
     right: auto;
     margin-left: -900px;
