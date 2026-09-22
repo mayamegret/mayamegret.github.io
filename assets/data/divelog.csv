@@ -65,7 +65,7 @@ Dive #,Date (yyyy-mm-dd),Site,Location,Dive Type,Max depth (m),Average depth (m)
 113,2026-2-20,Sponge city,"Závora, Mozambique",Thesis Quadrat,22.8, ,42,48,Air,28,28,7,Surge,5,1.5,Steel,Nakia ,,
 114,2026-2-20,Area 51,"Závora, Mozambique",Thesis Quadrat,15.2,,45,48,Air,28,28,7,Surge,5,1.5,Steel,Nakia,1x Harlequin shrimp,
 115,2026-2-20,Witch's Hat,"Závora, Mozambique",Thesis Quadrat,13.5,,41,44,Air,28,28,5,Surge,5,1.5,Steel,Nakia,"1x Octopus, 1x Hypselodoris pulchella",
-116,2026-2-21,Sponge city,"Závora, Mozambique",Thesis Belt transect,22.9,,39,43,Air,28,28,7,Surge,5,1.5,Steel,"Nakia, Ed",1x Ocotpus,
+116,2026-2-21,Sponge city,"Závora, Mozambique",Thesis Belt transect,22.9,,39,43,Air,28,28,7,Surge,5,1.5,Steel,"Nakia, Ed",1x Octopus,
 117,2026-2-21,Area 51,"Závora, Mozambique",Thesis Belt transect,15.1,,51,55,Air,27,28,8,Surge,5,1.5,Steel,"Nakia, Ed",2x mating Nembrotha aurea,
 118,2026-2-21,Witch's Hat,"Závora, Mozambique",Thesis Belt transect/Last thesis dive!,14.2,,44,50,Air,28,28,10,Surge,5,1.5,Steel,"Nakia, Ed","1x Tenellia sp. 1 undescribed, ",
 119,2026-2-23,Deans,"Závora, Mozambique",Fun dive,31.6,,17,28,Air,27,28,4,Surge,no wetsuit!,0,Steel,"Em, Joe, Nakia, Ed",,
@@ -148,6 +148,7 @@ Dive #,Date (yyyy-mm-dd),Site,Location,Dive Type,Max depth (m),Average depth (m)
 196,2026-9-14,Kewalo Pipe,"Honolulu, O'ahu, Hawai'i",Professional,20.2,13.1,33,38,Air,26,27,15,Light,5,3,Aluminum,,"5x Hawaiian green turtle, 3x Moray eel",Guided diveheart 
 197,2026-9-14,Nautilus Reef,"Honolulu, O'ahu, Hawai'i",Professional,13.0,8.9,48,53,Air,26,27,20,Light,5,3,Aluminum,,1x Whitetip reef shark,
 198,2026-9-14,"Kewalo Pipe, Horseshoe Reef","Honolulu, O'ahu, Hawai'i",Professional,16.7,12.7,42,48,Air,27,28,20,Light,5,3,Aluminum,,"6x Hawaiian green turtle, 5x Moray eel",
+199,2026-9-17,Sea Tiger,"Honolulu, O'ahu, Hawai'i",Professional / Night dive,30.0,19.8,18,25,Air,27,28,20,None,5,3,Aluminum,,,
 200,2026-9-17,Kewalo Pipe,"Honolulu, O'ahu, Hawai'i",Professional / Night dive,18.1,14.2,37,42,Air,27,27,20,None,5,3,Aluminum,,"2x flatworm, 4x Moray eel",Dive #200!! And it was my first time guiding a night dive!
 201,2026-9-21,Sea Tiger,"Honolulu, O'ahu, Hawai'i",Professional,29.7,18.8,15,22,Air,27,27,15,Light,5,3,Aluminum,,2x Moray eel,
 202,2026-9-21,Kewalo Pipe,"Honolulu, O'ahu, Hawai'i",Professional,16.8,13.0,38,43,Air,27,28,10,Surge,5,3,Aluminum,,"8x Hawaiian green turtle, 3x Moray eel",
