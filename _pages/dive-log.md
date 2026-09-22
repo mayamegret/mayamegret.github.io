@@ -216,14 +216,6 @@ article.page {
 .dive-table td:nth-child(2) {
   max-width: 220px;
   white-space: normal;
-  position: sticky;
-  left: 0;
-  z-index: 4;
-  background: #CCE7ED;
-  border-right: 1px solid rgba(75, 46, 15, 0.25);
-}
-.dive-table th:nth-child(2) {
-  z-index: 6;
 }
 .dive-table th:nth-child(4),
 .dive-table td:nth-child(4) {
