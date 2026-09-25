@@ -66,7 +66,6 @@ body, #main, article.page, .page__inner-wrap, .page__content, .initial-content, 
   aspect-ratio: 1920 / 1080;
   display: block;
 }
-}
 .boat-body {
   width: 100%;
   height: 100%;
@@ -183,7 +182,19 @@ h1.page__title {
 <script>
 function parseCSV(text) {
   const lines = text.trim().split('\n');
-  return lines.slice(1).filter(line => line.trim() !== '');
+  return lines.slice(1).map(line => {
+    const cols = [];
+    let inQuote = false;
+    let cur = '';
+    for (let i = 0; i < line.length; i++) {
+      const ch = line[i];
+      if (ch === '"') { inQuote = !inQuote; }
+      else if (ch === ',' && !inQuote) { cols.push(cur.trim()); cur = ''; }
+      else { cur += ch; }
+    }
+    cols.push(cur.trim());
+    return cols;
+  }).filter(row => row[0] && row[0].trim() !== '');
 }
 
 fetch('/assets/data/divelog.csv')
@@ -191,9 +202,12 @@ fetch('/assets/data/divelog.csv')
   .then(text => {
     const rows = parseCSV(text);
     document.getElementById('boat-stat-dives').textContent = rows.length + 49;
+    const uniqueSites = new Set(rows.map(row => row[2]).filter(Boolean));
+    document.getElementById('boat-stat-sites').textContent = uniqueSites.size;
   })
   .catch(err => {
     document.getElementById('boat-stat-dives').textContent = '—';
+    document.getElementById('boat-stat-sites').textContent = '—';
     console.error(err);
   });
 
@@ -230,12 +244,10 @@ if (window.travelLocations) {
   const locations = window.travelLocations;
   const countries = new Set(locations.map(l => l.country));
   const oceans = new Set(locations.map(l => l.ocean).filter(Boolean));
-  const diveSites = locations.filter(l => l.type === 'dive').length;
   document.getElementById('boat-stat-countries').textContent = countries.size;
   document.getElementById('boat-stat-oceans').textContent = oceans.size;
-  document.getElementById('boat-stat-sites').textContent = diveSites;
 } else {
-  console.warn('travelLocations not found — check that travel-data.js loaded');
+  console.warn('travelLocations not found — check that dive-map.js loaded');
 }
 </script>
 
