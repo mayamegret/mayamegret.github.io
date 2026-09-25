@@ -99,7 +99,7 @@ No matter how experienced you are, there is always room to improve. Buoyancy, br
 
 Rental gear does the job, but having your own equipment that fits you properly and that you know inside and out makes an enormous difference. At minimum, I recommend investing in your own **mask, snorkel, fins, and dive computer** as early as possible. A mask, snorkel, and fins are great to own for snorkeling and freediving as well.
 
-For my dive computer, I recently upgraded to the [Shearwater Peregrine](https://www.shearwater.com/products/peregrine/) and I love it. It is intuitive, easy to read underwater with large screen, and gives me all the information I need without being overwhelming.I even customized the screen so the text is all pink!
+For my dive computer, I recently upgraded to the [Shearwater Peregrine](https://www.shearwater.com/products/peregrine/) and I love it. It is intuitive, easy to read underwater with large screen, and gives me all the information I need without being overwhelming. I even customized the screen so the text is all pink!
 
 When you are ready to invest in a full setup, I highly recommend a **wing BCD with a backplate** over a traditional jacket-style BCD. It gives you much better control over your buoyancy and trim. I dive with a [Halcyon wing](https://www.halcyon.net) with an aluminum backplate with 14 kg (30 lb) of lift. Halcyon also makes the wing BC in 9 kg (20 lb) and 18 kg (20 lb) lift options, and steel backplates for those who need extra weight. Finding the right size for your body and the type of diving you do is key.
 
@@ -119,7 +119,7 @@ My advice is to wait until you can comfortably manage all your tasks underwater,
 
 ## 4. Protect Yourself From the Sun
 
-This one gets overlooked more than you would think. You are often so focused on what is happening underwater that you forget you are spending significant time in direct sun from being on the boat, in the water between dives, and during safety stops.
+This one gets overlooked more than you would think. You are often so focused on what is happening underwater that you forget you are spending significant time in direct sun from being on the boat, on the surface between dives, and during safety stops.
 
 Always apply reef-safe sunscreen before your dive, wear a hat and sunglasses on the boat, and consider a long sleeve rash guard or dive skin for extra protection in the water. I typically dive in a long sleeve rashguard and leggings when I am not wearing a wetsuit, which protects me from both the sun and any stinging creatures in the water.
 
@@ -137,9 +137,7 @@ If equalization is painful or not working, stop your descent and ascend slightly
 
 Swimmer's ear is a very real risk for anyone spending a lot of time in the water, and divers are particularly susceptible. After every dive, rinse your ears with a few drops of freshwater or a 50/50 mixture of rubbing alcohol and white vinegar, or use an over-the-counter ear drying solution. The alcohol helps dry out the ear canal and the vinegar helps prevent bacterial growth.
 
-If you are experiencing persistent ear discomfort or pain, take it seriously and see a doctor before getting back in the water. Your ears are not worth rushing.
-
-In Mozambique, I got an ear infection that took me out of the water for 14 days and needed antibiotics to heal. It was unpleasant and a disappointment to be stuck on land for 2 weeks, but it was important to be fully healed before getting back in the water.
+In Mozambique, I got an ear infection that took me out of the water for 14 days and needed antibiotics to heal. It was so painful and a disappointment to be stuck on land for 2 weeks, but it was important to be fully healed before getting back in the water.
 
 ---
 
@@ -149,7 +147,7 @@ Getting your weighting right is one of the most underrated aspects of diving. To
 
 A good weighting check is to float at the surface with a full breath, deflate your BCD completely, and see where you sit, you should float at eye level and slowly sink as you exhale. Adjust from there.
 
-My personal setup varies depending on what I am wearing. With my 5mm ScubaPro wetsuit, I add 5 kg to my weight pockets on my tank strap. Without a wetsuit, I typically don't need extra weight. Take time to dial in your weighting at the start of any new setup and note it in your dive log for future reference. It's important to log how much weight you used, what thickness wetsuit you wore, and the temperature of the water you went diving. You will need more weight in cold water, especially with thicker suits. 
+My personal setup varies depending on what I am wearing. With my 5mm ScubaPro wetsuit, I add 3 kg to my weight pockets on my tank strap. Without a wetsuit, I typically don't need extra weight. Take time to dial in your weighting at the start of any new setup and note it in your dive log for future reference. It's important to log how much weight you used, what thickness wetsuit you wore, and the temperature of the water you went diving. You will need more weight in cold water, especially with thicker suits. 
 
 ---
 
