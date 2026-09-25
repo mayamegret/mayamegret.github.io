@@ -98,23 +98,23 @@ body { color: #711A54 !important; }
 <img src="/images/photography/NudiCollage1.png" class="blog-img-natural" alt="Nudibranchs from Mozambique">
 <p style="font-size: 0.85rem; font-style: italic; color: #711A54; opacity: 0.8; margin-top: 4px;">Nudibranchs from Mozambique.</p>
 
-As I'm finishing up my thesis comparing the influence of sampling methodology on estimates of nudibranch abundance, diversity, and community composition on rocky reefs in Závora, Mozambique, I wanted to take a moment to share more about my favorite little critters.
+As I finish up my thesis comparing the influence of sampling methodology on estimates of nudibranch abundance, diversity, and community composition on rocky reefs in Závora, Mozambique, I wanted to take a moment to share more about my favorite little critters.
 
-I first fell in love with nudibranchs during my study abroad in Australia, and I've known since 2022 that I wanted to study them for my master's research. There's something about them that just gets me every time, and I often get so excited I let our a little scream of excitement underwater. Tthe colors, the patterns, the gills and rhinophores and cerata, the fact that some are the size of a grain of rice and others stretch out to a third of a meter! Once I start looking for them, I can't stop.
+I first fell in love with nudibranchs during my study abroad in Australia, and I've known since 2022 that I wanted to study them for my master's research. When I spot a nudi I get so excited I let out a little scream underwater. The colors, the patterns, the gills and rhinophores and cerata, the fact that some are the size of a grain of rice and others stretch out to a third of a meter! I just really love them.
 
 <div class="blog-clear"></div>
 
 ## My research
 
-For my thesis, I compared three different SCUBA-based sampling methodologies to determine their influence on estimates of nudibranch abundance, diversity, and community composition on rocky reefs. Over the course of my fieldwork in Závora, I collected data on **343 individual nudibranchs**. Every single one of those 343 was measured, photographed, and identified. Then, I spent weeks analyzing all of the data I collected, computing the statistics of alpha and beta diversity, indicator species analysis, GLMs, and wrote my 61 page thesis on it all!
+For my thesis, I compared three different SCUBA-based sampling methodologies to determine their influence on estimates of nudibranch abundance, diversity, and community composition on rocky reefs. Over the course of my fieldwork in Závora, I collected data on **343 individual nudibranchs**. Every single one was measured, photographed, and identified. Then I spent weeks analyzing all of the data I collected, computing the statistics of alpha and beta diversity, indicator species analysis, GLMs, and wrote my 63 page thesis on it all!
 
 <img src="/images/blog/IndicatorSpecies.jpg" class="blog-img-natural-left" alt="Figure 3.3 from my thesis showing six indicator nudibranch species">
 <p style="font-size: 0.85rem; color: #711A54; opacity: 0.8; margin-top: 4px;">Figure 3.3 from my thesis, showing six indicator nudibranch species. A, <em>Sakuraeolis arcana</em>. B, <em>Chromodoris hamiltoni</em>. C, <em>Chromodoris celinae</em>. D, <em>Chromodoris africana</em>. E, <em>Nembrotha aurea</em>. F, <em>Halgerda wasinensis</em> (mating pair). Photographs: Maya Mégret.</p>
 <div class="blog-clear"></div>
 
-## A new region, a new list
+## New region, new species
 
-Now that I'm working as a divemaster guide in Hawai'i, I've started cataloging a whole new range of species. It's such a fun shift, going from being somewhat familiar with the nudibranch community of one specific stretch of Mozambican coastline to being a total beginner again, learning a completely different regional fauna dive by dive. I'm really enjoying discovering the species that live in this region of the world!
+Now that I'm working as a divemaster in Hawai'i, I've started cataloging a whole new range of species. It's such a fun shift, going from being somewhat familiar with the nudibranch community of one specific stretch of Mozambican coastline to seeing new species and learning a completely different regional fauna dive by dive. I'm really enjoying discovering the species here!
 
 <img src="/images/photography/HawaiiNudiCollage.png" class="blog-img-natural-left" alt="Golden nudibranchs from Hawai'i">
 <p style="font-size: 0.85rem; font-style: italic; color: #711A54; opacity: 0.8; margin-top: 4px;">Golden nudibranchs from Hawai'i.</p>
