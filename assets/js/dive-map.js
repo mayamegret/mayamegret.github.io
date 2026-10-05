@@ -924,20 +924,6 @@ function applyFilters() {
       map.removeLayer(marker);
     }
   });
-  drawPath();
-}
-
-function drawPath() {
-  if (pathLayer) { map.removeLayer(pathLayer); pathLayer = null; }
-  const filtered = locations.filter(l => l._year <= currentYearFilter);
-  if (filtered.length < 2) return;
-  const latlngs = filtered.map(l => l.coords);
-  pathLayer = L.polyline(latlngs, {
-    color: '#ffa44a',
-    weight: 2,
-    opacity: 0.5,
-    dashArray: '5 8'
-  }).addTo(map);
 }
 
 // Timeline slider
@@ -997,11 +983,44 @@ window.filterMap = function(type) {
 // Counter
 const countries = new Set(locations.map(l => l.country));
 const oceansVisited = new Set(locations.map(l => l.ocean).filter(Boolean));
-const diveCount = locations.filter(l => l.type === 'dive').length;
-setTimeout(() => {
+
+function parseDiveLogCSV(text) {
+  const lines = text.trim().split('\n');
+  return lines.slice(1).map(line => {
+    const cols = [];
+    let inQuote = false;
+    let cur = '';
+    for (let i = 0; i < line.length; i++) {
+      const ch = line[i];
+      if (ch === '"') { inQuote = !inQuote; }
+      else if (ch === ',' && !inQuote) { cols.push(cur.trim()); cur = ''; }
+      else { cur += ch; }
+    }
+    cols.push(cur.trim());
+    return cols;
+  }).filter(row => row[0] && row[0].trim() !== '');
+}
+
+function updateMapCounter(diveSiteCount) {
   const el = document.getElementById('map-counter');
-  if (el) el.innerHTML = `<strong>${countries.size}</strong> countries &nbsp;·&nbsp; <strong>${oceansVisited.size}</strong> oceans &nbsp;·&nbsp; <strong>${diveCount}</strong> dive sites`;
-}, 100);
+  const sitesLabel = diveSiteCount != null ? diveSiteCount : '…';
+  if (el) el.innerHTML = `<strong>${countries.size}</strong> countries &nbsp;·&nbsp; <strong>${oceansVisited.size}</strong> oceans &nbsp;·&nbsp; <strong>${sitesLabel}</strong> dive sites`;
+}
+
+updateMapCounter(null);
+
+// Dive site count now comes from the actual dive log's unique Site
+// names, matching the boat page, instead of the map's own pin data.
+fetch('/assets/data/divelog.csv')
+  .then(r => r.text())
+  .then(text => {
+    const rows = parseDiveLogCSV(text);
+    const uniqueSites = new Set(rows.map(row => row[2]).filter(Boolean));
+    updateMapCounter(uniqueSites.size);
+  })
+  .catch(err => {
+    console.error('Could not load dive log for site count:', err);
+  });
 
 if (window.location.hash) {
   const id = window.location.hash.slice(1);
