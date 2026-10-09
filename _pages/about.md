@@ -53,12 +53,17 @@ article.page {
   position: relative;
 }
 @media (max-width: 900px) {
+  .about-wrap {
+    display: flex;
+    flex-direction: column;
+  }
   .about-images {
+    order: 2;
     float: none;
     position: static;
     width: 100%;
     flex-direction: row;
-    margin: 0 0 1rem 0;
+    margin: 1.5rem 0 0 0;
   }
   .about-images img {
     flex: 1 1 0%;
@@ -66,19 +71,21 @@ article.page {
   }
 }
 </style>
-<div class="about-images">
-  <img src="/images/photography/MomTessMaya.JPG">
-  <img src="/images/photography/DadTessMaya.JPG">
-</div>
-<div class="about-text">
-  <p>I am a marine biologist completing my MSc at the Universidade do Algarve, where my thesis research explored the impact of SCUBA-based sampling methodologies on nudibranch diversity and abundance estimates in Mozambique. I earned my BS in Marine Biology from UC San Diego's Scripps Institution of Oceanography, where field work first hooked me on the world of diving and research. I'm also a scientific diver and divemaster, which keeps me in the water most of the time.</p>
-  <p>Outside of research, I love traveling and I am an avid photographer, so here is where I will be sharing a lot of my underwater and travel photography! </p>
-  <div class="about-links">
-    <a href="/photography/" class="about-link-btn">Browse my photos →</a>
-    <a href="/dive-log/" class="about-link-btn">View my dive log →</a>
-    <a href="/map/" class="about-link-btn">See my travel map →</a>
-    <a href="/species/" class="about-link-btn">Browse my species log →</a>
-    <a href="/cv/" class="about-link-btn">View my CV →</a>
+<div class="about-wrap">
+  <div class="about-images">
+    <img src="/images/photography/MomTessMaya.JPG">
+    <img src="/images/photography/DadTessMaya.JPG">
+  </div>
+  <div class="about-text">
+    <p>I am a marine biologist completing my MSc at the Universidade do Algarve, where my thesis research explored the impact of SCUBA-based sampling methodologies on nudibranch diversity and abundance estimates in Mozambique. I earned my BS in Marine Biology from UC San Diego's Scripps Institution of Oceanography, where field work first hooked me on the world of diving and research. I'm also a scientific diver and divemaster, which keeps me in the water most of the time.</p>
+    <p>Outside of research, I love traveling and I am an avid photographer, so here is where I will be sharing a lot of my underwater and travel photography! </p>
+    <div class="about-links">
+      <a href="/photography/" class="about-link-btn">Browse my photos →</a>
+      <a href="/dive-log/" class="about-link-btn">View my dive log →</a>
+      <a href="/map/" class="about-link-btn">See my travel map →</a>
+      <a href="/species/" class="about-link-btn">Browse my species log →</a>
+      <a href="/cv/" class="about-link-btn">View my CV →</a>
+    </div>
   </div>
 </div>
 <script>
