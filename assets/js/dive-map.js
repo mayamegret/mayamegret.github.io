@@ -759,7 +759,7 @@ const locations = [
     species: [
       "Blue dragon nudibranch <em>(Pteraeolidia semperi)</em>",
       "Frogfish <em>(Antennariidae)</em>",
-      "Blacktip reef shark <em>(Carcharhinus melanopterus)</em>",
+      "Whitetip reef shark <em>(Triaenodon obesus)</em>",
       "Spinner dolphin <em>(Stenella longirostris)</em>",
       "Spotted eagle ray <em>(Aetobatus narinari)</em>"
     ],
