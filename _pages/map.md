@@ -28,22 +28,21 @@ h1::after, h2::after, h3::after { background-color: #1A4A5C !important; border-c
 #dive-map { height: 80vh; width: 100%; margin-top: 16px; border-radius: 0px; position: relative; z-index: 1; }
 .popup-title { font-size: 1rem; font-weight: bold; margin: 0 0 4px 0; }
 .popup-dates { color: #777; font-size: 0.82rem; margin: 2px 0 6px 0; }
-.popup-description { font-size: 0.88rem; margin: 6px 0; }
+.popup-description { font-size: 0.82rem; margin: 4px 0; }
 .popup-species { font-size: 0.88rem; margin: 6px 0; }
 .popup-species ul { margin: 4px 0 0 0; padding-left: 18px; }
 .popup-species li { margin-bottom: 2px; }
 .map-icon { display: flex; align-items: center; justify-content: center; }
-.popup-stack-link { text-decoration: none; display: block; margin-top: 8px; }
+.popup-stack-link { text-decoration: none; display: block; margin-top: 8px; padding: 4px 6px; }
 .popup-stack { position: relative; display: block; overflow: visible; }
-.popup-stack-img { width: 100%; border-radius: 6px; display: block; position: relative; z-index: 2; }
+.popup-stack-img { width: 100%; max-height: 240px; object-fit: contain; border-radius: 6px; display: block; position: relative; z-index: 2; }
 .popup-stack.is-stack::before, .popup-stack.is-stack::after { content: ""; position: absolute; inset: 0; background: #fff; border: 1px solid #ddd; border-radius: 6px; z-index: 1; }
 .popup-stack.is-stack::before { transform: rotate(-3deg) translate(-3px, 3px); }
 .popup-stack.is-stack::after { transform: rotate(3deg) translate(3px, -3px); }
 .popup-stack-badge { position: absolute; top: 8px; right: 8px; background: rgba(0,0,0,0.7); color: #fff; font-size: 0.75rem; padding: 2px 8px; border-radius: 12px; z-index: 3; }
 .popup-gallery-link { text-align: center; color: #1A4A5C; font-size: 0.85rem; margin-top: 6px; font-weight: 500; }
 .leaflet-popup-content-wrapper { max-height: 400px; overflow: visible; }
-.leaflet-popup-content { font-size: 0.82rem; margin: 8px 10px; max-height: 380px; overflow-y: auto; }
-.popup-description { font-size: 0.82rem; margin: 4px 0; max-height: 100px; overflow-y: auto; }
+.leaflet-popup-content { font-size: 0.82rem; margin: 8px 10px; max-height: 60vh; overflow-y: auto; overflow-x: hidden; }
 .timeline-controls {
   background: rgba(255,255,255,0.4);
   border-radius: 8px;
