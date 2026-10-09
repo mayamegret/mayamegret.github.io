@@ -249,7 +249,7 @@ article.page {
   </div>
   <div class="dive-stat-card">
     <div class="dive-stat-number" id="stat-time">—</div>
-    <div class="dive-stat-label">Total Time (min)</div>
+    <div class="dive-stat-label">Total Time Underwater (min)</div>
   </div>
 </div>
 
