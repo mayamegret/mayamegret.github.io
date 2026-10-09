@@ -101,6 +101,7 @@ article.page {
   overflow: auto;
   max-height: 70vh;
   border-radius: 8px;
+  overscroll-behavior-x: contain;
 }
 .dive-table {
   width: 100%;
@@ -233,6 +234,15 @@ article.page {
 .dive-table th:nth-child(10),
 .dive-table td:nth-child(10) {
   min-width: 220px;
+}
+
+/* tighter table on phones so there is less sideways scrolling */
+@media (max-width: 700px) {
+  .dive-table { font-size: 0.78rem; }
+  .dive-table th { padding: 8px 8px; font-size: 0.7rem; }
+  .dive-table td { padding: 6px 8px; }
+  .dive-table th:nth-child(10),
+  .dive-table td:nth-child(10) { min-width: 160px; }
 }
 </style>
 
@@ -473,4 +483,35 @@ document.querySelectorAll('#main, article.page, .page__inner-wrap, .page__conten
   el.style.paddingRight = '1em';
   el.style.float = 'none';
 });
+
+// Lock touch scrolling inside the table to one direction at a time, so a
+// vertical swipe doesn't drift the table sideways (and vice versa).
+(function () {
+  const wrap = document.getElementById('dive-table-wrap');
+  let startX = 0, startY = 0, axis = null, lockX = 0, lockY = 0, idleTimer = null;
+
+  wrap.addEventListener('touchstart', e => {
+    startX = e.touches[0].clientX;
+    startY = e.touches[0].clientY;
+    axis = null;
+    clearTimeout(idleTimer);
+  }, { passive: true });
+
+  wrap.addEventListener('touchmove', e => {
+    if (axis) return;
+    const dx = Math.abs(e.touches[0].clientX - startX);
+    const dy = Math.abs(e.touches[0].clientY - startY);
+    if (dx < 6 && dy < 6) return;
+    axis = dx > dy ? 'x' : 'y';
+    lockX = wrap.scrollLeft;
+    lockY = wrap.scrollTop;
+  }, { passive: true });
+
+  wrap.addEventListener('scroll', () => {
+    if (axis === 'y' && wrap.scrollLeft !== lockX) wrap.scrollLeft = lockX;
+    if (axis === 'x' && wrap.scrollTop !== lockY) wrap.scrollTop = lockY;
+    clearTimeout(idleTimer);
+    idleTimer = setTimeout(() => { axis = null; }, 150);
+  }, { passive: true });
+})();
 </script>
