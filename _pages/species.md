@@ -207,7 +207,31 @@ const FAVORITES = [
   "Hemiscyllium ocellatum",
   "Glaucostegus typus",
   "Notamacropus parryi",
-  "Drosera spatulata"
+  "Drosera spatulata",
+  // --- newly added favorites ---
+  "Ostracion cubicus",              // yellow boxfish
+  "Callistoctopus ornatus",         // night octopus (ornate night octopus)
+  "Hexabranchus sandwichensis",     // Hawaiian Spanish dancer
+  "Ardeadoris tomsmithi",           // Tom Smith's nudibranch
+  "Hexabranchus aureomarginatus",   // yellow-margined Spanish dancer
+  "Hypselodoris maridadilus",
+  "Goniobranchus cavae",
+  "Octopus bimaculoides",           // lesser two-spot octopus
+  "Neotrygon indica",               // blue-spotted maskray (Indian Ocean)
+  "Neotrygon australiae",           // blue-spotted maskray (Australia)
+  "Mobula alfredi",                 // reef manta ray
+  "Aetobatus ocellatus",            // white-spotted eagle ray
+  "Carcharhinus melanopterus",      // blacktip reef shark
+  "Orectolobus maculatus",          // spotted wobbegong
+  "Velella velella",
+  "Trachemys scripta elegans",      // red-eared slider
+  "Trachemys scripta",              // red-eared slider (species-level ID)
+  "Morelia spilota mcdowelli",      // coastal carpet python
+  "Morelia spilota",                // carpet python (species-level ID)
+  "Ornithorhynchus anatinus",       // platypus
+  "Dryophytes versicolor",          // gray treefrog
+  "Dryophytes chrysoscelis",        // gray treefrog (Cope's)
+  "Argema mimosae"                  // African moon moth
 ];
 
 const PERSONAL_NOTES = {
