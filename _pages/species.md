@@ -208,30 +208,29 @@ const FAVORITES = [
   "Glaucostegus typus",
   "Notamacropus parryi",
   "Drosera spatulata",
-  // --- newly added favorites ---
-  "Ostracion cubicus",              // yellow boxfish
-  "Callistoctopus ornatus",         // night octopus (ornate night octopus)
-  "Hexabranchus sandwichensis",     // Hawaiian Spanish dancer
-  "Ardeadoris tomsmithi",           // Tom Smith's nudibranch
-  "Hexabranchus aureomarginatus",   // yellow-margined Spanish dancer
+  "Ostracion cubicus",
+  "Callistoctopus ornatus",
+  "Hexabranchus sandwichensis",
+  "Ardeadoris tomsmithi",
+  "Hexabranchus aureomarginatus",
   "Hypselodoris maridadilus",
   "Goniobranchus cavae",
-  "Octopus bimaculoides",           // lesser two-spot octopus
-  "Neotrygon indica",               // blue-spotted maskray (Indian Ocean)
-  "Neotrygon australiae",           // blue-spotted maskray (Australia)
-  "Mobula alfredi",                 // reef manta ray
-  "Aetobatus ocellatus",            // white-spotted eagle ray
-  "Carcharhinus melanopterus",      // blacktip reef shark
-  "Orectolobus maculatus",          // spotted wobbegong
+  "Octopus bimaculoides",
+  "Neotrygon indica",
+  "Neotrygon australiae",
+  "Mobula alfredi",
+  "Aetobatus ocellatus",
+  "Carcharhinus melanopterus",
+  "Orectolobus maculatus",
   "Velella velella",
-  "Trachemys scripta elegans",      // red-eared slider
-  "Trachemys scripta",              // red-eared slider (species-level ID)
-  "Morelia spilota mcdowelli",      // coastal carpet python
-  "Morelia spilota",                // carpet python (species-level ID)
-  "Ornithorhynchus anatinus",       // platypus
-  "Dryophytes versicolor",          // gray treefrog
-  "Dryophytes chrysoscelis",        // gray treefrog (Cope's)
-  "Argema mimosae"                  // African moon moth
+  "Trachemys scripta elegans",
+  "Trachemys scripta",
+  "Morelia spilota mcdowelli",
+  "Morelia spilota",
+  "Ornithorhynchus anatinus",
+  "Dryophytes versicolor",
+  "Dryophytes chrysoscelis",
+  "Argema mimosae"
 ];
 
 const PERSONAL_NOTES = {
@@ -501,6 +500,8 @@ document.addEventListener('DOMContentLoaded', function() {
     .then(deduplicateBySpecies)
     .then(species => {
       allSpeciesData = species;
+      const listedNames = new Set(species.map(s => s.taxon.name));
+      console.info('Favorites not found in my iNaturalist species:', FAVORITES.filter(f => !listedNames.has(f)));
       renderSpecies(species);
       document.getElementById('species-search').addEventListener('input', function() {
         searchQuery = this.value.toLowerCase();
