@@ -500,8 +500,6 @@ document.addEventListener('DOMContentLoaded', function() {
     .then(deduplicateBySpecies)
     .then(species => {
       allSpeciesData = species;
-      const listedNames = new Set(species.map(s => s.taxon.name));
-      console.info('Favorites not found in my iNaturalist species:', FAVORITES.filter(f => !listedNames.has(f)));
       renderSpecies(species);
       document.getElementById('species-search').addEventListener('input', function() {
         searchQuery = this.value.toLowerCase();
