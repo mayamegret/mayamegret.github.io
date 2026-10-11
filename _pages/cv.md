@@ -205,7 +205,7 @@ h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-c
 
 <div class="cv-panel-row">
   <div>
-    <p class="cv-summary">I am a marine biologist and scientific diver completing my masters in marine biology at the Universidade do Algarve, with field research experience across Mozambique, San Diego, Greece, Costa Rica, and Australia. My thesis research compared SCUBA-based sampling methodologies for assessing nudibranch diversity and abundance on rocky reef ecosystems in Mozambique. I am passionate about scientific diving, marine biodiversity, underwater photography, and conservation, and am an SSI Divemaster in Hawai'i, with 150+ lifetime dives logged.</p>
+    <p class="cv-summary">I am a marine biologist and scientific diver completing my masters in marine biology at the Universidade do Algarve, with field research experience across Mozambique, San Diego, Greece, Costa Rica, and Australia. My thesis research compared SCUBA-based sampling methodologies for assessing nudibranch diversity and abundance on rocky reef ecosystems in Mozambique. I am passionate about scientific diving, marine biodiversity, underwater photography, and conservation, and am an SSI Divemaster in Hawai'i, with 200+ lifetime dives logged.</p>
   </div>
   <div>
     <div class="cv-section-title"><i class="fas fa-microscope"></i> Research Interests</div>
