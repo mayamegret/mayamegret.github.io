@@ -154,5 +154,7 @@ Dive #,Date (yyyy-mm-dd),Site,Location,Dive Type,Max depth (m),Average depth (m)
 202,2026-09-21,Kewalo Pipe,"Honolulu, O'ahu, Hawai'i",Professional,16.8,13.0,38,43,Air,27,28,10,Surge,5,3,Aluminum,,"8x Hawaiian green turtle, 3x Moray eel"
 203,2026-09-24,Sea Tiger,"Honolulu, O'ahu, Hawai'i",Professional / Wreck Dive,29.9,18.4,22,30,Air,27,27,15,None,5,3,Aluminum,,"2x Hawaiian green turtle, 2x Coryphellina exoptata, 1x Blue dragon nudi, 1x Moray eel"
 204,2026-09-24,Nautilus Reef,"Honolulu, O'ahu, Hawai'i",Professional,12.9,9.6,48,54,Air,27,27,15,None,5,3,Aluminum,,"1x Imperial nudibranch, 5x Moray eel"
-205,2026-10-04,Nautilus Reef,"Honolulu, O'ahu, Hawai'i",Professional,13.1,9.3,46,51,Air,27,29,20,Surge,5,3,Aluminum,,"1x Whitetip reef shark, 6x Moray eel"
+205,2026-10-04,Nautilus Reef,"Honolulu, O'ahu, Hawai'i",Professional,13.1,9.3,46,51,Nitrox,27,29,20,Surge,5,3,Aluminum,,"1x Whitetip reef shark, 6x Moray eel"
 206,2026-10-04,"Kewalo Pipe, Horseshoe Reef","Honolulu, O'ahu, Hawai'i",Professional,18.5,13.5,39,43,Air,26,27,30,Surge,5,3,Aluminum,,"1x Eagle Ray, 9x Hawaiian green turtle, 4x Moray eel"
+207,2026-10-12,Kewalo Pipe,"Honolulu, O'ahu, Hawai'i",Professional,15.5,10.3,36,41,Air,26,27,15,Surge,5,3,Aluminum,,"4x Hawaiian green turtle, 1x Moray eel, 1x Imperial nudibranch"
+208,2026-10-12,"Kewalo Pipe, Horseshoe Reef","Honolulu, O'ahu, Hawai'i",Professional,18.3,12.9,37,43,Air,26,27,20,Surge,5,3,Aluminum,,"10x Hawaiian green turtle, 1x Moray eel"
