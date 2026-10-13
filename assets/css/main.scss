@@ -41,3 +41,15 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+
+html body .masthead,
+html body .masthead__inner-wrap,
+html body .greedy-nav,
+html body .greedy-nav .hidden-links {
+  background-color: #ffffff !important;
+}
+html body .greedy-nav a,
+html body .greedy-nav .site-title,
+html body .greedy-nav button {
+  color: #3f6b56 !important;
+}
