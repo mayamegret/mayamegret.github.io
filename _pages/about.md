@@ -82,7 +82,7 @@ article.page {
     <div class="about-links">
       <a href="/photography/" class="about-link-btn">Browse my photos →</a>
       <a href="/dive-log/" class="about-link-btn">View my dive log →</a>
-      <a href="/map/" class="about-link-btn">See my travel map →</a>
+      <a href="/map/" class="about-link-btn">Explore my travel map →</a>
       <a href="/species/" class="about-link-btn">Browse my species log →</a>
       <a href="/cv/" class="about-link-btn">View my CV →</a>
     </div>
