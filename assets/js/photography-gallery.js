@@ -1,1036 +1,209 @@
-const locations = [
-  {
-    name: "St. Petersburg",
-    country: "USA",
-    coords: [27.77, -82.64],
-    type: "visit",
-    dates: "2002-2024",
-    ocean: "Atlantic",
-    description: "I grew up visiting my grandpa in Florida often, spending birthdays and spring breaks and summers at his condo in St. Petersburg. We always went to the pink palace (the Don CeSar) for ice cream, went kayaking in the mangroves of Fort De Soto with manatees, spent long afternoons on the beach looking for shells and horseshoe crabs, watching dolphins swim by from his backyard, chase lizards around at sunset, spend days at the pool, go on airplane rides with my grandpa, and more and more. I really cherish this time with my family and St. Petersburg will always have a special place in my heart.",    species: [
-      "Florida manatee <em>(Trichechus manatus latirostris)</em>",
-      "Atlantic bottlenose dolphin <em>(Tursiops truncatus)</em>",
-      "American horseshoe crab <em>(Limulus polyphemus)</em>"
-    ],
-    photos: ["/images/photography/Florida1.jpg", "/images/photography/Florida2.jpg", "/images/photography/Florida3.jpg", "/images/photography/Florida4.jpg", "/images/photography/Florida5.jpg", "/images/photography/Florida6.jpg", "/images/photography/Florida7.jpg", "/images/photography/Florida8.jpg", "/images/photography/Florida9.jpg"],
-    galleryId: "st-pete"
-  },
-  {
-    name: "Amherst",
-    country: "USA",
-    coords: [42.3732, -72.5199],
-    type: "visit",
-    dates: "2002-2014",
-    description: "My (great) Aunt Elaine and Uncle Arthur lived in Amherst, and my sister and I spent a week each summer visiting them growing up. There was a fun fair we'd go to, and we spent our days at a nearby camp making pies, painting furniture, and learning to embroider. Aunt Elaine had the most beautiful garden that we would spend hours playing in, and Uncle Arthur had the coolest artifacts and photographs we would spend hours sifting through. We would rent movies from Blockbuster and make homemade salad dressing and saltine toffee cookies.",
-    species: [],
-    photos: []
-  },
-  {
-    name: "New York City",
-    country: "USA",
-    coords: [40.7644, -73.9235],
-    type: "visit",
-    dates: "2003-Present",
-    description: "I grew up visiting my grandmama in NYC several times a year, sometimes for birthdays or long weekends in the summer, and always at Christmas time. Now my sister lives in NYC, so I still go as often as I can! While I was staying in DC with my parents for a while, I would take the train or bus up to NYC and spend a week staying with Tess and Andrew and their cats. Even when I was living in San Diego I flew out to surprise Tess for her 26th birthday! We always have so much fun together.",
-    species: [],
-    photos: []
-  },
-  {
-    name: "Belize",
-    country: "Belize",
-    coords: [17.25, -88.77],
-    type: "visit",
-    dates: "March 2013",
-    ocean: "Atlantic",
-    description: "For spring break 2013, my family and I went to Belize! We first explored the mountains and jungle and then finished our trip on the coast. Belize was the first place I ever snorkeled with turtles and sharks, and it is where I decided that I want to be a marine biologist!",
-    species: [],
-    photos: []
-  },
-  {
-    name: "Porto",
-    country: "Portugal",
-    coords: [41.1579, -8.6291],
-    type: "visit",
-    dates: "April 11-19th, 2014",
-    description: "In 2014, my family and I went to Portugal for a week, exploring Porto, Lisbon, and the countryside in between. We visited beautiful castles and ate pastel de nata until we almost burst.",
-    species: [],
-    photos: []
-  },
-  {
-    name: "Paris",
-    country: "France",
-    coords: [48.8566, 2.3522],
-    type: "visit",
-    dates: "August 20th - September 5th, 2015",
-    description: "My first trip to France was with my family in 2015! We arrived in Paris, where we spent a few days enjoying the food and exploring the Catacombs, posing for silly pictures in the Louvre, and eating pain au chocolat every single morning. After Paris, we headed to the south of France to visit family! We stayed in Aix-en-Provence, where my parents met, and visited my grandmother and uncles and cousins. We enjoyed time exploring Cassis, boats around the Calanques, hikes around Verdon, and exploring the city my parents fell in love in.",
-    species: [],
-    photos: []
-  },
-  {
-    name: "Santorini",
-    country: "Greece",
-    coords: [36.3932, 25.4615],
-    type: "visit",
-    dates: "August 5th-19th, 2017",
-    ocean: "Atlantic",
-    description: "My family flew into Santorini and explored the island for a few days before hopping on a boat and sailing around the Aegean Sea for a week. We stopped in Paros, Koufonisia, Irakleia, and many islands in between. We went snorkeling in the mornings and explored the islands in the afternoons. We finished with a few days in Athens before heading back home.",
-    species: [],
-    photos: []
-  },
-  {
-    name: "Venice",
-    country: "Italy",
-    coords: [45.44, 12.33],
-    type: "visit",
-    dates: "June 18 - July 2nd, 2019",
-    description: "Our girls trip to Italy began in Venice touring the city, gondola rides, and lots of pasta!",
-    species: [],
-    photos: []
-  },
-  {
-    name: "Capri",
-    country: "Italy",
-    coords: [40.55, 14.24],
-    type: "visit",
-    dates: "June 2019",
-    description: "From Venice we made our way to Capri where we beached and explored for a few days.",
-    species: [],
-    photos: []
-  },
-  {
-    name: "Amalfi Coast",
-    country: "Italy",
-    coords: [40.63, 14.60],
-    type: "visit",
-    dates: "June/July 2019",
-    description: "Then we made our way through the Amalfi Coast, starting in Positano then Ravello then Sorrento.",
-    species: [],
-    photos: []
-  },
-  {
-    name: "Rome",
-    country: "Italy",
-    coords: [41.90, 12.50],
-    type: "visit",
-    dates: "July 2019",
-    description: "We finished our trip in Rome with lots of gelato and exploring!",
-    species: [],
-    photos: []
-  },
-  {
-    name: "Cancún",
-    country: "Mexico",
-    coords: [21.1619, -86.8515],
-    type: "visit",
-    dates: "October 11-15th, 2019",
-    ocean: "Atlantic",
-    description: "During our girls trip senior year of high school, my mom and I went to Mexico! We had so much fun together, especially on the boat snorkel day that we did.",
-    species: [],
-    photos: []
-  },
-  {
-    name: "Puerto Vallarta",
-    country: "Mexico",
-    coords: [20.6534, -105.2253],
-    type: "visit",
-    dates: "March 22-26th, 2022",
-    description: "Brynn and I joined Macy and her friends in Puerto Vallarta for spring break sophomore year at UCSD!",
-    species: [],
-    photos: []
-  },
-  {
-    name: "Virginia",
-    country: "USA",
-    coords: [36.85, -75.98],
-    type: "dive",
-    dates: "July 24-25th, 2022",
-    ocean: "Atlantic",
-    description: "Where I completed my Open Water certification with dad! We got certified the same summer we built our pond in the backyard of the home I grew up in. A very special time that I look back on so fondly.",
-    species: [],
-    photos: []
-  },
-  {
-    name: "Girraween National Park",
-    country: "Australia",
-    coords: [-28.88, 151.92],
-    type: "visit",
-    dates: "August 24-27th, 2022",
-    description: "My study abroad program in Australia began in Girraween National Park for a three day field trip! It was an amazing start to my stay, Joey and I camped in a tent together, we saw the milky way, we hiked over 10km a day looking for plants and animals and learning about field sampling techniques! It was the first time I saw a wild kangaroo!",
-    species: [],
-    photos: ["/images/photography/Girraween1.JPG", "/images/photography/Giraween2.JPG", "/images/photography/Giraween3.JPG", "/images/photography/Giraween4.jpg", "/images/photography/Giraween5.JPG"],
-    galleryId: "giraween"
-  },
-  {
-    name: "Lamington National Park",
-    country: "Australia",
-    coords: [-28.22, 153.13],
-    type: "visit",
-    dates: "September 5-9th, 2022",
-    description: "Another amazing Terrestrial Ecology field trip with lots of hiking, including stops at waterfalls in between our lectures.",
-    species: [],
-    photos: ["/images/photography/Lamington1.jpg", "/images/photography/Lamington2.png", "/images/photography/Lamington3.png", "/images/photography/Lamington4.png", "/images/photography/Lamington5.jpeg", "/images/photography/Lamington6.png"],
-    galleryId: "lamington"
-  },
-  {
-    name: "North Stradbroke Island",
-    country: "Australia",
-    coords: [-27.50, 153.43],
-    type: "visit",
-    dates: "September 27 - October 5th, 2022",
-    ocean: "Pacific",
-    description: "Our first Marine Biology field trip was to North Stradbroke Island! We stayed at a lab and got to enjoy the beaches and tide pools between classes and lab work. My group studied the ephemeral tide pools left by stingrays as they forage. We studied the prawn species that colonize the ephemeral tide pools. I also learned to do a cartwheel on the beach with Joey and Sophia, it was a very special afternoon.",
-    species: [
-      "Spotted wobbegong <em>(Orectolobus maculatus)</em>",
-      "Koala <em>(Phascolarctos cinereus)</em>"
-    ],
-    photos: ["/images/photography/NSI1.jpg", "/images/photography/NSI2.jpg", "/images/photography/NSI3.png", "/images/photography/NSI4.png", "/images/photography/NSI5.jpg"],
-    galleryId: "north-stradbroke"
-  },
-  {
-    name: "Melbourne",
-    country: "Australia",
-    coords: [-37.81, 144.96],
-    type: "visit",
-    dates: "October 7-11th, 2022",
-    description: "During a long weekend, the girls and I went to Melbourne for a quick getaway! We explored the museums, flea markets, the university campus, and lots of good food and shopping!",
-    species: [],
-    photos: ["/images/photography/Melbourne1.jpg", "/images/photography/Melbourne2.jpg", "/images/photography/Melbourne3.jpg", "/images/photography/Melbourne4.jpg", "/images/photography/Melbourne5.JPG", "/images/photography/Melbourne6.jpg"],
-    galleryId: "melbourne"
-  },
-  {
-    name: "Carnarvon Gorge National Park",
-    country: "Australia",
-    coords: [-25.08, 148.38],
-    type: "visit",
-    dates: "October 25-28th, 2022",
-    description: "Our third and last Terrestrial Ecology field trip! This camping trip was stunning, again with lots of hiking and lectures on the riverbanks. Many more kangaroos and wallabys, stunning scenery, and amazing wildlife. A highlight was the thousands (honestly probably upwards of a million) bats that flew over us every evening at dusk. The bats would leave the trees where they were sleeping all day to dip their bellies in the river, hang upside down again in the trees to drink, and eat all of the mosquitos as they flew around. It was an incredible thing to witness!",
-    species: [
-      "Platypus <em>(Ornithorhynchus anatinus)</em>",
-      "Eastern grey kangaroo <em>(Macropus giganteus)</em>",
-      "Red-necked wallaby <em>(Notamacropus rufogriseus)</em>"
-    ],
-    photos: ["/images/photography/CG1.jpg", "/images/photography/CG2.JPG", "/images/photography/CG3.jpg", "/images/photography/CG4.jpg", "/images/photography/CG5.jpg", "/images/photography/CG6.jpg"],
-    galleryId: "carnarvon-gorge"
-  },
-  {
-    name: "Heron Island",
-    country: "Australia",
-    coords: [-23.44, 151.92],
-    type: "visit",
-    dates: "October 30 - November 5th, 2022",
-    ocean: "Pacific",
-    description: "We closed out our program with a bang for our last Marine Biology field trip to Heron Island, where we spent over a week living at the lab. Between lectures and lab work, we snorkeled at least 3 times a day, at sunrise, mid afternoon, and sunset. We swam with so many sharks, rays, nudibranchs, octopus, squid, guitarfish, eels, and so much more! My group studied the strength of crabs, comparing their body size and weight to the size and weight of coral rubble they were capable of lifting. It was one of the best weeks of my life.",
-    species: [
-      "Giant guitarfish <em>(Glaucostegus typus)</em>",
-      "Epaulette shark <em>(Hemiscyllium ocellatum)</em>",
-      "Spotted eagle ray <em>(Aetobatus narinari)</em>",
-      "Blacktip reef shark <em>(Carcharhinus melanopterus)</em>"
-    ],
-    photos: ["/images/photography/Heron3.jpg", "/images/photography/Heron1.jpg", "/images/photography/Heron2.JPG", "/images/photography/Heron4.jpg", "/images/photography/Heron5.jpg", "/images/photography/Heron6.jpg"],
-    galleryId: "heron-island"
-  },
-  {
-    name: "Heron Island",
-    country: "Australia",
-    coords: [-23.45, 151.94],
-    type: "visit",
-    dates: "October 30 - November 5th, 2022",
-    description: "The real treasures of treasure (Heron) Island!",
-    species: [],
-    photos: ["/images/photography/HeronFriends.jpg", "/images/photography/HeronFriends2.jpg", "/images/photography/HeronFriends3.jpg", "/images/photography/HeronFriends4.jpg", "/images/photography/HeronFriends5.jpg"],
-    galleryId: "heron-friends"
-  },
-  {
-    name: "Cairns",
-    country: "Australia",
-    coords: [-16.92, 145.78],
-    type: "dive",
-    dates: "November 13th, 2022",
-    ocean: "Pacific",
-    description: "First dives on the Great Barrier Reef! Dad and I did our first ocean dives while mom and Tess snorkeled. Australia is where I fell in love with nudibranchs, so it holds a very special place in my heart!!",
-    species: [],
-    photos: []
-  },
-  {
-    name: "Port Douglas",
-    country: "Australia",
-    coords: [-16.49, 145.47],
-    type: "dive",
-    dates: "November 16th, 2022",
-    ocean: "Pacific",
-    description: "More diving on the GBR.",
-    species: [],
-    photos: []
-  },
-  {
-    name: "Port Lincoln",
-    country: "Australia",
-    coords: [-34.73, 135.88],
-    type: "visit",
-    dates: "November 20-22nd, 2022",
-    ocean: "Southern",
-    description: "We came for the great white sharks, we stayed for the koalas. A really special time in my heart.",
-    species: [],
-    photos: ["/images/map/PortLincoln1.JPG", "/images/map/PortLincoln2.JPG", "/images/map/PortLincoln3.JPG", "/images/map/PortLincoln4.JPG"],
-    galleryId: "port-lincoln"
-  },
-  {
-    name: "Pacific Harbor, Fiji",
-    country: "Fiji",
-    coords: [-18.24, 178.07],
-    type: "dive",
-    dates: "November 29-30th, 2022",
-    ocean: "Pacific",
-    description: "Joey and I spent a few days in Fiji, where we did 2 coral reef dives and 2 shark dives! It was an amazing adventure together, including hectic gear malfunctions and finding plenty of shark teeth.",
-    species: [
-      "Ribbon eels <em>(Rhinomuraena quaesita)</em>",
-      "Bull sharks <em>(Carcharhinus leucas)</em>",
-      "Nurse sharks <em>(Ginglymostoma cirratum)</em>"
-    ],
-    photos: ["/images/map/JoeyMayaFiji.jpg", "/images/map/Fiji2.jpg"],
-    galleryId: "fiji"
-  },
-  {
-    name: "San Diego",
-    country: "USA",
-    coords: [32.885, -117.243],
-    type: "visit",
-    dates: "January - June 2023",
-    description: "Junior year at UCSD started off with my semester abroad at UQ, and then in January I went back to regular classes in San Diego, living with my best friend and falling in love with the city all over again! Brynn, my family and I all visited Mexico for spring break, and my sister and best friend from home visited me for my birthday! It was a great year.",
-    species: [],
-    photos: ["/images/photography/JuniorYear1.jpg", "/images/photography/JuniorYear2.JPG", "/images/photography/JuniorYear3.jpg"],
-    galleryId: "junior-year"
-  },
-  {
-    name: "Cabo San Lucas",
-    country: "Mexico",
-    coords: [22.89, -109.91],
-    type: "visit",
-    dates: "March 25-30th, 2023",
-    ocean: "Pacific",
-    description: "For spring break junior year, my family, Brynn and I all went to Cabo San Lucas and did a whale watching tour where we had the most incredible interaction with these whales!",
-    species: [
-      "Humpback whale <em>(Megaptera novaeangliae)</em>"
-    ],
-    photos: ["/images/photography/Mexico1.jpg", "/images/photography/Mexico2.JPG", "/images/photography/Mexico3.jpg"],
-    galleryId: "cabo"
-  },
-  {
-    name: "Argostoli",
-    country: "Greece",
-    coords: [38.1739, 20.4917],
-    type: "visit",
-    dates: "July 7 - August 5th, 2023",
-    description: "I spent a month volunteering with Wildlife Sense, working on their sea turtle conservation program! It was an incredible learning experience, helping locate and protect turtle nests, relocate endangered nests, help hatchlings to sea, and help with beach cleanups and beach mapping!",
-    species: [
-      "Loggerhead sea turtle <em>(Caretta caretta)</em>"
-    ],
-    photos: ["/images/photography/STConservation1.jpg", "/images/photography/STConservation2.jpg", "/images/photography/STConservation3.jpg", "/images/photography/STConservation4.JPG", "/images/photography/STConservation5.jpg", "/images/photography/STConservation6.jpg"],
-    galleryId: "argostoli"
-  },
-  {
-    name: "Cephalonia",
-    country: "Greece",
-    coords: [38.18, 20.57],
-    type: "dive",
-    dates: "July 22nd, 2023",
-    ocean: "Atlantic",
-    description: "During my fieldwork in Greece monitoring nesting sea turtles and their hatchlings, I went diving! It was lovely, warm, and I saw a few nudis!",
-    species: [],
-    photos: ["/images/map/Cephalonia1.jpg"],
-    galleryId: "cephalonia"
-  },
-  {
-    name: "Hvar",
-    country: "Croatia",
-    coords: [43.17, 16.44],
-    type: "visit",
-    dates: "August 7-10th, 2023",
-    description: "My sister and I enjoyed a lovely week in Croatia together beginning in Hvar!",
-    species: [],
-    photos: ["/images/photography/Hvar1.JPG", "/images/photography/Hvar2.JPG", "/images/photography/Hvar3.jpg", "/images/photography/Hvar4.JPG"],
-    galleryId: "hvar"
-  },
-  {
-    name: "Vis",
-    country: "Croatia",
-    coords: [43.06, 16.18],
-    type: "visit",
-    dates: "August 9th, 2023",
-    description: "While in Hvar, Tess and I did a daytrip to Vis and explored the adorable little island!",
-    species: [],
-    photos: ["/images/photography/Vis1.jpg", "/images/photography/Vis2.JPG", "/images/photography/Vis3.JPG"],
-    galleryId: "vis"
-  },
-  {
-    name: "Dubrovnik",
-    country: "Croatia",
-    coords: [42.65, 18.09],
-    type: "visit",
-    dates: "August 10-13th, 2023",
-    description: "Tess and I closed out our sister trip with a few days in Dubrovnik, exploring the old town and the beaches.",
-    species: [],
-    photos: ["/images/photography/Dubrovnik1.jpg", "/images/photography/Dubrovnik2.jpg", "/images/photography/Dubrovnik3.jpg", "/images/photography/Dubrovnik4.jpg", "/images/photography/Dubrovnik5.jpg", "/images/photography/Dubrovnik6.jpg"],
-    galleryId: "dubrovnik"
-  },
-  {
-    name: "Grand Canyon",
-    country: "USA",
-    coords: [36.10, -112.11],
-    type: "visit",
-    dates: "September 17-19th, 2023",
-    description: "To kick off senior year, my dad and I drove my car from Washington to San Diego! It was the best road trip ever. We stopped at the Grand Canyon and had a great time dressing up in fun hats and enjoying the view.",
-    species: [],
-    photos: ["/images/photography/GC1.JPG", "/images/photography/GC2.JPG", "/images/photography/GC3.JPG", "/images/photography/GC4.JPG", "/images/photography/GC5.jpg", "/images/photography/GC6.jpg"],
-    galleryId: "grand-canyon"
-  },
-  {
-    name: "Sedona",
-    country: "USA",
-    coords: [34.87, -111.76],
-    type: "visit",
-    dates: "September 20-22nd, 2023",
-    description: "To kick off senior year, my dad and I drove my car from Washington to San Diego! It was the best road trip ever. We stopped in Sedona to enjoy beautiful scenery and fun hikes.",
-    species: [],
-    photos: ["/images/photography/Sedona1.JPG", "/images/photography/Sedona2.JPG", "/images/photography/Sedona3.JPG", "/images/photography/Sedona4.JPG"],
-    galleryId: "sedona"
-  },
-  {
-    name: "San Diego",
-    country: "USA",
-    coords: [32.880, -117.234],
-    type: "visit",
-    dates: "September 2023 - June 2024",
-    description: "Senior year at UCSD included a spring break trip to Panama with my family and Brynn, going home for a weekend to celebrate my dads 60th and my 22nd birthdays, lots of shifts working at the Birch Aquarium, plenty of hours at the tide pools and beaches of La Jolla, a girls trip to Napa Valley, a trip to see my grandpa in St. Petersburg Florida, and lots of visits from my parents in SD.",
-    species: [],
-    photos: ["/images/photography/SeniorYear1.jpg", "/images/photography/SeniorYear2.jpg", "/images/photography/SeniorYear3.jpg", "/images/photography/SeniorYear4.JPG", "/images/photography/SeniorYear5.jpeg", "/images/photography/SeniorYear6.jpg"],
-    galleryId: "senior-year"
-  },
-  {
-    name: "La Jolla Tide Pools",
-    country: "USA",
-    coords: [32.86689, -117.25714],
-    type: "visit",
-    dates: "~January 2024",
-    ocean: "Pacific",
-    description: "Between classes at Scripps, I would visit the tide pools just north of the pier!",
-    species: [],
-    photos: ["/images/photography/LJ1.jpg", "/images/photography/LJ2.jpg", "/images/photography/LJ3.jpg", "/images/photography/LJ4.jpg", "/images/photography/LJ5.jpg", "/images/photography/LJ6.jpg"],
-    galleryId: "la-jolla"
-  },
-  {
-    name: "Napa Valley",
-    country: "USA",
-    coords: [38.50, -122.27],
-    type: "visit",
-    dates: "February 15-18th, 2024",
-    description: "Girls trip! I took my mom and sister on a girls trip to Napa Valley, where we had lovely tours of the wine country and did a 4am hot air balloon ride! This was such a special trip because as soon as we got off the hot air balloon, I received the notification that I had been accepted to the graduate program at UAlg! It was a weekend of laughter and celebration!!",
-    species: [],
-    photos: ["/images/photography/Napa1.JPG", "/images/photography/Napa2.JPG", "/images/photography/Napa3.JPG", "/images/photography/Napa4.JPG", "/images/photography/Napa5.jpg", "/images/photography/Napa6.jpg", "/images/photography/Napa7.jpg"],
-    galleryId: "napa"
-  },
-  {
-    name: "Panama City",
-    country: "Panama",
-    coords: [8.99, -79.52],
-    type: "visit",
-    dates: "March 22-24th, 2024",
-    description: "First stop on our spring break in Panama was Panama City!",
-    species: [],
-    photos: ["/images/photography/PanamaCity1.JPG", "/images/photography/PanamaCity2.JPG"],
-    galleryId: "panama-city"
-  },
-  {
-    name: "Isla Bastimentos",
-    country: "Panama",
-    coords: [9.35, -82.17],
-    type: "dive",
-    dates: "March 24-30th, 2024",
-    ocean: "Atlantic",
-    description: "We spent the rest of our time in Panama in Isla Bastimentos, sleeping in bungalows over the water, watching eagle rays swim by at dinner, snorkeling and reading all day, and we even went diving! We also saw sloths and really cool frogs.",
-    species: [],
-    photos: ["/images/photography/IB1.JPG", "/images/photography/IB2.jpg", "/images/photography/IB3.JPG", "/images/photography/IB4.jpg", "/images/photography/IB5.JPG", "/images/photography/IB6.JPG"],
-    galleryId: "isla-bastimentos"
-  },
-  {
-    name: "La Jolla Cove",
-    country: "USA",
-    coords: [32.8504, -117.2729],
-    type: "dive",
-    dates: "June 18th, 2024",
-    ocean: "Pacific",
-    description: "COLD! So cold. First kelp forest dive! Saw so many bright orange garibaldi and playful sea lions!!",
-    species: [
-      "Garibaldi <em>(Hypsypops rubicundus)</em>",
-      "California sea lion <em>(Zalophus californianus)</em>"
-    ],
-    photos: []
-  },
-  {
-    name: "UCSD",
-    country: "USA",
-    coords: [32.874, -117.228],
-    type: "visit",
-    dates: "June 11-17th, 2024",
-    description: "For my BS graduation from UCSD, I had so many loved ones come to celebrate me! It was such a special time, I got to show everyone my favorite beaches and restaurants and I truly felt so loved and supported!",
-    species: [],
-    photos: ["/images/photography/Grad1.JPG", "/images/photography/Grad2.JPG", "/images/photography/Grad3.JPG", "/images/photography/Grad4.JPG", "/images/photography/Grad5.JPG"],
-    galleryId: "graduation"
-  },
-  {
-    name: "Cartagena",
-    country: "Colombia",
-    coords: [10.39, -75.48],
-    type: "visit",
-    dates: "July 4-6th, 2024",
-    description: "My mom and I finished our trip to Colombia with a few days in Cartagena, where we went to jazz clubs, explored the emerald museum and shops and ate plenty of delicious food.",
-    species: [],
-    photos: ["/images/map/Cartagena1.JPG", "/images/map/Cartagena2.jpg", "/images/map/Cartagena3.JPG"],
-    galleryId: "cartagena"
-  },
-  {
-    name: "Bogotá",
-    country: "Colombia",
-    coords: [4.71, -74.07],
-    type: "visit",
-    dates: "July 30 - August 3rd, 2024",
-    description: "I joined my mom on one of her work trips to Colombia, where we spent the first several days in Bogota. After tagging along for her meetings, we explored the city including touring the Botero Museum, eating amazing food, and photographing the beautiful murals!",
-    species: [],
-    photos: ["/images/map/Bogota1.jpg", "/images/map/Bogota2.JPG", "/images/map/Bogota3.JPG", "/images/map/Bogota4.JPG"],
-    galleryId: "bogota"
-  },
-  {
-    name: "Blitzingen",
-    country: "Switzerland",
-    coords: [46.40, 8.19],
-    type: "visit",
-    dates: "December 21-28th, 2024",
-    description: "A wonderful Swissmas Christmas! The four of us spent a week in a little chalet in the countryside of Switzerland, it was so magical!",
-    species: [],
-    photos: ["/images/photography/Blitzingen1.JPG", "/images/photography/Blitzingen2.JPG", "/images/photography/Blitzingen3.JPG", "/images/photography/Blitzingen4.jpg", "/images/photography/Blitzingen5.JPG", "/images/photography/Blitzingen6.jpg"],
-    galleryId: "blitzingen"
-  },
-  {
-    name: "Swiss Alps",
-    country: "Switzerland",
-    coords: [46.40, 8.45],
-    type: "visit",
-    dates: "December 2024",
-    description: "A day trip to the Swiss Alps during our Swissmas stay!",
-    species: [],
-    photos: ["/images/photography/SwissAlps2.jpg", "/images/photography/SwissAlps1.JPG", "/images/photography/SwissAlps3.JPG", "/images/photography/SwissAlps4.JPG"],
-    galleryId: "blitzingen"
-  },
-  {
-    name: "Dundee",
-    country: "Scotland",
-    coords: [56.46, -2.97],
-    type: "visit",
-    dates: "December 28th, 2024 - January 2nd, 2025",
-    description: "After Christmas in Switzerland, I flew to Scotland to spend some time with my friend Bella. She showed me around her hometown, Dundee, including trips to the beach and drives around the countryside looking for highland cows!",
-    species: [],
-    photos: []
-  },
-  {
-    name: "Edinburgh",
-    country: "Scotland",
-    coords: [55.95, -3.19],
-    type: "visit",
-    dates: "December 31st, 2024 - January 1st, 2025",
-    description: "We took a train down to Edinburgh for New Years Eve where we explored the city and celebrated ringing in 2025 together. We went back to Dundee for New Years feast with her family before I headed down to London with my parents.",
-    species: [],
-    photos: []
-  },
-  {
-    name: "London",
-    country: "England",
-    coords: [51.51, -0.13],
-    type: "visit",
-    dates: "January 2-6th, 2025",
-    description: "Before heading back to Portugal for the last semester of my masters courses, my parents and I took the train from Edinburgh to London where we spent a few days exploring the city! We took the ferry to Greenwich, we ate amazing food, and shopped til we dropped!",
-    species: [],
-    photos: []
-  },
-  {
-    name: "Sagres",
-    country: "Portugal",
-    coords: [37.02, -8.94],
-    type: "dive",
-    dates: "February-May 2025",
-    ocean: "Atlantic",
-    description: "During my masters courses at UAlg, I completed my advanced open water course and completed a scientific diving course with Diogo at CCMAR. It was an amazing experience, I learned so many great skills, improved my buoyancy and trim, and learned how to conduct science underwater! From these dives, I realized how important diving is to my career as a marine biologist and it has led me down the path I am on today!",
-    species: [],
-    photos: ["/images/map/Sagres1.JPG", "/images/map/Sagres2.JPG"],
-    galleryId: "sagres"
-  },
-  {
-    name: "Aix-en-Provence",
-    country: "France",
-    coords: [43.53, 5.45],
-    type: "visit",
-    dates: "April 10-15th, 2025",
-    description: "Dad and I went to visit family in Aix for a few days, it was so so lovely!! We ate amazing food, we explored the markets every morning, and spent the rest of our time with loved ones we hadn't seen in too long.",
-    species: [],
-    photos: ["/images/map/Aix2.jpg", "/images/map/Aix3.jpg", "/images/map/Aix4.jpg", "/images/map/Aix5.jpg", "/images/map/Aix6.jpg", "/images/map/Aix7.jpg", "/images/map/Aix8.jpg", "/images/map/Aix1.jpg", "/images/photography/Aix9.jpg", "/images/photography/Aix10.jpg", "/images/photography/Aix11.jpg"],
-    galleryId: "aix"
-  },
-  {
-    name: "Timbavati Reserve",
-    country: "South Africa",
-    coords: [-24.45, 31.17],
-    type: "visit",
-    dates: "June 23-30th, 2025",
-    description: "Before beginning my adventure in Mozambique, my mom and I spent a week on safari in South Africa! We did 2 game drives each day, one at dawn and one at dusk. We saw all the big 5 and had a blast!!",
-    species: [],
-    photos: ["/images/map/Safari1.JPG", "/images/map/Safari2.JPG", "/images/map/Safari3.jpg", "/images/map/Safari4.jpg", "/images/map/Safari5.JPG", "/images/map/Safari6.jpg", "/images/map/Safari7.JPG", "/images/map/Safari8.jpg", "/images/map/Safari9.JPG", "/images/map/Safari10.JPG", "/images/map/Safari11.jpg", "/images/map/Safari12.jpg", "/images/map/Safari13.JPG"],
-    galleryId: "timbavati"
-  },
-  {
-    name: "Závora",
-    country: "Mozambique",
-    coords: [-24.52, 35.20],
-    type: "dive",
-    dates: "July 2-25th, 2025",
-    ocean: "Indian",
-    description: "During my first month in Mozambique, I interned with MAR Divers where I completed 26 scientific dives focused on photo identification of manta rays, nudibranch diversity surveys, and predatory fish surveys. Additionally, my internship focused on Humpback whale migration surveys from the sand dunes and from the boat. We were so lucky to experience a whale swimming by us on one of our last dives!",
-    species: [
-      "Humpback whale <em>(Megaptera novaeangliae)</em>",
-      "Oceanic Manta Ray <em>(Mobula birostris)</em>",
-      "Reef Manta Ray <em>(Mobula alfredi)</em>",
-      "Indian Ocean humpback dolphin <em>(Sousa plumbea)</em>"
-    ],
-    photos: [],
-    galleryId: "zavora",
-    diveLogLocation: "Závora, Mozambique"
-  },
-  {
-    name: "Guinjata Bay",
-    country: "Mozambique",
-    coords: [-24.07, 35.48],
-    type: "dive",
-    dates: "July 13th, 2025",
-    ocean: "Indian",
-    description: "Spent a night in Guinjata doing a receiver retrieval, it was a lovely time.",
-    species: [],
-    photos: [],
-    galleryId: "guinjata",
-    diveLogLocation: "Guinjata, Mozambique"
-  },
-  {
-    name: "Faro",
-    country: "Portugal",
-    coords: [37.02, -7.93],
-    type: "visit",
-    dates: "September 2025 - June 2026",
-    description: "Lived in Faro while I completed my masters courses at UAlg! I had a cute apartment downtown, spent plenty of time at the beach, and was lucky enough to visit Lisbon and Nazare while living there!",
-    species: [],
-    photos: ["/images/map/Faro1.JPG", "/images/map/Faro2.JPG", "/images/map/Faro3.jpg"],
-    galleryId: "faro"
-  },
-  {
-    name: "Bonaire",
-    country: "Netherlands Antilles",
-    coords: [12.18, -68.24],
-    type: "dive",
-    dates: "November 1-9th, 2025",
-    ocean: "Atlantic",
-    description: "My family and I spent a week in Bonaire celebrating my moms birthday. We stayed in a cute house right on the water, snorkeling 3 times a day and exploring the island in between! Dad and I even went scuba diving a few times, we saw lots of squid and even a pod of dolphins 20m deep! Around the island, we saw flamingos and iguanas. A beautiful island getaway!",
-    species: [
-      "Bearded fireworm <em>(Hermodice carunculata)</em>"
-    ],
-    photos: ["/images/map/Bonaire1.JPG", "/images/map/Bonaire2.JPG", "/images/map/Bonaire3.JPG", "/images/map/Bonaire4.JPG", "/images/map/Bonaire5.JPG", "/images/map/Bonaire6.JPG", "/images/map/Bonaire7.JPG", "/images/map/Bonaire8.JPG", "/images/map/Bonaire9.JPG"],
-    galleryId: "bonaire",
-    diveLogLocation: "Bonaire, Caribbean Netherlands"
-  },
-  {
-    name: "Oslo",
-    country: "Norway",
-    coords: [59.91, 10.75],
-    type: "visit",
-    dates: "December 19-21st, 2025",
-    description: "We kicked off our Christmas vacation in Oslo for a few days, where we enjoyed a traditional Nordic Christmas dinner and explored the cutesy little shops around the city. We even visited the MUNCH Museum and saw The Scream!",
-    species: [],
-    photos: ["/images/map/Oslo1.JPG", "/images/map/Oslo2.jpg", "/images/map/Oslo3.JPG", "/images/map/Oslo4.JPG", "/images/map/Oslo5.jpg"],
-    galleryId: "oslo"
-  },
-  {
-    name: "Tromsø",
-    country: "Norway",
-    coords: [69.65, 18.96],
-    type: "visit",
-    dates: "December 21-26th, 2025",
-    description: "After a few days in Oslo, we flew to Tromsø, where the sun didn't rise above the horizon for the 5 days we were there. It was STUNNING. We enjoyed a fantastic view of the Northern Lights right from our porch, visited a reindeer farm, and went on a husky sleigh ride. We cooked a coq au vin for Christmas Eve dinner, and watched plenty of Christmas movies! It was truly an unforgettable Christmas!",
-    species: [],
-    photos: ["/images/map/Tromso1.jpg", "/images/map/Tromso2.jpg", "/images/map/Tromso3.JPG", "/images/map/Tromso4.JPG"],
-    galleryId: "tromso"
-  },
-  {
-    name: "Bergen",
-    country: "Norway",
-    coords: [60.39, 5.32],
-    type: "visit",
-    dates: "December 27-30th, 2025",
-    description: "We finished our time in Norway in Bergen for a few days, where we did a beautiful boat tour of the fjords!",
-    species: [],
-    photos: ["/images/map/Bergen1.JPG", "/images/map/Bergen2.JPG", "/images/map/Bergen3.jpg", "/images/map/Bergen4.JPG"],
-    galleryId: "bergen"
-  },
-  {
-    name: "Copenhagen",
-    country: "Denmark",
-    coords: [55.68, 12.57],
-    type: "visit",
-    dates: "December 30th, 2025 - January 3rd, 2026",
-    description: "Andrew and Bella joined the four of us in Copenhagen for a beautiful NYE! We toured the city, stopping at every cute shop and photobooth we could. We drank plenty of glögg and played many card games!",
-    species: [],
-    photos: ["/images/map/Copenhagen1.jpg", "/images/map/Copenhagen2.JPG", "/images/map/Copenhagen3.jpg", "/images/map/Copenhagen4.JPG", "/images/map/Copenhagen5.jpeg", "/images/map/Copenhagen6.jpg", "/images/map/Copenhagen7.jpg"],
-    galleryId: "copenhagen"
-  },
-  {
-    name: "Závora",
-    country: "Mozambique",
-    coords: [-24.30, 35.20],
-    type: "dive",
-    dates: "January-February 2026",
-    ocean: "Indian",
-    description: "I spent 6 weeks back in Závora to collect the data for my thesis research! I completed 45 scientific dive surveys comparing three different SCUBA-based sampling methodologies for assessing the abundance and species diversity of nudibranchs across 3 different rocky reef sites.",
-    species: [
-      "Oceanic Manta Ray <em>(Mobula birostris)</em>",
-      "Reef Manta Ray <em>(Mobula alfredi)</em>",
-      "Indian Ocean humpback dolphin <em>(Sousa plumbea)</em>"
-    ],
-    photos: ["/images/photography/Zavora1.JPG", "/images/photography/Zavora2.JPG", "/images/photography/Zavora3.jpg", "/images/photography/Zavora4.JPG", "/images/photography/Zavora5.JPG", "/images/photography/Zavora6.jpg", "/images/photography/Zavora7.JPG"],
-    galleryId: "zavora-2026",
-    diveLogLocation: "Závora, Mozambique"
-  },
-  {
-    name: "Vilankulos",
-    country: "Mozambique",
-    coords: [-21.99, 35.31],
-    type: "visit",
-    dates: "February 24-28th, 2026",
-    ocean: "Indian",
-    description: "I spent my last few days of my time in Mozambique in Vilankulos, where I snorkeled with seahorses, did a tour of the Bazaruto Archipelago, and relaxed by the beach reading and eating matapa and fried bananas.",
-    species: [],
-    photos: ["/images/photography/Vilankulos1.jpg", "/images/photography/Vilankulos2.JPG", "/images/photography/Vilankulos3.JPG", "/images/photography/Vilankulos4.JPG", "/images/photography/Vilankulos5.JPG"],
-    galleryId: "vilankulos"
-  },
-  {
-    name: "El Salvador",
-    country: "El Salvador",
-    coords: [13.69, -89.22],
-    type: "visit",
-    dates: "March 27-31st, 2026",
-    description: "Celebrating my best friend in El Salvador!",
-    species: [],
-    photos: ["/images/photography/ElSalvador2.JPG", "/images/photography/ElSalvador1.jpg"],
-    galleryId: "el-salvador"
-  },
-  {
-    name: "Kona",
-    country: "Hawai'i, USA",
-    coords: [19.64, -155.99],
-    type: "visit",
-    dates: "May 12-18th, 2026",
-    ocean: "Pacific",
-    description: "As I moved out to Hawai'i, my parents came with me and we first spent a week in Kona! We woke up early most days and explored tide pools, found hidden beaches, and explored Volcano National Park!",
-    species: [],
-    photos: ["/images/photography/IMG_0593.jpg", "/images/photography/IMG_0599.jpg", "/images/photography/IMG_1093.jpg"],
-    galleryId: "kona"
-  },
-  {
-    name: "Honolulu",
-    country: "Hawai'i, USA",
-    coords: [21.30, -157.85],
-    type: "visit",
-    dates: "May 18th, 2026 - Present",
-    description: "I moved to Honolulu in May 2026 and have been falling in love with Hawai'i ever since! I live with a roommate who has two cats who I adore, I am scuba diving daily, and exploring the island one shaved ice at a time!",
-    species: [],
-    photos: ["/images/photography/Oahu1.JPG", "/images/photography/Oahu2.JPG", "/images/photography/Oahu3.jpg", "/images/photography/Oahu4.JPG", "/images/photography/Oahu5.jpg", "/images/photography/Oahu6.jpg"],
-    galleryId: "oahu"
-  },
-  {
-    name: "Ala Moana Harbor",
-    country: "Hawai'i, USA",
-    coords: [21.28, -157.84],
-    type: "dive",
-    dates: "June 1st - July 4th, 2026",
-    ocean: "Pacific",
-    description: "After completing my React Right and Stress & Rescue certs, I spent 5 weeks working on my divemaster certification. I completed 50+ dives working on guiding, navigation, and becoming a professional diver! I am super excited to now be an SSI Divemaster!",
-    species: [
-      "Blue dragon nudibranch <em>(Pteraeolidia semperi)</em>",
-      "Frogfish <em>(Antennariidae)</em>",
-      "Blacktip reef shark <em>(Carcharhinus melanopterus)</em>",
-      "Spinner dolphin <em>(Stenella longirostris)</em>",
-      "Spotted eagle ray <em>(Aetobatus narinari)</em>"
-    ],
-    photos: ["/images/photography/Divemaster1.jpg", "/images/photography/Divemaster2.JPG"],
-    galleryId: "divemaster",
-    diveLogLocation: "Honolulu, O'ahu, Hawai'i"
-  },
-  {
-  name: "North Shore",
-  country: "Hawai'i, USA",
-  coords: [21.60, -158.10],
-  type: "dive",
-  dates: "July 13th, 2026",
-    ocean: "Pacific",
-  description: "I went diving in North Shore with some coworkers and it was a great day! Our first dive was at Three Tables, where we saw so many nudibranchs! After our 67 minute dive, we surfaced and grabbed some delicious poke before heading to Haleiwa Trench for our second dive. The visibility on the second dive was very low but the vibes were great, we saw many more nudis including 3 Spanish Dancers (the largest nudi genus, they get huge!). I had a great time taking photographs and spotting my favorite critters underwater!",
-  species: [
-  "Yellow-margined Spanish dancer <em>(Hexabranchus aureomarginatus)</em>",
-  "Gold lace nudibranch <em>(Halgerda terramtuentis)</em>",
-  "Caramel nudibranch <em>(Glossodoris rufomarginata)</em>",
-  "Tom Smith's nudibranch <em>(Ardeadoris tomsmithi)</em>",
-  "Seven eleven crab <em>(Carpilius maculatus)</em>",
-  "Fellow's nudibranch <em>(Hiatodoris fellowsi)</em>"
-],
-  photos: ["/images/photography/NorthShore1.JPG", "/images/photography/NorthShore2.JPG", "/images/photography/NorthShore3.JPG", "/images/photography/NorthShore4.JPG", "/images/photography/NorthShore5.JPG", "/images/photography/NorthShore6.JPG", "/images/photography/NorthShore7.JPG"],
-  galleryId: "north-shore",
-  diveLogLocation: "North Shore, O'ahu, Hawai'i"
-},
-{
-  name: "O'ahu",
-  country: "Hawai'i, USA",
-  coords: [21.45, -158.00],
-  type: "visit",
-  dates: "May - July 2026",
-  description: "Scenery from my first two months living in Hawai'i caught on film.",
-  species: [],
-  photos: ["/images/photography/HawaiiFilm1.jpg", "/images/photography/HawaiiFilm2.jpg", "/images/photography/HawaiiFilm3.jpg", "/images/photography/HawaiiFilm4.jpg", "/images/photography/HawaiiFilm5.jpg"],
-  galleryId: "hawaii-film"
-},
-{
-  name: "O'ahu",
-  country: "Hawai'i, USA",
-  coords: [21.40, -157.95],
-  type: "visit",
-  dates: "May - July 2026",
-  description: "My first two months on the island and my friends and I have done lots of diving, hiking, dancing, beaching, and everything in between! From beach days with Riley to diving in North Shore with Callum and Josiah to long work days on the boat with Captain D to hiking to waterfalls with Maycey and Rylie (and Poko of course) to seeing Royce Fisherman play live!",
-  species: [],
-  photos: ["/images/photography/HawaiiFriends1.jpg", "/images/photography/HawaiiFriends2.jpg", "/images/photography/HawaiiFriends3.jpg", "/images/photography/HawaiiFriends4.jpg", "/images/photography/HawaiiFriends5.jpg"],
-  galleryId: "hawaii-friends"
-},
+const tiles = [
+  { photos: ["/images/photography/Koko1.jpg", "/images/photography/Koko2.jpg", "/images/photography/Koko3.jpg"], caption: "Hiking Koko Head at sunrise!" },
+  { photos: ["/images/photography/FilmVsiPhone1.JPG", "/images/photography/FilmVsiPhone2.JPG", "/images/photography/FilmVsiPhone3.JPG", "/images/photography/FilmVsiPhone4.JPG", "/images/photography/FilmVsiPhone5.JPG"], caption: "A fun series I like to call Film (Kodak on Fuji Discovery 1000) vs. iPhone", categories: ["film"] },
+  { photos: ["/images/photography/August26.1.jpg", "/images/photography/August26.2.jpg", "/images/photography/August26.3.jpg", "/images/photography/August26.4.jpg"], caption: "August in O'ahu" },
+  { photos: ["/images/photography/HawaiiFilmAug1.jpg", "/images/photography/HawaiiFilmAug2.jpg", "/images/photography/HawaiiFilmAug3.jpg", "/images/photography/HawaiiFilmAug4.jpg", "/images/photography/HawaiiFilmAug5.jpg", "/images/photography/HawaiiFilmAug6.jpg", "/images/photography/HawaiiFilmAug7.jpg", "/images/photography/HawaiiFilmAug8.jpg", "/images/photography/HawaiiFilmAug9.jpg"], caption: "More film shots from around O'ahu!", categories: ["film"] },
+  { photos: ["/images/photography/NightOctopus1.JPG", "/images/photography/NightOctopus2.JPG", "/images/photography/NightOctopus3.JPG"], caption: "I really enjoy night dives and on this dive I spotted two ornate night octopuses! I had a spectacular time hanging out with them for a few minutes before swimming around and finding the biggest Spanish dancer nudibranch I have ever seen! It was a spectacular night with a beautiful sunset view from the boat between dives.", categories: ["wildlife", "underwater"] },
+  { photos: ["/images/photography/SlugScoutingScubaSaga.png"], caption: "On July 28th, 2026, I officially submitted my master's thesis dissertation!!", categories: ["science", "wildlife", "underwater", "travel"] },
+  { photos: ["/images/photography/HawaiiFilm1.jpg", "/images/photography/HawaiiFilm2.jpg", "/images/photography/HawaiiFilm3.jpg", "/images/photography/HawaiiFilm4.jpg", "/images/photography/HawaiiFilm5.jpg", "/images/photography/HawaiiFilm6.jpg", "/images/photography/HawaiiFilm7.jpg", "/images/photography/HawaiiFilm8.jpg", "/images/photography/HawaiiFilm9.jpg", "/images/photography/HawaiiFilm10.jpg"], caption: "Scenery from my first two months living in Hawai'i caught on film.", id: "hawaii-film", mapLink: "/map/#hawaii-film", categories: ["film"] },
+  { photos: ["/images/photography/HawaiiFriends1.jpg", "/images/photography/HawaiiFriends2.jpg", "/images/photography/HawaiiFriends3.jpg", "/images/photography/HawaiiFriends4.jpg", "/images/photography/HawaiiFriends5.jpg", "/images/photography/HawaiiFriends6.jpg", "/images/photography/HawaiiFriends7.jpg"], caption: "My first two months on the island and my friends and I have done lots of diving, hiking, dancing, beaching, and everything in between! Here's a few film snapshots of all that, from beach days with Rylie to diving in North Shore with Callum and Josiah to long work days on the boat with Captain D to hiking to waterfalls with Maycey and Rylie (and Poko of course) to seeing Royce Fisherman play live! And getting a signed T-shirt from him! Can't wait for what the next two months and beyond have in store!", id: "hawaii-friends", mapLink: "/map/#hawaii-friends", categories: ["film"] },
+  { photos: ["/images/photography/NorthShore1.JPG", "/images/photography/NorthShore2.JPG", "/images/photography/NorthShore3.JPG", "/images/photography/NorthShore4.JPG", "/images/photography/NorthShore5.JPG", "/images/photography/NorthShore6.JPG", "/images/photography/NorthShore7.JPG"], caption: "I went diving in North Shore with some coworkers and it was a great day! Our first dive was at Three Tables, where we saw so many nudibranchs! After our 67 minute dive, we surfaced and grabbed some delicious poke before heading to Haleiwa Trench for our second dive. The visibility on the second dive was very low but the vibes were great, we saw many more nudis including 3 Spanish Dancers (the largest nudi genus, they get huge!). I had a great time taking photographs and spotting my favorite critters underwater!", id: "north-shore", mapLink: "/map/#north-shore", categories: ["underwater", "wildlife", "travel"] },
+  { photos: ["/images/photography/Oahu1.JPG", "/images/photography/Oahu2.JPG", "/images/photography/Oahu3.jpg", "/images/photography/Oahu4.JPG", "/images/photography/Oahu5.jpg", "/images/photography/Oahu6.jpg"], caption: "I have been falling in love with Hawai'i ever since moving here! I live with a roommate who has two cats who I adore, I am scuba diving daily, and exploring the island one shaved ice at a time!", id: "oahu", mapLink: "/map/#oahu", categories: ["travel"] },
+  { photos: ["/images/photography/Divemaster1.jpg", "/images/photography/Divemaster2.JPG"], caption: "I moved to Honolulu in May to begin my career as a professional diver. After completing my React Right and Stress & Rescue certs, I spent 5 weeks working on my divemaster certification. I completed 50+ dives working on guiding, navigation, and becoming a professional diver! I am super excited to now be an SSI Divemaster!", id: "divemaster", mapLink: "/map/#divemaster", categories: ["underwater", "wildlife"] },
+  { photos: ["/images/photography/MagazineCollage.png", "/images/photography/Magazine2.JPG", "/images/photography/Magazine3.jpg", "/images/photography/Magazine4.JPG", "/images/photography/Magazine5.JPG", "/images/photography/Magazine6.JPG", "/images/photography/Magazine7.JPG", "/images/photography/Magazine8.JPG", "/images/photography/Magazine9.JPG"], caption: "A week on the big island!", categories: ["travel", "underwater", "wildlife"], id: "honolulu", mapLink: "/map/#honolulu" },  { photos: ["/images/photography/IMG_0593.jpg", "/images/photography/IMG_0599.jpg", "/images/photography/IMG_1093.jpg"], caption: "Beach scenes from Kona, Hawai'i", id: "kona", mapLink: "/map/#kona", categories: ["travel", "underwater"] },
+  { photos: ["/images/photography/IMG_0406.jpg"], categories: ["underwater", "travel"] },
+  { photos: ["/images/photography/IMG_0455.jpg", "/images/photography/IMG_0475.jpg"], caption: "Pencil urchins!", categories: ["underwater", "wildlife", "travel"] },
+  { photos: ["/images/photography/IMG_0609.jpg"], categories: ["underwater", "wildlife"] },
+  { photos: ["/images/photography/IMG_0931.jpg", "/images/photography/IMG_1593.jpg"], caption: "as above, so below", categories: ["underwater", "wildlife", "travel"] },
+  { photos: ["/images/photography/IMG_2277.jpg"], categories: ["underwater"] },
+  { photos: ["/images/photography/IMG_2347.jpg"],  caption: "Close up of a starfish", categories: ["underwater", "wildlife"] },
+  { photos: ["/images/photography/IMG_9902.jpg", "/images/photography/Josephines.jpg", "/images/photography/IMG_9884.jpg", "/images/photography/Maya24Bday.jpg"], caption: "Springtime back home on film", categories: ["film"] },
+  { photos: ["/images/photography/ElSalvador2.JPG", "/images/photography/ElSalvador1.jpg"], caption: "Celebrating my best friend in El Salvador", id: "el-salvador", mapLink: "/map/#el-salvador", categories: ["travel"] },
+  { photos: ["/images/photography/IMG_6375.jpg", "/images/photography/P1230432.jpg", "/images/photography/P2171886.jpg"], caption: "<em>Tritoniopsis elegans</em>, <em>Hypselodoris sp. undefined</em>, <em>Glaucilla marginata</em>", categories: ["underwater", "wildlife", "science"] },
+  { photos: ["/images/photography/Vilankulos1.jpg", "/images/photography/Vilankulos2.JPG", "/images/photography/Vilankulos3.JPG", "/images/photography/Vilankulos4.JPG", "/images/photography/Vilankulos5.JPG"], caption: "I spent my last few days of my time in Mozambique in Vilankulos, where I woke up for the sunrise every morning, snorkeled with seahorses, toured the Bazaruto Archipelago, and relaxed by the beach reading and eating matapa and fried bananas.", id: "vilankulos", mapLink: "/map/#vilankulos", categories: ["travel", "underwater", "wildlife"] },
+  { photos: ["/images/photography/IMG_7117.jpg"], caption: "Daily sunrise view from my room in Vilankulos!", categories: ["travel"] },
+  { photos: ["/images/photography/IMG_4483.jpg"], caption: "<em>Sakuraeolis arcana</em>", categories: ["underwater", "wildlife", "science"] },
+  { photos: ["/images/photography/NudiCollage1.png"], caption: "Some of my fav nudis from Mozambique: <em>Goniobranchus albopunctatus</em>, <em>Chromodoris africana</em>, <em>Goniobranchus cavae</em>, <em>Tritoniopsis elegans</em>, <em>Sakuraeolis arcana</em>, <em>Goniobranchus</em> sp.", categories: ["underwater", "wildlife", "science"] },  { photos: ["/images/photography/Zavora1.JPG", "/images/photography/Zavora2.JPG", "/images/photography/Zavora3.jpg", "/images/photography/Zavora4.JPG", "/images/photography/Zavora5.JPG", "/images/photography/Zavora6.jpg", "/images/photography/Zavora7.JPG"], caption: "January-March 2026 thesis research trip in Závora, Mozambique", id: "zavora-2026", mapLink: "/map/#zavora-2026", categories: ["travel", "underwater", "science", "wildlife"] },
+  { photos: ["/images/photography/UnderwaterMacro.png", "/images/photography/IMG_6257.jpg", "/images/photography/IMG_4927.jpg", "/images/photography/IMG_6176.jpg", "/images/photography/IMG_5736.jpg", "/images/photography/IMG_7224.jpg", "/images/photography/P1250779.jpg"], caption: "Underwater macro (ok, except for that one bee)", categories: ["travel", "underwater", "wildlife"] },
+  { photos: ["/images/photography/IMG_4905.jpg", "/images/photography/IMG_5132.jpg", "/images/photography/P1250823.jpg"], caption: "Scenes from Závora, Mozambique", id: "zavora", mapLink: "/map/#zavora", categories: ["travel", "underwater"] },
+  { photos: ["/images/blog/Fuji1.JPG", "/images/blog/Fuji2.JPG", "/images/blog/Fuji3.JPG", "/images/blog/Fuji4.JPG"], caption: "Some shots from my Fuji Discovery point-and-shoot film camera!", id: "fuji-photos", categories: ["film", "travel"] },
+  { photos: ["/images/map/Copenhagen1.jpg", "/images/map/Copenhagen2.JPG", "/images/map/Copenhagen3.jpg", "/images/map/Copenhagen4.JPG", "/images/map/Copenhagen5.jpeg", "/images/map/Copenhagen6.jpg", "/images/map/Copenhagen7.jpg"], caption: "Copenhagen, Denmark", id: "copenhagen", mapLink: "/map/#copenhagen", categories: ["travel"] },
+  { photos: ["/images/map/Bergen1.JPG", "/images/map/Bergen2.JPG", "/images/map/Bergen3.jpg", "/images/map/Bergen4.JPG"], caption: "Bergen, Norway", id: "bergen", mapLink: "/map/#bergen", categories: ["travel"] },
+  { photos: ["/images/map/Tromso1.jpg", "/images/map/Tromso2.jpg", "/images/map/Tromso3.JPG", "/images/map/Tromso4.JPG"], caption: "Tromsø, Norway", id: "tromso", mapLink: "/map/#tromso", categories: ["travel"] },
+  { photos: ["/images/map/Oslo1.JPG", "/images/map/Oslo2.jpg", "/images/map/Oslo3.JPG", "/images/map/Oslo4.JPG", "/images/map/Oslo5.jpg"], caption: "Oslo, Norway", id: "oslo", mapLink: "/map/#oslo", categories: ["travel"] },
+  { photos: ["/images/photography/reindeer1.jpg", "/images/photography/Bergen.jpg", "/images/photography/CoqAuVin.jpg", "/images/photography/MayaReindeer.jpg", "/images/photography/Fjords.jpg"], caption: "Christmas 2025 in Norway on film!", categories: ["travel", "film"] },
+  { photos: ["/images/map/Bonaire1.JPG", "/images/map/Bonaire2.JPG", "/images/map/Bonaire3.JPG", "/images/map/Bonaire4.JPG", "/images/map/Bonaire5.JPG", "/images/map/Bonaire6.JPG", "/images/map/Bonaire7.JPG", "/images/map/Bonaire8.JPG", "/images/map/Bonaire9.JPG"], caption: "Bonaire, Netherlands Antilles for momma's birthday", id: "bonaire", mapLink: "/map/#bonaire", categories: ["travel", "underwater"] },
+  { photos: ["/images/photography/CHD1.jpg", "/images/photography/CHD2.jpg", "/images/photography/CHD3.jpg", "/images/photography/CHD4.jpg", "/images/photography/CHD5.jpg", "/images/photography/CHD6.jpg", "/images/photography/CHD7.jpg", "/images/photography/CHD8.jpg", "/images/photography/CHD9.jpg"], caption: "My dad is an artist! Copper Head Designs is my dad's art business. He hand makes copper sculptures and here are just a few of his pieces! Check out more on his Facebook and Instagram pages @Copper_Head_Designs", categories: ["wildlife"] },
+  { photos: ["/images/photography/MercysFlowers1.jpg", "/images/photography/MercysFlowers2.jpg", "/images/photography/MercysFlowers3.png"], caption: "When I am visiting my parents back home I help out my favorite local florist, Mercy's Flowers!" },
+  { photos: ["/images/photography/TessCats1.jpg", "/images/photography/TessCats2.jpg"], caption: "My sister rescued two adorable cats in 2025 and I love them so so much!" },
+  { photos: ["/images/photography/TeaParty1.JPG", "/images/photography/TeaParty2.JPG", "/images/photography/TeaParty3.JPG", "/images/photography/TeaParty4.jpg", "/images/photography/TeaParty5.JPG", "/images/photography/TeaParty6.jpg"], caption: "As a way to celebrate some of the lovely women in my life, I hosted a tea party in late August 2025! We ate cake, had passionfruit martinis, and celebrated womanhood together!", categories: ["film"] },
+  { photos: ["/images/blog/Olympus1.JPG", "/images/blog/Olympus2.JPG", "/images/blog/Olympus3.JPG", "/images/blog/Olympus4.JPG"], caption: "Some of my favorite underwater shots from my Olympus TG-7!", id: "olympus-photos", categories: ["underwater", "wildlife", "science"] },
+  { photos: ["/images/photography/SafariFashion1.jpg", "/images/photography/SafariFashion2.png", "/images/photography/SafariFashion3.png"], caption: "Some fun shots from safari", categories: ["travel"] },
+  { photos: ["/images/map/Safari1.JPG", "/images/map/Safari2.JPG", "/images/map/Safari3.jpg", "/images/map/Safari4.jpg", "/images/map/Safari5.JPG", "/images/map/Safari6.jpg", "/images/map/Safari7.JPG", "/images/map/Safari8.jpg", "/images/map/Safari9.JPG", "/images/map/Safari10.JPG", "/images/map/Safari11.jpg", "/images/map/Safari12.jpg", "/images/map/Safari13.JPG"], caption: "Safari with mom in the Timbavati Reserve, South Africa", id: "timbavati", mapLink: "/map/#timbavati", categories: ["travel", "wildlife"] },
+  { photos: ["/images/photography/SASun1.JPG", "/images/photography/SASun2.JPG", "/images/photography/SASun3.JPG", "/images/photography/SASun4.JPG"], caption: "Sunrises and sunsets in South Africa", mapLink: "/map/#timbavati", categories: ["travel"] },
+  { photos: ["/images/blog/FilmInFaro1.JPG", "/images/blog/FilmInFaro3.JPG", "/images/blog/FilmInFaro4.JPG", "/images/blog/FilmInFaro5.JPG", "/images/blog/FilmInFaro6.JPG", "/images/blog/FilmInFaro7.JPG", "/images/blog/FilmInFaro8.JPG"], caption: "Film shots from Faro taken on my Konica FT-Motor!", id: "konica-faro", categories: ["film", "travel"] },
+  { photos: ["/images/map/Aix2.jpg", "/images/map/Aix3.jpg", "/images/map/Aix4.jpg", "/images/map/Aix5.jpg", "/images/map/Aix6.jpg", "/images/map/Aix7.jpg", "/images/map/Aix8.jpg", "/images/map/Aix1.jpg", "/images/photography/Aix9.jpg", "/images/photography/Aix10.jpg", "/images/photography/Aix11.jpg"], caption: "For spring break, my dad and I went to visit family in Aix for a few days and it was so so lovely!! We ate amazing food, explored the markets every morning, and spent the rest of our time with loved ones we hadn't seen in too long.", id: "aix", mapLink: "/map/#aix", categories: ["travel", "film"] },
+  { photos: ["/images/map/Sagres1.JPG", "/images/map/Sagres2.JPG"], caption: "During my master's studies I took a course to become a scientific diver in Sagres, Portugal", id: "sagres", mapLink: "/map/#sagres", categories: ["travel", "underwater", "science"] },
+  { photos: ["/images/map/Faro1.JPG", "/images/map/Faro2.JPG", "/images/map/Faro3.jpg"], caption: "Faro, Portugal", id: "faro", mapLink: "/map/#faro", categories: ["travel", "film"] },
+  { photos: ["/images/blog/Canon1.JPG", "/images/blog/Canon2.jpg", "/images/blog/Canon3.JPG", "/images/blog/Canon4.JPG", "/images/blog/Canon5.JPG"], caption: "Shots from my Canon Powershot SX150!", id: "canon-photos", categories: ["travel", "wildlife"] },  
+  { photos: ["/images/photography/Blitzingen1.JPG", "/images/photography/Blitzingen2.JPG", "/images/photography/Blitzingen3.JPG", "/images/photography/Blitzingen4.jpg", "/images/photography/Blitzingen5.JPG", "/images/photography/Blitzingen6.jpg"], caption: "A wonderful Swissmas Christmas! The four of us spent a week in a little chalet in the countryside of Switzerland, it was so magical!", id: "blitzingen", mapLink: "/map/#blitzingen", categories: ["travel", "film"] },
+  { photos: ["/images/photography/SwissAlps2.jpg", "/images/photography/SwissAlps1.JPG", "/images/photography/SwissAlps3.JPG", "/images/photography/SwissAlps4.JPG"], caption: "The Swiss Alps at Christmastime", mapLink: "/map/#blitzingen", categories: ["travel"] },
+  { photos: ["/images/photography/FaroFilm2.png", "/images/photography/FaroFilm1.png"], caption: "Film from Portugal", categories: ["travel", "film"] },
+  { photos: ["/images/map/Cartagena1.JPG", "/images/map/Cartagena2.jpg", "/images/map/Cartagena3.JPG"], caption: "My mom and I finished our trip to Colombia with a few days in Cartagena, where we went to jazz clubs, explored the emerald museum and shops, and ate plenty of delicious food.", id: "cartagena", mapLink: "/map/#cartagena", categories: ["travel"] },
+  { photos: ["/images/map/Bogota1.jpg", "/images/map/Bogota2.JPG", "/images/map/Bogota3.JPG", "/images/map/Bogota4.JPG"], caption: "After graduation, I joined my mom on one of her work trips to Colombia, where we spent the first several days in Bogota. After tagging along for her meetings, we explored the city including touring the Botero Museum, eating amazing food, and photographing the beautiful murals!", id: "bogota", mapLink: "/map/#bogota", categories: ["travel"] },
+  { photos: ["/images/photography/Grad1.JPG", "/images/photography/Grad2.JPG", "/images/photography/Grad3.JPG", "/images/photography/Grad4.JPG", "/images/photography/Grad5.JPG"], caption: "For my BS graduation from UCSD, I had so many loved ones come to celebrate me! It was such a special time, I got to show everyone my favorite beaches and restaurants and I truly felt so loved and supported!", id: "graduation", mapLink: "/map/#graduation", categories: ["travel"] },
+  { photos: ["/images/photography/Bday2024.1.JPG", "/images/photography/Bday2024.2.JPG", "/images/photography/Bday2024.3.JPG"], caption: "Dad's 60th birthday and my 22nd!", categories: ["travel"] },
+  { photos: ["/images/photography/IB1.JPG", "/images/photography/IB2.jpg", "/images/photography/IB3.JPG", "/images/photography/IB4.jpg", "/images/photography/IB5.JPG", "/images/photography/IB6.JPG"], caption: "We spent the rest of our time in Panama in Isla Bastimentos, sleeping in bungalows over the water, watching eagle rays swim by at dinner, snorkeling and reading all day, and we even went diving! We also saw sloths and really cool frogs.", id: "isla-bastimentos", mapLink: "/map/#isla-bastimentos", categories: ["travel", "underwater"] },
+  { photos: ["/images/photography/PanamaCity1.JPG", "/images/photography/PanamaCity2.JPG"], caption: "First stop on our spring break in Panama was Panama City!", id: "panama-city", mapLink: "/map/#panama-city", categories: ["travel"] },
+  { photos: ["/images/photography/Napa1.JPG", "/images/photography/Napa2.JPG", "/images/photography/Napa3.JPG", "/images/photography/Napa4.JPG", "/images/photography/Napa5.jpg", "/images/photography/Napa6.jpg", "/images/photography/Napa7.jpg"], caption: "Girls trip! I took my mom and sister on a girls trip to Napa Valley, where we had lovely tours of the wine country and did a 4am hot air balloon ride! This was such a special trip because as soon as we got off the hot air balloon, I received the email that I had been accepted to the graduate program at UAlg! It was a weekend of laughter and celebration!!", id: "napa", mapLink: "/map/#napa", categories: ["travel"] },
+  { photos: ["/images/photography/SDSunset1.jpg", "/images/photography/SDSunset2.jpg"], caption: "Sunsets in San Diego", categories: ["travel"] },
+  { photos: ["/images/photography/SeniorYear1.jpg", "/images/photography/SeniorYear2.jpg", "/images/photography/SeniorYear3.jpg", "/images/photography/SeniorYear4.JPG", "/images/photography/SeniorYear5.jpeg", "/images/photography/SeniorYear6.jpg"], caption: "Senior year at UCSD included a spring break trip to Panama with my family and Brynn, going home for a weekend to celebrate my dad's 60th and my 22nd birthdays, lots of shifts working at the Birch Aquarium, plenty of hours at the tide pools and beaches of La Jolla, a girls trip with my mom and sister to Napa Valley, a trip to see my grandpa in St. Petersburg, Florida, and lots of visits from my parents in SD. I enjoyed all my favorite restaurants from Creme de la Crepe to Dirty Birds, the Little Italy Farmers Market most Saturdays, Kobey's Swap Meet most Sundays, lots of lab work, baseball games (go Padres!), jazz nights, sailboat rides and lots of time with friends!", id: "senior-year", mapLink: "/map/#senior-year", categories: ["travel"] },
+  { photos: ["/images/photography/LJ1.jpg", "/images/photography/LJ2.jpg", "/images/photography/LJ3.jpg", "/images/photography/LJ4.jpg", "/images/photography/LJ5.jpg", "/images/photography/LJ6.jpg"], caption: "Between classes at Scripps, I loved to visit the tide pools of La Jolla!", id: "la-jolla", mapLink: "/map/#la-jolla", categories: ["travel", "underwater", "wildlife"] },
+  { photos: ["/images/photography/Choco1.jpg", "/images/photography/Choco2.jpg", "/images/photography/Choco3.jpg", "/images/photography/Choco4.jpg"], caption: "Chocolate, the light of my life, who passed away in November 2023 after 15 amazing years spent together.", categories: ["film"] },
+  { photos: ["/images/photography/Sedona1.JPG", "/images/photography/Sedona2.JPG", "/images/photography/Sedona3.JPG", "/images/photography/Sedona4.JPG"], caption: "To kick off senior year, my dad and I drove my car from Washington to San Diego! It was the best road trip ever. We stopped in Sedona to enjoy beautiful scenery and fun hikes.", id: "sedona", mapLink: "/map/#sedona", categories: ["travel"] },
+  { photos: ["/images/photography/GC1.JPG", "/images/photography/GC2.JPG", "/images/photography/GC3.JPG", "/images/photography/GC4.JPG", "/images/photography/GC5.jpg", "/images/photography/GC6.jpg"], caption: "To kick off my senior year at UCSD, my dad and I drove my car from Washington to San Diego! It was the best road trip ever. We stopped at the Grand Canyon and had a great time dressing up in fun hats and enjoying the view.", id: "grand-canyon", mapLink: "/map/#grand-canyon", categories: ["travel"] },
+  { photos: ["/images/photography/Huntley1.JPG", "/images/photography/Huntley2.JPG", "/images/photography/Huntley3.JPG", "/images/photography/Huntley4.JPG"], caption: "Some cute critters from the park back home", categories: ["wildlife"] },
+  { photos: ["/images/photography/Dubrovnik1.jpg", "/images/photography/Dubrovnik2.jpg", "/images/photography/Dubrovnik3.jpg", "/images/photography/Dubrovnik4.jpg", "/images/photography/Dubrovnik5.jpg", "/images/photography/Dubrovnik6.jpg"], caption: "Tess and I closed out our sister trip with a few days in Dubrovnik, exploring the old town and the beaches.", id: "dubrovnik", mapLink: "/map/#dubrovnik", categories: ["travel"] },
+  { photos: ["/images/photography/Vis1.jpg", "/images/photography/Vis2.JPG", "/images/photography/Vis3.JPG"], caption: "While in Hvar, Tess and I did a daytrip to Vis and explored the adorable little island!", id: "vis", mapLink: "/map/#vis", categories: ["travel"] },
+  { photos: ["/images/photography/Hvar1.JPG", "/images/photography/Hvar2.JPG", "/images/photography/Hvar3.jpg", "/images/photography/Hvar4.JPG"], caption: "My sister and I enjoyed a lovely week in Croatia together beginning in Hvar!", id: "hvar", mapLink: "/map/#hvar", categories: ["travel"] },
+  { photos: ["/images/map/Cephalonia1.jpg"], caption: "Scuba diving in Cephalonia, Greece!", id: "cephalonia", mapLink: "/map/#cephalonia", categories: ["travel", "underwater"] },
+  { photos: ["/images/photography/STConservation1.jpg", "/images/photography/STConservation2.jpg", "/images/photography/STConservation3.jpg", "/images/photography/STConservation4.JPG", "/images/photography/STConservation5.jpg", "/images/photography/STConservation6.jpg"], caption: "In July 2023, I spent a month volunteering with Wildlife Sense, working on their sea turtle conservation program! It was an incredible learning experience, helping locate and protect turtle nests, relocate endangered nests, help hatchlings to sea, and help with beach cleanups and beach mapping!", id: "argostoli", mapLink: "/map/#argostoli", categories: ["travel", "wildlife"] },
+  { photos: ["/images/photography/Greece1.jpg", "/images/photography/Greece2.jpg", "/images/photography/Greece3.jpg", "/images/photography/Greece4.JPG", "/images/photography/Greece5.jpg", "/images/photography/Greece6.JPG"], caption: "Scenes around Cephalonia island", mapLink: "/map/#cephalonia", categories: ["travel"] },
+  { photos: ["/images/photography/GreeceFriends1.JPG", "/images/photography/GreeceFriends2.jpg", "/images/photography/GreeceFriends3.JPG", "/images/photography/GreeceFriends4.JPG", "/images/photography/GreeceFriends5.jpg"], caption: "Friends in Greece", mapLink: "/map/#cephalonia", categories: ["travel"] },
+  { photos: ["/images/photography/JuniorYear1.jpg", "/images/photography/JuniorYear2.JPG", "/images/photography/JuniorYear3.jpg"], caption: "Junior year at UCSD started off with my semester abroad at UQ, and then in January I went back to regular classes in San Diego, living with my best friend and falling in love with the city all over again! Brynn, my family and I all visited Mexico for spring break, and my sister and best friend from home visited me for my birthday! It was a great year.", id: "junior-year", mapLink: "/map/#junior-year", },
+  { photos: ["/images/photography/Mexico1.jpg", "/images/photography/Mexico2.JPG", "/images/photography/Mexico3.jpg"], caption: "For spring break my junior year at UCSD, my family, Brynn and I all went to Cabo San Lucas and did a whale watching tour where we had the most incredible interaction with Humpback whales!", id: "cabo", mapLink: "/map/#cabo", categories: ["travel", "wildlife"] },
+  { photos: ["/images/map/JoeyMayaFiji.jpg", "/images/map/Fiji2.jpg"], caption: "Joey and I had a lovely trip to Fiji, where we went diving with sharks, did a lovely tour of the nearby village, and spent so much quality time together!", id: "fiji", mapLink: "/map/#fiji", categories: ["travel", "underwater"] },
+  { photos: ["/images/map/PortLincoln1.JPG", "/images/map/PortLincoln2.JPG", "/images/map/PortLincoln3.JPG", "/images/map/PortLincoln4.JPG"], caption: "Came for the great white sharks, stayed for the koalas. Port Lincoln, Australia", id: "port-lincoln", mapLink: "/map/#port-lincoln", categories: ["travel", "wildlife"] },
+  { photos: ["/images/photography/HeronFriends.jpg", "/images/photography/HeronFriends2.jpg", "/images/photography/HeronFriends3.jpg", "/images/photography/HeronFriends4.jpg", "/images/photography/HeronFriends5.jpg"], caption: "The real treasures of treasure (Heron) Island", id: "heron-friends", mapLink: "/map/#heron-friends", categories: ["travel"] },
+  { photos: ["/images/photography/Heron4.jpg", "/images/photography/Heron3.jpg", "/images/photography/Heron1.jpg", "/images/photography/Heron2.JPG", "/images/photography/Heron5.jpg", "/images/photography/Heron6.jpg"], caption: "We closed out our study abroad program with a bang on our last Marine Biology field trip to Heron Island (800m x 300m), where we spent over a week living at the research station. Between lectures and lab work, we snorkeled at least 3 times a day at sunrise, mid afternoon, and sunset. We swam with so many sharks, rays, nudibranchs, octopus, squid, guitarfish, eels, and so much more! My group studied the strength of crabs, comparing their body size and weight to the size and weight of coral rubble they were capable of lifting. It was one of the best weeks of my life.", id: "heron-island", mapLink: "/map/#heron-island", categories: ["travel", "underwater", "wildlife"] },
+  { photos: ["/images/photography/CG1.jpg", "/images/photography/CG2.JPG", "/images/photography/CG3.jpg", "/images/photography/CG4.jpg", "/images/photography/CG5.jpg", "/images/photography/CG6.jpg"], caption: "Our third and last Terrestrial Ecology field trip! This camping trip was stunning, again with lots of hiking and lectures on the riverbanks. Many more kangaroos and wallabies, stunning scenery, and amazing wildlife. A highlight was the thousands (honestly probably closer to a million) bats that flew over us every evening at dusk. The bats would leave the trees where they were sleeping all day to dip their bellies in the river, hang upside down again in the trees to drink, and eat all of the mosquitoes as they flew around. It was an incredible thing to witness!", id: "carnarvon-gorge", mapLink: "/map/#carnarvon-gorge", categories: ["travel", "wildlife"] },
+  { photos: ["/images/photography/Melbourne1.jpg", "/images/photography/Melbourne2.jpg", "/images/photography/Melbourne3.jpg", "/images/photography/Melbourne4.jpg", "/images/photography/Melbourne5.JPG", "/images/photography/Melbourne6.jpg"], caption: "During a long weekend in Australia, the girls and I went to Melbourne for a quick getaway! We explored the museums, flea markets, the university campus, and lots of good food and shopping!", id: "melbourne", mapLink: "/map/#melbourne", categories: ["travel"] },
+  { photos: ["/images/photography/NSI1.jpg", "/images/photography/NSI2.jpg", "/images/photography/NSI3.png", "/images/photography/NSI4.png", "/images/photography/NSI5.jpg"], caption: "Our first Marine Biology field trip during my study abroad in Australia was to Minjerribah (North Stradbroke Island)! We stayed at a lab and got to enjoy the beaches and tide pools between classes and research work. My group studied the ephemeral tide pools left by stingrays as they forage; specifically, we examined the prawn species that colonize the ephemeral tide pools. I also learned to do a cartwheel on the beach with Joey and Sophia, and that was a very special afternoon.", id: "north-stradbroke", mapLink: "/map/#north-stradbroke", categories: ["travel", "underwater", "wildlife"] },
+  { photos: ["/images/photography/Lamington2.png", "/images/photography/Lamington7.jpg"], caption: "5am sunrise bird watching at Lamington National Park, Australia", categories: ["travel"] },
+  { photos: ["/images/photography/Lamington1.jpg", "/images/photography/Lamington3.png", "/images/photography/Lamington4.png", "/images/photography/Lamington5.jpeg", "/images/photography/Lamington6.png", "/images/photography/Lamington8.jpg"], caption: "Another amazing Terrestrial Ecology field trip during my study abroad with lots of hiking, including stops at waterfalls in between our lectures.", id: "lamington", mapLink: "/map/#lamington", categories: ["travel", "wildlife"] },
+  { photos: ["/images/photography/Giraween2.JPG", "/images/photography/Girraween1.JPG", "/images/photography/Giraween3.JPG", "/images/photography/Giraween4.jpg", "/images/photography/Giraween5.JPG"], caption: "My study abroad program in Australia began in Girraween National Park for a three day field trip! It was an amazing start to my stay, Joey and I camped in a tent together, we saw the milky way, we hiked over 10km a day looking for plants and animals and learning about field sampling techniques! It was the first time I saw a wild kangaroo!", id: "giraween", mapLink: "/map/#giraween", categories: ["travel", "wildlife"] },
+  { photos: ["/images/photography/Florida1.jpg", "/images/photography/Florida2.jpg", "/images/photography/Florida3.jpg", "/images/photography/Florida4.jpg", "/images/photography/Florida5.jpg", "/images/photography/Florida6.jpg", "/images/photography/Florida7.jpg", "/images/photography/Florida8.jpg", "/images/photography/Florida9.jpg"], caption: "I grew up visiting my grandpa in Florida often, spending birthdays and spring breaks and summers at his condo in St. Petersburg. We always went to the pink palace (the Don CeSar) for ice cream sundaes, went kayaking in the mangroves of Fort De Soto with manatees, spent long afternoons on the beach looking for shells and horseshoe crabs, watched dolphins swim by from his backyard, chased lizards around at sunset, spent days at the pool, went on airplane rides with my grandpa, and more and more. I really cherish this time with my family and St. Petersburg will always have a special place in my heart.", id: "st-pete", mapLink: "/map/#st-pete", categories: ["travel", "film"] },
 ];
-
-// Extract year from dates string
-function extractYear(datesStr) {
-  if (!datesStr) return null;
-  const match = datesStr.match(/\b(20\d{2}|19\d{2})\b/);
-  return match ? parseInt(match[1]) : null;
-}
-
-// Assign year to each location
-locations.forEach(loc => {
-  loc._year = extractYear(loc.dates || '') || 2005;
-});
-
-// Expose the raw data so other pages (like the boat page stats)
-// can read it without needing Leaflet or a #dive-map element.
-window.travelLocations = locations;
-
-// Only build the actual Leaflet map if this page has a #dive-map element.
-if (document.getElementById('dive-map')) {
-const map = L.map('dive-map', { minZoom: 2 }).setView([20, 10], 2);
-
-L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}', {
-  attribution: '&copy; Esri &copy; National Geographic',
-  maxZoom: 16
-}).addTo(map);
-
-function makeIcon(type, highlighted, dimmed) {
-  const color = highlighted ? '#ffa44a' : dimmed ? 'rgba(100,100,100,0.3)' : '#1a1a1a';
-  if (type === 'dive') {
-    return L.divIcon({
-      html: `<i class="fas fa-anchor" style="font-size:18px; color:${color};"></i>`,
-      className: 'map-icon',
-      iconSize: [20, 20],
-      iconAnchor: [10, 10],
-      popupAnchor: [0, -10]
-    });
-  } else {
-    return L.divIcon({
-      html: `<i class="fas fa-map-marker-alt" style="font-size:22px; color:${color};"></i>`,
-      className: 'map-icon',
-      iconSize: [20, 26],
-      iconAnchor: [10, 26],
-      popupAnchor: [0, -26]
-    });
-  }
-}
-
-function buildPopup(loc) {
-  let html = `<div class="popup-title">${loc.name}, ${loc.country}</div>`;
-  if (loc.dates) html += `<div class="popup-dates">${loc.dates}</div>`;
-  if (loc.description) html += `<div class="popup-description">${loc.description}</div>`;
-  if (loc.species && loc.species.length > 0) {
-    html += `<div class="popup-species"><strong>Species highlights:</strong><ul>`;
-    loc.species.forEach(s => html += `<li>${s}</li>`);
-    html += `</ul></div>`;
-  }
-  if (loc.photos && loc.photos.length > 0) {
-    const count = loc.photos.length;
-    const link = loc.galleryId ? `/photography/#${loc.galleryId}` : null;
-    html += link ? `<a href="${link}" class="popup-stack-link">` : '<div>';
-    html += `<div class="popup-stack ${count > 1 ? 'is-stack' : ''}">
-      <img src="${loc.photos[0]}" alt="" class="popup-stack-img">
-      ${count > 1 ? `<span class="popup-stack-badge">+${count - 1}</span>` : ''}
-    </div>`;
-    if (link) html += `<div class="popup-gallery-link">View in gallery →</div>`;
-    html += link ? '</a>' : '</div>';
-  }
-  // link back to the dive log, filtered to this location, if this is a dive site
-  // that has matching rows in divelog.csv (see diveLogLocation on the location object)
-  if (loc.type === 'dive' && loc.diveLogLocation) {
-    const url = '/dive-log/?location=' + encodeURIComponent(loc.diveLogLocation.toLowerCase());
-    html += `<div class="popup-gallery-link" style="margin-top:6px;"><a href="${url}"><i class="fas fa-book"></i> View dives in log →</a></div>`;
-  }
-  return html;
-}
-
-const markerObjects = [];
-let currentTypeFilter = 'all';
-let currentYearFilter = 2026;
-let pathLayer = null;
-let animationInterval = null;
-let isAnimating = false;
-
-locations.forEach(loc => {
-  const marker = L.marker(loc.coords, { icon: makeIcon(loc.type, false, false) })
-    .bindPopup(buildPopup(loc), { maxWidth: 300, autoPan: true, autoPanPadding: [20, 20] })
-    .addTo(map);
-
-  marker.on('popupopen', () => {
-    markerObjects.forEach(m => {
-      const isMatch = m.country === loc.country;
-      m.marker.setIcon(makeIcon(m.type, isMatch, !isMatch));
-    });
-  });
-
-  markerObjects.push({ marker, type: loc.type, country: loc.country, year: loc._year, galleryId: loc.galleryId });
-});
-
-map.on('popupclose', () => {
-  markerObjects.forEach(m => {
-    m.marker.setIcon(makeIcon(m.type, false, false));
-  });
-});
-
-function applyFilters() {
-  markerObjects.forEach(({ marker, type: markerType, year }) => {
-    const passesType = currentTypeFilter === 'all' || markerType === currentTypeFilter;
-    const passesYear = year <= currentYearFilter;
-    if (passesType && passesYear) {
-      marker.addTo(map);
-    } else {
-      map.removeLayer(marker);
-    }
+ 
+let currentTile = 0;
+let currentPhoto = 0;
+let activeFilter = 'all';
+let searchQuery = '';
+ 
+function getFilteredTiles() {
+  return tiles.filter(tile => {
+    const matchesFilter = activeFilter === 'all' || (tile.categories && tile.categories.includes(activeFilter));
+    const caption = typeof tile.caption === 'string' ? tile.caption.toLowerCase() : '';
+    const matchesSearch = !searchQuery || caption.includes(searchQuery.toLowerCase());
+    return matchesFilter && matchesSearch;
   });
 }
-
-// Timeline slider
-window.onSliderChange = function(val) {
-  currentYearFilter = parseInt(val);
-  document.getElementById('year-display').textContent = val;
-  applyFilters();
-};
-
-// Animate journey
-window.animateJourney = function() {
-  if (isAnimating) {
-    clearInterval(animationInterval);
-    isAnimating = false;
-    document.getElementById('animate-btn').innerHTML = '<i class="fas fa-play"></i> Animate journey';
+ 
+function renderGrid(animate) {
+  const grid = document.getElementById('photo-grid');
+  grid.innerHTML = '';
+  const filtered = getFilteredTiles();
+  const noResults = document.getElementById('gallery-no-results');
+  if (filtered.length === 0) {
+    if (noResults) noResults.style.display = 'block';
     return;
   }
-
-  const years = [...new Set(locations.map(l => l._year))].sort();
-  let i = 0;
-  currentYearFilter = years[0];
-  document.getElementById('year-slider').value = years[0];
-  document.getElementById('year-display').textContent = years[0];
-  applyFilters();
-
-  isAnimating = true;
-  document.getElementById('animate-btn').innerHTML = '<i class="fas fa-stop"></i> Stop';
-
-  animationInterval = setInterval(() => {
-    i++;
-    if (i >= years.length) {
-      clearInterval(animationInterval);
-      isAnimating = false;
-      document.getElementById('animate-btn').innerHTML = '<i class="fas fa-play"></i> Animate journey';
-      return;
+  if (noResults) noResults.style.display = 'none';
+  filtered.forEach((tile, filteredIndex) => {
+    const tileIndex = tiles.indexOf(tile);
+    const div = document.createElement('div');
+    div.className = 'photo-tile' + (tile.photos.length > 1 ? ' is-stack' : '') + (tile.size ? ' size-' + tile.size : '');
+    if (tile.id) div.id = tile.id;
+    const img = document.createElement('img');
+    img.src = tile.photos[0];
+    img.alt = '';
+    div.appendChild(img);
+    if (tile.photos.length > 1) {
+      const badge = document.createElement('span');
+      badge.className = 'stack-badge';
+      badge.textContent = '+' + (tile.photos.length - 1);
+      div.appendChild(badge);
     }
-    currentYearFilter = years[i];
-    document.getElementById('year-slider').value = years[i];
-    document.getElementById('year-display').textContent = years[i];
-    applyFilters();
-  }, 800);
-};
-
-// Type filter
-window.filterMap = function(type) {
-  currentTypeFilter = type;
-  ['all', 'dive', 'visit'].forEach(t => {
-    const btn = document.getElementById('btn-' + t);
-    if (btn) {
-      btn.style.background = t === type ? '#1A4A5C' : 'rgba(26,74,92,0.2)';
-      btn.style.color = t === type ? '#fff' : '#1A4A5C';
-    }
+    div.addEventListener('click', () => openModal(tileIndex));
+    grid.appendChild(div);
   });
-  applyFilters();
-};
-
-// Counter
-const countries = new Set(locations.map(l => l.country));
-const oceansVisited = new Set(locations.map(l => l.ocean).filter(Boolean));
-
-function parseDiveLogCSV(text) {
-  const lines = text.trim().split('\n');
-  return lines.slice(1).map(line => {
-    const cols = [];
-    let inQuote = false;
-    let cur = '';
-    for (let i = 0; i < line.length; i++) {
-      const ch = line[i];
-      if (ch === '"') { inQuote = !inQuote; }
-      else if (ch === ',' && !inQuote) { cols.push(cur.trim()); cur = ''; }
-      else { cur += ch; }
-    }
-    cols.push(cur.trim());
-    return cols;
-  }).filter(row => row[0] && row[0].trim() !== '');
 }
-
-function updateMapCounter(diveSiteCount) {
-  const el = document.getElementById('map-counter');
-  const sitesLabel = diveSiteCount != null ? diveSiteCount : '…';
-  if (el) el.innerHTML = `<strong>${countries.size}</strong> countries &nbsp;·&nbsp; <strong>${oceansVisited.size}</strong> oceans &nbsp;·&nbsp; <strong>${sitesLabel}</strong> dive sites`;
-}
-
-updateMapCounter(null);
-
-// Dive site count now comes from the actual dive log's unique Site
-// names, matching the boat page, instead of the map's own pin data.
-fetch('/assets/data/divelog.csv')
-  .then(r => r.text())
-  .then(text => {
-    const rows = parseDiveLogCSV(text);
-    const uniqueSites = new Set(rows.map(row => row[2]).filter(Boolean));
-    updateMapCounter(uniqueSites.size);
-  })
-  .catch(err => {
-    console.error('Could not load dive log for site count:', err);
+ 
+window.setGalleryFilter = function(filter) {
+  activeFilter = filter;
+  document.querySelectorAll('.gallery-filter-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.filter === filter);
   });
-
-if (window.location.hash) {
-  const id = window.location.hash.slice(1);
-  const loc = locations.find(l => l.galleryId === id);
-  if (loc) {
-    map.setView(loc.coords, 8);
-    const found = markerObjects.find(m => m.galleryId === id);
-    if (found) {
-      setTimeout(() => found.marker.openPopup(), 350);
-    }
+  renderGrid(true);
+};
+ 
+window.searchGallery = function(query) {
+  searchQuery = query;
+  renderGrid(false);
+};
+ 
+function openModal(tileIndex) {
+  currentTile = tileIndex;
+  currentPhoto = 0;
+  updateModal();
+  document.getElementById('photo-modal').classList.add('open');
+}
+ 
+function closeModal() {
+  document.getElementById('photo-modal').classList.remove('open');
+}
+ 
+function navModal(direction) {
+  const photos = tiles[currentTile].photos;
+  currentPhoto = (currentPhoto + direction + photos.length) % photos.length;
+  updateModal();
+}
+ 
+function updateModal() {
+  const tile = tiles[currentTile];
+  const captionEl = document.getElementById('modal-caption');
+  if (captionEl) captionEl.innerHTML = typeof tile.caption === 'string' ? tile.caption : '';  document.getElementById('modal-img').style.backgroundImage = "url('" + tile.photos[currentPhoto] + "')";
+  const multi = tile.photos.length > 1;
+  document.getElementById('modal-counter').textContent = multi ? (currentPhoto + 1) + ' / ' + tile.photos.length : '';
+  document.querySelector('.modal-prev').style.display = multi ? 'block' : 'none';
+  document.querySelector('.modal-next').style.display = multi ? 'block' : 'none';
+  const mapLinkEl = document.getElementById('modal-map-link');
+  if (mapLinkEl) {
+    if (tile.mapLink) { mapLinkEl.href = tile.mapLink; mapLinkEl.style.display = 'block'; }
+    else { mapLinkEl.style.display = 'none'; }
   }
 }
+ 
+document.addEventListener('keydown', (e) => {
+  if (!document.getElementById('photo-modal').classList.contains('open')) return;
+  if (e.key === 'Escape') closeModal();
+  if (e.key === 'ArrowLeft') navModal(-1);
+  if (e.key === 'ArrowRight') navModal(1);
+});
+ 
+(function() {
+  let touchStartX = 0;
+  let touchStartY = 0;
+  const modalEl = document.getElementById('photo-modal');
+  if (!modalEl) return;
+  modalEl.addEventListener('touchstart', e => {
+    touchStartX = e.touches[0].clientX;
+    touchStartY = e.touches[0].clientY;
+  }, { passive: true });
+  modalEl.addEventListener('touchend', e => {
+    if (!document.getElementById('photo-modal').classList.contains('open')) return;
+    const dx = e.changedTouches[0].clientX - touchStartX;
+    const dy = e.changedTouches[0].clientY - touchStartY;
+    if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 40) {
+      navModal(dx < 0 ? 1 : -1);
+    }
+  }, { passive: true });
+})();
+ 
+renderGrid(true);
+ 
+if (window.location.hash) {
+  const id = window.location.hash.slice(1);
+  const tileIndex = tiles.findIndex(t => t.id === id);
+  if (tileIndex !== -1) openModal(tileIndex);
 }
