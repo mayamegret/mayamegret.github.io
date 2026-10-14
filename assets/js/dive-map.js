@@ -380,7 +380,7 @@ const locations = [
     dates: "September 17-19th, 2023",
     description: "To kick off senior year, my dad and I drove my car from Washington to San Diego! It was the best road trip ever. We stopped at the Grand Canyon and had a great time dressing up in fun hats and enjoying the view.",
     species: [],
-    photos: ["/images/photography/GC1.JPG", "/images/photography/GC2.JPG", "/images/photography/GC3.JPG", "/images/photography/GC4.JPG"],
+    photos: ["/images/photography/GC1.JPG", "/images/photography/GC2.JPG", "/images/photography/GC3.JPG", "/images/photography/GC4.JPG", "/images/photography/GC5.jpg", "/images/photography/GC6.jpg"],
     galleryId: "grand-canyon"
   },
   {
@@ -759,7 +759,7 @@ const locations = [
     species: [
       "Blue dragon nudibranch <em>(Pteraeolidia semperi)</em>",
       "Frogfish <em>(Antennariidae)</em>",
-      "Whitetip reef shark <em>(Triaenodon obesus)</em>",
+      "Blacktip reef shark <em>(Carcharhinus melanopterus)</em>",
       "Spinner dolphin <em>(Stenella longirostris)</em>",
       "Spotted eagle ray <em>(Aetobatus narinari)</em>"
     ],
@@ -804,7 +804,7 @@ const locations = [
   coords: [21.40, -157.95],
   type: "visit",
   dates: "May - July 2026",
-  description: "My first two months on the island and my friends and I have done lots of diving, hiking, dancing, beaching, and everything in between! From beach days with Riley to diving in North Shore with Callum and Josiah to long work days on the boat with Captain D to hiking to waterfalls with Maycey and Rylie (and Poko of course) to seeing Royce Fisherman play live!",
+  description: "My first two months on the island and my friends and I have done lots of diving, hiking, dancing, beaching, and everything in between! From beach days with Rylie to diving in North Shore with Callum and Josiah to long work days on the boat with Captain D to hiking to waterfalls with Maycey and Rylie (and Poko of course) to seeing Royce Fisherman play live!",
   species: [],
   photos: ["/images/photography/HawaiiFriends1.jpg", "/images/photography/HawaiiFriends2.jpg", "/images/photography/HawaiiFriends3.jpg", "/images/photography/HawaiiFriends4.jpg", "/images/photography/HawaiiFriends5.jpg"],
   galleryId: "hawaii-friends"
