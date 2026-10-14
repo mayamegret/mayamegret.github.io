@@ -530,15 +530,16 @@ const locations = [
     species: [],
     photos: []
   },
-  {
+   {
     name: "Edinburgh",
     country: "Scotland",
     coords: [55.95, -3.19],
     type: "visit",
     dates: "December 31st, 2024 - January 1st, 2025",
-    description: "We took a train down to Edinburgh for New Years Eve where we explored the city and celebrated ringing in 2025 together. We went back to Dundee for New Years feast with her family before I headed down to London with my parents.",
+    description: "After spending Christmas in Switzerland with my family, I went to visit Bella in Scotland for New Years! I spent a week on her beautiful farm in Dundee with her family, eating delicious meals and driving around looking for Highland Cows. Bella and I took the train down to Edinburgh for NYE and had a spectacular end to the year.",
     species: [],
-    photos: []
+    photos: ["/images/photography/Scotland1.jpg", "/images/photography/Scotland2.jpg", "/images/photography/Scotland3.JPG"],
+    galleryId: "scotland"
   },
   {
     name: "London",
@@ -546,9 +547,10 @@ const locations = [
     coords: [51.51, -0.13],
     type: "visit",
     dates: "January 2-6th, 2025",
-    description: "Before heading back to Portugal for the last semester of my masters courses, my parents and I took the train from Edinburgh to London where we spent a few days exploring the city! We took the ferry to Greenwich, we ate amazing food, and shopped til we dropped!",
+    description: "To end our European holidays, my parents and I met up in Edinburgh to catch the train down to London where we spent a few days exploring together! We took the ferry to Greenwich, exploring Notting Hill, ate amazing Indian food, and drank lots of hot chocolate. It was a great way to kick off the year!",
     species: [],
-    photos: []
+    photos: ["/images/photography/London1.jpg", "/images/photography/London2.JPG", "/images/photography/London3.jpg"],
+    galleryId: "london"
   },
   {
     name: "Sagres",
