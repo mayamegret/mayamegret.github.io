@@ -149,6 +149,17 @@ const locations = [
     photos: []
   },
   {
+  name: "Brisbane",
+  country: "Australia",
+  coords: [-27.4975, 153.0137],
+  type: "visit",
+  dates: "August-November, 2022",
+  description: "I studied abroad for a semester at UQ in Brisbane, Australia!",
+  species: [],
+  photos: ["/images/photography/Brisbane1.jpg", "/images/photography/Brisbane2.jpg", "/images/photography/Brisbane3.jpg"],
+  galleryId: "brisbane"
+},
+  {
     name: "Girraween National Park",
     country: "Australia",
     coords: [-28.88, 151.92],
@@ -274,6 +285,17 @@ const locations = [
     galleryId: "port-lincoln"
   },
   {
+  name: "Sydney",
+  country: "Australia",
+  coords: [-33.8688, 151.2093],
+  type: "visit",
+  dates: "November 22-26, 2022",
+  description: "",
+  species: [],
+  photos: ["/images/photography/Sydney1.jpg", "/images/photography/Sydney2.jpg", "/images/photography/Sydney3.jpg", "/images/photography/Sydney4.jpg"],
+  galleryId: "sydney"
+},
+  {
     name: "Pacific Harbor, Fiji",
     country: "Fiji",
     coords: [-18.24, 178.07],
@@ -314,6 +336,17 @@ const locations = [
     photos: ["/images/photography/Mexico1.jpg", "/images/photography/Mexico2.JPG", "/images/photography/Mexico3.jpg"],
     galleryId: "cabo"
   },
+  {
+  name: "San Francisco",
+  country: "USA",
+  coords: [37.7749, -122.4194],
+  type: "visit",
+  dates: "May 12-15 2023",
+  description: "San Francisco with mom.",
+  species: [],
+  photos: ["/images/photography/SF2.jpg", "/images/photography/SF3.JPG", "/images/photography/SF4.jpg"],
+  galleryId: "san-francisco"
+},
   {
     name: "Argostoli",
     country: "Greece",
@@ -372,6 +405,28 @@ const locations = [
     photos: ["/images/photography/Dubrovnik1.jpg", "/images/photography/Dubrovnik2.jpg", "/images/photography/Dubrovnik3.jpg", "/images/photography/Dubrovnik4.jpg", "/images/photography/Dubrovnik5.jpg", "/images/photography/Dubrovnik6.jpg"],
     galleryId: "dubrovnik"
   },
+  {
+  name: "Great Smoky Mountains",
+  country: "USA",
+  coords: [35.6118, -83.4895],
+  type: "visit",
+  dates: "September 10-12th, 2023",
+  description: "Dad and I stopped in the Smoky Mountains for a few days on our roadtrip!",
+  species: [],
+  photos: ["/images/photography/Tennessee1.jpg", "/images/photography/Tennessee2.jpg"],
+  galleryId: "smoky-mountains"
+},
+  {
+  name: "Santa Fe",
+  country: "USA",
+  coords: [35.687, -105.9378],
+  type: "visit",
+  dates: "September 15-17th, 2023",
+  description: "Dad and I stopped here for a few days on our roadtrip.",
+  species: [],
+  photos: ["/images/photography/SantaFey1.jpg", "/images/photography/SantaFey2.jpg", "/images/photography/SantaFey3.jpg"],
+  galleryId: "santa-fe"
+},
   {
     name: "Grand Canyon",
     country: "USA",
