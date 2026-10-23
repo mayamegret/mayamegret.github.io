@@ -67,7 +67,7 @@ Dive #,Date (yyyy-mm-dd),Site,Location,Dive Type,Max depth (m),Average depth (m)
 115,2026-02-20,Witch's Hat,"Závora, Mozambique",Thesis Quadrat,13.5,,41,44,Air,28,28,5,Surge,5,1.5,Steel,Nakia,"1x Octopus, 1x Hypselodoris pulchella"
 116,2026-02-21,Sponge City,"Závora, Mozambique",Thesis Belt transect,22.9,,39,43,Air,28,28,7,Surge,5,1.5,Steel,"Nakia, Ed",1x Octopus
 117,2026-02-21,Area 51,"Závora, Mozambique",Thesis Belt transect,15.1,,51,55,Air,27,28,8,Surge,5,1.5,Steel,"Nakia, Ed",2x mating Nembrotha aurea
-118,2026-02-21,Witch's Hat,"Závora, Mozambique",Thesis Belt transect/Last thesis dive!,14.2,,44,50,Air,28,28,10,Surge,5,1.5,Steel,"Nakia, Ed","1x Tenellia sp. 1 undescribed, "
+118,2026-02-21,Witch's Hat,"Závora, Mozambique",Thesis Belt transect/Last thesis dive!,14.2,,44,50,Air,28,28,10,Surge,5,1.5,Steel,"Nakia, Ed",1x Tenellia sp. 1 undescribed
 119,2026-02-23,Deans,"Závora, Mozambique",Fun dive,31.6,,17,28,Air,27,28,4,Surge,no wetsuit!,0,Steel,"Em, Joe, Nakia, Ed",
 120,2026-02-23,Witch's Hat,"Závora, Mozambique",Fun dive/Last dive in Mozambique!,15.6,,45,54,Air,28,28,10,Light,no wetsuit!,0,Steel,"Nakia, Ed","1x Decumbent Spanish Dancer (baby!!), 2x Coryphellina exoptata"
 121,2026-05-24,Nautilus Reef,"Honolulu, O'ahu, Hawai'i",Divemaster training,12.8,,36,41,Air,26,27,30,None,5 (new wetsuit!),3,Aluminum,"Ed, John, Courtney",1x Day octopus
@@ -158,3 +158,7 @@ Dive #,Date (yyyy-mm-dd),Site,Location,Dive Type,Max depth (m),Average depth (m)
 206,2026-10-04,"Kewalo Pipe, Horseshoe Reef","Honolulu, O'ahu, Hawai'i",Professional,18.5,13.5,39,43,Air,26,27,30,Surge,5,3,Aluminum,,"1x Eagle Ray, 9x Hawaiian green turtle, 4x Moray eel"
 207,2026-10-12,Kewalo Pipe,"Honolulu, O'ahu, Hawai'i",Professional,15.5,10.3,36,41,Air,26,27,15,Surge,5,3,Aluminum,,"4x Hawaiian green turtle, 1x Moray eel, 1x Imperial nudibranch"
 208,2026-10-12,"Kewalo Pipe, Horseshoe Reef","Honolulu, O'ahu, Hawai'i",Professional,18.3,12.9,37,43,Air,26,27,20,Surge,5,3,Aluminum,,"10x Hawaiian green turtle, 1x Moray eel"
+209,2026-10-19,"Kewalo Pipe, Horseshoe Reef","Honolulu, O'ahu, Hawai'i",Fun,19.2,14.0,35,39,Air,26,27,15,Surge,5,3,Aluminum,"Evan, Kyle","2x Eagle Ray, 7x Hawaiian green turtle, 2x Moray eel"
+210,2026-10-19,"Kewalo Pipe, Horseshoe Reef","Honolulu, O'ahu, Hawai'i",Fun,17.2,13.2,37,42,Air,26,27,15,Surge,5,3,Aluminum,"Evan, Kyle","1x Eagle Ray, 6x Hawaiian green turtle, "
+211,2026-10-22,"Kewalo Pipe, Horseshoe Reef","Honolulu, O'ahu, Hawai'i",Professional,18.3,14.5,44,49,Air,26,27,20,Surge,5,3,Aluminum,,"1x Day octopus, 10x Hawaiian green turtle, 4x Moray eel"
+212,2026-10-22,"Kewalo Pipe, Horseshoe Reef","Honolulu, O'ahu, Hawai'i",Professional,17.4,13.1,42,48,Air,26,27,15,Surge,5,3,Aluminum,,1x Dragon eel
