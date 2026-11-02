@@ -35,6 +35,20 @@ const locations = [
     photos: []
   },
   {
+    name: "Cannon Beach",
+    country: "USA",
+    coords: [45.8918, -123.9615],
+    type: "visit",
+    dates: "August 2010",
+    ocean: "Pacific",
+    description: "My family did a road trip from San Francisco to northern Oregon in 2010. We rented a convertible and it was so cold but so fun! I specifically remember singing Party in the U.S.A. while we drove across the Golden Gate Bridge, driving through the trees in the redwood forest, finding banana slugs, long walks on the beach, rolling down the sand dunes at Cannon Beach and still finding sand in my pockets weeks later, sorting through all the sea glass we found, kayaking in the kelp forests, and riding dune buggies in the sand dunes. It was a great trip.",
+    species: [
+      "Pacific banana slug <em>(Ariolimax columbianus)</em>",
+      "Bull kelp <em>(Nereocystis luetkeana)</em>"
+    ],
+    photos: []
+  },
+  {
     name: "Belize",
     country: "Belize",
     coords: [17.25, -88.77],
@@ -66,6 +80,16 @@ const locations = [
     photos: []
   },
   {
+    name: "Chicago",
+    country: "USA",
+    coords: [41.8789, -87.6359],
+    type: "visit",
+    dates: "October 2016",
+    description: "For every year that I was in high school, my mom and I would spend one weekend in October on a girls' trip. Our first trip was to Chicago, where we enjoyed deep dish pizza, going up the Sears Tower, and seeing Coldplay live in concert.",
+    species: [],
+    photos: []
+  },
+  {
     name: "Santorini",
     country: "Greece",
     coords: [36.3932, 25.4615],
@@ -73,6 +97,17 @@ const locations = [
     dates: "August 5th-19th, 2017",
     ocean: "Atlantic",
     description: "My family flew into Santorini and explored the island for a few days before hopping on a boat and sailing around the Aegean Sea for a week. We stopped in Paros, Koufonisia, Irakleia, and many islands in between. We went snorkeling in the mornings and explored the islands in the afternoons. We finished with a few days in Athens before heading back home.",
+    species: [],
+    photos: []
+  },
+   {
+    name: "Seattle",
+    country: "USA",
+    coords: [47.6062, -122.3321],
+    type: "visit",
+    dates: "October 2017",
+    ocean: "Pacific",
+    description: "For our girls' trip during my sophomore year, my mom and I went to Seattle for the long weekend. We enjoyed the Chihuly Garden and Glass, Pike Place Market, and exploring a new city!",
     species: [],
     photos: []
   },
