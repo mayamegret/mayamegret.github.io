@@ -293,7 +293,7 @@ article.page {
         <th data-col="10">Bottom Temp (°C)</th>
         <th data-col="12">Vis (m)</th>
         <th data-col="13">Current</th>
-        <th data-col="18">Key Species</th>
+        <th data-col="17">Key Species</th>
       </tr>
     </thead>
     <tbody id="dive-tbody"></tbody>
@@ -390,7 +390,7 @@ function renderTable(dives) {
       <td>${row[10] || ''}</td>
       <td>${row[12] || ''}</td>
       <td>${row[13] || ''}</td>
-      <td style="max-width:200px">${row[18] || ''}</td>
+      <td style="max-width:200px">${row[17] || ''}</td>
     `;
     tbody.appendChild(tr);
   });
@@ -401,7 +401,7 @@ function applyFilters() {
   const typeFilter = document.getElementById('dive-type-filter').value.toLowerCase();
   const locFilter = document.getElementById('dive-location-filter').value.toLowerCase();
   let filtered = allDives.filter(row => {
-    const matchSearch = !search || [row[2], row[3], row[18]].some(v => (v || '').toLowerCase().includes(search));
+    const matchSearch = !search || [row[2], row[3], row[17]].some(v => (v || '').toLowerCase().includes(search));
     const matchType = !typeFilter || (typeFilter === 'night' ? isNightDive(row[4]) : typeFilter === 'wreck' ? isWreckDive(row[4]) : classifyDiveType(row[4]).toLowerCase() === typeFilter.toLowerCase());
     const matchLoc = !locFilter || (row[3] || '').toLowerCase() === locFilter;
     return matchSearch && matchType && matchLoc;
