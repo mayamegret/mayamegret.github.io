@@ -236,6 +236,11 @@ article.page {
   min-width: 220px;
 }
 
+/* keep the page itself from sliding sideways on phones */
+html, body {
+  overflow-x: hidden;
+}
+
 /* tighter table on phones so there is less sideways scrolling */
 @media (max-width: 700px) {
   .dive-table { font-size: 0.78rem; }
@@ -484,34 +489,83 @@ document.querySelectorAll('#main, article.page, .page__inner-wrap, .page__conten
   el.style.float = 'none';
 });
 
-// Lock touch scrolling inside the table to one direction at a time, so a
-// vertical swipe doesn't drift the table sideways (and vice versa).
+// Touch scrolling inside the table moves along one direction only.
+// The first few pixels of a swipe decide the direction (sideways or up/down),
+// then the swipe is handled here instead of by the browser, so it can't drift
+// diagonally. A quick flick keeps gliding and slows down, like normal scrolling.
+// Scrolling up/down past the top or bottom of the table carries on to the page.
 (function () {
   const wrap = document.getElementById('dive-table-wrap');
-  let startX = 0, startY = 0, axis = null, lockX = 0, lockY = 0, idleTimer = null;
+  let startX = 0, startY = 0, lastX = 0, lastY = 0, lastT = 0;
+  let posX = 0, posY = 0, axis = null, vel = 0, raf = null;
+
+  function stopGlide() {
+    if (raf) { cancelAnimationFrame(raf); raf = null; }
+  }
+
+  function scrollAlong(d) {
+    if (axis === 'x') {
+      const max = wrap.scrollWidth - wrap.clientWidth;
+      posX = Math.min(Math.max(posX + d, 0), max);
+      wrap.scrollLeft = posX;
+      return;
+    }
+    const max = wrap.scrollHeight - wrap.clientHeight;
+    const target = posY + d;
+    let spill = 0;
+    if (target < 0) { posY = 0; spill = target; }
+    else if (target > max) { posY = max; spill = target - max; }
+    else { posY = target; }
+    wrap.scrollTop = posY;
+    if (spill) window.scrollBy({ top: spill, behavior: 'instant' });
+  }
 
   wrap.addEventListener('touchstart', e => {
-    startX = e.touches[0].clientX;
-    startY = e.touches[0].clientY;
+    stopGlide();
+    if (e.touches.length !== 1) { axis = 'multi'; return; }
+    const t = e.touches[0];
+    startX = lastX = t.clientX;
+    startY = lastY = t.clientY;
+    lastT = performance.now();
+    posX = wrap.scrollLeft;
+    posY = wrap.scrollTop;
     axis = null;
-    clearTimeout(idleTimer);
+    vel = 0;
   }, { passive: true });
 
   wrap.addEventListener('touchmove', e => {
-    if (axis) return;
-    const dx = Math.abs(e.touches[0].clientX - startX);
-    const dy = Math.abs(e.touches[0].clientY - startY);
-    if (dx < 6 && dy < 6) return;
-    axis = dx > dy ? 'x' : 'y';
-    lockX = wrap.scrollLeft;
-    lockY = wrap.scrollTop;
-  }, { passive: true });
+    if (axis === 'multi' || e.touches.length !== 1) return; // leave pinch-zoom alone
+    const t = e.touches[0];
+    e.preventDefault();
+    if (!axis) {
+      const dx = Math.abs(t.clientX - startX);
+      const dy = Math.abs(t.clientY - startY);
+      if (dx < 6 && dy < 6) return;
+      axis = dx > dy ? 'x' : 'y';
+    }
+    const now = performance.now();
+    const d = axis === 'x' ? lastX - t.clientX : lastY - t.clientY;
+    scrollAlong(d);
+    const dt = Math.max(now - lastT, 1);
+    vel = 0.8 * (d / dt) + 0.2 * vel;
+    lastX = t.clientX;
+    lastY = t.clientY;
+    lastT = now;
+  }, { passive: false });
 
-  wrap.addEventListener('scroll', () => {
-    if (axis === 'y' && wrap.scrollLeft !== lockX) wrap.scrollLeft = lockX;
-    if (axis === 'x' && wrap.scrollTop !== lockY) wrap.scrollTop = lockY;
-    clearTimeout(idleTimer);
-    idleTimer = setTimeout(() => { axis = null; }, 150);
-  }, { passive: true });
+  function endTouch() {
+    if (axis !== 'x' && axis !== 'y') { axis = null; return; }
+    if (performance.now() - lastT > 80) { axis = null; return; } // finger stopped before lifting
+    let v = vel * 16; // pixels per frame
+    const glide = () => {
+      if (Math.abs(v) < 0.5) { raf = null; axis = null; return; }
+      scrollAlong(v);
+      v *= 0.95;
+      raf = requestAnimationFrame(glide);
+    };
+    raf = requestAnimationFrame(glide);
+  }
+  wrap.addEventListener('touchend', endTouch);
+  wrap.addEventListener('touchcancel', () => { stopGlide(); axis = null; });
 })();
 </script>
