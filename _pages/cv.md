@@ -286,10 +286,11 @@ h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-c
     <div class="cv-card-title">Professional Divemaster · Waikiki Dive Center</div>
     <div class="cv-card-subtitle">Honolulu, Hawai'i · November 2026 - Present</div>
     <ul>
-      <li>Lead and guide certified divers on charters and conservation dives, and assist instructors with courses</li>
+      <li>Lead and guide certified divers on charters and conservation dives at the shipwrecks and reefs, and assist instructors with courses</li>
+      <li>Serve as deckhand on dive charters, handling docking and undocking lines, tying in to permanent moorings, loading gear, and assisting with diver entry and recovery</li>
       <li>Deliver pre-dive lectures on coral reef ecology and the center's citizen-science conservation program (in training)</li>
       <li>Support guests in conducting photogrammetry surveys of the reef, and process the imagery into 3D reef models (in training)</li>
-      <li>Run front-desk and retail operations, including filling tanks with high-pressure compressor, gear sales and rentals, and customer bookings</li>
+      <li>Run front-desk and retail operations, including filling tanks with high-pressor compressor, gear sales and rentals, and customer bookings</li>
     </ul>
   </div>
   
@@ -297,8 +298,8 @@ h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-c
     <div class="cv-card-title">Professional Divemaster · Hawaiian Diving Adventures</div>
     <div class="cv-card-subtitle">Honolulu, Hawai'i · July 2026 - November 2026</div>
     <ul>
-      <li>Lead dive charters as a professional Divemaster</li>
-      <li>Guide certified divers on ocean dives, ensuring safety and an exceptional experience</li>
+      <li>Guide certified divers on ocean dives to shipwrecks and reefs, ensuring safety and an exceptional experience</li>
+      <li>Serve as deckhand on dive charters, handling docking and undocking lines, tying in to permanent moorings, loading gear, and assisting with diver entry and recovery</li>
       <li>Assist instructors with courses and student dives</li>
       <li>Manage dive shop operations including equipment rental and customer briefings</li>
       <li>Fill SCUBA tanks using a high-pressure compressor</li>
@@ -419,6 +420,7 @@ h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-c
           <li>Nitrox EAN32</li>
           <li>Search & Recovery</li>
           <li>Boat Line Handling: Docking, Undocking & Permanent Mooring Tie-Ins</li>
+          <li>Deckhand Duties: Gear Loading, Diver Entry & Recovery</li>
           <li>SCUBA Tank Filling & Compressor Operation</li>
         </ul>
       </li>
