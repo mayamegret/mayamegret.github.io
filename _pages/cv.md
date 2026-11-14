@@ -286,11 +286,10 @@ h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-c
     <div class="cv-card-title">Professional Divemaster · Waikiki Dive Center</div>
     <div class="cv-card-subtitle">Honolulu, Hawai'i · November 2026 - Present</div>
     <ul>
-      <li>Lead dive charters as a professional Divemaster</li>
-      <li>Guide certified divers on ocean dives, ensuring safety and an exceptional experience</li>
-      <li>Assist instructors with courses and student dives</li>
-      <li>Manage dive shop operations including equipment rental and customer briefings</li>
-      <li>Fill SCUBA tanks using a high-pressure compressor</li>
+      <li>Lead and guide certified divers on charters and conservation dives, and assist instructors with courses</li>
+      <li>Deliver pre-dive lectures on coral reef ecology and the center's citizen-science conservation program</li>
+      <li>Support guests in conducting photogrammetry surveys of the reef, and process the imagery into 3D reef models (in training)</li>
+      <li>Run front-desk and retail operations, including gear sales and rentals, customer bookings, and cash handling</li>
     </ul>
   </div>
   
@@ -392,21 +391,44 @@ h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-c
   <div>
     <div class="cv-section-title"><i class="fas fa-tools"></i> Skills</div>
     <ul class="cv-list">
-      <li>Belt Transect Sampling</li>
-      <li>Quadrat Sampling</li>
-      <li>UVC Sampling</li>
-      <li>Nitrox EAN32</li>
-      <li>Deep Diving (30m)</li>
-      <li>Lead Dives</li>
-      <li>Radial Search</li>
-      <li>Search & Recovery</li>
-      <li>Wet Lab Experience</li>
-      <li>R Statistical Software</li>
-      <li>Scientific Writing</li>
-      <li>Underwater Photography</li>
-      <li>SCUBA Tank Filling & Compressor Operation</li>
-      <li>Microsoft Suite Applications</li>
-      <li>Web Development (GitHub Pages & Jekyll, HTML, CSS, JavaScript)</li>
+      <li><strong>SCUBA-Based Sampling</strong>
+        <ul class="cv-sublist">
+          <li>Belt Transect Sampling</li>
+          <li>Quadrat Sampling</li>
+          <li>Underwater Visual Census (UVC)</li>
+          <li>Radial Search</li>
+        </ul>
+      </li>
+      <li><strong>Underwater Imaging</strong>
+        <ul class="cv-sublist">
+          <li>Underwater Photography</li>
+          <li>Photogrammetry & 3D Reef Modeling</li>
+        </ul>
+      </li>
+      <li><strong>Research & Data Analysis</strong>
+        <ul class="cv-sublist">
+          <li>R Statistical Software</li>
+          <li>Scientific Writing</li>
+          <li>Wet Lab Experience</li>
+        </ul>
+      </li>
+      <li><strong>Dive Operations</strong>
+        <ul class="cv-sublist">
+          <li>Lead Dives</li>
+          <li>Deep Diving (30m)</li>
+          <li>Nitrox EAN32</li>
+          <li>Search & Recovery</li>
+          <li>Boat Line Handling: Docking, Undocking & Permanent Mooring Tie-Ins</li>
+          <li>SCUBA Tank Filling & Compressor Operation</li>
+        </ul>
+      </li>
+      <li><strong>Professional & Technical</strong>
+        <ul class="cv-sublist">
+          <li>Retail Sales & Cash Handling</li>
+          <li>Microsoft Suite Applications</li>
+          <li>Web Development (GitHub Pages & Jekyll, HTML, CSS, JavaScript)</li>
+        </ul>
+      </li>
     </ul>
   </div>
   <div>
