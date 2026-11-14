@@ -210,11 +210,12 @@ h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-c
   <div>
     <div class="cv-section-title"><i class="fas fa-microscope"></i> Research Interests</div>
     <ul class="cv-list">
-      <li>Nudibranch and invertebrate ecology</li>
       <li>Scientific diving</li>
+      <li>Nudibranch and invertebrate ecology</li>
       <li>Sea turtle conservation</li>
-      <li>Coral reef ecosystem health</li>
+      <li>Coral reef ecosystem health and restoration</li>
       <li>Underwater photography as a research tool</li>
+      <li>Photogrammetry</li>
     </ul>
   </div>
 </div>
@@ -282,8 +283,20 @@ h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-c
 <div class="cv-timeline">
 
 <div class="cv-card">
+    <div class="cv-card-title">Professional Divemaster · Waikiki Dive Center</div>
+    <div class="cv-card-subtitle">Honolulu, Hawai'i · November 2026 - Present</div>
+    <ul>
+      <li>Lead dive charters as a professional Divemaster</li>
+      <li>Guide certified divers on ocean dives, ensuring safety and an exceptional experience</li>
+      <li>Assist instructors with courses and student dives</li>
+      <li>Manage dive shop operations including equipment rental and customer briefings</li>
+      <li>Fill SCUBA tanks using a high-pressure compressor</li>
+    </ul>
+  </div>
+  
+<div class="cv-card">
     <div class="cv-card-title">Professional Divemaster · Hawaiian Diving Adventures</div>
-    <div class="cv-card-subtitle">Honolulu, Hawai'i · July 2026 - Present</div>
+    <div class="cv-card-subtitle">Honolulu, Hawai'i · July 2026 - November 2026</div>
     <ul>
       <li>Lead dive charters as a professional Divemaster</li>
       <li>Guide certified divers on ocean dives, ensuring safety and an exceptional experience</li>
@@ -312,7 +325,7 @@ h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-c
     <div class="cv-card-title">Researcher · Marine Action Research Expeditions</div>
     <div class="cv-card-subtitle">Závora, Mozambique · January–March 2026</div>
     <ul>
-      <li>Completed 45 scientific dive surveys</li>
+      <li>Lead 45 scientific dive surveys</li>
       <li>Deployed three different SCUBA-based sampling methodologies including Sightings Per Unit Effort (SPUE), Quadrats along a transect, and Belt transects for sampling nudibranchs</li>
       <li>Measured, photographed, and recorded data on nudibranchs</li>
       <li>Analyzed data using R to determine the impact of sampling methodology on diversity and abundance estimates of nudibranchs</li>
