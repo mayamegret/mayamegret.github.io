@@ -289,7 +289,7 @@ h1::after, h2::after, h3::after { background-color: #4B2E0F !important; border-c
       <li>Lead and guide certified divers on charters and conservation dives, and assist instructors with courses</li>
       <li>Deliver pre-dive lectures on coral reef ecology and the center's citizen-science conservation program (in training)</li>
       <li>Support guests in conducting photogrammetry surveys of the reef, and process the imagery into 3D reef models (in training)</li>
-      <li>Run front-desk and retail operations, including gear sales and rentals, customer bookings, and cash handling</li>
+      <li>Run front-desk and retail operations, including filling tanks with high-pressure compressor, gear sales and rentals, customer bookings, and cash handling</li>
     </ul>
   </div>
   
